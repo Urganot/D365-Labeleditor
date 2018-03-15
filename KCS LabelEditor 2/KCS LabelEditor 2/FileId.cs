@@ -1,12 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Windows.Documents;
-
-
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace KCS_LabelEditor_2
 {
-    public class Language : IEquatable<Language>
+    public class FileId : IEquatable<FileId>
     {
         public string Name { get; set; }
 
@@ -15,7 +15,7 @@ namespace KCS_LabelEditor_2
             return Name;
         }
 
-        public bool Equals(Language other)
+        public bool Equals(FileId other)
         {
             if (ReferenceEquals(null, other)) return false;
             if (ReferenceEquals(this, other)) return true;
@@ -27,7 +27,7 @@ namespace KCS_LabelEditor_2
             if (ReferenceEquals(null, obj)) return false;
             if (ReferenceEquals(this, obj)) return true;
             if (obj.GetType() != this.GetType()) return false;
-            return Equals((Language)obj);
+            return Equals((FileId) obj);
         }
 
         public override int GetHashCode()

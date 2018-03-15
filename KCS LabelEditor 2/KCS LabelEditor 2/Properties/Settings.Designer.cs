@@ -25,7 +25,7 @@ namespace KCS_LabelEditor_2.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("uig")]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
         public string AxLabelPath {
             get {
                 return ((string)(this["AxLabelPath"]));
@@ -49,10 +49,10 @@ namespace KCS_LabelEditor_2.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
-        public string AutoTranslate {
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool AutoTranslate {
             get {
-                return ((string)(this["AutoTranslate"]));
+                return ((bool)(this["AutoTranslate"]));
             }
             set {
                 this["AutoTranslate"] = value;
@@ -62,12 +62,24 @@ namespace KCS_LabelEditor_2.Properties {
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("")]
-        public string DefaultLanguage {
+        public string Language {
             get {
-                return ((string)(this["DefaultLanguage"]));
+                return ((string)(this["Language"]));
             }
             set {
-                this["DefaultLanguage"] = value;
+                this["Language"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string FileId {
+            get {
+                return ((string)(this["FileId"]));
+            }
+            set {
+                this["FileId"] = value;
             }
         }
     }

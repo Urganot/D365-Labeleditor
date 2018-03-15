@@ -3,15 +3,18 @@
   <Profiles />
   <Settings>
     <Setting Name="AxLabelPath" Type="System.String" Scope="User">
-      <Value Profile="(Default)">uig</Value>
+      <Value Profile="(Default)" />
     </Setting>
     <Setting Name="Prefix" Type="System.String" Scope="User">
       <Value Profile="(Default)" />
     </Setting>
-    <Setting Name="AutoTranslate" Type="System.String" Scope="User">
+    <Setting Name="AutoTranslate" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="Language" Type="System.String" Scope="User">
       <Value Profile="(Default)" />
     </Setting>
-    <Setting Name="DefaultLanguage" Type="System.String" Scope="User">
+    <Setting Name="FileId" Type="System.String" Scope="User">
       <Value Profile="(Default)" />
     </Setting>
   </Settings>
