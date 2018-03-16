@@ -1,5 +1,6 @@
 ﻿using System.ComponentModel;
 using System.Runtime.CompilerServices;
+using System.Windows.Controls;
 
 namespace KCS_LabelEditor_2.Klassen
 {
@@ -19,7 +20,7 @@ namespace KCS_LabelEditor_2.Klassen
         }
 
 
-        [MyWpfAttributes(IsReadOnly = true)]
+        [MyWpfAttributes(IsReadOnly = true,Width = 8,WidthType = DataGridLengthUnitType.Star)]
         public string FileId
         {
             get => _fileId;
@@ -30,7 +31,7 @@ namespace KCS_LabelEditor_2.Klassen
             }
         }
 
-        [MyWpfAttributes(IsReadOnly = true)]
+        [MyWpfAttributes(IsReadOnly = true, Width = 17, WidthType = DataGridLengthUnitType.Star)]
         public string Id
         {
             get => _id;
@@ -41,10 +42,11 @@ namespace KCS_LabelEditor_2.Klassen
             }
         }
 
+        [MyWpfAttributes(IsReadOnly = true, Width = 20, WidthType = DataGridLengthUnitType.Star)]
         public string FullId => $@"@{FileId}:{Id}";
 
 
-        [MyWpfAttributes(IsReadOnly = true)]
+        [MyWpfAttributes(IsReadOnly = true, Width = 5, WidthType = DataGridLengthUnitType.Star)]
         public string Language
         {
             get => _language;
@@ -54,6 +56,8 @@ namespace KCS_LabelEditor_2.Klassen
                 OnPropertyChanged();
             }
         }
+
+        [MyWpfAttributes(Width = 30, WidthType = DataGridLengthUnitType.Star)]
         public string Text
         {
             get => _text;
@@ -64,6 +68,7 @@ namespace KCS_LabelEditor_2.Klassen
             }
         }
 
+        [MyWpfAttributes(Width = 20, WidthType = DataGridLengthUnitType.Star)]
         public string Comment
         {
             get => _comment;
