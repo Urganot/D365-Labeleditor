@@ -7,21 +7,11 @@ using System.IO;
 using System.Linq;
 using System.Reflection;
 using System.Runtime.CompilerServices;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
-using System.Xml;
 using System.Xml.Linq;
 using KCS_LabelEditor_2.Properties;
-using Console = System.Console;
 
 namespace KCS_LabelEditor_2
 {
@@ -29,7 +19,7 @@ namespace KCS_LabelEditor_2
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
-    public partial class MainWindow : Window, INotifyPropertyChanged
+    public partial class MainWindow : INotifyPropertyChanged
     {
 
         #region Properties
@@ -71,6 +61,16 @@ namespace KCS_LabelEditor_2
             }
         }
 
+        public bool AutoTranslate
+        {
+            get => Settings.Default.AutoTranslate;
+            set
+            {
+                Settings.Default.AutoTranslate = value;
+                OnPropertyChanged();
+            }
+        }
+
         #endregion
 
 
@@ -93,8 +93,8 @@ namespace KCS_LabelEditor_2
         {
             MainGrid.ItemsSource = GetGridItemList();
             SubGrid.ItemsSource = GetGridItemList();
-            Language.ItemsSource = GetLanguagesItemList();
-            FileId.ItemsSource = GetFileIdItemList();
+            LanguageCombobox.ItemsSource = GetLanguagesItemList();
+            FileIdCombobox.ItemsSource = GetFileIdItemList();
             SetFilters();
         }
 
@@ -104,7 +104,6 @@ namespace KCS_LabelEditor_2
                 ((ICollectionView)SubGrid.ItemsSource).Filter = item => !String.Equals(((Label)item).Language, SelectedLanguage.ToString(), StringComparison.CurrentCultureIgnoreCase)
                                                                         && String.Equals(((Label)item).Id, SelectedLabel.Id, StringComparison.CurrentCultureIgnoreCase)
                                                                         && String.Equals(((Label)item).FileId, SelectedFileId.ToString(), StringComparison.CurrentCultureIgnoreCase);
-
             else
                 ((ICollectionView)SubGrid.ItemsSource).Filter = item => false;
         }
@@ -128,11 +127,11 @@ namespace KCS_LabelEditor_2
         {
             return new CollectionViewSource() { Source = Languages }.View;
         }
+
         private IEnumerable GetFileIdItemList()
         {
             return new CollectionViewSource() { Source = FileIds }.View;
         }
-
 
         private void InitColumns(object sender, DataGridAutoGeneratingColumnEventArgs e)
         {
@@ -159,7 +158,7 @@ namespace KCS_LabelEditor_2
             var files = Directory.GetFiles(path, "*.xml", SearchOption.TopDirectoryOnly);
             foreach (var file in files)
             {
-                var rootElement = XDocument.Load(file)?.Root;
+                var rootElement = XDocument.Load(file).Root;
 
                 if (rootElement == null)
                     continue;
@@ -169,7 +168,7 @@ namespace KCS_LabelEditor_2
                     Name = rootElement.Element("Name")?.Value,
                     FileId = new FileId { Name = rootElement.Element("LabelFileId")?.Value },
                     LabelContentFileName = rootElement.Element("LabelContentFileName")?.Value,
-                    Language = new Language { Name = rootElement.Element("Language")?.Value ?? "en-Us" }
+                    Language = new Language { Name = rootElement.Element("LanguageCombobox")?.Value ?? "en-Us" }
                 };
 
                 XmlFiles.Add(xmlFile);
@@ -203,10 +202,13 @@ namespace KCS_LabelEditor_2
                 var filePath = Directory.GetFiles(AxLabelPath, xmlFile.LabelContentFileName, SearchOption.AllDirectories).ToList().Single();
                 var lines = File.ReadLines(filePath).ToList();
 
-                for (var i = 0; i < lines.Count(); i++)
+                for (var i = 0; i < lines.Count; i++)
                 {
                     string line = lines[i];
-                    string nextLine = i < lines.Count() - 1 ? lines[i + 1] : "";
+                    if (string.IsNullOrWhiteSpace(line))
+                        continue;
+
+                    string nextLine = i < lines.Count - 1 ? lines[i + 1] : "";
                     var comment = "";
 
                     if (nextLine != null && nextLine.Trim().StartsWith(";"))
@@ -228,7 +230,7 @@ namespace KCS_LabelEditor_2
 
                     Labels.Add(label);
                 }
-                ReadFiles.Add(new LabelFile(filePath, xmlFile.Language));
+                ReadFiles.Add(new LabelFile(filePath, xmlFile.Language, xmlFile.FileId));
             }
 
         }
@@ -237,9 +239,9 @@ namespace KCS_LabelEditor_2
         {
             foreach (var readFile in ReadFiles)
             {
-                using (StreamWriter writer = new StreamWriter(readFile.Path))
+                using (var writer = new StreamWriter(readFile.Path))
                 {
-                    foreach (var label in Labels.Where(x => x.Language == readFile.Language.ToString()))
+                    foreach (var label in Labels.Where(x => x.Language == readFile.Language.ToString() && x.FileId == readFile.FileId.ToString()))
                     {
                         writer.WriteLine(label.Id + "=" + label.Text);
                         if (!string.IsNullOrWhiteSpace(label.Comment))
@@ -286,7 +288,9 @@ namespace KCS_LabelEditor_2
         private void Window_Closing(object sender, CancelEventArgs e)
         {
             Settings.Default.Save();
-            SaveFile();
+
+            if (MessageBox.Show("Soll gespeichert werden?", "Soll gespeichert werden?", MessageBoxButton.YesNo, MessageBoxImage.Question) == MessageBoxResult.Yes)
+                SaveFile();
         }
 
         private void MainGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -295,5 +299,51 @@ namespace KCS_LabelEditor_2
         }
         #endregion
 
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            AddLabel dialog = new AddLabel(this);
+
+            bool? asd = dialog.ShowDialog();
+            if (asd != null && asd == true)
+                AddLabel(dialog.Id.Text, dialog.Text.Text, dialog.HelpText.Text);
+        }
+
+        private void AddLabel(string id, string text, string helpText)
+        {
+            foreach (var language in Languages)
+            {
+                AddLabel(id, text, language);
+
+                if (!string.IsNullOrWhiteSpace(helpText))
+                    AddLabel(id + "Help", helpText, language);
+            }
+        }
+
+        private void AddLabel(string id, string text, Language language)
+        {
+            if (AutoTranslate && !Equals(language, SelectedLanguage))
+                text = GoogleTranslation.Translation.Translate(text, SelectedLanguage.ToString(), language.ToString());
+
+            Labels.Add(new Label
+            {
+                FileId = SelectedFileId.ToString(),
+                Id = id,
+                Language = language.ToString(),
+                Text = text
+            });
+        }
+
+        public bool IdExists(string id)
+        {
+            return Labels.Any(x => x.Id == id);
+        }
+
+        private void Grids_CopyingRowClipboardContent(object sender, DataGridRowClipboardEventArgs e)
+        {
+            var currentCell = e.ClipboardRowContent[MainGrid.CurrentCell.Column.DisplayIndex];
+            e.ClipboardRowContent.Clear();
+            e.ClipboardRowContent.Add(currentCell);
+
+        }
     }
 }

@@ -8,7 +8,6 @@ namespace KCS_LabelEditor_2
         private string _language;
         private string _comment;
         private string _text;
-        private string _fullId;
         private string _id;
         private string _fileId;
 
@@ -32,15 +31,7 @@ namespace KCS_LabelEditor_2
             }
         }
 
-        public string FullId
-        {
-            get => _fullId;
-            set
-            {
-                _fullId = value;
-                OnPropertyChanged();
-            }
-        }
+        public string FullId => $@"@{FileId}:{Id}";
 
         public string Text
         {

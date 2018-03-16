@@ -11,12 +11,14 @@ namespace KCS_LabelEditor_2
         public string Hash { get; }
         public string Path { get; }
         public Language Language { get; }
+        public FileId FileId { get ; }
 
-        public LabelFile(string path, Language language)
+        public LabelFile(string path, Language language, FileId fileId)
         {
             Path = path;
             Hash = Helper.Hash(File.ReadAllText(Path));
             Language = language;
+            FileId = fileId;
         }
 
     }

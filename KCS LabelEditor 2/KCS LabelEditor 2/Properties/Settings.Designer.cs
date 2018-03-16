@@ -64,10 +64,10 @@ namespace KCS_LabelEditor_2.Properties {
         [global::System.Configuration.DefaultSettingValueAttribute("")]
         public string Language {
             get {
-                return ((string)(this["Language"]));
+                return ((string)(this["LanguageCombobox"]));
             }
             set {
-                this["Language"] = value;
+                this["LanguageCombobox"] = value;
             }
         }
         
@@ -76,10 +76,10 @@ namespace KCS_LabelEditor_2.Properties {
         [global::System.Configuration.DefaultSettingValueAttribute("")]
         public string FileId {
             get {
-                return ((string)(this["FileId"]));
+                return ((string)(this["FileIdCombobox"]));
             }
             set {
-                this["FileId"] = value;
+                this["FileIdCombobox"] = value;
             }
         }
     }
