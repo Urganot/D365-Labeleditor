@@ -29,7 +29,7 @@
         <Button x:Name="DeleteLabelButton" Content="DeleteLabel" VerticalAlignment="Top" Margin="950,38,0,0" Click="DeleteLabelButton_Click" Height="27" Width="90" HorizontalAlignment="Left"/>
 
 
-        <Grid Margin="5,100,5,5">
+        <Grid Margin="5,90,5,5">
             <Grid.RowDefinitions>
                 <RowDefinition Height="50*"/>
                 <RowDefinition Height="50*"/>

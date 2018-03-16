@@ -121,9 +121,6 @@
       <Name>GoogleTranslate</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup>
-    <Resource Include="z5omxfz1.bmp" />
-  </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -373,18 +373,22 @@ namespace KCS_LabelEditor_2
                 return;
             }
 
-            var result = MessageBox.Show("Labels wurden geändert. Soll gespeichert werden?", "Soll gespeichert werden?",
-                MessageBoxButton.YesNoCancel, MessageBoxImage.Question);
-
-            switch (result)
+            if (Changed)
             {
-                case MessageBoxResult.Yes:
-                    SaveFiles();
-                    break;
-                case MessageBoxResult.Cancel:
-                    e.Cancel = true;
-                    break;
+                var result = MessageBox.Show("Labels wurden geändert. Soll gespeichert werden?",
+                    "Soll gespeichert werden?",
+                    MessageBoxButton.YesNoCancel, MessageBoxImage.Question);
 
+                switch (result)
+                {
+                    case MessageBoxResult.Yes:
+                        SaveFiles();
+                        break;
+                    case MessageBoxResult.Cancel:
+                        e.Cancel = true;
+                        break;
+
+                }
             }
         }
 
