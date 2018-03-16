@@ -19,7 +19,8 @@
         <TextBox x:Name="PathTextbox" Height="28" VerticalAlignment="Top" Margin="29,38,1200,0" Text="{Binding Path=AxLabelPath}"/>
         <ComboBox x:Name="FileIdCombobox" Margin="655,38,651,701" SelectedItem="{Binding SelectedFileId}" ItemsSource="{Binding FileIds}" SelectionChanged="FileId_SelectionChanged"/>
         <ComboBox x:Name="LanguageCombobox" Margin="422,37,940,701" SelectedItem="{Binding SelectedLanguage}" ItemsSource="{Binding Languages}" SelectionChanged="Language_SelectionChanged"/>
-        <CheckBox x:Name="AutoTranslateCheckbox" Content="AutoTranslate" VerticalAlignment="Top" Margin="1213,48,-1213,0" IsChecked="{Binding AutoTranslate}"/>
+        <CheckBox x:Name="AutoTranslateCheckbox" Content="AutoTranslate" VerticalAlignment="Top" Margin="1213,48,225,0" IsChecked="{Binding AutoTranslate}"/>
+            <Button x:Name="TranslateButton" Content="Translate" VerticalAlignment="Top" Width="99" Margin="1320,46,121,0" Click="TranslateButton_Click"/>
 
         <Button x:Name="AddLabelButton" Content="AddLabel" VerticalAlignment="Top" Width="75" Margin="938,41,527,0" Click="AddLabelButton_Click"/>
         <Button Name="GetPathButton" Margin="345,33,1149,697" Click="GetPath_Click" Height="28" >...</Button>

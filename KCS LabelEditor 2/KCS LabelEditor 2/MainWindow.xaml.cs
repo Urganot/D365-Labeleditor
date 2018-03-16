@@ -294,26 +294,32 @@ namespace KCS_LabelEditor_2
 
         }
 
-        public void SaveFile()
+        public void SaveFiles()
         {
             _backGroundChangesTimer.Stop();
             foreach (var readFile in ReadFiles)
             {
-                using (var writer = new StreamWriter(readFile.Path))
-                {
-                    foreach (var label in Labels.Where(x => x.Language == readFile.Language.ToString() && x.FileId == readFile.FileId.ToString()))
-                    {
-                        writer.WriteLine(label.Id + "=" + label.Text);
-                        if (!string.IsNullOrWhiteSpace(label.Comment))
-                            writer.WriteLine(" ;" + label.Comment);
-                    }
-                }
+                SaveFile(readFile);
 
-                readFile.ResetHash();
+                readFile.Reset();
             }
 
             Changed = false;
             _backGroundChangesTimer.Start();
+        }
+
+        private void SaveFile(LabelFile readFile)
+        {
+            using (var writer = new StreamWriter(readFile.Path))
+            {
+                foreach (var label in Labels.Where(x => x.Language == readFile.Language.ToString() && x.FileId == readFile.FileId.ToString()))
+                {
+                    writer.WriteLine(label.Id + "=" + label.Text);
+                    if (!string.IsNullOrWhiteSpace(label.Comment))
+                        writer.WriteLine(" ;" + label.Comment);
+                }
+            }
+
         }
 
         #region Events
@@ -373,7 +379,7 @@ namespace KCS_LabelEditor_2
             switch (result)
             {
                 case MessageBoxResult.Yes:
-                    SaveFile();
+                    SaveFiles();
                     break;
                 case MessageBoxResult.Cancel:
                     e.Cancel = true;
@@ -457,7 +463,7 @@ namespace KCS_LabelEditor_2
                       MessageBoxButton.OK, MessageBoxImage.Warning);
                 return;
             }
-            SaveFile();
+            SaveFiles();
         }
 
         private void ExitButton_Click(object sender, RoutedEventArgs e)
@@ -477,6 +483,13 @@ namespace KCS_LabelEditor_2
                     Labels.Remove(labelToRemove);
                 }
             }
+        }
+
+        private void TranslateButton_Click(object sender, RoutedEventArgs e)
+        {
+            Labels.ToList()
+                .Where(x => x.Id == SelectedLabel.Id && x.Language != SelectedLabel.Language && x.FileId == SelectedLabel.FileId).ToList()
+                .ForEach(y => y.Text = GoogleTranslation.Translation.Translate(SelectedLabel.Text, SelectedLabel.Language, y.Language));
         }
     }
 }

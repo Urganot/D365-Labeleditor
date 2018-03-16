@@ -25,8 +25,9 @@ namespace KCS_LabelEditor_2.Klassen
             return Helper.Hash(File.ReadAllText(Path));
         }
 
-        public void ResetHash()
+        public void Reset()
         {
+            //Changed = false;
             OriginalHash = Helper.Hash(File.ReadAllText(Path));
         }
     }
