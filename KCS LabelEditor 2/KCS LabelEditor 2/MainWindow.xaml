@@ -16,18 +16,26 @@
                 </MenuItem>
             </Menu>
         </DockPanel>
-        <TextBox x:Name="PathTextbox" Height="28" VerticalAlignment="Top" Margin="29,38,1200,0" Text="{Binding Path=AxLabelPath}"/>
-        <ComboBox x:Name="FileIdCombobox" Margin="655,38,651,701" SelectedItem="{Binding SelectedFileId}" ItemsSource="{Binding FileIds}" SelectionChanged="FileId_SelectionChanged"/>
-        <ComboBox x:Name="LanguageCombobox" Margin="422,37,940,701" SelectedItem="{Binding SelectedLanguage}" ItemsSource="{Binding Languages}" SelectionChanged="Language_SelectionChanged"/>
-        <CheckBox x:Name="AutoTranslateCheckbox" Content="AutoTranslate" VerticalAlignment="Top" Margin="1213,48,225,0" IsChecked="{Binding AutoTranslate}"/>
-            <Button x:Name="TranslateButton" Content="Translate" VerticalAlignment="Top" Width="99" Margin="1320,46,121,0" Click="TranslateButton_Click"/>
 
-        <Button x:Name="AddLabelButton" Content="AddLabel" VerticalAlignment="Top" Width="75" Margin="938,41,527,0" Click="AddLabelButton_Click"/>
-        <Button Name="GetPathButton" Margin="345,33,1149,697" Click="GetPath_Click" Height="28" >...</Button>
-        <DataGrid x:Name="MainGrid" HorizontalAlignment="Left" Height="307" Margin="29,122,0,0" SelectedItem="{Binding SelectedLabel}" VerticalAlignment="Top" Width="1485" AutoGeneratingColumn="InitColumns" Grid.ColumnSpan="4" SelectionChanged="MainGrid_SelectionChanged" CanUserAddRows="False" SelectionMode="Single" CopyingRowClipboardContent="Grids_CopyingRowClipboardContent"/>
-        <DataGrid x:Name="SubGrid" HorizontalAlignment="Left" Height="307" Margin="29,434,0,0" VerticalAlignment="Top" Width="1485" AutoGeneratingColumn="InitColumns" Grid.ColumnSpan="4" CanUserAddRows="False" CopyingRowClipboardContent="Grids_CopyingRowClipboardContent"/>
-        <Button x:Name="RenameLabelButton" Content="RenameLabel" VerticalAlignment="Top" Margin="1038,41,403,0" Click="RenameLabelButton_Click"/>
-        <Button x:Name="DeleteLabelButton" Content="DeleteLabel" VerticalAlignment="Top" Margin="1030,80,411,0" Click="DeleteLabelButton_Click"/>
+        <TextBox x:Name="PathTextbox" Height="28" VerticalAlignment="Top" Margin="29,38,0,0" Text="{Binding Path=AxLabelPath}" HorizontalAlignment="Left" Width="300"/>
+        <ComboBox x:Name="FileIdCombobox" Margin="391,38,0,0" Height="27" Width="200" SelectedItem="{Binding SelectedFileId}" ItemsSource="{Binding FileIds}" SelectionChanged="FileId_SelectionChanged" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <ComboBox x:Name="LanguageCombobox" Margin="613,38,0,0" Height="27" Width="200" SelectedItem="{Binding SelectedLanguage}" ItemsSource="{Binding Languages}" SelectionChanged="Language_SelectionChanged" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <CheckBox x:Name="AutoTranslateCheckbox" Content="AutoTranslate" VerticalAlignment="Top" Margin="1194,38,0,0" Height="27" Width="99" IsChecked="{Binding AutoTranslate}" HorizontalAlignment="Left"/>
+        <Button x:Name="TranslateButton" Content="Translate" VerticalAlignment="Top" Height="27" Width="90" Margin="1317,38,0,0" Click="TranslateButton_Click" HorizontalAlignment="Left"/>
 
+        <Button x:Name="AddLabelButton" Content="AddLabel" VerticalAlignment="Top" Margin="837,38,0,0" Height="27" Width="90" Click="AddLabelButton_Click" HorizontalAlignment="Left"/>
+        <Button Name="GetPathButton" Content="..." Margin="334,38,0,0" Click="GetPath_Click"  Height="27" Width="27" HorizontalAlignment="Left" VerticalAlignment="Top" />
+        <Button x:Name="RenameLabelButton" Content="RenameLabel" VerticalAlignment="Top" Margin="1064,38,0,0" Click="RenameLabelButton_Click" Height="27" Width="90" HorizontalAlignment="Left"/>
+        <Button x:Name="DeleteLabelButton" Content="DeleteLabel" VerticalAlignment="Top" Margin="950,38,0,0" Click="DeleteLabelButton_Click" Height="27" Width="90" HorizontalAlignment="Left"/>
+
+
+        <Grid Margin="5,100,5,5">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50*"/>
+                <RowDefinition Height="50*"/>
+            </Grid.RowDefinitions>
+            <DataGrid Grid.Row="0" x:Name="MainGrid" SelectedItem="{Binding SelectedLabel}" AutoGeneratingColumn="InitColumns" SelectionChanged="MainGrid_SelectionChanged" CanUserAddRows="False" SelectionMode="Single" CopyingRowClipboardContent="Grids_CopyingRowClipboardContent" Margin="5"/>
+            <DataGrid Grid.Row="1" x:Name="SubGrid" AutoGeneratingColumn="InitColumns" CanUserAddRows="False" CopyingRowClipboardContent="Grids_CopyingRowClipboardContent" Margin="5"/>
+        </Grid>
     </Grid>
 </Window>
