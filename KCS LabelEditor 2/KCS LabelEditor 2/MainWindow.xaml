@@ -10,11 +10,9 @@
         <DockPanel Grid.ColumnSpan="5">
             <Menu DockPanel.Dock="Top" Height="20" VerticalAlignment="Top">
                 <MenuItem Header="_File">
-                    <MenuItem Header="_New" />
-                    <MenuItem Header="_Open" />
-                    <MenuItem Header="_Save" />
+                    <MenuItem x:Name="SaveButton" Header="_Save" Click="SaveButton_Click" />
                     <Separator />
-                    <MenuItem Header="_Exit" />
+                    <MenuItem x:Name="ExitButton" Header="_Exit" Click="ExitButton_Click" />
                 </MenuItem>
             </Menu>
         </DockPanel>

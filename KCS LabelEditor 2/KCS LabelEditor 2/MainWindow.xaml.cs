@@ -1,9 +1,7 @@
 ﻿using System;
-using System.CodeDom;
 using System.Collections;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
-using System.Collections.Specialized;
 using System.ComponentModel;
 using System.IO;
 using System.Linq;
@@ -50,7 +48,7 @@ namespace KCS_LabelEditor_2
             }
         }
 
-        
+
         public FileId SelectedFileId
         {
             get => new FileId { Name = Settings.Default.FileId };
@@ -79,7 +77,7 @@ namespace KCS_LabelEditor_2
                 OnPropertyChanged();
             }
         }
-         
+
         #endregion
 
 
@@ -302,8 +300,19 @@ namespace KCS_LabelEditor_2
         {
             Settings.Default.Save();
 
-            if (Changed && MessageBox.Show("Labels wurden geändert. Soll gespeichert werden?", "Soll gespeichert werden?", MessageBoxButton.YesNo, MessageBoxImage.Question) == MessageBoxResult.Yes)
-                SaveFile();
+            var result = MessageBox.Show("Labels wurden geändert. Soll gespeichert werden?", "Soll gespeichert werden?",
+                MessageBoxButton.YesNoCancel, MessageBoxImage.Question);
+
+            switch (result)
+            {
+                case MessageBoxResult.Yes:
+                    SaveFile();
+                    break;
+                case MessageBoxResult.Cancel:
+                    e.Cancel = true;
+                    break;
+
+            }
         }
 
         private void MainGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -372,6 +381,17 @@ namespace KCS_LabelEditor_2
             if (asd != null && asd == true)
                 AddLabel(dialog.Id.Text, dialog.Text.Text, dialog.HelpText.Text);
 
+        }
+
+        private void SaveButton_Click(object sender, RoutedEventArgs e)
+        {
+            if (Changed && MessageBox.Show("Labels wurden geändert. Soll gespeichert werden?", "Soll gespeichert werden?", MessageBoxButton.YesNo, MessageBoxImage.Question) == MessageBoxResult.Yes)
+                SaveFile();
+        }
+
+        private void ExitButton_Click(object sender, RoutedEventArgs e)
+        {
+            Close();
         }
     }
 }
