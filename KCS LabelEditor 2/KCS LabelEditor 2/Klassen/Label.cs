@@ -11,7 +11,14 @@ namespace KCS_LabelEditor_2.Klassen
         private string _id;
         private string _fileId;
 
-        
+        private readonly MainWindow _mainWindow;
+
+        public Label(MainWindow mainWindow)
+        {
+            _mainWindow = mainWindow;
+        }
+
+
         [MyWpfAttributes(IsReadOnly = true)]
         public string FileId
         {
@@ -36,6 +43,17 @@ namespace KCS_LabelEditor_2.Klassen
 
         public string FullId => $@"@{FileId}:{Id}";
 
+
+        [MyWpfAttributes(IsReadOnly = true)]
+        public string Language
+        {
+            get => _language;
+            set
+            {
+                _language = value;
+                OnPropertyChanged();
+            }
+        }
         public string Text
         {
             get => _text;
@@ -56,28 +74,11 @@ namespace KCS_LabelEditor_2.Klassen
             }
         }
 
-        [MyWpfAttributes(IsReadOnly = true)]
-        public string Language
-        {
-            get => _language;
-            set
-            {
-                _language = value;
-                OnPropertyChanged();
-            }
-        }
-
-        private MainWindow _mainWindow;
-
-        public Label(MainWindow mainWindow)
-        {
-            _mainWindow = mainWindow;
-        }
 
         #region Events
         public event PropertyChangedEventHandler PropertyChanged;
 
-        private void OnPropertyChanged([CallerMemberName]string propertyName=null)
+        private void OnPropertyChanged([CallerMemberName]string propertyName = null)
         {
             _mainWindow.Changed = true;
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
