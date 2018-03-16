@@ -205,7 +205,6 @@ namespace KCS_LabelEditor_2
             e.Column.IsReadOnly = attribute.IsReadOnly;
         }
 
-
         private void GetXmlFiles(string path)
         {
             var files = Directory.GetFiles(path, "*.xml", SearchOption.TopDirectoryOnly);
@@ -464,6 +463,20 @@ namespace KCS_LabelEditor_2
         private void ExitButton_Click(object sender, RoutedEventArgs e)
         {
             Close();
+        }
+
+        private void DeleteLabelButton_Click(object sender, RoutedEventArgs e)
+        {
+            if (MessageBoxResult.Yes == MessageBox.Show($"Soll das ausgewählte Label {SelectedLabel.Id} gelöscht werden?", "Label löschen", MessageBoxButton.YesNo, MessageBoxImage.Question))
+            {
+                var labelsToRemove = Labels.ToList()
+                    .Where(x => x.FileId == SelectedFileId.ToString() && x.Id == SelectedLabel.Id)
+                    .ToList();
+                foreach (var labelToRemove in labelsToRemove)
+                {
+                    Labels.Remove(labelToRemove);
+                }
+            }
         }
     }
 }
