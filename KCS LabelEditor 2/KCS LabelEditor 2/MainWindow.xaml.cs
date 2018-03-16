@@ -7,13 +7,17 @@ using System.IO;
 using System.Linq;
 using System.Reflection;
 using System.Runtime.CompilerServices;
+using System.Timers;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
+using System.Windows.Forms;
+using System.Windows.Threading;
 using System.Xml.Linq;
 using KCS_LabelEditor_2.Klassen;
 using KCS_LabelEditor_2.Properties;
 using Label = KCS_LabelEditor_2.Klassen.Label;
+using MessageBox = System.Windows.MessageBox;
 
 namespace KCS_LabelEditor_2
 {
@@ -35,6 +39,7 @@ namespace KCS_LabelEditor_2
         public List<LabelFile> ReadFiles = new List<LabelFile>();
 
 
+        private readonly DispatcherTimer _backGroundChangesTimer = new DispatcherTimer();
         public bool Changed { get; set; }
 
         public Label SelectedLabel { get; set; }
@@ -94,7 +99,47 @@ namespace KCS_LabelEditor_2
 
             GetLanguages();
             ReadLabelFiles();
+
+            _backGroundChangesTimer.Interval = TimeSpan.FromSeconds(1);
+            _backGroundChangesTimer.Tick += BackGroundChangesTimerHandler;
+
+            _backGroundChangesTimer.Start();
+
         }
+
+        private void BackGroundChangesTimerHandler(object sender, EventArgs e)
+        {
+            bool changed = false;
+            foreach (var labelFile in ReadFiles)
+            {
+                labelFile.Changed = labelFile.OriginalHash != labelFile.NewHash();
+                if (labelFile.Changed)
+                {
+                    changed = labelFile.Changed;
+                    break;
+                }
+            }
+
+            if (!changed || DontReload)
+                return;
+
+            _backGroundChangesTimer.Stop();
+            var result = MessageBox.Show("Datei wurde geändert soll diese neu geladen werden?", "Datei geändert", MessageBoxButton.YesNo, MessageBoxImage.Warning);
+            switch (result)
+            {
+                case MessageBoxResult.Yes:
+                    ReadLabelFiles();
+                    break;
+                case MessageBoxResult.No:
+                    DontReload = true;
+                    break;
+                default:
+                    throw new ArgumentOutOfRangeException();
+            }
+        }
+
+        public bool DontReload { get; set; }
+
 
         private void SetGridData()
         {
@@ -205,6 +250,11 @@ namespace KCS_LabelEditor_2
 
         private void ReadLabelFiles()
         {
+            Labels.Clear();
+            ReadFiles.Clear();
+            if (_backGroundChangesTimer != null && !_backGroundChangesTimer.IsEnabled)
+                _backGroundChangesTimer.Start();
+
             foreach (var xmlFile in XmlFiles)
             {
                 var filePath = Directory.GetFiles(AxLabelPath, xmlFile.LabelContentFileName, SearchOption.AllDirectories).ToList().Single();
@@ -247,6 +297,7 @@ namespace KCS_LabelEditor_2
 
         public void SaveFile()
         {
+            _backGroundChangesTimer.Stop();
             foreach (var readFile in ReadFiles)
             {
                 using (var writer = new StreamWriter(readFile.Path))
@@ -258,8 +309,12 @@ namespace KCS_LabelEditor_2
                             writer.WriteLine(" ;" + label.Comment);
                     }
                 }
+
+                readFile.ResetHash();
             }
+
             Changed = false;
+            _backGroundChangesTimer.Start();
         }
 
         #region Events
@@ -299,6 +354,19 @@ namespace KCS_LabelEditor_2
         private void Window_Closing(object sender, CancelEventArgs e)
         {
             Settings.Default.Save();
+
+            if (ReadFiles.Any(x => x.Changed))
+            {
+                MessageBoxResult messageResult = MessageBox.Show("Datei wurde geändert. Es kann nicht gespeichert werden!", "Datei wurde geändert",
+                     MessageBoxButton.OKCancel, MessageBoxImage.Warning);
+                switch (messageResult)
+                {
+                    case MessageBoxResult.Cancel:
+                        e.Cancel = true;
+                        break;
+                }
+                return;
+            }
 
             var result = MessageBox.Show("Labels wurden geändert. Soll gespeichert werden?", "Soll gespeichert werden?",
                 MessageBoxButton.YesNoCancel, MessageBoxImage.Question);
@@ -380,13 +448,17 @@ namespace KCS_LabelEditor_2
             bool? asd = dialog.ShowDialog();
             if (asd != null && asd == true)
                 AddLabel(dialog.Id.Text, dialog.Text.Text, dialog.HelpText.Text);
-
         }
 
         private void SaveButton_Click(object sender, RoutedEventArgs e)
         {
-            if (Changed && MessageBox.Show("Labels wurden geändert. Soll gespeichert werden?", "Soll gespeichert werden?", MessageBoxButton.YesNo, MessageBoxImage.Question) == MessageBoxResult.Yes)
-                SaveFile();
+            if (ReadFiles.Any(x => x.Changed))
+            {
+                MessageBox.Show("Datei wurde geändert. Es kann nicht gespeichert werden!", "Datei wurde geändert",
+                      MessageBoxButton.OK, MessageBoxImage.Warning);
+                return;
+            }
+            SaveFile();
         }
 
         private void ExitButton_Click(object sender, RoutedEventArgs e)
