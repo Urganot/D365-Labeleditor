@@ -11,7 +11,7 @@ namespace KCS_LabelEditor_2.Klassen
         private string _id;
         private string _fileId;
 
-
+        
         [MyWpfAttributes(IsReadOnly = true)]
         public string FileId
         {
@@ -67,11 +67,19 @@ namespace KCS_LabelEditor_2.Klassen
             }
         }
 
+        private MainWindow _mainWindow;
+
+        public Label(MainWindow mainWindow)
+        {
+            _mainWindow = mainWindow;
+        }
+
         #region Events
         public event PropertyChangedEventHandler PropertyChanged;
 
         private void OnPropertyChanged([CallerMemberName]string propertyName=null)
         {
+            _mainWindow.Changed = true;
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
         #endregion

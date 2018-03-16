@@ -1,7 +1,9 @@
 ﻿using System;
+using System.CodeDom;
 using System.Collections;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.Collections.Specialized;
 using System.ComponentModel;
 using System.IO;
 using System.Linq;
@@ -34,6 +36,9 @@ namespace KCS_LabelEditor_2
         public List<XmlFile> XmlFiles = new List<XmlFile>();
         public List<LabelFile> ReadFiles = new List<LabelFile>();
 
+
+        public bool Changed { get; set; }
+
         public Label SelectedLabel { get; set; }
         public string AxLabelPath
         {
@@ -44,6 +49,8 @@ namespace KCS_LabelEditor_2
                 OnPropertyChanged();
             }
         }
+
+        
         public FileId SelectedFileId
         {
             get => new FileId { Name = Settings.Default.FileId };
@@ -72,7 +79,7 @@ namespace KCS_LabelEditor_2
                 OnPropertyChanged();
             }
         }
-
+         
         #endregion
 
 
@@ -222,7 +229,7 @@ namespace KCS_LabelEditor_2
 
                     var splitLine = line.Split('=');
 
-                    var label = new Label
+                    var label = new Label(this)
                     {
                         FileId = xmlFile.FileId.ToString(),
                         Language = xmlFile.Language.ToString(),
@@ -235,6 +242,8 @@ namespace KCS_LabelEditor_2
                 }
                 ReadFiles.Add(new LabelFile(filePath, xmlFile.Language, xmlFile.FileId));
             }
+
+            Changed = false;
 
         }
 
@@ -252,6 +261,7 @@ namespace KCS_LabelEditor_2
                     }
                 }
             }
+            Changed = false;
         }
 
         #region Events
@@ -292,7 +302,7 @@ namespace KCS_LabelEditor_2
         {
             Settings.Default.Save();
 
-            if (MessageBox.Show("Soll gespeichert werden?", "Soll gespeichert werden?", MessageBoxButton.YesNo, MessageBoxImage.Question) == MessageBoxResult.Yes)
+            if (Changed && MessageBox.Show("Labels wurden geändert. Soll gespeichert werden?", "Soll gespeichert werden?", MessageBoxButton.YesNo, MessageBoxImage.Question) == MessageBoxResult.Yes)
                 SaveFile();
         }
 
@@ -318,13 +328,15 @@ namespace KCS_LabelEditor_2
             if (AutoTranslate && !Equals(language, SelectedLanguage))
                 text = GoogleTranslation.Translation.Translate(text, SelectedLanguage.ToString(), language.ToString());
 
-            Labels.Add(new Label
+            var label = new Label(this)
             {
                 FileId = SelectedFileId.ToString(),
                 Id = id,
                 Language = language.ToString(),
                 Text = text
-            });
+            };
+
+            Labels.Add(label);
         }
 
         public bool IdExists(string id)
@@ -349,10 +361,7 @@ namespace KCS_LabelEditor_2
             {
                 var newId = dialog.NewIdTextbox.Text;
                 Labels.ToList().Where(x => x.FileId.Equals(SelectedLabel.FileId) && x.Id == SelectedLabel.Id).ToList().ForEach(y => y.Id = newId);
-
             }
-
-
         }
 
         private void AddLabelButton_Click(object sender, RoutedEventArgs e)
