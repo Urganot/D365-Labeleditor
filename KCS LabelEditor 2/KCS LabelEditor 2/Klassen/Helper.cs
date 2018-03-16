@@ -1,7 +1,7 @@
 ﻿using System.Security.Cryptography;
 using System.Text;
 
-namespace KCS_LabelEditor_2
+namespace KCS_LabelEditor_2.Klassen
 {
     public class Helper
     {

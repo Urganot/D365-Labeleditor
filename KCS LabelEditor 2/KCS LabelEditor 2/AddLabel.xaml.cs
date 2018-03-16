@@ -1,25 +1,14 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Runtime.InteropServices;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
 using System.Windows.Interop;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
 
 namespace KCS_LabelEditor_2
 {
     /// <summary>
     /// Interaction logic for AddLabel.xaml
     /// </summary>
-    public partial class AddLabel : Window
+    public partial class AddLabel
     {
         private MainWindow MainWindow;
 
@@ -64,7 +53,7 @@ namespace KCS_LabelEditor_2
             }
 
             DialogResult = true;
-            this.Close();
+            Close();
         }
 
         private const int GWL_STYLE = -16;

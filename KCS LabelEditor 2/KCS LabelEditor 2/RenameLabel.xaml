@@ -1,0 +1,18 @@
+﻿<Window x:Class="KCS_LabelEditor_2.RenameLabel"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:KCS_LabelEditor_2"
+        mc:Ignorable="d" 
+        Title="RenameLabel" Height="171.331" Width="411.97" ResizeMode="NoResize" Loaded="Window_Loaded"
+        FocusManager.FocusedElement="{Binding ElementName=NewIdTextbox}" WindowStartupLocation="CenterOwner">
+    <Grid>
+        <Button x:Name="OkButton" Content="Ok" HorizontalAlignment="Left" Margin="98,105,0,0" VerticalAlignment="Top" Width="74" Click="OkButton_Click" IsDefault="True"/>
+        <Button x:Name="CancelButton" Content="Cancel" HorizontalAlignment="Left" Margin="218,105,0,0" VerticalAlignment="Top" Width="74" IsCancel="True" />
+        <TextBox x:Name="OldIdTextbox" HorizontalAlignment="Left" Height="23" Margin="72,27,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="280" IsReadOnly="True" />
+        <TextBox x:Name="NewIdTextbox" HorizontalAlignment="Left" Height="23" Margin="72,62,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="280" AutomationProperties.IsRequiredForForm="True"/>
+        <Label x:Name="OldIdLabel" Content="Old Id" HorizontalAlignment="Left" Margin="29,27,0,0" VerticalAlignment="Top" Target="{Binding ElementName=OldIdTextbox}"/>
+        <Label x:Name="NewIdLabel" Content="New Id" HorizontalAlignment="Left" Margin="25,62,0,0" VerticalAlignment="Top" Target="{Binding ElementName=NewIdTextbox}"/>
+    </Grid>
+</Window>

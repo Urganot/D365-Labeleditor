@@ -11,7 +11,9 @@ using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
 using System.Xml.Linq;
+using KCS_LabelEditor_2.Klassen;
 using KCS_LabelEditor_2.Properties;
+using Label = KCS_LabelEditor_2.Klassen.Label;
 
 namespace KCS_LabelEditor_2
 {
@@ -147,7 +149,8 @@ namespace KCS_LabelEditor_2
             if (attribute == null)
                 return;
 
-            e.Column.Header = attribute.DisplayName;
+            if (!string.IsNullOrWhiteSpace(attribute.DisplayName))
+                e.Column.Header = attribute.DisplayName;
             e.Column.Width = new DataGridLength(attribute.Width, attribute.WidthType);
             e.Column.IsReadOnly = attribute.IsReadOnly;
         }
@@ -168,7 +171,7 @@ namespace KCS_LabelEditor_2
                     Name = rootElement.Element("Name")?.Value,
                     FileId = new FileId { Name = rootElement.Element("LabelFileId")?.Value },
                     LabelContentFileName = rootElement.Element("LabelContentFileName")?.Value,
-                    Language = new Language { Name = rootElement.Element("LanguageCombobox")?.Value ?? "en-Us" }
+                    Language = new Language { Name = rootElement.Element("Language")?.Value ?? "en-Us" }
                 };
 
                 XmlFiles.Add(xmlFile);
@@ -299,15 +302,6 @@ namespace KCS_LabelEditor_2
         }
         #endregion
 
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            AddLabel dialog = new AddLabel(this);
-
-            bool? asd = dialog.ShowDialog();
-            if (asd != null && asd == true)
-                AddLabel(dialog.Id.Text, dialog.Text.Text, dialog.HelpText.Text);
-        }
-
         private void AddLabel(string id, string text, string helpText)
         {
             foreach (var language in Languages)
@@ -343,6 +337,31 @@ namespace KCS_LabelEditor_2
             var currentCell = e.ClipboardRowContent[MainGrid.CurrentCell.Column.DisplayIndex];
             e.ClipboardRowContent.Clear();
             e.ClipboardRowContent.Add(currentCell);
+
+        }
+
+        private void RenameLabelButton_Click(object sender, RoutedEventArgs e)
+        {
+            var dialog = new RenameLabel(this, SelectedLabel.Id);
+
+            bool? asd = dialog.ShowDialog();
+            if (asd != null && asd == true)
+            {
+                var newId = dialog.NewIdTextbox.Text;
+                Labels.ToList().Where(x => x.FileId.Equals(SelectedLabel.FileId) && x.Id == SelectedLabel.Id).ToList().ForEach(y => y.Id = newId);
+
+            }
+
+
+        }
+
+        private void AddLabelButton_Click(object sender, RoutedEventArgs e)
+        {
+            var dialog = new AddLabel(this);
+
+            bool? asd = dialog.ShowDialog();
+            if (asd != null && asd == true)
+                AddLabel(dialog.Id.Text, dialog.Text.Text, dialog.HelpText.Text);
 
         }
     }

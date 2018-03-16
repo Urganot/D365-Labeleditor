@@ -1,12 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace KCS_LabelEditor_2
+namespace KCS_LabelEditor_2.Klassen
 {
-    public class FileId : IEquatable<FileId>
+    public class Language : IEquatable<Language>
     {
         public string Name { get; set; }
 
@@ -15,7 +11,7 @@ namespace KCS_LabelEditor_2
             return Name;
         }
 
-        public bool Equals(FileId other)
+        public bool Equals(Language other)
         {
             if (ReferenceEquals(null, other)) return false;
             if (ReferenceEquals(this, other)) return true;
@@ -27,7 +23,7 @@ namespace KCS_LabelEditor_2
             if (ReferenceEquals(null, obj)) return false;
             if (ReferenceEquals(this, obj)) return true;
             if (obj.GetType() != this.GetType()) return false;
-            return Equals((FileId) obj);
+            return Equals((Language)obj);
         }
 
         public override int GetHashCode()

@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel;
 using System.Runtime.CompilerServices;
 
-namespace KCS_LabelEditor_2
+namespace KCS_LabelEditor_2.Klassen
 {
     public class Label : INotifyPropertyChanged
     {
@@ -11,6 +11,8 @@ namespace KCS_LabelEditor_2
         private string _id;
         private string _fileId;
 
+
+        [MyWpfAttributes(IsReadOnly = true)]
         public string FileId
         {
             get => _fileId;
@@ -21,6 +23,7 @@ namespace KCS_LabelEditor_2
             }
         }
 
+        [MyWpfAttributes(IsReadOnly = true)]
         public string Id
         {
             get => _id;
@@ -53,6 +56,7 @@ namespace KCS_LabelEditor_2
             }
         }
 
+        [MyWpfAttributes(IsReadOnly = true)]
         public string Language
         {
             get => _language;

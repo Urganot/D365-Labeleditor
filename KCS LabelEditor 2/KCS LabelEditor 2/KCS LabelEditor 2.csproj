@@ -58,9 +58,12 @@
     <Compile Include="AddLabel.xaml.cs">
       <DependentUpon>AddLabel.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Helper.cs" />
-    <Compile Include="LabelFile.cs" />
-    <Compile Include="XmlFile.cs" />
+    <Compile Include="Klassen\Helper.cs" />
+    <Compile Include="Klassen\LabelFile.cs" />
+    <Compile Include="RenameLabel.xaml.cs">
+      <DependentUpon>RenameLabel.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Klassen\XmlFile.cs" />
     <Page Include="AddLabel.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -73,16 +76,20 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="FileId.cs" />
-    <Compile Include="Label.cs" />
-    <Compile Include="Language.cs" />
+    <Compile Include="Klassen\FileId.cs" />
+    <Compile Include="Klassen\Label.cs" />
+    <Compile Include="Klassen\Language.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="RenameLabel.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="MyWpfAttributes.cs" />
+    <Compile Include="Klassen\MyWpfAttributes.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -117,5 +124,6 @@
   <ItemGroup>
     <Resource Include="z5omxfz1.bmp" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
