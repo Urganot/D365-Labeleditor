@@ -10,7 +10,7 @@ namespace KCS_LabelEditor_2.Klassen
 {
     public class BackgroundTimer
     {
-        public DispatcherTimer Timer { get; set; }
+        public DispatcherTimer Timer = new DispatcherTimer();
 
         public Boolean DontReload { get; set; }
 
@@ -21,7 +21,7 @@ namespace KCS_LabelEditor_2.Klassen
             _mainWindow = mainWindow;
         }
 
-        private void Init()
+        public void Init()
         {
             Timer.Interval = TimeSpan.FromSeconds(1);
             Timer.Tick += BackGroundChangesTimerHandler;

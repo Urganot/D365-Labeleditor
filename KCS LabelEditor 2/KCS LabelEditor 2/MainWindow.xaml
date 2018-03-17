@@ -17,7 +17,7 @@
             </Menu>
         </DockPanel>
 
-        <TextBox x:Name="PathTextbox" Height="28" VerticalAlignment="Top" Margin="29,38,0,0" Text="{Binding Path=AxLabelPath}" HorizontalAlignment="Left" Width="300"/>
+        <TextBox x:Name="PathTextbox" Height="28" VerticalAlignment="Top" Margin="29,38,0,0" Text="{Binding Path=AxLabelPath}" HorizontalAlignment="Left" Width="300" IsReadOnly="True"/>
         <ComboBox x:Name="FileIdCombobox" Margin="391,38,0,0" Height="27" Width="200" SelectedItem="{Binding Selected}" SelectionChanged="FileId_SelectionChanged" HorizontalAlignment="Left" VerticalAlignment="Top"/>
         <ComboBox x:Name="LanguageCombobox" Margin="613,38,0,0" Height="27" Width="200" SelectedItem="{Binding Selected}" SelectionChanged="Language_SelectionChanged" HorizontalAlignment="Left" VerticalAlignment="Top"/>
         <CheckBox x:Name="AutoTranslateCheckbox" Content="AutoTranslate" VerticalAlignment="Top" Margin="1194,38,0,0" Height="27" Width="99" IsChecked="{Binding AutoTranslate}" HorizontalAlignment="Left"/>

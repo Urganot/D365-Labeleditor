@@ -27,10 +27,11 @@ namespace KCS_LabelEditor_2.Klassen
             get => new Language { Name = Settings.Default.Language };
             set
             {
-                Settings.Default.Language = value.Name;
+                Settings.Default.Language = value?.Name ??"";
                 OnPropertyChanged();
             }
         }
+        public Language SelectedOld { get; set; }
 
         public ICollectionView GetView()
         {
@@ -39,6 +40,7 @@ namespace KCS_LabelEditor_2.Klassen
 
         public void Init()
         {
+            SelectedOld = Selected;
             Clear();
 
             foreach (var xmlFile in _mainWindow.XmlFiles.All)
@@ -52,13 +54,13 @@ namespace KCS_LabelEditor_2.Klassen
 
         private void CheckSelected()
         {
-            if (!All.Contains(Selected))
-                Selected = null;
+            if (All.Contains(SelectedOld))
+                Selected = new Language{Name = SelectedOld.ToString()};
         }
 
         public void Clear()
         {
-            All.Clear();
+            All.ToList().Clear();
         }
 
 

@@ -65,6 +65,8 @@ namespace KCS_LabelEditor_2
         public MainWindow()
         {
             InitializeComponent();
+            DataContext = this;
+
 
             Labels = new Labels(this);
             Languages = new Languages(this);
@@ -80,6 +82,7 @@ namespace KCS_LabelEditor_2
             ReloadLabels();
 
             Timer = new BackgroundTimer(this);
+            Timer.Init();
             Timer.Start();
         }
 

@@ -28,7 +28,7 @@ namespace KCS_LabelEditor_2.Klassen
             get => new FileId { Name = Settings.Default.FileId };
             set
             {
-                Settings.Default.FileId = value.Name;
+                Settings.Default.FileId = value?.Name ?? "";
                 OnPropertyChanged();
             }
         }
@@ -66,7 +66,7 @@ namespace KCS_LabelEditor_2.Klassen
 
         public void Clear()
         {
-            All.Clear();
+            All.ToList().Clear();
         }
     }
 }
