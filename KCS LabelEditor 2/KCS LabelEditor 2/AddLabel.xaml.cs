@@ -18,7 +18,7 @@ namespace KCS_LabelEditor_2
             InitializeComponent();
         }
 
-        private bool ValidateForm()
+        private bool CanClose()
         {
             var ok = true;
             if (string.IsNullOrWhiteSpace(Id.Text))
@@ -35,7 +35,7 @@ namespace KCS_LabelEditor_2
                 ok = false;
             }
 
-            if (MainWindow.IdExists(Id.Text))
+            if (MainWindow.Labels.IdExists(Id.Text))
             {
                 MessageBox.Show("Id ist bereits vorhanden.", "Id gefunden", MessageBoxButton.OK, MessageBoxImage.Exclamation);
                 ok = false;
@@ -47,7 +47,7 @@ namespace KCS_LabelEditor_2
         private void OkButton_Click(object sender, RoutedEventArgs e)
         {
 
-            if (!ValidateForm())
+            if (!CanClose())
             {
                 return;
             }

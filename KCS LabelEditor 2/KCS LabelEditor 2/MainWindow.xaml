@@ -18,8 +18,8 @@
         </DockPanel>
 
         <TextBox x:Name="PathTextbox" Height="28" VerticalAlignment="Top" Margin="29,38,0,0" Text="{Binding Path=AxLabelPath}" HorizontalAlignment="Left" Width="300"/>
-        <ComboBox x:Name="FileIdCombobox" Margin="391,38,0,0" Height="27" Width="200" SelectedItem="{Binding SelectedFileId}" ItemsSource="{Binding FileIds}" SelectionChanged="FileId_SelectionChanged" HorizontalAlignment="Left" VerticalAlignment="Top"/>
-        <ComboBox x:Name="LanguageCombobox" Margin="613,38,0,0" Height="27" Width="200" SelectedItem="{Binding SelectedLanguage}" ItemsSource="{Binding Languages}" SelectionChanged="Language_SelectionChanged" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <ComboBox x:Name="FileIdCombobox" Margin="391,38,0,0" Height="27" Width="200" SelectedItem="{Binding Selected}" SelectionChanged="FileId_SelectionChanged" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <ComboBox x:Name="LanguageCombobox" Margin="613,38,0,0" Height="27" Width="200" SelectedItem="{Binding Selected}" SelectionChanged="Language_SelectionChanged" HorizontalAlignment="Left" VerticalAlignment="Top"/>
         <CheckBox x:Name="AutoTranslateCheckbox" Content="AutoTranslate" VerticalAlignment="Top" Margin="1194,38,0,0" Height="27" Width="99" IsChecked="{Binding AutoTranslate}" HorizontalAlignment="Left"/>
         <Button x:Name="TranslateButton" Content="Translate" VerticalAlignment="Top" Height="27" Width="90" Margin="1317,38,0,0" Click="TranslateButton_Click" HorizontalAlignment="Left"/>
 
@@ -34,7 +34,7 @@
                 <RowDefinition Height="50*"/>
                 <RowDefinition Height="50*"/>
             </Grid.RowDefinitions>
-            <DataGrid Grid.Row="0" x:Name="MainGrid" SelectedItem="{Binding SelectedLabel}" AutoGeneratingColumn="InitColumns" SelectionChanged="MainGrid_SelectionChanged" CanUserAddRows="False" SelectionMode="Single" CopyingRowClipboardContent="Grids_CopyingRowClipboardContent" Margin="5"/>
+            <DataGrid Grid.Row="0" x:Name="MainGrid" SelectedItem="{Binding Path=Selected}" AutoGeneratingColumn="InitColumns" SelectionChanged="MainGrid_SelectionChanged" CanUserAddRows="False" SelectionMode="Single" CopyingRowClipboardContent="Grids_CopyingRowClipboardContent" Margin="5"/>
             <DataGrid Grid.Row="1" x:Name="SubGrid" AutoGeneratingColumn="InitColumns" CanUserAddRows="False" CopyingRowClipboardContent="Grids_CopyingRowClipboardContent" Margin="5"/>
         </Grid>
     </Grid>

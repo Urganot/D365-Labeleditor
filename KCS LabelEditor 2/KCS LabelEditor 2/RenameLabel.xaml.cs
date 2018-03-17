@@ -63,7 +63,7 @@ namespace KCS_LabelEditor_2
                 ok = false;
             }
 
-            if (_mainWindow.IdExists(NewIdTextbox.Text))
+            if (_mainWindow.Labels.IdExists(NewIdTextbox.Text))
             {
                 MessageBox.Show("Id ist bereits vorhanden.", "Id gefunden", MessageBoxButton.OK, MessageBoxImage.Exclamation);
                 ok = false;

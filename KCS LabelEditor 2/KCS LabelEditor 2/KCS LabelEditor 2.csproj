@@ -58,8 +58,15 @@
     <Compile Include="AddLabel.xaml.cs">
       <DependentUpon>AddLabel.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Klassen\BackgroundTimer.cs" />
+    <Compile Include="Klassen\FileIds.cs" />
     <Compile Include="Klassen\Helper.cs" />
     <Compile Include="Klassen\LabelFile.cs" />
+    <Compile Include="Klassen\LabelFiles.cs" />
+    <Compile Include="Klassen\Labels.cs" />
+    <Compile Include="Klassen\Languages.cs" />
+    <Compile Include="Klassen\ObservableList.cs" />
+    <Compile Include="Klassen\XmlFiles.cs" />
     <Compile Include="RenameLabel.xaml.cs">
       <DependentUpon>RenameLabel.xaml</DependentUpon>
     </Compile>
