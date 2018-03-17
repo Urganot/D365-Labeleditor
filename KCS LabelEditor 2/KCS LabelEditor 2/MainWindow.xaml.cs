@@ -1,23 +1,12 @@
 ﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Collections.ObjectModel;
 using System.ComponentModel;
-using System.IO;
 using System.Linq;
 using System.Reflection;
 using System.Runtime.CompilerServices;
-using System.Timers;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
 using System.Windows.Forms;
-using System.Windows.Threading;
-using System.Xml.Linq;
-using KCS_LabelEditor_2.Klassen;
 using KCS_LabelEditor_2.Properties;
-using Label = KCS_LabelEditor_2.Klassen.Label;
-using MessageBox = System.Windows.MessageBox;
 
 namespace KCS_LabelEditor_2
 {

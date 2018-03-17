@@ -1,11 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace KCS_LabelEditor_2.Klassen
+namespace KCS_LabelEditor_2
 {
     public class LabelFiles
     {
@@ -17,7 +14,6 @@ namespace KCS_LabelEditor_2.Klassen
         {
             _mainWindow = mainWindow;
         }
-
 
         public void Init()
         {
@@ -64,7 +60,6 @@ namespace KCS_LabelEditor_2.Klassen
             }
 
             _mainWindow.Changed = false;
-
         }
     }
 }

@@ -1,17 +1,13 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.IO;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Data;
-using System.Windows.Documents;
 using KCS_LabelEditor_2.Properties;
 
-namespace KCS_LabelEditor_2.Klassen
+namespace KCS_LabelEditor_2
 {
     public class Labels : ObservableList
     {
@@ -107,22 +103,22 @@ namespace KCS_LabelEditor_2.Klassen
 
         private bool ValidateDelete()
         {
-            bool ok = true;
+            var ok = true;
 
-            ok = ok && MessageBoxResult.Yes == MessageBox.Show($"Soll das ausgewählte Label {Selected.Id} gelöscht werden?", "Label löschen", MessageBoxButton.YesNo, MessageBoxImage.Question);
+            ok = MessageBoxResult.Yes == MessageBox.Show($"Soll das ausgewählte Label {Selected.Id} gelöscht werden?", "Label löschen", MessageBoxButton.YesNo, MessageBoxImage.Question) && ok;
 
             return ok;
         }
 
         private bool ValidateSave(EventArgs e = null)
         {
-            bool ok = true;
+            var ok = true;
 
             if (e is CancelEventArgs ex)
             {
                 if (_mainWindow.ReadFilesNew.All.Any(x => x.Changed))
                 {
-                    MessageBoxResult messageResult = MessageBox.Show(
+                    var messageResult = MessageBox.Show(
                         "Datei wurde geändert. Es kann nicht gespeichert werden!", "Datei wurde geändert",
                         MessageBoxButton.OKCancel, MessageBoxImage.Warning);
 

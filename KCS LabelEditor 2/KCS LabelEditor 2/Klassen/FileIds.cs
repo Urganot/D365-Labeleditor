@@ -1,22 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Collections.ObjectModel;
+﻿using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Linq;
-using System.Runtime.CompilerServices;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Data;
 using KCS_LabelEditor_2.Properties;
 
-namespace KCS_LabelEditor_2.Klassen
+namespace KCS_LabelEditor_2
 {
     public class FileIds : ObservableList
     {
 
-        public ObservableCollection<FileId> All = new ObservableCollection<FileId>();
+        private readonly ObservableCollection<FileId> _all = new ObservableCollection<FileId>();
 
-        private MainWindow _mainWindow;
+        private readonly MainWindow _mainWindow;
 
         public FileIds(MainWindow mainWindow)
         {
@@ -35,7 +30,7 @@ namespace KCS_LabelEditor_2.Klassen
 
         public ICollectionView GetView()
         {
-            return new CollectionViewSource { Source = All }.View;
+            return new CollectionViewSource { Source = _all }.View;
         }
 
         public void Init()
@@ -51,22 +46,22 @@ namespace KCS_LabelEditor_2.Klassen
         }
         private void CheckSelected()
         {
-            if (!All.Contains(Selected))
+            if (!_all.Contains(Selected))
                 Selected = null;
         }
 
         public void Add(FileId fileId)
         {
-            if (!All.Contains(fileId))
+            if (!_all.Contains(fileId))
             {
-                All.Add(fileId);
+                _all.Add(fileId);
             }
 
         }
 
         public void Clear()
         {
-            All.ToList().Clear();
+            _all.ToList().Clear();
         }
     }
 }

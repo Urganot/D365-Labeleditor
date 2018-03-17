@@ -1,6 +1,6 @@
 ﻿using System.IO;
 
-namespace KCS_LabelEditor_2.Klassen
+namespace KCS_LabelEditor_2
 {
     public class LabelFile
     {

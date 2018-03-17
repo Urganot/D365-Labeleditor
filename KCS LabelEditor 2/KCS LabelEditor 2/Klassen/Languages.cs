@@ -1,21 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Collections.ObjectModel;
+﻿using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Linq;
-using System.Runtime.CompilerServices;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Data;
 using KCS_LabelEditor_2.Properties;
 
-namespace KCS_LabelEditor_2.Klassen
+namespace KCS_LabelEditor_2
 {
     public class Languages : ObservableList
     {
         public ObservableCollection<Language> All = new ObservableCollection<Language>();
 
-        private MainWindow _mainWindow;
+        private readonly MainWindow _mainWindow;
 
         public Languages(MainWindow mainWindow)
         {
@@ -24,10 +19,10 @@ namespace KCS_LabelEditor_2.Klassen
 
         public Language Selected
         {
-            get => new Language { Name = Settings.Default.Language };
+            get => new Language(Settings.Default.Language);
             set
             {
-                Settings.Default.Language = value?.Name ??"";
+                Settings.Default.Language = value?.Name ?? "";
                 OnPropertyChanged();
             }
         }
@@ -55,7 +50,7 @@ namespace KCS_LabelEditor_2.Klassen
         private void CheckSelected()
         {
             if (All.Contains(SelectedOld))
-                Selected = new Language{Name = SelectedOld.ToString()};
+                Selected = new Language(SelectedOld.ToString());
         }
 
         public void Clear()

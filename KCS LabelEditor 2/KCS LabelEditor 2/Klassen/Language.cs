@@ -1,10 +1,15 @@
 ﻿using System;
 
-namespace KCS_LabelEditor_2.Klassen
+namespace KCS_LabelEditor_2
 {
     public class Language : IEquatable<Language>
     {
-        public string Name { get; set; }
+        public Language(string name)
+        {
+            Name = name;
+        }
+
+        public string Name { get; }
 
         public override string ToString()
         {

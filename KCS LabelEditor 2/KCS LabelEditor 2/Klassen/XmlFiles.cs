@@ -1,12 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Xml.Linq;
 
-namespace KCS_LabelEditor_2.Klassen
+namespace KCS_LabelEditor_2
 {
     public class XmlFiles
     {
@@ -48,7 +44,7 @@ namespace KCS_LabelEditor_2.Klassen
                     Name = rootElement.Element("Name")?.Value,
                     FileId = new FileId { Name = rootElement.Element("LabelFileId")?.Value },
                     LabelContentFileName = rootElement.Element("LabelContentFileName")?.Value,
-                    Language = new Language { Name = rootElement.Element("Language")?.Value ?? "en-Us" }
+                    Language = new Language(rootElement.Element("Language")?.Value ?? "en-Us")
                 };
 
                 All.Add(xmlFile);

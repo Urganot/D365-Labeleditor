@@ -1,20 +1,16 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Threading;
 
-namespace KCS_LabelEditor_2.Klassen
+namespace KCS_LabelEditor_2
 {
     public class BackgroundTimer
     {
-        public DispatcherTimer Timer = new DispatcherTimer();
+        private readonly DispatcherTimer _timer = new DispatcherTimer();
 
-        public Boolean DontReload { get; set; }
+        private bool DontReload { get; set; }
 
-        private MainWindow _mainWindow;
+        private readonly MainWindow _mainWindow;
 
         public BackgroundTimer(MainWindow mainWindow)
         {
@@ -23,18 +19,18 @@ namespace KCS_LabelEditor_2.Klassen
 
         public void Init()
         {
-            Timer.Interval = TimeSpan.FromSeconds(1);
-            Timer.Tick += BackGroundChangesTimerHandler;
+            _timer.Interval = TimeSpan.FromSeconds(1);
+            _timer.Tick += BackGroundChangesTimerHandler;
         }
 
         public void Start()
         {
-            Timer.Start();
+            _timer.Start();
         }
 
         public void Stop()
         {
-            Timer.Stop();
+            _timer.Stop();
         }
 
         private void BackGroundChangesTimerHandler(object sender, EventArgs e)
@@ -53,7 +49,7 @@ namespace KCS_LabelEditor_2.Klassen
             if (!changed || DontReload)
                 return;
 
-            Timer.Stop();
+            _timer.Stop();
             var result = MessageBox.Show("Datei wurde geändert soll diese neu geladen werden?", "Datei geändert", MessageBoxButton.YesNo, MessageBoxImage.Warning);
             switch (result)
             {
@@ -70,7 +66,7 @@ namespace KCS_LabelEditor_2.Klassen
 
         public bool IsRunning()
         {
-            return Timer.IsEnabled;
+            return _timer.IsEnabled;
         }
     }
 }
