@@ -11,6 +11,7 @@
             <Menu DockPanel.Dock="Top" Height="20" VerticalAlignment="Top">
                 <MenuItem Header="_File">
                     <MenuItem x:Name="SaveButton" Header="_Save" Click="SaveButton_Click" />
+                    <MenuItem x:Name="ReloadButton" Header="_Reload" Click="ReloadButton_Click" />
                     <Separator />
                     <MenuItem x:Name="ExitButton" Header="_Exit" Click="ExitButton_Click" />
                 </MenuItem>

@@ -237,6 +237,11 @@ namespace KCS_LabelEditor_2
             e.Column.Width = new DataGridLength(attribute.Width, attribute.WidthType);
             e.Column.IsReadOnly = attribute.IsReadOnly;
         }
+
+        private void ReloadButton_Click(object sender, RoutedEventArgs e)
+        {
+            ReloadLabels();
+        }
         #endregion
 
     }
