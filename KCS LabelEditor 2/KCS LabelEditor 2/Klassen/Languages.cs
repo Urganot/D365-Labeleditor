@@ -35,7 +35,6 @@ namespace KCS_LabelEditor_2
 
         public void Init()
         {
-            SelectedOld = Selected;
             Clear();
 
             foreach (var xmlFile in _mainWindow.XmlFiles.All)
@@ -49,8 +48,8 @@ namespace KCS_LabelEditor_2
 
         private void CheckSelected()
         {
-            if (All.Contains(SelectedOld))
-                Selected = new Language(SelectedOld.ToString());
+            if (!All.Contains(Selected))
+                Selected = null;
         }
 
         public void Clear()

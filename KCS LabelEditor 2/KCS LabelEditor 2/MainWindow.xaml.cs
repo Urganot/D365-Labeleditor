@@ -95,9 +95,9 @@ namespace KCS_LabelEditor_2
         private void SetSubGridFilter()
         {
             if (Labels.Selected != null)
-                ((ICollectionView)SubGrid.ItemsSource).Filter = item => !String.Equals(((Label)item).Language, Languages.Selected.ToString(), StringComparison.CurrentCultureIgnoreCase)
+                ((ICollectionView)SubGrid.ItemsSource).Filter = item => !Equals(((Label)item).Language, Languages.Selected)
                                                                         && String.Equals(((Label)item).Id, Labels.Selected.Id, StringComparison.CurrentCultureIgnoreCase)
-                                                                        && String.Equals(((Label)item).FileId, FileIds.Selected.ToString(), StringComparison.CurrentCultureIgnoreCase);
+                                                                        && Equals(((Label)item).FileId, FileIds.Selected);
             else
                 ((ICollectionView)SubGrid.ItemsSource).Filter = item => false;
         }
@@ -107,8 +107,8 @@ namespace KCS_LabelEditor_2
             if (MainGrid.ItemsSource == null || SubGrid.ItemsSource == null || Languages.Selected == null)
                 return;
 
-            ((ICollectionView)MainGrid.ItemsSource).Filter = item => String.Equals(((Label)item).Language, Languages.Selected.ToString(), StringComparison.CurrentCultureIgnoreCase)
-                                                                        && String.Equals(((Label)item).FileId, FileIds.Selected.ToString(), StringComparison.CurrentCultureIgnoreCase);
+            ((ICollectionView)MainGrid.ItemsSource).Filter = item => Equals(((Label)item).Language, Languages.Selected)
+                                                                       && Equals(((Label)item).FileId, FileIds.Selected);
             SetSubGridFilter();
         }
 
@@ -148,8 +148,7 @@ namespace KCS_LabelEditor_2
             ReloadLabels();
         }
 
- 
-        private void Window_Closing(object sender, CancelEventArgs e)
+         private void Window_Closing(object sender, CancelEventArgs e)
         {
             Settings.Default.Save();
 
@@ -175,6 +174,10 @@ namespace KCS_LabelEditor_2
 
         private void RenameLabelButton_Click(object sender, RoutedEventArgs e)
         {
+
+            if (!Labels.ValidateRename())
+                return;
+
             var dialog = new RenameLabel(this, Labels.Selected.Id);
 
             if (dialog.ShowDialog() ?? false)
@@ -235,5 +238,6 @@ namespace KCS_LabelEditor_2
             e.Column.IsReadOnly = attribute.IsReadOnly;
         }
         #endregion
+
     }
 }

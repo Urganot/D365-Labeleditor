@@ -6,11 +6,11 @@ namespace KCS_LabelEditor_2
 {
     public class Label : INotifyPropertyChanged
     {
-        private string _language;
+        private Language _language;
         private string _comment;
         private string _text;
         private string _id;
-        private string _fileId;
+        private FileId _fileId;
 
         private readonly MainWindow _mainWindow;
 
@@ -21,7 +21,7 @@ namespace KCS_LabelEditor_2
 
 
         [MyWpfAttributes(IsReadOnly = true,Width = 8,WidthType = DataGridLengthUnitType.Star)]
-        public string FileId
+        public FileId FileId
         {
             get => _fileId;
             set
@@ -47,7 +47,7 @@ namespace KCS_LabelEditor_2
 
 
         [MyWpfAttributes(IsReadOnly = true, Width = 5, WidthType = DataGridLengthUnitType.Star)]
-        public string Language
+        public Language Language
         {
             get => _language;
             set

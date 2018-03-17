@@ -47,8 +47,8 @@ namespace KCS_LabelEditor_2
 
                     var label = new Label(_mainWindow)
                     {
-                        FileId = xmlFile.FileId.ToString(),
-                        Language = xmlFile.Language.ToString(),
+                        FileId = xmlFile.FileId,
+                        Language = xmlFile.Language,
                         Text = splitLine[1],
                         Id = splitLine[0],
                         Comment = comment

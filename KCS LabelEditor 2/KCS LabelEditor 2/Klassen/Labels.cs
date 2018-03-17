@@ -30,7 +30,7 @@ namespace KCS_LabelEditor_2
                 return;
 
             var labelsToRemove = All.ToList()
-                .Where(x => x.FileId == Selected.FileId && x.Id == Selected.Id)
+                .Where(x => Equals(x.FileId, Selected.FileId) && x.Id == Selected.Id)
                 .ToList();
             foreach (var labelToRemove in labelsToRemove)
             {
@@ -41,8 +41,8 @@ namespace KCS_LabelEditor_2
         public void Translate()
         {
             All.ToList()
-                .Where(x => x.Id == Selected.Id && x.Language != Selected.Language && x.FileId == Selected.FileId).ToList()
-                .ForEach(y => y.Text = GoogleTranslation.Translation.Translate(Selected.Text, Selected.Language, y.Language));
+                .Where(x => x.Id == Selected.Id && !Equals(x.Language, Selected.Language) && Equals(x.FileId, Selected.FileId)).ToList()
+                .ForEach(y => y.Text = GoogleTranslation.Translation.Translate(Selected.Text, Selected.Language.ToString(), y.Language.ToString()));
         }
 
         public void Save(EventArgs e = null)
@@ -67,7 +67,7 @@ namespace KCS_LabelEditor_2
         {
             using (var writer = new StreamWriter(readFile.Path))
             {
-                foreach (var label in All.Where(x => x.Language == readFile.Language.ToString() && x.FileId == readFile.FileId.ToString()))
+                foreach (var label in All.Where(x => Equals(x.Language, readFile.Language) && Equals(x.FileId, readFile.FileId)))
                 {
                     writer.WriteLine(label.Id + "=" + label.Text);
                     if (!string.IsNullOrWhiteSpace(label.Comment))
@@ -83,9 +83,9 @@ namespace KCS_LabelEditor_2
 
             var label = new Label(_mainWindow)
             {
-                FileId = _mainWindow.FileIds.Selected.ToString(),
+                FileId = _mainWindow.FileIds.Selected,
                 Id = id,
-                Language = language.ToString(),
+                Language = language,
                 Text = text
             };
             Add(label);
@@ -105,7 +105,14 @@ namespace KCS_LabelEditor_2
         {
             var ok = true;
 
-            ok = MessageBoxResult.Yes == MessageBox.Show($"Soll das ausgewählte Label {Selected.Id} gelöscht werden?", "Label löschen", MessageBoxButton.YesNo, MessageBoxImage.Question) && ok;
+            if (Selected == null)
+            {
+                MessageBox.Show("Kein Label ausgewählt", "Kein Label ausgewählt", MessageBoxButton.OK,
+                    MessageBoxImage.Warning);
+                ok = false;
+            }
+
+            ok = ok && MessageBoxResult.Yes == MessageBox.Show($"Soll das ausgewählte Label {Selected.Id} gelöscht werden?", "Label löschen", MessageBoxButton.YesNo, MessageBoxImage.Question);
 
             return ok;
         }
@@ -189,11 +196,28 @@ namespace KCS_LabelEditor_2
 
         public void Rename(string newId)
         {
+            if (!ValidateRename())
+                return;
+
             All.ToList()
                 .Where(x => x.FileId.Equals(Selected.FileId) && x.Id == Selected.Id).ToList()
                 .ForEach(y => y.Id = newId);
         }
 
+        public bool ValidateRename()
+        {
+            var ok = true;
+
+            if (Selected == null)
+            {
+                MessageBox.Show("Kein Label ausgewählt", "Kein Label ausgewählt", MessageBoxButton.OK,
+                    MessageBoxImage.Warning);
+                ok = false;
+            }
+
+
+            return ok;
+        }
 
         public void Clear()
         {
