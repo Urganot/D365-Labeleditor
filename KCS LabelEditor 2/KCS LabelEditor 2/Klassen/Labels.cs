@@ -78,12 +78,12 @@ namespace KCS_LabelEditor_2
 
         public void AddNewLabel(string id, string text, Language language)
         {
-            if (Settings.Default.AutoTranslate && language.ToString() != Selected.Language)
-                text = GoogleTranslation.Translation.Translate(text, Selected.Language, language.ToString());
+            if (Settings.Default.AutoTranslate && !Equals(language, _mainWindow.Languages.Selected))
+                text = GoogleTranslation.Translation.Translate(text, _mainWindow.Languages.Selected.ToString(), language.ToString());
 
             var label = new Label(_mainWindow)
             {
-                FileId = Selected.FileId,
+                FileId = _mainWindow.FileIds.Selected.ToString(),
                 Id = id,
                 Language = language.ToString(),
                 Text = text
@@ -164,14 +164,26 @@ namespace KCS_LabelEditor_2
             return new CollectionViewSource { Source = All }.View;
         }
 
-        public void AddLabel(string id, string text, string helpText)
+        public void AddLabel(AddLabel dialog)
         {
+            var id = dialog.Id.Text;
+            var text = dialog.Text.Text;
+            var helpText = dialog.HelpText.Text;
+            var viewText = dialog.ViewText.Text;
+            var maintainText = dialog.MaintainText.Text;
+
             foreach (var language in _mainWindow.Languages.All)
             {
                 AddNewLabel(id, text, language);
 
                 if (!string.IsNullOrWhiteSpace(helpText))
                     AddNewLabel(id + "Help", helpText, language);
+
+                if (!string.IsNullOrWhiteSpace(viewText))
+                    AddNewLabel(id + "View", viewText, language);
+
+                if (!string.IsNullOrWhiteSpace(maintainText))
+                    AddNewLabel(id + "Maintain", maintainText, language);
             }
         }
 

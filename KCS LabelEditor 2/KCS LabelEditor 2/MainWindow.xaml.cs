@@ -187,7 +187,7 @@ namespace KCS_LabelEditor_2
             var dialog = new AddLabel(this);
 
             if (dialog.ShowDialog() ?? false)
-                Labels.AddLabel(dialog.Id.Text, dialog.Text.Text, dialog.HelpText.Text);
+                Labels.AddLabel(dialog);
         }
 
         private void SaveButton_Click(object sender, RoutedEventArgs e)

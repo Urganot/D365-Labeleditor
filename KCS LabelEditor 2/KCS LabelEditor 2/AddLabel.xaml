@@ -5,17 +5,41 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:KCS_LabelEditor_2"
         mc:Ignorable="d"
-        Title="AddLabel" Height="201.331" Width="411.97" ResizeMode="NoResize"
+        Title="AddLabel" Height="235.5" Width="411.97" ResizeMode="NoResize"
         FocusManager.FocusedElement="{Binding ElementName=Id}" WindowStartupLocation="CenterOwner" Loaded="Window_Loaded">
     <Grid>
-        <Button x:Name="OkButton" Content="Ok" HorizontalAlignment="Left" Margin="98,129,0,0" VerticalAlignment="Top" Width="74" Click="OkButton_Click" IsDefault="True"/>
-        <Button x:Name="CancelButton" Content="Cancel" HorizontalAlignment="Left" Margin="218,129,0,0" VerticalAlignment="Top" Width="74" IsCancel="True"/>
-        <TextBox x:Name="Id" HorizontalAlignment="Left" Height="23" Margin="72,27,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="280" />
-        <TextBox x:Name="Text" HorizontalAlignment="Left" Height="23" Margin="72,62,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="280" AutomationProperties.IsRequiredForForm="True"/>
-        <Label x:Name="IdLabel" Content="Id" HorizontalAlignment="Left" Margin="52,27,0,0" VerticalAlignment="Top" Target="{Binding ElementName=Id}"/>
-        <Label x:Name="TextLabel" Content="Text" HorizontalAlignment="Left" Margin="41,62,0,0" VerticalAlignment="Top" Target="{Binding ElementName=Text}"/>
-        <TextBox x:Name="HelpText" HorizontalAlignment="Left" Height="23" Margin="72,93,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="280" AutomationProperties.IsRequiredForForm="True"/>
-        <Label x:Name="HelpTextLabel" Content="HelpText" HorizontalAlignment="Left" Margin="16,93,0,0" VerticalAlignment="Top" Target="{Binding ElementName=Text}"/>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="20*"/>
+                <ColumnDefinition Width="80*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="10*"/>
+                <RowDefinition Height="10*"/>
+                <RowDefinition Height="10*"/>
+                <RowDefinition Height="10*"/>
+                <RowDefinition Height="10*"/>
+                <RowDefinition Height="12*"/>
+            </Grid.RowDefinitions>
+
+            <Label x:Name="IdLabel" Content="Id" Grid.Column="0" Grid.Row="0" HorizontalAlignment="Right" VerticalAlignment="Center" Height="24" Width="20"/>
+            <TextBox x:Name="Id" Margin="5,5,20,5" TextWrapping="Wrap" Grid.Column="1" Grid.Row="0"/>
+
+            <Label x:Name="TextLabel" Content="Text" Grid.Column="0" Grid.Row="1" HorizontalAlignment="Right" VerticalAlignment="Center" Height="24" Width="31"/>
+            <TextBox x:Name="Text" Margin="5,5,20,5" TextWrapping="Wrap" Grid.Column="1" Grid.Row="1" AutomationProperties.IsRequiredForForm="True"/>
+
+            <Label x:Name="HelpTextLabel" Content="HelpText" Grid.Column="0" Grid.Row="2" HorizontalAlignment="Right" VerticalAlignment="Center" Height="24" Width="56"/>
+            <TextBox x:Name="HelpText" Margin="5,5,20,5" TextWrapping="Wrap" Grid.Column="1" Grid.Row="2" AutomationProperties.IsRequiredForForm="True"/>
+
+            <Label x:Name="ViewTextLabel" Content="ViewText" Grid.Column="0" Grid.Row="3" HorizontalAlignment="Right" VerticalAlignment="Center"/>
+            <TextBox x:Name="ViewText" Margin="5,5,20,5" TextWrapping="Wrap" Grid.Column="1" Grid.Row="3" />
+
+            <Label x:Name="MaintainTextLabel" Content="MaintainText" Grid.Column="0" Grid.Row="4" HorizontalAlignment="Right" VerticalAlignment="Center"/>
+            <TextBox x:Name="MaintainText" Margin="5,5,20,5" TextWrapping="Wrap" Grid.Column="1" Grid.Row="4" />
+
+            <Button x:Name="OkButton" Content="Ok"  Width="75" Height="20" Click="OkButton_Click" IsDefault="True" Grid.Row="5" Grid.Column="1" Margin="0,5,200,5" HorizontalAlignment="Right" VerticalAlignment="Center"/>
+            <Button x:Name="CancelButton" Content="Cancel"  Width="75" IsCancel="True" Height="20" Grid.Row="5" Grid.Column="1" Margin="0,5,100,5" HorizontalAlignment="Right" VerticalAlignment="Center"/>
+        </Grid>
 
     </Grid>
 </Window>
