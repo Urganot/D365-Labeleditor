@@ -7,31 +7,44 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="797.368" Width="1548.421" Closing="Window_Closing">
     <Grid x:Name="Main">
-        <DockPanel Grid.ColumnSpan="5">
-            <Menu DockPanel.Dock="Top" Height="20" VerticalAlignment="Top">
-                <MenuItem Header="_File">
-                    <MenuItem x:Name="SaveButton" Header="_Save" Click="SaveButton_Click" />
-                    <MenuItem x:Name="ReloadButton" Header="_Reload" Click="ReloadButton_Click" />
-                    <Separator />
-                    <MenuItem x:Name="ExitButton" Header="_Exit" Click="ExitButton_Click" />
-                </MenuItem>
-            </Menu>
-        </DockPanel>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="21*"/>
+            <RowDefinition Height="352*"/>
+        </Grid.RowDefinitions>
+        <Menu Grid.Row="0" DockPanel.Dock="Top">
+            <MenuItem Header="_File">
+                <MenuItem x:Name="SaveButton" Header="_Save" Click="SaveButton_Click" />
+                <MenuItem x:Name="ReloadButton" Header="_Reload" Click="ReloadButton_Click" />
+                <Separator />
+                <MenuItem x:Name="ExitButton" Header="_Exit" Click="ExitButton_Click" />
+            </MenuItem>
+            <MenuItem Header="Labels">
+                <MenuItem x:Name="AddLabelButton" Header="Add" Click="AddLabelButton_Click" />
+                <MenuItem x:Name="DeleteLabelButton" Header="Delete" Click="DeleteLabelButton_Click" />
+                <MenuItem x:Name="RenameLabelButton" Header="Rename" Click="RenameLabelButton_Click" />
+                <MenuItem x:Name="TranslateLabelButton" Header="Translate" Click="TranslateButton_Click" />
+                <MenuItem x:Name="ShowDiffButton" Header="Show Changes" Click="ShowDiffButton_Click" />
+            </MenuItem>
+        </Menu>
 
-        <TextBox x:Name="PathTextbox" Height="28" VerticalAlignment="Top" Margin="29,38,0,0" Text="{Binding Path=AxLabelPath}" HorizontalAlignment="Left" Width="300" IsReadOnly="True"/>
-        <ComboBox x:Name="FileIdCombobox" Margin="391,38,0,0" Height="27" Width="200" SelectedItem="{Binding Selected}" SelectionChanged="FileId_SelectionChanged" HorizontalAlignment="Left" VerticalAlignment="Top"/>
-        <ComboBox x:Name="LanguageCombobox" Margin="613,38,0,0" Height="27" Width="200" SelectedItem="{Binding Selected}" SelectionChanged="Language_SelectionChanged" HorizontalAlignment="Left" VerticalAlignment="Top"/>
-        <CheckBox x:Name="AutoTranslateCheckbox" Content="AutoTranslate" VerticalAlignment="Top" Margin="1194,38,0,0" Height="27" Width="99" IsChecked="{Binding AutoTranslate}" HorizontalAlignment="Left"/>
-        <Button x:Name="TranslateButton" Content="Translate" VerticalAlignment="Top" Height="27" Width="90" Margin="1317,38,0,0" Click="TranslateButton_Click" HorizontalAlignment="Left"/>
-
-        <Button x:Name="AddLabelButton" Content="AddLabel" VerticalAlignment="Top" Margin="837,38,0,0" Height="27" Width="90" Click="AddLabelButton_Click" HorizontalAlignment="Left"/>
-        <Button Name="GetPathButton" Content="..." Margin="334,38,0,0" Click="GetPath_Click"  Height="27" Width="27" HorizontalAlignment="Left" VerticalAlignment="Top" />
+        <Grid Grid.Row="1">
+            <TextBox x:Name="PathTextbox" Height="28" VerticalAlignment="Top" Margin="29,5,0,0" Text="{Binding Path=AxLabelPath}" HorizontalAlignment="Left" Width="300" IsReadOnly="True"/>
+            <Button Name="GetPathButton" Content="..." Margin="334,5,0,0" Click="GetPath_Click"  Height="27" Width="27" HorizontalAlignment="Left" VerticalAlignment="Top" />
+            <Label Content="_FileId" VerticalAlignment="Top" Margin="380,5,-380,0" />
+            <ComboBox x:Name="FileIdCombobox" Margin="420,5,0,0" Height="27" Width="200" SelectedItem="{Binding Selected}" SelectionChanged="FileId_SelectionChanged" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+            <Label Content="_Languages" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="650,5,0,0"/>
+            <ComboBox x:Name="LanguageCombobox" Margin="722,5,0,0" Height="27" Width="200" SelectedItem="{Binding Selected}" SelectionChanged="Language_SelectionChanged" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+            <CheckBox x:Name="AutoTranslateCheckbox" Content="AutoTranslate" VerticalAlignment="Top" Margin="950,5,0,0" Height="27" Width="98" IsChecked="{Binding AutoTranslate}" HorizontalAlignment="Left"/>
+        </Grid>
+        <!--<Button x:Name="AddLabelButton" Content="AddLabel" VerticalAlignment="Top" Margin="837,38,0,0" Height="27" Width="90" Click="AddLabelButton_Click" HorizontalAlignment="Left"/>
         <Button x:Name="RenameLabelButton" Content="RenameLabel" VerticalAlignment="Top" Margin="1064,38,0,0" Click="RenameLabelButton_Click" Height="27" Width="90" HorizontalAlignment="Left"/>
         <Button x:Name="DeleteLabelButton" Content="DeleteLabel" VerticalAlignment="Top" Margin="950,38,0,0" Click="DeleteLabelButton_Click" Height="27" Width="90" HorizontalAlignment="Left"/>
-        <Button x:Name="ShowDiffButton" Content="ShowDiff" VerticalAlignment="Top" Margin="1427,39,0,0" Click="ShowDiffButton_Click" Height="27" Width="90" HorizontalAlignment="Left"/>
+        <Button x:Name="TranslateButton" Content="Translate" VerticalAlignment="Top" Height="27" Width="90" Margin="1317,38,0,0" Click="TranslateButton_Click" HorizontalAlignment="Left"/>
+        <Button x:Name="ShowDiffButton" Content="ShowDiff" VerticalAlignment="Top" Margin="1094,46,0,0" Click="ShowDiffButton_Click" Height="27" Width="90" HorizontalAlignment="Left"/>-->
 
 
-        <Grid Margin="5,90,5,5">
+        <Grid Margin="5" Grid.Row="2">
             <Grid.RowDefinitions>
                 <RowDefinition Height="50*"/>
                 <RowDefinition Height="50*"/>
