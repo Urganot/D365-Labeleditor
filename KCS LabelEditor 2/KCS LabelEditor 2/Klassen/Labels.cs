@@ -49,9 +49,26 @@ namespace KCS_LabelEditor_2
 
         public void Translate()
         {
+            if (!ValidateTranslate())
+                return;
+
             All.ToList()
                 .Where(x => x.Id == Selected.Id && !Equals(x.Language, Selected.Language) && Equals(x.FileId, Selected.FileId)).ToList()
                 .ForEach(y => y.Text = GoogleTranslation.Translation.Translate(Selected.Text, Selected.Language.ToString(), y.Language.ToString()));
+        }
+
+        private bool ValidateTranslate()
+        {
+            var ok = true;
+
+            if (Selected == null)
+            {
+                MessageBox.Show("Kein Label ausgewählt", "Kein Label ausgewählt", MessageBoxButton.OK,
+                    MessageBoxImage.Warning);
+                ok = false;
+            }
+
+            return ok;
         }
 
         public void Save(EventArgs e = null)
