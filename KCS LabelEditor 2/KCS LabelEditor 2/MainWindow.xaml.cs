@@ -1,5 +1,6 @@
 ﻿using System;
 using System.ComponentModel;
+using System.ComponentModel.Design;
 using System.Globalization;
 using System.Linq;
 using System.Reflection;
@@ -7,6 +8,7 @@ using System.Runtime.CompilerServices;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Forms;
+using System.Windows.Input;
 using KCS_LabelEditor_2.Properties;
 
 namespace KCS_LabelEditor_2
@@ -130,6 +132,7 @@ namespace KCS_LabelEditor_2
 
             ((ICollectionView)MainGrid.ItemsSource).Filter = item => Equals(((Label)item).Language, Languages.Selected)
                                                                         && Equals(((Label)item).FileId, FileIds.Selected)
+                                                                        && !((Label)item).Deleted
                                                                         && (string.IsNullOrWhiteSpace(SearchString) 
                                                                             || ((Label)item).Text.ToLowerInvariant().Contains(SearchString.ToLowerInvariant()) 
                                                                             || ((Label)item).Id.ToLowerInvariant().Contains(SearchString.ToLowerInvariant()))
@@ -204,9 +207,8 @@ namespace KCS_LabelEditor_2
             e.ClipboardRowContent.Add(currentCell);
         }
 
-        private void RenameLabelButton_Click(object sender, RoutedEventArgs e)
-        {
-
+        private void RenameLabel(object sender, ExecutedRoutedEventArgs executedRoutedEventArgs)
+        { 
             if (!Labels.ValidateRename())
                 return;
 
@@ -217,15 +219,16 @@ namespace KCS_LabelEditor_2
 
         }
 
-        private void AddLabelButton_Click(object sender, RoutedEventArgs e)
+        public void AddLabel(object sender, ExecutedRoutedEventArgs executedRoutedEventArgs)
         {
             var dialog = new AddLabel(this);
 
             if (dialog.ShowDialog() ?? false)
                 Labels.AddLabel(dialog);
+
         }
 
-        private void SaveButton_Click(object sender, RoutedEventArgs e)
+        private void SaveLabel(object sender, ExecutedRoutedEventArgs executedRoutedEventArgs)
         {
             Labels.Save();
         }
@@ -235,12 +238,12 @@ namespace KCS_LabelEditor_2
             Close();
         }
 
-        private void DeleteLabelButton_Click(object sender, RoutedEventArgs e)
+        private void DeleteLabel(object sender, ExecutedRoutedEventArgs executedRoutedEventArgs)
         {
             Labels.Delete();
         }
 
-        private void TranslateButton_Click(object sender, RoutedEventArgs e)
+        private void TranslateLabel(object sender, ExecutedRoutedEventArgs executedRoutedEventArgs)
         {
             Labels.Translate();
         }
@@ -291,9 +294,12 @@ namespace KCS_LabelEditor_2
 
         }
 
-        private void SearchTextbox_TextChanged(object sender, System.Windows.Input.KeyEventArgs e)
+        protected void BlockTheCommand(object sender,
+            CanExecuteRoutedEventArgs e)
         {
-            //SetGridFilter();
+            e.CanExecute = false;
+            e.Handled = true;
         }
+
     }
 }

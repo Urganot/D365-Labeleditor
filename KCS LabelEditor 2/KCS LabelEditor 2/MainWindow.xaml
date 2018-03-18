@@ -4,8 +4,18 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:KCS_LabelEditor_2"
+        xmlns:klassen="clr-namespace:KCS_LabelEditor_2.Klassen"
         mc:Ignorable="d"
         Title="MainWindow" Height="797.368" Width="1548.421" Closing="Window_Closing">
+
+    <Window.CommandBindings>
+        <CommandBinding Command="klassen:CustomCommands.New" Executed="AddLabel" />
+        <CommandBinding Command="klassen:CustomCommands.Rename" Executed="RenameLabel" />
+        <CommandBinding Command="klassen:CustomCommands.Save" Executed="SaveLabel" />
+        <CommandBinding Command="klassen:CustomCommands.Delete" Executed="DeleteLabel" />
+        <CommandBinding Command="klassen:CustomCommands.Translate" Executed="TranslateLabel" />
+    </Window.CommandBindings>
+
     <Grid x:Name="Main">
         <Grid.RowDefinitions>
             <RowDefinition Height="20"/>
@@ -14,16 +24,16 @@
         </Grid.RowDefinitions>
         <Menu Grid.Row="0" DockPanel.Dock="Top">
             <MenuItem Header="_File">
-                <MenuItem x:Name="SaveButton" Header="_Save" Click="SaveButton_Click" />
+                <MenuItem x:Name="SaveButton" Header="_Save" Command="klassen:CustomCommands.Save"/>
                 <MenuItem x:Name="ReloadButton" Header="_Reload" Click="ReloadButton_Click" />
                 <Separator />
                 <MenuItem x:Name="ExitButton" Header="_Exit" Click="ExitButton_Click" />
             </MenuItem>
             <MenuItem Header="Labels">
-                <MenuItem x:Name="AddLabelButton" Header="Add" Click="AddLabelButton_Click" />
-                <MenuItem x:Name="DeleteLabelButton" Header="Delete" Click="DeleteLabelButton_Click" />
-                <MenuItem x:Name="RenameLabelButton" Header="Rename" Click="RenameLabelButton_Click" />
-                <MenuItem x:Name="TranslateLabelButton" Header="Translate" Click="TranslateButton_Click" />
+                <MenuItem x:Name="AddLabelButton" Header="Add" Command="klassen:CustomCommands.New" />
+                <MenuItem x:Name="DeleteLabelButton" Header="Delete" Command="klassen:CustomCommands.Delete"/>
+                <MenuItem x:Name="RenameLabelButton" Header="Rename" Command="klassen:CustomCommands.Rename"/>
+                <MenuItem x:Name="TranslateLabelButton" Header="Translate"  Command="klassen:CustomCommands.Translate" />
                 <MenuItem x:Name="ShowDiffButton" Header="Show Changes" Click="ShowDiffButton_Click" />
             </MenuItem>
         </Menu>
@@ -37,22 +47,16 @@
             <ComboBox x:Name="LanguageCombobox" Margin="722,5,0,0" Height="27" Width="200" SelectedItem="{Binding Selected}" SelectionChanged="Language_SelectionChanged" HorizontalAlignment="Left" VerticalAlignment="Top"/>
             <CheckBox x:Name="AutoTranslateCheckbox" Content="AutoTranslate" VerticalAlignment="Top" Margin="950,5,0,0" Height="27" Width="98" IsChecked="{Binding AutoTranslate}" HorizontalAlignment="Left"/>
             <Label Content="_Search" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="1125,5,0,0"/>
-            <TextBox x:Name="SearchTextbox" Height="28" VerticalAlignment="Top" Margin="1175,4,0,0" HorizontalAlignment="Left" Width="300" TextChanged="SearchTextbox_TextChanged" KeyDown="SearchTextbox_TextChanged"/>
+            <TextBox x:Name="SearchTextbox" Height="28" VerticalAlignment="Top" Margin="1175,4,0,0" HorizontalAlignment="Left" Width="300" TextChanged="SearchTextbox_TextChanged"/>
         </Grid>
-        <!--<Button x:Name="AddLabelButton" Content="AddLabel" VerticalAlignment="Top" Margin="837,38,0,0" Height="27" Width="90" Click="AddLabelButton_Click" HorizontalAlignment="Left"/>
-        <Button x:Name="RenameLabelButton" Content="RenameLabel" VerticalAlignment="Top" Margin="1064,38,0,0" Click="RenameLabelButton_Click" Height="27" Width="90" HorizontalAlignment="Left"/>
-        <Button x:Name="DeleteLabelButton" Content="DeleteLabel" VerticalAlignment="Top" Margin="950,38,0,0" Click="DeleteLabelButton_Click" Height="27" Width="90" HorizontalAlignment="Left"/>
-        <Button x:Name="TranslateButton" Content="Translate" VerticalAlignment="Top" Height="27" Width="90" Margin="1317,38,0,0" Click="TranslateButton_Click" HorizontalAlignment="Left"/>
-        <Button x:Name="ShowDiffButton" Content="ShowDiff" VerticalAlignment="Top" Margin="1094,46,0,0" Click="ShowDiffButton_Click" Height="27" Width="90" HorizontalAlignment="Left"/>-->
-
 
         <Grid Margin="5" Grid.Row="2">
             <Grid.RowDefinitions>
                 <RowDefinition Height="50*"/>
                 <RowDefinition Height="50*"/>
             </Grid.RowDefinitions>
-            <DataGrid Grid.Row="0" x:Name="MainGrid" SelectedItem="{Binding Path=Selected,Mode=TwoWay}" AutoGeneratingColumn="InitColumns" SelectionChanged="MainGrid_SelectionChanged" CanUserAddRows="False" SelectionMode="Single" CopyingRowClipboardContent="Grids_CopyingRowClipboardContent" Margin="5"/>
-            <DataGrid Grid.Row="1" x:Name="SubGrid" AutoGeneratingColumn="InitColumns" CanUserAddRows="False" CopyingRowClipboardContent="Grids_CopyingRowClipboardContent" Margin="5"/>
+            <DataGrid Grid.Row="0" x:Name="MainGrid" SelectedItem="{Binding Path=Selected,Mode=TwoWay}" AutoGeneratingColumn="InitColumns" SelectionChanged="MainGrid_SelectionChanged" CanUserDeleteRows="False" CanUserAddRows="False" SelectionMode="Single" CopyingRowClipboardContent="Grids_CopyingRowClipboardContent" Margin="5"/>
+            <DataGrid Grid.Row="1" x:Name="SubGrid" AutoGeneratingColumn="InitColumns" CopyingRowClipboardContent="Grids_CopyingRowClipboardContent" Margin="5" CanUserAddRows="False" CanUserDeleteRows="False"/>
         </Grid>
     </Grid>
 </Window>
