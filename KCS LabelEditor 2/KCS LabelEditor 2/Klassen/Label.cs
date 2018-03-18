@@ -8,9 +8,9 @@ namespace KCS_LabelEditor_2
     public class Label : INotifyPropertyChanged
     {
         private Language _language;
-        private string _comment;
-        private string _text;
-        private string _id;
+        private string _comment="";
+        private string _text="";
+        private string _id="";
         private FileId _fileId;
 
         private readonly MainWindow _mainWindow;
@@ -80,8 +80,8 @@ namespace KCS_LabelEditor_2
             }
         }
 
-        [MyWpfAttributes(Visible = Visibility.Hidden,IsReadOnly = true)]
-        public string OriginalText { get; set; }
+        [MyWpfAttributes(Visible = Visibility.Hidden, IsReadOnly = true)]
+        public string OriginalText { get; set; } = "";
 
 
         #region Events

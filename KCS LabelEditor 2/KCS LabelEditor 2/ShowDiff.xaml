@@ -7,8 +7,16 @@
         mc:Ignorable="d"
         Title="ShowDiff" Height="450" Width="800">
     <Grid>
-        <DataGrid x:Name="DiffGrid" AutoGeneratingColumn="InitColumns" Margin="5">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="44*"/>
+            <RowDefinition Height="375*"/>
+        </Grid.RowDefinitions>
+        <Label Content="_FileIds" Grid.Row="0" HorizontalAlignment="Left" Margin="109,10,0,0" VerticalAlignment="Top" Target="{Binding ElementName=FileIds}"/>
+        <ComboBox x:Name="FileIds" Grid.Row="0" Margin="157,10,0,0" Height="27" Width="200" HorizontalAlignment="Left" SelectedItem="{Binding SelectedFileId}" VerticalAlignment="Top" SelectionChanged="FileIdCombobox_SelectionChanged"/>
+        <Label Content="_Sprachen" Grid.Row="0" HorizontalAlignment="Left" Margin="368,10,0,0" VerticalAlignment="Top" Target="{Binding ElementName=Languages}"/>
+        <ComboBox x:Name="Languages" Grid.Row="0" Margin="432,10,0,0" Height="27" Width="200" SelectedItem="{Binding SelectedLanguage}" HorizontalAlignment="Left" VerticalAlignment="Top" SelectionChanged="LanguageCombobox_SelectionChanged"/>
 
+        <DataGrid x:Name="DiffGrid" AutoGeneratingColumn="InitColumns" Margin="5" Grid.Row="1">
             <DataGrid.RowStyle>
                 <Style TargetType="DataGridRow">
                     <Style.Triggers>

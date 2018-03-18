@@ -1,33 +1,69 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Reflection;
-using System.Text;
-using System.Windows;
+using System.Runtime.CompilerServices;
 using System.Windows.Controls;
+using System.Windows.Data;
 using System.Windows.Media;
-using DiffMatchPatch;
 
 namespace KCS_LabelEditor_2
 {
     /// <summary>
     /// Interaction logic for ShowDiff.xaml
     /// </summary>
-    public partial class ShowDiff : Window
+    public partial class ShowDiff
     {
         private readonly List<DiffLine> _diffLines = new List<DiffLine>();
 
-        public ShowDiff(Labels labels)
+        private readonly MainWindow _mainWindow;
+        private Language _selectedLanguage;
+        private FileId _selectedFileId;
+
+        public Language SelectedLanguage
         {
-            foreach (var label in labels.All)
+            get => _selectedLanguage;
+            set
+            {
+                _selectedLanguage = value;
+                OnPropertyChanged();
+            }
+
+        }
+
+        public FileId SelectedFileId
+        {
+            get => _selectedFileId;
+            set
+            {
+                _selectedFileId = value;
+                OnPropertyChanged();
+            }
+        }
+
+        public ShowDiff(MainWindow mainWindow)
+        {
+            _mainWindow = mainWindow;
+            foreach (var label in _mainWindow.Labels.All)
             {
                 var diffLine = new DiffLine(label);
                 _diffLines.Add(diffLine);
             }
 
             InitializeComponent();
+            InitData();
+        }
+
+        private void InitData()
+        {
             DataContext = this;
-            DiffGrid.ItemsSource = _diffLines;
+            DiffGrid.ItemsSource = new CollectionViewSource { Source = _diffLines }.View;
+
+            Languages.ItemsSource = _mainWindow.Languages.GetView();
+            FileIds.ItemsSource = _mainWindow.FileIds.GetView();
+
+            SelectedLanguage = _mainWindow.Languages.Selected;
+            SelectedFileId = _mainWindow.FileIds.Selected;
         }
 
         private void InitColumns(object sender, DataGridAutoGeneratingColumnEventArgs e)
@@ -52,135 +88,28 @@ namespace KCS_LabelEditor_2
             e.Column.IsReadOnly = attribute.IsReadOnly;
         }
 
-    }
-
-    public class DiffLine : ObservableList
-    {
-        private string _id;
-        private string _original;
-        private string _new;
-        private Language _language;
-        private FileId _fileId;
-        private bool _changed;
-        private string _result;
-
-        public DiffLine(Label label)
+        private void LanguageCombobox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            CompareText(label, out var oldText, out var newText);
-
-            Id = label.Id;
-            Original = oldText.ToString();
-            New = newText.ToString();
-            Result = label.Text;
-            FileId = label.FileId;
-            Language = label.Language;
-            Changed = label.OriginalText != label.Text;
-
+            SetFilter();
         }
 
-        private static void CompareText(Label label, out StringBuilder oldText, out StringBuilder newText)
+        private void FileIdCombobox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            var comp = new diff_match_patch().diff_main(label.OriginalText, label.Text);
-
-            oldText = new StringBuilder();
-            newText = new StringBuilder();
-
-            foreach (var diff in comp)
-            {
-                switch (diff.operation)
-                {
-                    case Operation.DELETE:
-                        oldText.Append("[" + diff.text + "]");
-                        newText.Append("[]");
-                        break;
-                    case Operation.INSERT:
-                        oldText.Append("[]");
-                        newText.Append("[" + diff.text + "]");
-                        break;
-                    case Operation.EQUAL:
-                        oldText.Append(diff.text);
-                        newText.Append(diff.text);
-                        break;
-                    default:
-                        throw new ArgumentOutOfRangeException();
-                }
-            }
+            SetFilter();
         }
 
-        [MyWpfAttributes(IsReadOnly = true, Width = 10, WidthType = DataGridLengthUnitType.Star)]
-        public FileId FileId
+        private void SetFilter()
         {
-            get => _fileId;
-            set
-            {
-                _fileId = value;
-                OnPropertyChanged();
-            }
+            ((ICollectionView)DiffGrid.ItemsSource).Filter = item => Equals(((DiffLine)item).Language, SelectedLanguage)
+                                                                     && Equals(((DiffLine)item).FileId, SelectedFileId);
         }
 
-        [MyWpfAttributes(IsReadOnly = true, Width = 10, WidthType = DataGridLengthUnitType.Star)]
-        public Language Language
+        public event PropertyChangedEventHandler PropertyChanged;
+
+        public void OnPropertyChanged([CallerMemberName]string propertyName = null)
         {
-            get => _language;
-            set
-            {
-                _language = value;
-                OnPropertyChanged();
-            }
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
 
-        [MyWpfAttributes(IsReadOnly = true, Width = 10, WidthType = DataGridLengthUnitType.Star)]
-        public string Id
-        {
-            get => _id;
-            set
-            {
-                _id = value;
-                OnPropertyChanged();
-            }
-        }
-
-        [MyWpfAttributes(IsReadOnly = true, Width = 35, WidthType = DataGridLengthUnitType.Star)]
-        public string Original
-        {
-            get => _original;
-            set
-            {
-                _original = value;
-                OnPropertyChanged();
-            }
-        }
-
-        [MyWpfAttributes(IsReadOnly = true, Width = 35, WidthType = DataGridLengthUnitType.Star)]
-        public string New
-        {
-            get => _new;
-            set
-            {
-                _new = value;
-                OnPropertyChanged();
-            }
-        }
-        [MyWpfAttributes(IsReadOnly = true, Width = 35, WidthType = DataGridLengthUnitType.Star)]
-        public string Result
-        {
-            get => _result;
-            set
-            {
-                _result = value;
-                OnPropertyChanged();
-            }
-        }
-
-        [MyWpfAttributes(Visible = Visibility.Hidden)]
-        public bool Changed
-        {
-            get => _changed;
-            set
-            {
-                _changed = value;
-                OnPropertyChanged();
-            }
-        }
     }
 }

@@ -74,6 +74,7 @@
     <Compile Include="AddLabel.xaml.cs">
       <DependentUpon>AddLabel.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Klassen\DiffLine.cs" />
     <Compile Include="Klassen\DiffMatchPatch.cs" />
     <Compile Include="Klassen\BackgroundTimer.cs" />
     <Compile Include="Klassen\FileIds.cs" />

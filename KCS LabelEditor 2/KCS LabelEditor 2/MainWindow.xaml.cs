@@ -65,7 +65,7 @@ namespace KCS_LabelEditor_2
 
             SetDataBindings();
 
-            if(string.IsNullOrWhiteSpace(AxLabelPath))
+            if (string.IsNullOrWhiteSpace(AxLabelPath))
                 SetPath();
 
             ReloadLabels();
@@ -148,7 +148,7 @@ namespace KCS_LabelEditor_2
             ReloadLabels();
         }
 
-         private void Window_Closing(object sender, CancelEventArgs e)
+        private void Window_Closing(object sender, CancelEventArgs e)
         {
             Settings.Default.Save();
 
@@ -248,7 +248,7 @@ namespace KCS_LabelEditor_2
 
         private void ShowDiffButton_Click(object sender, RoutedEventArgs e)
         {
-            var dialog = new ShowDiff(Labels);
+            var dialog = new ShowDiff(this);
 
             dialog.ShowDialog();
         }

@@ -22,19 +22,19 @@
                 <RowDefinition Height="12*"/>
             </Grid.RowDefinitions>
 
-            <Label x:Name="IdLabel" Content="Id" Grid.Column="0" Grid.Row="0" HorizontalAlignment="Right" VerticalAlignment="Center" Height="24" Width="20"/>
+            <Label x:Name="IdLabel" Content="_Id" Grid.Column="0" Grid.Row="0" HorizontalAlignment="Right" VerticalAlignment="Center" Height="24" Width="20" Target="{Binding ElementName=Id, Mode=OneWay}"/>
             <TextBox x:Name="Id" Margin="5,5,20,5" TextWrapping="Wrap" Grid.Column="1" Grid.Row="0"/>
 
-            <Label x:Name="TextLabel" Content="Text" Grid.Column="0" Grid.Row="1" HorizontalAlignment="Right" VerticalAlignment="Center" Height="24" Width="31"/>
+            <Label x:Name="TextLabel" Content="_Text" Grid.Column="0" Grid.Row="1" HorizontalAlignment="Right" VerticalAlignment="Center" Height="24" Width="31" Target="{Binding ElementName=Text, Mode=OneWay}"/>
             <TextBox x:Name="Text" Margin="5,5,20,5" TextWrapping="Wrap" Grid.Column="1" Grid.Row="1" AutomationProperties.IsRequiredForForm="True"/>
 
-            <Label x:Name="HelpTextLabel" Content="HelpText" Grid.Column="0" Grid.Row="2" HorizontalAlignment="Right" VerticalAlignment="Center" Height="24" Width="56"/>
+            <Label x:Name="HelpTextLabel" Content="_HelpText" Grid.Column="0" Grid.Row="2" HorizontalAlignment="Right" VerticalAlignment="Center" Height="24" Width="56" Target="{Binding ElementName=HelpText, Mode=OneWay}"/>
             <TextBox x:Name="HelpText" Margin="5,5,20,5" TextWrapping="Wrap" Grid.Column="1" Grid.Row="2" AutomationProperties.IsRequiredForForm="True"/>
 
-            <Label x:Name="ViewTextLabel" Content="ViewText" Grid.Column="0" Grid.Row="3" HorizontalAlignment="Right" VerticalAlignment="Center"/>
+            <Label x:Name="ViewTextLabel" Content="_ViewText" Grid.Column="0" Grid.Row="3" HorizontalAlignment="Right" VerticalAlignment="Center" Target="{Binding ElementName=ViewText, Mode=OneWay}"/>
             <TextBox x:Name="ViewText" Margin="5,5,20,5" TextWrapping="Wrap" Grid.Column="1" Grid.Row="3" />
 
-            <Label x:Name="MaintainTextLabel" Content="MaintainText" Grid.Column="0" Grid.Row="4" HorizontalAlignment="Right" VerticalAlignment="Center"/>
+            <Label x:Name="MaintainTextLabel" Content="_MaintainText" Grid.Column="0" Grid.Row="4" HorizontalAlignment="Right" VerticalAlignment="Center" Target="{Binding ElementName=MaintainText}"/>
             <TextBox x:Name="MaintainText" Margin="5,5,20,5" TextWrapping="Wrap" Grid.Column="1" Grid.Row="4" />
 
             <Button x:Name="OkButton" Content="Ok"  Width="75" Height="20" Click="OkButton_Click" IsDefault="True" Grid.Row="5" Grid.Column="1" Margin="0,5,200,5" HorizontalAlignment="Right" VerticalAlignment="Center"/>
