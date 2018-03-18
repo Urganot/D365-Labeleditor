@@ -11,8 +11,6 @@ namespace KCS_LabelEditor_2
 
         private readonly ObservableCollection<FileId> _all = new ObservableCollection<FileId>();
 
-        private readonly MainWindow _mainWindow;
-
         public FileIds(MainWindow mainWindow)
         {
             _mainWindow = mainWindow;

@@ -10,8 +10,6 @@ namespace KCS_LabelEditor_2
     {
         public ObservableCollection<Language> All = new ObservableCollection<Language>();
 
-        private readonly MainWindow _mainWindow;
-
         public Languages(MainWindow mainWindow)
         {
             _mainWindow = mainWindow;

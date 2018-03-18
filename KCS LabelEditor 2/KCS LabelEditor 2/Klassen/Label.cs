@@ -8,12 +8,16 @@ namespace KCS_LabelEditor_2
     public class Label : INotifyPropertyChanged
     {
         private Language _language;
-        private string _comment="";
-        private string _text="";
-        private string _id="";
+        private string _comment = "";
+        private string _text = "";
+        private string _id = "";
         private FileId _fileId;
 
+        public event PropertyChangedEventHandler PropertyChanged;
         private readonly MainWindow _mainWindow;
+
+
+        private bool _deleted;
 
         public Label(MainWindow mainWindow)
         {
@@ -21,7 +25,7 @@ namespace KCS_LabelEditor_2
         }
 
 
-        [MyWpfAttributes(IsReadOnly = true,Width = 8,WidthType = DataGridLengthUnitType.Star)]
+        [MyWpfAttributes(IsReadOnly = true, Width = 8, WidthType = DataGridLengthUnitType.Star)]
         public FileId FileId
         {
             get => _fileId;
@@ -83,16 +87,23 @@ namespace KCS_LabelEditor_2
         [MyWpfAttributes(Visible = Visibility.Hidden, IsReadOnly = true)]
         public string OriginalText { get; set; } = "";
 
-
-        #region Events
-        public event PropertyChangedEventHandler PropertyChanged;
-
-        private void OnPropertyChanged([CallerMemberName]string propertyName = null)
+        [MyWpfAttributes(Visible = Visibility.Hidden, IsReadOnly = true)]
+        public bool Deleted
         {
-            _mainWindow.Changed = true;
-            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+            get => _deleted;
+            set
+            {
+                _deleted = value;
+                OnPropertyChanged();
+            }
         }
-        #endregion
+
+        public void OnPropertyChanged([CallerMemberName]string propertyName = null)
+        {
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+            _mainWindow.Changed = true;
+        }
+
 
     }
 

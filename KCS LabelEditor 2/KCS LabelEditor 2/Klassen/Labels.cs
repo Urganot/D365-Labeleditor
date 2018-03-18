@@ -24,7 +24,6 @@ namespace KCS_LabelEditor_2
             }
         }
 
-        private readonly MainWindow _mainWindow;
         private Label _selected;
 
         public Labels(MainWindow mainWindow)
@@ -38,13 +37,11 @@ namespace KCS_LabelEditor_2
             if (!ValidateDelete())
                 return;
 
-            var labelsToRemove = All.ToList()
-                .Where(x => Equals(x.FileId, Selected.FileId) && x.Id == Selected.Id)
-                .ToList();
-            foreach (var labelToRemove in labelsToRemove)
-            {
-                All.Remove(labelToRemove);
-            }
+            All.ToList()
+                .Where(x => Equals(x.FileId, Selected.FileId) && x.Id == Selected.Id).ToList()
+                .ForEach(x => x.Deleted = true);
+
+            ((ICollectionView)_mainWindow.MainGrid.ItemsSource).Refresh();
         }
 
         public void Translate()
@@ -93,7 +90,7 @@ namespace KCS_LabelEditor_2
         {
             using (var writer = new StreamWriter(readFile.Path))
             {
-                foreach (var label in All.Where(x => Equals(x.Language, readFile.Language) && Equals(x.FileId, readFile.FileId)))
+                foreach (var label in All.Where(x => Equals(x.Language, readFile.Language) && Equals(x.FileId, readFile.FileId) && !x.Deleted))
                 {
                     writer.WriteLine(label.Id + "=" + label.Text);
                     if (!string.IsNullOrWhiteSpace(label.Comment))

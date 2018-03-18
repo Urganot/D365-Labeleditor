@@ -4,10 +4,9 @@ using System.Xml.Linq;
 
 namespace KCS_LabelEditor_2
 {
-    public class XmlFiles
+    public class XmlFiles : ObservableList
     {
         public List<XmlFile> All = new List<XmlFile>();
-        private readonly MainWindow _mainWindow;
 
         public XmlFiles(MainWindow mainWindow)
         {

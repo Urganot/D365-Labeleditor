@@ -6,6 +6,7 @@ namespace KCS_LabelEditor_2
     public class ObservableList : INotifyPropertyChanged
     {
         public event PropertyChangedEventHandler PropertyChanged;
+        protected MainWindow _mainWindow;
 
         public void OnPropertyChanged([CallerMemberName]string propertyName = null)
         {

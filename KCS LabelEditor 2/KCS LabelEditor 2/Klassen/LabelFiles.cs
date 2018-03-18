@@ -4,11 +4,9 @@ using System.Linq;
 
 namespace KCS_LabelEditor_2
 {
-    public class LabelFiles
+    public class LabelFiles : ObservableList
     {
         public List<LabelFile> All = new List<LabelFile>();
-
-        private readonly MainWindow _mainWindow;
 
         public LabelFiles(MainWindow mainWindow)
         {
