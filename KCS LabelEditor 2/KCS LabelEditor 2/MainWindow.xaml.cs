@@ -1,5 +1,6 @@
 ﻿using System;
 using System.ComponentModel;
+using System.Globalization;
 using System.Linq;
 using System.Reflection;
 using System.Runtime.CompilerServices;
@@ -25,6 +26,12 @@ namespace KCS_LabelEditor_2
         public Labels Labels;
         public Languages Languages;
         public FileIds FileIds;
+
+        public string SearchString
+        {
+            get => SearchTextbox.Text;
+            set => SearchTextbox.Text = value;
+        }
 
         public BackgroundTimer Timer;
 
@@ -55,14 +62,8 @@ namespace KCS_LabelEditor_2
         public MainWindow()
         {
             InitializeComponent();
-            DataContext = this;
 
-
-            Labels = new Labels(this);
-            Languages = new Languages(this);
-            FileIds = new FileIds(this);
-            XmlFiles = new XmlFiles(this);
-            ReadFilesNew = new LabelFiles(this);
+            Init();
 
             SetDataBindings();
 
@@ -71,13 +72,28 @@ namespace KCS_LabelEditor_2
 
             ReloadLabels();
 
+            InitTimer();
+        }
+
+        private void InitTimer()
+        {
             Timer = new BackgroundTimer(this);
             Timer.Init();
             Timer.Start();
         }
 
+        private void Init()
+        {
+            Labels = new Labels(this);
+            Languages = new Languages(this);
+            FileIds = new FileIds(this);
+            XmlFiles = new XmlFiles(this);
+            ReadFilesNew = new LabelFiles(this);
+        }
+
         private void SetDataBindings()
         {
+            DataContext = this;
 
             MainGrid.DataContext = Labels;
             MainGrid.ItemsSource = Labels.GetView();
@@ -90,6 +106,9 @@ namespace KCS_LabelEditor_2
 
             FileIdCombobox.DataContext = FileIds;
             FileIdCombobox.ItemsSource = FileIds.GetView();
+
+           // SearchTextbox.DataContext = this;
+
             SetGridFilter();
         }
 
@@ -98,7 +117,8 @@ namespace KCS_LabelEditor_2
             if (Labels.Selected != null)
                 ((ICollectionView)SubGrid.ItemsSource).Filter = item => !Equals(((Label)item).Language, Languages.Selected)
                                                                         && String.Equals(((Label)item).Id, Labels.Selected.Id, StringComparison.CurrentCultureIgnoreCase)
-                                                                        && Equals(((Label)item).FileId, FileIds.Selected);
+                                                                        && Equals(((Label)item).FileId, FileIds.Selected)
+                                                                        ;
             else
                 ((ICollectionView)SubGrid.ItemsSource).Filter = item => false;
         }
@@ -109,7 +129,11 @@ namespace KCS_LabelEditor_2
                 return;
 
             ((ICollectionView)MainGrid.ItemsSource).Filter = item => Equals(((Label)item).Language, Languages.Selected)
-                                                                       && Equals(((Label)item).FileId, FileIds.Selected);
+                                                                        && Equals(((Label)item).FileId, FileIds.Selected)
+                                                                        && (string.IsNullOrWhiteSpace(SearchString) 
+                                                                            || ((Label)item).Text.ToLowerInvariant().Contains(SearchString.ToLowerInvariant()) 
+                                                                            || ((Label)item).Id.ToLowerInvariant().Contains(SearchString.ToLowerInvariant()))
+                                                                        ;
             SetSubGridFilter();
         }
 
@@ -259,6 +283,17 @@ namespace KCS_LabelEditor_2
             var dialog = new ShowDiff(this);
 
             dialog.ShowDialog();
+        }
+
+        private void SearchTextbox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            SetGridFilter();
+
+        }
+
+        private void SearchTextbox_TextChanged(object sender, System.Windows.Input.KeyEventArgs e)
+        {
+            //SetGridFilter();
         }
     }
 }

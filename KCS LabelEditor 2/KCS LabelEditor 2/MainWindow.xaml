@@ -36,6 +36,8 @@
             <Label Content="_Languages" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="650,5,0,0"/>
             <ComboBox x:Name="LanguageCombobox" Margin="722,5,0,0" Height="27" Width="200" SelectedItem="{Binding Selected}" SelectionChanged="Language_SelectionChanged" HorizontalAlignment="Left" VerticalAlignment="Top"/>
             <CheckBox x:Name="AutoTranslateCheckbox" Content="AutoTranslate" VerticalAlignment="Top" Margin="950,5,0,0" Height="27" Width="98" IsChecked="{Binding AutoTranslate}" HorizontalAlignment="Left"/>
+            <Label Content="_Search" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="1125,5,0,0"/>
+            <TextBox x:Name="SearchTextbox" Height="28" VerticalAlignment="Top" Margin="1175,4,0,0" HorizontalAlignment="Left" Width="300" TextChanged="SearchTextbox_TextChanged" KeyDown="SearchTextbox_TextChanged"/>
         </Grid>
         <!--<Button x:Name="AddLabelButton" Content="AddLabel" VerticalAlignment="Top" Margin="837,38,0,0" Height="27" Width="90" Click="AddLabelButton_Click" HorizontalAlignment="Left"/>
         <Button x:Name="RenameLabelButton" Content="RenameLabel" VerticalAlignment="Top" Margin="1064,38,0,0" Click="RenameLabelButton_Click" Height="27" Width="90" HorizontalAlignment="Left"/>
