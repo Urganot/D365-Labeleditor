@@ -51,7 +51,8 @@ namespace KCS_LabelEditor_2
                         Language = xmlFile.Language,
                         Text = splitLine[1],
                         Id = splitLine[0],
-                        Comment = comment
+                        Comment = comment,
+                        OriginalText = splitLine[1]
                     };
 
                    _mainWindow.Labels.Add(label);

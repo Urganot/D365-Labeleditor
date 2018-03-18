@@ -28,6 +28,7 @@
         <Button Name="GetPathButton" Content="..." Margin="334,38,0,0" Click="GetPath_Click"  Height="27" Width="27" HorizontalAlignment="Left" VerticalAlignment="Top" />
         <Button x:Name="RenameLabelButton" Content="RenameLabel" VerticalAlignment="Top" Margin="1064,38,0,0" Click="RenameLabelButton_Click" Height="27" Width="90" HorizontalAlignment="Left"/>
         <Button x:Name="DeleteLabelButton" Content="DeleteLabel" VerticalAlignment="Top" Margin="950,38,0,0" Click="DeleteLabelButton_Click" Height="27" Width="90" HorizontalAlignment="Left"/>
+        <Button x:Name="ShowDiffButton" Content="ShowDiff" VerticalAlignment="Top" Margin="1427,39,0,0" Click="ShowDiffButton_Click" Height="27" Width="90" HorizontalAlignment="Left"/>
 
 
         <Grid Margin="5,90,5,5">

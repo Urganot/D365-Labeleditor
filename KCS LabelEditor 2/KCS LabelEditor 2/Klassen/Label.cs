@@ -1,5 +1,6 @@
 ﻿using System.ComponentModel;
 using System.Runtime.CompilerServices;
+using System.Windows;
 using System.Windows.Controls;
 
 namespace KCS_LabelEditor_2
@@ -31,7 +32,7 @@ namespace KCS_LabelEditor_2
             }
         }
 
-        [MyWpfAttributes(IsReadOnly = true, Width = 17, WidthType = DataGridLengthUnitType.Star)]
+        [MyWpfAttributes(IsReadOnly = true, Width = 25, WidthType = DataGridLengthUnitType.Star)]
         public string Id
         {
             get => _id;
@@ -78,6 +79,9 @@ namespace KCS_LabelEditor_2
                 OnPropertyChanged();
             }
         }
+
+        [MyWpfAttributes(Visible = Visibility.Hidden,IsReadOnly = true)]
+        public string OriginalText { get; set; }
 
 
         #region Events

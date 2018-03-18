@@ -220,7 +220,7 @@ namespace KCS_LabelEditor_2
 
         private void InitColumns(object sender, DataGridAutoGeneratingColumnEventArgs e)
         {
-            var prop = typeof(Label).GetProperty(e.PropertyName);
+            PropertyInfo prop = typeof(Label).GetProperty(e.PropertyName);
             if (prop == null)
                 return;
 
@@ -234,6 +234,8 @@ namespace KCS_LabelEditor_2
 
             if (!string.IsNullOrWhiteSpace(attribute.DisplayName))
                 e.Column.Header = attribute.DisplayName;
+
+            e.Column.Visibility = attribute.Visible;
             e.Column.Width = new DataGridLength(attribute.Width, attribute.WidthType);
             e.Column.IsReadOnly = attribute.IsReadOnly;
         }
@@ -244,5 +246,11 @@ namespace KCS_LabelEditor_2
         }
         #endregion
 
+        private void ShowDiffButton_Click(object sender, RoutedEventArgs e)
+        {
+            var dialog = new ShowDiff(Labels);
+
+            dialog.ShowDialog();
+        }
     }
 }

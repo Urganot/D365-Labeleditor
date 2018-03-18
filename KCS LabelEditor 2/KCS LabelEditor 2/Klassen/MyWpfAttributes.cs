@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Windows;
 using System.Windows.Controls;
 
 namespace KCS_LabelEditor_2
@@ -9,5 +10,6 @@ namespace KCS_LabelEditor_2
         public DataGridLengthUnitType WidthType { get; set; } = DataGridLengthUnitType.Auto;
         public string DisplayName { get; set; }
         public bool IsReadOnly { get; set; } = false;
+        public Visibility Visible { get; set; } = Visibility.Visible;
     }
 }

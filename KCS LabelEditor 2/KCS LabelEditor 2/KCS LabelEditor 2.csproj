@@ -51,6 +51,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Web" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
@@ -73,6 +74,7 @@
     <Compile Include="AddLabel.xaml.cs">
       <DependentUpon>AddLabel.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Klassen\DiffMatchPatch.cs" />
     <Compile Include="Klassen\BackgroundTimer.cs" />
     <Compile Include="Klassen\FileIds.cs" />
     <Compile Include="Klassen\Helper.cs" />
@@ -86,6 +88,9 @@
       <DependentUpon>RenameLabel.xaml</DependentUpon>
     </Compile>
     <Compile Include="Klassen\XmlFile.cs" />
+    <Compile Include="ShowDiff.xaml.cs">
+      <DependentUpon>ShowDiff.xaml</DependentUpon>
+    </Compile>
     <Page Include="AddLabel.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -106,6 +111,10 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="RenameLabel.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ShowDiff.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
