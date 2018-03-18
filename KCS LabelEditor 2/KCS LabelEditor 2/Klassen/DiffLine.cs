@@ -8,15 +8,23 @@ namespace KCS_LabelEditor_2
 {
     public class DiffLine : ObservableList
     {
+        public enum alteration
+        {
+            None
+            , Edited
+            , Delted
+            , Added
+        }
+
+
         private string _id;
         private string _original;
         private string _new;
         private Language _language;
         private FileId _fileId;
-        private bool _changed;
         private string _result;
 
-       
+
         [MyWpfAttributes(IsReadOnly = true, Width = 10, WidthType = DataGridLengthUnitType.Star)]
         public FileId FileId
         {
@@ -83,28 +91,42 @@ namespace KCS_LabelEditor_2
         }
 
         [MyWpfAttributes(Visible = Visibility.Hidden)]
-        public bool Changed
-        {
-            get => _changed;
-            set
-            {
-                _changed = value;
-                OnPropertyChanged();
-            }
-        }
+        public bool Changed { get; }
+
+        [MyWpfAttributes(Visible = Visibility.Hidden)]
+        public bool Added { get; }
+
+        [MyWpfAttributes(Visible = Visibility.Hidden)]
+        public bool Deleted { get; }
 
         public DiffLine(Label label)
         {
-            CompareText(label, out var oldText, out var newText);
 
             Id = label.Id;
-            Original = oldText.ToString();
-            New = newText.ToString();
             Result = label.Text;
             FileId = label.FileId;
             Language = label.Language;
-            Changed = label.OriginalText != label.Text;
+            Added = string.IsNullOrWhiteSpace(label.OriginalText);
+            Deleted = label.Deleted;
+            Changed = !Added && label.OriginalText != label.Text;
 
+
+            if (Added)
+            {
+                New = label.Text;
+            }
+            else if (Changed)
+            {
+                CompareText(label, out var oldText, out var newText);
+
+                Original = oldText.ToString();
+                New = newText.ToString();
+            }
+            else if (Deleted)
+            {
+                Original = label.Text;
+                Result = "";
+            }
         }
 
         private static void CompareText(Label label, out StringBuilder oldText, out StringBuilder newText)

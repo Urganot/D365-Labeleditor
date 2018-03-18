@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
 using System.Reflection;
@@ -14,6 +15,7 @@ namespace KCS_LabelEditor_2
     /// </summary>
     public partial class ShowDiff
     {
+
         private readonly List<DiffLine> _diffLines = new List<DiffLine>();
 
         private readonly MainWindow _mainWindow;

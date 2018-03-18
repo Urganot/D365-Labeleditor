@@ -20,8 +20,14 @@
             <DataGrid.RowStyle>
                 <Style TargetType="DataGridRow">
                     <Style.Triggers>
+                        <DataTrigger Binding="{Binding Added}" Value="True">
+                            <Setter Property="Background" Value="#FF8FF085"></Setter>
+                        </DataTrigger>
                         <DataTrigger Binding="{Binding Changed}" Value="True">
                             <Setter Property="Background" Value="#FFEBF085"></Setter>
+                        </DataTrigger>
+                        <DataTrigger Binding="{Binding Deleted}" Value="True">
+                            <Setter Property="Background" Value="#FFF08585"></Setter>
                         </DataTrigger>
                     </Style.Triggers>
                 </Style>
