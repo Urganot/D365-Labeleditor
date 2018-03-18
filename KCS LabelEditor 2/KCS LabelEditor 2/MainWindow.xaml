@@ -36,7 +36,7 @@
                 <RowDefinition Height="50*"/>
                 <RowDefinition Height="50*"/>
             </Grid.RowDefinitions>
-            <DataGrid Grid.Row="0" x:Name="MainGrid" SelectedItem="{Binding Path=Selected}" AutoGeneratingColumn="InitColumns" SelectionChanged="MainGrid_SelectionChanged" CanUserAddRows="False" SelectionMode="Single" CopyingRowClipboardContent="Grids_CopyingRowClipboardContent" Margin="5"/>
+            <DataGrid Grid.Row="0" x:Name="MainGrid" SelectedItem="{Binding Path=Selected,Mode=TwoWay}" AutoGeneratingColumn="InitColumns" SelectionChanged="MainGrid_SelectionChanged" CanUserAddRows="False" SelectionMode="Single" CopyingRowClipboardContent="Grids_CopyingRowClipboardContent" Margin="5"/>
             <DataGrid Grid.Row="1" x:Name="SubGrid" AutoGeneratingColumn="InitColumns" CanUserAddRows="False" CopyingRowClipboardContent="Grids_CopyingRowClipboardContent" Margin="5"/>
         </Grid>
     </Grid>

@@ -3,7 +3,7 @@ using System.Runtime.CompilerServices;
 
 namespace KCS_LabelEditor_2
 {
-    public class ObservableList
+    public class ObservableList : INotifyPropertyChanged
     {
         public event PropertyChangedEventHandler PropertyChanged;
 

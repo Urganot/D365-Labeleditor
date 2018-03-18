@@ -14,9 +14,18 @@ namespace KCS_LabelEditor_2
 
         public ObservableCollection<Label> All = new ObservableCollection<Label>();
 
-        public Label Selected { get; set; }
+        public Label Selected
+        {
+            get => _selected;
+            set
+            {
+                _selected = value;
+                OnPropertyChanged();
+            }
+        }
 
         private readonly MainWindow _mainWindow;
+        private Label _selected;
 
         public Labels(MainWindow mainWindow)
         {
@@ -89,6 +98,12 @@ namespace KCS_LabelEditor_2
                 Text = text
             };
             Add(label);
+
+            if (Equals(_mainWindow.Languages.Selected, label.Language))
+            {
+                Selected = label;
+                _mainWindow.MoveToSelectedItem();
+            }
         }
 
         public void Add(Label label)

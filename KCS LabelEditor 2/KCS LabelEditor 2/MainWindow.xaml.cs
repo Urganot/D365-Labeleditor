@@ -39,6 +39,7 @@ namespace KCS_LabelEditor_2
                 OnPropertyChanged();
             }
         }
+
         public bool AutoTranslate
         {
             get => Settings.Default.AutoTranslate;
@@ -129,6 +130,13 @@ namespace KCS_LabelEditor_2
                     AxLabelPath = dialog.SelectedPath;
                 }
             }
+        }
+
+        public void MoveToSelectedItem()
+        {
+            MainGrid.UpdateLayout();
+            MainGrid.ScrollIntoView(MainGrid.SelectedItem);
+            MainGrid.Focus();
         }
 
         #region Events
