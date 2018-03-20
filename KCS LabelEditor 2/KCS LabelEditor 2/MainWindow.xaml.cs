@@ -187,12 +187,26 @@ namespace KCS_LabelEditor_2
         {
             Settings.Default.Save();
 
-            CanClose(e);
+            if (!CanClose(e))
+            {
+                e.Cancel = true;
+                return;
+            }
+                
+
+            if (!Changed)
+                return;
+
+            Labels.Save(e);
+
         }
 
-        private void CanClose(CancelEventArgs e)
+        private bool CanClose(CancelEventArgs e)
         {
-            Labels.Save(e);
+            var ok = true;
+
+
+            return ok;
         }
 
         private void MainGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
