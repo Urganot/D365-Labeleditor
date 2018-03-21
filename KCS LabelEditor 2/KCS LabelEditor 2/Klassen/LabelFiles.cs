@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 
@@ -43,14 +44,19 @@ namespace KCS_LabelEditor_2
 
                     var splitLine = line.Split('=');
 
+                    var id = line.Substring(0, line.IndexOf("="));
+                    var text = line.Substring(line.IndexOf("=")+1);
+
+
+
                     var label = new Label(_mainWindow)
                     {
                         FileId = xmlFile.FileId,
                         Language = xmlFile.Language,
-                        Text = splitLine[1],
-                        Id = splitLine[0],
+                        Id = id,
+                        Text = text,
                         Comment = comment,
-                        OriginalText = splitLine[1]
+                        OriginalText = text
                     };
 
                    _mainWindow.Labels.Add(label);

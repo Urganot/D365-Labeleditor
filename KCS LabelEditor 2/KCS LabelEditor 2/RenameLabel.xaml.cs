@@ -68,7 +68,13 @@ namespace KCS_LabelEditor_2
                 MessageBox.Show("Id ist bereits vorhanden.", "Id gefunden", MessageBoxButton.OK, MessageBoxImage.Exclamation);
                 ok = false;
             }
-            
+
+            if (NewIdTextbox.Text.Contains("="))
+            {
+                MessageBox.Show("Id beinhaltet das ungültige Zeichen \"=\".", "Ungültiges Zeichen", MessageBoxButton.OK, MessageBoxImage.Exclamation);
+                ok = false;
+            }
+
             return ok;
         }
     }

@@ -41,6 +41,12 @@ namespace KCS_LabelEditor_2
                 ok = false;
             }
 
+            if (Id.Text.Contains("="))
+            {
+                MessageBox.Show("Id beinhaltet das ungültige Zeichen \"=\".","Ungültiges Zeichen", MessageBoxButton.OK, MessageBoxImage.Exclamation);
+                ok = false;
+            }
+
             return ok;
         }
 
