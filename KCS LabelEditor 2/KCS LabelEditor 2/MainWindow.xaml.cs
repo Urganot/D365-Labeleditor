@@ -15,7 +15,7 @@ namespace KCS_LabelEditor_2
 {
     /// <inheritdoc cref="Window" />
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for halloWelt.xaml
     /// </summary>
     public partial class MainWindow : INotifyPropertyChanged
     {

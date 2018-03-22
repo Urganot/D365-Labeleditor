@@ -2,6 +2,7 @@
 using System.Runtime.InteropServices;
 using System.Windows;
 using System.Windows.Interop;
+using KCS_LabelEditor_2.Properties;
 
 namespace KCS_LabelEditor_2
 {
@@ -18,6 +19,8 @@ namespace KCS_LabelEditor_2
             InitializeComponent();
 
             OldIdTextbox.Text = oldId;
+
+            DataContext = this;
         }
 
         private const int GWL_STYLE = -16;
@@ -51,27 +54,27 @@ namespace KCS_LabelEditor_2
             var ok = true;
             if (string.IsNullOrWhiteSpace(NewIdTextbox.Text))
             {
-                MessageBox.Show("Id darf nicht leer sein", "Id darf nicht leer sein", MessageBoxButton.OK,
+                MessageBox.Show(General.Validate_Id_Empty_Message,General.Validate_Id_Empty_Title, MessageBoxButton.OK,
                     MessageBoxImage.Exclamation);
                 ok = false;
             }
 
             if (NewIdTextbox.Text == OldIdTextbox.Text)
             {
-                MessageBox.Show("Neue Id darf nicht gleich der alten sein.", "Neue Id darf nicht gleich der alten sein.", MessageBoxButton.OK,
+                MessageBox.Show(General.Validate_Rename_OldEqualsNew_Message,General.Validate_Rename_OldEqualsNew_Title, MessageBoxButton.OK,
                     MessageBoxImage.Exclamation);
                 ok = false;
             }
 
             if (_mainWindow.Labels.IdExists(NewIdTextbox.Text))
             {
-                MessageBox.Show("Id ist bereits vorhanden.", "Id gefunden", MessageBoxButton.OK, MessageBoxImage.Exclamation);
+                MessageBox.Show(General.Validate_Id_Exists_Message,General.Validate_Id_Exists_Title, MessageBoxButton.OK, MessageBoxImage.Exclamation);
                 ok = false;
             }
 
             if (NewIdTextbox.Text.Contains("="))
             {
-                MessageBox.Show("Id beinhaltet das ungültige Zeichen \"=\".", "Ungültiges Zeichen", MessageBoxButton.OK, MessageBoxImage.Exclamation);
+                MessageBox.Show(General.Validate_Id_InvalidCharacter_Message,General.Validate_Id_InvalidCharacter_Title, MessageBoxButton.OK, MessageBoxImage.Exclamation);
                 ok = false;
             }
 

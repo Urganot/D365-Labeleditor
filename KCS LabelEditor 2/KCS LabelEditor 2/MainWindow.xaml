@@ -6,7 +6,11 @@
         xmlns:local="clr-namespace:KCS_LabelEditor_2"
         xmlns:klassen="clr-namespace:KCS_LabelEditor_2.Klassen"
         mc:Ignorable="d"
-        Title="MainWindow" Height="797.368" Width="1548.421" Closing="Window_Closing">
+        xmlns:lex="http://wpflocalizeextension.codeplex.com"
+        lex:LocalizeDictionary.DesignCulture="en"
+        lex:ResxLocalizationProvider.DefaultAssembly="KCS LabelEditor 2"
+        lex:ResxLocalizationProvider.DefaultDictionary="MainWindow" 
+        Title="{lex:Loc Title}" Height="797.368" Width="1548.421" Closing="Window_Closing">
 
     <Window.CommandBindings>
         <CommandBinding Command="klassen:CustomCommands.New" Executed="AddLabel" />
@@ -23,31 +27,40 @@
             <RowDefinition Height="352*"/>
         </Grid.RowDefinitions>
         <Menu Grid.Row="0" DockPanel.Dock="Top">
-            <MenuItem Header="_File">
-                <MenuItem x:Name="SaveButton" Header="_Save" Command="klassen:CustomCommands.Save"/>
-                <MenuItem x:Name="ReloadButton" Header="_Reload" Click="ReloadButton_Click" />
+            <MenuItem Header="{lex:Loc File}">
+                <MenuItem x:Name="SaveButton" Header="{lex:Loc Save}" Command="klassen:CustomCommands.Save"/>
+                <MenuItem x:Name="ReloadButton" Header="{lex:Loc Reload}" Click="ReloadButton_Click" />
                 <Separator />
-                <MenuItem x:Name="ExitButton" Header="_Exit" Click="ExitButton_Click" />
+                <MenuItem x:Name="ExitButton" Header="{lex:Loc Exit}" Click="ExitButton_Click" />
             </MenuItem>
-            <MenuItem Header="Labels">
-                <MenuItem x:Name="AddLabelButton" Header="Add" Command="klassen:CustomCommands.New" />
-                <MenuItem x:Name="DeleteLabelButton" Header="Delete" Command="klassen:CustomCommands.Delete"/>
-                <MenuItem x:Name="RenameLabelButton" Header="Rename" Command="klassen:CustomCommands.Rename"/>
-                <MenuItem x:Name="TranslateLabelButton" Header="Translate"  Command="klassen:CustomCommands.Translate" />
-                <MenuItem x:Name="ShowDiffButton" Header="Show Changes" Click="ShowDiffButton_Click" />
+            <MenuItem Header="{lex:Loc Labels}">
+                <MenuItem x:Name="AddLabelButton" Header="{lex:Loc Add}" Command="klassen:CustomCommands.New" />
+                <MenuItem x:Name="DeleteLabelButton" Header="{lex:Loc Delete}" Command="klassen:CustomCommands.Delete"/>
+                <MenuItem x:Name="RenameLabelButton" Header="{lex:Loc Rename}" Command="klassen:CustomCommands.Rename"/>
+                <MenuItem x:Name="TranslateLabelButton" Header="{lex:Loc Translate}"  Command="klassen:CustomCommands.Translate" />
+                <MenuItem x:Name="ShowDiffButton" Header="{lex:Loc Changes}" Click="ShowDiffButton_Click" />
             </MenuItem>
         </Menu>
 
         <Grid Grid.Row="1">
-            <TextBox x:Name="PathTextbox" Height="28" VerticalAlignment="Top" Margin="29,5,0,0" Text="{Binding Path=AxLabelPath}" HorizontalAlignment="Left" Width="300" IsReadOnly="True"/>
-            <Button Name="GetPathButton" Content="..." Margin="334,5,0,0" Click="GetPath_Click"  Height="27" Width="27" HorizontalAlignment="Left" VerticalAlignment="Top" />
-            <Label Content="_FileId" VerticalAlignment="Top" Margin="380,5,-380,0" />
-            <ComboBox x:Name="FileIdCombobox" Margin="420,5,0,0" Height="27" Width="200" SelectedItem="{Binding Selected}" SelectionChanged="FileId_SelectionChanged" HorizontalAlignment="Left" VerticalAlignment="Top"/>
-            <Label Content="_Languages" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="650,5,0,0"/>
-            <ComboBox x:Name="LanguageCombobox" Margin="722,5,0,0" Height="27" Width="200" SelectedItem="{Binding Selected}" SelectionChanged="Language_SelectionChanged" HorizontalAlignment="Left" VerticalAlignment="Top"/>
-            <CheckBox x:Name="AutoTranslateCheckbox" Content="AutoTranslate" VerticalAlignment="Top" Margin="950,5,0,0" Height="27" Width="98" IsChecked="{Binding AutoTranslate}" HorizontalAlignment="Left"/>
-            <Label Content="_Search" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="1125,5,0,0"/>
-            <TextBox x:Name="SearchTextbox" Height="28" VerticalAlignment="Top" Margin="1175,4,0,0" HorizontalAlignment="Left" Width="300" TextChanged="SearchTextbox_TextChanged"/>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="90"/>
+                <ColumnDefinition Width="283"/>
+                <ColumnDefinition Width="207"/>
+                <ColumnDefinition Width="164"/>
+                <ColumnDefinition Width="62"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+            <TextBox x:Name="PathTextbox" Grid.Column="0" VerticalAlignment="Center" Margin="10,12.01,0.001,12.011" Text="{Binding Path=AxLabelPath}" IsReadOnly="True" Height="18"/>
+            <Button Name="GetPathButton" Content="..." Margin="353.711,12.01,0,12.011" Click="GetPath_Click" HorizontalAlignment="Left" VerticalAlignment="Center" Height="18" Width="18" Grid.ColumnSpan="2" />
+            <Label Content="{lex:Loc General:FileIds}" Grid.Column="1" VerticalAlignment="Center" Margin="0,8.03,2,8.031" HorizontalAlignment="Right" Height="25.96" Width="53.124" />
+            <ComboBox x:Name="FileIdCombobox" Grid.Column="2" Margin="1.999,10.03,0,10.031" Width="200" SelectedItem="{Binding Selected}" SelectionChanged="FileId_SelectionChanged" HorizontalAlignment="Left" VerticalAlignment="Center" Height="21.96"/>
+            <Label Content="{lex:Loc General:Languages}" Grid.Column="2" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,8.03,2,8.031" Height="25.96" Width="66.946"/>
+            <ComboBox x:Name="LanguageCombobox" Grid.Column="3" Margin="2,10.03,0,10.031" Width="199.998" SelectedItem="{Binding Selected}" SelectionChanged="Language_SelectionChanged" HorizontalAlignment="Left" VerticalAlignment="Center" Height="21.96"/>
+            <CheckBox x:Name="AutoTranslateCheckbox" Grid.Column="4" Content="{lex:Loc AutoTranslate}" VerticalAlignment="Center" Margin="15.059,13.461,15.057,13.461" IsChecked="{Binding AutoTranslate}" Height="15.099" HorizontalAlignment="Center" Width="133.884" />
+            <Label Content="{lex:Loc Search}" Grid.Column="5" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,8.03,2,8.031" Height="25.96" Width="45.264"/>
+            <TextBox x:Name="SearchTextbox" Grid.Column="6" VerticalAlignment="Center" Margin="2,12.03,10,12.031" TextChanged="SearchTextbox_TextChanged" Height="17.96"/>
         </Grid>
 
         <Grid Margin="5" Grid.Row="2">

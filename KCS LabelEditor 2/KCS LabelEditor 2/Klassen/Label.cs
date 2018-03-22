@@ -5,7 +5,7 @@ using System.Windows.Controls;
 
 namespace KCS_LabelEditor_2
 {
-    public class Label : INotifyPropertyChanged
+    public class Label : ObservableList
     {
         private Language _language;
         private string _comment = "";
@@ -13,15 +13,11 @@ namespace KCS_LabelEditor_2
         private string _id = "";
         private FileId _fileId;
 
-        public event PropertyChangedEventHandler PropertyChanged;
-        private readonly MainWindow _mainWindow;
-
-
         private bool _deleted;
 
         public Label(MainWindow mainWindow)
         {
-            _mainWindow = mainWindow;
+            MainWindow = mainWindow;
         }
 
 
@@ -98,10 +94,10 @@ namespace KCS_LabelEditor_2
             }
         }
 
-        public void OnPropertyChanged([CallerMemberName]string propertyName = null)
+        protected override void OnPropertyChanged([CallerMemberName]string propertyName = null)
         {
-            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
-            _mainWindow.Changed = true;
+            base.OnPropertyChanged();
+            MainWindow.Changed = true;
         }
 
 

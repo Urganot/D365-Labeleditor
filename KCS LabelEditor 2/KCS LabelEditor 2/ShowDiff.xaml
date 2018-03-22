@@ -4,19 +4,30 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:KCS_LabelEditor_2"
+        xmlns:lex="http://wpflocalizeextension.codeplex.com"
+        lex:LocalizeDictionary.DesignCulture="de"
+        lex:ResxLocalizationProvider.DefaultAssembly="KCS LabelEditor 2"
+        lex:ResxLocalizationProvider.DefaultDictionary="ShowDiff"     
         mc:Ignorable="d"
-        Title="ShowDiff" Height="450" Width="800">
+        Title="{lex:Loc Title}" Height="450" Width="800" WindowStartupLocation="CenterOwner">
     <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="159"/>
+            <ColumnDefinition Width="230"/>
+            <ColumnDefinition Width="141"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
-            <RowDefinition Height="44*"/>
-            <RowDefinition Height="375*"/>
+            <RowDefinition Height="51"/>
+            <RowDefinition Height="100*"/>
         </Grid.RowDefinitions>
-        <Label Content="_FileIds" Grid.Row="0" HorizontalAlignment="Left" Margin="109,10,0,0" VerticalAlignment="Top" Target="{Binding ElementName=FileIds}"/>
-        <ComboBox x:Name="FileIds" Grid.Row="0" Margin="157,10,0,0" Height="27" Width="200" HorizontalAlignment="Left" SelectedItem="{Binding SelectedFileId}" VerticalAlignment="Top" SelectionChanged="FileIdCombobox_SelectionChanged"/>
-        <Label Content="_Sprachen" Grid.Row="0" HorizontalAlignment="Left" Margin="368,10,0,0" VerticalAlignment="Top" Target="{Binding ElementName=Languages}"/>
-        <ComboBox x:Name="Languages" Grid.Row="0" Margin="432,10,0,0" Height="27" Width="200" SelectedItem="{Binding SelectedLanguage}" HorizontalAlignment="Left" VerticalAlignment="Top" SelectionChanged="LanguageCombobox_SelectionChanged"/>
 
-        <DataGrid x:Name="DiffGrid" AutoGeneratingColumn="InitColumns" Margin="5" Grid.Row="1">
+        <Label x:Name="FileIdsLabel" Content="{lex:Loc General:FileIds}" Grid.Row="0" HorizontalAlignment="Right" Margin="5" VerticalAlignment="Center" Target="{Binding ElementName=FileIds}" Grid.Column="0"/>
+        <ComboBox x:Name="FileIds" Grid.Row="0" Margin="5,0,0,0" SelectedItem="{Binding SelectedFileId}" VerticalAlignment="Center" SelectionChanged="FileIdCombobox_SelectionChanged" Grid.Column="1" HorizontalAlignment="Left" Width="200"/>
+        <Label x:Name="LanguagesLabel" Content="{lex:Loc General:Languages}" Grid.Row="0" HorizontalAlignment="Right" VerticalAlignment="Center" Target="{Binding ElementName=Languages}" Grid.Column="2" Margin="0,0,5,0"/>
+        <ComboBox x:Name="Languages" Grid.Row="0" Margin="5,12,0,11" SelectedItem="{Binding SelectedLanguage}" VerticalAlignment="Center" SelectionChanged="LanguageCombobox_SelectionChanged" Grid.Column="3" HorizontalAlignment="Left" Width="200"/>
+
+        <DataGrid x:Name="DiffGrid" AutoGeneratingColumn="InitColumns" Margin="5" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="4">
             <DataGrid.RowStyle>
                 <Style TargetType="DataGridRow">
                     <Style.Triggers>

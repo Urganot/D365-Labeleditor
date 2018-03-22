@@ -11,20 +11,20 @@ namespace KCS_LabelEditor_2
 
         public LabelFiles(MainWindow mainWindow)
         {
-            _mainWindow = mainWindow;
+            MainWindow = mainWindow;
         }
 
         public void Init()
         {
-            _mainWindow.Labels.Clear();
+            MainWindow.Labels.Clear();
             All.Clear();
 
-            if (_mainWindow.Timer != null && !_mainWindow.Timer.IsRunning())
-                _mainWindow.Timer.Start();
+            if (MainWindow.Timer != null && !MainWindow.Timer.IsRunning())
+                MainWindow.Timer.Start();
 
-            foreach (var xmlFile in _mainWindow.XmlFiles.All)
+            foreach (var xmlFile in MainWindow.XmlFiles.All)
             {
-                var filePath = Directory.GetFiles(_mainWindow.AxLabelPath, xmlFile.LabelContentFileName, SearchOption.AllDirectories).ToList().Single();
+                var filePath = Directory.GetFiles(MainWindow.AxLabelPath, xmlFile.LabelContentFileName, SearchOption.AllDirectories).ToList().Single();
                 var lines = File.ReadLines(filePath).ToList();
 
                 for (var i = 0; i < lines.Count; i++)
@@ -33,7 +33,7 @@ namespace KCS_LabelEditor_2
                     if (string.IsNullOrWhiteSpace(line))
                         continue;
 
-                    string nextLine = i < lines.Count - 1 ? lines[i + 1] : "";
+                    string nextLine = i < lines.Count - 1 ? lines[i + 1] : string.Empty;
                     var comment = "";
 
                     if (nextLine != null && nextLine.Trim().StartsWith(";"))
@@ -42,14 +42,10 @@ namespace KCS_LabelEditor_2
                         i++;
                     }
 
-                    var splitLine = line.Split('=');
+                    var id = line.Substring(0, line.IndexOf('='));
+                    var text = line.Substring(line.IndexOf('=')+1);
 
-                    var id = line.Substring(0, line.IndexOf("="));
-                    var text = line.Substring(line.IndexOf("=")+1);
-
-
-
-                    var label = new Label(_mainWindow)
+                    var label = new Label(MainWindow)
                     {
                         FileId = xmlFile.FileId,
                         Language = xmlFile.Language,
@@ -59,12 +55,12 @@ namespace KCS_LabelEditor_2
                         OriginalText = text
                     };
 
-                   _mainWindow.Labels.Add(label);
+                   MainWindow.Labels.Add(label);
                 }
                 All.Add(new LabelFile(filePath, xmlFile.Language, xmlFile.FileId));
             }
 
-            _mainWindow.Changed = false;
+            MainWindow.Changed = false;
         }
     }
 }

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Windows;
 using System.Windows.Threading;
+using KCS_LabelEditor_2.Properties;
 
 namespace KCS_LabelEditor_2
 {
@@ -50,7 +51,7 @@ namespace KCS_LabelEditor_2
                 return;
 
             _timer.Stop();
-            var result = MessageBox.Show("Datei wurde geändert soll diese neu geladen werden?", "Datei geändert", MessageBoxButton.YesNo, MessageBoxImage.Warning);
+            var result = MessageBox.Show(General.FileChangedReloadMessage, General.FileChangedReloadTitle, MessageBoxButton.YesNo, MessageBoxImage.Warning);
             switch (result)
             {
                 case MessageBoxResult.Yes:

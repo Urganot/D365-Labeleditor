@@ -28,7 +28,7 @@ namespace KCS_LabelEditor_2
 
         public Labels(MainWindow mainWindow)
         {
-            _mainWindow = mainWindow;
+            MainWindow = mainWindow;
         }
 
         public void Delete()
@@ -41,7 +41,7 @@ namespace KCS_LabelEditor_2
                 .Where(x => Equals(x.FileId, Selected.FileId) && x.Id == Selected.Id).ToList()
                 .ForEach(x => x.Deleted = true);
 
-            ((ICollectionView)_mainWindow.MainGrid.ItemsSource).Refresh();
+            ((ICollectionView)MainWindow.MainGrid.ItemsSource).Refresh();
         }
 
         public void Translate()
@@ -60,7 +60,7 @@ namespace KCS_LabelEditor_2
 
             if (Selected == null)
             {
-                MessageBox.Show("Kein Label ausgewählt", "Kein Label ausgewählt", MessageBoxButton.OK,
+                MessageBox.Show(General.NoLabelSelectedMessage, General.NoLabelSelectedTitle, MessageBoxButton.OK,
                     MessageBoxImage.Warning);
                 ok = false;
             }
@@ -73,17 +73,17 @@ namespace KCS_LabelEditor_2
             if (!ValidateSave(e))
                 return;
 
-            _mainWindow.Timer.Stop();
+            MainWindow.Timer.Stop();
 
-            foreach (var readFile in _mainWindow.ReadFilesNew.All)
+            foreach (var readFile in MainWindow.ReadFilesNew.All)
             {
                 WriteFile(readFile);
 
                 readFile.Reset();
             }
 
-            _mainWindow.Changed = false;
-            _mainWindow.Timer.Start();
+            MainWindow.Changed = false;
+            MainWindow.Timer.Start();
         }
 
         private void WriteFile(LabelFile readFile)
@@ -101,22 +101,22 @@ namespace KCS_LabelEditor_2
 
         public void AddNewLabel(string id, string text, Language language)
         {
-            if (Settings.Default.AutoTranslate && !Equals(language, _mainWindow.Languages.Selected))
-                text = GoogleTranslation.Translation.Translate(text, _mainWindow.Languages.Selected.ToString(), language.ToString());
+            if (Settings.Default.AutoTranslate && !Equals(language, MainWindow.Languages.Selected))
+                text = GoogleTranslation.Translation.Translate(text, MainWindow.Languages.Selected.ToString(), language.ToString());
 
-            var label = new Label(_mainWindow)
+            var label = new Label(MainWindow)
             {
-                FileId = _mainWindow.FileIds.Selected,
+                FileId = MainWindow.FileIds.Selected,
                 Id = id,
                 Language = language,
                 Text = text
             };
             Add(label);
 
-            if (Equals(_mainWindow.Languages.Selected, label.Language))
+            if (Equals(MainWindow.Languages.Selected, label.Language))
             {
                 Selected = label;
-                _mainWindow.MoveToSelectedItem();
+                MainWindow.MoveToSelectedItem();
             }
         }
 
@@ -136,12 +136,12 @@ namespace KCS_LabelEditor_2
 
             if (Selected == null)
             {
-                MessageBox.Show("Kein Label ausgewählt", "Kein Label ausgewählt", MessageBoxButton.OK,
+                MessageBox.Show(General.NoLabelSelectedMessage, General.NoLabelSelectedTitle, MessageBoxButton.OK,
                     MessageBoxImage.Warning);
                 ok = false;
             }
 
-            ok = ok && MessageBoxResult.Yes == MessageBox.Show($"Soll das ausgewählte Label {Selected.Id} gelöscht werden?", "Label löschen", MessageBoxButton.YesNo, MessageBoxImage.Question);
+            ok = ok && MessageBoxResult.Yes == MessageBox.Show(string.Format(General.DeleteLabelConfirmMessage, Selected.Id), General.DeleteLabelConfirmTitle, MessageBoxButton.YesNo, MessageBoxImage.Question);
 
             return ok;
         }
@@ -152,11 +152,9 @@ namespace KCS_LabelEditor_2
 
             if (e is CancelEventArgs ex)
             {
-                if (_mainWindow.ReadFilesNew.All.Any(x => x.Changed))
+                if (MainWindow.ReadFilesNew.All.Any(x => x.Changed))
                 {
-                    var messageResult = MessageBox.Show(
-                        "Datei wurde geändert. Es kann nicht gespeichert werden!", "Datei wurde geändert",
-                        MessageBoxButton.OKCancel, MessageBoxImage.Warning);
+                    var messageResult = MessageBox.Show(General.FileChangedCantSaveMessage, General.FileChangedCantSaveTitle, MessageBoxButton.OKCancel, MessageBoxImage.Warning);
 
                     switch (messageResult)
                     {
@@ -167,11 +165,9 @@ namespace KCS_LabelEditor_2
 
                     ok = false;
                 }
-                else if (_mainWindow.Changed)
+                else if (MainWindow.Changed)
                 {
-                    var result = MessageBox.Show("Labels wurden geändert. Soll gespeichert werden?",
-                        "Soll gespeichert werden?",
-                        MessageBoxButton.YesNoCancel, MessageBoxImage.Question);
+                    var result = MessageBox.Show(General.SaveFileConfirmMessage, General.SaveFileConfirmTitle, MessageBoxButton.YesNoCancel, MessageBoxImage.Question);
 
                     switch (result)
                     {
@@ -185,10 +181,9 @@ namespace KCS_LabelEditor_2
                     }
                 }
             }
-            else if (_mainWindow.ReadFilesNew.All.Any(x => x.Changed))
+            else if (MainWindow.ReadFilesNew.All.Any(x => x.Changed))
             {
-                MessageBox.Show("Datei wurde geändert. Es kann nicht gespeichert werden!", "Datei wurde geändert",
-                    MessageBoxButton.OK, MessageBoxImage.Warning);
+                MessageBox.Show(General.FileChangedCantSaveMessage, General.FileChangedCantSaveTitle, MessageBoxButton.OK, MessageBoxImage.Warning);
                 ok = false;
             }
 
@@ -208,7 +203,7 @@ namespace KCS_LabelEditor_2
             var viewText = dialog.ViewText.Text;
             var maintainText = dialog.MaintainText.Text;
 
-            foreach (var language in _mainWindow.Languages.All)
+            foreach (var language in MainWindow.Languages.All)
             {
                 AddNewLabel(id, text, language);
 
@@ -239,7 +234,7 @@ namespace KCS_LabelEditor_2
 
             if (Selected == null)
             {
-                MessageBox.Show("Kein Label ausgewählt", "Kein Label ausgewählt", MessageBoxButton.OK,
+                MessageBox.Show(General.NoLabelSelectedMessage, General.NoLabelSelectedTitle, MessageBoxButton.OK,
                     MessageBoxImage.Warning);
                 ok = false;
             }

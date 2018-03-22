@@ -13,7 +13,7 @@ namespace KCS_LabelEditor_2
 
         public FileIds(MainWindow mainWindow)
         {
-            _mainWindow = mainWindow;
+            MainWindow = mainWindow;
         }
 
         public FileId Selected
@@ -21,7 +21,7 @@ namespace KCS_LabelEditor_2
             get => new FileId { Name = Settings.Default.FileId };
             set
             {
-                Settings.Default.FileId = value?.Name ?? "";
+                Settings.Default.FileId = value?.Name ?? string.Empty;
                 OnPropertyChanged();
             }
         }
@@ -35,7 +35,7 @@ namespace KCS_LabelEditor_2
         {
             Clear();
 
-            foreach (var xmlFile in _mainWindow.XmlFiles.All)
+            foreach (var xmlFile in MainWindow.XmlFiles.All)
             {
                 Add(xmlFile.FileId);
             }

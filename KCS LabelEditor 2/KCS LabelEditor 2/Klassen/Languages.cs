@@ -12,7 +12,7 @@ namespace KCS_LabelEditor_2
 
         public Languages(MainWindow mainWindow)
         {
-            _mainWindow = mainWindow;
+            MainWindow = mainWindow;
         }
 
         public Language Selected
@@ -35,7 +35,7 @@ namespace KCS_LabelEditor_2
         {
             Clear();
 
-            foreach (var xmlFile in _mainWindow.XmlFiles.All)
+            foreach (var xmlFile in MainWindow.XmlFiles.All)
             {
                 if (!All.Contains(xmlFile.Language))
                     All.Add(xmlFile.Language);

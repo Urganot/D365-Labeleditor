@@ -2,6 +2,7 @@
 using System.Runtime.InteropServices;
 using System.Windows;
 using System.Windows.Interop;
+using KCS_LabelEditor_2.Properties;
 
 namespace KCS_LabelEditor_2
 {
@@ -23,27 +24,27 @@ namespace KCS_LabelEditor_2
             var ok = true;
             if (string.IsNullOrWhiteSpace(Id.Text))
             {
-                MessageBox.Show("Id darf nicht leer sein", "Id darf nicht leer sein", MessageBoxButton.OK,
+                MessageBox.Show(General.Validate_Id_Empty_Message, General.Validate_Id_Empty_Title, MessageBoxButton.OK,
                     MessageBoxImage.Exclamation);
                 ok = false;
             }
 
             if (string.IsNullOrWhiteSpace(Text.Text))
             {
-                MessageBox.Show("Text darf nicht leer sein", "Text darf nicht leer sein", MessageBoxButton.OK,
+                MessageBox.Show(General.Validate_Add_EmptyText_Message,General.Validate_Add_EmptyText_Title, MessageBoxButton.OK,
                     MessageBoxImage.Exclamation);
                 ok = false;
             }
 
             if (MainWindow.Labels.IdExists(Id.Text))
             {
-                MessageBox.Show("Id ist bereits vorhanden.", "Id gefunden", MessageBoxButton.OK, MessageBoxImage.Exclamation);
+                MessageBox.Show(General.Validate_Id_Exists_Message, General.Validate_Id_Exists_Title, MessageBoxButton.OK, MessageBoxImage.Exclamation);
                 ok = false;
             }
 
             if (Id.Text.Contains("="))
             {
-                MessageBox.Show("Id beinhaltet das ungültige Zeichen \"=\".","Ungültiges Zeichen", MessageBoxButton.OK, MessageBoxImage.Exclamation);
+                MessageBox.Show(General.Validate_Id_InvalidCharacter_Message, General.Validate_Id_InvalidCharacter_Title, MessageBoxButton.OK, MessageBoxImage.Exclamation);
                 ok = false;
             }
 

@@ -1,12 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
 using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Windows.Controls;
 using System.Windows.Data;
-using System.Windows.Media;
+using KCS_LabelEditor_2.Properties;
 
 namespace KCS_LabelEditor_2
 {
@@ -54,6 +53,7 @@ namespace KCS_LabelEditor_2
 
             InitializeComponent();
             InitData();
+            DataContext = this;
         }
 
         private void InitData()

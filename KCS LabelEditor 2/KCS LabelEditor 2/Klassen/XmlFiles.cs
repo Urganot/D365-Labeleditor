@@ -10,14 +10,14 @@ namespace KCS_LabelEditor_2
 
         public XmlFiles(MainWindow mainWindow)
         {
-            _mainWindow = mainWindow;
+            MainWindow = mainWindow;
         }
 
         public bool ValidateInit()
         {
             bool ok = true;
 
-            ok = Directory.Exists(_mainWindow.AxLabelPath);
+            ok = Directory.Exists(MainWindow.AxLabelPath);
 
             return ok;
 
@@ -30,7 +30,7 @@ namespace KCS_LabelEditor_2
             if (!ValidateInit())
                 return;
 
-            var files = Directory.GetFiles(_mainWindow.AxLabelPath, "*.xml", SearchOption.TopDirectoryOnly);
+            var files = Directory.GetFiles(MainWindow.AxLabelPath, "*.xml", SearchOption.TopDirectoryOnly);
             foreach (var file in files)
             {
                 var rootElement = XDocument.Load(file).Root;

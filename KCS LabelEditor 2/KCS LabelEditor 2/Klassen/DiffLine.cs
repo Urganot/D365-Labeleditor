@@ -8,15 +8,6 @@ namespace KCS_LabelEditor_2
 {
     public class DiffLine : ObservableList
     {
-        public enum alteration
-        {
-            None
-            , Edited
-            , Delted
-            , Added
-        }
-
-
         private string _id;
         private string _original;
         private string _new;
