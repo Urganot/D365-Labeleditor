@@ -8,9 +8,10 @@
         lex:LocalizeDictionary.DesignCulture="de"
         lex:ResxLocalizationProvider.DefaultAssembly="KCS LabelEditor 2"
         lex:ResxLocalizationProvider.DefaultDictionary="AddLabel" 
+        lex:LocalizeDictionary.OutputMissingKeys="True"
         mc:Ignorable="d"
         Title="{lex:Loc Title}" Height="235.5" Width="411.97" ResizeMode="NoResize"
-        FocusManager.FocusedElement="{Binding ElementName=Id}" WindowStartupLocation="CenterOwner" Loaded="Window_Loaded">
+        FocusManager.FocusedElement="{Binding ElementName=Id}" WindowStartupLocation="CenterScreen" Loaded="Window_Loaded">
     <Grid>
         <Grid>
             <Grid.ColumnDefinitions>

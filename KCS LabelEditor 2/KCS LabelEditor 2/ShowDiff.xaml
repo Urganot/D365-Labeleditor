@@ -8,8 +8,9 @@
         lex:LocalizeDictionary.DesignCulture="de"
         lex:ResxLocalizationProvider.DefaultAssembly="KCS LabelEditor 2"
         lex:ResxLocalizationProvider.DefaultDictionary="ShowDiff"     
+        lex:LocalizeDictionary.OutputMissingKeys="True"
         mc:Ignorable="d"
-        Title="{lex:Loc Title}" Height="450" Width="800" WindowStartupLocation="CenterOwner">
+        Title="{lex:Loc Title}" Height="450" Width="800" WindowStartupLocation="CenterScreen">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="159"/>

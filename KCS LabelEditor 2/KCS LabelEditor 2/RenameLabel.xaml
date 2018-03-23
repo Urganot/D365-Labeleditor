@@ -8,15 +8,25 @@
         lex:LocalizeDictionary.DesignCulture="en"
         lex:ResxLocalizationProvider.DefaultAssembly="KCS LabelEditor 2"
         lex:ResxLocalizationProvider.DefaultDictionary="RenameLabel"     
+        lex:LocalizeDictionary.OutputMissingKeys="True"
         mc:Ignorable="d" 
         Title="{lex:Loc Title}" Height="171.331" Width="411.97" ResizeMode="NoResize" Loaded="Window_Loaded"
-        FocusManager.FocusedElement="{Binding ElementName=NewIdTextbox}" WindowStartupLocation="CenterOwner">
+        FocusManager.FocusedElement="{Binding ElementName=NewIdTextbox}" WindowStartupLocation="CenterScreen">
     <Grid>
-        <TextBox x:Name="OldIdTextbox" HorizontalAlignment="Left" Height="23" Margin="72,27,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="280" IsReadOnly="True" />
-        <TextBox x:Name="NewIdTextbox" HorizontalAlignment="Left" Height="23" Margin="72,62,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="280" AutomationProperties.IsRequiredForForm="True"/>
-        <Label x:Name="OldIdLabel" Content="{lex:Loc OldId}" HorizontalAlignment="Left" Margin="29,27,0,0" VerticalAlignment="Top" Target="{Binding ElementName=OldIdTextbox}"/>
-        <Label x:Name="NewIdLabel" Content="{lex:Loc NewId}" HorizontalAlignment="Left" Margin="25,62,0,0" VerticalAlignment="Top" Target="{Binding ElementName=NewIdTextbox}"/>
-        <Button x:Name="OkButton" Content="{lex:Loc General:OkButton}" HorizontalAlignment="Left" Margin="98,105,0,0" VerticalAlignment="Top" Width="74" Click="OkButton_Click" IsDefault="True"/>
-        <Button x:Name="CancelButton" Content="{lex:Loc General:CancelButton}" HorizontalAlignment="Left" Margin="218,105,0,0" VerticalAlignment="Top" Width="74" IsCancel="True" />
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50*"/>
+            <RowDefinition Height="50*"/>
+            <RowDefinition Height="60*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="70*"/>
+            <ColumnDefinition Width="337*"/>
+        </Grid.ColumnDefinitions>
+        <Label x:Name="OldIdLabel" Content="{lex:Loc OldId}" HorizontalAlignment="Right" Margin="0" VerticalAlignment="Center" Target="{Binding ElementName=OldIdTextbox}" Grid.Row="0"  Grid.Column="0"/>
+        <TextBox x:Name="OldIdTextbox" Margin="0,0,5,0" TextWrapping="Wrap" VerticalAlignment="Center" IsReadOnly="True" Grid.Row="0"  Grid.Column="1"/>
+        <Label x:Name="NewIdLabel" Content="{lex:Loc NewId}" HorizontalAlignment="Right" Margin="0" VerticalAlignment="Center" Target="{Binding ElementName=NewIdTextbox}" Grid.Row="1"  Grid.Column="0"/>
+        <TextBox x:Name="NewIdTextbox" Margin="0,0,5,0" TextWrapping="Wrap" VerticalAlignment="Center" AutomationProperties.IsRequiredForForm="True" Grid.Column="1" Grid.Row="1"/>
+        <Button x:Name="OkButton" Content="{lex:Loc General:OkButton}" HorizontalAlignment="Right" Margin="0,0,200,0" VerticalAlignment="Center" Width="75" Click="OkButton_Click" IsDefault="True" Grid.Column="1" Grid.Row="2" Height="20"/>
+        <Button x:Name="CancelButton" Content="{lex:Loc General:CancelButton}" HorizontalAlignment="Right" Margin="0,0,100,0" VerticalAlignment="Center" IsCancel="True" Grid.Column="1" Grid.Row="2" Width="75" Height="20" />
     </Grid>
 </Window>
