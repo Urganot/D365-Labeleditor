@@ -318,7 +318,15 @@ namespace KCS_LabelEditor_2
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
+            InitUpdater();
             AutoUpdater.Start("http://urganot.net/LabelEditor/updates/UpdateFile.xml");
+        }
+
+        private void InitUpdater()
+        {
+            AutoUpdater.LetUserSelectRemindLater = false;
+            AutoUpdater.RemindLaterTimeSpan = RemindLaterFormat.Minutes;
+            AutoUpdater.RemindLaterAt = 5;
         }
     }
 }
