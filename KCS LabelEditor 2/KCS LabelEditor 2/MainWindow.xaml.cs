@@ -9,6 +9,7 @@ using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Forms;
 using System.Windows.Input;
+using AutoUpdaterDotNET;
 using KCS_LabelEditor_2.Properties;
 
 namespace KCS_LabelEditor_2
@@ -63,7 +64,11 @@ namespace KCS_LabelEditor_2
 
         public MainWindow()
         {
+
+
             InitializeComponent();
+
+            AutoUpdater.Start("http://urganot.net/LabelEditor/updates/UpdateFile.xml");
 
             Init();
 
