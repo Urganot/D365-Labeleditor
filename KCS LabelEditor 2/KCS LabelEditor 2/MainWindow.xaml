@@ -11,7 +11,7 @@
         lex:ResxLocalizationProvider.DefaultAssembly="KCS LabelEditor 2"
         lex:ResxLocalizationProvider.DefaultDictionary="MainWindow" 
         lex:LocalizeDictionary.OutputMissingKeys="True"
-        Title="{lex:Loc Title}" Height="797.368" Width="1548.421" Closing="Window_Closing" WindowStartupLocation="CenterScreen">
+        Title="{lex:Loc Title}" Height="797.368" Width="1548.421" Closing="Window_Closing" WindowStartupLocation="CenterScreen" Loaded="Window_Loaded">
 
     <Window.CommandBindings>
         <CommandBinding Command="klassen:CustomCommands.New" Executed="AddLabel" />

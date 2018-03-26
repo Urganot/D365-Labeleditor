@@ -66,8 +66,6 @@ namespace KCS_LabelEditor_2
         {
             InitializeComponent();
 
-            AutoUpdater.Start("http://urganot.net/LabelEditor/updates/UpdateFile.xml");
-
             Init();
 
             SetDataBindings();
@@ -318,5 +316,9 @@ namespace KCS_LabelEditor_2
             e.Handled = true;
         }
 
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            AutoUpdater.Start("http://urganot.net/LabelEditor/updates/UpdateFile.xml");
+        }
     }
 }
