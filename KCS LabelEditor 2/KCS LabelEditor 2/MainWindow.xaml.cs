@@ -64,8 +64,6 @@ namespace KCS_LabelEditor_2
 
         public MainWindow()
         {
-
-
             InitializeComponent();
 
             AutoUpdater.Start("http://urganot.net/LabelEditor/updates/UpdateFile.xml");
