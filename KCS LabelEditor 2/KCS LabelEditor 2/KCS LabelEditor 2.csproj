@@ -59,6 +59,7 @@
     <Reference Include="System.Drawing" />
     <Reference Include="System.Management" />
     <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
     <Reference Include="System.Web" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
@@ -88,6 +89,7 @@
     <Compile Include="AddLabel.xaml.cs">
       <DependentUpon>AddLabel.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ILabelEditorService.cs" />
     <Compile Include="Klassen\Commands.cs" />
     <Compile Include="Klassen\DiffLine.cs" />
     <Compile Include="Klassen\DiffMatchPatch.cs" />
@@ -100,6 +102,7 @@
     <Compile Include="Klassen\Languages.cs" />
     <Compile Include="Klassen\ObservableList.cs" />
     <Compile Include="Klassen\XmlFiles.cs" />
+    <Compile Include="LabelEditorService.cs" />
     <Compile Include="Properties\AddLabel.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -198,13 +201,16 @@
       <LastGenOutput>ShowDiff.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <None Include="packages.config" />
+    <None Include="Properties\DataSources\Communication.CompositeType.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\GoogleTranslate\GoogleTranslate.csproj">

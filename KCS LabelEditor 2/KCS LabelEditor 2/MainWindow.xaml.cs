@@ -5,12 +5,15 @@ using System.Globalization;
 using System.Linq;
 using System.Reflection;
 using System.Runtime.CompilerServices;
+using System.ServiceModel;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Forms;
 using System.Windows.Input;
 using AutoUpdaterDotNET;
+using Communication;
 using KCS_LabelEditor_2.Properties;
+using MessageBox = System.Windows.Forms.MessageBox;
 
 namespace KCS_LabelEditor_2
 {
@@ -60,6 +63,8 @@ namespace KCS_LabelEditor_2
             }
         }
 
+        private ServiceHost Host;
+
         #endregion
 
         public MainWindow()
@@ -76,6 +81,10 @@ namespace KCS_LabelEditor_2
             ReloadLabels();
 
             InitTimer();
+
+            Host = new ServiceHost(new LabelEditorService(Labels, this));
+            
+            Host.Open();
         }
 
         private void InitTimer()
@@ -110,7 +119,7 @@ namespace KCS_LabelEditor_2
             FileIdCombobox.DataContext = FileIds;
             FileIdCombobox.ItemsSource = FileIds.GetView();
 
-           // SearchTextbox.DataContext = this;
+            // SearchTextbox.DataContext = this;
 
             SetGridFilter();
         }
@@ -134,8 +143,8 @@ namespace KCS_LabelEditor_2
             ((ICollectionView)MainGrid.ItemsSource).Filter = item => Equals(((Label)item).Language, Languages.Selected)
                                                                         && Equals(((Label)item).FileId, FileIds.Selected)
                                                                         && !((Label)item).Deleted
-                                                                        && (string.IsNullOrWhiteSpace(SearchString) 
-                                                                            || ((Label)item).Text.ToLowerInvariant().Contains(SearchString.ToLowerInvariant()) 
+                                                                        && (string.IsNullOrWhiteSpace(SearchString)
+                                                                            || ((Label)item).Text.ToLowerInvariant().Contains(SearchString.ToLowerInvariant())
                                                                             || ((Label)item).Id.ToLowerInvariant().Contains(SearchString.ToLowerInvariant()))
                                                                         ;
             SetSubGridFilter();
@@ -193,7 +202,7 @@ namespace KCS_LabelEditor_2
                 e.Cancel = true;
                 return;
             }
-                
+
 
             if (!Changed)
                 return;
@@ -223,7 +232,7 @@ namespace KCS_LabelEditor_2
         }
 
         private void RenameLabel(object sender, ExecutedRoutedEventArgs executedRoutedEventArgs)
-        { 
+        {
             if (!Labels.ValidateRename())
                 return;
 
@@ -236,12 +245,19 @@ namespace KCS_LabelEditor_2
 
         public void AddLabel(object sender, ExecutedRoutedEventArgs executedRoutedEventArgs)
         {
-            var dialog = new AddLabel(this);
+            ShowAddLabelDialog();
+        }
+
+        public string ShowAddLabelDialog(string labelText = "")
+        {
+            var dialog = new AddLabel(this, labelText);
 
             if (dialog.ShowDialog() ?? false)
-                Labels.AddLabel(dialog);
+                return Labels.AddLabel(dialog);
 
+            return string.Empty;
         }
+
 
         private void SaveLabel(object sender, ExecutedRoutedEventArgs executedRoutedEventArgs)
         {
@@ -327,6 +343,12 @@ namespace KCS_LabelEditor_2
             AutoUpdater.LetUserSelectRemindLater = false;
             AutoUpdater.RemindLaterTimeSpan = RemindLaterFormat.Minutes;
             AutoUpdater.RemindLaterAt = 5;
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            
+
         }
     }
 }

@@ -195,7 +195,12 @@ namespace KCS_LabelEditor_2
             return new CollectionViewSource { Source = All }.View;
         }
 
-        public void AddLabel(AddLabel dialog)
+        /// <summary>
+        /// Adds Label to List
+        /// </summary>
+        /// <param name="dialog"></param>
+        /// <returns>Id of inserted Label</returns>
+        public string AddLabel(AddLabel dialog)
         {
             var id = dialog.Id.Text;
             var text = dialog.Text.Text;
@@ -216,6 +221,8 @@ namespace KCS_LabelEditor_2
                 if (!string.IsNullOrWhiteSpace(maintainText))
                     AddNewLabel(id + "Maintain", maintainText, language);
             }
+
+            return id;
         }
 
         public void Rename(string newId)

@@ -13,10 +13,15 @@ namespace KCS_LabelEditor_2
     {
         private MainWindow MainWindow;
 
-        public AddLabel(MainWindow mainWindow)
+        public AddLabel(MainWindow mainWindow,string labelText="")
         {
             MainWindow = mainWindow;
             InitializeComponent();
+
+            if (!string.IsNullOrWhiteSpace(labelText))
+            {
+                Text.Text = labelText;
+            }
         }
 
         private bool CanClose()
