@@ -1,7 +1,9 @@
 ﻿using System;
+using System.Runtime.Serialization;
 
 namespace KCS_LabelEditor_2
 {
+    [DataContract]
     public class Language : IEquatable<Language>
     {
         public Language(string name)
@@ -9,7 +11,8 @@ namespace KCS_LabelEditor_2
             Name = name;
         }
 
-        public string Name { get; }
+        [DataMember]
+        public string Name { get;protected set; }
 
         public override string ToString()
         {

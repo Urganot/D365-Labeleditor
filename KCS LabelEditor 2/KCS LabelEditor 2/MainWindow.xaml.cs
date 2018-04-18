@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel;
 using System.ComponentModel.Design;
 using System.Globalization;
@@ -248,14 +249,14 @@ namespace KCS_LabelEditor_2
             ShowAddLabelDialog();
         }
 
-        public string ShowAddLabelDialog(string labelText = "")
+        public Dictionary<string, List<Label>> ShowAddLabelDialog(string labelText = "")
         {
             var dialog = new AddLabel(this, labelText);
 
             if (dialog.ShowDialog() ?? false)
                 return Labels.AddLabel(dialog);
 
-            return string.Empty;
+            return new Dictionary<string, List<Label>>();
         }
 
 

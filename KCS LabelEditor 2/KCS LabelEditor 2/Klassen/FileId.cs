@@ -1,9 +1,12 @@
 ﻿using System;
+using System.Runtime.Serialization;
 
 namespace KCS_LabelEditor_2
 {
+    [DataContract]
     public class FileId : IEquatable<FileId>
     {
+        [DataMember]
         public string Name { get; set; }
 
         public override string ToString()

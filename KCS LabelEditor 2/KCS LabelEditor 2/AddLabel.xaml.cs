@@ -22,6 +22,10 @@ namespace KCS_LabelEditor_2
             {
                 Text.Text = labelText;
             }
+
+            this.Topmost = true;
+            this.Activate();
+
         }
 
         private bool CanClose()

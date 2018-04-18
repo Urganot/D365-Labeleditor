@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.IO;
@@ -99,7 +100,7 @@ namespace KCS_LabelEditor_2
             }
         }
 
-        public void AddNewLabel(string id, string text, Language language)
+        public Label AddNewLabel(string id, string text, Language language)
         {
             if (Settings.Default.AutoTranslate && !Equals(language, MainWindow.Languages.Selected))
                 text = GoogleTranslation.Translation.Translate(text, MainWindow.Languages.Selected.ToString(), language.ToString());
@@ -118,6 +119,8 @@ namespace KCS_LabelEditor_2
                 Selected = label;
                 MainWindow.MoveToSelectedItem();
             }
+
+            return label;
         }
 
         public void Add(Label label)
@@ -200,7 +203,7 @@ namespace KCS_LabelEditor_2
         /// </summary>
         /// <param name="dialog"></param>
         /// <returns>Id of inserted Label</returns>
-        public string AddLabel(AddLabel dialog)
+        public Dictionary<string, List<Label>> AddLabel(AddLabel dialog)
         {
             var id = dialog.Id.Text;
             var text = dialog.Text.Text;
@@ -208,21 +211,41 @@ namespace KCS_LabelEditor_2
             var viewText = dialog.ViewText.Text;
             var maintainText = dialog.MaintainText.Text;
 
+            var addedLabels = new Dictionary<string, List<Label>>();
+
             foreach (var language in MainWindow.Languages.All)
             {
-                AddNewLabel(id, text, language);
+                if (addedLabels.ContainsKey("base"))
+                    addedLabels["base"].Add(AddNewLabel(id, text, language));
+                else
+                    addedLabels.Add("base", new List<Label> { AddNewLabel(id, text, language) });
 
                 if (!string.IsNullOrWhiteSpace(helpText))
-                    AddNewLabel(id + "Help", helpText, language);
+                {
+                    if (addedLabels.ContainsKey("help"))
+                        addedLabels["help"].Add(AddNewLabel(id + "Help", helpText, language));
+                    else
+                        addedLabels.Add("help", new List<Label> { AddNewLabel(id + "Help", helpText, language) });
+                }
 
                 if (!string.IsNullOrWhiteSpace(viewText))
-                    AddNewLabel(id + "View", viewText, language);
+                {
+                    if (addedLabels.ContainsKey("view"))
+                        addedLabels["view"].Add(AddNewLabel(id + "View", viewText, language));
+                    else
+                        addedLabels.Add("view", new List<Label> { AddNewLabel(id + "View", viewText, language) });
+                }
 
                 if (!string.IsNullOrWhiteSpace(maintainText))
-                    AddNewLabel(id + "Maintain", maintainText, language);
+                {
+                    if (addedLabels.ContainsKey("maintain"))
+                        addedLabels["maintain"].Add(AddNewLabel(id + "Maintain", maintainText, language));
+                    else
+                        addedLabels.Add("maintain", new List<Label> { AddNewLabel(id + "Maintain", maintainText, language) });
+                }
             }
 
-            return id;
+            return addedLabels;
         }
 
         public void Rename(string newId)

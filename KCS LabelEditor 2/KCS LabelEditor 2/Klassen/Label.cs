@@ -1,10 +1,12 @@
 ﻿using System.ComponentModel;
 using System.Runtime.CompilerServices;
+using System.Runtime.Serialization;
 using System.Windows;
 using System.Windows.Controls;
 
 namespace KCS_LabelEditor_2
 {
+    [DataContract]
     public class Label : ObservableList
     {
         private Language _language;
@@ -20,7 +22,7 @@ namespace KCS_LabelEditor_2
             MainWindow = mainWindow;
         }
 
-
+        [DataMember]
         [MyWpfAttributes(IsReadOnly = true, Width = 8, WidthType = DataGridLengthUnitType.Star)]
         public FileId FileId
         {
@@ -32,6 +34,7 @@ namespace KCS_LabelEditor_2
             }
         }
 
+        [DataMember]
         [MyWpfAttributes(IsReadOnly = true, Width = 25, WidthType = DataGridLengthUnitType.Star)]
         public string Id
         {
@@ -43,10 +46,16 @@ namespace KCS_LabelEditor_2
             }
         }
 
+        [DataMember]
         [MyWpfAttributes(IsReadOnly = true, Width = 20, WidthType = DataGridLengthUnitType.Star)]
-        public string FullId => $@"@{FileId}:{Id}";
+        public string FullId
+        {
+            get { return $@"@{FileId}:{Id}"; }
+            protected set { }
+        }
 
 
+        [DataMember]
         [MyWpfAttributes(IsReadOnly = true, Width = 5, WidthType = DataGridLengthUnitType.Star)]
         public Language Language
         {
@@ -58,6 +67,7 @@ namespace KCS_LabelEditor_2
             }
         }
 
+        [DataMember]
         [MyWpfAttributes(Width = 30, WidthType = DataGridLengthUnitType.Star)]
         public string Text
         {
@@ -69,6 +79,7 @@ namespace KCS_LabelEditor_2
             }
         }
 
+        [DataMember]
         [MyWpfAttributes(Width = 20, WidthType = DataGridLengthUnitType.Star)]
         public string Comment
         {
@@ -80,9 +91,11 @@ namespace KCS_LabelEditor_2
             }
         }
 
+        [DataMember]
         [MyWpfAttributes(Visible = Visibility.Hidden, IsReadOnly = true)]
         public string OriginalText { get; set; } = "";
 
+        [DataMember]
         [MyWpfAttributes(Visible = Visibility.Hidden, IsReadOnly = true)]
         public bool Deleted
         {

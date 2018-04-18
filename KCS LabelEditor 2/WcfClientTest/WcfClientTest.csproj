@@ -53,7 +53,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Connected Services\LabelEditorServices\item.xsd">
       <SubType>Designer</SubType>
     </None>
@@ -64,12 +66,6 @@
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\KCS LabelEditor 2\KCS LabelEditor 2.csproj">
-      <Project>{6e89dbe8-fc58-4916-a024-53508ee4bb85}</Project>
-      <Name>KCS LabelEditor 2</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <WCFMetadataStorage Include="Connected Services\LabelEditorServices\" />

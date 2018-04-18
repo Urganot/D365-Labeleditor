@@ -4,6 +4,7 @@ using System.Linq;
 using System.Runtime.Serialization;
 using System.ServiceModel;
 using System.Text;
+using KCS_LabelEditor_2;
 
 namespace Communication
 {
@@ -11,6 +12,6 @@ namespace Communication
     public interface ILabelEditorService
     {
         [OperationContract]
-        string CreateNewLabel(string newLabelText);
+        Dictionary<string, List<Label>> CreateNewLabel(string newLabelText);
     }
 }
