@@ -77,14 +77,17 @@ namespace KCS_LabelEditor_2
             SetDataBindings();
 
             if (string.IsNullOrWhiteSpace(AxLabelPath))
-                SetPath();
+            {
+                if (!SetPath())
+                    return;
+            }
 
             ReloadLabels();
 
             InitTimer();
 
             Host = new ServiceHost(new LabelEditorService(Labels, this));
-            
+
             Host.Open();
         }
 
@@ -159,15 +162,22 @@ namespace KCS_LabelEditor_2
             ReadFilesNew.Init();
         }
 
-        private void SetPath()
+        private bool SetPath()
         {
+            bool ok;
             using (var dialog = new FolderBrowserDialog())
             {
                 if (dialog.ShowDialog() == System.Windows.Forms.DialogResult.OK)
                 {
                     AxLabelPath = dialog.SelectedPath;
+                    ok = true;
+                }
+                else
+                {
+                    ok = false;
                 }
             }
+            return ok;
         }
 
         public void MoveToSelectedItem()
@@ -348,7 +358,7 @@ namespace KCS_LabelEditor_2
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            
+
 
         }
     }
