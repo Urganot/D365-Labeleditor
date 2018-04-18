@@ -261,6 +261,11 @@ namespace KCS_LabelEditor_2
 
         public Dictionary<string, List<Label>> ShowAddLabelDialog(string labelText = "")
         {
+            if (!ValidateAdd())
+            {
+                return new Dictionary<string, List<Label>>();
+            }
+
             var dialog = new AddLabel(this, labelText);
 
             if (dialog.ShowDialog() ?? false)
@@ -269,6 +274,18 @@ namespace KCS_LabelEditor_2
             return new Dictionary<string, List<Label>>();
         }
 
+        private bool ValidateAdd()
+        {
+            var ok = true;
+
+            if (string.IsNullOrWhiteSpace(FileIds.Selected.Name))
+            {
+                MessageBox.Show("FileId darf nicht leer sein!");
+                ok = false;
+            }
+
+            return ok;
+        }
 
         private void SaveLabel(object sender, ExecutedRoutedEventArgs executedRoutedEventArgs)
         {
