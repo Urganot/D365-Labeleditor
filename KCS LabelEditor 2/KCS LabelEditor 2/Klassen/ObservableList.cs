@@ -10,7 +10,7 @@ namespace KCS_LabelEditor_2
         public event PropertyChangedEventHandler PropertyChanged;
         protected MainWindow MainWindow;
 
-        protected virtual void OnPropertyChanged([CallerMemberName]string propertyName = null)
+        protected virtual void OnPropertyChanged(string propertyName = null)
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }

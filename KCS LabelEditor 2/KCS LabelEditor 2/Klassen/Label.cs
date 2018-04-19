@@ -109,7 +109,7 @@ namespace KCS_LabelEditor_2
 
         protected override void OnPropertyChanged([CallerMemberName]string propertyName = null)
         {
-            base.OnPropertyChanged();
+            base.OnPropertyChanged(propertyName);
             MainWindow.Changed = true;
         }
 
