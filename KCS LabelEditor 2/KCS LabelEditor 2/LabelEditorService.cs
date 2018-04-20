@@ -12,13 +12,11 @@ namespace Communication
     [ServiceBehavior(InstanceContextMode = InstanceContextMode.Single)]
     public class LabelEditorService : ILabelEditorService
     {
-        private Labels Labels;
         private MainWindow MainWindow;
 
 
-        public LabelEditorService(Labels labels, MainWindow mainWindow)
+        public LabelEditorService(MainWindow mainWindow)
         {
-            Labels = labels;
             MainWindow = mainWindow;
         }
 
@@ -26,7 +24,7 @@ namespace Communication
         {
             if (newLabelText == null)
             {
-                throw new ArgumentNullException("composite");
+                throw new ArgumentNullException(nameof(newLabelText));
             }
 
             return MainWindow.ShowAddLabelDialog(newLabelText);

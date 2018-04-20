@@ -86,7 +86,7 @@ namespace KCS_LabelEditor_2
 
             InitTimer();
 
-            Host = new ServiceHost(new LabelEditorService(Labels, this));
+            Host = new ServiceHost(new LabelEditorService(this));
 
             Host.Open();
         }
