@@ -13,5 +13,8 @@ namespace Communication
     {
         [OperationContract]
         Dictionary<string, List<Label>> CreateNewLabel(string newLabelText);
+
+        [OperationContract]
+        void SearchLabel(string searchText);
     }
 }

@@ -32,5 +32,9 @@ namespace Communication
             return MainWindow.ShowAddLabelDialog(newLabelText);
         }
 
+        public void SearchLabel(string searchText)
+        {
+            MainWindow.SearchString = searchText;
+        }
     }
 }
