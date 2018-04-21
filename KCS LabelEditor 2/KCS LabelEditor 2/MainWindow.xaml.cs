@@ -24,8 +24,8 @@ namespace KCS_LabelEditor_2
     /// </summary>
     public partial class MainWindow : INotifyPropertyChanged
     {
-
         #region Properties
+
         public event PropertyChangedEventHandler PropertyChanged;
 
         public XmlFiles XmlFiles;
@@ -131,12 +131,14 @@ namespace KCS_LabelEditor_2
         private void SetSubGridFilter()
         {
             if (Labels.Selected != null)
-                ((ICollectionView)SubGrid.ItemsSource).Filter = item => !Equals(((Label)item).Language, Languages.Selected)
-                                                                        && String.Equals(((Label)item).Id, Labels.Selected.Id, StringComparison.CurrentCultureIgnoreCase)
-                                                                        && Equals(((Label)item).FileId, FileIds.Selected)
-                                                                        ;
+                ((ICollectionView) SubGrid.ItemsSource).Filter = item =>
+                        !Equals(((Label) item).Language, Languages.Selected)
+                        && String.Equals(((Label) item).Id, Labels.Selected.Id,
+                            StringComparison.CurrentCultureIgnoreCase)
+                        && Equals(((Label) item).FileId, FileIds.Selected)
+                    ;
             else
-                ((ICollectionView)SubGrid.ItemsSource).Filter = item => false;
+                ((ICollectionView) SubGrid.ItemsSource).Filter = item => false;
         }
 
         private void SetGridFilter()
@@ -144,13 +146,14 @@ namespace KCS_LabelEditor_2
             if (MainGrid.ItemsSource == null || SubGrid.ItemsSource == null || Languages.Selected == null)
                 return;
 
-            ((ICollectionView)MainGrid.ItemsSource).Filter = item => Equals(((Label)item).Language, Languages.Selected)
-                                                                        && Equals(((Label)item).FileId, FileIds.Selected)
-                                                                        && !((Label)item).Deleted
-                                                                        && (string.IsNullOrWhiteSpace(SearchString)
-                                                                            || ((Label)item).Text.ToLowerInvariant().Contains(SearchString.ToLowerInvariant())
-                                                                            || ((Label)item).Id.ToLowerInvariant().Contains(SearchString.ToLowerInvariant()))
-                                                                        ;
+            ((ICollectionView) MainGrid.ItemsSource).Filter = item =>
+                    Equals(((Label) item).Language, Languages.Selected)
+                    && Equals(((Label) item).FileId, FileIds.Selected)
+                    && !((Label) item).Deleted
+                    && (string.IsNullOrWhiteSpace(SearchString)
+                        || ((Label) item).Text.ToLowerInvariant().Contains(SearchString.ToLowerInvariant())
+                        || ((Label) item).Id.ToLowerInvariant().Contains(SearchString.ToLowerInvariant()))
+                ;
             SetSubGridFilter();
         }
 
@@ -177,6 +180,7 @@ namespace KCS_LabelEditor_2
                     ok = false;
                 }
             }
+
             return ok;
         }
 
@@ -188,6 +192,7 @@ namespace KCS_LabelEditor_2
         }
 
         #region Events
+
         private void Language_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             SetGridFilter();
@@ -219,7 +224,6 @@ namespace KCS_LabelEditor_2
                 return;
 
             Labels.Save(e);
-
         }
 
         private bool CanClose(CancelEventArgs e)
@@ -251,7 +255,6 @@ namespace KCS_LabelEditor_2
 
             if (dialog.ShowDialog() ?? false)
                 Labels.Rename(dialog.NewIdTextbox.Text);
-
         }
 
         public void AddLabel(object sender, ExecutedRoutedEventArgs executedRoutedEventArgs)
@@ -307,7 +310,7 @@ namespace KCS_LabelEditor_2
             Labels.Translate();
         }
 
-        private void OnPropertyChanged([CallerMemberName]string propertyName = null)
+        private void OnPropertyChanged([CallerMemberName] string propertyName = null)
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
@@ -322,7 +325,7 @@ namespace KCS_LabelEditor_2
             if (attributes.Count <= 0)
                 return;
 
-            var attribute = (MyWpfAttributes)attributes.FirstOrDefault(x => x.GetType() == typeof(MyWpfAttributes));
+            var attribute = (MyWpfAttributes) attributes.FirstOrDefault(x => x.GetType() == typeof(MyWpfAttributes));
             if (attribute == null)
                 return;
 
@@ -338,6 +341,7 @@ namespace KCS_LabelEditor_2
         {
             ReloadLabels();
         }
+
         #endregion
 
         private void ShowDiffButton_Click(object sender, RoutedEventArgs e)
@@ -350,7 +354,6 @@ namespace KCS_LabelEditor_2
         private void SearchTextbox_TextChanged(object sender, TextChangedEventArgs e)
         {
             SetGridFilter();
-
         }
 
         protected void BlockTheCommand(object sender,
@@ -373,9 +376,14 @@ namespace KCS_LabelEditor_2
             AutoUpdater.RemindLaterAt = 5;
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
+        public List<ILabelEditorServiceCallBack> ClientList;
 
+        public void PasteLabelToVisualStudio(object sender, RoutedEventArgs e)
+        {
+            
+            ClientList.ForEach(
+                delegate (ILabelEditorServiceCallBack callback)
+                { callback.PasteLabel(Labels.Selected.FullId); });
 
         }
     }

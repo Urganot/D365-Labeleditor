@@ -156,4 +156,7 @@
   <data name="Changes" xml:space="preserve">
     <value>Änderungen anzeigen</value>
   </data>
+  <data name="PasteToVs" xml:space="preserve">
+    <value>In Visual Studio einfügen</value>
+  </data>
 </root>

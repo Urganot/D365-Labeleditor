@@ -124,6 +124,15 @@ namespace KCS_LabelEditor_2.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Paste to Visual Studio.
+        /// </summary>
+        public static string PasteToVs {
+            get {
+                return ResourceManager.GetString("PasteToVs", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Reload.
         /// </summary>
         public static string Reload {

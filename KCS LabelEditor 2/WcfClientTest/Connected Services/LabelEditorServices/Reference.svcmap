@@ -1,16 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="990cfa8c-5b93-4751-a9d2-58c2017ad3c6" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="624bd508-f11b-4886-8a02-88cad3ad334b" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
   <ClientOptions>
     <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
     <EnableDataBinding>true</EnableDataBinding>
     <ExcludedTypes />
     <ImportXmlTypes>false</ImportXmlTypes>
     <GenerateInternalTypes>false</GenerateInternalTypes>
     <GenerateMessageContracts>false</GenerateMessageContracts>
     <NamespaceMappings />
-    <CollectionMappings>
-      <CollectionMapping TypeName="System.Collections.Generic.List`1" Category="List" />
-    </CollectionMappings>
+    <CollectionMappings />
     <GenerateSerializableTypes>true</GenerateSerializableTypes>
     <Serializer>Auto</Serializer>
     <UseSerializerForFaults>true</UseSerializerForFaults>
@@ -20,13 +19,14 @@
     <ServiceContractMappings />
   </ClientOptions>
   <MetadataSources>
-    <MetadataSource Address="http://localhost:2112" Protocol="http" SourceId="1" />
+    <MetadataSource Address="http://localhost:2112/mex" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="item.disco" MetadataType="Disco" ID="1ed150e9-e425-4973-a8de-5c35bb69ded1" SourceId="1" SourceUrl="http://localhost:2112/?disco" />
-    <MetadataFile FileName="item.xsd" MetadataType="Schema" ID="7b17cb4c-8b09-4086-8ffd-77d17a9dae46" SourceId="1" SourceUrl="http://localhost:2112/?xsd=xsd1" />
-    <MetadataFile FileName="LabelEditorService.wsdl" MetadataType="Wsdl" ID="5ed34ea0-ee75-4fc6-bc90-7c0696af8f5f" SourceId="1" SourceUrl="http://localhost:2112/?wsdl" />
-    <MetadataFile FileName="item1.xsd" MetadataType="Schema" ID="05ef1459-6d3c-4e9a-9e19-273ae09b20dc" SourceId="1" SourceUrl="http://localhost:2112/?xsd=xsd0" />
+    <MetadataFile FileName="mex.xsd" MetadataType="Schema" ID="2099998c-78a6-4475-9f3a-ab928ed3a8a3" SourceId="1" SourceUrl="http://localhost:2112/mex?xsd=xsd3" />
+    <MetadataFile FileName="mex1.xsd" MetadataType="Schema" ID="ede40a3e-6b8f-42ab-a6fb-846b14439b1e" SourceId="1" SourceUrl="http://localhost:2112/mex?xsd=xsd2" />
+    <MetadataFile FileName="mex2.xsd" MetadataType="Schema" ID="c5c340ba-30e7-469f-8e8b-45d48f0fbc14" SourceId="1" SourceUrl="http://localhost:2112/mex?xsd=xsd1" />
+    <MetadataFile FileName="mex3.xsd" MetadataType="Schema" ID="c8c501a2-f53b-4425-aad6-f8d7dfffa5e5" SourceId="1" SourceUrl="http://localhost:2112/mex?xsd=xsd0" />
+    <MetadataFile FileName="LabelEditorService1.wsdl" MetadataType="Wsdl" ID="53be542a-c1af-45ed-9861-366882981e57" SourceId="1" SourceUrl="http://localhost:2112/mex" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />

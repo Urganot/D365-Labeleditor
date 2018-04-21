@@ -19,6 +19,7 @@
         <CommandBinding Command="klassen:CustomCommands.Save" Executed="SaveLabel" />
         <CommandBinding Command="klassen:CustomCommands.Delete" Executed="DeleteLabel" />
         <CommandBinding Command="klassen:CustomCommands.Translate" Executed="TranslateLabel" />
+        <CommandBinding Command="klassen:CustomCommands.PasteToVs" Executed="PasteLabelToVisualStudio" />
     </Window.CommandBindings>
 
     <Grid x:Name="Main">
@@ -39,6 +40,7 @@
                 <MenuItem x:Name="DeleteLabelButton" Header="{lex:Loc Delete}" Command="klassen:CustomCommands.Delete"/>
                 <MenuItem x:Name="RenameLabelButton" Header="{lex:Loc Rename}" Command="klassen:CustomCommands.Rename"/>
                 <MenuItem x:Name="TranslateLabelButton" Header="{lex:Loc Translate}"  Command="klassen:CustomCommands.Translate" />
+                <MenuItem x:Name="PasteLabelButton" Header="{lex:Loc PasteToVs}"  Command="klassen:CustomCommands.PasteToVs" />
                 <MenuItem x:Name="ShowDiffButton" Header="{lex:Loc Changes}" Click="ShowDiffButton_Click" />
             </MenuItem>
         </Menu>

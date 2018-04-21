@@ -34,5 +34,10 @@ namespace KCS_LabelEditor_2.Klassen
             "Translate", "Translate", typeof(CustomCommands), new InputGestureCollection() { new KeyGesture(Key.T, ModifierKeys.Control) }
         );
 
+        public static readonly RoutedUICommand PasteToVs = new RoutedUICommand
+        (
+            "PasteToVs", "PasteToVs", typeof(CustomCommands), new InputGestureCollection() { new KeyGesture(Key.P, ModifierKeys.Control) }
+        );
+
     }
 }

@@ -1,31 +1,44 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.ServiceModel;
 using System.Text;
 using System.Threading.Tasks;
 using WcfClientTest.LabelEditorServices;
 
 namespace WcfClientTest
 {
+    [CallbackBehavior(ConcurrencyMode = ConcurrencyMode.Reentrant, UseSynchronizationContext = false)]
+    public class LabelEditorServiceCallBack : ILabelEditorServiceCallback
+    {
+        public void OnNotificationSend(string message)
+        {
+            Console.WriteLine(message);
+            Console.ReadLine();
+        }
+
+    }
+
     class Program
     {
+
+
+        public static LabelEditorServiceClient Proxy
+        {
+            get
+            {
+                var ctx = new InstanceContext(new LabelEditorServiceCallBack());
+                return new LabelEditorServiceClient(ctx, "NetTcpBinding_ILabelEditorService");
+            }
+        }
         static void Main(string[] args)
         {
 
-            Console.WriteLine("Enter zum testen. 0 zum abbrechen");
-            string text = Console.ReadLine();
-            while (text != "0")
-            {
-                var proxy = new LabelEditorServiceClient("BasicHttpBinding_ILabelEditorService");
+            Proxy.Open();
 
-                Console.WriteLine("Added Label: " + proxy.CreateNewLabel(text));
-
-                text = Console.ReadLine();
-            }
-
-
-            Console.ReadKey();
+            Console.ReadKey(); 
 
         }
     }
+
 }

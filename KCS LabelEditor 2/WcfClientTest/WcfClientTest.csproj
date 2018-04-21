@@ -56,22 +56,28 @@
     <None Include="App.config">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Connected Services\LabelEditorServices\item.xsd">
+    <None Include="Connected Services\LabelEditorServices\LabelEditorService1.wsdl" />
+    <None Include="Connected Services\LabelEditorServices\mex.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Connected Services\LabelEditorServices\item1.xsd">
+    <None Include="Connected Services\LabelEditorServices\mex1.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Connected Services\LabelEditorServices\LabelEditorService.wsdl" />
+    <None Include="Connected Services\LabelEditorServices\mex2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\LabelEditorServices\mex3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\LabelEditorServices\WcfClientTest.LabelEditorServices.Label.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <ItemGroup>
     <WCFMetadataStorage Include="Connected Services\LabelEditorServices\" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Connected Services\LabelEditorServices\item.disco" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Connected Services\LabelEditorServices\configuration91.svcinfo" />

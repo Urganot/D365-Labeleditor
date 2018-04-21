@@ -34,5 +34,18 @@ namespace Communication
         {
             MainWindow.SearchString = searchText;
         }
+
+        public void Register()
+        {
+            MainWindow.ClientList = new List<ILabelEditorServiceCallBack>();
+            var guest = OperationContext.Current.GetCallbackChannel<ILabelEditorServiceCallBack>();
+
+            if (!MainWindow.ClientList.Contains(guest))
+            {
+                MainWindow.ClientList.Add(guest);
+            }
+
+        }
     }
+
 }
