@@ -13,7 +13,7 @@ namespace KCS_LabelEditor_2
     {
         private MainWindow MainWindow;
 
-        public AddLabel(MainWindow mainWindow,string labelText="")
+        public AddLabel(MainWindow mainWindow, string labelText = "")
         {
             MainWindow = mainWindow;
             InitializeComponent();
@@ -31,31 +31,18 @@ namespace KCS_LabelEditor_2
         private bool CanClose()
         {
             var ok = true;
+
             if (string.IsNullOrWhiteSpace(Id.Text))
-            {
-                MessageBox.Show(General.Validate_Id_Empty_Message, General.Validate_Id_Empty_Title, MessageBoxButton.OK,
-                    MessageBoxImage.Exclamation);
-                ok = false;
-            }
+                ok = Helper.CheckFailed(General.Validate_Id_Empty_Message, General.Validate_Id_Empty_Title);
 
             if (string.IsNullOrWhiteSpace(Text.Text))
-            {
-                MessageBox.Show(General.Validate_Add_EmptyText_Message,General.Validate_Add_EmptyText_Title, MessageBoxButton.OK,
-                    MessageBoxImage.Exclamation);
-                ok = false;
-            }
+                ok = Helper.CheckFailed(General.Validate_Add_EmptyText_Message, General.Validate_Add_EmptyText_Title);
 
             if (MainWindow.Labels.IdExists(Id.Text))
-            {
-                MessageBox.Show(General.Validate_Id_Exists_Message, General.Validate_Id_Exists_Title, MessageBoxButton.OK, MessageBoxImage.Exclamation);
-                ok = false;
-            }
+                ok = Helper.CheckFailed(General.Validate_Id_Exists_Message, General.Validate_Id_Exists_Title);
 
             if (Id.Text.Contains("="))
-            {
-                MessageBox.Show(General.Validate_Id_InvalidCharacter_Message, General.Validate_Id_InvalidCharacter_Title, MessageBoxButton.OK, MessageBoxImage.Exclamation);
-                ok = false;
-            }
+                ok = Helper.CheckFailed(General.Validate_Id_InvalidCharacter_Message, General.Validate_Id_InvalidCharacter_Title);
 
             return ok;
         }

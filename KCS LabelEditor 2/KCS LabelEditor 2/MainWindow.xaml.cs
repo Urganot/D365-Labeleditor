@@ -14,6 +14,7 @@ using System.Windows.Input;
 using AutoUpdaterDotNET;
 using Communication;
 using KCS_LabelEditor_2.Properties;
+using static KCS_LabelEditor_2.Helper;
 using MessageBox = System.Windows.Forms.MessageBox;
 
 namespace KCS_LabelEditor_2
@@ -131,14 +132,14 @@ namespace KCS_LabelEditor_2
         private void SetSubGridFilter()
         {
             if (Labels.Selected != null)
-                ((ICollectionView) SubGrid.ItemsSource).Filter = item =>
-                        !Equals(((Label) item).Language, Languages.Selected)
-                        && String.Equals(((Label) item).Id, Labels.Selected.Id,
-                            StringComparison.CurrentCultureIgnoreCase)
-                        && Equals(((Label) item).FileId, FileIds.Selected)
+                ((ICollectionView)SubGrid.ItemsSource).Filter = item =>
+                       !Equals(((Label)item).Language, Languages.Selected)
+                       && String.Equals(((Label)item).Id, Labels.Selected.Id,
+                           StringComparison.CurrentCultureIgnoreCase)
+                       && Equals(((Label)item).FileId, FileIds.Selected)
                     ;
             else
-                ((ICollectionView) SubGrid.ItemsSource).Filter = item => false;
+                ((ICollectionView)SubGrid.ItemsSource).Filter = item => false;
         }
 
         private void SetGridFilter()
@@ -146,13 +147,13 @@ namespace KCS_LabelEditor_2
             if (MainGrid.ItemsSource == null || SubGrid.ItemsSource == null || Languages.Selected == null)
                 return;
 
-            ((ICollectionView) MainGrid.ItemsSource).Filter = item =>
-                    Equals(((Label) item).Language, Languages.Selected)
-                    && Equals(((Label) item).FileId, FileIds.Selected)
-                    && !((Label) item).Deleted
-                    && (string.IsNullOrWhiteSpace(SearchString)
-                        || ((Label) item).Text.ToLowerInvariant().Contains(SearchString.ToLowerInvariant())
-                        || ((Label) item).Id.ToLowerInvariant().Contains(SearchString.ToLowerInvariant()))
+            ((ICollectionView)MainGrid.ItemsSource).Filter = item =>
+                   Equals(((Label)item).Language, Languages.Selected)
+                   && Equals(((Label)item).FileId, FileIds.Selected)
+                   && !((Label)item).Deleted
+                   && (string.IsNullOrWhiteSpace(SearchString)
+                       || ((Label)item).Text.ToLowerInvariant().Contains(SearchString.ToLowerInvariant())
+                       || ((Label)item).Id.ToLowerInvariant().Contains(SearchString.ToLowerInvariant()))
                 ;
             SetSubGridFilter();
         }
@@ -325,7 +326,7 @@ namespace KCS_LabelEditor_2
             if (attributes.Count <= 0)
                 return;
 
-            var attribute = (MyWpfAttributes) attributes.FirstOrDefault(x => x.GetType() == typeof(MyWpfAttributes));
+            var attribute = (MyWpfAttributes)attributes.FirstOrDefault(x => x.GetType() == typeof(MyWpfAttributes));
             if (attribute == null)
                 return;
 
@@ -380,11 +381,32 @@ namespace KCS_LabelEditor_2
 
         public void PasteLabelToVisualStudio(object sender, RoutedEventArgs e)
         {
-            
-            ClientList.ForEach(
-                delegate (ILabelEditorServiceCallBack callback)
-                { callback.PasteLabel(Labels.Selected.FullId); });
+            if (ValidateClients())
+            {
+                foreach (var client in ClientList)
+                {
+                    try
+                    {
+                        client.PasteLabel(Labels.Selected.FullId);
+                    }
+                    catch (CommunicationObjectAbortedException ex)
+                    {
+                        MessageBox.Show(Properties.MainWindow.ClientNotFoundMessage, Properties.MainWindow.ClientNotFoundTitle, MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        ClientList.Remove(client);
+                        break;
+                    }
+                }
+            }
+        }
 
+        private bool ValidateClients()
+        {
+            bool ok = true;
+
+            if (!ClientList.Any())
+                ok = CheckFailed(Properties.MainWindow.NoClientConnectedMessage, Properties.MainWindow.NoClientConnectedTitle);
+
+            return ok;
         }
     }
 }

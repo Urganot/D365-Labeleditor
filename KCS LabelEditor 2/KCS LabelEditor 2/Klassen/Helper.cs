@@ -1,5 +1,6 @@
 ﻿using System.Security.Cryptography;
 using System.Text;
+using System.Windows.Forms;
 
 namespace KCS_LabelEditor_2
 {
@@ -20,6 +21,12 @@ namespace KCS_LabelEditor_2
 
                 return sb.ToString();
             }
+        }
+
+        public static bool CheckFailed(string message, string caption = "")
+        {
+            MessageBox.Show(message,caption, MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            return false;
         }
 
     }

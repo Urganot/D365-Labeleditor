@@ -88,6 +88,24 @@ namespace KCS_LabelEditor_2.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Client could not be found. Process was aborted..
+        /// </summary>
+        public static string ClientNotFoundMessage {
+            get {
+                return ResourceManager.GetString("ClientNotFoundMessage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Client not found.
+        /// </summary>
+        public static string ClientNotFoundTitle {
+            get {
+                return ResourceManager.GetString("ClientNotFoundTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Delete.
         /// </summary>
         public static string Delete {
@@ -120,6 +138,24 @@ namespace KCS_LabelEditor_2.Properties {
         public static string Labels {
             get {
                 return ResourceManager.GetString("Labels", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to No Client connected. Process could not be executed..
+        /// </summary>
+        public static string NoClientConnectedMessage {
+            get {
+                return ResourceManager.GetString("NoClientConnectedMessage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to No Client connected..
+        /// </summary>
+        public static string NoClientConnectedTitle {
+            get {
+                return ResourceManager.GetString("NoClientConnectedTitle", resourceCulture);
             }
         }
         

@@ -60,11 +60,7 @@ namespace KCS_LabelEditor_2
             var ok = true;
 
             if (Selected == null)
-            {
-                MessageBox.Show(General.NoLabelSelectedMessage, General.NoLabelSelectedTitle, MessageBoxButton.OK,
-                    MessageBoxImage.Warning);
-                ok = false;
-            }
+                ok = Helper.CheckFailed(General.NoLabelSelectedMessage, General.NoLabelSelectedTitle);
 
             return ok;
         }
@@ -138,13 +134,10 @@ namespace KCS_LabelEditor_2
             var ok = true;
 
             if (Selected == null)
-            {
-                MessageBox.Show(General.NoLabelSelectedMessage, General.NoLabelSelectedTitle, MessageBoxButton.OK,
-                    MessageBoxImage.Warning);
-                ok = false;
-            }
+                ok = Helper.CheckFailed(General.NoLabelSelectedMessage, General.NoLabelSelectedTitle);
 
-            ok = ok && MessageBoxResult.Yes == MessageBox.Show(string.Format(General.DeleteLabelConfirmMessage, Selected.Id), General.DeleteLabelConfirmTitle, MessageBoxButton.YesNo, MessageBoxImage.Question);
+            var result = MessageBox.Show(string.Format(General.DeleteLabelConfirmMessage, Selected.Id), General.DeleteLabelConfirmTitle, MessageBoxButton.YesNo, MessageBoxImage.Question);
+            ok = ok && result == MessageBoxResult.Yes;
 
             return ok;
         }
@@ -186,8 +179,7 @@ namespace KCS_LabelEditor_2
             }
             else if (MainWindow.ReadFilesNew.All.Any(x => x.Changed))
             {
-                MessageBox.Show(General.FileChangedCantSaveMessage, General.FileChangedCantSaveTitle, MessageBoxButton.OK, MessageBoxImage.Warning);
-                ok = false;
+                ok = Helper.CheckFailed(General.FileChangedCantSaveMessage, General.FileChangedCantSaveTitle);
             }
 
             return ok;
@@ -263,11 +255,7 @@ namespace KCS_LabelEditor_2
             var ok = true;
 
             if (Selected == null)
-            {
-                MessageBox.Show(General.NoLabelSelectedMessage, General.NoLabelSelectedTitle, MessageBoxButton.OK,
-                    MessageBoxImage.Warning);
-                ok = false;
-            }
+                ok = Helper.CheckFailed(General.NoLabelSelectedMessage, General.NoLabelSelectedTitle);
 
 
             return ok;

@@ -12,7 +12,7 @@ namespace KCS_LabelEditor_2
     public partial class RenameLabel
     {
         private MainWindow _mainWindow;
-        public RenameLabel(MainWindow mainWindow,string oldId)
+        public RenameLabel(MainWindow mainWindow, string oldId)
         {
 
             _mainWindow = mainWindow;
@@ -52,31 +52,18 @@ namespace KCS_LabelEditor_2
         private bool ValidateForm()
         {
             var ok = true;
+
             if (string.IsNullOrWhiteSpace(NewIdTextbox.Text))
-            {
-                MessageBox.Show(General.Validate_Id_Empty_Message,General.Validate_Id_Empty_Title, MessageBoxButton.OK,
-                    MessageBoxImage.Exclamation);
-                ok = false;
-            }
+                ok = Helper.CheckFailed(General.Validate_Id_Empty_Message, General.Validate_Id_Empty_Title);
 
             if (NewIdTextbox.Text == OldIdTextbox.Text)
-            {
-                MessageBox.Show(General.Validate_Rename_OldEqualsNew_Message,General.Validate_Rename_OldEqualsNew_Title, MessageBoxButton.OK,
-                    MessageBoxImage.Exclamation);
-                ok = false;
-            }
+                ok = Helper.CheckFailed(General.Validate_Rename_OldEqualsNew_Message, General.Validate_Rename_OldEqualsNew_Title);
 
             if (_mainWindow.Labels.IdExists(NewIdTextbox.Text))
-            {
-                MessageBox.Show(General.Validate_Id_Exists_Message,General.Validate_Id_Exists_Title, MessageBoxButton.OK, MessageBoxImage.Exclamation);
-                ok = false;
-            }
+                ok = Helper.CheckFailed(General.Validate_Id_Exists_Message, General.Validate_Id_Exists_Title);
 
             if (NewIdTextbox.Text.Contains("="))
-            {
-                MessageBox.Show(General.Validate_Id_InvalidCharacter_Message,General.Validate_Id_InvalidCharacter_Title, MessageBoxButton.OK, MessageBoxImage.Exclamation);
-                ok = false;
-            }
+                ok = Helper.CheckFailed(General.Validate_Id_InvalidCharacter_Message, General.Validate_Id_InvalidCharacter_Title);
 
             return ok;
         }

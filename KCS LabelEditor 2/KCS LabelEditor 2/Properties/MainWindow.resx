@@ -159,4 +159,16 @@
   <data name="PasteToVs" xml:space="preserve">
     <value>Paste to Visual Studio</value>
   </data>
+  <data name="ClientNotFoundMessage" xml:space="preserve">
+    <value>Client could not be found. Process was aborted.</value>
+  </data>
+  <data name="ClientNotFoundTitle" xml:space="preserve">
+    <value>Client not found</value>
+  </data>
+  <data name="NoClientConnectedTitle" xml:space="preserve">
+    <value>No Client connected.</value>
+  </data>
+  <data name="NoClientConnectedMessage" xml:space="preserve">
+    <value>No Client connected. Process could not be executed.</value>
+  </data>
 </root>
