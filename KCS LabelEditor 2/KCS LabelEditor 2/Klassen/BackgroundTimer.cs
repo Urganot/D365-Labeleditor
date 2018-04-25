@@ -51,18 +51,18 @@ namespace KCS_LabelEditor_2
                 return;
 
             _timer.Stop();
-            var result = MessageBox.Show(General.FileChangedReloadMessage, General.FileChangedReloadTitle, MessageBoxButton.YesNo, MessageBoxImage.Warning);
-            switch (result)
-            {
-                case MessageBoxResult.Yes:
-                    _mainWindow.ReloadLabels();
-                    break;
-                case MessageBoxResult.No:
-                    DontReload = true;
-                    break;
-                default:
-                    throw new ArgumentOutOfRangeException();
-            }
+            DontReload = _mainWindow.HandleChangedFile();
+        }
+
+        public void Reset()
+        {
+            if(_timer.IsEnabled)
+                _timer.Stop();
+
+            DontReload = false;
+
+            if(!_timer.IsEnabled)
+                _timer.Start();
         }
 
         public bool IsRunning()

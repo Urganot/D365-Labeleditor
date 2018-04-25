@@ -164,6 +164,8 @@ namespace KCS_LabelEditor_2
             Languages.Init();
             FileIds.Init();
             ReadFilesNew.Init();
+
+            Timer?.Reset();
         }
 
         private bool SetPath()
@@ -407,6 +409,21 @@ namespace KCS_LabelEditor_2
                 ok = CheckFailed(Properties.MainWindow.NoClientConnectedMessage, Properties.MainWindow.NoClientConnectedTitle);
 
             return ok;
+        }
+
+        public bool HandleChangedFile()
+        {
+            var result = MessageBox.Show(General.FileChangedReloadMessage, General.FileChangedReloadTitle, MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            switch (result)
+            {
+                case System.Windows.Forms.DialogResult.Yes:
+                    ReloadLabels();
+                    return false;
+                case System.Windows.Forms.DialogResult.No:
+                    return true;
+                default:
+                    throw new ArgumentOutOfRangeException();
+            }
         }
     }
 }
