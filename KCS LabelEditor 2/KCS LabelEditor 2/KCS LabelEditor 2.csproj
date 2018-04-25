@@ -235,7 +235,6 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="template.htm" />
     <Content Include="UpdateFile.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
