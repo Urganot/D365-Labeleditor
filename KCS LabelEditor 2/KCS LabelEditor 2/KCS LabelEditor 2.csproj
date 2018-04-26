@@ -94,6 +94,8 @@
     </Compile>
     <Compile Include="ILabelEditorService.cs" />
     <Compile Include="Klassen\Commands.cs" />
+    <Compile Include="Klassen\CustomExceptions\ConnectionAlreadyClosedException.cs" />
+    <Compile Include="Klassen\CustomExceptions\ConnectionAlreadyOpenException.cs" />
     <Compile Include="Klassen\DiffLine.cs" />
     <Compile Include="Klassen\DiffMatchPatch.cs" />
     <Compile Include="Klassen\BackgroundTimer.cs" />
@@ -104,6 +106,7 @@
     <Compile Include="Klassen\Labels.cs" />
     <Compile Include="Klassen\Languages.cs" />
     <Compile Include="Klassen\ObservableList.cs" />
+    <Compile Include="Klassen\Server.cs" />
     <Compile Include="Klassen\XmlFiles.cs" />
     <Compile Include="LabelEditorService.cs" />
     <Compile Include="Properties\AddLabel.Designer.cs">
@@ -133,6 +136,7 @@
     <Compile Include="ShowDiff.xaml.cs">
       <DependentUpon>ShowDiff.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Klassen\Updater.cs" />
     <Page Include="AddLabel.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

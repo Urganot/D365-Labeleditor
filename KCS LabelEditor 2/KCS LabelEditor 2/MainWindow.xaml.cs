@@ -13,6 +13,8 @@ using System.Windows.Forms;
 using System.Windows.Input;
 using AutoUpdaterDotNET;
 using Communication;
+using KCS_LabelEditor_2.Klassen;
+using KCS_LabelEditor_2.Klassen.CustomExceptions;
 using KCS_LabelEditor_2.Properties;
 using static KCS_LabelEditor_2.Helper;
 using DataGrid = System.Windows.Controls.DataGrid;
@@ -27,6 +29,8 @@ namespace KCS_LabelEditor_2
     public partial class MainWindow : INotifyPropertyChanged
     {
         #region Properties
+
+        private Server _server;
 
         public event PropertyChangedEventHandler PropertyChanged;
 
@@ -66,7 +70,6 @@ namespace KCS_LabelEditor_2
             }
         }
 
-        private ServiceHost Host;
 
         #endregion
 
@@ -88,9 +91,12 @@ namespace KCS_LabelEditor_2
 
             InitTimer();
 
-            Host = new ServiceHost(new LabelEditorService(this));
-
-            Host.Open();
+            try
+            {
+                _server.Start();
+            }
+            catch (ConnectionAlreadyOpenException)
+            { }
         }
 
         private void InitTimer()
@@ -107,6 +113,7 @@ namespace KCS_LabelEditor_2
             FileIds = new FileIds(this);
             XmlFiles = new XmlFiles(this);
             ReadFilesNew = new LabelFiles(this);
+            _server = new Server(this);
         }
 
         private void SetDataBindings()
@@ -228,6 +235,13 @@ namespace KCS_LabelEditor_2
                 return;
 
             Labels.Save(e);
+
+            try
+            {
+                _server.Stop();
+            }
+            catch (ConnectionAlreadyClosedException)
+            { }
         }
 
         private bool CanClose(CancelEventArgs e)
@@ -373,16 +387,11 @@ namespace KCS_LabelEditor_2
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
-            InitUpdater();
-            AutoUpdater.Start("http://urganot.net/LabelEditor/updates/UpdateFile.xml");
+            var updater = new Updater();
+            updater.Init();
+            updater.Start();
         }
 
-        private void InitUpdater()
-        {
-            AutoUpdater.LetUserSelectRemindLater = false;
-            AutoUpdater.RemindLaterTimeSpan = RemindLaterFormat.Minutes;
-            AutoUpdater.RemindLaterAt = 5;
-        }
 
         public List<ILabelEditorServiceCallBack> ClientList;
 
