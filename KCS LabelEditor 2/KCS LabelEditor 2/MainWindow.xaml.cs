@@ -30,7 +30,7 @@ namespace KCS_LabelEditor_2
     {
         #region Properties
 
-        private Server _server;
+        public Server Server;
 
         public event PropertyChangedEventHandler PropertyChanged;
 
@@ -93,7 +93,7 @@ namespace KCS_LabelEditor_2
 
             try
             {
-                _server.Start();
+                Server.Start();
             }
             catch (ConnectionAlreadyOpenException)
             { }
@@ -113,7 +113,7 @@ namespace KCS_LabelEditor_2
             FileIds = new FileIds(this);
             XmlFiles = new XmlFiles(this);
             ReadFilesNew = new LabelFiles(this);
-            _server = new Server(this);
+            Server = new Server(this);
         }
 
         private void SetDataBindings()
@@ -238,7 +238,7 @@ namespace KCS_LabelEditor_2
 
             try
             {
-                _server.Stop();
+                Server.Stop();
             }
             catch (ConnectionAlreadyClosedException)
             { }
@@ -378,12 +378,11 @@ namespace KCS_LabelEditor_2
             SetGridFilter();
         }
 
-        protected void BlockTheCommand(object sender,
-            CanExecuteRoutedEventArgs e)
-        {
-            e.CanExecute = false;
-            e.Handled = true;
-        }
+        //protected void BlockTheCommand(object sender, CanExecuteRoutedEventArgs e)
+        //{
+        //    e.CanExecute = false;
+        //    e.Handled = true;
+        //}
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
@@ -392,37 +391,9 @@ namespace KCS_LabelEditor_2
             updater.Start();
         }
 
-
-        public List<ILabelEditorServiceCallBack> ClientList;
-
         public void PasteLabelToVisualStudio(object sender, RoutedEventArgs e)
         {
-            if (ValidateClients())
-            {
-                foreach (var client in ClientList)
-                {
-                    try
-                    {
-                        client.PasteLabel(Labels.Selected.FullId);
-                    }
-                    catch (CommunicationObjectAbortedException ex)
-                    {
-                        MessageBox.Show(Properties.MainWindow.ClientNotFoundMessage, Properties.MainWindow.ClientNotFoundTitle, MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                        ClientList.Remove(client);
-                        break;
-                    }
-                }
-            }
-        }
-
-        private bool ValidateClients()
-        {
-            bool ok = true;
-
-            if (!ClientList.Any())
-                ok = CheckFailed(Properties.MainWindow.NoClientConnectedMessage, Properties.MainWindow.NoClientConnectedTitle);
-
-            return ok;
+            Server.PasteLabel(Labels.Selected.FullId);
         }
 
         public bool HandleChangedFile()

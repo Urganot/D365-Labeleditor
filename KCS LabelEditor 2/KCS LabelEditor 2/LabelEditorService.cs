@@ -37,14 +37,7 @@ namespace Communication
 
         public void Register()
         {
-            MainWindow.ClientList = new List<ILabelEditorServiceCallBack>();
-            var guest = OperationContext.Current.GetCallbackChannel<ILabelEditorServiceCallBack>();
-
-            if (!MainWindow.ClientList.Contains(guest))
-            {
-                MainWindow.ClientList.Add(guest);
-            }
-
+            MainWindow.Server.Register(OperationContext.Current.GetCallbackChannel<ILabelEditorServiceCallBack>());
         }
     }
 
