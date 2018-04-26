@@ -4,7 +4,6 @@ using KCS_LabelEditor_2.Objects;
 
 namespace KCS_LabelEditor_2.Server
 {
-    //[ServiceContract]
     [ServiceContract(CallbackContract = typeof(ILabelEditorServiceCallBack))]
     public interface ILabelEditorService
     {
