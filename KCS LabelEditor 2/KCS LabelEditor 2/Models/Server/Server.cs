@@ -1,15 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 using System.ServiceModel;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using Communication;
-using KCS_LabelEditor_2.Klassen.CustomExceptions;
-using static KCS_LabelEditor_2.Helper;
+using KCS_LabelEditor_2.CustomExceptions;
+using static KCS_LabelEditor_2.Helper.Helper;
 
-namespace KCS_LabelEditor_2.Klassen
+namespace KCS_LabelEditor_2.Server
 {
     public class Server
     {

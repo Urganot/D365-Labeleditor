@@ -6,9 +6,12 @@ using System.IO;
 using System.Linq;
 using System.Windows;
 using System.Windows.Data;
+using KCS_LabelEditor_2.Helper;
+using KCS_LabelEditor_2.Objects;
 using KCS_LabelEditor_2.Properties;
+using static KCS_LabelEditor_2.Helper.Helper;
 
-namespace KCS_LabelEditor_2
+namespace KCS_LabelEditor_2.Lists
 {
     public class Labels : ObservableList
     {
@@ -60,7 +63,7 @@ namespace KCS_LabelEditor_2
             var ok = true;
 
             if (Selected == null)
-                ok = Helper.CheckFailed(General.NoLabelSelectedMessage, General.NoLabelSelectedTitle);
+                ok = CheckFailed(General.NoLabelSelectedMessage, General.NoLabelSelectedTitle);
 
             return ok;
         }
@@ -134,7 +137,7 @@ namespace KCS_LabelEditor_2
             var ok = true;
 
             if (Selected == null)
-                ok = Helper.CheckFailed(General.NoLabelSelectedMessage, General.NoLabelSelectedTitle);
+                ok = CheckFailed(General.NoLabelSelectedMessage, General.NoLabelSelectedTitle);
 
             var result = MessageBox.Show(string.Format(General.DeleteLabelConfirmMessage, Selected.Id), General.DeleteLabelConfirmTitle, MessageBoxButton.YesNo, MessageBoxImage.Question);
             ok = ok && result == MessageBoxResult.Yes;
@@ -179,7 +182,7 @@ namespace KCS_LabelEditor_2
             }
             else if (MainWindow.ReadFilesNew.All.Any(x => x.Changed))
             {
-                ok = Helper.CheckFailed(General.FileChangedCantSaveMessage, General.FileChangedCantSaveTitle);
+                ok = CheckFailed(General.FileChangedCantSaveMessage, General.FileChangedCantSaveTitle);
             }
 
             return ok;
@@ -255,7 +258,7 @@ namespace KCS_LabelEditor_2
             var ok = true;
 
             if (Selected == null)
-                ok = Helper.CheckFailed(General.NoLabelSelectedMessage, General.NoLabelSelectedTitle);
+                ok = CheckFailed(General.NoLabelSelectedMessage, General.NoLabelSelectedTitle);
 
 
             return ok;

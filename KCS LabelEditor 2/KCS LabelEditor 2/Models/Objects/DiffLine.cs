@@ -3,8 +3,9 @@ using System.Text;
 using System.Windows;
 using System.Windows.Controls;
 using DiffMatchPatch;
+using KCS_LabelEditor_2.Helper;
 
-namespace KCS_LabelEditor_2
+namespace KCS_LabelEditor_2.Objects
 {
     public class DiffLine : ObservableList
     {

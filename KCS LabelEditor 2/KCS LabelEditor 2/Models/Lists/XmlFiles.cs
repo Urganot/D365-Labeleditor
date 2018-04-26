@@ -1,8 +1,10 @@
 ﻿using System.Collections.Generic;
 using System.IO;
 using System.Xml.Linq;
+using KCS_LabelEditor_2.Helper;
+using KCS_LabelEditor_2.Objects;
 
-namespace KCS_LabelEditor_2
+namespace KCS_LabelEditor_2.Lists
 {
     public class XmlFiles : ObservableList
     {

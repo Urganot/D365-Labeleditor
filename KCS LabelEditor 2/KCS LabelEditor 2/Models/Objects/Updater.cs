@@ -1,11 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using AutoUpdaterDotNET;
+﻿using AutoUpdaterDotNET;
 
-namespace KCS_LabelEditor_2
+namespace KCS_LabelEditor_2.Objects
 {
     class Updater
     {

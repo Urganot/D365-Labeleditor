@@ -1,9 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using KCS_LabelEditor_2.Helper;
+using KCS_LabelEditor_2.Objects;
 
-namespace KCS_LabelEditor_2
+namespace KCS_LabelEditor_2.Lists
 {
     public class LabelFiles : ObservableList
     {

@@ -12,12 +12,13 @@ using System.Windows.Controls;
 using System.Windows.Forms;
 using System.Windows.Input;
 using AutoUpdaterDotNET;
-using Communication;
-using KCS_LabelEditor_2.Klassen;
-using KCS_LabelEditor_2.Klassen.CustomExceptions;
+using KCS_LabelEditor_2.CustomExceptions;
+using KCS_LabelEditor_2.Helper;
+using KCS_LabelEditor_2.Lists;
+using KCS_LabelEditor_2.Objects;
 using KCS_LabelEditor_2.Properties;
-using static KCS_LabelEditor_2.Helper;
 using DataGrid = System.Windows.Controls.DataGrid;
+using Label = KCS_LabelEditor_2.Objects.Label;
 using MessageBox = System.Windows.Forms.MessageBox;
 
 namespace KCS_LabelEditor_2
@@ -30,7 +31,7 @@ namespace KCS_LabelEditor_2
     {
         #region Properties
 
-        public Server Server;
+        public Server.Server Server;
 
         public event PropertyChangedEventHandler PropertyChanged;
 
@@ -113,7 +114,7 @@ namespace KCS_LabelEditor_2
             FileIds = new FileIds(this);
             XmlFiles = new XmlFiles(this);
             ReadFilesNew = new LabelFiles(this);
-            Server = new Server(this);
+            Server = new Server.Server(this);
         }
 
         private void SetDataBindings()
@@ -377,12 +378,6 @@ namespace KCS_LabelEditor_2
         {
             SetGridFilter();
         }
-
-        //protected void BlockTheCommand(object sender, CanExecuteRoutedEventArgs e)
-        //{
-        //    e.CanExecute = false;
-        //    e.Handled = true;
-        //}
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {

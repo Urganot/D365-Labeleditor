@@ -1,9 +1,7 @@
 ﻿using System;
-using System.Windows;
 using System.Windows.Threading;
-using KCS_LabelEditor_2.Properties;
 
-namespace KCS_LabelEditor_2
+namespace KCS_LabelEditor_2.Objects
 {
     public class BackgroundTimer
     {

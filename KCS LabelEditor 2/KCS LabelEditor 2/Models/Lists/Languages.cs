@@ -2,9 +2,11 @@
 using System.ComponentModel;
 using System.Linq;
 using System.Windows.Data;
+using KCS_LabelEditor_2.Helper;
+using KCS_LabelEditor_2.Objects;
 using KCS_LabelEditor_2.Properties;
 
-namespace KCS_LabelEditor_2
+namespace KCS_LabelEditor_2.Lists
 {
     public class Languages : ObservableList
     {

@@ -1,6 +1,7 @@
 ﻿using System.IO;
+using static KCS_LabelEditor_2.Helper.Helper;
 
-namespace KCS_LabelEditor_2
+namespace KCS_LabelEditor_2.Objects
 {
     public class LabelFile
     {
@@ -15,20 +16,20 @@ namespace KCS_LabelEditor_2
         public LabelFile(string path, Language language, FileId fileId)
         {
             Path = path;
-            OriginalHash = Helper.Hash(File.ReadAllText(Path));
+            OriginalHash = Hash(File.ReadAllText(Path));
             Language = language;
             FileId = fileId;
         }
 
         public string NewHash()
         {
-            return Helper.Hash(File.ReadAllText(Path));
+            return Hash(File.ReadAllText(Path));
         }
 
         public void Reset()
         {
             Changed = false;
-            OriginalHash = Helper.Hash(File.ReadAllText(Path));
+            OriginalHash = Hash(File.ReadAllText(Path));
         }
     }
 }

@@ -2,7 +2,7 @@
 using System.Windows;
 using System.Windows.Controls;
 
-namespace KCS_LabelEditor_2
+namespace KCS_LabelEditor_2.Helper
 {
     public class MyWpfAttributes : Attribute
     {
