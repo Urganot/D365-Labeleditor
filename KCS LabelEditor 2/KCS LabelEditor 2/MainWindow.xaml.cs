@@ -15,6 +15,7 @@ using AutoUpdaterDotNET;
 using Communication;
 using KCS_LabelEditor_2.Properties;
 using static KCS_LabelEditor_2.Helper;
+using DataGrid = System.Windows.Controls.DataGrid;
 using MessageBox = System.Windows.Forms.MessageBox;
 
 namespace KCS_LabelEditor_2
@@ -244,7 +245,11 @@ namespace KCS_LabelEditor_2
 
         private void Grids_CopyingRowClipboardContent(object sender, DataGridRowClipboardEventArgs e)
         {
-            var currentCell = e.ClipboardRowContent[MainGrid.CurrentCell.Column.DisplayIndex];
+            if (!(sender is DataGrid))
+                throw new ArgumentOutOfRangeException();
+
+            var senderGrid = (DataGrid)sender;
+            var currentCell = e.ClipboardRowContent[senderGrid.CurrentCell.Column.DisplayIndex];
             e.ClipboardRowContent.Clear();
             e.ClipboardRowContent.Add(currentCell);
         }
