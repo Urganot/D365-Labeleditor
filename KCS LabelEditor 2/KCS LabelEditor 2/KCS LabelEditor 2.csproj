@@ -115,6 +115,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>AddLabel.resx</DependentUpon>
     </Compile>
+    <Compile Include="Properties\Exceptions.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Exceptions.resx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\MainWindow.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -185,6 +190,11 @@
     <EmbeddedResource Include="Properties\AddLabel.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>AddLabel.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Exceptions.de.resx" />
+    <EmbeddedResource Include="Properties\Exceptions.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Exceptions.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\General.de.resx">
       <SubType>Designer</SubType>

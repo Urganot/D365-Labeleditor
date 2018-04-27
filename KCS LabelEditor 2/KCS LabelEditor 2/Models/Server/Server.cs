@@ -25,7 +25,7 @@ namespace KCS_LabelEditor_2.Server
         public void Start()
         {
             if (_serviceHost.State == CommunicationState.Opening || _serviceHost.State == CommunicationState.Opened)
-                throw new ConnectionAlreadyOpenException("Connection is already open or opening.");
+                throw new ConnectionAlreadyOpenException(Properties.Exceptions.ConnectionAlreadyOpen);
 
             _serviceHost.Open();
         }
@@ -33,7 +33,7 @@ namespace KCS_LabelEditor_2.Server
         public void Stop()
         {
             if (_serviceHost.State == CommunicationState.Closed || _serviceHost.State == CommunicationState.Closing)
-                throw new ConnectionAlreadyClosedException("Connection is already closed or closing");
+                throw new ConnectionAlreadyClosedException(Properties.Exceptions.ConnectionAlreadyClosed);
             _serviceHost.Close();
         }
 
