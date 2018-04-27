@@ -4,9 +4,9 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:KCS_LabelEditor_2"
-        xmlns:klassen="clr-namespace:KCS_LabelEditor_2.Klassen"
         mc:Ignorable="d"
         xmlns:lex="http://wpflocalizeextension.codeplex.com"
+        xmlns:helper="clr-namespace:KCS_LabelEditor_2.Helper"
         lex:LocalizeDictionary.DesignCulture="en"
         lex:ResxLocalizationProvider.DefaultAssembly="KCS LabelEditor 2"
         lex:ResxLocalizationProvider.DefaultDictionary="MainWindow" 
@@ -14,12 +14,12 @@
         Title="{lex:Loc Title}" Height="797.368" Width="1548.421" Closing="Window_Closing" WindowStartupLocation="CenterScreen" Loaded="Window_Loaded">
 
     <Window.CommandBindings>
-        <CommandBinding Command="klassen:CustomCommands.New" Executed="AddLabel" />
-        <CommandBinding Command="klassen:CustomCommands.Rename" Executed="RenameLabel" />
-        <CommandBinding Command="klassen:CustomCommands.Save" Executed="SaveLabel" />
-        <CommandBinding Command="klassen:CustomCommands.Delete" Executed="DeleteLabel" />
-        <CommandBinding Command="klassen:CustomCommands.Translate" Executed="TranslateLabel" />
-        <CommandBinding Command="klassen:CustomCommands.PasteToVs" Executed="PasteLabelToVisualStudio" />
+        <CommandBinding Command="helper:CustomCommands.New" Executed="AddLabel" />
+        <CommandBinding Command="helper:CustomCommands.Rename" Executed="RenameLabel" />
+        <CommandBinding Command="helper:CustomCommands.Save" Executed="SaveLabel" />
+        <CommandBinding Command="helper:CustomCommands.Delete" Executed="DeleteLabel" />
+        <CommandBinding Command="helper:CustomCommands.Translate" Executed="TranslateLabel" />
+        <CommandBinding Command="helper:CustomCommands.PasteToVs" Executed="PasteLabelToVisualStudio" />
     </Window.CommandBindings>
 
     <Grid x:Name="Main">
@@ -30,17 +30,17 @@
         </Grid.RowDefinitions>
         <Menu Grid.Row="0" DockPanel.Dock="Top">
             <MenuItem Header="{lex:Loc File}">
-                <MenuItem x:Name="SaveButton" Header="{lex:Loc Save}" Command="klassen:CustomCommands.Save"/>
+                <MenuItem x:Name="SaveButton" Header="{lex:Loc Save}" Command="helper:CustomCommands.Save"/>
                 <MenuItem x:Name="ReloadButton" Header="{lex:Loc Reload}" Click="ReloadButton_Click" />
                 <Separator />
                 <MenuItem x:Name="ExitButton" Header="{lex:Loc Exit}" Click="ExitButton_Click" />
             </MenuItem>
             <MenuItem Header="{lex:Loc Labels}">
-                <MenuItem x:Name="AddLabelButton" Header="{lex:Loc Add}" Command="klassen:CustomCommands.New" />
-                <MenuItem x:Name="DeleteLabelButton" Header="{lex:Loc Delete}" Command="klassen:CustomCommands.Delete"/>
-                <MenuItem x:Name="RenameLabelButton" Header="{lex:Loc Rename}" Command="klassen:CustomCommands.Rename"/>
-                <MenuItem x:Name="TranslateLabelButton" Header="{lex:Loc Translate}"  Command="klassen:CustomCommands.Translate" />
-                <MenuItem x:Name="PasteLabelButton" Header="{lex:Loc PasteToVs}"  Command="klassen:CustomCommands.PasteToVs" />
+                <MenuItem x:Name="AddLabelButton" Header="{lex:Loc Add}" Command="helper:CustomCommands.New" />
+                <MenuItem x:Name="DeleteLabelButton" Header="{lex:Loc Delete}" Command="helper:CustomCommands.Delete"/>
+                <MenuItem x:Name="RenameLabelButton" Header="{lex:Loc Rename}" Command="helper:CustomCommands.Rename"/>
+                <MenuItem x:Name="TranslateLabelButton" Header="{lex:Loc Translate}"  Command="helper:CustomCommands.Translate" />
+                <MenuItem x:Name="PasteLabelButton" Header="{lex:Loc PasteToVs}"  Command="helper:CustomCommands.PasteToVs" />
                 <MenuItem x:Name="ShowDiffButton" Header="{lex:Loc Changes}" Click="ShowDiffButton_Click" />
             </MenuItem>
         </Menu>

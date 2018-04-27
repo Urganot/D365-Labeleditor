@@ -1,25 +1,20 @@
 ﻿using System;
 using System.Runtime.Serialization;
 
-namespace KCS_LabelEditor_2
+namespace KCS_LabelEditor_2.Objects
 {
     [DataContract]
-    public class Language : IEquatable<Language>
+    public class FileId : IEquatable<FileId>
     {
-        public Language(string name)
-        {
-            Name = name;
-        }
-
         [DataMember]
-        public string Name { get;protected set; }
+        public string Name { get; set; }
 
         public override string ToString()
         {
             return Name;
         }
 
-        public bool Equals(Language other)
+        public bool Equals(FileId other)
         {
             if (ReferenceEquals(null, other)) return false;
             if (ReferenceEquals(this, other)) return true;
@@ -31,7 +26,7 @@ namespace KCS_LabelEditor_2
             if (ReferenceEquals(null, obj)) return false;
             if (ReferenceEquals(this, obj)) return true;
             if (obj.GetType() != this.GetType()) return false;
-            return Equals((Language)obj);
+            return Equals((FileId) obj);
         }
 
         public override int GetHashCode()

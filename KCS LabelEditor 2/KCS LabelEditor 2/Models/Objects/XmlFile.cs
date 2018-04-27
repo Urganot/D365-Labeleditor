@@ -1,5 +1,5 @@
 ﻿
-namespace KCS_LabelEditor_2
+namespace KCS_LabelEditor_2.Objects
 {
     public class XmlFile
     {

@@ -1,14 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Runtime.Serialization;
 using System.ServiceModel;
-using System.Text;
-using KCS_LabelEditor_2;
+using KCS_LabelEditor_2.Objects;
 
-namespace Communication
+namespace KCS_LabelEditor_2.Server
 {
-    //[ServiceContract]
     [ServiceContract(CallbackContract = typeof(ILabelEditorServiceCallBack))]
     public interface ILabelEditorService
     {
@@ -19,7 +16,7 @@ namespace Communication
         void SearchLabel(string searchText);
 
         [OperationContract]
-        void Register();
+        void Register(Guid guid);
     }
 
     [ServiceContract]

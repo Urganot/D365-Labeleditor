@@ -1,12 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Runtime.Serialization;
 using System.ServiceModel;
-using System.Text;
-using KCS_LabelEditor_2;
+using KCS_LabelEditor_2.Objects;
 
-namespace Communication
+namespace KCS_LabelEditor_2.Server
 {
     // NOTE: You can use the "Rename" command on the "Refactor" menu to change the class name "LabelEditorService" in both code and config file together.
     [ServiceBehavior(InstanceContextMode = InstanceContextMode.Single)]
@@ -35,17 +32,10 @@ namespace Communication
             MainWindow.SearchString = searchText;
         }
 
-        public void Register()
+        public void Register(Guid guid)
         {
-            MainWindow.ClientList = new List<ILabelEditorServiceCallBack>();
-            var guest = OperationContext.Current.GetCallbackChannel<ILabelEditorServiceCallBack>();
-
-            if (!MainWindow.ClientList.Contains(guest))
-            {
-                MainWindow.ClientList.Add(guest);
-            }
-
+            MainWindow.Server.Register(OperationContext.Current.GetCallbackChannel<ILabelEditorServiceCallBack>(),guid);
         }
     }
-
+    
 }

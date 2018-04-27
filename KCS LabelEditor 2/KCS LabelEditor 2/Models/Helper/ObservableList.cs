@@ -1,8 +1,7 @@
 ﻿using System.ComponentModel;
-using System.Runtime.CompilerServices;
 using System.Runtime.Serialization;
 
-namespace KCS_LabelEditor_2
+namespace KCS_LabelEditor_2.Helper
 {
     [DataContract]
     public class ObservableList : INotifyPropertyChanged

@@ -92,24 +92,33 @@
     <Compile Include="AddLabel.xaml.cs">
       <DependentUpon>AddLabel.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ILabelEditorService.cs" />
-    <Compile Include="Klassen\Commands.cs" />
-    <Compile Include="Klassen\DiffLine.cs" />
-    <Compile Include="Klassen\DiffMatchPatch.cs" />
-    <Compile Include="Klassen\BackgroundTimer.cs" />
-    <Compile Include="Klassen\FileIds.cs" />
-    <Compile Include="Klassen\Helper.cs" />
-    <Compile Include="Klassen\LabelFile.cs" />
-    <Compile Include="Klassen\LabelFiles.cs" />
-    <Compile Include="Klassen\Labels.cs" />
-    <Compile Include="Klassen\Languages.cs" />
-    <Compile Include="Klassen\ObservableList.cs" />
-    <Compile Include="Klassen\XmlFiles.cs" />
-    <Compile Include="LabelEditorService.cs" />
+    <Compile Include="Models\Server\ILabelEditorService.cs" />
+    <Compile Include="Models\Helper\Commands.cs" />
+    <Compile Include="Models\CustomExceptions\ConnectionAlreadyClosedException.cs" />
+    <Compile Include="Models\CustomExceptions\ConnectionAlreadyOpenException.cs" />
+    <Compile Include="Models\Objects\DiffLine.cs" />
+    <Compile Include="Models\Helper\DiffMatchPatch.cs" />
+    <Compile Include="Models\Objects\BackgroundTimer.cs" />
+    <Compile Include="Models\Lists\FileIds.cs" />
+    <Compile Include="Models\Helper\Helper.cs" />
+    <Compile Include="Models\Objects\LabelFile.cs" />
+    <Compile Include="Models\Lists\LabelFiles.cs" />
+    <Compile Include="Models\Lists\Labels.cs" />
+    <Compile Include="Models\Lists\Languages.cs" />
+    <Compile Include="Models\Helper\ObservableList.cs" />
+    <Compile Include="Models\Server\Server.cs" />
+    <Compile Include="Models\Helper\WindowWithoutCommandbar.cs" />
+    <Compile Include="Models\Lists\XmlFiles.cs" />
+    <Compile Include="Models\Server\LabelEditorService.cs" />
     <Compile Include="Properties\AddLabel.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>AddLabel.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Exceptions.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Exceptions.resx</DependentUpon>
     </Compile>
     <Compile Include="Properties\MainWindow.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -129,10 +138,11 @@
     <Compile Include="RenameLabel.xaml.cs">
       <DependentUpon>RenameLabel.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Klassen\XmlFile.cs" />
+    <Compile Include="Models\Objects\XmlFile.cs" />
     <Compile Include="ShowDiff.xaml.cs">
       <DependentUpon>ShowDiff.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Models\Objects\Updater.cs" />
     <Page Include="AddLabel.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -145,9 +155,9 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Klassen\FileId.cs" />
-    <Compile Include="Klassen\Label.cs" />
-    <Compile Include="Klassen\Language.cs" />
+    <Compile Include="Models\Objects\FileId.cs" />
+    <Compile Include="Models\Objects\Label.cs" />
+    <Compile Include="Models\Objects\Language.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -162,7 +172,7 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Klassen\MyWpfAttributes.cs" />
+    <Compile Include="Models\Helper\MyWpfAttributes.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -180,6 +190,11 @@
     <EmbeddedResource Include="Properties\AddLabel.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>AddLabel.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Exceptions.de.resx" />
+    <EmbeddedResource Include="Properties\Exceptions.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Exceptions.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\General.de.resx">
       <SubType>Designer</SubType>
@@ -239,5 +254,6 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

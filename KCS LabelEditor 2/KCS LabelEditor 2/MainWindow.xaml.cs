@@ -12,9 +12,13 @@ using System.Windows.Controls;
 using System.Windows.Forms;
 using System.Windows.Input;
 using AutoUpdaterDotNET;
-using Communication;
+using KCS_LabelEditor_2.CustomExceptions;
+using KCS_LabelEditor_2.Helper;
+using KCS_LabelEditor_2.Lists;
+using KCS_LabelEditor_2.Objects;
 using KCS_LabelEditor_2.Properties;
-using static KCS_LabelEditor_2.Helper;
+using DataGrid = System.Windows.Controls.DataGrid;
+using Label = KCS_LabelEditor_2.Objects.Label;
 using MessageBox = System.Windows.Forms.MessageBox;
 
 namespace KCS_LabelEditor_2
@@ -26,6 +30,8 @@ namespace KCS_LabelEditor_2
     public partial class MainWindow : INotifyPropertyChanged
     {
         #region Properties
+
+        public Server.Server Server;
 
         public event PropertyChangedEventHandler PropertyChanged;
 
@@ -65,7 +71,6 @@ namespace KCS_LabelEditor_2
             }
         }
 
-        private ServiceHost Host;
 
         #endregion
 
@@ -87,9 +92,12 @@ namespace KCS_LabelEditor_2
 
             InitTimer();
 
-            Host = new ServiceHost(new LabelEditorService(this));
-
-            Host.Open();
+            try
+            {
+                Server.Start();
+            }
+            catch (ConnectionAlreadyOpenException)
+            { }
         }
 
         private void InitTimer()
@@ -106,6 +114,7 @@ namespace KCS_LabelEditor_2
             FileIds = new FileIds(this);
             XmlFiles = new XmlFiles(this);
             ReadFilesNew = new LabelFiles(this);
+            Server = new Server.Server(this);
         }
 
         private void SetDataBindings()
@@ -227,6 +236,13 @@ namespace KCS_LabelEditor_2
                 return;
 
             Labels.Save(e);
+
+            try
+            {
+                Server.Stop();
+            }
+            catch (ConnectionAlreadyClosedException)
+            { }
         }
 
         private bool CanClose(CancelEventArgs e)
@@ -244,7 +260,11 @@ namespace KCS_LabelEditor_2
 
         private void Grids_CopyingRowClipboardContent(object sender, DataGridRowClipboardEventArgs e)
         {
-            var currentCell = e.ClipboardRowContent[MainGrid.CurrentCell.Column.DisplayIndex];
+            if (!(sender is DataGrid))
+                throw new ArgumentOutOfRangeException();
+
+            var senderGrid = (DataGrid)sender;
+            var currentCell = e.ClipboardRowContent[senderGrid.CurrentCell.Column.DisplayIndex];
             e.ClipboardRowContent.Clear();
             e.ClipboardRowContent.Add(currentCell);
         }
@@ -359,56 +379,16 @@ namespace KCS_LabelEditor_2
             SetGridFilter();
         }
 
-        protected void BlockTheCommand(object sender,
-            CanExecuteRoutedEventArgs e)
-        {
-            e.CanExecute = false;
-            e.Handled = true;
-        }
-
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
-            InitUpdater();
-            AutoUpdater.Start("http://urganot.net/LabelEditor/updates/UpdateFile.xml");
+            var updater = new Updater();
+            updater.Init();
+            updater.Start();
         }
-
-        private void InitUpdater()
-        {
-            AutoUpdater.LetUserSelectRemindLater = false;
-            AutoUpdater.RemindLaterTimeSpan = RemindLaterFormat.Minutes;
-            AutoUpdater.RemindLaterAt = 5;
-        }
-
-        public List<ILabelEditorServiceCallBack> ClientList;
 
         public void PasteLabelToVisualStudio(object sender, RoutedEventArgs e)
         {
-            if (ValidateClients())
-            {
-                foreach (var client in ClientList)
-                {
-                    try
-                    {
-                        client.PasteLabel(Labels.Selected.FullId);
-                    }
-                    catch (CommunicationObjectAbortedException ex)
-                    {
-                        MessageBox.Show(Properties.MainWindow.ClientNotFoundMessage, Properties.MainWindow.ClientNotFoundTitle, MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                        ClientList.Remove(client);
-                        break;
-                    }
-                }
-            }
-        }
-
-        private bool ValidateClients()
-        {
-            bool ok = true;
-
-            if (!ClientList.Any())
-                ok = CheckFailed(Properties.MainWindow.NoClientConnectedMessage, Properties.MainWindow.NoClientConnectedTitle);
-
-            return ok;
+            Server.PasteLabel(Labels.Selected.FullId);
         }
 
         public bool HandleChangedFile()

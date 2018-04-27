@@ -1,10 +1,10 @@
-﻿using System.ComponentModel;
-using System.Runtime.CompilerServices;
+﻿using System.Runtime.CompilerServices;
 using System.Runtime.Serialization;
 using System.Windows;
 using System.Windows.Controls;
+using KCS_LabelEditor_2.Helper;
 
-namespace KCS_LabelEditor_2
+namespace KCS_LabelEditor_2.Objects
 {
     [DataContract]
     public class Label : ObservableList

@@ -5,6 +5,8 @@ using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Windows.Controls;
 using System.Windows.Data;
+using KCS_LabelEditor_2.Helper;
+using KCS_LabelEditor_2.Objects;
 using KCS_LabelEditor_2.Properties;
 
 namespace KCS_LabelEditor_2

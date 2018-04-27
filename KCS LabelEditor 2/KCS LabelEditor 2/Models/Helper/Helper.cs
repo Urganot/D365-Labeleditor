@@ -2,7 +2,7 @@
 using System.Text;
 using System.Windows.Forms;
 
-namespace KCS_LabelEditor_2
+namespace KCS_LabelEditor_2.Helper
 {
     public class Helper
     {
