@@ -1,4 +1,6 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using System.Runtime.Serialization;
 using System.ServiceModel;
 using KCS_LabelEditor_2.Objects;
 
@@ -14,7 +16,7 @@ namespace KCS_LabelEditor_2.Server
         void SearchLabel(string searchText);
 
         [OperationContract]
-        void Register();
+        void Register(Guid guid);
     }
 
     [ServiceContract]

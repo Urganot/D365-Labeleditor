@@ -32,10 +32,10 @@ namespace KCS_LabelEditor_2.Server
             MainWindow.SearchString = searchText;
         }
 
-        public void Register()
+        public void Register(Guid guid)
         {
-            MainWindow.Server.Register(OperationContext.Current.GetCallbackChannel<ILabelEditorServiceCallBack>());
+            MainWindow.Server.Register(OperationContext.Current.GetCallbackChannel<ILabelEditorServiceCallBack>(),guid);
         }
     }
-
+    
 }

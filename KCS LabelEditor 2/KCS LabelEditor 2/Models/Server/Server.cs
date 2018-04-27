@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.ServiceModel;
 using System.Windows.Forms;
@@ -11,13 +12,13 @@ namespace KCS_LabelEditor_2.Server
     {
         private readonly ServiceHost _serviceHost;
 
-        public List<ILabelEditorServiceCallBack> ClientList;
+        public Dictionary<Guid, ILabelEditorServiceCallBack> ClientList;
 
 
         public Server(MainWindow mainWindow)
         {
             _serviceHost = new ServiceHost(new LabelEditorService(mainWindow));
-            ClientList = new List<ILabelEditorServiceCallBack>();
+            ClientList = new Dictionary<Guid, ILabelEditorServiceCallBack>();
         }
 
 
@@ -61,24 +62,24 @@ namespace KCS_LabelEditor_2.Server
                 {
                     try
                     {
-                        client.PasteLabel(fullId);
+                        client.Value.PasteLabel(fullId);
                     }
-                    catch (CommunicationObjectAbortedException ex)
+                    catch (CommunicationObjectAbortedException)
                     {
                         MessageBox.Show(Properties.MainWindow.ClientNotFoundMessage,
                             Properties.MainWindow.ClientNotFoundTitle, MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                        ClientList.Remove(client);
+                        ClientList.Remove(client.Key);
                         break;
                     }
                 }
             }
         }
 
-        public void Register(ILabelEditorServiceCallBack client)
+        public void Register(ILabelEditorServiceCallBack client, Guid guid)
         {
-            if (!ClientList.Contains(client))
+            if (!ClientList.ContainsKey(guid))
             {
-                ClientList.Add(client);
+                ClientList.Add(guid, client);
             }
         }
     }
