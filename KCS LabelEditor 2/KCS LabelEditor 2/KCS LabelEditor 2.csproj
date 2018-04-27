@@ -252,6 +252,7 @@
   <ItemGroup>
     <Content Include="UpdateFile.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
     </Content>
   </ItemGroup>
   <ItemGroup />

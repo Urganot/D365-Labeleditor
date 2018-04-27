@@ -3,5 +3,5 @@
   <version>1.4.0.0</version>
   <url>http://urganot.net/LabelEditor/updates/KCS LabelEditor 2.0.zip</url>
   <changelog>http://urganot.net/LabelEditor/updates/changelog.htm</changelog>
-  <mandatory>false</mandatory>
+  <mandatory>true</mandatory>
 </item>
