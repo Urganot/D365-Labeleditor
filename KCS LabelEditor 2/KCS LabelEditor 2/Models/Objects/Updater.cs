@@ -1,6 +1,6 @@
 ﻿using AutoUpdaterDotNET;
 
-namespace KCS_LabelEditor_2.Objects
+namespace AVA_LabelEditor.Objects
 {
     class Updater
     {

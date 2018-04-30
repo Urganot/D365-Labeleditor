@@ -2,9 +2,9 @@
 using System.Runtime.Serialization;
 using System.Windows;
 using System.Windows.Controls;
-using KCS_LabelEditor_2.Helper;
+using AVA_LabelEditor.Helper;
 
-namespace KCS_LabelEditor_2.Objects
+namespace AVA_LabelEditor.Objects
 {
     [DataContract]
     public class Label : ObservableList
@@ -17,7 +17,7 @@ namespace KCS_LabelEditor_2.Objects
 
         private bool _deleted;
 
-        public Label(MainWindow mainWindow)
+        public Label(AVA_LabelEditor.MainWindow mainWindow)
         {
             MainWindow = mainWindow;
         }
@@ -26,7 +26,7 @@ namespace KCS_LabelEditor_2.Objects
         [MyWpfAttributes(IsReadOnly = true, Width = 8, WidthType = DataGridLengthUnitType.Star)]
         public FileId FileId
         {
-            get => _fileId;
+            get { return _fileId; }
             set
             {
                 _fileId = value;
@@ -38,7 +38,7 @@ namespace KCS_LabelEditor_2.Objects
         [MyWpfAttributes(IsReadOnly = true, Width = 25, WidthType = DataGridLengthUnitType.Star)]
         public string Id
         {
-            get => _id;
+            get { return _id; }
             set
             {
                 _id = value;
@@ -59,7 +59,7 @@ namespace KCS_LabelEditor_2.Objects
         [MyWpfAttributes(IsReadOnly = true, Width = 5, WidthType = DataGridLengthUnitType.Star)]
         public Language Language
         {
-            get => _language;
+            get { return _language; }
             set
             {
                 _language = value;
@@ -71,7 +71,7 @@ namespace KCS_LabelEditor_2.Objects
         [MyWpfAttributes(Width = 30, WidthType = DataGridLengthUnitType.Star)]
         public string Text
         {
-            get => _text;
+            get { return _text; }
             set
             {
                 _text = value;
@@ -83,7 +83,7 @@ namespace KCS_LabelEditor_2.Objects
         [MyWpfAttributes(Width = 20, WidthType = DataGridLengthUnitType.Star)]
         public string Comment
         {
-            get => _comment;
+            get { return _comment; }
             set
             {
                 _comment = value;
@@ -99,7 +99,7 @@ namespace KCS_LabelEditor_2.Objects
         [MyWpfAttributes(Visible = Visibility.Hidden, IsReadOnly = true)]
         public bool Deleted
         {
-            get => _deleted;
+            get { return _deleted; }
             set
             {
                 _deleted = value;

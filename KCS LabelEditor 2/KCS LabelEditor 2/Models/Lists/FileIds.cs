@@ -2,25 +2,25 @@
 using System.ComponentModel;
 using System.Linq;
 using System.Windows.Data;
-using KCS_LabelEditor_2.Helper;
-using KCS_LabelEditor_2.Objects;
-using KCS_LabelEditor_2.Properties;
+using AVA_LabelEditor.Helper;
+using AVA_LabelEditor.Objects;
+using AVA_LabelEditor.Properties;
 
-namespace KCS_LabelEditor_2.Lists
+namespace AVA_LabelEditor.Lists
 {
     public class FileIds : ObservableList
     {
 
         private readonly ObservableCollection<FileId> _all = new ObservableCollection<FileId>();
 
-        public FileIds(MainWindow mainWindow)
+        public FileIds(AVA_LabelEditor.MainWindow mainWindow)
         {
             MainWindow = mainWindow;
         }
 
         public FileId Selected
         {
-            get => new FileId { Name = Settings.Default.FileId };
+            get { return new FileId {Name = Settings.Default.FileId}; }
             set
             {
                 Settings.Default.FileId = value?.Name ?? string.Empty;

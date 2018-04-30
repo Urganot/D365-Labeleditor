@@ -1,13 +1,13 @@
 ﻿using System.ComponentModel;
 using System.Runtime.Serialization;
 
-namespace KCS_LabelEditor_2.Helper
+namespace AVA_LabelEditor.Helper
 {
     [DataContract]
     public class ObservableList : INotifyPropertyChanged
     {
         public event PropertyChangedEventHandler PropertyChanged;
-        protected MainWindow MainWindow;
+        protected AVA_LabelEditor.MainWindow MainWindow;
 
         protected virtual void OnPropertyChanged(string propertyName = null)
         {

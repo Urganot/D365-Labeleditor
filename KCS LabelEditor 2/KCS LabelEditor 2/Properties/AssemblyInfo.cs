@@ -7,12 +7,12 @@ using System.Windows;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("KCS LabelEditor 2")]
+[assembly: AssemblyTitle("Avanade Labeleditor")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("KCS LabelEditor 2")]
-[assembly: AssemblyCopyright("Copyright ©  2018")]
+[assembly: AssemblyCompany("Avande")]
+[assembly: AssemblyProduct("Avanade Labeleditor")]
+[assembly: AssemblyCopyright("Copyright © 2018, Simon Balling")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

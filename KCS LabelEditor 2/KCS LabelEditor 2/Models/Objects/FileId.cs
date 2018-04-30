@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Runtime.Serialization;
 
-namespace KCS_LabelEditor_2.Objects
+namespace AVA_LabelEditor.Objects
 {
     [DataContract]
     public class FileId : IEquatable<FileId>

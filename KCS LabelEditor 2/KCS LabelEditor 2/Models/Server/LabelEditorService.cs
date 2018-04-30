@@ -1,18 +1,18 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ServiceModel;
-using KCS_LabelEditor_2.Objects;
+using AVA_LabelEditor.Objects;
 
-namespace KCS_LabelEditor_2.Server
+namespace AVA_LabelEditor.Server
 {
     // NOTE: You can use the "Rename" command on the "Refactor" menu to change the class name "LabelEditorService" in both code and config file together.
     [ServiceBehavior(InstanceContextMode = InstanceContextMode.Single)]
     public class LabelEditorService : ILabelEditorService
     {
-        private MainWindow MainWindow;
+        private AVA_LabelEditor.MainWindow MainWindow;
 
 
-        public LabelEditorService(MainWindow mainWindow)
+        public LabelEditorService(AVA_LabelEditor.MainWindow mainWindow)
         {
             MainWindow = mainWindow;
         }

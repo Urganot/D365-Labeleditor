@@ -3,7 +3,7 @@ using System.Runtime.InteropServices;
 using System.Windows;
 using System.Windows.Interop;
 
-namespace KCS_LabelEditor_2.Helper
+namespace AVA_LabelEditor.Helper
 {
     public static class WindowWithoutCommandbar
     {

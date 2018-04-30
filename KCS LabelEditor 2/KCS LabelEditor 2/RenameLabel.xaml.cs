@@ -2,9 +2,9 @@
 using System.Runtime.InteropServices;
 using System.Windows;
 using System.Windows.Interop;
-using KCS_LabelEditor_2.Helper;
-using KCS_LabelEditor_2.Properties;
-using static KCS_LabelEditor_2.Helper.Helper;
+using AVA_LabelEditor.Helper;
+using AVA_LabelEditor.Properties;
+using static AVA_LabelEditor.Helper.Helper;
 
 namespace KCS_LabelEditor_2
 {
@@ -13,8 +13,8 @@ namespace KCS_LabelEditor_2
     /// </summary>
     public partial class RenameLabel
     {
-        private MainWindow _mainWindow;
-        public RenameLabel(MainWindow mainWindow, string oldId)
+        private AVA_LabelEditor.MainWindow _mainWindow;
+        public RenameLabel(AVA_LabelEditor.MainWindow mainWindow, string oldId)
         {
 
             _mainWindow = mainWindow;

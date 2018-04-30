@@ -1,27 +1,25 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.ComponentModel.Design;
-using System.Globalization;
 using System.Linq;
 using System.Reflection;
 using System.Runtime.CompilerServices;
-using System.ServiceModel;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Forms;
 using System.Windows.Input;
-using AutoUpdaterDotNET;
-using KCS_LabelEditor_2.CustomExceptions;
-using KCS_LabelEditor_2.Helper;
-using KCS_LabelEditor_2.Lists;
-using KCS_LabelEditor_2.Objects;
-using KCS_LabelEditor_2.Properties;
+using AVA_LabelEditor.CustomExceptions;
+using AVA_LabelEditor.Helper;
+using AVA_LabelEditor.Lists;
+using AVA_LabelEditor.Objects;
+using AVA_LabelEditor.Properties;
+using AddLabel = KCS_LabelEditor_2.AddLabel;
 using DataGrid = System.Windows.Controls.DataGrid;
-using Label = KCS_LabelEditor_2.Objects.Label;
+using Label = AVA_LabelEditor.Objects.Label;
 using MessageBox = System.Windows.Forms.MessageBox;
+using RenameLabel = KCS_LabelEditor_2.RenameLabel;
 
-namespace KCS_LabelEditor_2
+namespace AVA_LabelEditor
 {
     /// <inheritdoc cref="Window" />
     /// <summary>
@@ -43,8 +41,11 @@ namespace KCS_LabelEditor_2
 
         public string SearchString
         {
-            get => SearchTextbox.Text;
-            set => SearchTextbox.Text = value;
+            get
+            {
+                return SearchTextbox.Text;
+            }
+            set { SearchTextbox.Text = value; }
         }
 
         public BackgroundTimer Timer;
@@ -53,17 +54,18 @@ namespace KCS_LabelEditor_2
 
         public string AxLabelPath
         {
-            get => Settings.Default.AxLabelPath;
+            get { return Settings.Default.AxLabelPath; }
             set
             {
                 Settings.Default.AxLabelPath = value;
                 OnPropertyChanged();
             }
+
         }
 
         public bool AutoTranslate
         {
-            get => Settings.Default.AutoTranslate;
+            get { return Settings.Default.AutoTranslate; }
             set
             {
                 Settings.Default.AutoTranslate = value;
@@ -369,7 +371,7 @@ namespace KCS_LabelEditor_2
 
         private void ShowDiffButton_Click(object sender, RoutedEventArgs e)
         {
-            var dialog = new ShowDiff(this);
+            var dialog = new AVA_LabelEditor.ShowDiff(this);
 
             dialog.ShowDialog();
         }

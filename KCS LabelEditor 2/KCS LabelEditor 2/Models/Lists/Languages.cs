@@ -2,30 +2,31 @@
 using System.ComponentModel;
 using System.Linq;
 using System.Windows.Data;
-using KCS_LabelEditor_2.Helper;
-using KCS_LabelEditor_2.Objects;
-using KCS_LabelEditor_2.Properties;
+using AVA_LabelEditor.Helper;
+using AVA_LabelEditor.Objects;
+using AVA_LabelEditor.Properties;
 
-namespace KCS_LabelEditor_2.Lists
+namespace AVA_LabelEditor.Lists
 {
     public class Languages : ObservableList
     {
         public ObservableCollection<Language> All = new ObservableCollection<Language>();
 
-        public Languages(MainWindow mainWindow)
+        public Languages(AVA_LabelEditor.MainWindow mainWindow)
         {
             MainWindow = mainWindow;
         }
 
         public Language Selected
         {
-            get => new Language(Settings.Default.Language);
+            get { return new Language(Settings.Default.Language); }
             set
             {
                 Settings.Default.Language = value?.Name ?? "";
                 OnPropertyChanged();
             }
         }
+
         public Language SelectedOld { get; set; }
 
         public ICollectionView GetView()

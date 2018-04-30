@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace KCS_LabelEditor_2.CustomExceptions
+namespace AVA_LabelEditor.CustomExceptions
 {
     class ConnectionAlreadyOpenException : Exception
     {

@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace KCS_LabelEditor_2.Properties {
+namespace AVA_LabelEditor.Properties {
     using System;
     
     
@@ -39,7 +39,7 @@ namespace KCS_LabelEditor_2.Properties {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("KCS_LabelEditor_2.Properties.AddLabel", typeof(AddLabel).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("AVA_LabelEditor.Properties.AddLabel", typeof(AddLabel).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows.Threading;
 
-namespace KCS_LabelEditor_2.Objects
+namespace AVA_LabelEditor.Objects
 {
     public class BackgroundTimer
     {
@@ -9,9 +9,9 @@ namespace KCS_LabelEditor_2.Objects
 
         private bool DontReload { get; set; }
 
-        private readonly MainWindow _mainWindow;
+        private readonly AVA_LabelEditor.MainWindow _mainWindow;
 
-        public BackgroundTimer(MainWindow mainWindow)
+        public BackgroundTimer(AVA_LabelEditor.MainWindow mainWindow)
         {
             _mainWindow = mainWindow;
         }

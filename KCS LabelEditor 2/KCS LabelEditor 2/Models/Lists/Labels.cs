@@ -6,12 +6,12 @@ using System.IO;
 using System.Linq;
 using System.Windows;
 using System.Windows.Data;
-using KCS_LabelEditor_2.Helper;
-using KCS_LabelEditor_2.Objects;
-using KCS_LabelEditor_2.Properties;
-using static KCS_LabelEditor_2.Helper.Helper;
+using AVA_LabelEditor.Helper;
+using AVA_LabelEditor.Objects;
+using AVA_LabelEditor.Properties;
+using AddLabel = KCS_LabelEditor_2.AddLabel;
 
-namespace KCS_LabelEditor_2.Lists
+namespace AVA_LabelEditor.Lists
 {
     public class Labels : ObservableList
     {
@@ -20,7 +20,7 @@ namespace KCS_LabelEditor_2.Lists
 
         public Label Selected
         {
-            get => _selected;
+            get { return _selected; }
             set
             {
                 _selected = value;
@@ -30,7 +30,7 @@ namespace KCS_LabelEditor_2.Lists
 
         private Label _selected;
 
-        public Labels(MainWindow mainWindow)
+        public Labels(AVA_LabelEditor.MainWindow mainWindow)
         {
             MainWindow = mainWindow;
         }
@@ -63,7 +63,7 @@ namespace KCS_LabelEditor_2.Lists
             var ok = true;
 
             if (Selected == null)
-                ok = CheckFailed(General.NoLabelSelectedMessage, General.NoLabelSelectedTitle);
+                ok = Helper.Helper.CheckFailed(General.NoLabelSelectedMessage, General.NoLabelSelectedTitle);
 
             return ok;
         }
@@ -137,7 +137,7 @@ namespace KCS_LabelEditor_2.Lists
             var ok = true;
 
             if (Selected == null)
-                ok = CheckFailed(General.NoLabelSelectedMessage, General.NoLabelSelectedTitle);
+                ok = Helper.Helper.CheckFailed(General.NoLabelSelectedMessage, General.NoLabelSelectedTitle);
 
             var result = MessageBox.Show(string.Format(General.DeleteLabelConfirmMessage, Selected.Id), General.DeleteLabelConfirmTitle, MessageBoxButton.YesNo, MessageBoxImage.Question);
             ok = ok && result == MessageBoxResult.Yes;
@@ -149,8 +149,10 @@ namespace KCS_LabelEditor_2.Lists
         {
             var ok = true;
 
-            if (e is CancelEventArgs ex)
+            if (e is CancelEventArgs)
             {
+                var ex = (CancelEventArgs)e;
+
                 if (MainWindow.ReadFilesNew.All.Any(x => x.Changed))
                 {
                     var messageResult = MessageBox.Show(General.FileChangedCantSaveMessage, General.FileChangedCantSaveTitle, MessageBoxButton.OKCancel, MessageBoxImage.Warning);
@@ -182,7 +184,7 @@ namespace KCS_LabelEditor_2.Lists
             }
             else if (MainWindow.ReadFilesNew.All.Any(x => x.Changed))
             {
-                ok = CheckFailed(General.FileChangedCantSaveMessage, General.FileChangedCantSaveTitle);
+                ok = Helper.Helper.CheckFailed(General.FileChangedCantSaveMessage, General.FileChangedCantSaveTitle);
             }
 
             return ok;
@@ -258,7 +260,7 @@ namespace KCS_LabelEditor_2.Lists
             var ok = true;
 
             if (Selected == null)
-                ok = CheckFailed(General.NoLabelSelectedMessage, General.NoLabelSelectedTitle);
+                ok = Helper.Helper.CheckFailed(General.NoLabelSelectedMessage, General.NoLabelSelectedTitle);
 
 
             return ok;

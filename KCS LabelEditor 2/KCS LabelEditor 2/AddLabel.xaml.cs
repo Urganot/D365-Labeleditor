@@ -2,9 +2,9 @@
 using System.Runtime.InteropServices;
 using System.Windows;
 using System.Windows.Interop;
-using KCS_LabelEditor_2.Helper;
-using KCS_LabelEditor_2.Properties;
-using static KCS_LabelEditor_2.Helper.Helper;
+using AVA_LabelEditor.Helper;
+using AVA_LabelEditor.Properties;
+using static AVA_LabelEditor.Helper.Helper;
 
 namespace KCS_LabelEditor_2
 {
@@ -13,9 +13,9 @@ namespace KCS_LabelEditor_2
     /// </summary>
     public partial class AddLabel
     {
-        private MainWindow MainWindow;
+        private AVA_LabelEditor.MainWindow MainWindow;
 
-        public AddLabel(MainWindow mainWindow, string labelText = "")
+        public AddLabel(AVA_LabelEditor.MainWindow mainWindow, string labelText = "")
         {
             MainWindow = mainWindow;
             InitializeComponent();

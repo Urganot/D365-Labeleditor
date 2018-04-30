@@ -1,16 +1,16 @@
 ﻿using System.Collections.Generic;
 using System.IO;
 using System.Xml.Linq;
-using KCS_LabelEditor_2.Helper;
-using KCS_LabelEditor_2.Objects;
+using AVA_LabelEditor.Helper;
+using AVA_LabelEditor.Objects;
 
-namespace KCS_LabelEditor_2.Lists
+namespace AVA_LabelEditor.Lists
 {
     public class XmlFiles : ObservableList
     {
         public List<XmlFile> All = new List<XmlFile>();
 
-        public XmlFiles(MainWindow mainWindow)
+        public XmlFiles(AVA_LabelEditor.MainWindow mainWindow)
         {
             MainWindow = mainWindow;
         }

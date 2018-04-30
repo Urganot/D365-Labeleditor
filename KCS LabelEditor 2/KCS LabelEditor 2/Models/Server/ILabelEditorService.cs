@@ -1,10 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Runtime.Serialization;
 using System.ServiceModel;
-using KCS_LabelEditor_2.Objects;
+using AVA_LabelEditor.Objects;
 
-namespace KCS_LabelEditor_2.Server
+namespace AVA_LabelEditor.Server
 {
     [ServiceContract(CallbackContract = typeof(ILabelEditorServiceCallBack))]
     public interface ILabelEditorService

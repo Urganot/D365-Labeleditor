@@ -5,11 +5,11 @@ using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Windows.Controls;
 using System.Windows.Data;
-using KCS_LabelEditor_2.Helper;
-using KCS_LabelEditor_2.Objects;
-using KCS_LabelEditor_2.Properties;
+using AVA_LabelEditor.Helper;
+using AVA_LabelEditor.Objects;
+using KCS_LabelEditor_2;
 
-namespace KCS_LabelEditor_2
+namespace AVA_LabelEditor
 {
     /// <summary>
     /// Interaction logic for ShowDiff.xaml
@@ -25,18 +25,17 @@ namespace KCS_LabelEditor_2
 
         public Language SelectedLanguage
         {
-            get => _selectedLanguage;
+            get { return _selectedLanguage; }
             set
             {
                 _selectedLanguage = value;
                 OnPropertyChanged();
             }
-
         }
 
         public FileId SelectedFileId
         {
-            get => _selectedFileId;
+            get { return _selectedFileId; }
             set
             {
                 _selectedFileId = value;

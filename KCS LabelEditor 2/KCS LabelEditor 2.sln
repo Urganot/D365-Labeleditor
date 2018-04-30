@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.27428.2002
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KCS LabelEditor 2", "KCS LabelEditor 2\KCS LabelEditor 2.csproj", "{6E89DBE8-FC58-4916-A024-53508EE4BB85}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Avanade Labeleditor", "KCS LabelEditor 2\Avanade Labeleditor.csproj", "{6E89DBE8-FC58-4916-A024-53508EE4BB85}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoogleTranslate", "GoogleTranslate\GoogleTranslate.csproj", "{3F673A03-4581-4844-A0DD-A65D326C8474}"
 EndProject
@@ -12,7 +12,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		Resources.Designer.t4 = Resources.Designer.t4
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WcfClientTest", "WcfClientTest\WcfClientTest.csproj", "{CD1226C0-F4F7-4173-8177-66519ADB3B2B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Avanade Label Editor Extension", "Avanade Label Editor Extension\Avanade Label Editor Extension.csproj", "{8E2E28B7-72A0-4E4C-9738-E15F47F07D77}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -28,10 +28,10 @@ Global
 		{3F673A03-4581-4844-A0DD-A65D326C8474}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3F673A03-4581-4844-A0DD-A65D326C8474}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3F673A03-4581-4844-A0DD-A65D326C8474}.Release|Any CPU.Build.0 = Release|Any CPU
-		{CD1226C0-F4F7-4173-8177-66519ADB3B2B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{CD1226C0-F4F7-4173-8177-66519ADB3B2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{CD1226C0-F4F7-4173-8177-66519ADB3B2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{CD1226C0-F4F7-4173-8177-66519ADB3B2B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E2E28B7-72A0-4E4C-9738-E15F47F07D77}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E2E28B7-72A0-4E4C-9738-E15F47F07D77}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E2E28B7-72A0-4E4C-9738-E15F47F07D77}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E2E28B7-72A0-4E4C-9738-E15F47F07D77}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -3,10 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.ServiceModel;
 using System.Windows.Forms;
-using KCS_LabelEditor_2.CustomExceptions;
-using static KCS_LabelEditor_2.Helper.Helper;
+using AVA_LabelEditor.CustomExceptions;
 
-namespace KCS_LabelEditor_2.Server
+namespace AVA_LabelEditor.Server
 {
     public class Server
     {
@@ -15,7 +14,7 @@ namespace KCS_LabelEditor_2.Server
         public Dictionary<Guid, ILabelEditorServiceCallBack> ClientList;
 
 
-        public Server(MainWindow mainWindow)
+        public Server(AVA_LabelEditor.MainWindow mainWindow)
         {
             _serviceHost = new ServiceHost(new LabelEditorService(mainWindow));
             ClientList = new Dictionary<Guid, ILabelEditorServiceCallBack>();
@@ -48,7 +47,7 @@ namespace KCS_LabelEditor_2.Server
             bool ok = true;
 
             if (!ClientList.Any())
-                ok = CheckFailed(Properties.MainWindow.NoClientConnectedMessage,
+                ok = Helper.Helper.CheckFailed(Properties.MainWindow.NoClientConnectedMessage,
                     Properties.MainWindow.NoClientConnectedTitle);
 
             return ok;

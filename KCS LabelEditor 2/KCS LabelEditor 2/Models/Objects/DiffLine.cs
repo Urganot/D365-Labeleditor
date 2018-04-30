@@ -2,10 +2,11 @@
 using System.Text;
 using System.Windows;
 using System.Windows.Controls;
+using AVA_LabelEditor.Helper;
 using DiffMatchPatch;
-using KCS_LabelEditor_2.Helper;
+using Label = AVA_LabelEditor.Objects.Label;
 
-namespace KCS_LabelEditor_2.Objects
+namespace AVA_LabelEditor.Objects
 {
     public class DiffLine : ObservableList
     {
@@ -20,7 +21,7 @@ namespace KCS_LabelEditor_2.Objects
         [MyWpfAttributes(IsReadOnly = true, Width = 10, WidthType = DataGridLengthUnitType.Star)]
         public FileId FileId
         {
-            get => _fileId;
+            get { return _fileId; }
             set
             {
                 _fileId = value;
@@ -31,7 +32,8 @@ namespace KCS_LabelEditor_2.Objects
         [MyWpfAttributes(IsReadOnly = true, Width = 10, WidthType = DataGridLengthUnitType.Star)]
         public Language Language
         {
-            get => _language;
+            get
+            { return _language; }
             set
             {
                 _language = value;
@@ -42,7 +44,7 @@ namespace KCS_LabelEditor_2.Objects
         [MyWpfAttributes(IsReadOnly = true, Width = 10, WidthType = DataGridLengthUnitType.Star)]
         public string Id
         {
-            get => _id;
+            get { return _id; }
             set
             {
                 _id = value;
@@ -53,7 +55,7 @@ namespace KCS_LabelEditor_2.Objects
         [MyWpfAttributes(IsReadOnly = true, Width = 35, WidthType = DataGridLengthUnitType.Star)]
         public string Original
         {
-            get => _original;
+            get { return _original; }
             set
             {
                 _original = value;
@@ -64,7 +66,7 @@ namespace KCS_LabelEditor_2.Objects
         [MyWpfAttributes(IsReadOnly = true, Width = 35, WidthType = DataGridLengthUnitType.Star)]
         public string New
         {
-            get => _new;
+            get { return _new; }
             set
             {
                 _new = value;
@@ -74,7 +76,7 @@ namespace KCS_LabelEditor_2.Objects
         [MyWpfAttributes(IsReadOnly = true, Width = 35, WidthType = DataGridLengthUnitType.Star)]
         public string Result
         {
-            get => _result;
+            get { return _result; }
             set
             {
                 _result = value;
@@ -109,7 +111,9 @@ namespace KCS_LabelEditor_2.Objects
             }
             else if (Changed)
             {
-                CompareText(label, out var oldText, out var newText);
+                StringBuilder oldText;
+                StringBuilder newText;
+                CompareText(label, out oldText, out newText);
 
                 Original = oldText.ToString();
                 New = newText.ToString();

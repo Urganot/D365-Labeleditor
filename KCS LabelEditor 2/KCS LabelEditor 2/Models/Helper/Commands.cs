@@ -1,6 +1,6 @@
 ﻿using System.Windows.Input;
 
-namespace KCS_LabelEditor_2.Helper
+namespace AVA_LabelEditor.Helper
 {
     class CustomCommands
     {

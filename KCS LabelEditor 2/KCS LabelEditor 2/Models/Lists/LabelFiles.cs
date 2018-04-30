@@ -1,16 +1,16 @@
 ﻿using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using KCS_LabelEditor_2.Helper;
-using KCS_LabelEditor_2.Objects;
+using AVA_LabelEditor.Helper;
+using AVA_LabelEditor.Objects;
 
-namespace KCS_LabelEditor_2.Lists
+namespace AVA_LabelEditor.Lists
 {
     public class LabelFiles : ObservableList
     {
         public List<LabelFile> All = new List<LabelFile>();
 
-        public LabelFiles(MainWindow mainWindow)
+        public LabelFiles(AVA_LabelEditor.MainWindow mainWindow)
         {
             MainWindow = mainWindow;
         }

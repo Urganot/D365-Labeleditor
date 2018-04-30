@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Runtime.Serialization;
 
-namespace KCS_LabelEditor_2.CustomExceptions
+namespace AVA_LabelEditor.CustomExceptions
 {
     [Serializable]
     internal class ConnectionAlreadyClosedException : Exception
