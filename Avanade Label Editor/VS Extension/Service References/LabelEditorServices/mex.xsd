@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/KCS_LabelEditor_2" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/KCS_LabelEditor_2" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/AVA_LabelEditor.Objects" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/AVA_LabelEditor.Objects" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:2112/mex?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/AVA_LabelEditor.Helper" />
   <xs:complexType name="ArrayOfLabel">
     <xs:sequence>
       <xs:element minOccurs="0" maxOccurs="unbounded" name="Label" nillable="true" type="tns:Label" />
@@ -8,7 +9,7 @@
   <xs:element name="ArrayOfLabel" nillable="true" type="tns:ArrayOfLabel" />
   <xs:complexType name="Label">
     <xs:complexContent mixed="false">
-      <xs:extension base="tns:ObservableList">
+      <xs:extension xmlns:q1="http://schemas.datacontract.org/2004/07/AVA_LabelEditor.Helper" base="q1:ObservableList">
         <xs:sequence>
           <xs:element minOccurs="0" name="Comment" nillable="true" type="xs:string" />
           <xs:element minOccurs="0" name="Deleted" type="xs:boolean" />
@@ -23,10 +24,6 @@
     </xs:complexContent>
   </xs:complexType>
   <xs:element name="Label" nillable="true" type="tns:Label" />
-  <xs:complexType name="ObservableList">
-    <xs:sequence />
-  </xs:complexType>
-  <xs:element name="ObservableList" nillable="true" type="tns:ObservableList" />
   <xs:complexType name="FileId">
     <xs:sequence>
       <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />

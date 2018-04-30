@@ -15,7 +15,7 @@ namespace Avanade_Label_Editor_Extension.LabelEditorServices {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="Label", Namespace="http://schemas.datacontract.org/2004/07/KCS_LabelEditor_2")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="Label", Namespace="http://schemas.datacontract.org/2004/07/AVA_LabelEditor.Objects")]
     [System.SerializableAttribute()]
     public partial class Label : Avanade_Label_Editor_Extension.LabelEditorServices.ObservableList {
         
@@ -150,7 +150,7 @@ namespace Avanade_Label_Editor_Extension.LabelEditorServices {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="ObservableList", Namespace="http://schemas.datacontract.org/2004/07/KCS_LabelEditor_2")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="ObservableList", Namespace="http://schemas.datacontract.org/2004/07/AVA_LabelEditor.Helper")]
     [System.SerializableAttribute()]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(Avanade_Label_Editor_Extension.LabelEditorServices.Label))]
     public partial class ObservableList : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
@@ -180,7 +180,7 @@ namespace Avanade_Label_Editor_Extension.LabelEditorServices {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="FileId", Namespace="http://schemas.datacontract.org/2004/07/KCS_LabelEditor_2")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="FileId", Namespace="http://schemas.datacontract.org/2004/07/AVA_LabelEditor.Objects")]
     [System.SerializableAttribute()]
     public partial class FileId : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
         
@@ -225,7 +225,7 @@ namespace Avanade_Label_Editor_Extension.LabelEditorServices {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="Language", Namespace="http://schemas.datacontract.org/2004/07/KCS_LabelEditor_2")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="Language", Namespace="http://schemas.datacontract.org/2004/07/AVA_LabelEditor.Objects")]
     [System.SerializableAttribute()]
     public partial class Language : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
         
@@ -269,14 +269,33 @@ namespace Avanade_Label_Editor_Extension.LabelEditorServices {
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ServiceModel.ServiceContractAttribute(ConfigurationName="LabelEditorServices.ILabelEditorService")]
+    [System.ServiceModel.ServiceContractAttribute(ConfigurationName="LabelEditorServices.ILabelEditorService", CallbackContract=typeof(Avanade_Label_Editor_Extension.LabelEditorServices.ILabelEditorServiceCallback))]
     public interface ILabelEditorService {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ILabelEditorService/CreateNewLabel", ReplyAction="http://tempuri.org/ILabelEditorService/CreateNewLabelResponse")]
-        System.Collections.Generic.Dictionary<string, System.Collections.Generic.List<Avanade_Label_Editor_Extension.LabelEditorServices.Label>> CreateNewLabel(string newLabelText);
+        System.Collections.Generic.Dictionary<string, Avanade_Label_Editor_Extension.LabelEditorServices.Label[]> CreateNewLabel(string newLabelText);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ILabelEditorService/CreateNewLabel", ReplyAction="http://tempuri.org/ILabelEditorService/CreateNewLabelResponse")]
-        System.Threading.Tasks.Task<System.Collections.Generic.Dictionary<string, System.Collections.Generic.List<Avanade_Label_Editor_Extension.LabelEditorServices.Label>>> CreateNewLabelAsync(string newLabelText);
+        System.Threading.Tasks.Task<System.Collections.Generic.Dictionary<string, Avanade_Label_Editor_Extension.LabelEditorServices.Label[]>> CreateNewLabelAsync(string newLabelText);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ILabelEditorService/SearchLabel", ReplyAction="http://tempuri.org/ILabelEditorService/SearchLabelResponse")]
+        void SearchLabel(string searchText);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ILabelEditorService/SearchLabel", ReplyAction="http://tempuri.org/ILabelEditorService/SearchLabelResponse")]
+        System.Threading.Tasks.Task SearchLabelAsync(string searchText);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ILabelEditorService/Register", ReplyAction="http://tempuri.org/ILabelEditorService/RegisterResponse")]
+        void Register(System.Guid guid);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ILabelEditorService/Register", ReplyAction="http://tempuri.org/ILabelEditorService/RegisterResponse")]
+        System.Threading.Tasks.Task RegisterAsync(System.Guid guid);
+    }
+    
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    public interface ILabelEditorServiceCallback {
+        
+        [System.ServiceModel.OperationContractAttribute(IsOneWay=true, Action="http://tempuri.org/ILabelEditorService/PasteLabel")]
+        void PasteLabel(string message);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -285,33 +304,50 @@ namespace Avanade_Label_Editor_Extension.LabelEditorServices {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public partial class LabelEditorServiceClient : System.ServiceModel.ClientBase<Avanade_Label_Editor_Extension.LabelEditorServices.ILabelEditorService>, Avanade_Label_Editor_Extension.LabelEditorServices.ILabelEditorService {
+    public partial class LabelEditorServiceClient : System.ServiceModel.DuplexClientBase<Avanade_Label_Editor_Extension.LabelEditorServices.ILabelEditorService>, Avanade_Label_Editor_Extension.LabelEditorServices.ILabelEditorService {
         
-        public LabelEditorServiceClient() {
+        public LabelEditorServiceClient(System.ServiceModel.InstanceContext callbackInstance) : 
+                base(callbackInstance) {
         }
         
-        public LabelEditorServiceClient(string endpointConfigurationName) : 
-                base(endpointConfigurationName) {
+        public LabelEditorServiceClient(System.ServiceModel.InstanceContext callbackInstance, string endpointConfigurationName) : 
+                base(callbackInstance, endpointConfigurationName) {
         }
         
-        public LabelEditorServiceClient(string endpointConfigurationName, string remoteAddress) : 
-                base(endpointConfigurationName, remoteAddress) {
+        public LabelEditorServiceClient(System.ServiceModel.InstanceContext callbackInstance, string endpointConfigurationName, string remoteAddress) : 
+                base(callbackInstance, endpointConfigurationName, remoteAddress) {
         }
         
-        public LabelEditorServiceClient(string endpointConfigurationName, System.ServiceModel.EndpointAddress remoteAddress) : 
-                base(endpointConfigurationName, remoteAddress) {
+        public LabelEditorServiceClient(System.ServiceModel.InstanceContext callbackInstance, string endpointConfigurationName, System.ServiceModel.EndpointAddress remoteAddress) : 
+                base(callbackInstance, endpointConfigurationName, remoteAddress) {
         }
         
-        public LabelEditorServiceClient(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) : 
-                base(binding, remoteAddress) {
+        public LabelEditorServiceClient(System.ServiceModel.InstanceContext callbackInstance, System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) : 
+                base(callbackInstance, binding, remoteAddress) {
         }
         
-        public System.Collections.Generic.Dictionary<string, System.Collections.Generic.List<Avanade_Label_Editor_Extension.LabelEditorServices.Label>> CreateNewLabel(string newLabelText) {
+        public System.Collections.Generic.Dictionary<string, Avanade_Label_Editor_Extension.LabelEditorServices.Label[]> CreateNewLabel(string newLabelText) {
             return base.Channel.CreateNewLabel(newLabelText);
         }
         
-        public System.Threading.Tasks.Task<System.Collections.Generic.Dictionary<string, System.Collections.Generic.List<Avanade_Label_Editor_Extension.LabelEditorServices.Label>>> CreateNewLabelAsync(string newLabelText) {
+        public System.Threading.Tasks.Task<System.Collections.Generic.Dictionary<string, Avanade_Label_Editor_Extension.LabelEditorServices.Label[]>> CreateNewLabelAsync(string newLabelText) {
             return base.Channel.CreateNewLabelAsync(newLabelText);
+        }
+        
+        public void SearchLabel(string searchText) {
+            base.Channel.SearchLabel(searchText);
+        }
+        
+        public System.Threading.Tasks.Task SearchLabelAsync(string searchText) {
+            return base.Channel.SearchLabelAsync(searchText);
+        }
+        
+        public void Register(System.Guid guid) {
+            base.Channel.Register(guid);
+        }
+        
+        public System.Threading.Tasks.Task RegisterAsync(System.Guid guid) {
+            return base.Channel.RegisterAsync(guid);
         }
     }
 }

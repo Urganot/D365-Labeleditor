@@ -18,16 +18,13 @@ namespace AutoComment2015.Helper
 {
     public class Helper
     {
-        private readonly AvanadeLabelEditorExtensionPackage _myToolsOptionsPackage;
         private readonly DTE2 _dte2;
 
         private TextSelection _TextSelection => (TextSelection)_dte2.ActiveDocument.Selection;
 
-        public Helper(Package myToolsOptionsPackage, DTE2 dte2)
+        public Helper(DTE2 dte2)
         {
-
             _dte2 = dte2;
-            _myToolsOptionsPackage = (AvanadeLabelEditorExtensionPackage)myToolsOptionsPackage;
         }
 
 
