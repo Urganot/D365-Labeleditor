@@ -14,6 +14,7 @@ namespace AVA_LabelEditor.Objects
         }
         public void Start()
         {
+            return;
             AutoUpdater.Start("http://urganot.net/LabelEditor/updates/UpdateFile.xml");
         }
 
