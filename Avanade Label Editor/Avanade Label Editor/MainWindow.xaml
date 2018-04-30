@@ -1,0 +1,80 @@
+﻿<Window x:Class="AVA_LabelEditor.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AVA_LabelEditor"
+        mc:Ignorable="d"
+        xmlns:lex="http://wpflocalizeextension.codeplex.com"
+        xmlns:helper1="clr-namespace:AVA_LabelEditor.Helper"
+        lex:LocalizeDictionary.DesignCulture="en"
+        lex:ResxLocalizationProvider.DefaultAssembly="Avanade Labeleditor"
+        lex:ResxLocalizationProvider.DefaultDictionary="MainWindow" 
+        lex:LocalizeDictionary.OutputMissingKeys="True"
+        Title="{lex:Loc Title}" Height="797.368" Width="1548.421" Closing="Window_Closing" WindowStartupLocation="CenterScreen" Loaded="Window_Loaded">
+
+    <Window.CommandBindings>
+        <CommandBinding Command="helper1:CustomCommands.New" Executed="AddLabel" />
+        <CommandBinding Command="helper1:CustomCommands.Rename" Executed="RenameLabel" />
+        <CommandBinding Command="helper1:CustomCommands.Save" Executed="SaveLabel" />
+        <CommandBinding Command="helper1:CustomCommands.Delete" Executed="DeleteLabel" />
+        <CommandBinding Command="helper1:CustomCommands.Translate" Executed="TranslateLabel" />
+        <CommandBinding Command="helper1:CustomCommands.PasteToVs" Executed="PasteLabelToVisualStudio" />
+    </Window.CommandBindings>
+
+    <Grid x:Name="Main">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="21*"/>
+            <RowDefinition Height="352*"/>
+        </Grid.RowDefinitions>
+        <Menu Grid.Row="0" DockPanel.Dock="Top">
+            <MenuItem Header="{lex:Loc File}">
+                <MenuItem x:Name="SaveButton" Header="{lex:Loc Save}" Command="helper1:CustomCommands.Save"/>
+                <MenuItem x:Name="ReloadButton" Header="{lex:Loc Reload}" Click="ReloadButton_Click" />
+                <Separator />
+                <MenuItem x:Name="ExitButton" Header="{lex:Loc Exit}" Click="ExitButton_Click" />
+            </MenuItem>
+            <MenuItem Header="{lex:Loc Labels}">
+                <MenuItem x:Name="AddLabelButton" Header="{lex:Loc Add}" Command="helper1:CustomCommands.New" />
+                <MenuItem x:Name="DeleteLabelButton" Header="{lex:Loc Delete}" Command="helper1:CustomCommands.Delete"/>
+                <MenuItem x:Name="RenameLabelButton" Header="{lex:Loc Rename}" Command="helper1:CustomCommands.Rename"/>
+                <MenuItem x:Name="TranslateLabelButton" Header="{lex:Loc Translate}"  Command="helper1:CustomCommands.Translate" />
+                <MenuItem x:Name="PasteLabelButton" Header="{lex:Loc PasteToVs}"  Command="helper1:CustomCommands.PasteToVs" />
+                <MenuItem x:Name="ShowDiffButton" Header="{lex:Loc Changes}" Click="ShowDiffButton_Click" />
+            </MenuItem>
+        </Menu>
+
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="90"/>
+                <ColumnDefinition Width="283"/>
+                <ColumnDefinition Width="207"/>
+                <ColumnDefinition Width="164"/>
+                <ColumnDefinition Width="62"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+            <TextBox x:Name="PathTextbox" Grid.Column="0" VerticalAlignment="Center" Margin="10,12.01,0.001,12.011" Text="{Binding Path=AxLabelPath}" IsReadOnly="True" Height="18"/>
+            <Button Name="GetPathButton" Content="..." Margin="353.711,12.01,0,12.011" Click="GetPath_Click" HorizontalAlignment="Left" VerticalAlignment="Center" Height="18" Width="18" Grid.ColumnSpan="2" />
+            <Label Content="{lex:Loc General:FileIds}" Grid.Column="1" VerticalAlignment="Center" Margin="0,8.03,2,8.031" HorizontalAlignment="Right" Height="25.96" Width="53.124" />
+            <ComboBox x:Name="FileIdCombobox" Grid.Column="2" Margin="1.999,10.03,0,10.031" Width="200" SelectedItem="{Binding Selected}" SelectionChanged="FileId_SelectionChanged" HorizontalAlignment="Left" VerticalAlignment="Center" Height="21.96"/>
+            <Label Content="{lex:Loc General:Languages}" Grid.Column="2" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,8.03,2,8.031" Height="25.96" Width="66.946"/>
+            <ComboBox x:Name="LanguageCombobox" Grid.Column="3" Margin="2,10.03,0,10.031" Width="199.998" SelectedItem="{Binding Selected}" SelectionChanged="Language_SelectionChanged" HorizontalAlignment="Left" VerticalAlignment="Center" Height="21.96"/>
+            <CheckBox x:Name="AutoTranslateCheckbox" Grid.Column="4" Content="{lex:Loc AutoTranslate}" VerticalAlignment="Center" Margin="15.059,13.461,15.057,13.461" IsChecked="{Binding AutoTranslate}" Height="15.099" HorizontalAlignment="Center" Width="133.884" />
+            <Label Content="{lex:Loc Search}" Grid.Column="5" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,8.03,2,8.031" Height="25.96" Width="45.264"/>
+            <TextBox x:Name="SearchTextbox" Grid.Column="6" VerticalAlignment="Center" Margin="2,12.03,10,12.031" TextChanged="SearchTextbox_TextChanged" Height="17.96"/>
+        </Grid>
+
+        <Grid Margin="5" Grid.Row="2">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50*"/>
+                <RowDefinition Height="5"/>
+                <RowDefinition Height="50*"/>
+            </Grid.RowDefinitions>
+            <DataGrid Grid.Row="0" x:Name="MainGrid" SelectedItem="{Binding Path=Selected,Mode=TwoWay}" AutoGeneratingColumn="InitColumns" SelectionChanged="MainGrid_SelectionChanged" CanUserDeleteRows="False" CanUserAddRows="False" SelectionMode="Single" CopyingRowClipboardContent="Grids_CopyingRowClipboardContent" Margin="5"/>
+            <GridSplitter Grid.Row="1" Height="5" HorizontalAlignment="Stretch" />
+            <DataGrid Grid.Row="2" x:Name="SubGrid" AutoGeneratingColumn="InitColumns" CopyingRowClipboardContent="Grids_CopyingRowClipboardContent" Margin="5" CanUserAddRows="False" CanUserDeleteRows="False"/>
+        </Grid>
+    </Grid>
+</Window>
