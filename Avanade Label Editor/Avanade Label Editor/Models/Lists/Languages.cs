@@ -76,7 +76,7 @@ namespace AVA_LabelEditor.Lists
         /// </summary>
         public void Clear()
         {
-            All.ToList().Clear();
+            All.Clear();
         }
 
 

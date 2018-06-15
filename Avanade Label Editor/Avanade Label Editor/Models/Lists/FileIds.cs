@@ -13,7 +13,7 @@ namespace AVA_LabelEditor.Lists
         /// <summary>
         /// The list of all available <see cref="FileId"/>s
         /// </summary>
-        private readonly ObservableCollection<FileId> _all = new ObservableCollection<FileId>();
+        public ObservableCollection<FileId> All = new ObservableCollection<FileId>();
 
         /// <summary>
         /// Constructor for the <see cref="FileIds"/> class
@@ -29,7 +29,7 @@ namespace AVA_LabelEditor.Lists
         /// </summary>
         public FileId Selected
         {
-            get { return new FileId {Name = Settings.Default.FileId}; }
+            get { return new FileId { Name = Settings.Default.FileId }; }
             set
             {
                 Settings.Default.FileId = value?.Name ?? string.Empty;
@@ -43,7 +43,7 @@ namespace AVA_LabelEditor.Lists
         /// <returns>The <see cref="FileIds"/> <see cref="ICollectionView"/> object</returns>
         public ICollectionView GetView()
         {
-            return new CollectionViewSource { Source = _all }.View;
+            return new CollectionViewSource { Source = All }.View;
         }
 
         /// <summary>
@@ -66,7 +66,7 @@ namespace AVA_LabelEditor.Lists
         /// </summary>
         private void CheckSelected()
         {
-            if (!_all.Contains(Selected))
+            if (!All.Contains(Selected))
                 Selected = null;
         }
 
@@ -76,9 +76,9 @@ namespace AVA_LabelEditor.Lists
         /// <param name="fileId">The <see cref="FileId"/> to add</param>
         public void Add(FileId fileId)
         {
-            if (!_all.Contains(fileId))
+            if (!All.Contains(fileId))
             {
-                _all.Add(fileId);
+                All.Add(fileId);
             }
 
         }
@@ -88,7 +88,7 @@ namespace AVA_LabelEditor.Lists
         /// </summary>
         public void Clear()
         {
-            _all.ToList().Clear();
+            All.Clear();
         }
     }
 }
