@@ -186,4 +186,10 @@
   <data name="Languages" xml:space="preserve">
     <value>Languages</value>
   </data>
+  <data name="Validate_Reload_Locked_Message" xml:space="preserve">
+    <value>Model was locked by Microsoft. To add a Label please create an extension model.</value>
+  </data>
+  <data name="Validate_Reload_Locked_Title" xml:space="preserve">
+    <value>Model locked</value>
+  </data>
 </root>

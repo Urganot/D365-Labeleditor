@@ -150,6 +150,9 @@ namespace AVA_LabelEditor.Lists
         {
             var ok = true;
 
+            if (MainWindow.IsModelLocked())
+                ok = Helper.Helper.CheckFailed(General.Validate_Reload_Locked_Message, General.Validate_Reload_Locked_Title);
+
             if (e is CancelEventArgs)
             {
                 var ex = (CancelEventArgs)e;
