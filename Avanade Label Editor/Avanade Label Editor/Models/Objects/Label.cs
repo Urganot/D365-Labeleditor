@@ -23,7 +23,7 @@ namespace AVA_LabelEditor.Objects
         }
 
         [DataMember]
-        [MyWpfAttributes(IsReadOnly = true, Width = 8, WidthType = DataGridLengthUnitType.Star)]
+        [MyWpfAttributes(IsReadOnly = true, Width = 8, WidthType = DataGridLengthUnitType.Star,Visible = Visibility.Hidden)]
         public FileId FileId
         {
             get { return _fileId; }
