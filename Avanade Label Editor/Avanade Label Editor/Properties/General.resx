@@ -186,4 +186,10 @@
   <data name="Languages" xml:space="preserve">
     <value>Languages</value>
   </data>
+  <data name="Validate_Add_NoFileId_Message" xml:space="preserve">
+    <value>There is no file name selected</value>
+  </data>
+  <data name="Validate_Add_NoFileId_Title" xml:space="preserve">
+    <value>No file name</value>
+  </data>
 </root>

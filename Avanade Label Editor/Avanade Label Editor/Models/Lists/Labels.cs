@@ -16,9 +16,14 @@ namespace AVA_LabelEditor.Lists
 {
     public class Labels : ObservableList
     {
-
+        /// <summary>
+        /// List of all Labels
+        /// </summary>
         public ObservableCollection<Label> All = new ObservableCollection<Label>();
 
+        /// <summary>
+        /// The selected <see cref="Label"/>
+        /// </summary>
         public Label Selected
         {
             get { return _selected; }
@@ -29,13 +34,23 @@ namespace AVA_LabelEditor.Lists
             }
         }
 
+        /// <summary>
+        /// The Selected labels backing field
+        /// </summary>
         private Label _selected;
 
-        public Labels(AVA_LabelEditor.MainWindow mainWindow)
+        /// <summary>
+        /// Constructor for the Labels class
+        /// </summary>
+        /// <param name="mainWindow">An instance of the MainWindow class</param>
+        public Labels(MainWindow mainWindow)
         {
             MainWindow = mainWindow;
         }
 
+        /// <summary>
+        /// Deletes a<see cref="Label"/> by flagging it
+        /// </summary>
         public void Delete()
         {
 
@@ -49,6 +64,9 @@ namespace AVA_LabelEditor.Lists
             ((ICollectionView)MainWindow.MainGrid.ItemsSource).Refresh();
         }
 
+        /// <summary>
+        /// Translates a <see cref="Label"/>
+        /// </summary>
         public void Translate()
         {
             if (!ValidateTranslate())
@@ -59,6 +77,10 @@ namespace AVA_LabelEditor.Lists
                 .ForEach(y => y.Text = Translation.Translate(Selected.Text, Selected.Language.ToString(), y.Language.ToString()));
         }
 
+        /// <summary>
+        /// Validation before translating
+        /// </summary>
+        /// <returns>True if <see cref="Label"/> can be translated</returns>
         private bool ValidateTranslate()
         {
             var ok = true;
@@ -69,6 +91,10 @@ namespace AVA_LabelEditor.Lists
             return ok;
         }
 
+        /// <summary>
+        /// Saves the Labels
+        /// </summary>
+        /// <param name="e">Determines weither the normal save function is called or the window is closing</param>
         public void Save(EventArgs e = null)
         {
             if (!ValidateSave(e))
@@ -87,6 +113,10 @@ namespace AVA_LabelEditor.Lists
             MainWindow.Timer.Start();
         }
 
+        /// <summary>
+        /// Writes the file to Disc
+        /// </summary>
+        /// <param name="readFile">The file to write</param>
         private void WriteFile(LabelFile readFile)
         {
             using (var writer = new StreamWriter(readFile.Path))
@@ -100,6 +130,13 @@ namespace AVA_LabelEditor.Lists
             }
         }
 
+        /// <summary>
+        /// Adds a new Label
+        /// </summary>
+        /// <param name="id">The <see cref="Label"/>s id</param>
+        /// <param name="text">The <see cref="Label"/>s text</param>
+        /// <param name="language">The <see cref="Label"/>s <see cref="Language"/></param>
+        /// <returns></returns>
         public Label AddNewLabel(string id, string text, Language language)
         {
             if (Settings.Default.AutoTranslate && !Equals(language, MainWindow.Languages.Selected))
@@ -123,16 +160,30 @@ namespace AVA_LabelEditor.Lists
             return label;
         }
 
+        /// <summary>
+        /// Adds the given <see cref="Label"/> to the List
+        /// </summary>
+        /// <param name="label">The <see cref="Label"/> to add</param>
         public void Add(Label label)
         {
             All.Add(label);
         }
 
+
+        /// <summary>
+        /// Checks if a Label id already exists
+        /// </summary>
+        /// <param name="id">Id to check</param>
+        /// <returns>True if Id does already exist</returns>
         public bool IdExists(string id)
         {
             return All.Any(x => x.Id == id);
         }
 
+        /// <summary>
+        /// Validates data before deleting
+        /// </summary>
+        /// <returns>True if label can be deleted</returns>
         private bool ValidateDelete()
         {
             var ok = true;
@@ -146,6 +197,12 @@ namespace AVA_LabelEditor.Lists
             return ok;
         }
 
+
+        /// <summary>
+        /// Validation before saving labels
+        /// </summary>
+        /// <param name="e">Determines weither the normal save function is called or the window is closing</param>
+        /// <returns>True if Labels can be saved</returns>
         private bool ValidateSave(EventArgs e = null)
         {
             var ok = true;
@@ -191,16 +248,20 @@ namespace AVA_LabelEditor.Lists
             return ok;
         }
 
+        /// <summary>
+        /// Returns the view object to use in the UI
+        /// </summary>
+        /// <returns>The <see cref="Labels"/> <see cref="ICollectionView"/> object</returns>
         public ICollectionView GetView()
         {
             return new CollectionViewSource { Source = All }.View;
         }
 
         /// <summary>
-        /// Adds Label to List
+        /// Creates new labels
         /// </summary>
-        /// <param name="dialog"></param>
-        /// <returns>Id of inserted Label</returns>
+        /// <param name="dialog">An instance of the AddLabel class</param>
+        /// <returns>List of the inserted Labels</returns>
         public Dictionary<string, List<Label>> AddLabel(AddLabel dialog)
         {
             var id = dialog.Id.Text;
@@ -246,6 +307,10 @@ namespace AVA_LabelEditor.Lists
             return addedLabels;
         }
 
+        /// <summary>
+        /// Renames a LabelId
+        /// </summary>
+        /// <param name="newId">The new Id</param>
         public void Rename(string newId)
         {
             if (!ValidateRename())
@@ -256,6 +321,10 @@ namespace AVA_LabelEditor.Lists
                 .ForEach(y => y.Id = newId);
         }
 
+        /// <summary>
+        /// Validateing before renaming a label id
+        /// </summary>
+        /// <returns>True if LabelId can be renamed</returns>
         public bool ValidateRename()
         {
             var ok = true;
@@ -267,6 +336,9 @@ namespace AVA_LabelEditor.Lists
             return ok;
         }
 
+        /// <summary>
+        /// Clears the Labels data
+        /// </summary>
         public void Clear()
         {
             All.Clear();

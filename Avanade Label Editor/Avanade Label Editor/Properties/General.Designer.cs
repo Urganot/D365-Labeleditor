@@ -205,6 +205,24 @@ namespace AVA_LabelEditor.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to There is no file name selected.
+        /// </summary>
+        public static string Validate_Add_NoFileId_Message {
+            get {
+                return ResourceManager.GetString("Validate_Add_NoFileId_Message", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to No file name.
+        /// </summary>
+        public static string Validate_Add_NoFileId_Title {
+            get {
+                return ResourceManager.GetString("Validate_Add_NoFileId_Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Id may not be empty.
         /// </summary>
         public static string Validate_Id_Empty_Message {

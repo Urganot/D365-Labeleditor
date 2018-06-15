@@ -8,13 +8,23 @@ namespace AVA_LabelEditor.Lists
 {
     public class LabelFiles : ObservableList
     {
+        /// <summary>
+        /// A list of all LabelFiles
+        /// </summary>
         public List<LabelFile> All = new List<LabelFile>();
 
-        public LabelFiles(AVA_LabelEditor.MainWindow mainWindow)
+        /// <summary>
+        /// Constructor for the LabelFiles class
+        /// </summary>
+        /// <param name="mainWindow"></param>
+        public LabelFiles(MainWindow mainWindow)
         {
             MainWindow = mainWindow;
         }
 
+        /// <summary>
+        /// Initializes data
+        /// </summary>
         public void Init()
         {
             MainWindow.Labels.Clear();

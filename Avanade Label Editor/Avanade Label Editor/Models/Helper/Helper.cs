@@ -6,6 +6,11 @@ namespace AVA_LabelEditor.Helper
 {
     public class Helper
     {
+        /// <summary>
+        /// Generates a hashcode from a string
+        /// </summary>
+        /// <param name="input">Input string</param>
+        /// <returns>A hashcode</returns>
         public static string Hash(string input)
         {
             using (var sha1 = new SHA1Managed())
@@ -23,6 +28,12 @@ namespace AVA_LabelEditor.Helper
             }
         }
 
+        /// <summary>
+        /// Shows the given text and returns false
+        /// </summary>
+        /// <param name="message">Message</param>
+        /// <param name="caption">Title</param>
+        /// <returns>false</returns>
         public static bool CheckFailed(string message, string caption = "")
         {
             MessageBox.Show(message,caption, MessageBoxButtons.OK, MessageBoxIcon.Warning);

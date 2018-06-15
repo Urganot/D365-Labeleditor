@@ -17,7 +17,9 @@ namespace AVA_LabelEditor.Objects
         private FileId _fileId;
         private string _result;
 
-
+        /// <summary>
+        /// The Labels <see cref="FileId"/>
+        /// </summary>
         [MyWpfAttributes(IsReadOnly = true, Width = 10, WidthType = DataGridLengthUnitType.Star)]
         public FileId FileId
         {
@@ -29,6 +31,9 @@ namespace AVA_LabelEditor.Objects
             }
         }
 
+        /// <summary>
+        /// The Labels <see cref="Language"/>
+        /// </summary>
         [MyWpfAttributes(IsReadOnly = true, Width = 10, WidthType = DataGridLengthUnitType.Star)]
         public Language Language
         {
@@ -41,6 +46,9 @@ namespace AVA_LabelEditor.Objects
             }
         }
 
+        /// <summary>
+        /// The Labels id
+        /// </summary>
         [MyWpfAttributes(IsReadOnly = true, Width = 10, WidthType = DataGridLengthUnitType.Star)]
         public string Id
         {
@@ -52,6 +60,9 @@ namespace AVA_LabelEditor.Objects
             }
         }
 
+        /// <summary>
+        /// The old text with changes
+        /// </summary>
         [MyWpfAttributes(IsReadOnly = true, Width = 35, WidthType = DataGridLengthUnitType.Star)]
         public string Original
         {
@@ -62,7 +73,10 @@ namespace AVA_LabelEditor.Objects
                 OnPropertyChanged();
             }
         }
-
+        
+        /// <summary>
+        /// The new text with changes
+        /// </summary>
         [MyWpfAttributes(IsReadOnly = true, Width = 35, WidthType = DataGridLengthUnitType.Star)]
         public string New
         {
@@ -73,6 +87,10 @@ namespace AVA_LabelEditor.Objects
                 OnPropertyChanged();
             }
         }
+
+        /// <summary>
+        /// The new text
+        /// </summary>
         [MyWpfAttributes(IsReadOnly = true, Width = 35, WidthType = DataGridLengthUnitType.Star)]
         public string Result
         {
@@ -84,15 +102,28 @@ namespace AVA_LabelEditor.Objects
             }
         }
 
+        /// <summary>
+        /// Was the Label changed
+        /// </summary>
         [MyWpfAttributes(Visible = Visibility.Hidden)]
         public bool Changed { get; }
 
+        /// <summary>
+        /// Was the Label added
+        /// </summary>
         [MyWpfAttributes(Visible = Visibility.Hidden)]
         public bool Added { get; }
 
+        /// <summary>
+        /// Was the Label deleted
+        /// </summary>
         [MyWpfAttributes(Visible = Visibility.Hidden)]
         public bool Deleted { get; }
 
+        /// <summary>
+        /// Constructor for the DiffLine class
+        /// </summary>
+        /// <param name="label">An instance of a Label class </param>
         public DiffLine(Label label)
         {
 
@@ -125,6 +156,12 @@ namespace AVA_LabelEditor.Objects
             }
         }
 
+        /// <summary>
+        /// Compares the original und changed text of a label
+        /// </summary>
+        /// <param name="label">An instance of the Label class to compare</param>
+        /// <param name="oldText">A StringBuilder for the displayed changes</param>
+        /// <param name="newText">A StringBuilder for the displayed changes</param>
         private static void CompareText(Label label, out StringBuilder oldText, out StringBuilder newText)
         {
             var comp = new diff_match_patch().diff_main(label.OriginalText, label.Text);

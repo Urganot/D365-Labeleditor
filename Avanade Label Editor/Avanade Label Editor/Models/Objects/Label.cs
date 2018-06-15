@@ -6,6 +6,9 @@ using AVA_LabelEditor.Helper;
 
 namespace AVA_LabelEditor.Objects
 {
+    /// <summary>
+    /// This class represents a physical Label
+    /// </summary>
     [DataContract]
     public class Label : ObservableList
     {
@@ -14,14 +17,20 @@ namespace AVA_LabelEditor.Objects
         private string _text = "";
         private string _id = "";
         private FileId _fileId;
-
         private bool _deleted;
 
-        public Label(AVA_LabelEditor.MainWindow mainWindow)
+        /// <summary>
+        /// Constructor for the Label class
+        /// </summary>
+        /// <param name="mainWindow">An instance of the MainWindow class</param>
+        public Label(MainWindow mainWindow)
         {
             MainWindow = mainWindow;
         }
 
+        /// <summary>
+        /// <see cref="FileId"/>
+        /// </summary>
         [DataMember]
         [MyWpfAttributes(IsReadOnly = true, Width = 8, WidthType = DataGridLengthUnitType.Star,Visible = Visibility.Hidden)]
         public FileId FileId
@@ -33,7 +42,10 @@ namespace AVA_LabelEditor.Objects
                 OnPropertyChanged();
             }
         }
-
+        
+        /// <summary>
+        /// The label id
+        /// </summary>
         [DataMember]
         [MyWpfAttributes(IsReadOnly = true, Width = 25, WidthType = DataGridLengthUnitType.Star)]
         public string Id
@@ -46,6 +58,10 @@ namespace AVA_LabelEditor.Objects
             }
         }
 
+        /// <summary>
+        /// The Labels full id
+        /// Use this in Visual Studio
+        /// </summary>
         [DataMember]
         [MyWpfAttributes(IsReadOnly = true, Width = 20, WidthType = DataGridLengthUnitType.Star)]
         public string FullId
@@ -54,7 +70,9 @@ namespace AVA_LabelEditor.Objects
             protected set { }
         }
 
-
+        /// <summary>
+        /// <see cref="Language"/>
+        /// </summary>
         [DataMember]
         [MyWpfAttributes(IsReadOnly = true, Width = 5, WidthType = DataGridLengthUnitType.Star)]
         public Language Language
@@ -67,6 +85,9 @@ namespace AVA_LabelEditor.Objects
             }
         }
 
+        /// <summary>
+        /// Text
+        /// </summary>
         [DataMember]
         [MyWpfAttributes(Width = 30, WidthType = DataGridLengthUnitType.Star)]
         public string Text
@@ -79,6 +100,9 @@ namespace AVA_LabelEditor.Objects
             }
         }
 
+        /// <summary>
+        /// Comment
+        /// </summary>
         [DataMember]
         [MyWpfAttributes(Width = 20, WidthType = DataGridLengthUnitType.Star)]
         public string Comment
@@ -91,10 +115,16 @@ namespace AVA_LabelEditor.Objects
             }
         }
 
+        /// <summary>
+        /// Original text
+        /// </summary>
         [DataMember]
         [MyWpfAttributes(Visible = Visibility.Hidden, IsReadOnly = true)]
         public string OriginalText { get; set; } = "";
 
+        /// <summary>
+        /// Flag for deletion
+        /// </summary>
         [DataMember]
         [MyWpfAttributes(Visible = Visibility.Hidden, IsReadOnly = true)]
         public bool Deleted

@@ -9,7 +9,14 @@ namespace AVA_LabelEditor
     /// </summary>
     public partial class RenameLabel
     {
+
         private MainWindow _mainWindow;
+
+        /// <summary>
+        /// Constructor for RenameLabelWindow
+        /// </summary>
+        /// <param name="mainWindow">An instance of MainWindow</param>
+        /// <param name="oldId">The labelId that should be changed</param>
         public RenameLabel(MainWindow mainWindow, string oldId)
         {
 
@@ -21,15 +28,24 @@ namespace AVA_LabelEditor
             DataContext = this;
         }
 
-
+        /// <summary>
+        /// Handles Window loaded event
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
             WindowWithoutCommandbar.RemoveCommandBar(this);
         }
 
+        /// <summary>
+        /// Handles Ok-BUtton click
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void OkButton_Click(object sender, RoutedEventArgs e)
         {
-            if (!ValidateForm())
+            if (!CanClose())
             {
                 return;
             }
@@ -39,7 +55,11 @@ namespace AVA_LabelEditor
 
         }
 
-        private bool ValidateForm()
+        /// <summary>
+        /// Validates Inputs on window
+        /// </summary>
+        /// <returns>True is inputs are valid</returns>
+        private bool CanClose()
         {
             var ok = true;
 

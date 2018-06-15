@@ -189,4 +189,10 @@
   <data name="Languages" xml:space="preserve">
     <value>Sprachen</value>
   </data>
+  <data name="Validate_Add_NoFileId_Message" xml:space="preserve">
+    <value>Es ist kein Dateiname augewählt</value>
+  </data>
+  <data name="Validate_Add_NoFileId_Title" xml:space="preserve">
+    <value>Kein Dateiname</value>
+  </data>
 </root>

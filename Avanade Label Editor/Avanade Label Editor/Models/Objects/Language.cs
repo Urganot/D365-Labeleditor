@@ -6,11 +6,18 @@ namespace AVA_LabelEditor.Objects
     [DataContract]
     public class Language : IEquatable<Language>
     {
+        /// <summary>
+        /// Constructor for the Language class
+        /// </summary>
+        /// <param name="name">The languages name</param>
         public Language(string name)
         {
             Name = name;
         }
 
+        /// <summary>
+        /// The languages name
+        /// </summary>
         [DataMember]
         public string Name { get;protected set; }
 

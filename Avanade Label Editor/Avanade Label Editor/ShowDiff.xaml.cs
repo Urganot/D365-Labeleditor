@@ -22,6 +22,9 @@ namespace AVA_LabelEditor
         private Language _selectedLanguage;
         private FileId _selectedFileId;
 
+        /// <summary>
+        /// The selected language
+        /// </summary>
         public Language SelectedLanguage
         {
             get { return _selectedLanguage; }
@@ -32,6 +35,9 @@ namespace AVA_LabelEditor
             }
         }
 
+        /// <summary>
+        /// The selected FileId
+        /// </summary>
         public FileId SelectedFileId
         {
             get { return _selectedFileId; }
@@ -42,6 +48,10 @@ namespace AVA_LabelEditor
             }
         }
 
+        /// <summary>
+        /// Constructor for SHowDiffWindow
+        /// </summary>
+        /// <param name="mainWindow">An instance of MainWindow</param>
         public ShowDiff(MainWindow mainWindow)
         {
             _mainWindow = mainWindow;
@@ -56,6 +66,9 @@ namespace AVA_LabelEditor
             DataContext = this;
         }
 
+        /// <summary>
+        /// Initializes properties
+        /// </summary>
         private void InitData()
         {
             DataContext = this;
@@ -68,6 +81,12 @@ namespace AVA_LabelEditor
             SelectedFileId = _mainWindow.FileIds.Selected;
         }
 
+        /// <summary>
+        /// Handles the InitColumns event.
+        /// Sets Column properties via attributes
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void InitColumns(object sender, DataGridAutoGeneratingColumnEventArgs e)
         {
             PropertyInfo prop = typeof(DiffLine).GetProperty(e.PropertyName);
@@ -90,16 +109,29 @@ namespace AVA_LabelEditor
             e.Column.IsReadOnly = attribute.IsReadOnly;
         }
 
+        /// <summary>
+        /// Handels the SelectionChanged event of the language control
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void LanguageCombobox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             SetFilter();
         }
 
+        /// <summary>
+        /// Handels the SelectionChanged event of the fileId control
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void FileIdCombobox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             SetFilter();
         }
 
+        /// <summary>
+        /// Sets the filter for the grid
+        /// </summary>
         private void SetFilter()
         {
             ((ICollectionView)DiffGrid.ItemsSource).Filter = item => Equals(((DiffLine)item).Language, SelectedLanguage)

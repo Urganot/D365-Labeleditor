@@ -11,16 +11,24 @@ namespace AVA_LabelEditor.Server
     {
         private readonly ServiceHost _serviceHost;
 
+        /// <summary>
+        /// Contains all connected clients
+        /// </summary>
         public Dictionary<Guid, ILabelEditorServiceCallBack> ClientList;
 
-
-        public Server(AVA_LabelEditor.MainWindow mainWindow)
+        /// <summary>
+        /// Constructor for the Sever class
+        /// </summary>
+        /// <param name="mainWindow">An Instance of the MainWindow class</param>
+        public Server(MainWindow mainWindow)
         {
             _serviceHost = new ServiceHost(new LabelEditorService(mainWindow));
             ClientList = new Dictionary<Guid, ILabelEditorServiceCallBack>();
         }
 
-
+        /// <summary>
+        /// Opens the connection
+        /// </summary>
         public void Start()
         {
             if (_serviceHost.State == CommunicationState.Opening || _serviceHost.State == CommunicationState.Opened)
@@ -29,6 +37,9 @@ namespace AVA_LabelEditor.Server
             _serviceHost.Open();
         }
 
+        /// <summary>
+        /// Closes the connection
+        /// </summary>
         public void Stop()
         {
             if (_serviceHost.State == CommunicationState.Closed || _serviceHost.State == CommunicationState.Closing)
@@ -36,12 +47,20 @@ namespace AVA_LabelEditor.Server
             _serviceHost.Close();
         }
 
+        /// <summary>
+        /// Checks if the connection is open
+        /// </summary>
+        /// <returns>True if connection is openend</returns>
         public bool IsRunning()
         {
             return _serviceHost.State == CommunicationState.Opened;
 
         }
 
+        /// <summary>
+        /// Validates the client list
+        /// </summary>
+        /// <returns>True if clients are valid</returns>
         private bool ValidateClients()
         {
             bool ok = true;
@@ -53,7 +72,11 @@ namespace AVA_LabelEditor.Server
             return ok;
         }
 
-        public void PasteLabel(string fullId)
+        /// <summary>
+        /// Calls the PasteLabel on all valid clients
+        /// </summary>
+        /// <param name="text">The text to paste</param>
+        public void PasteLabel(string text)
         {
             if (ValidateClients())
             {
@@ -61,7 +84,7 @@ namespace AVA_LabelEditor.Server
                 {
                     try
                     {
-                        client.Value.PasteLabel(fullId);
+                        client.Value.PasteLabel(text);
                     }
                     catch (CommunicationObjectAbortedException)
                     {
@@ -74,6 +97,11 @@ namespace AVA_LabelEditor.Server
             }
         }
 
+        /// <summary>
+        /// Adds a client to the list of connected clients
+        /// </summary>
+        /// <param name="client">The client object</param>
+        /// <param name="guid">A Guid to identify the client</param>
         public void Register(ILabelEditorServiceCallBack client, Guid guid)
         {
             if (!ClientList.ContainsKey(guid))

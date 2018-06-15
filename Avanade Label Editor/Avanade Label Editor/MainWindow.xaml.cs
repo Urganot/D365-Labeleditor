@@ -37,6 +37,9 @@ namespace AVA_LabelEditor
         public Languages Languages;
         public FileIds FileIds;
 
+        /// <summary>
+        /// String to search for
+        /// </summary>
         public string SearchString
         {
             get
@@ -48,8 +51,14 @@ namespace AVA_LabelEditor
 
         public BackgroundTimer Timer;
 
+        /// <summary>
+        /// Was something changed
+        /// </summary>
         public bool Changed { get; set; }
 
+        /// <summary>
+        /// Path to the AxLabelFile
+        /// </summary>
         public string AxLabelPath
         {
             get { return Settings.Default.AxLabelPath; }
@@ -61,6 +70,9 @@ namespace AVA_LabelEditor
 
         }
 
+        /// <summary>
+        /// Is automatic translation enabled
+        /// </summary>
         public bool AutoTranslate
         {
             get { return Settings.Default.AutoTranslate; }
@@ -73,7 +85,9 @@ namespace AVA_LabelEditor
 
 
         #endregion
-
+        /// <summary>
+        /// Constructor for the MainWindow class
+        /// </summary>
         public MainWindow()
         {
             InitializeComponent();
@@ -100,6 +114,9 @@ namespace AVA_LabelEditor
             { }
         }
 
+        /// <summary>
+        /// Inits the timer
+        /// </summary>
         private void InitTimer()
         {
             Timer = new BackgroundTimer(this);
@@ -107,6 +124,9 @@ namespace AVA_LabelEditor
             Timer.Start();
         }
 
+        /// <summary>
+        /// Inits the properties
+        /// </summary>
         private void Init()
         {
             Labels = new Labels(this);
@@ -117,6 +137,9 @@ namespace AVA_LabelEditor
             Server = new Server.Server(this);
         }
 
+        /// <summary>
+        /// Sets the Databinding on the WPF controls
+        /// </summary>
         private void SetDataBindings()
         {
             DataContext = this;
@@ -138,6 +161,9 @@ namespace AVA_LabelEditor
             SetGridFilter();
         }
 
+        /// <summary>
+        /// Sets the filter on the SubGrid
+        /// </summary>
         private void SetSubGridFilter()
         {
             if (Labels.Selected != null)
@@ -151,6 +177,9 @@ namespace AVA_LabelEditor
                 ((ICollectionView)SubGrid.ItemsSource).Filter = item => false;
         }
 
+        /// <summary>
+        /// Sets the filter on the MainGrid
+        /// </summary>
         private void SetGridFilter()
         {
             if (MainGrid.ItemsSource == null || SubGrid.ItemsSource == null || Languages.Selected == null)
@@ -167,6 +196,9 @@ namespace AVA_LabelEditor
             SetSubGridFilter();
         }
 
+        /// <summary>
+        /// Rereads all Labels
+        /// </summary>
         public void ReloadLabels()
         {
             XmlFiles.Init();
@@ -177,6 +209,10 @@ namespace AVA_LabelEditor
             Timer?.Reset();
         }
 
+        /// <summary>
+        /// Sets a new AxLabelPath
+        /// </summary>
+        /// <returns>True if selection was successful</returns>
         private bool SetPath()
         {
             bool ok;
@@ -196,6 +232,9 @@ namespace AVA_LabelEditor
             return ok;
         }
 
+        /// <summary>
+        /// Moves the focus to the currently selected item
+        /// </summary>
         public void MoveToSelectedItem()
         {
             MainGrid.UpdateLayout();
@@ -205,22 +244,42 @@ namespace AVA_LabelEditor
 
         #region Events
 
+        /// <summary>
+        /// Handles a change in the Language control
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void Language_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             SetGridFilter();
         }
 
+        /// <summary>
+        /// Handles a change in the FileId control
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void FileId_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             SetGridFilter();
         }
 
+        /// <summary>
+        /// Handles the GetOath button click event
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void GetPath_Click(object sender, RoutedEventArgs e)
         {
             SetPath();
             ReloadLabels();
         }
 
+        /// <summary>
+        /// Handles the window closing event
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void Window_Closing(object sender, CancelEventArgs e)
         {
             Settings.Default.Save();
@@ -245,19 +304,34 @@ namespace AVA_LabelEditor
             { }
         }
 
+        /// <summary>
+        /// Validation before closing
+        /// </summary>
+        /// <param name="e"></param>
+        /// <returns>True if window can be closed</returns>
         private bool CanClose(CancelEventArgs e)
         {
             var ok = true;
 
-
             return ok;
         }
 
+        /// <summary>
+        /// Handles the selecteion changed event of MainGrid
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void MainGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             SetSubGridFilter();
         }
 
+        /// <summary>
+        /// Handles the Copy row event
+        /// Changes the default behaviour from copying the whole line to only the cell
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void Grids_CopyingRowClipboardContent(object sender, DataGridRowClipboardEventArgs e)
         {
             if (!(sender is DataGrid))
@@ -269,6 +343,11 @@ namespace AVA_LabelEditor
             e.ClipboardRowContent.Add(currentCell);
         }
 
+        /// <summary>
+        /// Handles the RenameLabel command
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="executedRoutedEventArgs"></param>
         private void RenameLabel(object sender, ExecutedRoutedEventArgs executedRoutedEventArgs)
         {
             if (!Labels.ValidateRename())
@@ -280,11 +359,21 @@ namespace AVA_LabelEditor
                 Labels.Rename(dialog.NewIdTextbox.Text);
         }
 
+        /// <summary>
+        /// Handles the AddLabel command
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="executedRoutedEventArgs"></param>
         public void AddLabel(object sender, ExecutedRoutedEventArgs executedRoutedEventArgs)
         {
             ShowAddLabelDialog();
         }
 
+        /// <summary>
+        /// SHows the <see cref="AddLabel"/> window
+        /// </summary>
+        /// <param name="labelText">(optional) A preset LabelText</param>
+        /// <returns>A list of all added <see cref="Label"/>s</returns>
         public Dictionary<string, List<Label>> ShowAddLabelDialog(string labelText = "")
         {
             if (!ValidateAdd())
@@ -300,44 +389,78 @@ namespace AVA_LabelEditor
             return new Dictionary<string, List<Label>>();
         }
 
+        /// <summary>
+        /// Validating before adding a label
+        /// </summary>
+        /// <returns>True if Label can be added</returns>
         private bool ValidateAdd()
         {
             var ok = true;
 
             if (string.IsNullOrWhiteSpace(FileIds.Selected.Name))
             {
-                MessageBox.Show("FileId darf nicht leer sein!");
+                MessageBox.Show(General.Validate_Add_NoFileId_Message, General.Validate_Add_NoFileId_Title);
                 ok = false;
             }
 
             return ok;
         }
 
+        /// <summary>
+        /// Handles the Save command
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="executedRoutedEventArgs"></param>
         private void SaveLabel(object sender, ExecutedRoutedEventArgs executedRoutedEventArgs)
         {
             Labels.Save();
         }
 
+        /// <summary>
+        /// Handles the exit button click event
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void ExitButton_Click(object sender, RoutedEventArgs e)
         {
             Close();
         }
 
+        /// <summary>
+        /// Handles a Delete command
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="executedRoutedEventArgs"></param>
         private void DeleteLabel(object sender, ExecutedRoutedEventArgs executedRoutedEventArgs)
         {
             Labels.Delete();
         }
 
+        /// <summary>
+        /// Handles a Translate command
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="executedRoutedEventArgs"></param>
         private void TranslateLabel(object sender, ExecutedRoutedEventArgs executedRoutedEventArgs)
         {
             Labels.Translate();
         }
 
+        /// <summary>
+        /// Handles a change to a property
+        /// </summary>
+        /// <param name="propertyName"></param>
         private void OnPropertyChanged([CallerMemberName] string propertyName = null)
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
 
+        /// <summary>
+        /// Handles the InitColumns event
+        /// Sets column properties using attributes
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void InitColumns(object sender, DataGridAutoGeneratingColumnEventArgs e)
         {
             PropertyInfo prop = typeof(Label).GetProperty(e.PropertyName);
@@ -360,6 +483,11 @@ namespace AVA_LabelEditor
             e.Column.IsReadOnly = attribute.IsReadOnly;
         }
 
+        /// <summary>
+        /// Handles the Reload button click event
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void ReloadButton_Click(object sender, RoutedEventArgs e)
         {
             ReloadLabels();
@@ -367,18 +495,33 @@ namespace AVA_LabelEditor
 
         #endregion
 
+        /// <summary>
+        /// Handles the ShowDiff button click event
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void ShowDiffButton_Click(object sender, RoutedEventArgs e)
         {
-            var dialog = new AVA_LabelEditor.ShowDiff(this);
+            var dialog = new ShowDiff(this);
 
             dialog.ShowDialog();
         }
 
+        /// <summary>
+        /// Handles a change in the Seach textbox
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void SearchTextbox_TextChanged(object sender, TextChangedEventArgs e)
         {
             SetGridFilter();
         }
 
+        /// <summary>
+        /// Handles the window loaded event
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
             var updater = new Updater();
@@ -386,11 +529,20 @@ namespace AVA_LabelEditor
             updater.Start();
         }
 
+        /// <summary>
+        /// Starts the PaseLabel process
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         public void PasteLabelToVisualStudio(object sender, RoutedEventArgs e)
         {
             Server.PasteLabel(Labels.Selected.FullId);
         }
 
+        /// <summary>
+        /// Handler for the case the file changed in the background
+        /// </summary>
+        /// <returns>Users choise</returns>
         public bool HandleChangedFile()
         {
             var result = MessageBox.Show(General.FileChangedReloadMessage, General.FileChangedReloadTitle, MessageBoxButtons.YesNo, MessageBoxIcon.Warning);

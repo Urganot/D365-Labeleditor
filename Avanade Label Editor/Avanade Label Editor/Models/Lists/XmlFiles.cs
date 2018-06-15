@@ -8,13 +8,24 @@ namespace AVA_LabelEditor.Lists
 {
     public class XmlFiles : ObservableList
     {
+        /// <summary>
+        /// A list of all XmlFiles
+        /// </summary>
         public List<XmlFile> All = new List<XmlFile>();
 
-        public XmlFiles(AVA_LabelEditor.MainWindow mainWindow)
+        /// <summary>
+        /// Constructor of the XmlFiles class
+        /// </summary>
+        /// <param name="mainWindow">An instance of the MainWindow class</param>
+        public XmlFiles(MainWindow mainWindow)
         {
             MainWindow = mainWindow;
         }
 
+        /// <summary>
+        /// Validates data before initializing
+        /// </summary>
+        /// <returns>True if data is valid</returns>
         public bool ValidateInit()
         {
             bool ok = true;
@@ -25,6 +36,9 @@ namespace AVA_LabelEditor.Lists
 
         }
 
+        /// <summary>
+        /// Initializes the <see cref="XmlFiles"/> data
+        /// </summary>
         public void Init()
         {
             Clear();
@@ -49,10 +63,12 @@ namespace AVA_LabelEditor.Lists
                 };
 
                 All.Add(xmlFile);
-
             }
         }
 
+        /// <summary>
+        /// Clears the <see cref="XmlFiles"/> data
+        /// </summary>
         public void Clear()
         {
             All.Clear();

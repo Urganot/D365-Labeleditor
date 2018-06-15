@@ -3,9 +3,15 @@ using System.Runtime.Serialization;
 
 namespace AVA_LabelEditor.Objects
 {
+    /// <summary>
+    /// This class represents a FileId
+    /// </summary>
     [DataContract]
     public class FileId : IEquatable<FileId>
     {
+        /// <summary>
+        /// Name of the FileId
+        /// </summary>
         [DataMember]
         public string Name { get; set; }
 
