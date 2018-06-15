@@ -58,8 +58,20 @@ namespace AVA_LabelEditor.Lists
                 Add(xmlFile.FileId);
             }
 
+            CheckForSingleEntry();
+
             CheckSelected();
         }
+
+        /// <summary>
+        /// If there is only one entry set this as selected
+        /// </summary>
+        public void CheckForSingleEntry()
+        {
+            if (All.Count == 1)
+                Selected = All.Single();
+        }
+
 
         /// <summary>
         /// Checks if the selected <see cref="FileId"/> exists

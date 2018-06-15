@@ -82,5 +82,17 @@ namespace AVA_LabelEditor.Properties {
                 this["FileId"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("en-Us")]
+        public string DefaultLanguage {
+            get {
+                return ((string)(this["DefaultLanguage"]));
+            }
+            set {
+                this["DefaultLanguage"] = value;
+            }
+        }
     }
 }

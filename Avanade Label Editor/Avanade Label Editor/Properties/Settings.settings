@@ -17,5 +17,8 @@
     <Setting Name="FileId" Type="System.String" Scope="User">
       <Value Profile="(Default)" />
     </Setting>
+    <Setting Name="DefaultLanguage" Type="System.String" Scope="User">
+      <Value Profile="(Default)">en-Us</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

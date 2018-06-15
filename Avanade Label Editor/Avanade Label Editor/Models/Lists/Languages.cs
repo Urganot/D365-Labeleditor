@@ -59,7 +59,28 @@ namespace AVA_LabelEditor.Lists
                     All.Add(xmlFile.Language);
             }
 
+            SetDefault();
+
+            CheckForSingleEntry();
+
             CheckSelected();
+        }
+
+        /// <summary>
+        /// Sets default language
+        /// </summary>
+        private void SetDefault()
+        {
+            Selected = new Language(Settings.Default.DefaultLanguage);
+        }
+
+        /// <summary>
+        /// If there is only one entry set this as selected
+        /// </summary>
+        public void CheckForSingleEntry()
+        {
+            if (All.Count == 1)
+                Selected = All.Single();
         }
 
         /// <summary>
