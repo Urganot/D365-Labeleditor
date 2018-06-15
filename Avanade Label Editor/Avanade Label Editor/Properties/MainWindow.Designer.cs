@@ -205,7 +205,7 @@ namespace AVA_LabelEditor.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Avanade Labeleditor.
+        ///   Looks up a localized string similar to Avanade Label Editor.
         /// </summary>
         public static string Title {
             get {
