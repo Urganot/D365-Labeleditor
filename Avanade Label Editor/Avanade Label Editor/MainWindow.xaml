@@ -57,7 +57,7 @@
             </Grid.ColumnDefinitions>
             <TextBox x:Name="PathTextbox" Grid.Column="0" VerticalAlignment="Center" Margin="10,12.01,0.001,12.011" Text="{Binding Path=AxLabelPath}" IsReadOnly="True" Height="18"/>
             <Button Name="GetPathButton" Content="..." Margin="353.711,12.01,0,12.011" Click="GetPath_Click" HorizontalAlignment="Left" VerticalAlignment="Center" Height="18" Width="18" Grid.ColumnSpan="2" />
-            <Label Content="{lex:Loc General:FileIds}" Grid.Column="1" VerticalAlignment="Center" Margin="0,8.03,2,8.031" HorizontalAlignment="Right" Height="25.96" Width="70" />
+            <Label Content="{lex:Loc General:FileIds}" Grid.Column="1" VerticalAlignment="Center" Margin="0,8.03,2,8.031" HorizontalAlignment="Right" Height="25.96" Width="53.124" />
             <ComboBox x:Name="FileIdCombobox" Grid.Column="2" Margin="1.999,10.03,0,10.031" Width="200" SelectedItem="{Binding Selected}" SelectionChanged="FileId_SelectionChanged" HorizontalAlignment="Left" VerticalAlignment="Center" Height="21.96"/>
             <Label Content="{lex:Loc General:Languages}" Grid.Column="2" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,8.03,2,8.031" Height="25.96" Width="66.946"/>
             <ComboBox x:Name="LanguageCombobox" Grid.Column="3" Margin="2,10.03,0,10.031" Width="199.998" SelectedItem="{Binding Selected}" SelectionChanged="Language_SelectionChanged" HorizontalAlignment="Left" VerticalAlignment="Center" Height="21.96"/>

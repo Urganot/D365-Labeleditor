@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.IO;
 using System.Linq;
 using System.Reflection;
 using System.Runtime.CompilerServices;
@@ -9,7 +8,6 @@ using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Forms;
 using System.Windows.Input;
-using System.Xml.Linq;
 using AVA_LabelEditor.CustomExceptions;
 using AVA_LabelEditor.Helper;
 using AVA_LabelEditor.Lists;
@@ -171,49 +169,12 @@ namespace AVA_LabelEditor
 
         public void ReloadLabels()
         {
-            if (!ValidateReload())
-                return;
-
             XmlFiles.Init();
             Languages.Init();
             FileIds.Init();
             ReadFilesNew.Init();
 
             Timer?.Reset();
-        }
-
-        private bool ValidateReload()
-        {
-            bool ok = true;
-
-            if (IsModelLocked())
-                ok = Helper.Helper.CheckFailed(General.Validate_Reload_Locked_Message, General.Validate_Reload_Locked_Title);
-
-            return ok;
-        }
-
-        public bool IsModelLocked()
-        {
-            var dir = new DirectoryInfo(AxLabelPath);
-            var modelDir = dir.Parent?.Parent;
-
-            if (modelDir == null)
-                return false;
-
-            var descriptor = Directory.GetDirectories(modelDir.FullName, "Descriptor").SingleOrDefault();
-
-            if (string.IsNullOrWhiteSpace(descriptor))
-                return false;
-
-            var file = Directory.GetFiles(descriptor, modelDir.Name + ".xml").SingleOrDefault();
-
-            if (file == null || !File.Exists(file))
-                throw new FileNotFoundException(file);
-
-            var rootElement = XDocument.Load(file).Root;
-
-            return rootElement?.Element("Locked")?.Value.ToLower() == "true";
-
         }
 
         private bool SetPath()
