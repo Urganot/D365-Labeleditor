@@ -105,19 +105,19 @@ namespace AVA_LabelEditor.Objects
         /// <summary>
         /// Was the Label changed
         /// </summary>
-        [MyWpfAttributes(Visible = Visibility.Hidden)]
+        [MyWpfAttributes(Visible = false)]
         public bool Changed { get; }
 
         /// <summary>
         /// Was the Label added
         /// </summary>
-        [MyWpfAttributes(Visible = Visibility.Hidden)]
+        [MyWpfAttributes(Visible = false)]
         public bool Added { get; }
 
         /// <summary>
         /// Was the Label deleted
         /// </summary>
-        [MyWpfAttributes(Visible = Visibility.Hidden)]
+        [MyWpfAttributes(Visible = false)]
         public bool Deleted { get; }
 
         /// <summary>

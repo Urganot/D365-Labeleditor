@@ -32,7 +32,7 @@ namespace AVA_LabelEditor.Objects
         /// <see cref="FileId"/>
         /// </summary>
         [DataMember]
-        [MyWpfAttributes(IsReadOnly = true, Width = 8, WidthType = DataGridLengthUnitType.Star,Visible = Visibility.Hidden)]
+        [MyWpfAttributes(IsReadOnly = true, Width = 8, WidthType = DataGridLengthUnitType.Star,Visible = false)]
         public FileId FileId
         {
             get { return _fileId; }
@@ -119,14 +119,14 @@ namespace AVA_LabelEditor.Objects
         /// Original text
         /// </summary>
         [DataMember]
-        [MyWpfAttributes(Visible = Visibility.Hidden, IsReadOnly = true)]
+        [MyWpfAttributes(Visible = false, IsReadOnly = true)]
         public string OriginalText { get; set; } = "";
 
         /// <summary>
         /// Flag for deletion
         /// </summary>
         [DataMember]
-        [MyWpfAttributes(Visible = Visibility.Hidden, IsReadOnly = true)]
+        [MyWpfAttributes(Visible = false, IsReadOnly = true)]
         public bool Deleted
         {
             get { return _deleted; }

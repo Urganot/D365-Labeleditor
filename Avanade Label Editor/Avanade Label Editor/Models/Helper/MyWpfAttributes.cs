@@ -32,6 +32,6 @@ namespace AVA_LabelEditor.Helper
         /// <summary>
         /// Visibility
         /// </summary>
-        public Visibility Visible { get; set; } = Visibility.Visible;
+        public bool Visible { get; set; } = true;
     }
 }

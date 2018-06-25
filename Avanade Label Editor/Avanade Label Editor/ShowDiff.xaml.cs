@@ -101,10 +101,15 @@ namespace AVA_LabelEditor
             if (attribute == null)
                 return;
 
+            if (!attribute.Visible)
+            {
+                e.Cancel = true;
+                return;
+            }
+
             if (!string.IsNullOrWhiteSpace(attribute.DisplayName))
                 e.Column.Header = attribute.DisplayName;
 
-            e.Column.Visibility = attribute.Visible;
             e.Column.Width = new DataGridLength(attribute.Width, attribute.WidthType);
             e.Column.IsReadOnly = attribute.IsReadOnly;
         }
