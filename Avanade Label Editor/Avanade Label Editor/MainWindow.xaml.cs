@@ -56,6 +56,11 @@ namespace AVA_LabelEditor
         /// </summary>
         public bool Changed { get; set; }
 
+        internal object GetWindow()
+        {
+            throw new NotImplementedException();
+        }
+
         /// <summary>
         /// Path to the AxLabelFile
         /// </summary>

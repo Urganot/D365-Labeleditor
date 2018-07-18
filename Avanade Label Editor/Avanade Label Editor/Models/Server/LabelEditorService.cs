@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ServiceModel;
+using System.Windows;
 using AVA_LabelEditor.Objects;
 
 namespace AVA_LabelEditor.Server
@@ -31,6 +32,9 @@ namespace AVA_LabelEditor.Server
                 throw new ArgumentNullException(nameof(newLabelText));
             }
 
+            if (!string.IsNullOrWhiteSpace(newLabelText))
+                SearchLabel(newLabelText);
+
             return MainWindow.ShowAddLabelDialog(newLabelText);
         }
 
@@ -41,6 +45,21 @@ namespace AVA_LabelEditor.Server
         public void SearchLabel(string searchText)
         {
             MainWindow.SearchString = searchText;
+            if (!MainWindow.IsVisible)
+            {
+                MainWindow.Show();
+            }
+
+            if (MainWindow.WindowState == WindowState.Minimized)
+            {
+                MainWindow.WindowState = WindowState.Normal;
+            }
+
+            MainWindow.Activate();
+            MainWindow.Topmost = true;  // important
+            MainWindow.Topmost = false; // important
+            MainWindow.Focus();         // important
+
         }
 
         /// <summary>
@@ -49,8 +68,8 @@ namespace AVA_LabelEditor.Server
         /// <param name="guid"></param>
         public void Register(Guid guid)
         {
-            MainWindow.Server.Register(OperationContext.Current.GetCallbackChannel<ILabelEditorServiceCallBack>(),guid);
+            MainWindow.Server.Register(OperationContext.Current.GetCallbackChannel<ILabelEditorServiceCallBack>(), guid);
         }
     }
-    
+
 }

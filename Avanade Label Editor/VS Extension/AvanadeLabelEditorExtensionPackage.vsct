@@ -83,12 +83,12 @@
         </Strings>
       </Button>-->
 
-      <Button guid="guidAvanadeLabelEditorExtensionPackageCmdSet" id="ConnectId" priority="0x0101" type="Button">
+      <!--<Button guid="guidAvanadeLabelEditorExtensionPackageCmdSet" id="ConnectId" priority="0x0101" type="Button">
         <Parent guid="guidAvanadeLabelEditorExtensionPackageCmdSet" id="SubMenuGroup" />
         <Strings>
           <ButtonText>Connect to Labeleditor</ButtonText>
         </Strings>
-      </Button>
+      </Button>-->
       <Button guid="guidAvanadeLabelEditorExtensionPackageCmdSet" id="CreateLabelId" priority="0x0100" type="Button">
         <Parent guid="guidAvanadeLabelEditorExtensionPackageCmdSet" id="SubMenuGroup" />
         <Strings>
