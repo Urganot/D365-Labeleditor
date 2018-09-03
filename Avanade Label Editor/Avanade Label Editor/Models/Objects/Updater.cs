@@ -21,8 +21,7 @@ namespace AVA_LabelEditor.Objects
         public void Start()
         {
             // Disabled until a new update method is decided
-            return;
-            AutoUpdater.Start("http://urganot.net/LabelEditor/updates/UpdateFile.xml");
+            //AutoUpdater.Start("http://urganot.net/LabelEditor/updates/UpdateFile.xml");
         }
 
     }

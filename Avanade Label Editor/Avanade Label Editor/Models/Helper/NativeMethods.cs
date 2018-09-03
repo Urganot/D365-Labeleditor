@@ -8,7 +8,7 @@ namespace AVA_LabelEditor.Helper
     /// <summary>
     /// Baseclass for a wpf window without a command bar
     /// </summary>
-    public static class WindowWithoutCommandbar
+    public static class NativeMethods
     {
 
         private const int GWL_STYLE = -16;

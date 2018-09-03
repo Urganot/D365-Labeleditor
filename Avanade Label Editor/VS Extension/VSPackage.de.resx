@@ -117,22 +117,10 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="ServiceNotFoundTitle" xml:space="preserve">
-    <value>LabelEditor nicht gefunden.</value>
+  <data name="110" xml:space="preserve">
+    <value>AvanadeLabelEditorExtension Extension</value>
   </data>
-  <data name="ServiceNotFoundMessage" xml:space="preserve">
-    <value>LabelEditor konnte nicht gefunden werden. Ist dieser gestartet?</value>
-  </data>
-  <data name="NoTextSelectedMessage" xml:space="preserve">
-    <value>Bitte einen Text oder ein Label auswählen.</value>
-  </data>
-  <data name="NoTextSelectedTitle" xml:space="preserve">
-    <value>Kein Text ausgewählt</value>
-  </data>
-  <data name="ConnectSuccessful" xml:space="preserve">
-    <value>Verbunden</value>
-  </data>
-  <data name="DteNotFound" xml:space="preserve">
-    <value>DTE kann nicht gefunden werden</value>
+  <data name="112" xml:space="preserve">
+    <value>AvanadeLabelEditorExtension Visual Studio Extension Detailed Info</value>
   </data>
 </root>

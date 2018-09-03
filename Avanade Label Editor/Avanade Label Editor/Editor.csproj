@@ -110,7 +110,7 @@
     <Compile Include="Models\Lists\Languages.cs" />
     <Compile Include="Models\Helper\ObservableList.cs" />
     <Compile Include="Models\Server\Server.cs" />
-    <Compile Include="Models\Helper\WindowWithoutCommandbar.cs" />
+    <Compile Include="Models\Helper\NativeMethods.cs" />
     <Compile Include="Models\Lists\XmlFiles.cs" />
     <Compile Include="Models\Server\LabelEditorService.cs" />
     <Compile Include="Properties\AddLabel.Designer.cs">

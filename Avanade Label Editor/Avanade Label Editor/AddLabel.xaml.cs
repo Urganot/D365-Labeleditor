@@ -78,7 +78,7 @@ namespace AVA_LabelEditor
         /// <param name="e"></param>
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
-            WindowWithoutCommandbar.RemoveCommandBar(this);
+            NativeMethods.RemoveCommandBar(this);
         }
     }
 }

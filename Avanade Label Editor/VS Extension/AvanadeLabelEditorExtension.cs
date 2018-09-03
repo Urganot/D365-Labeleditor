@@ -6,55 +6,38 @@
 
 using System;
 using System.ComponentModel.Design;
-using System.Globalization;
 using System.Linq;
-using System.Net;
 using System.ServiceModel;
-using System.ServiceModel.Channels;
 using System.ServiceModel.Description;
-using Microsoft.VisualStudio.Shell;
-using Microsoft.VisualStudio.Shell.Interop;
 using System.Windows.Forms;
 using AutoComment2015.Helper;
 using Avanade_Label_Editor_Extension.LabelEditorServices;
 using EnvDTE;
 using EnvDTE80;
+using Microsoft.VisualStudio.Shell;
 
 namespace Avanade_Label_Editor_Extension
 {
     /// <summary>
-    /// Command handler
+    ///     Command handler
     /// </summary>
     internal sealed class AvanadeLabelEditorExtension
     {
-        public static ILabelEditorServiceChannel Proxy
-        {
-            get
-            {
-                var binding = new NetTcpBinding();
-
-                var ctx = new InstanceContext(new LabelEditorServiceCallBack());
-                var endpoint = new EndpointAddress("net.tcp://localhost:2113");
-
-                return new DuplexChannelFactory<ILabelEditorServiceChannel>(ctx, new ServiceEndpoint(ContractDescription.GetContract(typeof(ILabelEditorService)), binding, endpoint)).CreateChannel();
-            }
-        }
-
         private static Guid _guid;
 
         /// <summary>
-        /// Command menu group (command set GUID).
+        ///     Command menu group (command set GUID).
         /// </summary>
         public static readonly Guid CommandSet = new Guid("f943980a-5f69-490d-9815-cdb353dcbf38");
 
         /// <summary>
-        /// VS Package that provides this command, not null.
+        ///     VS Package that provides this command, not null.
         /// </summary>
         private readonly Package _package;
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="AvanadeLabelEditorExtension"/> class.
-        /// Adds our command handlers for menu (commands must exist in the command table file)
+        ///     Initializes a new instance of the <see cref="AvanadeLabelEditorExtension" /> class.
+        ///     Adds our command handlers for menu (commands must exist in the command table file)
         /// </summary>
         /// <param name="package">Owner package, not null.</param>
         private AvanadeLabelEditorExtension(Package package)
@@ -73,21 +56,33 @@ namespace Avanade_Label_Editor_Extension
             _guid = Guid.NewGuid();
         }
 
+        public static ILabelEditorServiceChannel Proxy
+        {
+            get
+            {
+                var binding = new NetTcpBinding();
+
+                var ctx = new InstanceContext(new LabelEditorServiceCallBack());
+                var endpoint = new EndpointAddress("net.tcp://localhost:2113");
+
+                return new DuplexChannelFactory<ILabelEditorServiceChannel>(ctx,
+                    new ServiceEndpoint(ContractDescription.GetContract(typeof(ILabelEditorService)), binding,
+                        endpoint)).CreateChannel();
+            }
+        }
+
         /// <summary>
-        /// Gets the instance of the command.
+        ///     Gets the instance of the command.
         /// </summary>
         public static AvanadeLabelEditorExtension Instance { get; private set; }
 
         /// <summary>
-        /// Gets the service provider from the owner package.
+        ///     Gets the service provider from the owner package.
         /// </summary>
-        private IServiceProvider ServiceProvider
-        {
-            get { return this._package; }
-        }
+        private IServiceProvider ServiceProvider => _package;
 
         /// <summary>
-        /// Initializes the singleton instance of the command.
+        ///     Initializes the singleton instance of the command.
         /// </summary>
         /// <param name="package">Owner package, not null.</param>
         public static void Initialize(Package package)
@@ -97,26 +92,29 @@ namespace Avanade_Label_Editor_Extension
         }
 
         /// <summary>
-        /// This function is the callback used to execute the command when the menu item is clicked.
-        /// See the constructor to see how the menu item is associated with this function using
-        /// OleMenuCommandService service and MenuCommand class.
+        ///     This function is the callback used to execute the command when the menu item is clicked.
+        ///     See the constructor to see how the menu item is associated with this function using
+        ///     OleMenuCommandService service and MenuCommand class.
         /// </summary>
         /// <param name="sender">Event sender.</param>
         /// <param name="e">Event args.</param>
         private void CreateLabel(object sender, EventArgs e)
         {
+            ThreadHelper.ThrowIfNotOnUIThread();
             if (!TryOpenConnection())
                 return;
 
             try
             {
+                var dte = (DTE) ServiceProvider.GetService(typeof(DTE));
+                if (dte == null)
+                    throw new ArgumentNullException(Strings.DteNotFound);
 
-                var dte = (DTE)ServiceProvider.GetService(typeof(DTE));
                 var activeDocument = dte.ActiveDocument;
 
                 if (activeDocument != null)
                 {
-                    var selection = (TextSelection)dte.ActiveDocument.Selection;
+                    var selection = (TextSelection) dte.ActiveDocument.Selection;
                     var text = selection.Text;
                     if (string.IsNullOrEmpty(text) || string.IsNullOrWhiteSpace(text))
                     {
@@ -124,7 +122,7 @@ namespace Avanade_Label_Editor_Extension
                     }
                     else
                     {
-                        var dte2 = (DTE2)ServiceProvider.GetService(typeof(DTE));
+                        var dte2 = (DTE2) ServiceProvider.GetService(typeof(DTE));
 
                         var helper = new Helper(dte2);
 
@@ -145,34 +143,34 @@ namespace Avanade_Label_Editor_Extension
         }
 
         /// <summary>
-        /// This function is the callback used to execute the command when the menu item is clicked.
-        /// See the constructor to see how the menu item is associated with this function using
-        /// OleMenuCommandService service and MenuCommand class.
+        ///     This function is the callback used to execute the command when the menu item is clicked.
+        ///     See the constructor to see how the menu item is associated with this function using
+        ///     OleMenuCommandService service and MenuCommand class.
         /// </summary>
         /// <param name="sender">Event sender.</param>
         /// <param name="e">Event args.</param>
         private void SearchLabel(object sender, EventArgs e)
         {
+            ThreadHelper.ThrowIfNotOnUIThread();
             if (!TryOpenConnection())
                 return;
 
             try
             {
-                var dte = (DTE)ServiceProvider.GetService(typeof(DTE));
+                var dte = (DTE) ServiceProvider.GetService(typeof(DTE));
+                if (dte == null)
+                    throw new ArgumentNullException(Strings.DteNotFound);
+
                 var activeDocument = dte.ActiveDocument;
 
                 if (activeDocument != null)
                 {
-                    var selection = (TextSelection)dte.ActiveDocument.Selection;
+                    var selection = (TextSelection) dte.ActiveDocument.Selection;
                     var text = selection.Text;
                     if (string.IsNullOrEmpty(text) || string.IsNullOrWhiteSpace(text))
-                    {
                         MessageBox.Show(Strings.NoTextSelectedMessage, Strings.NoTextSelectedTitle);
-                    }
                     else
-                    {
                         Proxy.SearchLabel(text);
-                    }
                 }
             }
             catch (EndpointNotFoundException)
@@ -215,7 +213,8 @@ namespace Avanade_Label_Editor_Extension
 
         public static void EndpointNotFound()
         {
-            MessageBox.Show(Strings.ServiceNotFoundMessage, Strings.ServiceNotFoundTitle, MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            MessageBox.Show(Strings.ServiceNotFoundMessage, Strings.ServiceNotFoundTitle, MessageBoxButtons.OK,
+                MessageBoxIcon.Warning);
         }
     }
 }

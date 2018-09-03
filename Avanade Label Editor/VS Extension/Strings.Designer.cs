@@ -70,6 +70,15 @@ namespace Avanade_Label_Editor_Extension {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Can not find DTE.
+        /// </summary>
+        internal static string DteNotFound {
+            get {
+                return ResourceManager.GetString("DteNotFound", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Please select a label or text.
         /// </summary>
         internal static string NoTextSelectedMessage {

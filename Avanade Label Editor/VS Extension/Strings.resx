@@ -132,4 +132,7 @@
   <data name="ConnectSuccessful" xml:space="preserve">
     <value>Conntected</value>
   </data>
+  <data name="DteNotFound" xml:space="preserve">
+    <value>Can not find DTE</value>
+  </data>
 </root>

@@ -7,8 +7,9 @@ using AVA_LabelEditor.CustomExceptions;
 
 namespace AVA_LabelEditor.Server
 {
-    public class Server
+    public class Server : IDisposable
     {
+
         private readonly ServiceHost _serviceHost;
 
         /// <summary>
@@ -108,6 +109,11 @@ namespace AVA_LabelEditor.Server
             {
                 ClientList.Add(guid, client);
             }
+        }
+
+        public void Dispose()
+        {
+            ((IDisposable) _serviceHost)?.Dispose();
         }
     }
 }
