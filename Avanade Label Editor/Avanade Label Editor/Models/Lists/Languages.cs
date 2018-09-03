@@ -71,7 +71,7 @@ namespace AVA_LabelEditor.Lists
         /// </summary>
         private void SetDefault()
         {
-            Selected = new Language(Settings.Default.DefaultLanguage);
+            Selected = string.IsNullOrWhiteSpace(Settings.Default.Language) ? new Language(Settings.Default.DefaultLanguage) : new Language(Settings.Default.Language);
         }
 
         /// <summary>
