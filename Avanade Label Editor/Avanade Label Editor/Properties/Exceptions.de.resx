@@ -123,4 +123,10 @@
   <data name="ConnectionAlreadyClosed" xml:space="preserve">
     <value>Verbindung ist oder wird bereits geschlossen.</value>
   </data>
+  <data name="NoFilesFoundTitle" xml:space="preserve">
+    <value>Es wurde keine Labeldatei gefunden.</value>
+  </data>
+  <data name="NoFilesFoundMessage" xml:space="preserve">
+    <value>Es wurde keine Labeldatei gefunden. Wurde das richtige Verzeichnis ausgewählt?</value>
+  </data>
 </root>

@@ -19,7 +19,7 @@ namespace AVA_LabelEditor.Properties {
     // class via a tool like ResGen or Visual Studio.
     // To add or remove a member, edit your .ResX file then rerun ResGen
     // with the /str option, or rebuild your VS project.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "15.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     internal class Exceptions {
@@ -75,6 +75,24 @@ namespace AVA_LabelEditor.Properties {
         internal static string ConnectionAlreadyOpen {
             get {
                 return ResourceManager.GetString("ConnectionAlreadyOpen", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to No Label was found. Did you select the right directory?.
+        /// </summary>
+        internal static string NoFilesFoundMessage {
+            get {
+                return ResourceManager.GetString("NoFilesFoundMessage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to No Label file found..
+        /// </summary>
+        internal static string NoFilesFoundTitle {
+            get {
+                return ResourceManager.GetString("NoFilesFoundTitle", resourceCulture);
             }
         }
     }

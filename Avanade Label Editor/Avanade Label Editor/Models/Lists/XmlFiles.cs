@@ -1,5 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.IO;
+using System.Linq;
+using System.Windows.Forms;
 using System.Xml.Linq;
 using AVA_LabelEditor.Helper;
 using AVA_LabelEditor.Objects;
@@ -62,7 +64,15 @@ namespace AVA_LabelEditor.Lists
                     Language = new Language(rootElement.Element("Language")?.Value ?? "en-Us")
                 };
 
+                if (xmlFile.LabelContentFileName == null)
+                    continue;
+
                 All.Add(xmlFile);
+            }
+
+            if (!All.Any())
+            {
+                MessageBox.Show(Properties.Exceptions.NoFilesFoundMessage, Properties.Exceptions.NoFilesFoundTitle, MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 

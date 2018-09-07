@@ -169,6 +169,6 @@
     <value>Kein Client verbunden.</value>
   </data>
   <data name="NoClientConnectedMessage" xml:space="preserve">
-    <value>s</value>
+    <value>Es ist kein Client verbunden. Anfrage konnte nicht durchgeführt werden.</value>
   </data>
 </root>
