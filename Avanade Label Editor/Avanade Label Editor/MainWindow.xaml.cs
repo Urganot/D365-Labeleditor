@@ -567,5 +567,25 @@ namespace AVA_LabelEditor
                     throw new ArgumentOutOfRangeException();
             }
         }
+
+        /// <summary>
+        /// Handles a clock on the Searchbox clear button
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void ClearSearch_Click(object sender, RoutedEventArgs e)
+        {
+            ResetSearchBox();
+        }
+
+        /// <summary>
+        /// Empties the searchbox and sets focus
+        /// </summary>
+        public void ResetSearchBox()
+        {
+            SearchString = "";
+            SearchTextbox.Focus();
+
+        }
     }
 }
