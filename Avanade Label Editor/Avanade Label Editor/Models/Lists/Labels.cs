@@ -74,7 +74,7 @@ namespace AVA_LabelEditor.Lists
 
             All.ToList()
                 .Where(x => x.Id == Selected.Id && !Equals(x.Language, Selected.Language) && Equals(x.FileId, Selected.FileId)).ToList()
-                .ForEach(y => y.Text = Translation.Translate(Selected.Text, Selected.Language.ToString(), y.Language.ToString()));
+                .ForEach(y => y.Text = Helper.Helper.FixTranslatedText(Translation.Translate(Selected.Text, Selected.Language.ToString(), y.Language.ToString())));
         }
 
         /// <summary>
@@ -140,7 +140,7 @@ namespace AVA_LabelEditor.Lists
         public Label AddNewLabel(string id, string text, Language language)
         {
             if (Settings.Default.AutoTranslate && !Equals(language, MainWindow.Languages.Selected))
-                text = Translation.Translate(text, MainWindow.Languages.Selected.ToString(), language.ToString());
+                text = Helper.Helper.FixTranslatedText(Translation.Translate(text, MainWindow.Languages.Selected.ToString(), language.ToString()));
 
             var label = new Label(MainWindow)
             {

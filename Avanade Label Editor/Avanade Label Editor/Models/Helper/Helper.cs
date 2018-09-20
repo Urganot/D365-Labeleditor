@@ -1,5 +1,6 @@
 ﻿using System.Security.Cryptography;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Windows.Forms;
 
 namespace AVA_LabelEditor.Helper
@@ -36,8 +37,26 @@ namespace AVA_LabelEditor.Helper
         /// <returns>false</returns>
         public static bool CheckFailed(string message, string caption = "")
         {
-            MessageBox.Show(message,caption, MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            MessageBox.Show(message, caption, MessageBoxButtons.OK, MessageBoxIcon.Warning);
             return false;
+        }
+
+        /// <summary>
+        /// Fixes errors that occur through translation
+        /// </summary>
+        /// <param name="text">Translated text</param>
+        /// <returns>Fixed text</returns>
+        public static string FixTranslatedText(string text)
+        {
+            var regex = new Regex(@"\%\s\d+");
+            var matches = regex.Matches(text);
+
+            foreach (Match match in matches)
+            {
+                text = text.Replace(match.Value, " " + match.Value.Replace(" ", ""));
+            }
+
+            return text;
         }
 
     }
