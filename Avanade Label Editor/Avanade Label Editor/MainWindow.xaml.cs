@@ -232,6 +232,8 @@ namespace AVA_LabelEditor
             bool ok;
             using (var dialog = new FolderBrowserDialog())
             {
+                dialog.SelectedPath = AxLabelPath;
+
                 if (dialog.ShowDialog() == System.Windows.Forms.DialogResult.OK)
                 {
                     AxLabelPath = dialog.SelectedPath;
