@@ -79,7 +79,7 @@ namespace AVA_LabelEditor.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to No Label was found. Did you select the right directory?.
+        ///   Looks up a localized string similar to No Labelfile found. Did you choose the correct directory?.
         /// </summary>
         internal static string NoFilesFoundMessage {
             get {

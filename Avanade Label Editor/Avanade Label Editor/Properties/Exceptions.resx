@@ -107,6 +107,6 @@
     <value>No Label file found.</value>
   </data>
   <data name="NoFilesFoundMessage" xml:space="preserve">
-    <value>No Label was found. Did you select the right directory?</value>
+    <value>No Labelfile found. Did you choose the correct directory?</value>
   </data>
 </root>
