@@ -125,7 +125,7 @@ namespace AVA_LabelEditor.Lists
                 {
                     writer.WriteLine(label.Id + "=" + label.Text);
                     if (!string.IsNullOrWhiteSpace(label.Comment))
-                        writer.WriteLine(" ;" + label.Comment);
+                        writer.WriteLine(" " + readFile.CommentSymbol + label.Comment);
                 }
             }
         }

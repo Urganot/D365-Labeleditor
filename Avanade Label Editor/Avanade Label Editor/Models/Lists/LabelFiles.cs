@@ -37,7 +37,7 @@ namespace AVA_LabelEditor.Lists
             {
                 var filePath = Directory.GetFiles(MainWindow.AxLabelPath, xmlFile.LabelContentFileName, SearchOption.AllDirectories).ToList().Single();
                 var lines = File.ReadLines(filePath).ToList();
-
+                var commentSymbol = "";
                 for (var i = 0; i < lines.Count; i++)
                 {
                     string line = lines[i];
@@ -49,7 +49,14 @@ namespace AVA_LabelEditor.Lists
 
                     if (nextLine != null && nextLine.Trim().StartsWith(";"))
                     {
+                        commentSymbol = ";";
                         comment = nextLine.Substring(nextLine.IndexOf(';') + 1);
+                        i++;
+                    }
+                    else if (nextLine != null && nextLine.Trim().StartsWith("#"))
+                    {
+                        commentSymbol = "#";
+                        comment = nextLine.Substring(nextLine.IndexOf('#') + 1);
                         i++;
                     }
 
@@ -68,7 +75,7 @@ namespace AVA_LabelEditor.Lists
 
                    MainWindow.Labels.Add(label);
                 }
-                All.Add(new LabelFile(filePath, xmlFile.Language, xmlFile.FileId));
+                All.Add(new LabelFile(filePath, xmlFile.Language, xmlFile.FileId, commentSymbol));
             }
 
             MainWindow.Changed = false;

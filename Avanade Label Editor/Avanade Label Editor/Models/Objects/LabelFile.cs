@@ -27,7 +27,7 @@ namespace AVA_LabelEditor.Objects
         /// <summary>
         /// The LabelFiles id
         /// </summary>
-        public FileId FileId { get ; }
+        public FileId FileId { get; }
 
         /// <summary>
         /// Was the LabelFile changed
@@ -35,17 +35,24 @@ namespace AVA_LabelEditor.Objects
         public bool Changed { get; set; }
 
         /// <summary>
+        /// The symbol to indicate a comment
+        /// </summary>
+        public string CommentSymbol { get; set; }
+
+        /// <summary>
         /// Constructor for the LabelFile class
         /// </summary>
         /// <param name="path">Path to the LAaelFile</param>
         /// <param name="language">´The LabelFiles <see cref="Language"/></param>
         /// <param name="fileId">The LabelFiles <see cref="FileId"/></param>
-        public LabelFile(string path, Language language, FileId fileId)
+        /// <param name="commentSymbol">The symbol to indicate a comment</param>
+        public LabelFile(string path, Language language, FileId fileId, string commentSymbol)
         {
             Path = path;
             OriginalHash = Helper.Helper.Hash(File.ReadAllText(Path));
             Language = language;
             FileId = fileId;
+            CommentSymbol = commentSymbol;
         }
 
         /// <summary>
