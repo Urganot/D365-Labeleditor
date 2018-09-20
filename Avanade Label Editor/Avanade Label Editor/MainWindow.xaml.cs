@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.IO;
 using System.Linq;
 using System.Reflection;
 using System.Runtime.CompilerServices;
@@ -8,6 +9,7 @@ using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Forms;
 using System.Windows.Input;
+using System.Xml.Linq;
 using AVA_LabelEditor.CustomExceptions;
 using AVA_LabelEditor.Helper;
 using AVA_LabelEditor.Lists;
@@ -206,12 +208,19 @@ namespace AVA_LabelEditor
         /// </summary>
         public void ReloadLabels()
         {
+            if (!ValidateReload())
+                return;
+
             XmlFiles.Init();
             Languages.Init();
             FileIds.Init();
             ReadFilesNew.Init();
 
             Timer?.Reset();
+
+            SetGridsReadOnly(false);
+
+            ValidateLockedModel();
         }
 
         /// <summary>
@@ -586,6 +595,59 @@ namespace AVA_LabelEditor
             SearchString = "";
             SearchTextbox.Focus();
 
+        }
+
+        /// <summary>
+        /// Validation before reloading
+        /// </summary>
+        /// <returns></returns>
+        private bool ValidateReload()
+        {
+            bool ok = true;
+
+            return ok;
+        }
+
+        /// <summary>
+        /// Validates the locked status of the model
+        /// </summary>
+        private void ValidateLockedModel()
+        {
+            if (!IsModelLocked())
+                return;
+
+            MessageBox.Show(General.Validate_Reload_Locked_Message, General.Validate_Reload_Locked_Title);
+            SetGridsReadOnly(true);
+        }
+
+        /// <summary>
+        /// Sets the readonly property of the grids
+        /// </summary>
+        /// <param name="readOnly">Should the grids be readOnly</param>
+        public void SetGridsReadOnly(bool readOnly)
+        {
+            MainGrid.IsReadOnly = readOnly;
+            SubGrid.IsReadOnly = readOnly;
+        }
+
+        /// <summary>
+        /// Checks if chosen model is locked by Microsoft
+        /// </summary>
+        /// <returns>True if Model is locked</returns>
+        public bool IsModelLocked()
+        {
+            var dir = new DirectoryInfo(AxLabelPath);
+            var modelDir = dir.Parent?.Parent;
+            if (modelDir == null)
+                return false;
+            var descriptor = Directory.GetDirectories(modelDir.FullName, "Descriptor").SingleOrDefault();
+            if (string.IsNullOrWhiteSpace(descriptor))
+                return false;
+            var file = Directory.GetFiles(descriptor, modelDir.Name + ".xml").SingleOrDefault();
+            if (file == null || !File.Exists(file))
+                throw new FileNotFoundException(file);
+            var rootElement = XDocument.Load(file).Root;
+            return rootElement?.Element("Locked")?.Value.ToLower() == "true";
         }
     }
 }

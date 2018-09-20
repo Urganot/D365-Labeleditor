@@ -277,6 +277,24 @@ namespace AVA_LabelEditor.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Model was locked by Microsoft. To add a Label please create an extension model..
+        /// </summary>
+        public static string Validate_Reload_Locked_Message {
+            get {
+                return ResourceManager.GetString("Validate_Reload_Locked_Message", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Model locked.
+        /// </summary>
+        public static string Validate_Reload_Locked_Title {
+            get {
+                return ResourceManager.GetString("Validate_Reload_Locked_Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to New id may not be the same as the old one.
         /// </summary>
         public static string Validate_Rename_OldEqualsNew_Message {

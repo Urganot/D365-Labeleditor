@@ -195,4 +195,10 @@
   <data name="Validate_Add_NoFileId_Title" xml:space="preserve">
     <value>Kein Dateiname</value>
   </data>
+  <data name="Validate_Reload_Locked_Message" xml:space="preserve">
+    <value>Dieses Model wurde von Microsoft gesperrt. Um neue Labels zu erstellen erstellen sie bitte zuerst ein Extension-Model</value>
+  </data>
+  <data name="Validate_Reload_Locked_Title" xml:space="preserve">
+    <value>Model gesperrt</value>
+  </data>
 </root>
