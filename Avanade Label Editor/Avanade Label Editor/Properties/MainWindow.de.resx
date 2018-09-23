@@ -135,8 +135,8 @@
   <data name="Save" xml:space="preserve">
     <value>Speichern</value>
   </data>
-  <data name="Reload" xml:space="preserve">
-    <value>Neu laden</value>
+  <data name="ReloadLabel" xml:space="preserve">
+    <value>Labels neuladen</value>
   </data>
   <data name="Exit" xml:space="preserve">
     <value>Beenden</value>
@@ -170,5 +170,11 @@
   </data>
   <data name="NoClientConnectedMessage" xml:space="preserve">
     <value>Es ist kein Client verbunden. Anfrage konnte nicht durchgeführt werden.</value>
+  </data>
+  <data name="ReloadModel" xml:space="preserve">
+    <value>Model neuladen</value>
+  </data>
+  <data name="SetPath" xml:space="preserve">
+    <value>Pfad einstellen</value>
   </data>
 </root>

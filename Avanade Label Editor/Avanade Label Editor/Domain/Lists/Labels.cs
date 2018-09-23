@@ -97,7 +97,7 @@ namespace AVA_LabelEditor.Lists
         /// <param name="e">Determines weither the normal save function is called or the window is closing</param>
         public void Save(EventArgs e = null)
         {
-            if (!ValidateSave(e))
+            if (!ValidateSave())
                 return;
 
             MainWindow.Timer.Stop();
@@ -113,6 +113,25 @@ namespace AVA_LabelEditor.Lists
             MainWindow.Timer.Start();
         }
 
+        /// <summary>
+        /// Validation before saving labels
+        /// </summary>
+        /// <param name="e">Determines weither the normal save function is called or the window is closing</param>
+        /// <returns>True if Labels can be saved</returns>
+        private bool ValidateSave(EventArgs e = null)
+        {
+            var ok = true;
+
+            if (MainWindow.Models.Selected.Locked)
+                ok = Helper.Helper.CheckFailed(General.Validate_Reload_Locked_Message, General.Validate_Reload_Locked_Title);
+
+            if (MainWindow.ReadFilesNew.All.Any(x => x.Changed))
+            {
+                ok = Helper.Helper.CheckFailed(General.FileChangedCantSaveMessage, General.FileChangedCantSaveTitle);
+            }
+
+            return ok;
+        }
         /// <summary>
         /// Writes the file to Disc
         /// </summary>
@@ -198,58 +217,6 @@ namespace AVA_LabelEditor.Lists
         }
 
 
-        /// <summary>
-        /// Validation before saving labels
-        /// </summary>
-        /// <param name="e">Determines weither the normal save function is called or the window is closing</param>
-        /// <returns>True if Labels can be saved</returns>
-        private bool ValidateSave(EventArgs e = null)
-        {
-            var ok = true;
-
-            if (MainWindow.IsModelLocked())
-                ok = Helper.Helper.CheckFailed(General.Validate_Reload_Locked_Message, General.Validate_Reload_Locked_Title);
-
-            if (e is CancelEventArgs)
-            {
-                var ex = (CancelEventArgs)e;
-
-                if (MainWindow.ReadFilesNew.All.Any(x => x.Changed))
-                {
-                    var messageResult = MessageBox.Show(General.FileChangedCantSaveMessage, General.FileChangedCantSaveTitle, MessageBoxButton.OKCancel, MessageBoxImage.Warning);
-
-                    switch (messageResult)
-                    {
-                        case MessageBoxResult.Cancel:
-                            ex.Cancel = true;
-                            break;
-                    }
-
-                    ok = false;
-                }
-                else if (MainWindow.Changed)
-                {
-                    var result = MessageBox.Show(General.SaveFileConfirmMessage, General.SaveFileConfirmTitle, MessageBoxButton.YesNoCancel, MessageBoxImage.Question);
-
-                    switch (result)
-                    {
-                        case MessageBoxResult.Cancel:
-                            ex.Cancel = true;
-                            ok = false;
-                            break;
-                        case MessageBoxResult.No:
-                            ok = false;
-                            break;
-                    }
-                }
-            }
-            else if (MainWindow.ReadFilesNew.All.Any(x => x.Changed))
-            {
-                ok = Helper.Helper.CheckFailed(General.FileChangedCantSaveMessage, General.FileChangedCantSaveTitle);
-            }
-
-            return ok;
-        }
 
         /// <summary>
         /// Returns the view object to use in the UI

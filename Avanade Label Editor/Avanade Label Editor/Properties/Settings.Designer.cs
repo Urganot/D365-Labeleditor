@@ -94,5 +94,16 @@ namespace AVA_LabelEditor.Properties {
                 this["DefaultLanguage"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        public global::AVA_LabelEditor.Objects.Model Model {
+            get {
+                return ((global::AVA_LabelEditor.Objects.Model)(this["Model"]));
+            }
+            set {
+                this["Model"] = value;
+            }
+        }
     }
 }

@@ -142,6 +142,15 @@ namespace AVA_LabelEditor.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Models.
+        /// </summary>
+        public static string Models {
+            get {
+                return ResourceManager.GetString("Models", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to No label selected.
         /// </summary>
         public static string NoLabelSelectedMessage {

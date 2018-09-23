@@ -20,5 +20,8 @@
     <Setting Name="DefaultLanguage" Type="System.String" Scope="User">
       <Value Profile="(Default)">en-Us</Value>
     </Setting>
+    <Setting Name="Model" Type="AVA_LabelEditor.Objects.Model" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
   </Settings>
 </SettingsFile>

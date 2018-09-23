@@ -135,8 +135,8 @@
   <data name="Save" xml:space="preserve">
     <value>Save</value>
   </data>
-  <data name="Reload" xml:space="preserve">
-    <value>Reload</value>
+  <data name="ReloadLabel" xml:space="preserve">
+    <value>Reload labels</value>
   </data>
   <data name="Exit" xml:space="preserve">
     <value>Exit</value>
@@ -170,5 +170,11 @@
   </data>
   <data name="NoClientConnectedMessage" xml:space="preserve">
     <value>No Client connected. Process could not be executed.</value>
+  </data>
+  <data name="ReloadModel" xml:space="preserve">
+    <value>Reload model</value>
+  </data>
+  <data name="SetPath" xml:space="preserve">
+    <value>Set path</value>
   </data>
 </root>

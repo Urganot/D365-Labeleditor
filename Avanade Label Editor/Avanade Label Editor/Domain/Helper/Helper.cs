@@ -59,5 +59,17 @@ namespace AVA_LabelEditor.Helper
             return text;
         }
 
+        public enum ValidateSaveResponse
+        {
+            Ok,
+            CancelEvent,
+        }
+
+        public enum ShouldSave
+        {
+            Yes,
+            No
+        }
+
     }
 }

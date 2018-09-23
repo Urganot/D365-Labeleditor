@@ -32,7 +32,7 @@ namespace AVA_LabelEditor.Lists
         {
             bool ok = true;
 
-            ok = Directory.Exists(MainWindow.AxLabelPath);
+            ok = Directory.Exists(MainWindow.Models.Selected?.LabelPath);
 
             return ok;
 
@@ -48,7 +48,7 @@ namespace AVA_LabelEditor.Lists
             if (!ValidateInit())
                 return;
 
-            var files = Directory.GetFiles(MainWindow.AxLabelPath, "*.xml", SearchOption.TopDirectoryOnly);
+            var files = Directory.GetFiles(MainWindow.Models.Selected.LabelPath, "*.xml", SearchOption.TopDirectoryOnly);
             foreach (var file in files)
             {
                 var rootElement = XDocument.Load(file).Root;

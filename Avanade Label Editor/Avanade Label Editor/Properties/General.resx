@@ -198,4 +198,7 @@
   <data name="Validate_Reload_Locked_Title" xml:space="preserve">
     <value>Model locked</value>
   </data>
+  <data name="Models" xml:space="preserve">
+    <value>Models</value>
+  </data>
 </root>

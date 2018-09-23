@@ -30,8 +30,10 @@
         </Grid.RowDefinitions>
         <Menu Grid.Row="0" DockPanel.Dock="Top">
             <MenuItem Header="{lex:Loc File}">
+                <MenuItem x:Name="SetPathButton" Header="{lex:Loc SetPath}" Click="SetPathButton_Click" />
                 <MenuItem x:Name="SaveButton" Header="{lex:Loc Save}" Command="helper1:CustomCommands.Save"/>
-                <MenuItem x:Name="ReloadButton" Header="{lex:Loc Reload}" Click="ReloadButton_Click" />
+                <MenuItem x:Name="ReloadLabelButton" Header="{lex:Loc ReloadLabel}" Click="ReloadLabelButton_Click" />
+                <MenuItem x:Name="ReloadModelButton" Header="{lex:Loc ReloadModel}" Click="ReloadModelButton_Click" />
                 <Separator />
                 <MenuItem x:Name="ExitButton" Header="{lex:Loc Exit}" Click="ExitButton_Click" />
             </MenuItem>
@@ -47,8 +49,8 @@
 
         <Grid Grid.Row="1">
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="335*"/>
-                <ColumnDefinition Width="25"/>
+                <ColumnDefinition Width="60"/>
+                <ColumnDefinition Width="270"/>
                 <ColumnDefinition Width="90"/>
                 <ColumnDefinition Width="283"/>
                 <ColumnDefinition Width="207"/>
@@ -57,8 +59,8 @@
                 <ColumnDefinition Width="336*"/>
                 <ColumnDefinition Width="31"/>
             </Grid.ColumnDefinitions>
-            <TextBox x:Name="PathTextbox" Grid.Column="0" VerticalAlignment="Center" Margin="10,12,0,12" Text="{Binding Path=AxLabelPath}" IsReadOnly="True" Height="18"/>
-            <Button Name="GetPathButton" Content="..." Margin="0,12" Click="GetPath_Click" HorizontalAlignment="Left" VerticalAlignment="Center" Height="18" Width="18" Grid.Column="1" />
+            <Label Content="{lex:Loc General:Models}" Grid.Column="0" VerticalAlignment="Center" Margin="0,8,2,8" HorizontalAlignment="Right" Height="26" Width="50" />
+            <ComboBox x:Name="ModelCombobox" Grid.Column="1" Margin="10,10,0,10" Width="250" SelectedItem="{Binding Selected}" SelectionChanged="Model_SelectionChanged" HorizontalAlignment="Left" VerticalAlignment="Center" Height="22" Grid.ColumnSpan="2"/>
             <Label Content="{lex:Loc General:FileIds}" Grid.Column="2" VerticalAlignment="Center" Margin="0,8,2,8" HorizontalAlignment="Right" Height="26" Width="80" />
             <ComboBox x:Name="FileIdCombobox" Grid.Column="3" Margin="2,10,0,10" Width="200" SelectedItem="{Binding Selected}" SelectionChanged="FileId_SelectionChanged" HorizontalAlignment="Left" VerticalAlignment="Center" Height="22"/>
             <Label Content="{lex:Loc General:Languages}" Grid.Column="3" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,8,2,8" Height="26" Width="67"/>

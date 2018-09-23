@@ -24,10 +24,12 @@
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
+    <UpdateUrl>http://localhost/Avanade Labeleditor/</UpdateUrl>
     <MinimumRequiredVersion>1.0.0.0</MinimumRequiredVersion>
     <ApplicationRevision>0</ApplicationRevision>
     <ApplicationVersion>1.0.5.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
     <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -52,6 +54,21 @@
   <PropertyGroup />
   <PropertyGroup>
     <StartupObject />
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>FAAFD3F20CBD9C2448E87EAA6C38F36FC63CB49F</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Editor_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>false</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="AutoUpdater.NET, Version=1.4.9.0, Culture=neutral, PublicKeyToken=501435c91b35f4bc, processorArchitecture=MSIL">
@@ -95,24 +112,27 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Models\Server\ILabelEditorService.cs" />
-    <Compile Include="Models\Helper\Commands.cs" />
-    <Compile Include="Models\CustomExceptions\ConnectionAlreadyClosedException.cs" />
-    <Compile Include="Models\CustomExceptions\ConnectionAlreadyOpenException.cs" />
-    <Compile Include="Models\Objects\DiffLine.cs" />
-    <Compile Include="Models\Helper\DiffMatchPatch.cs" />
-    <Compile Include="Models\Objects\BackgroundTimer.cs" />
-    <Compile Include="Models\Lists\FileIds.cs" />
-    <Compile Include="Models\Helper\Helper.cs" />
-    <Compile Include="Models\Objects\LabelFile.cs" />
-    <Compile Include="Models\Lists\LabelFiles.cs" />
-    <Compile Include="Models\Lists\Labels.cs" />
-    <Compile Include="Models\Lists\Languages.cs" />
-    <Compile Include="Models\Helper\ObservableList.cs" />
-    <Compile Include="Models\Server\Server.cs" />
-    <Compile Include="Models\Helper\NativeMethods.cs" />
-    <Compile Include="Models\Lists\XmlFiles.cs" />
-    <Compile Include="Models\Server\LabelEditorService.cs" />
+    <Compile Include="Domain\Helper\CloseSaveResponse.cs" />
+    <Compile Include="Domain\Lists\Models.cs" />
+    <Compile Include="Domain\Objects\Model.cs" />
+    <Compile Include="Domain\Server\ILabelEditorService.cs" />
+    <Compile Include="Domain\Helper\Commands.cs" />
+    <Compile Include="Domain\CustomExceptions\ConnectionAlreadyClosedException.cs" />
+    <Compile Include="Domain\CustomExceptions\ConnectionAlreadyOpenException.cs" />
+    <Compile Include="Domain\Objects\DiffLine.cs" />
+    <Compile Include="Domain\Helper\DiffMatchPatch.cs" />
+    <Compile Include="Domain\Objects\BackgroundTimer.cs" />
+    <Compile Include="Domain\Lists\FileIds.cs" />
+    <Compile Include="Domain\Helper\Helper.cs" />
+    <Compile Include="Domain\Objects\LabelFile.cs" />
+    <Compile Include="Domain\Lists\LabelFiles.cs" />
+    <Compile Include="Domain\Lists\Labels.cs" />
+    <Compile Include="Domain\Lists\Languages.cs" />
+    <Compile Include="Domain\Helper\ObservableList.cs" />
+    <Compile Include="Domain\Server\Server.cs" />
+    <Compile Include="Domain\Helper\NativeMethods.cs" />
+    <Compile Include="Domain\Lists\XmlFiles.cs" />
+    <Compile Include="Domain\Server\LabelEditorService.cs" />
     <Compile Include="Properties\AddLabel.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -141,11 +161,11 @@
     <Compile Include="RenameLabel.xaml.cs">
       <DependentUpon>RenameLabel.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Models\Objects\XmlFile.cs" />
+    <Compile Include="Domain\Objects\XmlFile.cs" />
     <Compile Include="ShowDiff.xaml.cs">
       <DependentUpon>ShowDiff.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Models\Objects\Updater.cs" />
+    <Compile Include="Domain\Objects\Updater.cs" />
     <Page Include="AddLabel.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -158,9 +178,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Compile Include="Models\Objects\FileId.cs" />
-    <Compile Include="Models\Objects\Label.cs" />
-    <Compile Include="Models\Objects\Language.cs" />
+    <Compile Include="Domain\Objects\FileId.cs" />
+    <Compile Include="Domain\Objects\Label.cs" />
+    <Compile Include="Domain\Objects\Language.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -175,7 +195,7 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Models\Helper\MyWpfAttributes.cs" />
+    <Compile Include="Domain\Helper\MyWpfAttributes.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>

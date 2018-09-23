@@ -11,6 +11,7 @@ using System.Windows.Forms;
 using System.Windows.Input;
 using System.Xml.Linq;
 using AVA_LabelEditor.CustomExceptions;
+using AVA_LabelEditor.Domain.Helper;
 using AVA_LabelEditor.Helper;
 using AVA_LabelEditor.Lists;
 using AVA_LabelEditor.Objects;
@@ -34,6 +35,7 @@ namespace AVA_LabelEditor
         public event PropertyChangedEventHandler PropertyChanged;
 
         public XmlFiles XmlFiles;
+        public Models Models;
         public LabelFiles ReadFilesNew;
         public Labels Labels;
         public Languages Languages;
@@ -109,7 +111,7 @@ namespace AVA_LabelEditor
                     return;
             }
 
-            ReloadLabels();
+            ReloadLabels(true);
 
             InitTimer();
 
@@ -136,6 +138,7 @@ namespace AVA_LabelEditor
         /// </summary>
         private void Init()
         {
+            Models = new Models(this);
             Labels = new Labels(this);
             Languages = new Languages(this);
             FileIds = new FileIds(this);
@@ -163,7 +166,8 @@ namespace AVA_LabelEditor
             FileIdCombobox.DataContext = FileIds;
             FileIdCombobox.ItemsSource = FileIds.GetView();
 
-            // SearchTextbox.DataContext = this;
+            ModelCombobox.DataContext = Models;
+            ModelCombobox.ItemsSource = Models.GetView();
 
             SetGridFilter();
         }
@@ -206,10 +210,13 @@ namespace AVA_LabelEditor
         /// <summary>
         /// Rereads all Labels
         /// </summary>
-        public void ReloadLabels()
+        public void ReloadLabels(bool reloadModels = false)
         {
             if (!ValidateReload())
                 return;
+
+            if (reloadModels)
+                Models.Init();
 
             XmlFiles.Init();
             Languages.Init();
@@ -281,14 +288,33 @@ namespace AVA_LabelEditor
         }
 
         /// <summary>
-        /// Handles the GetOath button click event
+        /// Tracks if model change was canceled to prevent a infinite loop
+        /// </summary>
+        private bool _modelChangeWasCanceled;
+
+        /// <summary>
+        /// Handles a change in the FileId control
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void GetPath_Click(object sender, RoutedEventArgs e)
+        private void Model_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            SetPath();
-            ReloadLabels();
+            if (_modelChangeWasCanceled)
+            {
+                _modelChangeWasCanceled = false;
+                e.Handled = true;
+                return;
+            }
+
+            var response = ShouldSaveAndClose();
+
+            if (response.Save)
+                Labels.Save();
+
+            if (!response.Close && e.RemovedItems[0] is Model)
+                Models.Selected = (Model)e.RemovedItems[0];
+            else
+                ReloadLabels();
         }
 
         /// <summary>
@@ -306,11 +332,15 @@ namespace AVA_LabelEditor
                 return;
             }
 
-
             if (!Changed)
                 return;
 
-            Labels.Save(e);
+            var response = ShouldSaveAndClose();
+
+            e.Cancel = !response.Close;
+
+            if (response.Save)
+                Labels.Save(e);
 
             try
             {
@@ -329,8 +359,49 @@ namespace AVA_LabelEditor
         {
             var ok = true;
 
+
             return ok;
         }
+
+        /// <summary>
+        /// Prompts the user if the form should be closed and or saved
+        /// </summary>
+        /// <returns></returns>
+        private CloseSaveResponse ShouldSaveAndClose()
+        {
+            var response = new CloseSaveResponse();
+
+            if (ReadFilesNew.All.Any(x => x.Changed))
+            {
+                var messageResult = MessageBox.Show(General.FileChangedCantSaveMessage, General.FileChangedCantSaveTitle, MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
+
+                switch (messageResult)
+                {
+                    case System.Windows.Forms.DialogResult.Cancel:
+                        response.Close = false;
+                        _modelChangeWasCanceled = true;
+                        break;
+                }
+            }
+            else if (Changed)
+            {
+                var result = MessageBox.Show(General.SaveFileConfirmMessage, General.SaveFileConfirmTitle, MessageBoxButtons.YesNoCancel, MessageBoxIcon.Question);
+
+                switch (result)
+                {
+                    case System.Windows.Forms.DialogResult.Cancel:
+                        response.Close = false;
+                        _modelChangeWasCanceled = true;
+                        break;
+                    case System.Windows.Forms.DialogResult.Yes:
+                        response.Save = true;
+                        break;
+                }
+            }
+
+            return response;
+        }
+
 
         /// <summary>
         /// Handles the selecteion changed event of MainGrid
@@ -509,9 +580,19 @@ namespace AVA_LabelEditor
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void ReloadButton_Click(object sender, RoutedEventArgs e)
+        private void ReloadLabelButton_Click(object sender, RoutedEventArgs e)
         {
             ReloadLabels();
+        }
+
+        /// <summary>
+        /// Handles the Reload button click event
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void ReloadModelButton_Click(object sender, RoutedEventArgs e)
+        {
+            ReloadLabels(true);
         }
 
         #endregion
@@ -570,7 +651,7 @@ namespace AVA_LabelEditor
             switch (result)
             {
                 case System.Windows.Forms.DialogResult.Yes:
-                    ReloadLabels();
+                    ReloadLabels(true);
                     return false;
                 case System.Windows.Forms.DialogResult.No:
                     return true;
@@ -615,7 +696,7 @@ namespace AVA_LabelEditor
         /// </summary>
         private void ValidateLockedModel()
         {
-            if (!IsModelLocked())
+            if (!Models.Selected.Locked)
                 return;
 
             MessageBox.Show(General.Validate_Reload_Locked_Message, General.Validate_Reload_Locked_Title);
@@ -632,24 +713,11 @@ namespace AVA_LabelEditor
             SubGrid.IsReadOnly = readOnly;
         }
 
-        /// <summary>
-        /// Checks if chosen model is locked by Microsoft
-        /// </summary>
-        /// <returns>True if Model is locked</returns>
-        public bool IsModelLocked()
+        private void SetPathButton_Click(object sender, RoutedEventArgs e)
         {
-            var dir = new DirectoryInfo(AxLabelPath);
-            var modelDir = dir.Parent?.Parent;
-            if (modelDir == null)
-                return false;
-            var descriptor = Directory.GetDirectories(modelDir.FullName, "Descriptor").SingleOrDefault();
-            if (string.IsNullOrWhiteSpace(descriptor))
-                return false;
-            var file = Directory.GetFiles(descriptor, modelDir.Name + ".xml").SingleOrDefault();
-            if (file == null || !File.Exists(file))
-                throw new FileNotFoundException(file);
-            var rootElement = XDocument.Load(file).Root;
-            return rootElement?.Element("Locked")?.Value.ToLower() == "true";
+            SetPath();
+            ReloadLabels(true);
         }
+
     }
 }

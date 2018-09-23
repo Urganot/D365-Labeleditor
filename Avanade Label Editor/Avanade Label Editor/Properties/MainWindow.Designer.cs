@@ -169,11 +169,20 @@ namespace AVA_LabelEditor.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Reload.
+        ///   Looks up a localized string similar to Reload labels.
         /// </summary>
-        public static string Reload {
+        public static string ReloadLabel {
             get {
-                return ResourceManager.GetString("Reload", resourceCulture);
+                return ResourceManager.GetString("ReloadLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Reload model.
+        /// </summary>
+        public static string ReloadModel {
+            get {
+                return ResourceManager.GetString("ReloadModel", resourceCulture);
             }
         }
         
@@ -201,6 +210,15 @@ namespace AVA_LabelEditor.Properties {
         public static string Search {
             get {
                 return ResourceManager.GetString("Search", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Set path.
+        /// </summary>
+        public static string SetPath {
+            get {
+                return ResourceManager.GetString("SetPath", resourceCulture);
             }
         }
         

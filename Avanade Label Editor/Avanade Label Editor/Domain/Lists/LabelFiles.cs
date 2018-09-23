@@ -35,7 +35,7 @@ namespace AVA_LabelEditor.Lists
 
             foreach (var xmlFile in MainWindow.XmlFiles.All)
             {
-                var filePath = Directory.GetFiles(MainWindow.AxLabelPath, xmlFile.LabelContentFileName, SearchOption.AllDirectories).ToList().Single();
+                var filePath = Directory.GetFiles(MainWindow.Models.Selected.LabelPath, xmlFile.LabelContentFileName, SearchOption.AllDirectories).ToList().Single();
                 var lines = File.ReadLines(filePath).ToList();
                 var commentSymbol = "";
                 for (var i = 0; i < lines.Count; i++)
