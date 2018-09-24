@@ -105,7 +105,7 @@ namespace AVA_LabelEditor
 
             SetDataBindings();
 
-            if (string.IsNullOrWhiteSpace(AxLabelPath))
+            if (string.IsNullOrWhiteSpace(AxLabelPath) || !Directory.Exists(AxLabelPath))
             {
                 if (!SetPath())
                     return;
