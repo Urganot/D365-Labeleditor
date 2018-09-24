@@ -58,7 +58,7 @@ namespace GoogleTranslate
             var sentences = response?[0] as object[];
             return sentences;
         }
-
+        //Test comment
         /// <summary>
         /// Gets response from google api
         /// </summary>
