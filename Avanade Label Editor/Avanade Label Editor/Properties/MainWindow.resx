@@ -177,4 +177,10 @@
   <data name="SetPath" xml:space="preserve">
     <value>Set path</value>
   </data>
+  <data name="NoModelsFoundMessage" xml:space="preserve">
+    <value>No models could be found. Are you sure you selected the correct folder?</value>
+  </data>
+  <data name="NoModelsFoundTitle" xml:space="preserve">
+    <value>No models found</value>
+  </data>
 </root>

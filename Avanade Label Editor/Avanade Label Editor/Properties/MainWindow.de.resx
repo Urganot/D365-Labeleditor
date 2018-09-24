@@ -177,4 +177,10 @@
   <data name="SetPath" xml:space="preserve">
     <value>Pfad einstellen</value>
   </data>
+  <data name="NoModelsFoundTitle" xml:space="preserve">
+    <value>Keine Models gefunden</value>
+  </data>
+  <data name="NoModelsFoundMessage" xml:space="preserve">
+    <value>Es wurden keine Models gefunden. Sind Sie sicher, dass der richte Ordner ausgewählt wurde?</value>
+  </data>
 </root>

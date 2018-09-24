@@ -3,6 +3,7 @@ using System.ComponentModel;
 using System.IO;
 using System.Linq;
 using System.Windows.Data;
+using System.Windows.Forms;
 using System.Xml.Linq;
 using AVA_LabelEditor.Helper;
 using AVA_LabelEditor.Objects;
@@ -26,6 +27,8 @@ namespace AVA_LabelEditor.Lists
 
         public void Init()
         {
+            Clear();
+
             var directories = Directory.GetDirectories(MainWindow.AxLabelPath, "AxLabelFile", SearchOption.AllDirectories).ToList();
 
             foreach (var directory in directories)
@@ -51,6 +54,12 @@ namespace AVA_LabelEditor.Lists
                 };
 
                 All.Add(model);
+            }
+
+            if (!All.Any())
+            {
+                MessageBox.Show(Properties.MainWindow.NoModelsFoundMessage, Properties.MainWindow.NoModelsFoundTitle,
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -78,6 +87,12 @@ namespace AVA_LabelEditor.Lists
             return new CollectionViewSource { Source = All }.View;
         }
 
-
+        /// <summary>
+        /// Clears the model list
+        /// </summary>
+        public void Clear()
+        {
+            All.Clear();
+        }
     }
 }

@@ -3,7 +3,7 @@
   <Profiles />
   <Settings>
     <Setting Name="AxLabelPath" Type="System.String" Scope="User">
-      <Value Profile="(Default)" />
+      <Value Profile="(Default)">C:\AOSService\PackagesLocalDirectory</Value>
     </Setting>
     <Setting Name="Prefix" Type="System.String" Scope="User">
       <Value Profile="(Default)" />
