@@ -160,6 +160,24 @@ namespace AVA_LabelEditor.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to No models could be found. Are you sure you selected the correct folder?.
+        /// </summary>
+        public static string NoModelsFoundMessage {
+            get {
+                return ResourceManager.GetString("NoModelsFoundMessage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to No models found.
+        /// </summary>
+        public static string NoModelsFoundTitle {
+            get {
+                return ResourceManager.GetString("NoModelsFoundTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Paste to Visual Studio.
         /// </summary>
         public static string PasteToVs {

@@ -61,7 +61,7 @@ namespace GoogleTranslate
                 return sentences;
 
         }
-        //Test comment
+
         /// <summary>
         /// Gets response from google api
         /// </summary>

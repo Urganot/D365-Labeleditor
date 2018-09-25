@@ -105,7 +105,7 @@ namespace AVA_LabelEditor
 
             SetDataBindings();
 
-            if (string.IsNullOrWhiteSpace(AxLabelPath))
+            if (string.IsNullOrWhiteSpace(AxLabelPath) || !Directory.Exists(AxLabelPath))
             {
                 if (!SetPath())
                     return;
@@ -306,7 +306,7 @@ namespace AVA_LabelEditor
                 return;
             }
 
-            var response = ShouldSaveAndClose();
+            var response = ShouldSaveAndClose(true);
 
             if (response.Save)
                 Labels.Save();
@@ -367,7 +367,7 @@ namespace AVA_LabelEditor
         /// Prompts the user if the form should be closed and or saved
         /// </summary>
         /// <returns></returns>
-        private CloseSaveResponse ShouldSaveAndClose()
+        private CloseSaveResponse ShouldSaveAndClose(bool useModelChangedWasCanceled = false)
         {
             var response = new CloseSaveResponse();
 
@@ -379,7 +379,8 @@ namespace AVA_LabelEditor
                 {
                     case System.Windows.Forms.DialogResult.Cancel:
                         response.Close = false;
-                        _modelChangeWasCanceled = true;
+                        if (useModelChangedWasCanceled)
+                            _modelChangeWasCanceled = true;
                         break;
                 }
             }
@@ -391,7 +392,8 @@ namespace AVA_LabelEditor
                 {
                     case System.Windows.Forms.DialogResult.Cancel:
                         response.Close = false;
-                        _modelChangeWasCanceled = true;
+                        if (useModelChangedWasCanceled)
+                            _modelChangeWasCanceled = true;
                         break;
                     case System.Windows.Forms.DialogResult.Yes:
                         response.Save = true;
@@ -715,8 +717,8 @@ namespace AVA_LabelEditor
 
         private void SetPathButton_Click(object sender, RoutedEventArgs e)
         {
-            SetPath();
-            ReloadLabels(true);
+            if (SetPath())
+                ReloadLabels(true);
         }
 
     }

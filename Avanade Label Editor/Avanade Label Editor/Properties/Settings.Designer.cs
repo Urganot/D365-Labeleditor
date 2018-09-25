@@ -25,7 +25,7 @@ namespace AVA_LabelEditor.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        [global::System.Configuration.DefaultSettingValueAttribute("C:\\AOSService\\PackagesLocalDirectory")]
         public string AxLabelPath {
             get {
                 return ((string)(this["AxLabelPath"]));
