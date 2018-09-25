@@ -102,14 +102,20 @@ namespace AVA_LabelEditor.Lists
 
             MainWindow.Timer.Stop();
 
+            var writtenSuccessfully = true;
+
             foreach (var readFile in MainWindow.ReadFilesNew.All)
             {
-                WriteFile(readFile);
+                var success = WriteFile(readFile);
+                writtenSuccessfully = writtenSuccessfully && success;
 
-                readFile.Reset();
+                if (success)
+                    readFile.Reset();
             }
 
-            MainWindow.Changed = false;
+            if (writtenSuccessfully)
+                MainWindow.Changed = false;
+
             MainWindow.Timer.Start();
         }
 
@@ -137,13 +143,15 @@ namespace AVA_LabelEditor.Lists
         /// </summary>
         /// <param name="readFile">The file to write</param>
         /// //Chaitanya Narasimha: date: 25-Sept-2018: Added try catch block arround the Write File method below to handle access issues.
-        private void WriteFile(LabelFile readFile)
+        private bool WriteFile(LabelFile readFile)
         {
+            var ok = true;
             try
             {
                 using (var writer = new StreamWriter(readFile.Path))
                 {
-                    foreach (var label in All.Where(x => Equals(x.Language, readFile.Language) && Equals(x.FileId, readFile.FileId) && !x.Deleted))
+                    foreach (var label in All.Where(x =>
+                        Equals(x.Language, readFile.Language) && Equals(x.FileId, readFile.FileId) && !x.Deleted))
                     {
                         writer.WriteLine(label.Id + "=" + label.Text);
                         if (!string.IsNullOrWhiteSpace(label.Comment))
@@ -151,11 +159,13 @@ namespace AVA_LabelEditor.Lists
                     }
                 }
             }
-
-            catch(Exception ex)
+            catch (UnauthorizedAccessException)
             {
-                MessageBox.Show("You may not have enough prevliges to the file in the selected model, please provide the preveliges:"+ex.Message);
+                MessageBox.Show(string.Format(Exceptions.PrivilegesExceptionMessage, readFile.Path),
+                    Exceptions.PrivilegesExceptionTitle, MessageBoxButton.OK, MessageBoxImage.Error);
+                ok = false;
             }
+            return ok;
         }
 
         /// <summary>

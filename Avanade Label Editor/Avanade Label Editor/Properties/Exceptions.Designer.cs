@@ -95,5 +95,23 @@ namespace AVA_LabelEditor.Properties {
                 return ResourceManager.GetString("NoFilesFoundTitle", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to You may not have enough privileges to the file &quot;{0}&quot; in the selected model, please provide the preveliges..
+        /// </summary>
+        internal static string PrivilegesExceptionMessage {
+            get {
+                return ResourceManager.GetString("PrivilegesExceptionMessage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Not enough privileges to save file..
+        /// </summary>
+        internal static string PrivilegesExceptionTitle {
+            get {
+                return ResourceManager.GetString("PrivilegesExceptionTitle", resourceCulture);
+            }
+        }
     }
 }

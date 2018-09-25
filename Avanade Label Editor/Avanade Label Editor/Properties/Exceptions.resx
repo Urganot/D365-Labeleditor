@@ -109,4 +109,10 @@
   <data name="NoFilesFoundMessage" xml:space="preserve">
     <value>No Labelfile found. Did you choose the correct directory?</value>
   </data>
+  <data name="PrivilegesExceptionTitle" xml:space="preserve">
+    <value>Not enough privileges to save file.</value>
+  </data>
+  <data name="PrivilegesExceptionMessage" xml:space="preserve">
+    <value>You may not have enough privileges to the file "{0}" in the selected model, please provide the preveliges.</value>
+  </data>
 </root>

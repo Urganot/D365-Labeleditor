@@ -129,4 +129,10 @@
   <data name="NoFilesFoundMessage" xml:space="preserve">
     <value>Es wurde keine Labeldatei gefunden. Wurde das richtige Verzeichnis ausgewählt?</value>
   </data>
+  <data name="PrivilegesExceptionTitle" xml:space="preserve">
+    <value>Keine Berechtigung zum speichern der Datei.</value>
+  </data>
+  <data name="PrivilegesExceptionMessage" xml:space="preserve">
+    <value>Sie haben keine Berechtigung die Datei "{0}" zu schreiben. Bitte überprüfen Sie, ob Sie Schreibzugriff besitzen.</value>
+  </data>
 </root>
