@@ -136,16 +136,25 @@ namespace AVA_LabelEditor.Lists
         /// Writes the file to Disc
         /// </summary>
         /// <param name="readFile">The file to write</param>
+        /// //Chaitanya Narasimha: date: 25-Sept-2018: Added try catch block arround the Write File method below to handle access issues.
         private void WriteFile(LabelFile readFile)
         {
-            using (var writer = new StreamWriter(readFile.Path))
+            try
             {
-                foreach (var label in All.Where(x => Equals(x.Language, readFile.Language) && Equals(x.FileId, readFile.FileId) && !x.Deleted))
+                using (var writer = new StreamWriter(readFile.Path))
                 {
-                    writer.WriteLine(label.Id + "=" + label.Text);
-                    if (!string.IsNullOrWhiteSpace(label.Comment))
-                        writer.WriteLine(" " + readFile.CommentSymbol + label.Comment);
+                    foreach (var label in All.Where(x => Equals(x.Language, readFile.Language) && Equals(x.FileId, readFile.FileId) && !x.Deleted))
+                    {
+                        writer.WriteLine(label.Id + "=" + label.Text);
+                        if (!string.IsNullOrWhiteSpace(label.Comment))
+                            writer.WriteLine(" " + readFile.CommentSymbol + label.Comment);
+                    }
                 }
+            }
+
+            catch(Exception ex)
+            {
+                MessageBox.Show("You may not have enough prevliges to the file in the selected model, please provide the preveliges:"+ex.Message);
             }
         }
 

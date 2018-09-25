@@ -1,5 +1,6 @@
 ﻿using System.Text;
 using EasyHttp.Http;
+using System.Windows;
 
 namespace GoogleTranslate
 {
@@ -54,9 +55,11 @@ namespace GoogleTranslate
         /// <returns>Translated sentences</returns>
         private static object[] GetTranslatedSentences(HttpResponse htmlResponse)
         {
-            var response = htmlResponse.DynamicBody as object[];
-            var sentences = response?[0] as object[];
-            return sentences;
+
+                var response = htmlResponse.DynamicBody as object[];
+                var sentences = response?[0] as object[];
+                return sentences;
+
         }
         //Test comment
         /// <summary>
