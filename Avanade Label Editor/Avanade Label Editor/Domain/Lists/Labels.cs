@@ -40,6 +40,11 @@ namespace AVA_LabelEditor.Lists
         private Label _selected;
 
         /// <summary>
+        /// Tracks if a translation failed so it wont show multiple messageboxes
+        /// </summary>
+        private bool _translationFailed;
+
+        /// <summary>
         /// Constructor for the Labels class
         /// </summary>
         /// <param name="mainWindow">An instance of the MainWindow class</param>
@@ -72,10 +77,25 @@ namespace AVA_LabelEditor.Lists
             if (!ValidateTranslate())
                 return;
 
-            All.ToList()
-                .Where(x => x.Id == Selected.Id && !Equals(x.Language, Selected.Language) && Equals(x.FileId, Selected.FileId)).ToList()
-                .ForEach(y => y.Text = Helper.Helper.FixTranslatedText(Translation.Translate(Selected.Text, Selected.Language.ToString(), y.Language.ToString())));
+
+            foreach (var label in All.ToList().Where(x => x.Id == Selected.Id && !Equals(x.Language, Selected.Language) && Equals(x.FileId, Selected.FileId)).ToList())
+            {
+                if (_translationFailed)
+                    continue;
+
+                var response = Translation.Translate(Selected.Text, Selected.Language.ToString(), label.Language.ToString());
+                label.Text = response.TranslatedText;
+
+                if (response.Success)
+                    continue;
+
+                MessageBox.Show(response.Message, string.Empty, MessageBoxButton.OK, MessageBoxImage.Error);
+                _translationFailed = true;
+            }
+
+            _translationFailed = false;
         }
+
 
         /// <summary>
         /// Validation before translating
@@ -138,11 +158,11 @@ namespace AVA_LabelEditor.Lists
 
             return ok;
         }
+
         /// <summary>
         /// Writes the file to Disc
         /// </summary>
         /// <param name="readFile">The file to write</param>
-        /// //Chaitanya Narasimha: date: 25-Sept-2018: Added try catch block arround the Write File method below to handle access issues.
         private bool WriteFile(LabelFile readFile)
         {
             var ok = true;
@@ -178,7 +198,20 @@ namespace AVA_LabelEditor.Lists
         public Label AddNewLabel(string id, string text, Language language)
         {
             if (Settings.Default.AutoTranslate && !Equals(language, MainWindow.Languages.Selected))
-                text = Helper.Helper.FixTranslatedText(Translation.Translate(text, MainWindow.Languages.Selected.ToString(), language.ToString()));
+            {
+                if (!_translationFailed)
+                {
+                    var response = Translation.Translate(text, MainWindow.Languages.Selected.ToString(), language.ToString());
+
+                    if (response.Success)
+                        text = Helper.Helper.FixTranslatedText(response.TranslatedText);
+                    else
+                    {
+                        _translationFailed = true;
+                        MessageBox.Show(response.Message, string.Empty, MessageBoxButton.OK, MessageBoxImage.Error);
+                    }
+                }
+            }
 
             var label = new Label(MainWindow)
             {
@@ -235,8 +268,6 @@ namespace AVA_LabelEditor.Lists
             return ok;
         }
 
-
-
         /// <summary>
         /// Returns the view object to use in the UI
         /// </summary>
@@ -292,6 +323,8 @@ namespace AVA_LabelEditor.Lists
                         addedLabels.Add("maintain", new List<Label> { AddNewLabel(id + "Maintain", maintainText, language) });
                 }
             }
+
+            _translationFailed = false;
 
             return addedLabels;
         }
