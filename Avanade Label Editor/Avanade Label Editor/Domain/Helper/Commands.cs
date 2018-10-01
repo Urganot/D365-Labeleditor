@@ -34,5 +34,10 @@ namespace AVA_LabelEditor.Helper
             "PasteToVs", "PasteToVs", typeof(CustomCommands), new InputGestureCollection() { new KeyGesture(Key.P, ModifierKeys.Control) }
         );
 
+        public static readonly RoutedUICommand Copy = new RoutedUICommand
+        (
+            "Copy", "Copy", typeof(CustomCommands), new InputGestureCollection() { new KeyGesture(Key.C, ModifierKeys.Control) }
+        );
+
     }
 }

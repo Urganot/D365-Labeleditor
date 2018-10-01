@@ -20,6 +20,7 @@
         <CommandBinding Command="helper1:CustomCommands.Delete" Executed="DeleteLabel" />
         <CommandBinding Command="helper1:CustomCommands.Translate" Executed="TranslateLabel" />
         <CommandBinding Command="helper1:CustomCommands.PasteToVs" Executed="PasteLabelToVisualStudio" />
+        <CommandBinding Command="helper1:CustomCommands.Copy" Executed="Copy" />
     </Window.CommandBindings>
 
     <Grid x:Name="Main">
@@ -77,9 +78,20 @@
                 <RowDefinition Height="5"/>
                 <RowDefinition Height="50*"/>
             </Grid.RowDefinitions>
-            <DataGrid Grid.Row="0" x:Name="MainGrid" SelectedItem="{Binding Path=Selected,Mode=TwoWay}" AutoGeneratingColumn="InitColumns" SelectionChanged="MainGrid_SelectionChanged" CanUserDeleteRows="False" CanUserAddRows="False" SelectionMode="Single" CopyingRowClipboardContent="Grids_CopyingRowClipboardContent" Margin="5"/>
+            <DataGrid Grid.Row="0" x:Name="MainGrid" SelectedItem="{Binding Path=Selected,Mode=TwoWay}" AutoGeneratingColumn="InitColumns" SelectionChanged="MainGrid_SelectionChanged" CanUserDeleteRows="False" CanUserAddRows="False" SelectionMode="Single" Margin="5" PreviewKeyDown="MainGrid_PreviewKeyDown" >
+                <DataGrid.ContextMenu>
+                    <ContextMenu>
+                        <MenuItem Command="helper1:CustomCommands.Copy" />
+                        <MenuItem Command="helper1:CustomCommands.Delete" />
+                        <MenuItem Command="helper1:CustomCommands.Translate" />
+                        <MenuItem Command="helper1:CustomCommands.PasteToVs" />
+                        <MenuItem Command="helper1:CustomCommands.Rename" />
+                    </ContextMenu>
+                </DataGrid.ContextMenu>
+
+            </DataGrid>
             <GridSplitter Grid.Row="1" Height="5" HorizontalAlignment="Stretch" />
-            <DataGrid Grid.Row="2" x:Name="SubGrid" AutoGeneratingColumn="InitColumns" CopyingRowClipboardContent="Grids_CopyingRowClipboardContent" Margin="5" CanUserAddRows="False" CanUserDeleteRows="False"/>
+            <DataGrid Grid.Row="2" x:Name="SubGrid" AutoGeneratingColumn="InitColumns" Margin="5" CanUserAddRows="False" CanUserDeleteRows="False" PreviewKeyDown="MainGrid_PreviewKeyDown"/>
         </Grid>
     </Grid>
 </Window>

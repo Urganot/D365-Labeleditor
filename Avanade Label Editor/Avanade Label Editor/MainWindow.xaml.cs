@@ -16,7 +16,9 @@ using AVA_LabelEditor.Helper;
 using AVA_LabelEditor.Lists;
 using AVA_LabelEditor.Objects;
 using AVA_LabelEditor.Properties;
+using Clipboard = System.Windows.Clipboard;
 using DataGrid = System.Windows.Controls.DataGrid;
+using DataGridCell = System.Windows.Controls.DataGridCell;
 using Label = AVA_LabelEditor.Objects.Label;
 using MessageBox = System.Windows.Forms.MessageBox;
 
@@ -101,6 +103,7 @@ namespace AVA_LabelEditor
         {
             InitializeComponent();
 
+            MainGrid.ClipboardCopyMode = DataGridClipboardCopyMode.None;
             Init();
 
             SetDataBindings();
@@ -213,14 +216,14 @@ namespace AVA_LabelEditor
         /// </summary>
         private void ExecuteSearch()
         {
-           ((ICollectionView)MainGrid.ItemsSource).Filter = item =>
-                   Equals(((Label)item).Language, Languages.Selected)
-                   && Equals(((Label)item).FileId, FileIds.Selected)
-                   && !((Label)item).Deleted
-                  && (((Label)item).Text.ToLowerInvariant().Contains(SearchString.ToLowerInvariant())
-                  || ((Label)item).Id.ToLowerInvariant().Contains(SearchString.ToLowerInvariant())
-                  || ((Label)item).Comment.ToLowerInvariant().Contains(SearchString.ToLowerInvariant()))
-               ;
+            ((ICollectionView)MainGrid.ItemsSource).Filter = item =>
+                    Equals(((Label)item).Language, Languages.Selected)
+                    && Equals(((Label)item).FileId, FileIds.Selected)
+                    && !((Label)item).Deleted
+                   && (((Label)item).Text.ToLowerInvariant().Contains(SearchString.ToLowerInvariant())
+                   || ((Label)item).Id.ToLowerInvariant().Contains(SearchString.ToLowerInvariant())
+                   || ((Label)item).Comment.ToLowerInvariant().Contains(SearchString.ToLowerInvariant()))
+                ;
         }
 
         /// <summary>
@@ -429,23 +432,6 @@ namespace AVA_LabelEditor
         private void MainGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             SetSubGridFilter();
-        }
-
-        /// <summary>
-        /// Handles the Copy row event
-        /// Changes the default behaviour from copying the whole line to only the cell
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void Grids_CopyingRowClipboardContent(object sender, DataGridRowClipboardEventArgs e)
-        {
-            if (!(sender is DataGrid))
-                throw new ArgumentOutOfRangeException();
-
-            var senderGrid = (DataGrid)sender;
-            var currentCell = e.ClipboardRowContent[senderGrid.CurrentCell.Column.DisplayIndex];
-            e.ClipboardRowContent.Clear();
-            e.ClipboardRowContent.Add(currentCell);
         }
 
         /// <summary>
@@ -737,5 +723,35 @@ namespace AVA_LabelEditor
                 ReloadLabels(true);
         }
 
+        /// <summary>
+        /// Copies the selected cells text to clipboard
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void Copy(object sender, ExecutedRoutedEventArgs e = null)
+        {
+            var grid = sender as DataGrid;
+            var asd = grid.CurrentCell.Column.GetCellContent(grid.CurrentCell.Item);
+            if(asd is TextBlock)
+                Clipboard.SetText((asd as TextBlock).Text);
+            else
+                Clipboard.Clear();
+        }
+
+        /// <summary>
+        /// Handles the PreviewKeyDown event for both grids
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void MainGrid_PreviewKeyDown(object sender, System.Windows.Input.KeyEventArgs e)
+        {
+            // Handles CTRL+C to use custom code
+            if (e.Key == Key.C && Keyboard.Modifiers == ModifierKeys.Control)
+            {
+                e.Handled = true;
+                Copy(sender);
+            }
+
+        }
     }
 }
