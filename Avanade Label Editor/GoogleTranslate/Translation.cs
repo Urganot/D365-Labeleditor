@@ -1,4 +1,5 @@
-﻿using System.Text;
+﻿using System;
+using System.Text;
 using EasyHttp.Http;
 using System.Windows;
 
@@ -18,12 +19,28 @@ namespace GoogleTranslate
         /// <param name="sourceLanguage">The language from wich to translate</param>
         /// <param name="targetLanguage">The language to translate to</param>
         /// <returns>Translated text</returns>
-        public static string Translate(string sourceText, string sourceLanguage, string targetLanguage)
+        public static TranslationResponse Translate(string sourceText, string sourceLanguage, string targetLanguage)
         {
             HttpResponse htmlResponse = GetResponse(sourceText, sourceLanguage, targetLanguage);
-            object[] sentences = GetTranslatedSentences(htmlResponse);
+            object[] sentences;
+            try
+            {
+                sentences = GetTranslatedSentences(htmlResponse);
+            }
+            catch (Exception)
+            {
+                return new TranslationResponse
+                {
+                    Success = false,
+                    Message = Properties.Resources.TranslationFailed,
+                    TranslatedText = sourceText
+                };
+            }
 
-            return GetTranslation(sentences);
+            return new TranslationResponse
+            {
+                TranslatedText = GetTranslation(sentences)
+            };
         }
 
         /// <summary>
