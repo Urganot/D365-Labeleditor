@@ -23,5 +23,14 @@
     <Setting Name="Model" Type="AVA_LabelEditor.Objects.Model" Scope="User">
       <Value Profile="(Default)" />
     </Setting>
+    <Setting Name="SearchCommentMarker" Type="System.String" Scope="User">
+      <Value Profile="(Default)">c:</Value>
+    </Setting>
+    <Setting Name="SearchTextMarker" Type="System.String" Scope="User">
+      <Value Profile="(Default)">t:</Value>
+    </Setting>
+    <Setting Name="SearchIdMarker" Type="System.String" Scope="User">
+      <Value Profile="(Default)">i:</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

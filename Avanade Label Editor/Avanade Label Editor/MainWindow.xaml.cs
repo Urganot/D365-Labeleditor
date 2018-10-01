@@ -200,11 +200,27 @@ namespace AVA_LabelEditor
                    Equals(((Label)item).Language, Languages.Selected)
                    && Equals(((Label)item).FileId, FileIds.Selected)
                    && !((Label)item).Deleted
-                   && (string.IsNullOrWhiteSpace(SearchString)
-                       || ((Label)item).Text.ToLowerInvariant().Contains(SearchString.ToLowerInvariant())
-                       || ((Label)item).Id.ToLowerInvariant().Contains(SearchString.ToLowerInvariant()))
                 ;
+
+            if (!string.IsNullOrWhiteSpace(SearchString))
+                ExecuteSearch();
+
             SetSubGridFilter();
+        }
+
+        /// <summary>
+        /// Sets a filter to search for 
+        /// </summary>
+        private void ExecuteSearch()
+        {
+           ((ICollectionView)MainGrid.ItemsSource).Filter = item =>
+                   Equals(((Label)item).Language, Languages.Selected)
+                   && Equals(((Label)item).FileId, FileIds.Selected)
+                   && !((Label)item).Deleted
+                  && (((Label)item).Text.ToLowerInvariant().Contains(SearchString.ToLowerInvariant())
+                  || ((Label)item).Id.ToLowerInvariant().Contains(SearchString.ToLowerInvariant())
+                  || ((Label)item).Comment.ToLowerInvariant().Contains(SearchString.ToLowerInvariant()))
+               ;
         }
 
         /// <summary>

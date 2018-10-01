@@ -105,5 +105,41 @@ namespace AVA_LabelEditor.Properties {
                 this["Model"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("c:")]
+        public string SearchCommentMarker {
+            get {
+                return ((string)(this["SearchCommentMarker"]));
+            }
+            set {
+                this["SearchCommentMarker"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("t:")]
+        public string SearchTextMarker {
+            get {
+                return ((string)(this["SearchTextMarker"]));
+            }
+            set {
+                this["SearchTextMarker"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("i:")]
+        public string SearchIdMarker {
+            get {
+                return ((string)(this["SearchIdMarker"]));
+            }
+            set {
+                this["SearchIdMarker"] = value;
+            }
+        }
     }
 }
