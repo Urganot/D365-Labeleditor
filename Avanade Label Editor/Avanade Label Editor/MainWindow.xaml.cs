@@ -5,6 +5,7 @@ using System.IO;
 using System.Linq;
 using System.Reflection;
 using System.Runtime.CompilerServices;
+using System.Text.RegularExpressions;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Forms;
@@ -217,14 +218,88 @@ namespace AVA_LabelEditor
         /// </summary>
         private void ExecuteSearch()
         {
-            ((ICollectionView)MainGrid.ItemsSource).Filter = item =>
-                    Equals(((Label)item).Language, Languages.Selected)
-                    && Equals(((Label)item).FileId, FileIds.Selected)
-                    && !((Label)item).Deleted
-                   && (((Label)item).Text.ToLowerInvariant().Contains(SearchString.ToLowerInvariant())
-                   || ((Label)item).Id.ToLowerInvariant().Contains(SearchString.ToLowerInvariant())
-                   || ((Label)item).Comment.ToLowerInvariant().Contains(SearchString.ToLowerInvariant()))
-                ;
+            var filterList = GetFilterList();
+
+            ((ICollectionView)MainGrid.ItemsSource).Filter = (item) =>
+            {
+                var ok = Equals(((Label)item).Language, Languages.Selected)
+                         && Equals(((Label)item).FileId, FileIds.Selected)
+                         && !((Label)item).Deleted;
+
+                if (filterList.ContainsKey(string.Empty) && filterList.Count == 1)
+                    return ok && (((Label)item).Text.ToLowerInvariant().Contains(SearchString.ToLowerInvariant())
+                                 || ((Label)item).Id.ToLowerInvariant().Contains(SearchString.ToLowerInvariant())
+                                 || ((Label)item).Comment.ToLowerInvariant().Contains(SearchString.ToLowerInvariant()));
+
+                if (filterList.ContainsKey(Settings.Default.SearchTextMarker))
+                    ok = ok && ((Label)item).Text.ToLowerInvariant().Contains(filterList[Settings.Default.SearchTextMarker].ToLowerInvariant());
+
+                if (filterList.ContainsKey(Settings.Default.SearchCommentMarker))
+                    ok = ok && ((Label)item).Comment.ToLowerInvariant().Contains(filterList[Settings.Default.SearchCommentMarker].ToLowerInvariant());
+
+                if (filterList.ContainsKey(Settings.Default.SearchIdMarker))
+                    ok = ok && ((Label)item).Id.ToLowerInvariant().Contains(filterList[Settings.Default.SearchIdMarker].ToLowerInvariant());
+
+                return ok;
+            };
+
+        }
+
+        /// <summary>
+        /// Splits the search string by identifiers and returns a dictionary containing the search terms
+        /// </summary>
+        /// <returns>A dictionary containing the identifier as key and search terms as value</returns>
+        private Dictionary<string, string> GetFilterList()
+        {
+            var filterList = new Dictionary<string, string>();
+
+            var textList = Regex.Split(SearchString, $@"(?=\s{Settings.Default.SearchTextMarker})", RegexOptions.IgnoreCase);
+
+            List<string> commentList = new List<string>();
+
+            foreach (var s in textList)
+            {
+                commentList.AddRange(Regex.Split(s, $@"(?=\s{Settings.Default.SearchCommentMarker})", RegexOptions.IgnoreCase));
+            }
+
+            List<string> idList = new List<string>();
+
+            foreach (var s in commentList)
+            {
+                idList.AddRange(Regex.Split(s, $@"(?=\s{Settings.Default.SearchIdMarker})", RegexOptions.IgnoreCase));
+            }
+
+            for (var i = 0; i < idList.Count; i++)
+            {
+                idList[i] = idList[i].Trim();
+            }
+
+
+            foreach (var str in idList)
+            {
+                if (str.StartsWith(Settings.Default.SearchTextMarker))
+                {
+                    if (!filterList.ContainsKey(Settings.Default.SearchTextMarker))
+                        filterList.Add(Settings.Default.SearchTextMarker, str.Substring(Settings.Default.SearchTextMarker.Length).Trim());
+                }
+                else if (str.StartsWith(Settings.Default.SearchCommentMarker))
+                {
+                    if (!filterList.ContainsKey(Settings.Default.SearchCommentMarker))
+                        filterList.Add(Settings.Default.SearchCommentMarker, str.Substring(Settings.Default.SearchCommentMarker.Length).Trim());
+                }
+                else if (str.StartsWith(Settings.Default.SearchIdMarker))
+                {
+                    if (!filterList.ContainsKey(Settings.Default.SearchIdMarker))
+                        filterList.Add(Settings.Default.SearchIdMarker, str.Substring(Settings.Default.SearchIdMarker.Length).Trim());
+                }
+                else
+                {
+                    if (!filterList.ContainsKey(string.Empty))
+                        filterList.Add(string.Empty, str);
+                }
+            }
+
+            return filterList;
         }
 
         /// <summary>
@@ -728,7 +803,7 @@ namespace AVA_LabelEditor
         {
             var grid = sender as DataGrid;
             var asd = grid.CurrentCell.Column.GetCellContent(grid.CurrentCell.Item);
-            if(asd is TextBlock)
+            if (asd is TextBlock)
                 Clipboard.SetText((asd as TextBlock).Text);
             else
                 Clipboard.Clear();
