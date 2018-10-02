@@ -33,7 +33,7 @@ namespace AVA_LabelEditor
             DataContext = _mainWindow;
         }
 
-        private void PathTextbox_PreviewMouseDown(object sender, MouseButtonEventArgs e)
+        private void SetPath_Click(object sender, EventArgs e)
         {
             if (_mainWindow.SetPath())
                 _mainWindow.ReloadLabels(true);

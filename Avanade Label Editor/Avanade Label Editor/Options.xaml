@@ -11,7 +11,7 @@
         lex:ResxLocalizationProvider.DefaultAssembly="Avanade Labeleditor"
         lex:ResxLocalizationProvider.DefaultDictionary="Options" 
         lex:LocalizeDictionary.OutputMissingKeys="True"
-        Title="{lex:Loc Options}" Height="159.036" Width="406.024">
+        Title="{lex:Loc Options}" Height="159.036" Width="434.94">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="37"/>
@@ -22,11 +22,12 @@
             <ColumnDefinition Width="121"/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        <Label Grid.Row="0" x:Name="PathLabel" Content="{lex:Loc SetPathLabel}" Margin="10,6,0,5" VerticalAlignment="Center" Height="26" HorizontalContentAlignment="Right"/>
-        <TextBox Grid.Row="0" x:Name="PathTextbox" Grid.Column="1" Height="22"  Margin="10,10,10,5" TextWrapping="Wrap" VerticalAlignment="Center" IsReadOnly="True" PreviewMouseDown="PathTextbox_PreviewMouseDown" Text="{Binding AxLabelPath}"/>
-        <Label Content="{lex:Loc AutoTranslateLabel}" Margin="10,10,0,7" Grid.Column="0" Grid.Row="1" VerticalAlignment="Center" Height="26" HorizontalContentAlignment="Right"/>
-        <CheckBox x:Name="AutoTranslateCheckbox" Grid.Column="1" Grid.Row="1" VerticalAlignment="Center" Margin="10,16,0,11" IsChecked="{Binding AutoTranslate}" Height="16" HorizontalAlignment="Left" Width="16" />
-        <Button Content="Close" Grid.Column="1" HorizontalAlignment="Left" Margin="19,18,0,0" Grid.Row="2" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
+        <Label Grid.Row="0" x:Name="PathLabel" Content="{lex:Loc SetPathLabel}" Margin="10,0,0,0" VerticalAlignment="Center" Height="26" HorizontalContentAlignment="Right"/>
+        <TextBox Grid.Row="0" x:Name="PathTextbox" Grid.Column="1" Height="22"  Margin="10,0,32,0" TextWrapping="Wrap" VerticalAlignment="Center" IsReadOnly="True" PreviewMouseDown="SetPath_Click" Text="{Binding AxLabelPath}"/>
+        <Button Content="..." Grid.Column="1" Grid.Row="0" HorizontalAlignment="Right" Margin="0,0,10,0" VerticalAlignment="Center" Width="22" Height="22" Click="SetPath_Click"/>
+        <Label Content="{lex:Loc AutoTranslateLabel}" Margin="10,0,0,0" Grid.Column="0" Grid.Row="1" VerticalAlignment="Center" Height="26" HorizontalContentAlignment="Right"/>
+        <CheckBox x:Name="AutoTranslateCheckbox" Grid.Column="1" Grid.Row="1" VerticalAlignment="Center" Margin="10,16,0,12" IsChecked="{Binding AutoTranslate}" HorizontalAlignment="Left" Width="16" />
+        <Button Grid.ColumnSpan="2" Content="Close" Grid.Column="0" HorizontalAlignment="Center" Margin="0,0,0,10" Grid.Row="2" VerticalAlignment="Bottom" Width="75" Click="Button_Click"/>
 
     </Grid>
 </Window>
