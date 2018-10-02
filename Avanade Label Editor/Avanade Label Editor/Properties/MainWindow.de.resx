@@ -183,4 +183,7 @@
   <data name="NoModelsFoundMessage" xml:space="preserve">
     <value>Es wurden keine Models gefunden. Sind Sie sicher, dass der richte Ordner ausgewählt wurde?</value>
   </data>
+  <data name="About" xml:space="preserve">
+    <value>About</value>
+  </data>
 </root>

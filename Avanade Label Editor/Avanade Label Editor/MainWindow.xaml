@@ -46,6 +46,7 @@
                 <MenuItem x:Name="PasteLabelButton" Header="{lex:Loc PasteToVs}"  Command="helper1:CustomCommands.PasteToVs" />
                 <MenuItem x:Name="ShowDiffButton" Header="{lex:Loc Changes}" Click="ShowDiffButton_Click" />
             </MenuItem>
+            <MenuItem x:Name="About" Header="{lex:Loc About}" Click="About_Click" />
         </Menu>
 
         <Grid Grid.Row="1">

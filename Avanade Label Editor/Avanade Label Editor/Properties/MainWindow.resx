@@ -183,4 +183,7 @@
   <data name="NoModelsFoundTitle" xml:space="preserve">
     <value>No models found</value>
   </data>
+  <data name="About" xml:space="preserve">
+    <value>About</value>
+  </data>
 </root>

@@ -16,6 +16,7 @@ using AVA_LabelEditor.Helper;
 using AVA_LabelEditor.Lists;
 using AVA_LabelEditor.Objects;
 using AVA_LabelEditor.Properties;
+using Gat.Controls;
 using Clipboard = System.Windows.Clipboard;
 using DataGrid = System.Windows.Controls.DataGrid;
 using DataGridCell = System.Windows.Controls.DataGridCell;
@@ -752,6 +753,18 @@ namespace AVA_LabelEditor
                 Copy(sender);
             }
 
+        }
+
+        private void About_Click(object sender, RoutedEventArgs e)
+        {
+            var about = new About
+            {
+                AdditionalNotes = "",
+
+            };
+
+            about.Show();
+            about.Window.Close();
         }
     }
 }
