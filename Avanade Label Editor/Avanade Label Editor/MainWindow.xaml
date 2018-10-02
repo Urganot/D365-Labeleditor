@@ -31,8 +31,9 @@
         </Grid.RowDefinitions>
         <Menu Grid.Row="0" DockPanel.Dock="Top">
             <MenuItem Header="{lex:Loc File}">
-                <MenuItem x:Name="SetPathButton" Header="{lex:Loc SetPath}" Click="SetPathButton_Click" />
                 <MenuItem x:Name="SaveButton" Header="{lex:Loc Save}" Command="helper1:CustomCommands.Save"/>
+                <MenuItem x:Name="OptionsButton" Header="{lex:Loc Options}" Click="OptionsButton_Click" />
+                <Separator />
                 <MenuItem x:Name="ReloadLabelButton" Header="{lex:Loc ReloadLabel}" Click="ReloadLabelButton_Click" />
                 <MenuItem x:Name="ReloadModelButton" Header="{lex:Loc ReloadModel}" Click="ReloadModelButton_Click" />
                 <Separator />
@@ -56,7 +57,6 @@
                 <ColumnDefinition Width="90"/>
                 <ColumnDefinition Width="283"/>
                 <ColumnDefinition Width="207"/>
-                <ColumnDefinition Width="164"/>
                 <ColumnDefinition Width="62"/>
                 <ColumnDefinition Width="336*"/>
                 <ColumnDefinition Width="31"/>
@@ -67,10 +67,9 @@
             <ComboBox x:Name="FileIdCombobox" Grid.Column="3" Margin="2,10,0,10" Width="200" SelectedItem="{Binding Selected}" SelectionChanged="FileId_SelectionChanged" HorizontalAlignment="Left" VerticalAlignment="Center" Height="22"/>
             <Label Content="{lex:Loc General:Languages}" Grid.Column="3" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,8,2,8" Height="26" Width="67"/>
             <ComboBox x:Name="LanguageCombobox" Grid.Column="4" Margin="2,10,0,10" Width="200" SelectedItem="{Binding Selected}" SelectionChanged="Language_SelectionChanged" HorizontalAlignment="Left" VerticalAlignment="Center" Height="22"/>
-            <CheckBox x:Name="AutoTranslateCheckbox" Grid.Column="5" Content="{lex:Loc AutoTranslate}" VerticalAlignment="Center" Margin="15,13" IsChecked="{Binding AutoTranslate}" Height="16" HorizontalAlignment="Center" Width="134" />
-            <Label Content="{lex:Loc Search}" Grid.Column="6" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,8,2,8" Height="26" Width="45"/>
-            <TextBox x:Name="SearchTextbox" Grid.Column="7" VerticalAlignment="Center" Margin="2,12,0,12" TextChanged="SearchTextbox_TextChanged" Height="18"/>
-            <Button x:Name="ClearSearch" Content="X" Grid.Column="8" Margin="0,12" VerticalAlignment="Center" Width="18" Height="18" HorizontalAlignment="Left" Click="ClearSearch_Click"/>
+            <Label Content="{lex:Loc Search}" Grid.Column="5" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,8,2,8" Height="26" Width="45"/>
+            <TextBox x:Name="SearchTextbox" Grid.Column="6" VerticalAlignment="Center" Margin="2,12,0,12" TextChanged="SearchTextbox_TextChanged" Height="18"/>
+            <Button x:Name="ClearSearch" Content="X" Grid.Column="7" Margin="0,12" VerticalAlignment="Center" Width="18" Height="18" HorizontalAlignment="Left" Click="ClearSearch_Click"/>
         </Grid>
 
         <Grid Margin="5" Grid.Row="2">

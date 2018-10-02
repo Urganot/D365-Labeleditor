@@ -254,12 +254,13 @@ namespace AVA_LabelEditor
         /// Sets a new AxLabelPath
         /// </summary>
         /// <returns>True if selection was successful</returns>
-        private bool SetPath()
+        public bool SetPath()
         {
             bool ok;
             using (var dialog = new FolderBrowserDialog())
             {
                 dialog.SelectedPath = AxLabelPath;
+                dialog.Description = Properties.Options.SetPathDialogDescription;
 
                 if (dialog.ShowDialog() == System.Windows.Forms.DialogResult.OK)
                 {
@@ -718,12 +719,6 @@ namespace AVA_LabelEditor
             SubGrid.IsReadOnly = readOnly;
         }
 
-        private void SetPathButton_Click(object sender, RoutedEventArgs e)
-        {
-            if (SetPath())
-                ReloadLabels(true);
-        }
-
         /// <summary>
         /// Copies the selected cells text to clipboard
         /// </summary>
@@ -760,11 +755,18 @@ namespace AVA_LabelEditor
             var about = new About
             {
                 AdditionalNotes = "",
-
             };
 
             about.Show();
             about.Window.Close();
+        }
+
+        private void OptionsButton_Click(object sender, RoutedEventArgs e)
+        {
+            var options = new Options(this);
+
+            options.ShowDialog();
+
         }
     }
 }

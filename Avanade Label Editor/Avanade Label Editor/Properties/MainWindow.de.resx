@@ -186,4 +186,7 @@
   <data name="About" xml:space="preserve">
     <value>About</value>
   </data>
+  <data name="Options" xml:space="preserve">
+    <value>Optionen</value>
+  </data>
 </root>
