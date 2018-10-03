@@ -801,10 +801,9 @@ namespace AVA_LabelEditor
         /// <param name="e"></param>
         private void Copy(object sender, ExecutedRoutedEventArgs e = null)
         {
-            var grid = sender as DataGrid;
-            var asd = grid.CurrentCell.Column.GetCellContent(grid.CurrentCell.Item);
-            if (asd is TextBlock)
-                Clipboard.SetText((asd as TextBlock).Text);
+            var cellContent = MainGrid.CurrentCell.Column.GetCellContent(MainGrid.CurrentCell.Item);
+            if (cellContent is TextBlock)
+                Clipboard.SetText((cellContent as TextBlock).Text);
             else
                 Clipboard.Clear();
         }
