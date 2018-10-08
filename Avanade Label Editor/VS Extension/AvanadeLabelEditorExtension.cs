@@ -65,9 +65,11 @@ namespace Avanade_Label_Editor_Extension
                 var ctx = new InstanceContext(new LabelEditorServiceCallBack());
                 var endpoint = new EndpointAddress("net.tcp://localhost:2113");
 
-                return new DuplexChannelFactory<ILabelEditorServiceChannel>(ctx,
+                var channel = new DuplexChannelFactory<ILabelEditorServiceChannel>(ctx,
                     new ServiceEndpoint(ContractDescription.GetContract(typeof(ILabelEditorService)), binding,
                         endpoint)).CreateChannel();
+                channel.OperationTimeout = new TimeSpan(0,5,0);
+                return channel;
             }
         }
 
