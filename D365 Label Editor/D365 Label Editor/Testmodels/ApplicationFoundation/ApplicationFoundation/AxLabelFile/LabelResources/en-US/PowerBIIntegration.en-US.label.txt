@@ -1,0 +1,119 @@
+PowerBICannotLogin=You are already logged in to PowerBI
+ ;Label for login to power bi from
+LoginToPowerBIMessage=Please log in to Power BI to access its resource
+ ;Label for accessing Power BI
+LoginToPowerBI=Login to Power BI
+ ;LoginPowerBI caption
+EmptyEmail=Email and password cannot be empty
+ ;Email password comment
+AddRemovePowerBITiles=Open tile catalog
+ ;Caption used when adding or removing power bi tiles
+LoginPowerBI=Login to Power BI
+ ;Link label for first time experience of integrating the power BI tiles
+PowerBIFirstTimeExperienceAdvertisement=Connect your Power BI account for immediate access to your favorite reporting visualizations right here in Dynamics 365 for Finance and Operations.
+ ;Advertisement of the Power BI generic
+PowerBINoTilesFound=Could not find any Power BI tiles.
+ ;Displayed on the picker dialog when no power BI controls are available
+PowerBISectionCaption=Power BI
+ ;Caption on groups and tabs containing power BI content.
+PowerBIOptionsMenuHint=You can always add Power BI controls from the Options menu
+ ;A hint that power BI charts can be added from the Options menu.
+GetAccessTokenFailedMessage=Failed to generate the security access token for Power BI API services. Please contact your system administrator.
+ ;Error string displayed when unable to generate a token for the Power BI API.
+PowerBIConfiguration=Power BI configuration
+ ;Caption for table PowerBIConfig
+ApplicationKey=Application key
+ ;Caption for EDT PowerBIApplicationKey
+PowerBIApiAddress=Power BI API Address
+ ;Caption for the PowerBIApiAddress column
+PowerBIRedirectUrl=Redirect URL
+ ;Caption for the RedirectUrl column
+ClientID=Client ID
+ ;Label for the PowerBIClientID EDT.
+SetUpPowerBIConfiguration=Set up Power BI configuration
+ ;Caption for Power BI group
+AzureADTenant=Azure AD Tenant
+ ;Caption for Tenant field.
+PowerBINotEnabled=Power BI is not enabled. Contact your administrator to enable Power BI.
+ ;Error message displayed when Power BI is not enabled.
+IncorrectEmailOrPassword=Incorrect email or password supplied.
+ ;Error message displayed when email or password are incorrect.
+ApplyTileFilter=Apply tile filter
+ ;Label for apply tile filter checkbox
+TileFilterTableName=Tile filter table
+ ;Label for the TileFilterTableName column
+TileFilterColumnName=Tile filter column
+ ;Label for the TileFilterColumnName column
+AzureADAuthorityUri=Azure AD authority URI
+ ;Label for AzureADAuthorityUri column
+AzureADPowerBIApiResourceUri=Azure AD Power BI resource URI
+ ;Label for AzureADPowerBIApiResourceUri column
+GetDashboardsErrorMessage=An error occurred getting the Power BI dashboards. Please contact your administrator.
+ ;Get dashboards error message.
+GetTilesErrorMessage=An error occurred getting the Power BI tiles. Please contact your administrator.
+ ;Get tiles error message.
+GetTileIFrameInfoErrorMessage=An error occurred getting the Power BI tile information. Please contact your administrator.
+ ;Get tile iFrame info error message.
+GetTokenErrorMessage=An error occurred attempting to connect to the Power BI service. Please contact your administrator.
+ ;Error message when unable to get a token.
+PowerBITileEmbedUrlLabel=Embed URL
+ ;Label for EDT PowerBITileEmbedUrl
+PowerBITileEmbedUrlHelpText=The URL to use for embedding the Power BI tile.
+ ;Help text for EDT PowerBITileEmbedUrl
+PowerBIAuthHyperlink=Click here to provide authorization to Power BI
+ ;Hyperlink caption for Power BI authorization
+AuthorizePowerBICaption=Authorize Power BI
+ ;Caption for Power BI authorization dialog.
+AuthorizePowerBIInstructions=Authorization must be given to Power BI in order to access your Power BI dashboards and tiles. Click the link below to begin the authorization process. Once authorization has been granted return to this page and click the Close button.
+ ;Static text instructions for the Power BI authorization dialog.
+CloseButtonCaption=Close
+ ;Caption text for the close button.
+GetGroupsErrorMessage=An error occurred getting the Power BI groups. Please contact your system administrator.
+ ;Error message
+CrossDomainNotSupported=Power BI only supports accounts from the same tenant, %1, or from verified domains of that tenant.
+ ;Error shown when a non tenant user is trying to access Power BI API web service.
+GetReportsErrorMessage=An error occurred getting the Power BI reports. Please contact your administrator.
+ ;Get reports error message.
+AddRemovePowerBIReports=Open report catalog
+ ;Caption used when adding or removing power bi reports
+PowerBIReportName=Power BI Report Name
+ ;Power BI Report Name
+PowerBIReportsGroupName=Power BI Reports
+ ;Power BI Reports
+OpenReportInPowerBI=Open in Power BI
+ ;The caption of action pane button control on PowerBI report form
+PowerBIReportDataObjectNotSet=PowerBI report form must be opened with proper menu item.
+ ;The PowerBI report data object is not set on the form.
+NoLinkSectionWorkspace=Power BI Reports cannot be added to workspace without link section.  Please contact your system administrator.
+ ;Error message
+DeployPbixButton=Deploy Power BI files
+ ;PowerBIPbixDeployForm
+LCSProjectIdNotSet=You must provide the LCS project ID with PowerBI assets in Life cycle services help configuration field in the System Administration > System Parameters > Help form.
+ ;PowerBIPbixDeployForm
+PbixDeploymentSucceeded=Deployment successful for file %1.
+ ;PowerBIPbixDeployForm
+PbixDeploymentFailed=Deployment failed for file %1.
+ ;PowerBIPbixDeployForm
+DeployPbixFormHeader=Deploy Power BI report files
+ ;PowerBIPbixDeployForm
+PowerBINeedsAzureSql=This function should be used to deploy DirectQuery PowerBI reports authored with Entity store into a production instance of Dynamics 365 for Finance and Operations. If you want to deploy this report to the current environment, please refer to the wiki article https://ax.help.dynamics.com/en/wiki/power-bi-content-from-microsoft-and-your-partners/.
+ ;New Comment
+PBIReportNameNotSet=The embedded Power BI report name is not set.
+ ;The embedded Power BI report name is not set.
+EmbeddedPBIReportNotFound=Embedded Power BI report %1 is not found.
+ ;parameter: report name
+AccessPBIEmbeddedFailedMessage=Failed to access Power BI Embedded environment. Please contact your system administrator.
+ ;Failed to access Power BI Embedded environment. Please contact your system administrator.
+PublishEmbeddedPBIReportFailed=Failed to publish Power BI Embedded report %1.
+ ;parameter: power bi report resource name
+PBIReportResourceNameNotSet=The embedded Power BI report resource name is not set.
+ ;The embedded Power BI report resource name is not set.
+PBIEmbeddedNotEnabled=Power BI embedded is not enabled.  Please contact your system administrator.
+ ;Power BI embedded is not enabled
+PBINotSupportedInServiceFabriceDeployments=Power BI integration is not supported in Service Fabric deployments
+ ;Error message when accessing PBI integration for Service Fabric deployments.
+CannotRetrieveAssetsFromLCSAssetLibraryClient=Cannot retrieve assets from LCS asset library. Project id %1. User %2. Please contact your administrator.
+ ;Error message when retrieving assets from LCS asset library.
+CannotRetrieveSharedAssetsFromLCSAssetLibraryClient=Cannot retrieve shared assets from LCS asset library. Project id %1. User %2. Please contact your administrator.
+ ;Error message when retrieving shared assets from LCS asset library.
+CannotRetrieveFileAssetFromLCS=Cannot retrieve file asset from LCS. Project id %1. Asset id %2.

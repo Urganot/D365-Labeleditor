@@ -1,0 +1,50 @@
+CurrencyEuroDenomination_CurrencyCode=كود العملة الذي يتعين تسميته لعملة التحويل الثلاثي.
+ ;Description text for the CurrencyCode control on the CurrencyEuroDenomination form
+Currency_CurrencyCode=المعرف الفريد للعملة المحددة. يمكن أن يحتوي هذا الكود على ما يصل إلى ثلاثة أحرف. على سبيل المثال، USD هو الدولار الأمريكي، وEUR هو اليورو، وCAD هو الدولار الكندي.
+ ;Description text for the CurrencyCode control on the Currency form
+Currency_GridCurrencyName=اسم العملة المحددة. تتم طباعة هذا الاسم وكود العملة على الشيكات والمستندات الأخرى.
+ ;Description text for the GridCurrencyName control on the Currency form
+Currency_CurrencyName=اسم العملة المحددة. تتم طباعة هذا الاسم وكود العملة على الشيكات والمستندات الأخرى.
+ ;Description text for the CurrencyName control on the Currency form
+Currency_Symbol=رمز العملة المحددة. ويتم استخدام الرموز بكثرة في التقارير.
+ ;Description text for the Symbol control on the Currency form
+Currency_GridCurrency=الكود القياسي للعملة كما هو محدد بواسطة المنظمة العالمية للمواصفات (ISO).
+ ;Description text for the GridCurrency control on the Currency form
+Currency_ISOCode=الكود القياسي للعملة كما هو محدد بواسطة المنظمة العالمية للمواصفات (ISO).
+ ;Description text for the ISOCode control on the Currency form
+Currency_IsEuro=العملة التي تم لها تحويل العملات الأخرى، المعروفة باسم عملات القيمة الاسمية، من خلال التحويل الثلاثي.
+ ;Description text for the IsEuro control on the Currency form
+Currency_Group_OnLineConversionTool=حدد هذا الخيار لتضمين العملة المحددة في حسابات أداة التحويل الرقمي عبر الإنترنت. تقوم الأداة تلقائياً بتحويل المبالغ التي يتم إدخالها في بنود الحركة بعمله المحاسبة للمبالغ بالعملة المحددة. ولا يتم حفظ المبالغ المحولة بالعملة المحددة في قاعدة البيانات.
+ ;Description text for the Group_OnLineConversionTool control on the Currency form
+Currency_Group_CurrencyPrefix=أدخل النص المطبوع قبل المبلغ بالعملة المحددة في حالة تحديد خيار التحويل.
+ ;Description text for the Group_CurrencyPrefix control on the Currency form
+Currency_Group_CurrencySuffix=أدخل النص المطبوع بعد المبلغ بالعملة المحددة في حالة تحديد خيار التحويل.
+ ;Description text for the Group_CurrencySuffix control on the Currency form
+Currency_GeneralRoundingPrecision=أدخل الوحدة للمبالغ التقريبية. على سبيل المثال، ربما تقوم بإدخال 0.10 أو 1.00.
+ ;Description text for the GeneralRoundingPrecision control on the Currency form
+Currency_RoundOffSalesOrder=أدخل وحدة المبالغ التقريبية في أوامر المبيعات أو أوامر الشراء أو الأسعار.
+ ;Description text for the RoundOffSalesOrder control on the Currency form
+Currency_RoundOffPurch=أدخل وحدة المبالغ التقريبية في أوامر المبيعات أو أوامر الشراء أو الأسعار.
+ ;Description text for the RoundOffPurch control on the Currency form
+Currency_Price_RoundOffPrice=أدخل وحدة المبالغ التقريبية في أوامر المبيعات أو أوامر الشراء أو الأسعار.
+ ;Description text for the Price_RoundOffPrice control on the Currency form
+Currency_AssetDep_JP_RoundOffAssetDep_JP=أدخل وحدة المبالغ التقريبية في أوامر المبيعات أو أوامر الشراء أو الأسعار.
+ ;Description text for the AssetDep_JP_RoundOffAssetDep_JP control on the Currency form
+Currency_RoundOffTypeSalesOrder=حدد اصطلاح التقريب الذي ينطبق على الرقم الموجود على يمين وحدة تقريب العلامات العشرية التي يتم إدخالها في حقل قاعدة التقريب. وحدد "عادي" لتقريب 5 أرقام أو أزيد لأعلى والأرقام الأقل من 5 لأدنى.‬ وحدد "لأسفل" لتقريب كافة الأرقام للأدنى. وحدد التقريب لأعلى لتقريب كافة الأرقام لأعلى.
+ ;Description text for the RoundOffTypeSalesOrder control on the Currency form
+Currency_RoundOffTypePurch=حدد اصطلاح التقريب الذي ينطبق على الرقم الموجود على يمين وحدة تقريب العلامات العشرية التي يتم إدخالها في حقل قاعدة التقريب. وحدد "عادي" لتقريب 5 أرقام أو أزيد لأعلى والأرقام الأقل من 5 لأدنى.‬ وحدد "لأسفل" لتقريب كافة الأرقام للأدنى. وحدد التقريب لأعلى لتقريب كافة الأرقام لأعلى.
+ ;Description text for the RoundOffTypePurch control on the Currency form
+Currency_Price_RoundOffTypePrice=حدد اصطلاح التقريب الذي ينطبق على الرقم الموجود على يمين وحدة تقريب العلامات العشرية التي يتم إدخالها في حقل قاعدة التقريب. وحدد "عادي" لتقريب 5 أرقام أو أزيد لأعلى والأرقام الأقل من 5 لأدنى.‬ وحدد "لأسفل" لتقريب كافة الأرقام للأدنى. وحدد التقريب لأعلى لتقريب كافة الأرقام لأعلى.
+ ;Description text for the Price_RoundOffTypePrice control on the Currency form
+Currency_AssetDep_JP_RoundOffTypeAssetDep_JP=حدد اصطلاح التقريب الذي ينطبق على الرقم الموجود على يمين وحدة تقريب العلامات العشرية التي يتم إدخالها في حقل قاعدة التقريب. وحدد "عادي" لتقريب 5 أرقام أو أزيد لأعلى والأرقام الأقل من 5 لأدنى.‬ وحدد "لأسفل" لتقريب كافة الأرقام للأدنى. وحدد التقريب لأعلى لتقريب كافة الأرقام لأعلى.
+ ;Description text for the AssetDep_JP_RoundOffTypeAssetDep_JP control on the Currency form
+ExchangeRateProviderConfiguration_ExchangeRateProviderConfiguration_Name=اسم موفر أسعار الصرف.
+ ;Description text for the ExchangeRateProviderConfiguration_Name control on the ExchangeRateProviderConfiguration form
+ExchangeRateProviderConfiguration_ExchangeRateProviderConfiguration_Name1=اسم موفر أسعار الصرف.
+ ;Description text for the ExchangeRateProviderConfiguration_Name1 control on the ExchangeRateProviderConfiguration form
+ExchangeRateProviderConfiguration_ExchangeRateProviderConfigurationDetails_Key=المعرف الفريد لكل معلومة تكوين يطلبها الموفر. تتم إضافة هذه المعلومات تلقائياً لكل موفر سعر صرف تقوم بإضافته بالنقر فوق الزر إضافة.
+ ;Description text for the ExchangeRateProviderConfigurationDetails_Key control on the ExchangeRateProviderConfiguration form
+ExchangeRateProviderConfiguration_ExchangeRateProviderConfigurationDetails_Value=معلومات لكل مفتاح. تتم إضافة هذه المعلومات لكل موفر سعر صرف تقوم بإضافته بالنقر فوق الزر إضافة.
+ ;Description text for the ExchangeRateProviderConfigurationDetails_Value control on the ExchangeRateProviderConfiguration form
+CurrencyNameDeclension_W_InsertAndBeforePenny_InsertAndBeforePenny=حدد هذا الخيار لطباعة حرف العطف وبين الوحدات والأجزاء.
+ ;Description text for the InsertAndBeforePenny_InsertAndBeforePenny control on the CurrencyNameDeclension_W form

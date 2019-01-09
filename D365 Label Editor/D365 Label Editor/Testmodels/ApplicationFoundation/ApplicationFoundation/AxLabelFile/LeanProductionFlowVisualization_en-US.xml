@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AxLabelFile xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+	<Name>LeanProductionFlowVisualization_en-US</Name>
+	<LabelContentFileName>LeanProductionFlowVisualization.en-US.label.txt</LabelContentFileName>
+	<LabelFileId>LeanProductionFlowVisualization</LabelFileId>
+	<RelativeUriInModelStore>ApplicationFoundation/ApplicationFoundation/AxLabelFile/LabelResources/en-US/LeanProductionFlowVisualization.en-US.label.txt</RelativeUriInModelStore>
+</AxLabelFile>

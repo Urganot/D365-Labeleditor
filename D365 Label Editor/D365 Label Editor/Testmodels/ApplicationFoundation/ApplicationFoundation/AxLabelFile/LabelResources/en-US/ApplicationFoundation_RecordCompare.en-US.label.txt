@@ -1,0 +1,20 @@
+NewLabel0=Label files created on 05/06/2015 17:15:20 for label file Id ApplicationFoundation_RecordCompare and language en-US
+ ;Label file comment - see above label
+ViewChanges=View changes
+ ;Caption for button that is used to display the changes between version records of a date effective table
+ChangesTimeline=Changes timeline
+ ;Caption for the form that is used to view all changes that have occured
+TableName=Table name
+ ;A caption for the field containing the caption of the table that contains a field change
+FieldModified=Field modified
+ ;A caption for the field containing the label of the table field that was modified.
+NewValue=New value
+ ;The new value of the field that was differed when the table comparison was made.
+OldValue=Old value
+ ;The old value of the field that was differed when the table comparison was made.
+DateOfChange=Date of change
+ ;The date that the change was made between the version records.
+ModifiedBy=Modified by
+ ;The user that last modified the record.
+TimeOfModification=Date and time of modification
+ ;The date and time of the record's last modification.

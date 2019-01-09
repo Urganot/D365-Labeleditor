@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<AxLabelFile xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+  <Name>FieldDescriptions_GeneralLedger_Currency_nl-BE</Name>
+  <LabelContentFileName>FieldDescriptions_GeneralLedger_Currency.nl-BE.label.txt</LabelContentFileName>
+  <LabelFileId>FieldDescriptions_GeneralLedger_Currency</LabelFileId>
+  <Language>nl-BE</Language>
+  <RelativeUriInModelStore>Currency/Currency/AxLabelFile/LabelResources/nl-BE/FieldDescriptions_GeneralLedger_Currency.nl-BE.label.txt</RelativeUriInModelStore>
+</AxLabelFile>

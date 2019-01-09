@@ -1,0 +1,80 @@
+DimensionDetails_EntityList=Select a system-defined entity to base the financial dimension on. Financial dimension values are created from this selection. For example, to create dimension values for projects, select Projects. A dimension value will be created for each project name. To create a user-defined financial dimension, select < Custom dimension >.
+ ;Description text for the EntityList control on the DimensionDetails form
+DimensionDetails_Mask=Enter a format mask to use for creating financial dimension values. A format mask limits the amount and type of information that you can enter for dimension values. This field is available only when you select < Custom dimension > in the Use values from field.
+ ;Description text for the Mask control on the DimensionDetails form
+OMLegalEntity_OMLegalEntity_DataArea=The company account ID that is associated with the legal entity. A company is a type of legal enty. A company is the only kind of legal entity that you can create, and every legal entity is associated with a company ID. This association exists because some functional areas in the program use a company ID, or DataAreaId, in their data models. In these functional areas, companies are used as a boundary for data security. Users can access data only for the company that they are currently logged on to.
+ ;Description text for the OMLegalEntity_DataArea control on the OMLegalEntity form
+OMLegalEntity_OMLegalEntity_DataArea1=The company account ID that is associated with the legal entity. A company is a type of legal enty. A company is the only kind of legal entity that you can create, and every legal entity is associated with a company ID. This association exists because some functional areas in the program use a company ID, or DataAreaId, in their data models. In these functional areas, companies are used as a boundary for data security. Users can access data only for the company that they are currently logged on to.
+ ;Description text for the OMLegalEntity_DataArea1 control on the OMLegalEntity form
+OMLegalEntity_CopyOfOMDepartment_Memo=Enter notes about the legal entity.
+ ;Description text for the CopyOfOMDepartment_Memo control on the OMLegalEntity form
+OMLegalEntity_CheckBox=A selected option indicates that the legal entity belongs to an organization hierarchy.
+ ;Description text for the CheckBox control on the OMLegalEntity form
+OMLegalEntity_CompanyInfo_IsConsolidationCompany=Select this option if the ledger for this legal entity combines the financial data of subsidiary legal entities.
+ ;Description text for the CompanyInfo_IsConsolidationCompany control on the OMLegalEntity form
+OMLegalEntity_CompanyInfo_IsEliminationCompany=Select this option to enable elimination entries to be created in the ledger of this legal entity. You cannot change this field if the Use for financial consolidation process option is not selected and transactions exist.
+ ;Description text for the CompanyInfo_IsEliminationCompany control on the OMLegalEntity form
+OMLegalEntity_Languages=Select the default language to use when you correspond with customers, such as when you send invoices and collection letters. If a language code is not specified in the customer or vendor parameters pages, this language code is suggested when you create new customers or vendors.
+ ;Description text for the Languages control on the OMLegalEntity form
+OMLegalEntity_Address=Enter information, such as street name and number, postal code, and city. The address information is used in reports. City, State or province, County, and Country/region values are inserted automatically in the Address field when you exit the respective fields. When the address is approved, the City, ZIP/postal code, Country/region, State or province and County fields are filled in. The contents of these fields can be changed, regardless of the contents in the Address field, because they are used exclusively for searching and sorting.
+ ;Description text for the Address control on the OMLegalEntity form
+OMLegalEntity_ContactInfo_Locator=Enter the communication number or address, based on the selected communication type. If the Validate Tax 1099 data formats option is selected on the Tax 1099 FastTab, enter the main company telephone number in the Contact information page.
+ ;Description text for the ContactInfo_Locator control on the OMLegalEntity form
+OMLegalEntity_Primary=Select this option to indicate that the telephone number in the Extension field is the primary communication number for the legal entity.
+ ;Description text for the Primary control on the OMLegalEntity form
+OMLegalEntity_ContactInfo_IsPrimary=Select this option to indicate that the telephone number in the Extension field is the primary communication number for the legal entity.
+ ;Description text for the ContactInfo_IsPrimary control on the OMLegalEntity form
+OMLegalEntity_CompanyInfo_StateInscription_MX=Enter the State Inscription number of a person or a corporation for tax registration.
+ ;Description text for the CompanyInfo_StateInscription_MX control on the OMLegalEntity form
+OMLegalEntity_BranchId=Identify the branch/subsidiary that is used with the tax exempt number.
+ ;Description text for the BranchId control on the OMLegalEntity form
+OMLegalEntity_RegistrationNumbers_EnterpriseNumber=Enter the unique enterprise number that is delivered by the Belgian Crossroad bank of Companies.
+ ;Description text for the RegistrationNumbers_EnterpriseNumber control on the OMLegalEntity form
+OMLegalEntity_RegistrationNumbers_BranchNumber=Enter the unique branch number that is delivered by the Belgian Crossroad bank of Companies.
+ ;Description text for the RegistrationNumbers_BranchNumber control on the OMLegalEntity form
+OMLegalEntity_BusinessNumber_CA_BusinessNumber_CA=Enter the registration number that is provided to the company by the Canada Revenue Agency (CRA).
+ ;Description text for the BusinessNumber_CA_BusinessNumber_CA control on the OMLegalEntity form
+OMLegalEntity_SoftwareIdentificationCode_CA_SoftwareIdentificationCode_CA=Enter the eight-character alphanumeric software identification code. The first two characters are letters and the last six characters are numbers. These values must be correct so that the Goods and Services Sales Tax or Harmonized Sales Tax (GST/HST) returns can be processed.
+ ;Description text for the SoftwareIdentificationCode_CA_SoftwareIdentificationCode_CA control on the OMLegalEntity form
+OMLegalEntity_CompanyInfo_LegalNature_IT=Select the legal structure of the legal entity that is registered with the government, such as Limited share partnerships, Limited liability companies (SRL), or Public limited companies (SPA).
+ ;Description text for the CompanyInfo_LegalNature_IT control on the OMLegalEntity form
+OMLegalEntity_RegistrationNumbers_CustomsCustomerNumber_FI=Enter the unique customer number, which is required for Aland Islands taxes.
+ ;Description text for the RegistrationNumbers_CustomsCustomerNumber_FI control on the OMLegalEntity form
+OMLegalEntity_RegistrationNumbers_CustomsLicenseNumber_FI=Enter the unique identifier for the domestic license number that is required by customers for Aland Island taxes.
+ ;Description text for the RegistrationNumbers_CustomsLicenseNumber_FI control on the OMLegalEntity form
+OMLegalEntity_ContactInfo_CompanyRegComFR=Enter the name of the French agency where the company has been registered, such as the Registre du commerce et des sociétés.
+ ;Description text for the ContactInfo_CompanyRegComFR control on the OMLegalEntity form
+OMLegalEntity_ContactInfo_LegalFormFR=Enter the legal type of your company, such as non-profit organization, manufacturing company, or financial institution.
+ ;Description text for the ContactInfo_LegalFormFR control on the OMLegalEntity form
+OMLegalEntity_CompanyInfo_FICreditorID_DK=Enter the creditor's unique identification number, which is provided by the financial institution. The creditor's identification number must contain eight digits.
+ ;Description text for the CompanyInfo_FICreditorID_DK control on the OMLegalEntity form
+OMLegalEntity_SIA_IT_SiaCode=Enter the Società Interbancaria per l'Automazione (SIA) code of the company for bill of exchange and promissory note remittance. The SIA code is assigned to the company by the SIA.
+ ;Description text for the SIA_IT_SiaCode control on the OMLegalEntity form
+OMLegalEntity_SIA_IT_IssuingSignature=Enter the company signature for remittance that is used by the bank for identification. The signature is stored in the remittance export file for the bill of exchange and printed in the customer remittance report.
+ ;Description text for the SIA_IT_IssuingSignature control on the OMLegalEntity form
+OMLegalEntity_BTL91_PaymRoutingDNB=Enter the registration number from the DNB (Netherlands Central Bank) for categorizing foreign payment.
+ ;Description text for the BTL91_PaymRoutingDNB control on the OMLegalEntity form
+OMLegalEntity_BTL91_PaymTraderNumber=Enter the indication code from the DNB for transit traders.
+ ;Description text for the BTL91_PaymTraderNumber control on the OMLegalEntity form
+OMLegalEntity_DVRid=Enter the data processing register number that is supplied by the DVR (DatenVerarbeitungsRegister).
+ ;Description text for the DVRid control on the OMLegalEntity form
+OMLegalEntity_UPSNum=Enter the account number that the company has with the preferred courier service and that is used in relevant external reports.
+ ;Description text for the UPSNum control on the OMLegalEntity form
+OMLegalEntity_RegNumbers_ActivityCode=Enter the identifier of the financial activity group.
+ ;Description text for the RegNumbers_ActivityCode control on the OMLegalEntity form
+OMLegalEntity_PackagingMaterialFee_PackMaterialFeeLicenseNum=Enter the packaging material fee license number of your recycling company. It is used in the ARA notification report.
+ ;Description text for the PackagingMaterialFee_PackMaterialFeeLicenseNum control on the OMLegalEntity form
+OMLegalEntity_VATNum=Select the number that is used for transfers relative to the European Union and in external reports. An export number is required to print an Intrastat report for Finland.
+ ;Description text for the VATNum control on the OMLegalEntity form
+OMLegalEntity_SalesTax_VATNumBranchId=Identify the branch or subsidiary that is used with the tax exempt number for export.
+ ;Description text for the SalesTax_VATNumBranchId control on the OMLegalEntity form
+OMLegalEntity_ImportVATNum=Select the number that is used in external reports and for transfers relative to the European Union. An import number is required to print an Intrastat report for Finland.
+ ;Description text for the ImportVATNum control on the OMLegalEntity form
+OMLegalEntity_SalesTax_ImportVATNumBranchId=Identify the branch or subsidiary that is used with the tax exempt number for import.
+ ;Description text for the SalesTax_ImportVATNumBranchId control on the OMLegalEntity form
+OMLegalEntity_referenceLabel=The document type or the record that uses the number sequence.
+ ;Description text for the referenceLabel control on the OMLegalEntity form
+OMLegalEntity_referenceLabel1=The document type or the record that uses the number sequence.
+ ;Description text for the referenceLabel1 control on the OMLegalEntity form
+OMLegalEntity_NumberSequenceReference_NumberSequenceId=Select a code for the number sequence. The codes in the list are set up in the Number sequences page.
+ ;Description text for the NumberSequenceReference_NumberSequenceId control on the OMLegalEntity form

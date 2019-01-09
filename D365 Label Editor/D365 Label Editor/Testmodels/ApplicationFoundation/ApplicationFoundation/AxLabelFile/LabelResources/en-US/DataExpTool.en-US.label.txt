@@ -1,0 +1,888 @@
+ErrorMsg_RecordDoesNotExist_1=The %1 record does not exist
+ ;New Comment
+ErrorMsg_UnableToCreateDateField_1=Unable to create date field %1 for seed %2
+ ;New Comment
+ErrorMsg_FieldWasNotCreatedForTable_1=Field %1 was not created for table %2 with seed %3
+ ;New Comment
+ErrorMsg_InvalidFieldName_1=Invalid field name %1 in table %2
+ ;New Comment
+ErrMsg_ProjectDoesNotExist_2=Project with RecId %1 does not exist
+ ;New Comment
+InfoMsg_ExpansionPendingOrDeleted_1=Either an expansion has not yet occurred for project %1 or data from the most recent expansion has already been deleted
+ ;New Comment
+InfoMsg_ExpansionDataWasDeleted_1=The data from the last expansion of project %1 was successfully deleted. For your reference, data was deleted from %2 tables.
+ ;New Comment
+ErrMsg_RecIdForParentTableNotExist_1=%1 RecId for parent table replicated line does not exist
+ ;New Comment
+ErrMsg_RecIdForChildTableNotExist_1=%1 RecId for child table replicated line does not exist
+ ;New Comment
+ErrMsg_InvalidSeedRecIdForChildSeed_1=Invalid DataExpSeedRecIds RecId for child seed to copy
+ ;New Comment
+ErrMsg_InvalidSeedRecIdForParentSeed_1=Invalid DataExpSeedRecIds RecId for parent seed to copy
+ ;New Comment
+ErrMsg_SeedRecIdForParentSeed_1=Invalid RecId for the parent seed record. Seed already copied.
+ ;New Comment
+ErrMsg_SeedRecIdDoesNotExist_1=DataExpSeedRecIds RecId to copy does not exist
+ ;New Comment
+ErrMsg_DataExpTableRecordDoesNotExist_1=The corresponding DataExpTable record to the seed to copy does not exist
+ ;New Comment
+ErrMsg_SeedDoesNotHaveForeignKey_1=The seed specified does not have a foreign key to any other table part of the project. This seed cannot be used in a line level expansion.
+ ;New Comment
+ErrMsg_RecordDoesNotExist_2=%1 RecId does not exist in %2
+ ;New Comment
+ErrMsg_SeedRecord_6=%1 RecId for copied child seed record does not exist in table %2
+ ;New Comment
+ErrMsg_FieldIsNotForeignKey_1=%1 is not a foreign key to another table part of the project
+ ;New Comment
+ErrMsg_RecordDoesNotExist_4=Parent table line to replicate does not exist
+ ;New Comment
+ErrMsg_ProjectDoesNotExist_3=Invalid project RecId: %1
+ ;New Comment
+ErrMsg_WrongNumberOfParameters_1=The combination %1 has invalid number of parameters. Combination: [ %2 ]
+ ;New Comment
+ErrMsg_WrongNumberOfParameters_2=Invalid number of parameters on field %2 of table %1. Fields with the data type %3 can only have 4 or 5 parameters
+ ;New Comment
+ErrMsg_DataTypeNotSupported_1=The field %2 on table %1 has a %3 data type which is not supported on combinations with ranges
+ ;New Comment
+ErrMsg_MissingValue_1=The combination %1 must have at least 1 value
+ ;New Comment
+ErrMsg_TableNotInProject_1=The table %1 is not part of the project
+ ;New Comment
+ErrMsg_FieldDoesNotExist_1=The field %1.%2 does not exist
+ ;New Comment
+ErrMsg_MethodDoesNotExist_1=Static method %1 in class %2 does not exist
+ ;New Comment
+ErrMsg_MissingParameter_1=The method must have one parameter of type container
+ ;New Comment
+ErrMsg_WrongNumberOfParameters_3=The number of parameter fields does not match the number of parameter DataExpSeedRecIds RecIds
+ ;New Comment
+ErrMsg_InvalidParameter_1=Invalid parameter DataExpSeedRecIds %1
+ ;New Comment
+ErrMsg_InvalidParameter_2=Invalid parameter field name: %1
+ ;New Comment
+ErrMsg_FieldIsForeignKey_1=Field %1.%2 is a foreign key to one of the inserted seed records. The field will take on the values of the mapped primary key therefore a customization cannot be applied.
+ ;New Comment
+ErrMsg_InvalidFieldName_1=The name of the field to customize is invalid
+ ;New Comment
+ErrMsg_ParameterizedQuery_1=Cannot use parameterized query values for fields that are foreign keys to other tables part of the project
+ ;New Comment
+ErrMsg_InvalidTable_1=The table containing the dependent field is invalid
+ ;New Comment
+ErrMsg_InvalidFieldName_2=The name of the dependent field is invalid
+ ;New Comment
+ErrMsg_SQLQuery_1=The SQL base query does not exist or does not contain the parameter place holder.
+ ;New Comment
+ErrMsg_InvalidSeedRecId_1=The dependent DataExpSeedRecIds RecId is invalid
+ ;New Comment
+ErrMsg_DataExpFieldRecord_1=DataExpField record could not be found or created for %1.%2
+ ;New Comment
+ErrMsg_ParameterizedQuery_2=No query sources provided
+ ;New Comment
+ErrMsg_ParameterizedQuery_3=The number of percent values does not match the number of query sources
+ ;New Comment
+ErrMsg_TableNotInProject_2=A table with name %1 does not exist in the DET project with RecId %2
+ ;New Comment
+ErrMsg_FieldRangeNotRandom_1=%1\n The field has been set to use a range, but not a random range
+ ;New Comment
+ErrMsg_ParameterizedQuery_4=Cannot use random query values for primary keys, unique indexes, or foreign keys to other tables part of the DET project
+ ;New Comment
+InfoMsg_LineReplicated_1=Line successfully replicated
+ ;New Comment
+InfoMsg_ParameterizedQuery_1=Parameterized query customization successfully applied
+ ;New Comment
+InfoMsg_ParameterizedQuery_2=Random query customization success
+ ;New Comment
+ErrMsg_ParameterizedQuery_5=%1 is not supported invalid data type for queries
+ ;New Comment
+ErrMsg_InvalidField_1=The field %1.%2 does not exist or is invalid.
+ ;New Comment
+ErrMsg_DataTypeNotSupported_2=Data type not supported: %1
+ ;New Comment
+ErrMsg_DataTypeDoesNotExist_1=Unable to find the EDT: %1
+ ;New Comment
+ErrMsg_SeedRecord_1=Seed record without attributes
+ ;New Comment
+ErrMsg_SeedRecord_2=%1 attribute does not exist for seed record
+ ;New Comment
+ErrMsg_SeedRecord_3=Table name for seed record was empty
+ ;New Comment
+ErrMsg_AttributeWasNotFound_1=%1 attribute was not found
+ ;New Comment
+ErrMsg_InvalidParentTable_1=Parent table name is incorrect %1
+ ;New Comment
+ErrMsg_DeleteFailed_1=Unable to delete existing data from: %1
+ ;New Comment
+ErrMsg_XMLNoAttributes_1=XmlNode without attributes
+ ;New Comment
+ErrMsg_DataExpValueEmptyRecord_1=DataExpValues record is empty
+ ;New Comment
+ErrMsg_SeedRecord_4=%1 attribute not present for seed record
+ ;New Comment
+ErrMsg_ProjectNoRoot_1=No project root element
+ ;New Comment
+ErrMsg_ProjectNoAttributes_1=Project without attributes
+ ;New Comment
+ErrMsg_ProjectNoSeedTag_1=Unable to get the seeds node from the XML file.
+ ;Error message.
+ErrMsg_XMLFile_1=Xml file does not contain any data for seed records
+ ;New Comment
+ErrMsg_ProjectImportCancelled_1=The import of the project was cancelled.
+ ;Error message.
+ErrMsg_ProjectImportCancelled_2=Unable to import the records from the XML file. The import of the project was cancelled.
+ ;New Comment
+ErrMsg_XMLParserError_1=XML parse error
+ ;New Comment
+ErrMsg_StringConvert_1=Unable to convert the string "%1" to data type %2
+ ;New Comment
+ErrMsg_ParameterizedQuery_6=The number of percent values does not match the number of query sources
+ ;New Comment
+ErrMsg_FileExportFailed_1=Not able to export to file: %1
+ ;New Comment
+ErrMsg_FileNotExist_1=File does not exist: %1
+ ;New Comment
+ErrMsg_FileNotRead_1=Unable to read file: %1
+ ;New Comment
+ErrMsg_FileExportRecordNotFound_1=The record with the RecId %1 from the table %1 was not exported. The record is not accessible or deleted.
+ ;New Comment
+ErrMsg_FileImportRelationShip_1=Unable to import relationship %1.%2 => %3.%4
+ ;New Comment
+ErrMsg_FileImportRelationShip_2=Relationship %2 was not found on table: %1. Relationship %2 was not disabled.
+ ;New Comment
+ErrMsg_FileImportEDT_1=Customizations for EDT %1 were not imported. EDT does not exist or there is no field using this EDT in this project.
+ ;New Comment
+WrnMsg_FileImportField_1=Customization for field %1 was not imported because it does not exist in table %2
+ ;New Comment
+WrnMsg_FileImportField_2=The field %1.%2 does not exist and was not imported
+ ;New Comment
+ErrMsg_FileImportTable_1=The table %1 was not found in the project. The parameterized query associated to the field %1.%2 was not imported.
+ ;New Comment
+ErrMsg_FileImportTable_2=The reference table %1 was not found in the project. The parameterized query associated to the field %1.%2 was not imported.
+ ;New Comment
+WrnMsg_FileImportField_3=The field %2 does not exist or is disabled. The parameterized query associated to the field %1.%2 was not imported.
+ ;New Comment
+WrnMsg_FileImportField_4=The referenced field %4.%3 does not exist or is disabled. The parameterized query associated to the field %1.%2 was not imported.
+ ;New Comment
+WrnMsg_FileImportTable_3=The table %1 does not has a record number %3. The parameterized query associated to the field %1.%2 was not imported.
+ ;New Comment
+WrnMsg_FileImportField_5=Customizations for field %2.%1 were not imported because the table does not exist.
+ ;New Comment
+WrnMsg_FileImportField_6=Customizations for field %1 were not imported because it does not exist in table %2
+ ;New Comment
+ErrMsg_DeleteFailed_2=Unable to delete temporary file: %1
+ ;New Comment
+ErrMsg_ValuesCreation_1=The DataExpValues record was not created for the field %1.
+ ;Error message
+ErrMsg_FieldBaseType_1=The field %2 in table %1 does not have base type String
+ ;New Comment
+ErrMsg_IndexNotCreated_1=Unable to modify the CreateRecIdIndex property on %1
+ ;New Comment
+Info_IndexEnabledStatus_1=RecId Index was %2 on %1
+ ;New Comment
+ErMsg_ValuesType_1=The selected DataExpValues record is not an EDT: %1
+ ;New Comment
+ErrMsg_ProviderName_1=The Execution Traces event publisher is not installed.
+ ;Error message to alert the user when the execution traces event publisher is not installed.
+ErrMsg_ParameterizedQuery_7=Encountered empty parametrized query. Query with parameter filled in = %1.
+ ;New Comment
+ErrMsg_SeedRecord_5=No seed records were selected to create the project
+ ;New Comment
+ErrMsg_RandomRange_1=The range size must satisfy %1 <= rangeSize <= %2
+ ;New Comment
+ErrMsg_RandomRange_2=Seed must satisfy %1 <= seed < %2
+ ;New Comment
+ErrMsg_FieldDoesNotExist_2=Field does not exist: %1
+ ;New Comment
+ErrMsg_ClassName_1=The name of the class is empty
+ ;New Comment
+ErrMsg_MethodName_1=The name of the method is empty
+ ;New Comment
+ErrMsg_Class_1=Unable to find the class %1. Make sure that the name of the class is typed correctly and that its code is compiled on AX.
+ ;New Comment
+ErrMsg_MethodStatic_1=The class %1 does not has an static method called %2
+ ;New Comment
+Errmsg_EDTDoesNotExist_2=The type %1 has not been implemented yet or is not supported
+ ;New Comment
+ErrMsg_EDT_1=The type %1 is not supported for range customizations
+ ;New Comment
+ErrMsg_QueryEmpty_1=Empty query encountered for field %1.%2'
+ ;New Comment
+ErrMsg_FieldEmpty_1=The value for the field %1 is empty on the insert statement for %2
+ ;New Comment
+ErrMsg_EDT_2=The field %1.%2 with data type %3 can not be configured with a range. Use the API %4::%5 to configure fields that have a %3 data type.
+ ;Error message for data types that are not supported with range configurations.
+ErrMsg_ParameterizedQuery_8=DataExpParametrizedQueries record does not exist
+ ;New Comment
+ErrMsg_RandomValue_1=Negative percent value for random source query encountered. Error occured in table %1 at RecId %2.
+ ;New Comment
+ErrMsg_RandomValue_2=All random src queries must return at least two values
+ ;New Comment
+ErrMsg_QuerySource_1=No query sources present for field %2.%1
+ ;New Comment
+ErrMsg_QueryPercentValues_1=Percent values of all query sources for field %2.%1 do not add up to 100
+ ;New Comment
+ErrMsg_ParmCreation_1=Invalid Creation Parameters: %1 %2 %3
+ ;New Comment
+ErrMsg_FieldDoesNotExist=%1.%2 field does not exist
+ ;New Comment
+ErrMsg_RelationCreation_1=Can not create a relationship
+ ;New Comment
+ErrMsg_RelationType_1=Undefined tableRelationType
+ ;New Comment
+ErrMsg_Class_2=The class %1 does not exist. %2 was not executed.
+ ;New Comment
+ErrMsg_MethodName_2=The %1 method name is empty. %1 was not executed.
+ ;New Comment
+ErrMsg_Method_1=The method %1 does not exits. %2 was not executed.
+ ;New Comment
+ErrMsg_Exception_1=Exception in %1
+ ;New Comment
+ErrMsg_SysTableBrowserTableSync_1=@ApplicationFoundation:SysTableBrowser_TableNotSynced
+ ;New Comment
+ErrMsg_SysTableBrowserMissingForm_1=@ApplicationFoundation:SysTableBrowser_MissingForm
+ ;New Comment
+ErrMsg_SQLTable_1=Unable to configure the SQL options.
+ ;Error message to alert the user.
+ErrMsg_SQLLock_1=The lock escalation option was %1.
+ ;New Comment
+ErrMsg_SQLLock_2=The allow page locks option was %1.
+ ;New Comment
+Msg_SQLStats_1=The auto update statistics option was %1.
+ ;Message to alert the user about the change in the auto update statistics option.
+ErrMsg_SQLExec_1=Unable to execute the command: %1
+ ;New Comment
+ErrMsg_SanityCheckString_1=The field %2 in table %1 could exceed its maximum string length during the expansion. Sanity Check: Failed
+ ;New Comment
+ErrorProjectValidationFailed=The project validation failed.
+ ;New Comment
+ErrMsg_ProjectTableSeeds_1=The project does not have tables with seeds. %1
+ ;New Comment
+ErrMsg_SanityCheckExpansion_1=The expansion factor must be greater than 0
+ ;New Comment
+ErrMsg_SanityCheckProject_1=The project setup had errors
+ ;New Comment
+ErrMsg_SanityCheckServerConfig_1=There is no server configuration associated to the current server instance: %1
+ ;New Comment
+ErrMsg_SanityCheckBatchConfig_1=There is no batch configuration associated to the current server instance: %1
+ ;New Comment
+ErrMsg_SanityCheckExpansion_2=Expansion Factor must be greater than 1
+ ;New Comment
+ErrMsg_ProjectDoesNotExist_4=The project %1 does not exist
+ ;New Comment
+ErrMsg_SQLRollBack_1=Unable to rollback the SQL configuration.
+ ;Error message to alert the user.
+ErrMsg_ProjectTasks_1=The project with RecId %1 does not have DataExpTasks
+ ;New Comment
+ErrMsg_projectBatchJob_1=Unable to select the batch job header from the project %1
+ ;New Comment
+ErrMsg_projectBatchTasks_1=The project %1 does not have batch tasks
+ ;New Comment
+ErrMsg_ProjectBatchCommit_1=The new commit size %1 must be smaller than the current commit size %2
+ ;New Comment
+ErrMsg_ProjectSetupErrors_1=Unable to process data expansion queue. One or more projects have setup errors
+ ;New Comment
+ErrMsg_IndexRecId_1=Error while creating the missing RecId indexes
+ ;New Comment
+InfoProjectValidationSucceeded=The project validation succeeded.
+ ;New Comment
+Info_DataGenEnded_1=The data generation has been completed.
+ ;Message to inform the user that the data generation has been completed.
+InfoMsg_SysSequencesUpdated_1=The system sequences were updated.
+ ;New Comment
+PreFix_SysSequencesUpdating_1=System sequences
+ ;New Comment
+InfoMsg_BatchScheduled_1=The data expansion batch job was scheduled
+ ;New Comment
+Prefix_DataGen_1=Data Generation
+ ;New Comment
+Prefix_projectName_1=Data expansion project: %1
+ ;New Comment
+ErrMsg_CopyFailed_1=Creation of copies %1-%2 failed at seed %3
+ ;New Comment
+ErrMsg_BatchHeaderSelect_1=Unable to select BatchHeader
+ ;New Comment
+ErrMsg_BatchJobSelect_1=Unable to select Batch
+ ;New Comment
+ErrMsg_BatchTaskCreate_1=Unable to create Batch Task
+ ;New Comment
+WrnMsg_SysProgressInit_1=Unable to initialize SysProgress
+ ;New Comment
+WrnMsg_TMPTableTrunc_1=Error while truncating temporary tables
+ ;New Comment
+WrnMsg_TMPTableCreate_1=Unable to create temporary tables for: %1
+ ;New Comment
+WrnMsg_TMPTableDrop_1=Unable to drop temporary tables for table %1 and thread %2
+ ;New Comment
+WrnMsg_TMPTableTrunc_2=Unable to truncate temporary table %1
+ ;New Comment
+ErrMsg_InvalidTableIndex_1=Invalid tableId %1 and indexId %2
+ ;New Comment
+ErrMsg_InvalidParameter_3=Invalid parameter dataExpTableRecId %1
+ ;New Comment
+ErrMsg_IndexValidationFailed_1=The unique indexes validation failed.
+ ;New Comment
+InfoMsg_IndexValidationSuccess_1=The unique indexes validation succeeded.
+ ;New Comment
+WrnMsg_IndexFullText_1=An error occur while enabling the full text indexes
+ ;New Comment
+ErrMsg_SysSequencesUpdateFailed_1=Unable to update the system sequences.
+ ;Error message.
+WrnMsg_IndexRecId_2=Error while removing RecId indexes
+ ;New Comment
+ErrMsg_EDTDoesNotExist_3=Data type %1 is not implemented
+ ;New Comment
+ErrMsg_InvalidTableAndField_1=Invalid tableId %1 and fieldId %2
+ ;New Comment
+ErrMsg_FieldNameEmpty_1=Field name is empty
+ ;New Comment
+ErrMsg_DataExpTable_1=The DataExpTable record with RecId %1 does not exist.
+ ;Error message.
+ErrMsg_RecordDoesNotExist_1=%1.%2 does not exist
+ ;New Comment
+ErrMsg_FieldNoDate_1=Field with no date values
+ ;New Comment
+ErrMsg_SysDictObject_1=Unable to create SysDictObject for %1.%2
+ ;New Comment
+ErrMsg_ProjectStartDate_1=The end date should be greater or equal to the start date
+ ;New Comment
+ErrMsg_QueryOrPercentCon_1=Either one of the queries or percents containers is empty or they do not have equal length
+ ;New Comment
+ErrMsg_RecordDoesNotExist_3=A %1 record with RecId %2 does not exist or the record is not set to use random query values
+ ;New Comment
+ErrMsg_PercentValue_1=Invalid percent value
+ ;New Comment
+StrFrmt_Conditional_1=format = '%1.%2 == %3.%4
+ ;New Comment
+StrFrmt_Conditional_2=format = '%1.%2 == %4
+ ;New Comment
+StrFrmt_Conditional_3=format = '%2 == %3.%4
+ ;New Comment
+ErrMsg_TableDoesNotExist_1=The table %1 does not exist
+ ;New Comment
+InfoMsg_ParameterizedQuery_3=Random range customization success
+ ;New Comment
+ErrMsg_InvalidTable_2=Invalid Table: %1
+ ;New Comment
+WrnMsg_RelationNotDisabled_1=Table not found: %1. Relationship %2 was not disabled
+ ;New Comment
+WrnMsg_FileImportTable_1=The referenced record number was not specified. The parameterized query associated to the field %1.%2 was not imported
+ ;New Comment
+ErrMsg_FieldValue_1=The repeat value on the field %1 in table %2 can not be less than 1
+ ;New Comment
+ErrMsg_TableRecordNotExist_1=%1 with ID %2 does not exists
+ ;New Comment
+ErrMsg_ProjectDoesNotExist_1=DataExp Project was not found
+ ;New Comment
+WrnMsg_DataCreation_1=Unable to %1
+ ;New Comment
+RecIdIndexCreator_IndexWasCreated=The index %1 was created on the %2 table.
+ ;Message to inform the user that the %1 index was created on the %2 table.
+RecIdIndexCreator_IndexWasDeleted=The index %1 from the %2 table was deleted.
+ ;Message to inform the user that the %1 index from the %2 table was deleted.
+RecIdIndexCreator_UnableToCreateIndex=Unable to create the %1 index on the %2 table.
+ ;Warning to alter the user that the %1 index from the %2 table could not be created.
+RecIdIndexCreator_UnableToDeleteIndex=Unable to delete the %1 index on the %2 table.
+ ;Warning to alter the user that the %1 index from the %2 table could not be deleted.
+ErrMsg_ProjectDuplicate_1=Unable to duplicate project: %1
+ ;New Comment
+ErrMsg_FileUpload_1=Upload of file %1 failed
+ ;New Comment
+ErrMsg_ModifyFieldValue_1=Unable to open the form to configure the field.
+ ;Error message.
+ErrMsg_ProjectSelect_1=Select a project
+ ;New Comment
+InfoMsg_SelectedEDT_1=The fields of the selected EDT are now connected.
+ ;New Comment
+InfoMsg_ProjectImport_1=The project was imported as project '%1'
+ ;New Comment
+InfoMsg_ProjectImportCancel_1=The import of the project was cancelled.
+ ;New Comment
+InfoMsg_CustomizationsApplied_1=Customizations were applied
+ ;New Comment
+InFoMsg_DatesModified_1=All dates had been modified
+ ;New Comment
+InFoMsg_DatesModified_2=Dates had been reseted
+ ;New Comment
+TableLabel_DataExpTraceTable_1=Data expansion traced tables
+ ;New Comment
+TableLabel_DataExpField_1=Data expansion fields
+ ;New Comment
+TableLabel_DataExpParametrizedQueries_1=Data expansion Parameterized queries
+ ;New Comment
+TableLabel_DataExpProject_1=Data expansion projects
+ ;New Comment
+TableLabel_DataExpQueryValues_1=Data expansion query values
+ ;New Comment
+TableLabel_DataExpRelation_1=Data expansion relations
+ ;New Comment
+TableLabel_DataExpTable_1=Data expansion tables
+ ;New Comment
+TableLabel_DataExpValues_1=Data expansion values
+ ;New Comment
+FrmTbPg_MainForm_1=Select project
+ ;New Comment
+FrmCapt_MainForm_1=Data expansion project
+ ;New Comment
+FrmTbPg_MainForm_2=Customize data
+ ;New Comment
+FrmTbPg_MainForm_3=Start data expansion
+ ;New Comment
+FrmStaticText_MainForm_1=Data expansion tool
+ ;New Comment
+FrmCapt_Mainform_2=Project definition
+ ;New Comment
+FrmCapt_MainForm_3=Data expansion projects
+ ;New Comment
+ButtonLabel_MainForm_1=New project
+ ;New Comment
+ButtonLabel_MainForm_2=Delete project
+ ;New Comment
+ButtonLabel_MainForm_3=Duplicate project
+ ;New Comment
+ButtonLabel_MainForm_4=More delete actions
+ ;New Comment
+ButtonLabel_MainForm_5=Delete seeds and project
+ ;New Comment
+ButtonLabel_MainForm_6=Delete last expansion data
+ ;New Comment
+ButtonLabel_MainForm_7=Import & Export
+ ;New Comment
+ButtonLabel_MainForm_8=Import project
+ ;New Comment
+ButtonLabel_MainForm_9=Export project
+ ;New Comment
+ButtonLabel_MainForm_10=Import configuration
+ ;New Comment
+ButtonLabel_MainForm_11=Export configuration
+ ;New Comment
+ButtonLabel_MainForm_12=Advanced actions
+ ;New Comment
+ButtonLabel_MainForm_13=Update system sequences
+ ;New Comment
+ButtonLabel_MainForm_14=Enable the default SQL options
+ ;New Comment
+FrmCapt_MainForm_4=Project definition
+ ;New Comment
+ButtonLabel_MainForm_15=Validate project
+ ;New Comment
+ButtonLabel_MainForm_16=View table records
+ ;New Comment
+ButtonLabel_MainForm_17=Remove table
+ ;New Comment
+ButtonLabel_MainForm_18=Parameterized queries
+ ;New Comment
+FrmCapt_MainForm_5=Parameters
+ ;New Comment
+FieldLabel_DataExpProject_1=Expansion factor
+ ;New Comment
+FieldLabel_MainForm_1=Create data using batch
+ ;New Comment
+FieldLabel_MainForm_2=Disable lock escalation, page locks and update stats
+ ;New Comment
+EDTLabel_DataExpCommitSize_1=Commit size
+ ;New Comment
+FieldLabel_DataExpProject_2=Tables
+ ;New Comment
+FieldLabel_DataExpProject_3=Seeds
+ ;New Comment
+FieldLabel_MainForm_3=Records per block
+ ;New Comment
+ButtonLabel_MainForm_19=Start data generation
+ ;New Comment
+EDTLabel_DataExpProjectName_1=Project name
+ ;New Comment
+EDTLabel_DataExpDescription_1=Description
+ ;New Comment
+FieldLabel_DataExpTable_1=Records
+ ;New Comment
+FrmTbPg_MainForm_4=Tables
+ ;New Comment
+FrmFieldGrp_MainForm_1=Fields
+ ;New Comment
+ButtonLabel_MainForm_20=Customize field values
+ ;New Comment
+ButtonLabel_MainForm_22=With a query in terms of another field
+ ;New Comment
+ButtonLabel_MainForm_23=With a random range ...
+ ;New Comment
+ButtonLabel_MainForm_24=With an X++ method ...
+ ;New Comment
+ButtonLabel_MainForm_25=Configure field
+ ;Label for the button to configure fields
+ButtonLabel_NewRelationship=New relationship
+ ;Label for the new relationship button
+ButtonLabel_RemoveRelationship=Remove relationship
+ ;Label for the button to remove relationships.
+ButtonLabel_DisableRelationship=Disable relationships
+ ;Label for the button to disable relationships.
+ButtonLabel_DisableEdtRelationship=Disable EDT relationship
+ ;Label for the button to disable EDT relationships.
+FrmTbPg_MainForm_5=Extended Data Types
+ ;New Comment
+FrmFieldGrp_MainForm_2=This view shows all the EDTs present in any field of any table included in the project
+ ;New Comment
+ButtonLabel_MainForm_30=Configure
+ ;Label for the button to configure EDTs.
+ButtonLabel_MainForm_31=Merge EDTs
+ ;New Comment
+ButtonLabel_MainForm_32=Connect EDT fields
+ ;New Comment
+EnumLabel_DataExpSetType_1=Source
+ ;New Comment
+EDTLabel_DataExpEDTName_1=EDT
+ ;New Comment
+FieldLabel_MainForm_4=Configuration
+ ;Label for the field configuration preview.
+FrmTbPg_MainForm_6=Dates
+ ;New Comment
+FrmFieldGrp_MainForm_3=Advanced
+ ;New Comment
+FrmFieldGrp_MainForm_4=Legal entities
+ ;New Comment
+FrmFieldGrp_MainForm_5=Project info
+ ;New Comment
+ButtonLabel_MainForm_33=Distribute over time
+ ;Label of the button to open the form to distribute dates over time.
+FieldLabel_MainForm_5=From
+ ;New Comment
+FieldLabel_MainForm_6=To
+ ;New Comment
+FrmCapt_EDTEditor_1=EDT configuration
+ ;New Comment
+FrmCapt_EDTEditor_2=Fields customized by this EDT
+ ;New Comment
+FrmCapt_EDTEditor_3=Query
+ ;New Comment
+FrmCapt_EDTEditor_4=Range
+ ;New Comment
+ButtonLabel_EDTEditorForm_1=Customize field
+ ;New Comment
+ButtonLabel_EDTEditorForm_2=Enable EDT customization
+ ;New Comment
+ButtonLabel_EDTEditorForm_3=Disable EDT customization
+ ;New Comment
+ButtonLabel_EDTEditorForm_4=Test query
+ ;New Comment
+FrmStaticText_EDTEditorForm_1=Copies the original value from the seed
+ ;New Comment
+FrmStaticText_EDTEditorForm_2=This type of configuration is only available through the DataExpCustomize class APIs.
+ ;New Comment
+EDTLabel_DataExpFieldValues_1=Values
+ ;New Comment
+EDTLabel_DataExpQueryString_1=Query
+ ;New Comment
+EDTLabel_DataExpPrefix_1=Prefix
+ ;New Comment
+TableLabel_DataExpValues_2=Min
+ ;New Comment
+TableLabel_DataExpValues_3=Max
+ ;New Comment
+TableLabel_DataExpProject_2=Distribute over time
+ ;New Comment
+TableLabel_DataExpProject_3=Distribute increment by days
+ ;New Comment
+FrmCapt_FieldEditorForm_1=Field configuration
+ ;New Comment
+FrmCapt_FieldEditorForm_2=Field
+ ;New Comment
+FrmCapt_FieldEditorForm_3=Selected record(s)
+ ;New Comment
+FrmCapt_FieldEditorForm_4=Related fields
+ ;New Comment
+FrmCapt_FieldEditorForm_5=SQL query
+ ;New Comment
+FrmCapt_FieldEditorForm_6=Advanced options
+ ;New Comment
+FrmCapt_FieldEditorForm_7=Range
+ ;New Comment
+ButtonLabel_FieldEditor_1=Add manual relationship
+ ;New Comment
+ButtonLabel_FieldEditor_2=Execute
+ ;New Comment
+FrmStaticText_FieldEditorForm_1=Copies the original value from the seed
+ ;New Comment
+FieldLabel_FieldEditorForm_1=Customization for
+ ;New Comment
+EDTLabel_DataExpFieldSequenceStartDate_1=From
+ ;New Comment
+EDTLabel_DataExpFieldSequenceEndDate_1=To
+ ;New Comment
+TableLabel_DataExpValues_4=Increment by
+ ;New Comment
+FrmCapt_ParamQueryViewForm_1=Parameterized queries
+ ;New Comment
+ButtonLabel_ParamQueryViewForm_1=Add
+ ;New Comment
+FieldLabel_ParamQueryViewForm_1=Customized field
+ ;New Comment
+FieldLabel_ParamQueryViewForm_2=Referenced field
+ ;New Comment
+FrmCapt_RelationForm_1=New Relationship
+ ;New Comment
+FrmCapt_RelationForm_2=Foreign Key
+ ;New Comment
+FrmCapt_RelationForm_3=Primary Key
+ ;New Comment
+ButtonLabel_RelationForm_1=Relationship direction
+ ;New Comment
+ButtonLabel_RelationForm_2=Create
+ ;New Comment
+ButtonLabel_RelationForm_3=Cancel
+ ;New Comment
+FieldLabel_RelationForm_1=Table
+ ;New Comment
+ErrMsg_SelectedNotEDT_1=The selected DataExpValues is not an EDT: %1
+ ;New Comment
+ErrMsg_EDTNotSpecified_1=EDT not specified
+ ;New Comment
+ErrMsg_NoRefEDT_1=There is no field pointing to this EDT.
+ ;New Comment
+ErrMsg_FieldNotExist_1=Field does not exist: %1
+ ;New Comment
+ErrMsg_FieldNotSpecified_1=Field not specified
+ ;New Comment
+ErrMsg_MissingFieldValue_1=The field %1 does not have a dataExpValue
+ ;New Comment
+ErrMsg_MissingPrimField_1=DataExpValues %1 does not have a primary field
+ ;New Comment
+ErrMsg_MaxDate_1=The max date must be greater or equal than the min date
+ ;New Comment
+ErrMsg_MissingRecId_1=Provide a valid DataExpProject.RecId: %1
+ ;New Comment
+ErrMsg_MissingRecId_2=DataExpProject.RecId was not specified
+ ;New Comment
+ErrMsg_MissingProjectName_1=Write a name for the project
+ ;New Comment
+ErrorMsg_MissingRecords_1=There were no inserted records. The project creation was cancelled.
+ ;Error message to alter the user when there were no inserted records while capturing a trace.
+InfoMsg_CreateSample_1=The capture of events has started. Now create the sample of data.
+ ;New Comment
+FrmCapt_SnapShotForm_1=New project
+ ;Title of the form to create new data expansion projects.
+TableLable_DataExpField_2=Is foreign key
+ ;New Comment
+TableLabel_FieldGroup_1=Fields only used from code
+ ;New Comment
+TableLabel_FieldGroup_2=Fields used in the UI
+ ;New Comment
+DataExpField_FieldType=Field type
+ ;New Comment
+ErrMsg_UnableToImportRecord_1=Unable to import the following seed data: %1
+ ;New Comment
+InfoMsg_BoxButton_1=There are conflicts with existing data. Do you want to overwrite the existing records?
+ ;New Comment
+InfoMsg_BoxButton_2=Import seeds
+ ;New Comment
+InfoMsg_BoxButton_3=Do you want to modify the values of the unique indexes before importing the data from the XML to avoid conflicts and try to import the seeds again?
+ ;New Comment
+ErrMsg_ErrText_1=We reached an error while inserting seeds. We tried fixing the unique index values and foreign keys, but were unsuccessful. Your metadata might be corrupted. Please try inserting the seeds manually and importing the project customizations afterward.
+ ;New Comment
+ErrMsg_XMLFileImport_1=Unable to import the Xml file.
+ ;Error message.
+ButtonGroup_Mainform_1=Configure data expansion
+ ;New Comment
+ButtonLabel_MainForm_34=Data configuration
+ ;New Comment
+ButtonLabel_MainForm_35=Start data expansion
+ ;New Comment
+ActionPaneTab_Caption_1=Maintain projects
+ ;New Comment
+ButtonGroup_MainformListPage_1=Create
+ ;New Comment
+InfoMsg_BoxTitle_1=Confirm deletion
+ ;New Comment
+InfoMsg_ConfirmDEL_1=Are you sure you want to delete the selected project?
+ ;New Comment
+InfoMsg_ConfirmDEL_2=Are you sure you want to delete the selected projects?
+ ;New Comment
+ButtonLabel_MainFormListPage_1=Delete
+ ;New Comment
+ActionPaneTab_Caption_3=Advanced options
+ ;New Comment
+ActionPaneTab_Caption_2=Data expansion
+ ;New Comment
+ButtonGroup_MainformListPage_2=Start data expansion
+ ;New Comment
+InfoMsg_ConfirmDEL_3=Are you sure you want to delete the selected project and its seed records?
+ ;New Comment
+InfoMsg_ConfirmDEL_4=Are you sure you want to delete the selected projects and their seed records?
+ ;New Comment
+InfoMsg_ConfirmDEL_5=Are you sure you want to delete the data from the last expansion of the selected project?
+ ;New Comment
+InfoMsg_ConfirmDEL_6=Are you sure you want to delete the data from the last expansion of the selected projects?
+ ;New Comment
+FrmCapt_StartExp_1=Start data expansion
+ ;New Comment
+ButtonGroup_DetailsFormActionPane_1=Validation
+ ;New Comment
+ButtonGroup_DetailsFormActionPane_2=Queries
+ ;New Comment
+ButtonGroup_DetailsFormActionPane_3=Seed records
+ ;New Comment
+MenuItemLabel_OpenDataExp=Data expansion
+ ;Label for the menu item that opens the Data Expansion Tool.
+MenuItemHelp_OpenDataExp=Opens the Data Expansion Tool.
+ ;Help text for the menu item that opens the Data Expansion Tool.
+ButtonGroup_FieldEditor_1=Selected record(s)
+ ;New Comment
+ButtonGroup_FieldEditor_2=Related fields
+ ;New Comment
+ButtonGroup_FieldEditor_3=Relations
+ ;New Comment
+FieldGroup_FieldEditor_1=Customization type
+ ;New Comment
+TableLabel_DataExpField_2=Is unique
+ ;New Comment
+FieldLabel_RelationForm_2=Field
+ ;New Comment
+FrmStatic_RelationForm_1=Direction of relation is from left to right
+ ;New Comment
+EDTLabel_DataExpSqlBaseQuery_1=SQL base query
+ ;New Comment
+Enum_TraceStatus=Trace status
+ ;Label for the trace status enum.
+Enum_TraceStatus_NotStarted=Not started
+ ;Label for the trace status enum.
+Enum_TraceStatus_Tracing=Tracing
+ ;Label for the trace status enum.
+Enum_TraceStatus_Ended=Ended
+ ;Label for the trace status enum.
+ButtonGroup_ImportProject=Project
+ ;Label for the import and export projects button group.
+ButtonGroup_ImportConfig=Configuration
+ ;Label for the import and export configurations button group.
+ButtonGroup_DetailsFormActionPane_4=Reference table records
+ ;New Comment
+FrmCap_TableDeleteRecords_1=Delete reference table records
+ ;New Comment
+FrmStaticText_TableDeleteRecords_1=Mark record(s) for deletion
+ ;New Comment
+MenuItemLabel_OpenTableDeleteRecords_1=Delete table records
+ ;New Comment
+ButtonLabel_TableDeleteRecords_1=Delete record(s)
+ ;New Comment
+NewLabel1=Cancel
+ ;New Comment
+ErrorMessage_InvalidDateRange=The end date should be greater or equal to the start date.
+ ;Error message to alert the user about an invalid data range.
+FrmDetails_TableDetailsLabel=Table details
+ ;Label for the table details group.
+DisplayMenuItemEdtList=Configure
+ ;Caption for the display menu item to open the Form with the list of EDTs.
+FormCaptionEdtList=Extended data types
+ ;New Comment
+CopyValues=Copy original values.
+ ;Label for the default configuration which copies the original value of the field.
+ErrorMessageStringOverflow=The configuration of the field %1.%2 will generate values that exceed the maximum allowed length of %3 characters.
+ ;Error message about string overflow on field configurations.
+ButtonLabel_EnableRelationship=Enable relationship
+ ;Label for the button to enable relationships.
+ButtonLabel_EnableEdtRelationship=Enable EDT relationship
+ ;Label for the button to enable EDT relationships.
+Label_TableName=Table name
+ ;Label for the table name
+DETNodeUniqueIndexes=Unique indexes
+ ;Label for the unique indexes node in the tree control.
+DETNodeDETRelations=Manually specified relationships
+ ;Label for the manually specified relationships node in the tree control.
+Msg_SQLStats_Enable=enabled
+ ;Used to indicate that a SQL option was enabled.
+Msg_SQLStats_Disable=disabled
+ ;Used to indicate that a SQL option was disabled.
+Msg_SQLConfig=SQL configuration
+ ;Label for SQL configuration.
+RandomConfigDescription=Random: %1
+ ;Description for a random range or random query configuration.
+ParamQueryDescription=Param. query: %1
+ ;Description for parameterized queries configuration.
+MissingRandomQuery=The random query is missing.
+ ;Error message for missing random queries.
+MissingParamQuery=The param. query is missing.
+ ;Error message for missing parameterized queries.
+XppMethodDescription=Method: %1::%2
+ ;Description for the X++ methods configuration.
+XppMethodNotSpecified=The method was not specified.
+ ;Error message for missing X++ methods configuration.
+StringRangeDescription=[%1%2..%1%3]
+ ;Description for a range of strings.
+NumberRangeDescription=[%1..%2]
+ ;Description for a range of numbers.
+DateRangeDescription=[%1..%2]
+ ;Description for a range of dates.
+GuidDescription=newguid();
+ ;Description for guid field configuration.
+LabelOriginalValues=Original values
+ ;Label
+LabelRefreshOrigValues=Refresh original values
+ ;Label
+UnableDisplayValues=Unable to display the value.
+ ;Error message.
+EnumLabel_DataExpSetType_Query=Query
+ ;New Comment
+EnumLabel_DataExpSetType_Range=Range
+ ;New Comment
+EnumLabel_DataExpSetType_Copy=Copy values
+ ;New Comment
+EnumLabel_DataExpSetType_RandomQuery=Random query
+ ;New Comment
+EnumLabel_DataExpSetType_RandomRange=Random range
+ ;New Comment
+EnumLabel_DataExpSetType_ParamQuery=Parameterized query
+ ;New Comment
+EnumLabel_DataExpSetType_AxMethod=X++ method
+ ;New Comment
+ErrorUnableToGetTableNameXmlNode=Unable to get the table name and the RecId from the XML node: %1
+ ;Error message.
+ErrorUnableToGenerateSqlXmlNode=Unable to generate the insert statement from the XML node: %1
+ ;Error message.
+ErrorNoRecordsInsertedXmlFile=There were no records inserted from the XML file.
+ ;Error message.
+DefaultProjectName=Project
+ ;Default project name.
+ErrorTypeNotSupportedCombinations=The data type %1 are not supported for configurations with combinations and repetitions. Field: %2.%3.
+ ;Error message.
+MenuItem_DataExpProjectRename=Change project name and description
+ ;New Comment
+FrmButtonGroup_UpdateProject=Update
+ ;New Comment
+PrefixImportFieldsConfigurations=Import fields configurations
+ ;Prefix for Infolog messages during the import of fields configurations.
+PrefixImportAdditionalRelationships=Import additional relationships metadata
+ ;Prefix for Infolog messages during the import of additional relationships metadata.
+ConfigKeyLabel=Data Expansion Framework
+ ;Enables the Data Expansion Framework including the UI tool and APIs.
+ConfigKeyIsNotEnabled=The Data Expansion Framework is disabled. Access to this component is denied.
+ ;Message to alert the user that the Data Expansion Framework is disabled.
+ExclusiveLock=Exclusive lock type.
+ ;Enum element label.
+LockStatusLabel=Lock status for data expansion projects.
+ ;Enum label.
+LockStatusGrantedImmediately=Lock granted immediately.
+ ;Enum element label.
+LockStatusGrantedAfterWait=Lock granted after wait.
+ ;Enum element label.
+LockStatusTimedOut=Lock timed out.
+ ;Enum element label.
+InvalidKeywordInSqlStmt=The %1 keyword cannot be included in SQL statements.
+ ;Error message.
+SemicolonNotAllowedInSqlQueries=Semicolons are not allowed in SQL queries.
+ ;Error message.
+UnexpectedLockStatus=Unexpected lock status code: %1
+ ;Error message.
+CannotReleaseLockNotAcquired=The lock %1 cannot be released because it has not been acquired by the current instance.
+ ;Error message.
+UnexpectedLockTestResult=Unexpected lock test result code: %1.
+ ;Error message.
+BatchHeaderCaption=Data Expansion: %1%2%3
+ ;Batch header caption.
+ErrorOnlyOneProjectIsAllowedAtTheSameTime=Only one project creation or data generation is allowed at the same time. Try again later.
+ ;Error message.
+LockType=The type of lock.
+ ;Enum lable.
+InsuficientNumberOfBatchThreads=The number of batch threads must be greater or equal to two to run a data generation.
+ ;Error message.
+UnableToFindCompletionBatchTask=Unable to find the completion batch task.
+ ;Error message.
+DataGenerationLock=Data generation lock.
+ ;Label.
+BatchServiceNotRunning=The Batch service is not running. 
+ ;Error message to notify the user when the Batch service is not running.

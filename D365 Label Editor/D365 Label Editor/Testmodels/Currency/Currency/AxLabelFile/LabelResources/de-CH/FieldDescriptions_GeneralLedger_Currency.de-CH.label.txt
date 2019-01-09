@@ -1,0 +1,50 @@
+CurrencyEuroDenomination_CurrencyCode=Der Währungscode, der die Triangulationswährung darstellt.
+ ;Description text for the CurrencyCode control on the CurrencyEuroDenomination form
+Currency_CurrencyCode=Die eindeutige Kennung für die ausgewählte Währung. Der Code kann bis zu drei Zeichen enthalten. USD ist zum Beispiel US- Dollar, CHF ist Schweizer Franken und CAD ist der kanadische Dollar.
+ ;Description text for the CurrencyCode control on the Currency form
+Currency_GridCurrencyName=Der Name der ausgewählten Währung. Der Name wird zusammen mit dem Währungscode auf Schecks und anderen Dokumenten gedruckt.
+ ;Description text for the GridCurrencyName control on the Currency form
+Currency_CurrencyName=Der Name der ausgewählten Währung. Der Name wird zusammen mit dem Währungscode auf Schecks und anderen Dokumenten gedruckt.
+ ;Description text for the CurrencyName control on the Currency form
+Currency_Symbol=Das Symbol der ausgewählten Währung. Symbole werden häufig in Berichten verwendet.
+ ;Description text for the Symbol control on the Currency form
+Currency_GridCurrency=Der Standardcode der Währung gemäss der ISO-Definition (International Standards Organization, Internationale Organisation für Normung).
+ ;Description text for the GridCurrency control on the Currency form
+Currency_ISOCode=Der Standardcode der Währung gemäss der ISO-Definition (International Standards Organization, Internationale Organisation für Normung).
+ ;Description text for the ISOCode control on the Currency form
+Currency_IsEuro=Die Währung, in der andere Währungen, die als Denominationswährungen definiert sind, trianguliert werden.
+ ;Description text for the IsEuro control on the Currency form
+Currency_Group_OnLineConversionTool=Aktivieren Sie diese Option, um die ausgewählte Währung in die Berechnungen des Onlinetools für die numerische Konvertierung einzubeziehen. Das Tool rechnet Beträge, die in Buchungspositionen in der Buchhaltungswährung eingegeben wurden, automatisch in Beträge der ausgewählten Währung um. Die umgerechneten Beträge in der ausgewählten Währung werden nicht in der Datenbank gespeichert.
+ ;Description text for the Group_OnLineConversionTool control on the Currency form
+Currency_Group_CurrencyPrefix=Geben Sie den Text ein, der vor dem Betrag in der ausgewählten Währung gedruckt wird, wenn die Option Konvertierung aktiviert ist.
+ ;Description text for the Group_CurrencyPrefix control on the Currency form
+Currency_Group_CurrencySuffix=Geben Sie den Text ein, der hinter dem Betrag in der ausgewählten Währung gedruckt wird, wenn die Option Konvertierung aktiviert ist.
+ ;Description text for the Group_CurrencySuffix control on the Currency form
+Currency_GeneralRoundingPrecision=Hier können Sie die Einheit für Rundungsbeträge eingeben. Sie könnten z. B. 0,10 oder 1,00 eingeben.
+ ;Description text for the GeneralRoundingPrecision control on the Currency form
+Currency_RoundOffSalesOrder=Hier können Sie die Einheit für Rundungsbeträge in Aufträgen, Bestellungen oder Preisen eingeben.
+ ;Description text for the RoundOffSalesOrder control on the Currency form
+Currency_RoundOffPurch=Hier können Sie die Einheit für Rundungsbeträge in Aufträgen, Bestellungen oder Preisen eingeben.
+ ;Description text for the RoundOffPurch control on the Currency form
+Currency_Price_RoundOffPrice=Hier können Sie die Einheit für Rundungsbeträge in Aufträgen, Bestellungen oder Preisen eingeben.
+ ;Description text for the Price_RoundOffPrice control on the Currency form
+Currency_AssetDep_JP_RoundOffAssetDep_JP=Hier können Sie die Einheit für Rundungsbeträge in Aufträgen, Bestellungen oder Preisen eingeben.
+ ;Description text for the AssetDep_JP_RoundOffAssetDep_JP control on the Currency form
+Currency_RoundOffTypeSalesOrder=Wählen Sie die Rundungskonvention für die Zahl rechts der Rundungseinheit aus, die im Feld Rundungsregel eingegeben wurde. Wählen Sie Normal, um Zahlen 5 und höher aufzurunden und Nummern, die kleiner als 5 sind, abzurunden. Wählen Sie Nach unten, um alle Zahlen abzurunden. Wählen Sie Aufrunden, um alle Zahlen aufzurunden.
+ ;Description text for the RoundOffTypeSalesOrder control on the Currency form
+Currency_RoundOffTypePurch=Wählen Sie die Rundungskonvention für die Zahl rechts der Rundungseinheit aus, die im Feld Rundungsregel eingegeben wurde. Wählen Sie Normal, um Zahlen 5 und höher aufzurunden und Nummern, die kleiner als 5 sind, abzurunden. Wählen Sie Nach unten, um alle Zahlen abzurunden. Wählen Sie Aufrunden, um alle Zahlen aufzurunden.
+ ;Description text for the RoundOffTypePurch control on the Currency form
+Currency_Price_RoundOffTypePrice=Wählen Sie die Rundungskonvention für die Zahl rechts der Rundungseinheit aus, die im Feld Rundungsregel eingegeben wurde. Wählen Sie Normal, um Zahlen 5 und höher aufzurunden und Nummern, die kleiner als 5 sind, abzurunden. Wählen Sie Nach unten, um alle Zahlen abzurunden. Wählen Sie Aufrunden, um alle Zahlen aufzurunden.
+ ;Description text for the Price_RoundOffTypePrice control on the Currency form
+Currency_AssetDep_JP_RoundOffTypeAssetDep_JP=Wählen Sie die Rundungskonvention für die Zahl rechts der Rundungseinheit aus, die im Feld Rundungsregel eingegeben wurde. Wählen Sie Normal, um Zahlen 5 und höher aufzurunden und Nummern, die kleiner als 5 sind, abzurunden. Wählen Sie Nach unten, um alle Zahlen abzurunden. Wählen Sie Aufrunden, um alle Zahlen aufzurunden.
+ ;Description text for the AssetDep_JP_RoundOffTypeAssetDep_JP control on the Currency form
+ExchangeRateProviderConfiguration_ExchangeRateProviderConfiguration_Name=Der Name des Wechselkursanbieters.
+ ;Description text for the ExchangeRateProviderConfiguration_Name control on the ExchangeRateProviderConfiguration form
+ExchangeRateProviderConfiguration_ExchangeRateProviderConfiguration_Name1=Der Name des Wechselkursanbieters.
+ ;Description text for the ExchangeRateProviderConfiguration_Name1 control on the ExchangeRateProviderConfiguration form
+ExchangeRateProviderConfiguration_ExchangeRateProviderConfigurationDetails_Key=Der eindeutige Bezeichner für jede Konfigurationsinformation, die vom Anbieter benötigt wird. Diese Informationen werden automatisch für jeden Wechselkursanbieter hinzugefügt, den Sie hinzufügen, indem Sie auf die Schaltfläche Hinzufügen klicken.
+ ;Description text for the ExchangeRateProviderConfigurationDetails_Key control on the ExchangeRateProviderConfiguration form
+ExchangeRateProviderConfiguration_ExchangeRateProviderConfigurationDetails_Value=Informationen für jeden Schlüssel. Diese Informationen werden für jeden Wechselkursanbieter hinzugefügt, den Sie hinzufügen, indem Sie auf die Schaltfläche Hinzufügen klicken.
+ ;Description text for the ExchangeRateProviderConfigurationDetails_Value control on the ExchangeRateProviderConfiguration form
+CurrencyNameDeclension_W_InsertAndBeforePenny_InsertAndBeforePenny=Wählen Sie diese Option aus, um die Konjunktion und zwischen Einheiten und Teilen zu drucken.
+ ;Description text for the InsertAndBeforePenny_InsertAndBeforePenny control on the CurrencyNameDeclension_W form

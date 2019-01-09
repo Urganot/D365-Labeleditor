@@ -1,0 +1,8 @@
+NewLabel0=Label files created on 09/01/2017 17:17:09 for label file Id Security and language en-US
+ ;Label file comment - see above label
+Security=Security
+ ;Area name
+RemoveInvalidSecurityRoles=Removes invalid security role records
+ ;Label for the upgrade step that removes invalid security role records.
+InvalidUserIdValue='%1' is not a valid value for User ID.
+ ;Error message for user id.

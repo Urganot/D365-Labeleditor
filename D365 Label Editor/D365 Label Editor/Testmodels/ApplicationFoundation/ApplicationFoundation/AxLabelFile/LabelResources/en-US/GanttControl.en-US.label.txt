@@ -1,0 +1,66 @@
+NewLabel0=Label files created on 10/13/2015 02:35:04 for label file Id GanttControl and language en-US
+ ;Label file comment - see above label
+GanttControlDescription=Gantt control. Use arrow keys to navigate between the activities and press enter to open dialog.
+ ;General description
+GanttControlRowChanged=Row selection changed
+ ;Screen reader: Change of task selection
+GanttControlActivityText=Text: {0}
+ ;{0} = The text of the activity
+GanttControlDate=Date: {0}
+ ;{0} = The date time of the activity
+GanttControlToDate=To date: {0}
+ ;{0} = The to date of the activity
+GanttControlWorkTimeInterval=Work time interval: {0} to {1}
+ ;Work time interval. {0}=The start datetime of the work interval, {1}=The end datetime of the interval
+GanttControlOverlapInterval=Overlap interval: {0} to {1}
+ ;Overlap (group overutilization) interval. {0}=The start datetime of the overlap interval, {1}=The end datetime of the interval
+GanttControlTextContentDivider=, 
+ ;Divider between text content
+GanttControlMainTextDivider=. 
+ ;Divider between major text elements
+GanttControlTaskSymbol=Symbol: {0}
+ ;{0} = The name of the symbol on the activity
+GanttControlMarker=Marker: {0} at {1}
+ ;Heading for explanation of additional task markers. {0}=The marker text, {1}=The date time
+GanttControlLinkIncoming=Incoming link from {0}
+ ;{0}=Text for the activity that is linked from
+GanttControlLinkOutgoing=Outgoing link to {0}
+ ;{0} = Text for the activity that is linked to
+GanttControlChart=Chart
+ ;Group header for the gantt chart
+GanttControlUseTheme=Use theme colors
+ ;Option to use theme colors
+GanttSummaryType=The type of summary to show in a summary activity
+ ;SummaryBar, TaskPreview or TaskPreviewWithOverlap
+GanttTotalDurationSummaryType=Show a continous bar between the start of the first task and the end of the last task in the summary activity
+ ;SummaryBar
+GanttIndividualTasksSummaryType=Show bars for the individual subtasks in the summary activity
+ ;TaskPreview
+GanttControlShowOverlapSummaryType=Show bars for the individual subtasks in the summary activity, and highlight group overutilization
+ ;TaskPreviewWithOverlap
+GanttControlDecreaseIndent=Outdent
+ ;Decrease indent button in tutorial
+GanttControlIncreaseIndent=Indent
+ ;Increase indent button in tutorial
+GanttControlNewTask=Add
+ ;New task button in tutorial
+GanttControlVerticalMoveMode=Vertical move
+ ;What kind of vertical drag-and-drop to allow in the Gantt chart
+GanttControlVerticalMoveModeNone=None
+ ;No vertical movements allowed
+GanttControlVerticalMoveModeSameLevel=Same level
+ ;Vertical movements allowed while keeping the activity on the same indentation level
+GanttControlVerticalMoveModeFree=Free
+ ;Vertical movements allowed and the activity can change identation level
+GanttControlDeleteTask=Remove
+ ;Delete task button in tutorial
+GanttControlActivityUpdated=Activity updated
+ ;Screen reader: Activity updated
+GanttControlActivityAdded=Activity added
+ ;Screen reader: Activity added
+GanttControlActivityRemoved=Activity removed
+ ;Screen reader: Activity removed
+GanttControlExpandAll=Expand all
+ ;Button in Gantt tutorial that expands all collapsed groups
+GanttControlCollapseAll=Collapse all
+ ;Button in Gantt tutorial that collapses all expanded groups

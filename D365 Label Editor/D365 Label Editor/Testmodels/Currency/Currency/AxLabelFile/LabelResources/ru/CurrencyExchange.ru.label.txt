@@ -1,0 +1,152 @@
+NewLabel0=Файлы меток, созданные 29.05.2014 в 13:27:47 для кода файла меток CurrencyExchange и языка en-US
+ ;Label file comment - see above label
+ConversionFactor=Коэффициент преобразования
+ ;Exchange rate conversion factor
+ExchangeValue=Значение валютного курса
+ ;Exchange rates exchange value
+TriangulationCurrencies=Валюты триангуляции
+ ;New Comment
+AddRemoveExchangeRates=Добавить или удалить валютные курсы
+ ;New Comment
+TmpExchangeRatesDevDoc=Таблица TmpExchangeRates содержит временные записи, используемые при отображении формы ExchangeRates.
+ ;New Comment
+ExchangeRateEntityDevDoc=The ExchangeRateEntity data entity is used to store exchange rates for a currency pair and a rate type.
+ ;{locked}Exchange rate entity developer documentation
+ExchangeRateStagingDevDoc=Таблица промежуточного хранения ExchangeRateEntity используется для импорта и экспорта валютных курсов для пары валют и типа курса.
+ ;Exchange rate stating table developer documentation
+InvalidExchangeRate=Не удалось импортировать валютный курс для пары валют {0} и {1}. Обратитесь за помощью к поставщику или введите валютный курс для {2} вручную.
+ ;Exchange rate provider error in C#
+ISONameCubanConvertiblePeso=Кубинское конвертируемое песо
+ ;ISO Currency Name
+ISONameTurkmenistanNewManat=Новый туркменский манат
+ ;ISO Currency Name
+ISONameZambianKwacha=Замбийская квача
+ ;ISO Currency Name
+ExchangeRateImport=Импорт валютных курсов
+ ;Entity privilege level
+ExchangeRateExport=Экспорт валютных курсов
+ ;Entity privilege level
+Supplemental_CurrencyImport=Импорт валют
+ ;Entity privilege level
+Supplemental_CurrencyExport=Экспорт валют
+ ;Entity privilege level
+Currency_MessageDeveloper_UpdateCurrencyPair=Updating currency pair from currency %1 to currency %2
+ ;{Locked}
+Currency_MessageDeveloper_AddNewRate=Adding new exchange rate %1 valid from %2 from currency %3 to currency %4
+ ;{Locked}
+Currency_MessageDeveloper_ActivateProvider=Activating exchange rate provider {0}
+ ;{Locked}
+Currency_MessageDeveloper_SearchingAssembly=Searching for exchange rate providers in assembly {0}
+ ;{Locked}
+Currency_EntityEnum_EntityName=Валюты
+ ;Entity name
+Currency_EntityDeveloper_CurrencyEntityDevDoc=The CurrencyEntity entity contains the currencies that are used in the application for foreign exchange. Exchange rates are created based on these currencies.
+ ;{Locked}
+Currency_EntityField_CurrencyCode=Код валюты
+ ;CurrencyEntity field name.
+Currency_EntityLabel_CurrencyRevaluationAccountLabel=Счет переоценки валюты книги учета
+ ;Label for CurrencyRevaluationAccountEntity
+Currency_EntityDeveloper_CurrencyRevaluationAccountEntityDevDoc=The CurrencyRevaluationAccountEntity entity contains the gain loss account for individual currencies.
+ ;{Locked}
+Currency_EntityFieldLabel_RoundingRuleFixedAssetDepreciation=Правило округления амортизации основных средств
+ ;CurrencyEntity field label
+Currency_EntityFieldLabel_RoundingMethodFixedAssetDepreciation=Метод округления амортизации основных средств
+ ;CurrencyEntity field label
+Currency_EntityFieldLabel_RoundingMethodPrices=Метод округления цен
+ ;CurrencyEntity field label
+Currency_EntityFieldLabel_RoundingMethodPurchaseOrders=Метод округления заказов на покупку
+ ;CurrencyEntity field label
+Currency_EntityFieldLabel_RoundingMethodSalesOrders=Метод округления заказов на продажу
+ ;CurrencyEntity field label
+Currency_EntityFieldLabel_RoundingRulePrices=Правило округления цен
+ ;CurrencyEntity field label
+Currency_EntityFieldLabel_RoundingRulePurchaseOrders=Правило округления заказов на покупку
+ ;CurrencyEntity field label
+Currency_EntityFieldLabel_RoundingRuleSalesOrders=Правило округления заказов на продажу
+ ;CurrencyEntity field label
+EntitiesMaintainDuty=Ведение шаблона объектов валюты
+ ;Maintain Currency entities duty.
+EntitiesViewDuty=Просмотр шаблона объектов валюты
+ ;View Currency entities duty.
+Currency_EntityMessage_RateMustBePositive=Валютный курс должен быть больше нуля.
+ ;ExchangeRateEntity set based error message.
+Currency_EntityTitle=Валютные курсы
+ ;ExchangeRateEntity title.
+Currency_EntityMessage_InvalidCurrency=Заданная валюта недопустима.
+ ;ExchangeRateEntity error.
+Currency_EntityMessage_MissingRate=Невозможно найти валютный курс для типа валютного курса %1 между валютами %2 и %3 на дату обмена %4. Чтобы устранить эту ошибку, обратитесь к системному администратору.
+ ;Set based error message.
+Currency_EntityLabel_ExchangeRateTypeLabel=Тип валютного курса
+ ;Label for ExchangeRateTypeEntity
+Currency_EntityDeveloper_ExchangeRateTypeEntityDevDoc=The ExchangeRateTypeEntity entity stores exchange rate types that allow exchange rates to be categorized.
+ ;{Locked}
+Currency_ConfigField_ServiceTimeout=Service Timeout
+ ;{Locked}
+Currency_ConfigField_OandaName=Foreign Exchange Rates Powered by OANDA
+ ;{Locked}
+Currency_ConfigField_OandaAPIKey=API key
+ ;{Locked}
+Currency_FieldTitle_Value=Значение
+ ;Exchange rate provider configuration value field title.
+Currency_ConfigField_DecimalPlaces=Decimal places
+ ;{Locked}
+Currency_ConfigMessage_DecimalPlacesInvalid=Количество десятичных знаков должно находиться в диапазоне от 1 до 12
+ ;Decimal places validation error for OANDA exchange rate provider.
+Currency_ConfigMessage_OANDAKeyRequired=Чтобы импортировать обменные курсы, для этого поставщика требуется действительный ключ от OANDA. 
+ ;Warning message for the OANDA exchange rate provider.
+Currency_ConfigField_QuoteType=Тип коммерческого предложения
+ ;Quote type for OANDA provider.
+Currency_ConfigEnum_QuoteTypeAverageBid=Средняя цена спроса
+ ;Quote type average bid
+Currency_ConfigEnum_QuoteTypeAverageAsk=Средняя цена предложения
+ ;Quote type average ask
+Currency_ConfigEnum_QuoteTypeMidpoint=Среднее значение
+ ;Quote type midpoint
+Currency_ConfigEnum_QuoteTypeHighBid=Максимальная цена спроса
+ ;Quote type high bid
+Currency_ConfigEnum_QuoteTypeHighAsk=Максимальная цена предложения
+ ;Quote type high ask
+Currency_ConfigEnum_QuoteTypeLowBid=Минимальная цена спроса
+ ;Quote type low bid
+Currency_ConfigEnum_QuoteTypeLowAsk=Минимальная цена предложения
+ ;Quote type low ask
+Currency_ConfigEnum_QuoteTypePeriodAverageBid=Средняя цена спроса за период
+ ;Quote type average over time period.
+Currency_ConfigEnum_QuoteTypePeriodAverageAsk=Средняя цена предложения за период
+ ;Quote type average over time period.
+Currency_ConfigField_SingleRateForDateRange=Единая ставка для диапазона дат
+ ;exchange rate provider configuration option.
+Currency_EntityLabel_CurrencyISOCode=Коды валют по стандарту ISO
+ ;CurrencyISOCodeEntity label.
+Currency_EntityDeveloper_CurrencyISOCodeEntityDevDoc=The CurrencyISOCodeEntity entity contains the list of ISO Currency Codes that are supported in the application as defined by the International Organization for Standardization.
+ ;{Locked}
+Currency_ModuleName=Валюта
+ ;Displayed in upgrade.
+Currency_UpgradeStep=Поле с зашифрованным значением.
+ ;Upgrade step.
+Currency_ParameterGroup=Валюта
+ ;Field group caption for the SystemParameters form.
+Currency_TableFieldLabel_SystemParametersCurrencyCodeLabel=Системная валюта
+ ;Label for the SystemCurrencyCode field on the SystemParameters table.
+Currency_TableFieldLabel_SystemParametersExchangeRateTypeLabel=Системный тип валютного курса
+ ;Label for the SystemExchangeRateType field on the SystemParameters table.
+ExchangeRateCurrencyPairCalculationRulesEntityMaintain=Ведение правил расчета обменного курса для объекта налога
+ ;Maintain privilege for ExchangeRateCurrencyPairCalculationRulesEntity
+ExchangeRateCurrencyPairCalculationRulesEntityView=Просмотр правил расчета обменного курса для объекта налога
+ ;View privilege for ExchangeRateCurrencyPairCalculationRulesEntity
+Currency_Message_CurrencyRequiredForRounding=Для округления требуется валюта.
+ ;Error from currency rounding API's
+Currency_Message_CurrencyRequiredForDecimals=Для получения количества десятичных знаков требуется валюта.
+ ;Error from currency rounding API's
+Currency_Message_CurrencyRequiredForRoundingPrecision=Для получения точности округления требуется валюта.
+ ;Error from currency rounding API's
+Currency_ConfigField_PreventImportOnNationalHoliday=Предотвращать импорт в дни государственных праздников
+ ;Exchange rate provider configuration option.
+Currency_ConfigField_QuoteTypeLocked=Quote type
+ ;{Locked}
+Currency_Message_QuoteTypeMissing=Не удалось найти клавишу конфигурации "Тип коммерческого предложения" поставщика валютного курса. Щелкните "Сбросить значения", а затем выберите значение "Тип коммерческого предложения" на странице "Настройка поставщиков валютных курсов".  
+ ;Exchange rate provider configuration error
+Currency_Message_StartDateAlreadyExists=Невозможно добавить валютный курс, так как дата начала уже существует. Введите дату начала, которая еще не существует.
+ ;Exchange rate error message
+Currency_Monetary_unit_declensions=Склонения единиц валюты
+ ;Monetary unit declensions

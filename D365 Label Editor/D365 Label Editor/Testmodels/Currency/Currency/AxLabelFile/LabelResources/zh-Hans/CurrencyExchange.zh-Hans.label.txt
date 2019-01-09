@@ -1,0 +1,152 @@
+NewLabel0=为标签文件 ID CurrencyExchange 和语言 en-US 于 05/29/2014 13:27:47 创建的标签文件
+ ;Label file comment - see above label
+ConversionFactor=换算系数
+ ;Exchange rate conversion factor
+ExchangeValue=交换值
+ ;Exchange rates exchange value
+TriangulationCurrencies=三边转换币种
+ ;New Comment
+AddRemoveExchangeRates=添加或删除汇率
+ ;New Comment
+TmpExchangeRatesDevDoc=TmpExchangeRates 表存放在显示 ExchangeRates 窗体时使用的临时记录。
+ ;New Comment
+ExchangeRateEntityDevDoc=The ExchangeRateEntity data entity is used to store exchange rates for a currency pair and a rate type.
+ ;{locked}Exchange rate entity developer documentation
+ExchangeRateStagingDevDoc=ExchangeRateEntity 暂存表用于导入和导出币种对的汇率以及汇率类型。
+ ;Exchange rate stating table developer documentation
+InvalidExchangeRate=无法导入币种对 {0} 和 {1} 的汇率。请与您的提供商联系以便寻求协助，或者手动输入 {2} 的汇率。
+ ;Exchange rate provider error in C#
+ISONameCubanConvertiblePeso=古巴可兑换比索
+ ;ISO Currency Name
+ISONameTurkmenistanNewManat=土库曼斯坦新马纳特
+ ;ISO Currency Name
+ISONameZambianKwacha=赞比亚克瓦查
+ ;ISO Currency Name
+ExchangeRateImport=导入汇率
+ ;Entity privilege level
+ExchangeRateExport=导出汇率
+ ;Entity privilege level
+Supplemental_CurrencyImport=导入币种
+ ;Entity privilege level
+Supplemental_CurrencyExport=导出币种
+ ;Entity privilege level
+Currency_MessageDeveloper_UpdateCurrencyPair=Updating currency pair from currency %1 to currency %2
+ ;{Locked}
+Currency_MessageDeveloper_AddNewRate=Adding new exchange rate %1 valid from %2 from currency %3 to currency %4
+ ;{Locked}
+Currency_MessageDeveloper_ActivateProvider=Activating exchange rate provider {0}
+ ;{Locked}
+Currency_MessageDeveloper_SearchingAssembly=Searching for exchange rate providers in assembly {0}
+ ;{Locked}
+Currency_EntityEnum_EntityName=币种
+ ;Entity name
+Currency_EntityDeveloper_CurrencyEntityDevDoc=The CurrencyEntity entity contains the currencies that are used in the application for foreign exchange. Exchange rates are created based on these currencies.
+ ;{Locked}
+Currency_EntityField_CurrencyCode=币种代码
+ ;CurrencyEntity field name.
+Currency_EntityLabel_CurrencyRevaluationAccountLabel=币种分类帐重估科目
+ ;Label for CurrencyRevaluationAccountEntity
+Currency_EntityDeveloper_CurrencyRevaluationAccountEntityDevDoc=The CurrencyRevaluationAccountEntity entity contains the gain loss account for individual currencies.
+ ;{Locked}
+Currency_EntityFieldLabel_RoundingRuleFixedAssetDepreciation=固定资产折旧舍入规则
+ ;CurrencyEntity field label
+Currency_EntityFieldLabel_RoundingMethodFixedAssetDepreciation=固定资产折旧舍入方法
+ ;CurrencyEntity field label
+Currency_EntityFieldLabel_RoundingMethodPrices=价格舍入方法
+ ;CurrencyEntity field label
+Currency_EntityFieldLabel_RoundingMethodPurchaseOrders=采购订单舍入方法
+ ;CurrencyEntity field label
+Currency_EntityFieldLabel_RoundingMethodSalesOrders=销售订单舍入方法
+ ;CurrencyEntity field label
+Currency_EntityFieldLabel_RoundingRulePrices=价格舍入规则
+ ;CurrencyEntity field label
+Currency_EntityFieldLabel_RoundingRulePurchaseOrders=采购订单舍入规则
+ ;CurrencyEntity field label
+Currency_EntityFieldLabel_RoundingRuleSalesOrders=销售订单舍入规则
+ ;CurrencyEntity field label
+EntitiesMaintainDuty=维护货币实体主数据
+ ;Maintain Currency entities duty.
+EntitiesViewDuty=查看货币实体主数据
+ ;View Currency entities duty.
+Currency_EntityMessage_RateMustBePositive=汇率必须大于零
+ ;ExchangeRateEntity set based error message.
+Currency_EntityTitle=汇率
+ ;ExchangeRateEntity title.
+Currency_EntityMessage_InvalidCurrency=指定的货币无效
+ ;ExchangeRateEntity error.
+Currency_EntityMessage_MissingRate=无法找到兑换日期 %4 的币种 %2 和 %3 之间的汇率类型 %1 的汇率。要纠正此错误，请与您的系统管理员联系。
+ ;Set based error message.
+Currency_EntityLabel_ExchangeRateTypeLabel=汇率类型
+ ;Label for ExchangeRateTypeEntity
+Currency_EntityDeveloper_ExchangeRateTypeEntityDevDoc=The ExchangeRateTypeEntity entity stores exchange rate types that allow exchange rates to be categorized.
+ ;{Locked}
+Currency_ConfigField_ServiceTimeout=Service Timeout
+ ;{Locked}
+Currency_ConfigField_OandaName=Foreign Exchange Rates Powered by OANDA
+ ;{Locked}
+Currency_ConfigField_OandaAPIKey=API key
+ ;{Locked}
+Currency_FieldTitle_Value=值
+ ;Exchange rate provider configuration value field title.
+Currency_ConfigField_DecimalPlaces=Decimal places
+ ;{Locked}
+Currency_ConfigMessage_DecimalPlacesInvalid=小数位数必须介于 1 和 12 之间
+ ;Decimal places validation error for OANDA exchange rate provider.
+Currency_ConfigMessage_OANDAKeyRequired=此提供方需要来自 OANDA 的有效密钥才能导入汇率。
+ ;Warning message for the OANDA exchange rate provider.
+Currency_ConfigField_QuoteType=报价类型
+ ;Quote type for OANDA provider.
+Currency_ConfigEnum_QuoteTypeAverageBid=平均出价
+ ;Quote type average bid
+Currency_ConfigEnum_QuoteTypeAverageAsk=平均询价
+ ;Quote type average ask
+Currency_ConfigEnum_QuoteTypeMidpoint=中点
+ ;Quote type midpoint
+Currency_ConfigEnum_QuoteTypeHighBid=高出价
+ ;Quote type high bid
+Currency_ConfigEnum_QuoteTypeHighAsk=高询价
+ ;Quote type high ask
+Currency_ConfigEnum_QuoteTypeLowBid=低出价
+ ;Quote type low bid
+Currency_ConfigEnum_QuoteTypeLowAsk=低询价
+ ;Quote type low ask
+Currency_ConfigEnum_QuoteTypePeriodAverageBid=期间平均出价
+ ;Quote type average over time period.
+Currency_ConfigEnum_QuoteTypePeriodAverageAsk=期间平均询价
+ ;Quote type average over time period.
+Currency_ConfigField_SingleRateForDateRange=日期范围的单个利率
+ ;exchange rate provider configuration option.
+Currency_EntityLabel_CurrencyISOCode=ISO 币种代码
+ ;CurrencyISOCodeEntity label.
+Currency_EntityDeveloper_CurrencyISOCodeEntityDevDoc=The CurrencyISOCodeEntity entity contains the list of ISO Currency Codes that are supported in the application as defined by the International Organization for Standardization.
+ ;{Locked}
+Currency_ModuleName=币种
+ ;Displayed in upgrade.
+Currency_UpgradeStep=加密值字段。
+ ;Upgrade step.
+Currency_ParameterGroup=币种
+ ;Field group caption for the SystemParameters form.
+Currency_TableFieldLabel_SystemParametersCurrencyCodeLabel=系统币种
+ ;Label for the SystemCurrencyCode field on the SystemParameters table.
+Currency_TableFieldLabel_SystemParametersExchangeRateTypeLabel=系统汇率类型
+ ;Label for the SystemExchangeRateType field on the SystemParameters table.
+ExchangeRateCurrencyPairCalculationRulesEntityMaintain=维护销售税实体的汇率计算规则
+ ;Maintain privilege for ExchangeRateCurrencyPairCalculationRulesEntity
+ExchangeRateCurrencyPairCalculationRulesEntityView=查看销售税实体的汇率计算规则
+ ;View privilege for ExchangeRateCurrencyPairCalculationRulesEntity
+Currency_Message_CurrencyRequiredForRounding=舍入需要币种。
+ ;Error from currency rounding API's
+Currency_Message_CurrencyRequiredForDecimals=检索小数位数需要币种。
+ ;Error from currency rounding API's
+Currency_Message_CurrencyRequiredForRoundingPrecision=检索舍入精度需要币种。
+ ;Error from currency rounding API's
+Currency_ConfigField_PreventImportOnNationalHoliday=禁止在法定假日导入
+ ;Exchange rate provider configuration option.
+Currency_ConfigField_QuoteTypeLocked=Quote type
+ ;{Locked}
+Currency_Message_QuoteTypeMissing=找不到汇率提供方 Configuration Key 报价类型。单击“重置值”，然后在“配置汇率提供方”页面上选择一个报价类型值。
+ ;Exchange rate provider configuration error
+Currency_Message_StartDateAlreadyExists=无法添加汇率，开始日期已存在。请输入尚未存在的开始日期。
+ ;Exchange rate error message
+Currency_Monetary_unit_declensions=货币单位偏差
+ ;Monetary unit declensions

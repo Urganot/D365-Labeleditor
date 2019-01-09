@@ -1,0 +1,92 @@
+Input=Input: 
+ ;Input warehouse/location of work cell
+Output=Output: 
+ ;Output warehouse/location of work cell
+From=From: 
+ ;For transfer activities, "from" warehouse/location
+To=To: 
+ ;For transfer activities, "to" warehouse/location
+By=By 
+ ;Tranfer done by
+Before=Before: 
+ ;Before
+After=After: 
+ ;After
+Tooltip_Process=Process
+ ;Type of activity Process
+Tooltip_Transfer=Transfer
+ ;Type of activity Transfer
+Tooltip_Yes=Yes
+ ;Yes
+Tooltip_No=No
+ ;No
+Tooltip_ActivityType=Activity type
+ ;Activity type
+Tooltip_Activity=Activity
+ ;Activity identification
+Tooltip_Name=Name of activity
+ ;Name
+Tooltip_ProcessQuantity=Process quantity
+ ;Process quantity
+Tooltip_DownstreamFlowFeeder=Downstream flow feeder
+ ;Downstream flow feeder
+Tooltip_WorkCell=Work cell
+ ;Work cell
+Tooltip_InputWarehouse=Input warehouse
+ ;Input warehouse
+Tooltip_InputLocation=Input location
+ ;Input location
+Tooltip_OutputWarehouse=Output warehouse
+ ;Output warehouse
+Tooltip_OutputLocation=Output location
+ ;Output location
+Tooltip_CycleTime=Cycle time
+ ;Cycle time
+Tooltip_Runtime=Runtime
+ ;Runtime
+Tooltip_QueueTimeBefore=Queue time before
+ ;Queue time before
+Tooltip_QueueTimeAfter=Queue time after
+ ;Queue time after
+Tooltip_FreightedBy=Freighted by
+ ;Freighted by
+Tooltip_FromWarehouse=From warehouse
+ ;From warehouse
+Tooltip_FromLocation=From location
+ ;From location
+Tooltip_ToWarehouse=To warehouse
+ ;To warehouse
+Tooltip_ToLocation=To location
+ ;To location
+Tooltip_UpdateOnHandOnReceipt=Update on-hand on receipt
+ ;Update on-hand on receipt
+Tooltip_UpdateOnHandOnPick=Update on-hand on pick
+ ;Update on-hand on pick
+Tooltip_LineColor=Line color
+ ;Line color
+Tooltip_LineColorGray=Gray - On hand not updated
+ ;Gray - On hand not updated
+Tooltip_LineColorThemeColor=Theme color - On hand is updated
+ ;Theme color - On hand is updated
+Tooltip_Constraint=Constraint
+ ;Constraint
+Tooltip_CycleTimeRatio=Cycle time ratio
+ ;Cycle time ratio
+ScreenReader_NetworkNodesCount={0} activities in a flow.
+ ;{{numActivities}} activities in a flow.
+ScreenReader_PredecessorsCount={0} predecessor activities.
+ ;{{numActivities}} predecessor activities.
+ScreenReader_SuccessorsCount={0} successor activities.
+ ;{{numActivities}} successor activities.
+ScreenReader_SupportingActivity=Supporting
+ ;Supporting
+TaskRecorder_SelectActivity=Select activity
+ ;Task recorder action name
+TaskRecorder_SelectRelation=Select relation
+ ;Task recorder action name
+TaskRecorder_DoubleClickActivity=Double click activity
+ ;Task recorder action name
+TaskRecorder_DoubleClickRelation=Double click relation
+ ;Task recorder action name
+Separator=, 
+ ;Separator to show in nodes between values. Normally comma with space

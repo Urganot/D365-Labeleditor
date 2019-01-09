@@ -1,0 +1,6 @@
+ControlLabel=Rich text editor.
+ ;Label for HTML editor control
+Instructions=Press alt + down to start editing content.
+ ;Instructions for HTML editor control
+ReadOnly=Read-only.
+ ;Label to indicate that the control is read-only.

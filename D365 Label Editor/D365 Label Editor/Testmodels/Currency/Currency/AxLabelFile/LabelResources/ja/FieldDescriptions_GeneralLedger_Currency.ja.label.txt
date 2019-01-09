@@ -1,0 +1,50 @@
+CurrencyEuroDenomination_CurrencyCode=三通貨換算するための通貨コードです。
+ ;Description text for the CurrencyCode control on the CurrencyEuroDenomination form
+Currency_CurrencyCode=選択した通貨の固有識別子。このコードには 3 文字まで入力できます。たとえば、USD は、米国 ドル、EUR はユーロ、CADは、カナダ ドルです。
+ ;Description text for the CurrencyCode control on the Currency form
+Currency_GridCurrencyName=選択した通貨の名前。この名前は、小切手などの文書に通貨コードと共に印刷されます。
+ ;Description text for the GridCurrencyName control on the Currency form
+Currency_CurrencyName=選択した通貨の名前。この名前は、小切手などの文書に通貨コードと共に印刷されます。
+ ;Description text for the CurrencyName control on the Currency form
+Currency_Symbol=選択した通貨の記号。記号は報告書で頻繁に使用されます。
+ ;Description text for the Symbol control on the Currency form
+Currency_GridCurrency=国際標準化機構 (ISO) によって定められた通貨の標準コード。
+ ;Description text for the GridCurrency control on the Currency form
+Currency_ISOCode=国際標準化機構 (ISO) によって定められた通貨の標準コード。
+ ;Description text for the ISOCode control on the Currency form
+Currency_IsEuro=廃止通貨と定義され、三角取引に利用される他の通貨。
+ ;Description text for the IsEuro control on the Currency form
+Currency_Group_OnLineConversionTool=このオプションを選択すると、選択した通貨が Online Numeric Conversion Tool の計算に使用されます。このツールでは、会計通貨でトランザクション明細行に入力された金額が、選択した通貨の金額に自動的に換算されます。選択した通貨の換算済の金額はデータベースに保存されません。
+ ;Description text for the Group_OnLineConversionTool control on the Currency form
+Currency_Group_CurrencyPrefix=[換算] オプションが選択されているときに、選択した通貨の金額の前に印刷されるテキストを入力します。
+ ;Description text for the Group_CurrencyPrefix control on the Currency form
+Currency_Group_CurrencySuffix=[換算] オプションが選択されているときに、選択した通貨の金額の後に印刷されるテキストを入力します。
+ ;Description text for the Group_CurrencySuffix control on the Currency form
+Currency_GeneralRoundingPrecision=丸めの単位を入力します。たとえば、0.10 または 1.00 と入力します。
+ ;Description text for the GeneralRoundingPrecision control on the Currency form
+Currency_RoundOffSalesOrder=販売注文、発注書、または価格の丸めの単位を入力します。
+ ;Description text for the RoundOffSalesOrder control on the Currency form
+Currency_RoundOffPurch=販売注文、発注書、または価格の丸めの単位を入力します。
+ ;Description text for the RoundOffPurch control on the Currency form
+Currency_Price_RoundOffPrice=販売注文、発注書、または価格の丸めの単位を入力します。
+ ;Description text for the Price_RoundOffPrice control on the Currency form
+Currency_AssetDep_JP_RoundOffAssetDep_JP=販売注文、発注書、または価格の丸めの単位を入力します。
+ ;Description text for the AssetDep_JP_RoundOffAssetDep_JP control on the Currency form
+Currency_RoundOffTypeSalesOrder=[丸めルール] フィールドに入力された丸め単位の右側の数値に適用される丸め方法を選択します。5 以上を切り上げ、5 未満を切り捨てる場合は、[標準] を選択します。すべての数を切り捨てる場合は、[切り捨て] を選択します。数値をすべて切り上げる場合は、[切り上げ] を選択します。
+ ;Description text for the RoundOffTypeSalesOrder control on the Currency form
+Currency_RoundOffTypePurch=[丸めルール] フィールドに入力された丸め単位の右側の数値に適用される丸め方法を選択します。5 以上を切り上げ、5 未満を切り捨てる場合は、[標準] を選択します。すべての数を切り捨てる場合は、[切り捨て] を選択します。数値をすべて切り上げる場合は、[切り上げ] を選択します。
+ ;Description text for the RoundOffTypePurch control on the Currency form
+Currency_Price_RoundOffTypePrice=[丸めルール] フィールドに入力された丸め単位の右側の数値に適用される丸め方法を選択します。5 以上を切り上げ、5 未満を切り捨てる場合は、[標準] を選択します。すべての数を切り捨てる場合は、[切り捨て] を選択します。数値をすべて切り上げる場合は、[切り上げ] を選択します。
+ ;Description text for the Price_RoundOffTypePrice control on the Currency form
+Currency_AssetDep_JP_RoundOffTypeAssetDep_JP=[丸めルール] フィールドに入力された丸め単位の右側の数値に適用される丸め方法を選択します。5 以上を切り上げ、5 未満を切り捨てる場合は、[標準] を選択します。すべての数を切り捨てる場合は、[切り捨て] を選択します。数値をすべて切り上げる場合は、[切り上げ] を選択します。
+ ;Description text for the AssetDep_JP_RoundOffTypeAssetDep_JP control on the Currency form
+ExchangeRateProviderConfiguration_ExchangeRateProviderConfiguration_Name=為替レート プロバイダーの名前。
+ ;Description text for the ExchangeRateProviderConfiguration_Name control on the ExchangeRateProviderConfiguration form
+ExchangeRateProviderConfiguration_ExchangeRateProviderConfiguration_Name1=為替レート プロバイダーの名前。
+ ;Description text for the ExchangeRateProviderConfiguration_Name1 control on the ExchangeRateProviderConfiguration form
+ExchangeRateProviderConfiguration_ExchangeRateProviderConfigurationDetails_Key=プロバイダーで必須となる各コンフィギュレーション情報の固有 ID。この情報は、[追加] ボタンをクリックして追加した各為替レート プロバイダーに自動的に追加されます。
+ ;Description text for the ExchangeRateProviderConfigurationDetails_Key control on the ExchangeRateProviderConfiguration form
+ExchangeRateProviderConfiguration_ExchangeRateProviderConfigurationDetails_Value=各キーの情報。この情報は、[追加] ボタンをクリックして追加した各為替レート プロバイダーに追加されます。
+ ;Description text for the ExchangeRateProviderConfigurationDetails_Value control on the ExchangeRateProviderConfiguration form
+CurrencyNameDeclension_W_InsertAndBeforePenny_InsertAndBeforePenny=単位と各部の間に接続語 'と' を印刷する場合は、このオプションを選択します。
+ ;Description text for the InsertAndBeforePenny_InsertAndBeforePenny control on the CurrencyNameDeclension_W form

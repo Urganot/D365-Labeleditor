@@ -1,0 +1,50 @@
+CurrencyEuroDenomination_CurrencyCode=Code devise à libeller dans la devise de triangulation.
+ ;Description text for the CurrencyCode control on the CurrencyEuroDenomination form
+Currency_CurrencyCode=Identificateur unique pour la devise sélectionnée. Ce code est limité à trois caractères. Par exemple, USD est le dollar américain, EUR est l'euro et CAD est le dollar canadien.
+ ;Description text for the CurrencyCode control on the Currency form
+Currency_GridCurrencyName=Nom de la devise sélectionnée. Ce nom est imprimé sur les chèques et d'autres documents avec le code devise.
+ ;Description text for the GridCurrencyName control on the Currency form
+Currency_CurrencyName=Nom de la devise sélectionnée. Ce nom est imprimé sur les chèques et d'autres documents avec le code devise.
+ ;Description text for the CurrencyName control on the Currency form
+Currency_Symbol=Symbole de la devise sélectionnée. Les symboles sont d'usage fréquent dans les états.
+ ;Description text for the Symbol control on the Currency form
+Currency_GridCurrency=Le code devise standard est défini par l'Organisation internationale de normalisation (ISO).
+ ;Description text for the GridCurrency control on the Currency form
+Currency_ISOCode=Le code devise standard est défini par l'Organisation internationale de normalisation (ISO).
+ ;Description text for the ISOCode control on the Currency form
+Currency_IsEuro=Devise servant de base de triangulation à d'autres devises définies comme devises de dénomination.
+ ;Description text for the IsEuro control on the Currency form
+Currency_Group_OnLineConversionTool=Sélectionnez cette option pour inclure la devise sélectionnée dans les calculs de l'outil de conversion numérique en ligne. L'outil convertit automatiquement les montants entrés sur des lignes de transaction dans la devise comptable en montants exprimés dans la devise sélectionnée. Les montants convertis dans la devise sélectionnée ne sont pas enregistrés dans la base de données.
+ ;Description text for the Group_OnLineConversionTool control on the Currency form
+Currency_Group_CurrencyPrefix=Permet d'entrer le texte imprimé devant le montant dans la devise sélectionnée si l'option Conversion est sélectionnée.
+ ;Description text for the Group_CurrencyPrefix control on the Currency form
+Currency_Group_CurrencySuffix=Permet d'entrer le texte imprimé à la suite du montant dans la devise sélectionnée si l'option Conversion est sélectionnée.
+ ;Description text for the Group_CurrencySuffix control on the Currency form
+Currency_GeneralRoundingPrecision=Permet d'entrer l'unité pour les arrondis. Par exemple, vous pouvez entrer 0,10 ou 1,00.
+ ;Description text for the GeneralRoundingPrecision control on the Currency form
+Currency_RoundOffSalesOrder=Permet d'entrer l'unité des arrondis sur les commandes client, les commandes fournisseur ou les prix.
+ ;Description text for the RoundOffSalesOrder control on the Currency form
+Currency_RoundOffPurch=Permet d'entrer l'unité des arrondis sur les commandes client, les commandes fournisseur ou les prix.
+ ;Description text for the RoundOffPurch control on the Currency form
+Currency_Price_RoundOffPrice=Permet d'entrer l'unité des arrondis sur les commandes client, les commandes fournisseur ou les prix.
+ ;Description text for the Price_RoundOffPrice control on the Currency form
+Currency_AssetDep_JP_RoundOffAssetDep_JP=Permet d'entrer l'unité des arrondis sur les commandes client, les commandes fournisseur ou les prix.
+ ;Description text for the AssetDep_JP_RoundOffAssetDep_JP control on the Currency form
+Currency_RoundOffTypeSalesOrder=Permet de sélectionner la convention d'arrondi qui s'applique au nombre situé à droite de l'unité d'arrondi entrée dans le champ Règle d'arrondi. Sélectionnez Standard pour arrondir à l'unité supérieure lorsque le chiffre après la virgule est supérieur ou égal à 5 et à l'unité inférieure si ce chiffre est inférieur à 5. Sélectionnez Inférieur pour arrondir tous les chiffres à l'unité inférieure. Sélectionnez Supérieur pour arrondir tous les chiffres à l'unité supérieure.
+ ;Description text for the RoundOffTypeSalesOrder control on the Currency form
+Currency_RoundOffTypePurch=Permet de sélectionner la convention d'arrondi qui s'applique au nombre situé à droite de l'unité d'arrondi entrée dans le champ Règle d'arrondi. Sélectionnez Standard pour arrondir à l'unité supérieure lorsque le chiffre après la virgule est supérieur ou égal à 5 et à l'unité inférieure si ce chiffre est inférieur à 5. Sélectionnez Inférieur pour arrondir tous les chiffres à l'unité inférieure. Sélectionnez Supérieur pour arrondir tous les chiffres à l'unité supérieure.
+ ;Description text for the RoundOffTypePurch control on the Currency form
+Currency_Price_RoundOffTypePrice=Permet de sélectionner la convention d'arrondi qui s'applique au nombre situé à droite de l'unité d'arrondi entrée dans le champ Règle d'arrondi. Sélectionnez Standard pour arrondir à l'unité supérieure lorsque le chiffre après la virgule est supérieur ou égal à 5 et à l'unité inférieure si ce chiffre est inférieur à 5. Sélectionnez Inférieur pour arrondir tous les chiffres à l'unité inférieure. Sélectionnez Supérieur pour arrondir tous les chiffres à l'unité supérieure.
+ ;Description text for the Price_RoundOffTypePrice control on the Currency form
+Currency_AssetDep_JP_RoundOffTypeAssetDep_JP=Permet de sélectionner la convention d'arrondi qui s'applique au nombre situé à droite de l'unité d'arrondi entrée dans le champ Règle d'arrondi. Sélectionnez Standard pour arrondir à l'unité supérieure lorsque le chiffre après la virgule est supérieur ou égal à 5 et à l'unité inférieure si ce chiffre est inférieur à 5. Sélectionnez Inférieur pour arrondir tous les chiffres à l'unité inférieure. Sélectionnez Supérieur pour arrondir tous les chiffres à l'unité supérieure.
+ ;Description text for the AssetDep_JP_RoundOffTypeAssetDep_JP control on the Currency form
+ExchangeRateProviderConfiguration_ExchangeRateProviderConfiguration_Name=Nom du fournisseur de taux de change.
+ ;Description text for the ExchangeRateProviderConfiguration_Name control on the ExchangeRateProviderConfiguration form
+ExchangeRateProviderConfiguration_ExchangeRateProviderConfiguration_Name1=Nom du fournisseur de taux de change.
+ ;Description text for the ExchangeRateProviderConfiguration_Name1 control on the ExchangeRateProviderConfiguration form
+ExchangeRateProviderConfiguration_ExchangeRateProviderConfigurationDetails_Key=Identificateur unique de chaque information de configuration requise par le fournisseur Ces informations sont automatiquement ajoutées pour chaque fournisseur de taux de change que vous ajoutez en cliquant sur le bouton Ajouter.
+ ;Description text for the ExchangeRateProviderConfigurationDetails_Key control on the ExchangeRateProviderConfiguration form
+ExchangeRateProviderConfiguration_ExchangeRateProviderConfigurationDetails_Value=Informations pour chaque clé. Ces informations sont ajoutées pour chaque fournisseur de taux de change que vous ajoutez en cliquant sur le bouton Ajouter.
+ ;Description text for the ExchangeRateProviderConfigurationDetails_Value control on the ExchangeRateProviderConfiguration form
+CurrencyNameDeclension_W_InsertAndBeforePenny_InsertAndBeforePenny=Sélectionnez cette option pour imprimer les unités et pièces associées et intermédiaires.
+ ;Description text for the InsertAndBeforePenny_InsertAndBeforePenny control on the CurrencyNameDeclension_W form

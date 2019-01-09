@@ -1,0 +1,6 @@
+HubConnectionString=Azure notification hub connection string
+ ;New Comment
+HubName=Azure notification hub name
+ ;New Comment
+HubSettings=Azure notification hub settings
+ ;New Comment

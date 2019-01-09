@@ -1,0 +1,48 @@
+AvailabilityViewItemType=Item type
+ ;AvailabilityView item type label
+AVChartItemTypeLabel=Chart item
+ ;AvailabilityView chart item type enum label
+AVCollectionItemTypeLabel=Collection item
+ ;AvailabilityView collection item type enum label
+AVTimePeriodTypeLabel=Time period
+ ;AvailabilityView timeline item type enum label
+NoTemplate=No template was applied
+ ;UI label on Availability control
+ViewMoreContent=View more content
+ ;UI label on Availability control
+ControlDescription=Availability view control
+ ;UI label on Availability control
+ListDescription=List content
+ ;UI label on Availability control
+GraphDescription=Chart content
+ ;UI label on Availability control
+CollectionTitle=Title
+ ;UI label on Availability control
+CollectionDescription=Collection
+ ;UI label on Availability control
+TimelineDescription=Timeline
+ ;UI label on Availability control
+ChartDescription=Chart
+ ;UI label on Availability control
+ListShowMoreTop=Show more content on the top
+ ;UI label on Availability control
+ListShowMoreBottom=Show more content on the bottom
+ ;UI label on Availability control
+GraphShowMoreRight=Show more content ahead of current timeline
+ ;UI label on Availability control
+GraphShowMoreLeft=Show more content prior to current timeline
+ ;UI label on Availability control
+CollectionItemDescription=Collection item
+ ;UI label on Availability control
+TimePeriodDescription=Time period
+ ;UI label on Availability control
+ChartRowDescription=Chart items for a collection item
+ ;UI label on Availability control
+ChartItemDescription=Chart item
+ ;UI label on Availability control
+VSDescription=Availability view list scrollbar
+ ;UI label on Availability control
+HSDescription=Availability view timeline scrollbar
+ ;UI label on Availability control
+NoResultsMessage=We didn't find anything to show here.
+ ;UI label on Availability control

@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<AxLabelFile xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+  <Name>FieldDescriptions_GeneralLedger_Currency_fi</Name>
+  <LabelContentFileName>FieldDescriptions_GeneralLedger_Currency.fi.label.txt</LabelContentFileName>
+  <LabelFileId>FieldDescriptions_GeneralLedger_Currency</LabelFileId>
+  <Language>fi</Language>
+  <RelativeUriInModelStore>Currency/Currency/AxLabelFile/LabelResources/fi/FieldDescriptions_GeneralLedger_Currency.fi.label.txt</RelativeUriInModelStore>
+</AxLabelFile>

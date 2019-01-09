@@ -1,0 +1,14 @@
+﻿NewLabel0=Label files created on 04/24/2013 13:22:28 for label file Id SysQuery and language en-US
+#Label file comment - see above label
+JoinModeDescriptionHelpText=1:n or n:1
+JoinModeDescriptionLabel=Join Mode
+RelationDescriptionHelpText=Description of the table relation
+RelationDescriptionLabel=Relation
+RelationIdHelpText=Id of the table relation
+RelationIdLabel=Relation id
+TmpSysQueryAddDSLabel=Query table relations
+SysQueryFormAddDataSource=Add table join
+SysQueryFormRemoveDataSource=Remove table join
+SysQueryFormDataSourceSelect=Select
+JoinTab=Joins
+#Used on the Joins tab of sysQueryForm

@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader><data name="DataArea" xml:space="preserve">
+                        <value>DataArea</value></data><data name="DataAreaFiscalCalendar" xml:space="preserve">
+                        <value>DataAreaFiscalCalendar</value></data><data name="LegalEntity" xml:space="preserve">
+                        <value>LegalEntity</value></data><data name="LegalEntityFiscalCalendar" xml:space="preserve">
+                        <value>LegalEntityFiscalCalendar</value></data><data name="OperatingUnit" xml:space="preserve">
+                        <value>OperatingUnit</value></data><data name="OperatingUnitType" xml:space="preserve">
+                        <value>OperatingUnitType</value></data><data name="CacheCandidateRuleDescription" xml:space="preserve">
+                        <value>Check if any number sequence is possible to use cache capability.</value>
+	<comment>Cache candidate rule description</comment></data><data name="CacheCandidateRuleMessage" xml:space="preserve">
+                        <value>Non-continuous number sequences are resulting in database lookups and are not using the cache capabilities on the AOS.</value>
+	<comment>Cache candidate rule message</comment></data><data name="CacheCandidateRuleRecommendation" xml:space="preserve">
+                        <value>For each non-continuous number sequence, activate preallocation at number sequence form of Organization administration.</value>
+	<comment>Cache candidate rule recommendation</comment></data><data name="CleanupIntervalRuleDescription" xml:space="preserve">
+                        <value>Check if continuous number sequence has cleanup interval.</value>
+	<comment>Cleanup interval rule description</comment></data><data name="CleanupIntervalRuleMessage" xml:space="preserve">
+                        <value>Some number sequences which are set as Continuous and marked for Cleanup do not have a cleanup interval set, which forces a cleanup every time a number sequence value is generated.</value>
+	<comment>Cleanup interval rule message</comment></data><data name="CleanupIntervalRuleRecommendation" xml:space="preserve">
+                        <value>For each continuous number sequence set Cleanup to Yes, specify a number of hours for the Cleanup interval (default is 24.) Use the number sequence form at Organization administration.</value>
+	<comment>Cleanup interval rule recommendation</comment></data><data name="FullyUsedRuleDescription" xml:space="preserve">
+                        <value>Check if a number sequence has no more available values</value>
+	<comment>Fully used rule description</comment></data><data name="FullyUsedRuleMessage" xml:space="preserve">
+                        <value>One or more number sequences have no more available values.</value>
+	<comment>Fully used rule message</comment></data><data name="FullyUsedRuleRecommendation" xml:space="preserve">
+                        <value>Increase the highest value setting for the number sequence at number sequence form of Organization administration.</value>
+	<comment>Fully used rule recommendation</comment></data><data name="UsageRuleDescription" xml:space="preserve">
+                        <value>Check if a number sequence has enough available numbers.</value>
+	<comment>Usage rule description</comment></data><data name="UsageRuleMessage" xml:space="preserve">
+                        <value>We recommend maintaining a buffer of available numbers for each number sequence of greater than 20% to prevent running out in production during peak workloads. Importance: If a number sequence is exhausted and has no more numbers to assign, a work stoppage may result. For example, if you run out of Sales Order numbers, no new sales orders can be created until the situation is corrected.</value>
+	<comment>Usage rule message</comment></data><data name="UsageRuleRecommendation" xml:space="preserve">
+                        <value>Maintain an available numbers buffer for each number sequence of more than 20%. This can be achieved by increasing the upper limit of the number sequence or by running a manual cleanup of sequences marked as continuous. Number sequences can be managed in the number sequence form of Organization administration.</value>
+	<comment>Usage rule recommendation</comment></data><data name="NumberSeqResetLabel" xml:space="preserve">
+                        <value>Reset</value>
+	<comment>NumberSeqReset - menu item label</comment></data><data name="NumberSeqResetHelptext" xml:space="preserve">
+                        <value>Resets the number sequences data types back to their default settings.</value>
+	<comment>NumberSeqReset - menu item help text</comment></data><data name="NumberSeqResetOperationCaption" xml:space="preserve">
+                        <value>Resetting number sequences</value>
+	<comment>NumberSeqReset - SysOperation caption</comment></data><data name="NumberSeqResetWarning" xml:space="preserve">
+                        <value>You are about to reset number sequences from the module definitions. Do you want to continue?</value>
+	<comment>NumberSeqReset - Confirmation</comment></data><data name="NumberSeqCacheCandidateRuleName" xml:space="preserve">
+                        <value>Number sequence cache candidate search</value>
+	<comment>Number sequence cache candidate rule name</comment></data><data name="NumberSeqCleanupIntervalRuleName" xml:space="preserve">
+                        <value>Number sequence cleanup interval check</value>
+	<comment>Number sequence cleanup interval rule name</comment></data><data name="NumberSeqFullyUsedRuleName" xml:space="preserve">
+                        <value>Number sequence fully used validation</value>
+	<comment>Number sequence fully used rule name</comment></data><data name="NumberSeqUsageRuleName" xml:space="preserve">
+                        <value>Number sequence usage check</value>
+	<comment>Number sequence usage rule name</comment></data><data name="NumberSeqMinimumPreAllocationWarningSet" xml:space="preserve">
+                        <value>A preallocation quantity value less than the recommended value of %1 may create performance issues with the system. Do you want to proceed?</value>
+	<comment>Number sequence pre allocation quantity warning. %1 = default quantity value.</comment></data></root>

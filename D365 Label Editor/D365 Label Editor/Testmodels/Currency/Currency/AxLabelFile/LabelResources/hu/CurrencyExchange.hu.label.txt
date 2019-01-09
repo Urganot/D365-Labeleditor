@@ -1,0 +1,152 @@
+NewLabel0=Címkefájlok létrehozva: 2014. 05. 29., 13:27:47, címkefájl azonosítója: CurrencyExchange, nyelv: en-US
+ ;Label file comment - see above label
+ConversionFactor=Átváltási tényező
+ ;Exchange rate conversion factor
+ExchangeValue=Árfolyamérték
+ ;Exchange rates exchange value
+TriangulationCurrencies=Háromszögárfolyam-számítás pénznemei
+ ;New Comment
+AddRemoveExchangeRates=Árfolyamok hozzáadása vagy eltávolítása
+ ;New Comment
+TmpExchangeRatesDevDoc=A TmpExchangeRates tábla tárolja az ExchangeRates képernyő megjelenítésekor használt ideiglenes rekordokat.
+ ;New Comment
+ExchangeRateEntityDevDoc=The ExchangeRateEntity data entity is used to store exchange rates for a currency pair and a rate type.
+ ;{locked}Exchange rate entity developer documentation
+ExchangeRateStagingDevDoc=Az ExchangeRateEntity előkészítési tábla használható a pénznempárokhoz és az árfolyamtípusokhoz tartozó árfolyamok importálásához és exportálásához.
+ ;Exchange rate stating table developer documentation
+InvalidExchangeRate=Nem sikerült importálni a(z) {0} és {1} pénznempár árfolyamát. Segítségért forduljon a szolgáltatóhoz, vagy kézzel írja be a(z) {2} árfolyamát.
+ ;Exchange rate provider error in C#
+ISONameCubanConvertiblePeso=Kubai átváltható peso
+ ;ISO Currency Name
+ISONameTurkmenistanNewManat=Türkmén új manat
+ ;ISO Currency Name
+ISONameZambianKwacha=Zambiai kwacha
+ ;ISO Currency Name
+ExchangeRateImport=Árfolyamok importálása
+ ;Entity privilege level
+ExchangeRateExport=Árfolyamok exportálása
+ ;Entity privilege level
+Supplemental_CurrencyImport=Pénznemek importálása
+ ;Entity privilege level
+Supplemental_CurrencyExport=Pénznemek exportálása
+ ;Entity privilege level
+Currency_MessageDeveloper_UpdateCurrencyPair=Updating currency pair from currency %1 to currency %2
+ ;{Locked}
+Currency_MessageDeveloper_AddNewRate=Adding new exchange rate %1 valid from %2 from currency %3 to currency %4
+ ;{Locked}
+Currency_MessageDeveloper_ActivateProvider=Activating exchange rate provider {0}
+ ;{Locked}
+Currency_MessageDeveloper_SearchingAssembly=Searching for exchange rate providers in assembly {0}
+ ;{Locked}
+Currency_EntityEnum_EntityName=Pénznemek
+ ;Entity name
+Currency_EntityDeveloper_CurrencyEntityDevDoc=The CurrencyEntity entity contains the currencies that are used in the application for foreign exchange. Exchange rates are created based on these currencies.
+ ;{Locked}
+Currency_EntityField_CurrencyCode=Pénznemkód
+ ;CurrencyEntity field name.
+Currency_EntityLabel_CurrencyRevaluationAccountLabel=Deviza-átértékelés főkönyvi számlája
+ ;Label for CurrencyRevaluationAccountEntity
+Currency_EntityDeveloper_CurrencyRevaluationAccountEntityDevDoc=The CurrencyRevaluationAccountEntity entity contains the gain loss account for individual currencies.
+ ;{Locked}
+Currency_EntityFieldLabel_RoundingRuleFixedAssetDepreciation=Tárgyi eszközök értékcsökkenésének kerekítési szabálya
+ ;CurrencyEntity field label
+Currency_EntityFieldLabel_RoundingMethodFixedAssetDepreciation=Tárgyi eszközök értékcsökkenésének kerekítési módszere
+ ;CurrencyEntity field label
+Currency_EntityFieldLabel_RoundingMethodPrices=Árak kerekítési módszere
+ ;CurrencyEntity field label
+Currency_EntityFieldLabel_RoundingMethodPurchaseOrders=Beszerzési rendelések kerekítési módszere
+ ;CurrencyEntity field label
+Currency_EntityFieldLabel_RoundingMethodSalesOrders=Értékesítési rendelések kerekítési módszere
+ ;CurrencyEntity field label
+Currency_EntityFieldLabel_RoundingRulePrices=Árak kerekítési szabálya
+ ;CurrencyEntity field label
+Currency_EntityFieldLabel_RoundingRulePurchaseOrders=Beszerzési rendelések kerekítési szabálya
+ ;CurrencyEntity field label
+Currency_EntityFieldLabel_RoundingRuleSalesOrders=Értékesítési rendelések kerekítési szabálya
+ ;CurrencyEntity field label
+EntitiesMaintainDuty=Pénznementitások alapadatainak karbantartása
+ ;Maintain Currency entities duty.
+EntitiesViewDuty=Pénznementitások alapadatainak megtekintése
+ ;View Currency entities duty.
+Currency_EntityMessage_RateMustBePositive=Az árfolyamnak nullánál nagyobbnak kell lennie.
+ ;ExchangeRateEntity set based error message.
+Currency_EntityTitle=Árfolyamok
+ ;ExchangeRateEntity title.
+Currency_EntityMessage_InvalidCurrency=A megadott pénznem nem érvényes.
+ ;ExchangeRateEntity error.
+Currency_EntityMessage_MissingRate=Nem található árfolyam a(z) %1 árfolyamtípushoz a(z) %2 és a(z) %3 pénznem közötti, %4 dátumon történő átváltáshoz. A probléma megoldásához forduljon a rendszergazdához.
+ ;Set based error message.
+Currency_EntityLabel_ExchangeRateTypeLabel=Árfolyamtípus
+ ;Label for ExchangeRateTypeEntity
+Currency_EntityDeveloper_ExchangeRateTypeEntityDevDoc=The ExchangeRateTypeEntity entity stores exchange rate types that allow exchange rates to be categorized.
+ ;{Locked}
+Currency_ConfigField_ServiceTimeout=Service Timeout
+ ;{Locked}
+Currency_ConfigField_OandaName=Foreign Exchange Rates Powered by OANDA
+ ;{Locked}
+Currency_ConfigField_OandaAPIKey=API key
+ ;{Locked}
+Currency_FieldTitle_Value=Érték
+ ;Exchange rate provider configuration value field title.
+Currency_ConfigField_DecimalPlaces=Decimal places
+ ;{Locked}
+Currency_ConfigMessage_DecimalPlacesInvalid=A tizedesjegyek számának 1 és 12 között kell lennie.
+ ;Decimal places validation error for OANDA exchange rate provider.
+Currency_ConfigMessage_OANDAKeyRequired=Árfolyamok importálásához az OANDA rendszerből származó érvényes kulcs szükséges ehhez a szolgáltatóhoz. 
+ ;Warning message for the OANDA exchange rate provider.
+Currency_ConfigField_QuoteType=Árajánlattípus
+ ;Quote type for OANDA provider.
+Currency_ConfigEnum_QuoteTypeAverageBid=Átlagos eladási ár
+ ;Quote type average bid
+Currency_ConfigEnum_QuoteTypeAverageAsk=Átlagos vételi ár
+ ;Quote type average ask
+Currency_ConfigEnum_QuoteTypeMidpoint=Felezőpont
+ ;Quote type midpoint
+Currency_ConfigEnum_QuoteTypeHighBid=Legmagasabb eladási ár
+ ;Quote type high bid
+Currency_ConfigEnum_QuoteTypeHighAsk=Legmagasabb vételi ár
+ ;Quote type high ask
+Currency_ConfigEnum_QuoteTypeLowBid=Legalacsonyabb eladási ár
+ ;Quote type low bid
+Currency_ConfigEnum_QuoteTypeLowAsk=Legalacsonyabb vételi ár
+ ;Quote type low ask
+Currency_ConfigEnum_QuoteTypePeriodAverageBid=Időszaki átlagos eladási ár
+ ;Quote type average over time period.
+Currency_ConfigEnum_QuoteTypePeriodAverageAsk=Időszaki átlagos vételi ár
+ ;Quote type average over time period.
+Currency_ConfigField_SingleRateForDateRange=Dátumtartományra érvényes árfolyam
+ ;exchange rate provider configuration option.
+Currency_EntityLabel_CurrencyISOCode=ISO szabvány szerinti pénznemkódok
+ ;CurrencyISOCodeEntity label.
+Currency_EntityDeveloper_CurrencyISOCodeEntityDevDoc=The CurrencyISOCodeEntity entity contains the list of ISO Currency Codes that are supported in the application as defined by the International Organization for Standardization.
+ ;{Locked}
+Currency_ModuleName=Pénznem
+ ;Displayed in upgrade.
+Currency_UpgradeStep=Értékmező titkosítása.
+ ;Upgrade step.
+Currency_ParameterGroup=Pénznem
+ ;Field group caption for the SystemParameters form.
+Currency_TableFieldLabel_SystemParametersCurrencyCodeLabel=Rendszerpénznem
+ ;Label for the SystemCurrencyCode field on the SystemParameters table.
+Currency_TableFieldLabel_SystemParametersExchangeRateTypeLabel=Rendszerárfolyam típusa
+ ;Label for the SystemExchangeRateType field on the SystemParameters table.
+ExchangeRateCurrencyPairCalculationRulesEntityMaintain=Az áfaentitáshoz tartozó árfolyam-számítási szabályok karbantartása
+ ;Maintain privilege for ExchangeRateCurrencyPairCalculationRulesEntity
+ExchangeRateCurrencyPairCalculationRulesEntityView=Az áfaentitáshoz tartozó árfolyam-számítási szabályok megtekintése
+ ;View privilege for ExchangeRateCurrencyPairCalculationRulesEntity
+Currency_Message_CurrencyRequiredForRounding=A kerekítéshez meg kell adni a pénznemet.
+ ;Error from currency rounding API's
+Currency_Message_CurrencyRequiredForDecimals=A tizedesjegyek számának beolvasásához meg kell adni a pénznemet.
+ ;Error from currency rounding API's
+Currency_Message_CurrencyRequiredForRoundingPrecision=A kerekítési pontosság beolvasásához meg kell adni a pénznemet.
+ ;Error from currency rounding API's
+Currency_ConfigField_PreventImportOnNationalHoliday=Importálás tiltása ünnepnapokon
+ ;Exchange rate provider configuration option.
+Currency_ConfigField_QuoteTypeLocked=Quote type
+ ;{Locked}
+Currency_Message_QuoteTypeMissing=Az árfolyam-szolgáltató Árajánlattípus konfigurációs kulcsa nem található. Kattintson az Értékek visszaállítása gombra, majd válassza ki az Árajánlattípus egyik értékét az Árfolyam-szolgáltatók konfigurálása oldalon.  
+ ;Exchange rate provider configuration error
+Currency_Message_StartDateAlreadyExists=Árfolyam nem adható hozzá, már létezik a Kezdő dátum. Adjon meg olyan Kezdő dátumot, amely még nem létezik.
+ ;Exchange rate error message
+Currency_Monetary_unit_declensions=Pénzügyi egység ragozása
+ ;Monetary unit declensions

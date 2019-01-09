@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<AdditionalFiles>
+  <Version>7.3.11971.56116</Version>
+  <File>
+    <Source>$(INETROOT)\target\$(BUILDTYPE)\$(BUILDTARGET)\Instrumentation\Microsoft.Dynamics.Currency.TraceEventSource.man</Source>
+    <Destination>AOSWeb</Destination>
+    <RelativePath>bin\Monitoring</RelativePath>
+  </File>
+  <File>
+    <Source>$(INETROOT)\target\$(BUILDTYPE)\$(BUILDTARGET)\Microsoft.Dynamics.Currency.TraceEventSource.dll</Source>
+    <Destination>AOSWeb</Destination>
+    <RelativePath>bin\Monitoring</RelativePath>
+  </File>
+  <File>
+    <Source>$(INETROOT)\target\$(BuildType)\$(BuildTarget)\Microsoft.Dynamics.Currency.Instrumentation.dll</Source>
+    <Destination>AOSWeb</Destination>
+    <RelativePath>bin</RelativePath>
+  </File>
+</AdditionalFiles>

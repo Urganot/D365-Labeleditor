@@ -1,0 +1,152 @@
+NewLabel0=Kod CurrencyExchange etiket dosyası ve en-US dili için 29/05/2014 tarihinde saat 13:27:47'de etiket dosyaları oluşturuldu
+ ;Label file comment - see above label
+ConversionFactor=Dönüştürme faktörü
+ ;Exchange rate conversion factor
+ExchangeValue=Döviz değeri
+ ;Exchange rates exchange value
+TriangulationCurrencies=Üç taraflı kur çevrimi para birimleri
+ ;New Comment
+AddRemoveExchangeRates=Döviz kurlarını ekle veya kaldır
+ ;New Comment
+TmpExchangeRatesDevDoc=TmpExchangeRates tablosu ExchangeRates formu görüntülenirken kullanılan geçici kayıtları tutar.
+ ;New Comment
+ExchangeRateEntityDevDoc=The ExchangeRateEntity data entity is used to store exchange rates for a currency pair and a rate type.
+ ;{locked}Exchange rate entity developer documentation
+ExchangeRateStagingDevDoc=ExchangeRateEntity hazırlama tablosu, bir para birimi çifti ve bir oran türü için döviz kurlarını içe ve dışa aktarmak amacıyla kullanılır.
+ ;Exchange rate stating table developer documentation
+InvalidExchangeRate={0} ve {1} para birimi çifti için döviz kuru içe aktarılamadı. Yardım için sağlayıcınıza başvurun veya {2} için el ile bir döviz kuru girin.
+ ;Exchange rate provider error in C#
+ISONameCubanConvertiblePeso=Dönüştürülebilir Küba Pezosu
+ ;ISO Currency Name
+ISONameTurkmenistanNewManat=Yeni Türkmenistan Manatı
+ ;ISO Currency Name
+ISONameZambianKwacha=Zambiya Kvaçası
+ ;ISO Currency Name
+ExchangeRateImport=Döviz kurlarını içe aktar
+ ;Entity privilege level
+ExchangeRateExport=Döviz kurlarını dışa aktar
+ ;Entity privilege level
+Supplemental_CurrencyImport=Para birimlerini içe aktar
+ ;Entity privilege level
+Supplemental_CurrencyExport=Para birimlerini dışa aktar
+ ;Entity privilege level
+Currency_MessageDeveloper_UpdateCurrencyPair=Updating currency pair from currency %1 to currency %2
+ ;{Locked}
+Currency_MessageDeveloper_AddNewRate=Adding new exchange rate %1 valid from %2 from currency %3 to currency %4
+ ;{Locked}
+Currency_MessageDeveloper_ActivateProvider=Activating exchange rate provider {0}
+ ;{Locked}
+Currency_MessageDeveloper_SearchingAssembly=Searching for exchange rate providers in assembly {0}
+ ;{Locked}
+Currency_EntityEnum_EntityName=Para birimleri
+ ;Entity name
+Currency_EntityDeveloper_CurrencyEntityDevDoc=The CurrencyEntity entity contains the currencies that are used in the application for foreign exchange. Exchange rates are created based on these currencies.
+ ;{Locked}
+Currency_EntityField_CurrencyCode=Para birimi kodu
+ ;CurrencyEntity field name.
+Currency_EntityLabel_CurrencyRevaluationAccountLabel=Para birimi yeniden değerleme genel muhasebe hesabı
+ ;Label for CurrencyRevaluationAccountEntity
+Currency_EntityDeveloper_CurrencyRevaluationAccountEntityDevDoc=The CurrencyRevaluationAccountEntity entity contains the gain loss account for individual currencies.
+ ;{Locked}
+Currency_EntityFieldLabel_RoundingRuleFixedAssetDepreciation=Sabit kıymet amortismanı yuvarlama kuralı
+ ;CurrencyEntity field label
+Currency_EntityFieldLabel_RoundingMethodFixedAssetDepreciation=Sabit kıymet amortismanı yuvarlama yöntemi
+ ;CurrencyEntity field label
+Currency_EntityFieldLabel_RoundingMethodPrices=Fiyat yuvarlama yöntemi
+ ;CurrencyEntity field label
+Currency_EntityFieldLabel_RoundingMethodPurchaseOrders=Satınalma siparişleri yuvarlama yöntemi
+ ;CurrencyEntity field label
+Currency_EntityFieldLabel_RoundingMethodSalesOrders=Satış siparişleri yuvarlama yöntemi
+ ;CurrencyEntity field label
+Currency_EntityFieldLabel_RoundingRulePrices=Fiyat yuvarlama kuralı
+ ;CurrencyEntity field label
+Currency_EntityFieldLabel_RoundingRulePurchaseOrders=Satınalma siparişleri yuvarlama kuralı
+ ;CurrencyEntity field label
+Currency_EntityFieldLabel_RoundingRuleSalesOrders=Satış siparişleri yuvarlama kuralı
+ ;CurrencyEntity field label
+EntitiesMaintainDuty=Para birimi ana varlıklarını koru
+ ;Maintain Currency entities duty.
+EntitiesViewDuty=Para birimi ana varlıklarını görüntüle
+ ;View Currency entities duty.
+Currency_EntityMessage_RateMustBePositive=Döviz kuru sıfırdan büyük olmalıdır
+ ;ExchangeRateEntity set based error message.
+Currency_EntityTitle=Döviz kurları
+ ;ExchangeRateEntity title.
+Currency_EntityMessage_InvalidCurrency=Belirtilen para birimi geçerli değil.
+ ;ExchangeRateEntity error.
+Currency_EntityMessage_MissingRate=%4 kur tarihinde %2 ve %3 para birimleri arasında %1 döviz kuru türü için döviz kuru bulunamıyor. Bu hatayı düzeltmek için sistem yöneticinizle bağlantı kurun.
+ ;Set based error message.
+Currency_EntityLabel_ExchangeRateTypeLabel=Döviz kuru türü
+ ;Label for ExchangeRateTypeEntity
+Currency_EntityDeveloper_ExchangeRateTypeEntityDevDoc=The ExchangeRateTypeEntity entity stores exchange rate types that allow exchange rates to be categorized.
+ ;{Locked}
+Currency_ConfigField_ServiceTimeout=Service Timeout
+ ;{Locked}
+Currency_ConfigField_OandaName=Foreign Exchange Rates Powered by OANDA
+ ;{Locked}
+Currency_ConfigField_OandaAPIKey=API key
+ ;{Locked}
+Currency_FieldTitle_Value=Değer
+ ;Exchange rate provider configuration value field title.
+Currency_ConfigField_DecimalPlaces=Decimal places
+ ;{Locked}
+Currency_ConfigMessage_DecimalPlacesInvalid=Ondalık basamak sayısı 1 ile 12 arasında olmalıdır
+ ;Decimal places validation error for OANDA exchange rate provider.
+Currency_ConfigMessage_OANDAKeyRequired=Bu sağlayıcının döviz kurlarını içe aktarması için OANDA'dan geçerli bir anahtar gereklidir. 
+ ;Warning message for the OANDA exchange rate provider.
+Currency_ConfigField_QuoteType=Teklif türü
+ ;Quote type for OANDA provider.
+Currency_ConfigEnum_QuoteTypeAverageBid=Ortalama teklif
+ ;Quote type average bid
+Currency_ConfigEnum_QuoteTypeAverageAsk=Ortalama talep
+ ;Quote type average ask
+Currency_ConfigEnum_QuoteTypeMidpoint=Orta nokta
+ ;Quote type midpoint
+Currency_ConfigEnum_QuoteTypeHighBid=Yüksek teklif
+ ;Quote type high bid
+Currency_ConfigEnum_QuoteTypeHighAsk=Yüksek talep
+ ;Quote type high ask
+Currency_ConfigEnum_QuoteTypeLowBid=Düşük teklif
+ ;Quote type low bid
+Currency_ConfigEnum_QuoteTypeLowAsk=Düşük talep
+ ;Quote type low ask
+Currency_ConfigEnum_QuoteTypePeriodAverageBid=Dönem ortalama teklifi
+ ;Quote type average over time period.
+Currency_ConfigEnum_QuoteTypePeriodAverageAsk=Dönem ortalama talebi
+ ;Quote type average over time period.
+Currency_ConfigField_SingleRateForDateRange=Tarih aralığı için tek oran
+ ;exchange rate provider configuration option.
+Currency_EntityLabel_CurrencyISOCode=ISO para birimi kodları
+ ;CurrencyISOCodeEntity label.
+Currency_EntityDeveloper_CurrencyISOCodeEntityDevDoc=The CurrencyISOCodeEntity entity contains the list of ISO Currency Codes that are supported in the application as defined by the International Organization for Standardization.
+ ;{Locked}
+Currency_ModuleName=Para birimi
+ ;Displayed in upgrade.
+Currency_UpgradeStep=Değer alanını şifreleyin.
+ ;Upgrade step.
+Currency_ParameterGroup=Para Birimi
+ ;Field group caption for the SystemParameters form.
+Currency_TableFieldLabel_SystemParametersCurrencyCodeLabel=Sistem para birimi
+ ;Label for the SystemCurrencyCode field on the SystemParameters table.
+Currency_TableFieldLabel_SystemParametersExchangeRateTypeLabel=Sistem döviz kuru türü
+ ;Label for the SystemExchangeRateType field on the SystemParameters table.
+ExchangeRateCurrencyPairCalculationRulesEntityMaintain=Satış vergisi varlığı için Döviz kuru hesaplama kurallarını koru
+ ;Maintain privilege for ExchangeRateCurrencyPairCalculationRulesEntity
+ExchangeRateCurrencyPairCalculationRulesEntityView=Satış vergisi varlığı için Döviz kuru hesaplama kurallarını görüntüle
+ ;View privilege for ExchangeRateCurrencyPairCalculationRulesEntity
+Currency_Message_CurrencyRequiredForRounding=Yuvarlama için para birimi gereklidir.
+ ;Error from currency rounding API's
+Currency_Message_CurrencyRequiredForDecimals=Basamak sayısını almak için para birimi gereklidir.
+ ;Error from currency rounding API's
+Currency_Message_CurrencyRequiredForRoundingPrecision=Yuvarlama hassasiyetini almak için para birimi gereklidir.
+ ;Error from currency rounding API's
+Currency_ConfigField_PreventImportOnNationalHoliday=Resmi tatilde içe aktarmayı önle
+ ;Exchange rate provider configuration option.
+Currency_ConfigField_QuoteTypeLocked=Quote type
+ ;{Locked}
+Currency_Message_QuoteTypeMissing=Döviz kuru sağlayıcı yapılandırması anahtarı Teklif türü bulunamadı. Değerleri sıfırla'ya tıklayın ve Döviz kuru sağlayıcılarını yapılandır sayfasında bir Teklif türü seçin. 
+ ;Exchange rate provider configuration error
+Currency_Message_StartDateAlreadyExists=Döviz kuru eklenemiyor, Başlangıç tarihi zaten var. Var olmayan bir Başlangıç tarihi girin.
+ ;Exchange rate error message
+Currency_Monetary_unit_declensions=Para birimi gerilemeleri
+ ;Monetary unit declensions

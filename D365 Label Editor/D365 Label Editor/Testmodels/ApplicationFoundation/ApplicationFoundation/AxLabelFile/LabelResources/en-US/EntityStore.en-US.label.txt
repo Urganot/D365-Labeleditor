@@ -1,0 +1,2 @@
+EntityStoreSectionCaption=Entity Store
+ ;Caption on groups and tabs containing EntityStore content.

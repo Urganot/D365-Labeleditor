@@ -1,0 +1,80 @@
+NewLabel0=Label files created on 10/20/2014 10:55:02 for label file Id SysTraceCockpit and language en-US
+ ;Label file comment - see above label
+ImportTrace=Import trace for analysis
+ ;New Comment
+TracingControlGroup=Tracing Control Group
+ ;New Comment
+ConfigureTraceCockpit=Configure tracing tools
+ ;New Comment
+ConfigForm_ConfigureDatabase=Configure Trace Parser database
+ ;New Comment
+ConfigForm_SQLServername=Server name
+ ;New Comment
+ConfigForm_DatabaseName=Database name
+ ;New Comment
+ConfigForm_ValidateConnectionString=Validate
+ ;New Comment
+ConfigForm_DatabaseTabLog=Database Validation Output
+ ;New Comment
+ConfigForm_Username=Username
+ ;New Comment
+ConfigForm_Password=Password
+ ;New Comment
+ConfigForm_SQLServerAuthOnly=Optional username/password for SQL Server authentication
+ ;New Comment
+ConfigForm_Err_InvalidServerDatabaseName=Server and database name are mandatory fields and require input
+ ;New Comment
+ConfigForm_EndpointCaption=Endpoint URL
+ ;New Comment
+ConfigForm_ServiceEndpoint=Service endpoint
+ ;New Comment
+ConfigForm_Caption=Configure performance tool
+ ;New Comment
+TracingPane_TraceName=Trace name
+ ;New Comment
+TracingPane_StartTracing=Start trace
+ ;New Comment
+TracingPane_StopTracing=Stop trace
+ ;New Comment
+FindTrace_FindTrace=Find trace
+ ;Text for a button on a trace finding pane to... find a trace
+FindTrace_Caption=Captured traces
+ ;Caption for a trace finding pane
+TracingPane_TraceOnDescription=Your business process will continue to be captured until you stop tracing.
+ ;Static text after tracing has started via SysTracingPane.
+TracingPane_TraceUploadDescription=Upload the trace file that was collected when you recorded your business process so that it can be analyzed by support team. The local trace file will be deleted after it’s uploaded.
+ ;Static text after tracing has stopped.
+TracingPane_UploadSuccessful=Trace %1 was uploaded successfully.
+ ;Info message when trace file has been uploaded to the storage successfuly.
+TracingPane_UploadFailed=Trace %1 wasn't uploaded. You can try again or re-run the trace.
+ ;Warning message when trace file has not been uploaded to the storage successfuly.
+FindTrace_DownloadTrace=Download trace
+ ;Text for the download trace button.
+TraceNotFound=The trace file was deleted. Please re-run the trace.
+ ;Info message when trace has been deleted but user is trying to get hold of it.
+TraceException=A system error occurred while your trace was processing. Please re-run the trace.
+ ;Info message when an error occured while processing a trace
+TracingPane_UploadTrace=Upload trace
+ ;Text on upload trace button on SysTracingPane.
+SysTracingTable_UserFieldLabel=Traced by
+ ;Label for User field on SysTracingTable. Represents the user who performed tracing.
+SysTracingTable_NameFieldLabel=Trace name
+ ;Label for Name field on SysTracingTable. Represents name for uploaded trace file.
+SysTracingTable_UploadInfoFieldLabel=Trace information
+ ;Label for UploadInfo field on SysTracingTable. Not displayable to user. Represents packed upload information about trace file in temporary storage.
+SysTracingTable_StartTimeFieldLabel=Trace started
+ ;Label for StartTime field on SysTracingTable. Time stamp when trace began.
+SysTracingTable_StopTimeFieldLabel=Trace finished
+ ;Label for StopTime field on SysTracingTable. Time stamp when trace finished.
+TracingPane_Caption=Tracing pane
+ ;Caption for SysTracingPane form.
+SysTracingTable_UploadResultClass=Upload class type
+ ; Label for UploadClass field on SystracingTable. Indicates type of a class used as a result of trace upload.
+SysFindTrace_AutoDeleteCheckboxLabel=Delete trace after download
+ ;Label for a checkbox that indicates whether to delete trace from a temp storage after it's been downloaded.
+SysFindTrace_AutoDeleteCheckboxHelptext=You can also delete a trace by deleting a corresponding row in the grid
+ ;Help text for a checkbox on SysFindTrace form.
+BadTraceUploadInfo=A record for the trace %1 is corrupted. Can not extract uploaded information for the trace.
+ ;Warning message when upload info container in SysTracingTable is corrupted
+BadTraceTempLink=Can not access uploaded trace %1. The file might have been deleted.
+ ;Warning message when not able to generate a temp link to access a file in a temp storage.

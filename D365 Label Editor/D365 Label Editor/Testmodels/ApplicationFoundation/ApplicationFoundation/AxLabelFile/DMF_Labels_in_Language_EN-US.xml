@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AxLabelFile xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+	<Name>DMF_Labels_in_Language_en-us</Name>
+	<LabelContentFileName>DMF.en-us.label.txt</LabelContentFileName>
+	<LabelFileId>DMF</LabelFileId>
+	<Language>en-us</Language>
+	<RelativeUriInModelStore>Data%20Import%20Export%20Framework/AxLabelFile/LabelResources/en-us/DMF.en-us.label.txt</RelativeUriInModelStore>
+</AxLabelFile>

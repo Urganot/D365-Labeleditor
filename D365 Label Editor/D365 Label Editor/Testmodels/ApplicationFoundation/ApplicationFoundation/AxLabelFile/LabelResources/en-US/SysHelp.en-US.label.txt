@@ -1,0 +1,125 @@
+HelpCaption=Help
+HelpTypeStepbyStep=Step by step
+HelpPublisher=Publisher: Microsoft
+LCSEndPointErrorMessage=Lifecycle Services API end point is empty. Please contact your system administrator.
+DefaultHelpBPMLibraryNotSet=Cannot retrieve help content because the default business process library has not been set. Please contact your system administrator.
+HelpSettingsCaption=Help settings
+LCSHelpConfig=Lifecycle Services help configuration
+BPMLibraryForHelp=BPM library to designate for help
+HelpSettings=Help settings
+TaskGuideTabPageCaption=Task Guides
+ ;New Comment
+WikiTabPageCaption=Wiki
+ ;New Comment
+MoreResourcesWikiLink=Help wiki
+ ;New Comment
+MoreResourcesCustomerSource=CustomerSource
+ ;New Comment
+MoreResourcesPrivacy=Privacy and Cookies
+ ;New Comment
+MoreResourcesAskCommunity=Ask the community
+ ;New Comment
+HelpGuidePrerequisites=Prerequisites and related content
+ ;New Comment
+HelpGuideDescription=Description
+ ;New Comment
+HelpGuideSteps=Steps
+ ;New Comment
+MoreResourcesLegal=Legal
+ ;New Comment
+PlayTaskGuide=Play guide
+ ;New Comment
+MoreResourcesGroupCaption=Resources
+ ;New Comment
+LCSProjectId=LCS Project Id
+LCSProjectName=LCS Project
+LCSProjectsTable=LCS Projects
+HelpWikiLocationType=Wiki location
+HelpWikiMicrosoftLocation=Microsoft wiki location
+HelpLibraryDisplayOrder=Display order
+HelpPublisherTypeName=Publisher
+HelpLibraryTypeName=Library
+SysHelpSetup_LibraryGroupLabel=Libraries
+LCSLibraryTypeId=Library ID
+SysHelpSetupForm_Loading=Synchronizing Lifecycle Services projects
+SysHelpSetup_ButtonSynchronize=Synchronize with Lifecycle Services
+SysHelpSetup_ButtonSynchronize_Help=Synchronizes Lifecycle Services project data with current settings.
+LCSConnectionErrorMessage=Failed to connect with Lifecycle Services.
+LCSRetrieveProjectsErrorMessage=Failed to retrieve projects from Lifecycle Services.
+LCSRetrieveLibrariesErrorMessage=Failed to retrieve libraries from Lifecycle Services for a project with id '%1'.
+SysHelpSetupForm_SynchronizationFailureMessage=Synchronization with Lifecycle Services didn't succeed. Check the Message center for details. 
+LCSSyncProjectNoLongerExistsWarning=The selected project '%1' no longer exists in Lifecycle Services. Please select a project.
+SysHelpSetup_TaskGuideSourcesGroupLabel=Task guide sources
+SysHelpSetup_WikiSourcesGroupLabel=Wiki sources
+MoveUp=Move up
+ ;New Comment
+MoveDown=Move down
+ ;New Comment
+SetupHelpSettings=Setup help settings for the system
+ ;New Comment
+LoadingHelpContent=Loading help content
+ ;New Comment
+SubmitFeedback=Submit
+ ;New Comment
+CancelFeedback=Cancel
+ ;New Comment
+MicrosoftPrivacyNotification=Thank you for taking the time to send us feedback. Your privacy is important to us. To protect your privacy, please don't include any personal information. 
+ ;New Comment
+TaskGuidesNotFoundIndicatorForPage=We couldn't find any guides for this page.
+ ;New Comment
+WikiResultsFoundIndicator=There are results on the wiki tab to review.
+ ;New Comment
+WikiResultsNotFoundIndicatorForPage=We couldn't find any wiki results for this page.
+ ;New Comment
+TaskGuidesFoundIndicator=There are results on the task guides tab to review.
+ ;New Comment
+HelpWikiTitle=Title
+ ;Title of the wiki
+HelpWikiLink=Link
+ ;Link for the wiki
+HelpWikiOwnerType=Owner type
+ ;Wiki owner type
+HelpWikiExcerpt=Exceprt
+ ;Breif summary of the wiki page
+HelpWikiDate=Date
+ ;Wiki published date
+HelpWikiSearchTable=Wiki search results
+ ;Label for TmpSysHelpWikiSearchResults table
+MoreResourcesIndicator=For more help, consider one of the options under Resources below.
+ ;New Comment
+AskForFeedbackText=Tell us what you'd like to know
+ ;New Comment
+DefaultLibrarySave=Refresh the browser to see the help content from the selected help library.
+ ;New Comment
+SearchTaskGuidesFromFrameworkFailed=Searching task guides for the current form for framework with id '%1' failed
+ ;New Comment
+FeedbackPrivacy=Microsoft Privacy Statement
+ ;New Comment
+GetFrameworkFromLCSFailed=Getting framework with id '%1' failed from Lifecycle Services.
+ ;New Comment
+GetUploadUriFailed=Failed to get the Upload Uri for an artifact from Lifecycle Services.
+ ;New Comment
+RefreshTaskGuideResults=Show guides that use this page
+ ;New Comment
+RefreshResultsTooltip=Click here to see results for the current page. 
+ ;New Comment
+ShowingTaskGuidesForPage=Showing guides that use the current page
+ ;New Comment
+ShowingTaskGuidesForSearch=Showing guides that match your search
+ ;New Comment
+TaskGuidesNotFoundIndicatorForSearch=We couldn't find any guides for your search.
+ ;New Comment
+RefreshWikiResults=Show wikis for this page
+ ;New Comment
+ShowingWikisForPage=Showing wikis for the current page
+ ;New Comment
+ShowingWikisForSearch=Showing wikis that match your search
+ ;New Comment
+WikiResultsNotFoundIndicatorForSearch=We couldn't find any wiki results for your search.
+ ;New Comment
+SearchPlaceholder=Search
+ ;New Comment
+LoadingTaskGuidePane=Loading the selected guide
+ ;New Comment
+ConfirmSyncProject=This action will remove the current help configuration, and you will be able to re-configure it using the Lifecycle Services projects and libraries that you have access to. If you do not have access to the projects and libraries that are currently configured then you will not be able to restore the current configuration. Are you sure you wish to remove the current configuration? 
+ ;Confirmation message sent during sync project

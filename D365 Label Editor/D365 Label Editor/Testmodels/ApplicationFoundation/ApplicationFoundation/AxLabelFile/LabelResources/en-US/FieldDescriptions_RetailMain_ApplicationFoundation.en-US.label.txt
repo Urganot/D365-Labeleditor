@@ -1,0 +1,2 @@
+SysTranslationDetail_LanguageComboBox=Select the language to use for the translated text. To add a language to the list, click the Plus button. To remove a language, select the language and then click the Delete button.
+ ;Description text for the LanguageComboBox control on the SysTranslationDetail form

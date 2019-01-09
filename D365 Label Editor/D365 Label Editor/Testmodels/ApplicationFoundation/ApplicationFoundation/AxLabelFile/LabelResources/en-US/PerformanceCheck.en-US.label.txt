@@ -1,0 +1,38 @@
+PerformanceCheckTableTmp=InMemory performance check table
+PerfCheckTableDevDocument=This table holds data for performance test
+PerformanceCheckTable=Performance check table
+RunPerformanceTest=Run performance test
+ ;Performance test Run button help text
+PerformanceTest=Performance test
+TestOptionCaption=Enter a number of records to run the test with and click the button to run it
+RecordCount=Record count to test
+Run=Run
+ ;Performance test Run button label
+TestOption=Test option
+DataManipulation=Data manipulation
+Insert=Insert
+Update=Update
+RecordInsertList=Record insert list
+InsertRecordSet=Insert record set
+UpdatetRecordSet=Updatet record set
+DeleteFrom=Delete from
+Query=Query
+LargeBufferRead1=Large buffer read 1
+LargeBufferRead2=Large buffer read 2
+ClusterIndex=Cluster index
+UniqueIndex=Unique index
+UniqueIndexWithDifferentValue=Unique index with different value
+NonUniqueIndex=Non-unique index
+TempDBandInMemory=Temp DB and InMemory
+TempDB=TempDB
+InMemory=InMemory
+Cache=Cache
+SystemGlobalObjectCache=System global object cache
+Result=Result
+WarningMessage=Note that running for 1,000 records will take approximately 1 minute, so be careful using larger numbers not to run into form timeouts
+ ;Performance test warning message
+SelectAll=Select all
+SelectAllOptions=Select all test options
+SelectAtLeastOneOption=No test option is selected. Please select at least one test option.
+TableCacheUseHelp=If this option is set to No, the existing Cache lookup property of table will be disabled
+TableCacheUse=Table cache use

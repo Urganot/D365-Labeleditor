@@ -1,0 +1,48 @@
+DataArea=DataArea
+DataAreaFiscalCalendar=DataAreaFiscalCalendar
+LegalEntity=LegalEntity
+LegalEntityFiscalCalendar=LegalEntityFiscalCalendar
+OperatingUnit=OperatingUnit
+OperatingUnitType=OperatingUnitType
+CacheCandidateRuleDescription=Check if any number sequence is possible to use cache capability.
+ ;Cache candidate rule description
+CacheCandidateRuleMessage=Non-continuous number sequences are resulting in database lookups and are not using the cache capabilities on the AOS.
+ ;Cache candidate rule message
+CacheCandidateRuleRecommendation=For each non-continuous number sequence, activate preallocation at number sequence form of Organization administration.
+ ;Cache candidate rule recommendation
+CleanupIntervalRuleDescription=Check if continuous number sequence has cleanup interval.
+ ;Cleanup interval rule description
+CleanupIntervalRuleMessage=Some number sequences which are set as Continuous and marked for Cleanup do not have a cleanup interval set, which forces a cleanup every time a number sequence value is generated.
+ ;Cleanup interval rule message
+CleanupIntervalRuleRecommendation=For each continuous number sequence set Cleanup to Yes, specify a number of hours for the Cleanup interval (default is 24.) Use the number sequence form at Organization administration.
+ ;Cleanup interval rule recommendation
+FullyUsedRuleDescription=Check if a number sequence has no more available values
+ ;Fully used rule description
+FullyUsedRuleMessage=One or more number sequences have no more available values.
+ ;Fully used rule message
+FullyUsedRuleRecommendation=Increase the highest value setting for the number sequence at number sequence form of Organization administration.
+ ;Fully used rule recommendation
+UsageRuleDescription=Check if a number sequence has enough available numbers.
+ ;Usage rule description
+UsageRuleMessage=We recommend maintaining a buffer of available numbers for each number sequence of greater than 20% to prevent running out in production during peak workloads. Importance: If a number sequence is exhausted and has no more numbers to assign, a work stoppage may result. For example, if you run out of Sales Order numbers, no new sales orders can be created until the situation is corrected.
+ ;Usage rule message
+UsageRuleRecommendation=Maintain an available numbers buffer for each number sequence of more than 20%. This can be achieved by increasing the upper limit of the number sequence or by running a manual cleanup of sequences marked as continuous. Number sequences can be managed in the number sequence form of Organization administration.
+ ;Usage rule recommendation
+NumberSeqResetLabel=Reset
+ ;NumberSeqReset - menu item label
+NumberSeqResetHelptext=Resets the number sequences data types back to their default settings.
+ ;NumberSeqReset - menu item help text
+NumberSeqResetOperationCaption=Resetting number sequences
+ ;NumberSeqReset - SysOperation caption
+NumberSeqResetWarning=You are about to reset number sequences from the module definitions. Do you want to continue?
+ ;NumberSeqReset - Confirmation
+NumberSeqCacheCandidateRuleName=Number sequence cache candidate search
+ ;Number sequence cache candidate rule name
+NumberSeqCleanupIntervalRuleName=Number sequence cleanup interval check
+ ;Number sequence cleanup interval rule name
+NumberSeqFullyUsedRuleName=Number sequence fully used validation
+ ;Number sequence fully used rule name
+NumberSeqUsageRuleName=Number sequence usage check
+ ;Number sequence usage rule name
+NumberSeqMinimumPreAllocationWarningSet=A preallocation quantity value less than the recommended value of %1 may create performance issues with the system. Do you want to proceed?
+ ;Number sequence pre allocation quantity warning. %1 = default quantity value.

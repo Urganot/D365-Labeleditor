@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AxLabelFile xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+	<Name>SysTest</Name>
+	<LabelContentFileName>SysTest.en-US.label.txt</LabelContentFileName>
+	<LabelFileId>SysTest</LabelFileId>
+	<RelativeUriInModelStore>ApplicationFoundation\AxLabelFile\LabelResources\en-US\SysTest.en-US.label.txt</RelativeUriInModelStore>
+</AxLabelFile>

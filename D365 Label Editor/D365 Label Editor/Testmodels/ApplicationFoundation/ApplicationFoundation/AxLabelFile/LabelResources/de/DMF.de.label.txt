@@ -1,0 +1,3568 @@
+@DMF0=Label files created on 26/5/2012
+ ;By user Admin
+@DMF1=Function that generates asset activity code
+@DMF2=Function that generates asset property group
+@DMF3=Function that generates department
+@DMF4=Function that generates worker contact name
+@DMF5=Function that generates worker responsible records
+@DMF6=Display the property type
+@DMF7=Capture the status of an error
+@DMF8=Processing group
+@DMF9=Identification mark in staging
+@DMF10=This table contains code page values
+@DMF11=This table contains conversion details
+@DMF12=This table contains customer address information
+@DMF13=Type of source
+@DMF14=The table holds the source data format information
+@DMF15=DataSource properties
+@DMF16=The format required for values in the dimension
+@DMF17=Role separator
+@DMF18=First row is header
+@DMF19=Language locale
+@DMF20=The file '%1' is larger than allowed size - '%2' megabytes (MB). 
+@DMF21=Select a criteria
+@DMF22=Text qualifier
+@DMF23=Delimited
+@DMF24=Fixed width
+@DMF25=Function that generates payment ID type
+@DMF26=Function that generates the default quantity data
+@DMF27=Function that generates the default cost price
+@DMF28=File is not accessible
+@DMF29=Assessment number
+@DMF30=Assessment tax number
+@DMF31=Asset property group
+@DMF32=Asset book ID
+@DMF33=Credit card address verification
+@DMF34=Credit card address verification level
+@DMF35=Credit card CVC
+@DMF36=Cust/vendor blocked
+@DMF37=Customer/Vendor blocked
+@DMF38=Debit/Credit proposal
+@DMF39=Del module vend purch parameters
+@DMF40=Dimension ledger account reporting type
+@DMF41=Dimension ledger account type
+@DMF42=Dirparty base type
+@DMF43=Party associated with address does not exist in the system.
+@DMF44=Entity
+@DMF46=Field control
+@DMF47=Invent fiscal LIFO normal value calculation
+@DMF48=Invent journal type
+@DMF49=Invoice order account
+@DMF50=Ledger journal account type
+@DMF51=Ledger posting type
+@DMF52=Yes/No
+@DMF53=Payment stub
+@DMF54=Purch matching policy with not set option
+@DMF55=Required PO type
+@DMF56=RFID item tagging level
+@DMF57=Sales price model basic
+@DMF58=Sales/Purchase
+@DMF59=Source name
+@DMF61=Table/Group/All
+@DMF62=Tax 1099 type
+@DMF63=Tax withhold vendor type TH
+@DMF64=Vendor type MX
+@DMF65=Batch status
+@DMF66=Code page
+@DMF67=Delimiter
+@DMF68=Mapping type
+@DMF69=Data import export framework
+@DMF70=Last factor update date
+@DMF71=Asset life time
+@DMF72=Asset lifetime rest
+@DMF73=Asset maintenance information
+@DMF74=Staging value
+@DMF75=Target value
+@DMF76=Identify the Microsoft Dynamics 365 for Opearations table associated with the entity.
+@DMF81=Job ID
+@DMF82=Building complement
+@DMF83=Have the wizard auto-generate artifacts needed for data import/export.
+@DMF84=Description for fax.
+@DMF85=Source and target applications
+@DMF86=Staging table (table and related EDTs)
+@DMF87=Regional settings
+@DMF88=Dimension attribute
+@DMF89=Dimension format
+@DMF90=Role separator
+@DMF91=Get staging data
+@DMF92=Copy data to target
+@DMF93=Execution history
+@DMF94=Select entities for processing group
+@DMF95=Specify file format
+@DMF96=Generate source file
+@DMF97=Generate source mapping
+@DMF98=View target mapping
+@DMF99=View staging preview
+@DMF100=Entity attributes
+@DMF101=Entities
+@DMF102=Source XML templates
+@DMF103=Target entity (query)
+@DMF104=The wizard provides a base for you to work from. However, it is likely that you will need to modify the project to make it fully functional.
+@DMF105=Map source to staging
+@DMF106=Source mapping
+@DMF107=Mapping details
+@DMF108=Mapping visualization
+@DMF109=Staging data execution
+@DMF110=Run on AOS
+@DMF111=Batch job ID
+@DMF112=Entity details
+@DMF113=Execution history
+@DMF114=View staging data
+@DMF115=Job ID
+@DMF116=Staging details
+@DMF117=Target details
+@DMF118=Entity structure
+@DMF119=Call modified field method
+@DMF120=Target mapping visualization
+@DMF121=Target fields
+@DMF122=Map staging to target
+@DMF123=Action mapping
+@DMF124=Refresh diagram
+@DMF125=XML to entity mapping
+@DMF126=Description for telex name
+@DMF127=Description for URL name.
+@DMF128=This wizard helps you to create the required entity mapping fields in the data import/export framework
+@DMF129=Map the source XML
+@DMF130=Hide fields not present in source
+@DMF131=Sample file
+@DMF132=Target data execution
+@DMF133=Target execution
+@DMF134=Source target
+@DMF135=Column delimiter
+@DMF136=First row header
+@DMF137=Validation is successful
+@DMF138=Row delimiter
+@DMF139=local Language 
+@DMF140=Invalid dimension string separator.
+@DMF141=Source value to replace with another value when copying data to staging
+@DMF142=Out delimiter
+@DMF143=Cannot insert record in abstract table '%1'
+@DMF144=Text qualifier
+@DMF145=Data written to target '%1' ('%2' records created, '%3' records updated)
+@DMF146=Run business logic in insert or update method
+@DMF147=Run business validations in validate Field method
+@DMF148=Run business validations
+@DMF149=Sample file path
+@DMF150=Run for
+@DMF151=Source XML
+@DMF152=New value to apply when copying data to staging
+@DMF153=Execute SSIS package
+@DMF154=Duplicate tag exists in file '%1'
+@DMF155=Record does not exists in CustTable
+@DMF159=Entity query version '%1' is not matching with AOT version '%2'
+@DMF160=Name does not exists in inventory parameters setup
+@DMF161=Present in source
+@DMF162='%1' records inserted in staging
+@DMF163=Maximum size
+@DMF164=Batch staging ID
+@DMF165=Batch target ID
+@DMF166=Staging end date/time
+@DMF167=New staging record
+@DMF168=New target record
+@DMF169=Updated target record
+@DMF170=Staging status
+@DMF171=Staging start date/time
+@DMF172=Target status
+@DMF173=Target end date/time
+@DMF174=Target start date/time
+@DMF175=Entity class
+@DMF176=Table representing staging entity
+@DMF177=Mapping last modified date time
+@DMF178=Query version
+@DMF179=Staging last modified date time
+@DMF180=Query representing target entity
+@DMF181=Target last modified date/time
+@DMF182=Com account category
+@DMF183=Com data project
+@DMF184=Compensation adjustment method_MX
+@DMF185=Reporting account type
+@DMF186=Tax item group heading data area id
+@DMF187=Define conversion values
+@DMF188=Two way match/ Three way match
+@DMF189=Item or service
+@DMF190=Never/Always
+@DMF191=Staging field
+@DMF192=Parent datasource
+@DMF193=PlaceHolder
+@DMF194=Description for email
+@DMF195=Description for phone
+@DMF196=Address role
+@DMF197=Vend/Purch/User
+@DMF198=Conversion for source to staging
+@DMF199=Customer address entity
+@DMF200=Data source/target
+@DMF201=Data source properties
+@DMF202=Entities for a processing group
+@DMF203=XML fields for a processing group
+@DMF204=Processing group execution
+@DMF205=Dimension per
+@DMF206=Source XML templates for different source types and entities
+@DMF207=Job runs
+@DMF208=XML to entity mapping for a data project
+@DMF209=Target entity hierarchy
+@DMF210=Target XML
+@DMF211=Staging to target mapping
+@DMF212=Vendor address entity
+@DMF213=XML functions
+@DMF214=Record does not exist in '%1'
+@DMF215=ID of the dimension that you are mapping to
+@DMF216=Rows with previous errors
+@DMF217=Use to define the separator that distinguishes multiple email addresses.
+@DMF218=Multiple value separator
+@DMF219=Source data formats
+@DMF220=Processing group
+@DMF221=Opens a wizard that helps you to generate a source file.
+@DMF222=File format must be specified if the first line is not a header
+@DMF223=Displays mapping visualization
+@DMF224=Preview source file
+@DMF225=Target XML tags are not generated and hierarchy cannot be found
+@DMF226=Staging to target mapping is not done
+@DMF227='%1' entity is validated for data import/export
+@DMF228=Please enter the definition record
+@DMF229=Source to staging mapping must be completed
+@DMF230=Save the record
+@DMF231=Enter the entity record
+@DMF232=Target field is missing for source field '%1'
+@DMF233=Source field is missing for target field '%1'
+@DMF234=Target method is missing for source field '%1'
+@DMF235=File adapter is not supported
+@DMF236='%1' '%2' record(s) inserted in staging
+@DMF237=Get data from source to staging
+@DMF238=Cannot clear the enable/disable checkbox for mandatory fields
+@DMF239=Input data type '%1' is not in scope
+@DMF240=Field size should not be more than '%1'
+@DMF241=Entity attributes(XML)
+@DMF243=Field map contains unsaved changes. These changes will be lost if you do not "Save". Do you still want to leave?
+@DMF244='%1' entity mapping has completed successfully
+@DMF245=Mapping is not done
+@DMF246=Mandatory value is missing for field '%1'
+@DMF247=View messages in the Infolog
+@DMF248=Field value '%1' does not exist in table
+@DMF249=Lists staging fields, methods and the target fields that they map to.
+@DMF250=Lists staging data, methods and the target entities that they map to
+@DMF251='%1' Dimension string separator is not formatted correctly. Check the parameter settings.
+@DMF252=Generate mapping
+@DMF254=Journal '%1' has already been posted
+@DMF255=Name does not exist in
+@DMF256=Generate sample file
+@DMF257='%1'- Name does not exist in inventory parameters setup
+@DMF258='%1' record does not exist in CustTable
+@DMF259='%1' record does not exist in VendTable
+@DMF260='%1' record does not exist in Main Account
+@DMF261='%1' record does not exist in InventTable
+@DMF262=DMF
+@DMF263=ExclusionList
+@DMF264=Gender
+@DMF265=Processing group name
+@DMF266=Transfer status for active record
+@DMF267=Never|When|Always
+@DMF268=Execution List
+@DMF269=Function that generates default dimension
+@DMF270=Function that generates EcoRes product translation record
+@DMF271=URL name
+@DMF272=Telex name
+@DMF273=Function that generates postal address
+@DMF274=Description for telefax
+@DMF275=Telefax name
+@DMF276=Phone number
+@DMF277=Person/Organization
+@DMF278=Party number for employee responsible
+@DMF279=Name of employee responsible
+@DMF280=Fax name
+@DMF281=Email name
+@DMF282=<Dimension1>:<Dimension2>:...<DimensionN>
+@DMF283=Default dimension string
+@DMF284=Name\\Address
+@DMF285=Legal entity/Legal person
+@DMF286=Payment/Requisition
+@DMF287=Address URL
+@DMF288=URL for address
+@DMF289=Address telex
+@DMF290=Telex for address
+@DMF291=Address phone
+@DMF292=Address fax
+@DMF293=Address email
+@DMF294=Quarter/Yearly
+@DMF295=Item/Service
+@DMF296=Product/Product master
+@DMF297=None|Contribution ratio|Percent markup
+@DMF298=Production/Transfer
+@DMF299=Three Way match/Two way match
+@DMF300=Service/Item
+@DMF301=Item level/Case level
+@DMF302=A/B
+@DMF303=DOT shipping description
+@DMF304=This table contains source XML entity
+@DMF305=Source field
+@DMF306=Staging log
+@DMF307=This table contains log details information for staging and target
+@DMF308=Identification mark for data execution
+@DMF309=Log details for staging and target
+@DMF310=This table contains the entity hierarchy
+@DMF311=Parent data source
+@DMF312=Target XML information
+@DMF313=Target field
+@DMF314=Incorrect assignment
+@DMF315=Name of the entity
+@DMF316=Execution sequence
+@DMF317=This table contains the target XML entity map
+@DMF318=Type of mapping
+@DMF319=Description for telex
+@DMF320=This table contains vendor address information
+@DMF321=Email for address
+@DMF322=Phone for address
+@DMF323=Fax for address
+@DMF324=Function that generates address book record
+@DMF325=Function that generates company ID NAF
+@DMF326=Function that generates contact worker
+@DMF327=Function that generates offset ledger dimension
+@DMF328=Function that generates party record
+@DMF329=Function that generates Tax1099 fields
+@DMF330=Function that generates price disc table link
+@DMF331=Function that generates inventory dimension
+@DMF332=Function that generates default item code
+@DMF333=Function that generates default account code
+@DMF334=Yes/No
+@DMF335=Function that generates financial statement parameter
+@DMF336=Function that generates main account legal entity
+@DMF337=COA type
+@DMF338=Function that generates chart of accounts
+@DMF339=Function that generates account category
+@DMF340=Function that generates dimension attribute link
+@DMF341=Function that generates dimension attribute value
+@DMF342=Function that generates offset account
+@DMF343=Function that generates opening account
+@DMF344=Function that generates unit of measure
+@DMF345=Staging cleanup
+@DMF346=Balance adjustment
+@DMF347=Function that generates default dimension
+@DMF348=Function that generates default item data
+@DMF349=Function that generates inventory dimension
+@DMF350=Function that generates journal header
+@DMF351=Function that generates line number
+@DMF352=Function that generates offset accounts
+@DMF353=Function that generates worker responsible record
+@DMF354=Asset trans type journal
+@DMF355=Target entity
+@DMF356=Query representing target entity
+@DMF357=Staging last modified date time
+@DMF358=Class representing target entity
+@DMF359=Target last modified date time
+@DMF360=Mapping last modified date time
+@DMF361=DMF data project execution
+@DMF362=Number of records created
+@DMF363=Field size
+@DMF364=This table contains information about the processing group XML fields
+@DMF365=XMLFunctions
+@DMF366=XML functions information
+@DMF367=Two Way/Three Way
+@DMF368=ProServices/Rent/Lease
+@DMF369=Vendor name/DBA
+@DMF370=Entity '%1' does not exist
+@DMF371=Create a job ID for the staging data job
+@DMF372=Select a job ID to run
+@DMF373=Mapping already exists. Click Yes to reset from the template, or click No to modify the existing mapping.
+@DMF374=Function that generates invent trans id
+@DMF375=Information about execution details
+@DMF376=Information about source XML templates for different source types and entities
+@DMF377=Information about entities
+@DMF378=Contains information about entities of processing group
+@DMF380=Run business validations
+@DMF381=Staging cleanup is successfully done
+@DMF382=Entity is mandatory
+@DMF383=Field size '%1' should not be zero for fixed width source
+@DMF384=Role separator
+@DMF385=Specify role separator
+@DMF386=Go to target entity for the selected staging record
+@DMF387=DMF data visualization
+@DMF388=SQL data tab
+@DMF389=For additional warnings or errors, please check the log
+@DMF390=This table contains information about processing groups
+@DMF391=Stage at which error occurred - source or target
+@DMF392=This table contains information about entities
+@DMF393=Modified date/time
+@DMF394=Query version
+@DMF395=Function that generates product dimension group
+@DMF396=Source XML
+@DMF397=HcmWorker table
+@DMF398=Value mapping conversion
+@DMF399=DMF entity writer
+@DMF400=Write data from source to target
+@DMF401=Lists source data, methods, and the staging entities that they map to.
+@DMF402=Lists source fields, methods, and the staging fields that they map to.
+@DMF403=Execution group id
+@DMF404=Job Id already exists, give a different job id.
+@DMF405=Record ('%1') 
+@DMF406=Name of source format.
+@DMF407=File adapter
+@DMF408=SSIS adapter
+@DMF409={CR}{LF}
+@DMF410={CR}
+@DMF411={LF}
+@DMF412=Semicolon {;}
+@DMF413=Colon {:}
+@DMF414=Comma {,}
+@DMF415=Tab {t}
+@DMF416=Vertical bar {|}
+@DMF417=Dot{.}
+@DMF418=Trade agreement journal
+@DMF419=Vendor address
+@DMF420=()
+@DMF421=Operations
+@DMF422=Two digit
+@DMF423=Four digit
+@DMF424=Details of source log
+@DMF425=History of execution of a job
+@DMF426=Set the source data format
+@DMF427=Staging data visualization
+@DMF428=Display the staging data
+@DMF429=Processing group definition
+@DMF430=List of entities
+@DMF431=Target entities
+@DMF432=List of target entities
+@DMF433=XML template for source
+@DMF434=DMF entity classes
+@DMF435=List of DMF entity classes
+@DMF436=Entity attribute
+@DMF437=DMF entity attributes
+@DMF438=Modify field mappings
+@DMF439=Modify the source mapping for the entity
+@DMF440=Source data
+@DMF441=Source data execution
+@DMF442=Log details of source
+@DMF443=Structure of entity
+@DMF444=Target mapping view
+@DMF445=Data visualization
+@DMF446=This form will display source-target mapping view
+@DMF447=Fields in the target
+@DMF448=Modify target mapping
+@DMF449=The target mapping modification
+@DMF450=Value mapping form
+@DMF451=Validate the field value
+@DMF452=Validate the field values whether they are correct or not
+@DMF453=Class for writing source data to target
+@DMF454=Run staging to target step on AOS
+@DMF455=Displays the staging records
+@DMF456=Display source records
+@DMF457=Go to main table of the field
+@DMF458=This class is used for SQL field generation
+@DMF459=SQL type generation
+@DMF460=Data project adapter
+@DMF461=Source writer
+@DMF462=Write data to staging
+@DMF463=Run source to staging step on AOS
+@DMF465=Source execution parameters
+@DMF466=Data read
+@DMF467=Write execution parameters
+@DMF468=Data write
+@DMF469=Generate XML
+@DMF470=Generates the XML for the data
+@DMF471=Wizard to generate XML
+@DMF472=Wizard to generates source XML
+@DMF473=Cleans the staging data
+@DMF474=Form for value mapping
+@DMF475=Entity class
+@DMF476=Number of records updated
+@DMF477=Number of records updated in target
+@DMF478=Number of records created in staging
+@DMF479=Batch execution ID
+@DMF480=Log details
+@DMF481=Generate*
+@DMF482=Upload xml
+@DMF483=Display data
+@DMF484=This wizard helps you create a template to use as a sample file when mapping your source data to the data import/export framework.
+@DMF485=Use this wizard if you do not have a sample file of your data for an entity
+@DMF486=If you do have a sample file, then cancel the wizard, create a new entity on the Select entities for data project page
+@DMF487=Enter the path to the sample file.
+@DMF488=Used to write data to target
+@DMF489=Is present in source
+@DMF490=This job id is already used for other processing group, use a different one
+@DMF491=File row delimiter
+@DMF492=Type of adapter
+@DMF493=Indicate whether the file uses delimited or fixed width formatting.
+@DMF494=Type of entity
+@DMF495=Source or target direction
+@DMF496=Temporary table for entity
+@DMF497=The table is a temporary table for entity
+@DMF498=Field group data
+@DMF499=Cannot generate the mapping without file
+@DMF500=Is the field mandatory?
+@DMF501=Data import/export framework administrator
+@DMF502=Administrator for data import/export framework
+@DMF503=Perform data import/export tasks
+@DMF504=Perform duties related to data import/export
+@DMF505=Perform data import/export tasks
+@DMF506='%1' does not exist in '%2'
+@DMF507=Select from the list of delimiters for rows
+@DMF508=Select from the list of delimiters for columns
+@DMF509=Field used in target
+@DMF510=Field used in staging
+@DMF511=Size of the field
+@DMF512=Staging start date time
+@DMF513=Source data format
+@DMF514=Staging end date time
+@DMF515=Format of source data
+@DMF516=Specify the text qualifier to use. For example, you can specify that text fields are enclosed in quotation marks.
+@DMF517=Specify the locale to provide language-specific information for ordering and for date and time formats.
+@DMF518=Specify the code page for non-Unicode text.
+@DMF519=Unicode
+@DMF520=Indicate whether to use Unicode.
+@DMF522=Project entity
+@DMF526=Function that generates logistics location
+@DMF527=Function that generates the BOM link
+@DMF528=The table holds the staging record for entity dimension
+@DMF529=Function that generates entity instance
+@DMF530=Function that generates owner
+@DMF531=Function that generates approver
+@DMF532=Dimension attribute table
+@DMF533=Units table
+@DMF534=Projects table
+@DMF535=Display list code
+@DMF536=Function that generates journal link
+@DMF537=Function that generates asset trans
+@DMF538=Function that generates ledger dimension
+@DMF539=Function that generates default currency
+@DMF540=Main account should be in the first segment
+@DMF541=Function that generates project trans
+@DMF542=Contact person address entity
+@DMF543=Contact person postal address view
+@DMF544=Function that generates credit card number
+@DMF545=Function that generates default customer account
+@DMF546=Function that generates manual change policy
+@DMF547=Function that generates system change policy
+@DMF548=Sales order header
+@DMF549=Purchase order header
+@DMF550=Sales order line
+@DMF551=Purchase order line
+@DMF552=Function that generates sales responsible worker
+@DMF553=Function that generates delivery address record
+@DMF554=Function that generates vendor account
+@DMF555=Supplier delivery address
+@DMF556=Function that generates accounting distribution template
+@DMF557=Help text for coverage plan
+@DMF558=Function to generate purch table link
+@DMF559=Function that generates sorting ID
+@DMF560=Processing group '%1' is not associated to entity '%2'
+@DMF561=Job ID '%1' is not associated to processing group '%2'
+@DMF562=Function that generates income tax category
+@DMF563=Function that generates income tax code
+@DMF564=Function that generates legal entity
+@DMF565=File tag '%1'
+@DMF566=Function to
+@DMF568=Function that generates default data
+@DMF569=There are fields in the file which are not mapped to entity field.
+@DMF570=Source mapping records are not generated for table '%1' for entity '%2'
+@DMF571=There are fields in file which are not mapped to entity field.
+@DMF572=Journal name must be a field for '%1'
+@DMF573=Validations failed
+@DMF574=Function that generates default purch line data
+@DMF575=Mapping type '%1' cannot have functions
+@DMF576=Source value
+@DMF580=Function that generates sales table link
+@DMF581=Validate all field values
+@DMF582=Cannot uncheck mandatory fields, which are marked by default
+@DMF583=Target field cannot be mapped more than once
+@DMF584=Call validate Field method
+@DMF585=Validate all
+@DMF586=Identify values in the source file to replace with another value when copying data to staging.
+@DMF587=Function that generates sales category
+@DMF588=Function that generates worker purch placer
+@DMF589=Function that generates tax 1099 field
+@DMF590=Click finish to create the data import/export artifacts.
+@DMF591=This wizard helps you create a custom entity for data import/export. The steps in the wizard are: 
+@DMF592=Entered value '%1' is not a table in AOT
+@DMF593=Select a table
+@DMF594=Select the table related to the entity that you want to migrate.
+@DMF595=Create a custom entity for data import/export
+@DMF596=Create entity from wizard
+@DMF597=If Yes run business logic in insert or update method.
+@DMF598=If Yes run business validations in validateWrite method.
+@DMF599=Is run business validations in validate field
+@DMF600=Prior year
+@DMF601=Is prior year?
+@DMF602=Cannot enable or disable fields after a mandatory field has been selected
+@DMF603=Select
+@DMF604=Select the record for migration from staging to target
+@DMF605=Employee address
+@DMF606=Is base unit?
+@DMF607=Is system unit?
+@DMF608=Field Job ID must be filled in
+@DMF609=Job ID not found with the selected processing group '%1'
+@DMF610=Processing-'%1'group-'%2' Entity-'%3'
+@DMF611=Select the checkbox to validate records
+@DMF612=Encumbrance required
+@DMF613=Is encumbrance required?
+@DMF614=New fixed asset
+@DMF615=Invisible
+@DMF616=Run business logic in modified Field Method.
+@DMF617=Project '%1' already exist in application
+@DMF618=Staging table '%1' already exist in application
+@DMF619=Function that generates JmgEmployee record
+@DMF620=Error code for staging execution.
+@DMF621=Error column
+@DMF622=Error column for staging execution
+@DMF623=Error source
+@DMF624=Error source for staging execution.
+@DMF625=Variance options
+@DMF626=Last match variance options
+@DMF627=Vendor invoice match status
+@DMF628=Staging error
+@DMF629=DMFStagingErrorCode table holds the staging error codes and descriptions
+@DMF630=Staging execution error
+@DMF631=The table holds the staging error information for data project and entity
+@DMF632=Function that generates VendInvoiceInfo table
+@DMF633=Cash discount base days
+@DMF634=The number of days that will be added to the document date when calculating discounts and due dates
+@DMF635=Cash discount base date
+@DMF636=The date that is used for calculating discount dates and due dates
+@DMF637=String field '%1' cannot be mapped to field '%2' because of field type mismatch
+@DMF638=Cannot check mandatory unless present in source is marked
+@DMF639=Function that generates procurement category
+@DMF640=Function that generates tax Withhold item group heading record
+@DMF641=Function that generates accounting distribution template
+@DMF642=Function that generates reason code
+@DMF643=Integer field '%1' cannot be mapped to field '%2' because of field type mismatch
+@DMF644=Real field '%1' cannot be mapped to field '%2' because of field type mismatch
+@DMF645=Date field '%1' cannot be mapped to field '%2' because of field type mismatch
+@DMF646=Vend invoice journal
+@DMF647=Method name is mandatory for mapping type function
+@DMF648=Error invalid distribution
+@DMF649=Is error invalid distribution?
+@DMF650=Function that generates sales taker worker
+@DMF651=Recalculate
+@DMF652=Function that generates tax box
+@DMF653=The data value violated the schema constraint.
+@DMF654=The data value cannot be converted for reasons other than sign mismatch or data overflow.
+@DMF655=Conversion failed because the data value was signed and the type used by the provider was unsigned.
+@DMF656=Conversion failed because the data value overflowed the type used by the provider.
+@DMF657=The user do not have the correct permissions to write to the column.
+@DMF658=The data value violates integrity constraints.
+@DMF659=Conversion failed because the data value was signed and the type used by the flat file source adapter was unsigned.
+@DMF660=Conversion failed because the data value overflowed the type used by the flat file source adapter.
+@DMF661=Error occurred while doing bulk copy from temp table to entity table
+@DMF662=Selected file is not Unicode
+@DMF663=Selected file is Unicode
+@DMF664=Package error occurred while reading source data
+@DMF665=No rows have been migrated to staging
+@DMF666=Entity column collection is empty
+@DMF667=Error occurred while saving the package
+@DMF668=Error occurred while adding control flow components to package. This could be due to incorrect metadata
+@DMF669=Error occurred while adding the flat file connection to package. This could be due to incorrect metadata
+@DMF670=Error occurred while adding the OLEDB target connection to package. This could be due to incorrect metadata
+@DMF671=Error occurred while adding the executing the package
+@DMF672=Log description
+@DMF673=Execution error details
+@DMF674=Detail of errors encountered while getting data from source to staging
+@DMF675=Preview error details
+@DMF676=Staging log details
+@DMF677=Function that generates electronic location record
+@DMF678=Function that generates offset default dimension
+@DMF679=Function that generates item group company
+@DMF680=Function that generates item company
+@DMF681=Function that generates invent model group company record
+@DMF682=Function that generates worker responsible financial record
+@DMF683=Function that generates worker responsible sales record
+@DMF684=Location Id - '%1' is not associated to party - '%2'
+@DMF685=Function that generates org relation
+@DMF686=Function that generates employee absence setup ID
+@DMF687=Duplicate assignment found for the following target field  '%1'
+@DMF688=Resource file does not exist
+@DMF689=Execute on AOS if client user does not have permissions for database.
+@DMF690=For '%1' table, staging objects cannot be created
+@DMF691=Contact person address table
+@DMF692=Staging file data
+@DMF693=This table contains staging file data
+@DMF694=Conversion not supported for this field type
+@DMF695=Function that generates organization link
+@DMF696=Function that generates Worker
+@DMF697=Table is not selected to create staging data
+@DMF698=Rows selected by user
+@DMF699=Entity class
+@DMF700=phone numbers, or URLs that are associated with the same record.
+@DMF701=Inquire into data import/export process related activities
+@DMF702=Respond to inquiries about data import/export process related activities
+@DMF703=Function that generates default sales line data
+@DMF704=Target already connected.
+@DMF705=Connection already exists.
+@DMF706=Invalid mapping.
+@DMF707=Invalid data type mapping.
+@DMF708=Invalid source column name.
+@DMF709=Invalid target column name.
+@DMF710=Invalid function name.
+@DMF711=Error were found in some rows in the file.
+@DMF712=There are no records in the staging to be cleaned up
+@DMF713=Minimum quantity of the item '%1' should be '%2'
+@DMF714=Quantity of the item '%1' cannot be more than '%2'
+@DMF715=Quantity of the item '%1' must be multiple of '%2', make it to '%3'
+@DMF716=Entered value '%1' is a '%2' table
+@DMF717=Do you want to generate the mapping from scratch(Yes) or from the modifications(No) ?
+@DMF718=Return parameter sequence
+@DMF719=There are field(s) which are not mapped to Entity- %1
+@DMF720='%1' '%2' record(s) didn't insert in staging
+@DMF721=Field '%1' from table '%2' has not been included in the query '%3'
+@DMF722='%1' is not correct enum value for field '%2'
+@DMF723=View error file
+@DMF724=Use shared folder
+@DMF725=Set up data import/export framework
+@DMF726=Data import/export framework parameters
+@DMF727=Function that generates VendInvoiceInfo table link
+@DMF728=This table contains the batch status
+@DMF729=Type of entity
+@DMF730=Use shared directory path to read source data
+@DMF731=Shared working directory
+@DMF732=Enable shared directory to read source data from
+@DMF733=Migrate data using SQL Server Agent
+@DMF734=Use SQL server agent to migrate data
+@DMF735=The table is a parameter table for DMF
+@DMF736=Shared folder
+@DMF737=Running staging in parallel
+@DMF738=Set up parameters for the data import/export framework module
+@DMF739=Shared directory path does not exists
+@DMF740=Shared directory path cannot be empty
+@DMF741=DMF entity writer
+@DMF742=Initiated a process to write data to target
+@DMF743=Drop SQL Server agent job when completed
+@DMF744=Enable disable agent job
+@DMF745=Drop temp table when completed
+@DMF746=Mark to drop temp table
+@DMF747=Data type mapping
+@DMF748=Table for data type mapping
+@DMF749=Data mapping
+@DMF750=Type of data
+@DMF751=Preview data
+@DMF752=Is preview
+@DMF753=Vendor invoice header
+@DMF754=Vendor invoice line
+@DMF755=Composite entity
+@DMF756=Error file description
+@DMF757=Select the options
+@DMF758=Child entities
+@DMF759=Number of the tasks '%1' cannot be more than number of records '%2'
+@DMF760=Number of tasks should be greater than '0'
+@DMF761=DMF data import/export framework service
+@DMF762=Data import/export framework service
+@DMF763=Write run
+@DMF764=Write batch
+@DMF765=DSN types
+@DMF766=Select the appropriate DSN type
+@DMF767=User DSN
+@DMF768=System DSN
+@DMF769=File DSN
+@DMF770=DSN type
+@DMF771=Connection string
+@DMF772=String of connection
+@DMF773=DSN Name
+@DMF774=DMF/DSN lookup
+@DMF775=Query for ODBC
+@DMF776=Invalid query or connection string
+@DMF777=DSN
+@DMF778=Number of threads
+@DMF779=Table with inheritance is not supported by wizard.
+@DMF780=The table '%1' does not exist in AOT.
+@DMF781=Tests completed successfully!
+@DMF782=Test is not successful
+@DMF783=Connection string name is missing
+@DMF784=Validate connection string
+@DMF785=JobId '%1' does not exist
+@DMF786=Processing group '%1' does not exist
+@DMF787='%1' '%2' record(s) inserted in target
+@DMF788=File size should not be more than target field size.
+@DMF789='%1' '%2' record(s) didn't insert in target
+@DMF790=The shared directory path must be specified
+@DMF791=The file has %1 error(s)
+@DMF792=Target DSN
+@DMF793=Options for DSN type
+@DMF794=Error adding flat file source to package
+@DMF795=Error adding OLEDB destination to package
+@DMF796=Error updating flat file source properties
+@DMF797=Error updating OLEDB destination component properties
+@DMF798=Error updating derived component properties
+@DMF799=Error connecting dataflow components
+@DMF800=Error updating error component properties
+@DMF801=Error adding error component to package
+@DMF802=Error adding derived component to package
+@DMF803=Error adding columns to derived component
+@DMF804=Error adding flat file connection manager
+@DMF805=Error adding OLEDB connection manager
+@DMF806=Error adding flat file destination to package
+@DMF807=Error updating flat file destination properties
+@DMF808=Missing application configuration key.
+@DMF809=Missing key value in the configuration
+@DMF810=Missing value for the key in configuration
+@DMF811=Error adding ado.net source to package
+@DMF812=Error adding updating OLEDB source properties
+@DMF813=Unable to request notification
+@DMF814=Unable to create agent job
+@DMF815=Unable to start agent job
+@DMF816=Unable to query status of agent job
+@DMF817=Unable to register for dependency command
+@DMF818=Unable to delete agent job
+@DMF819=Error adding ODBC connection to package
+@DMF820=Unable to create notification for agent job
+@DMF821=File path needs to be specified for source type file
+@DMF822='%1' - Name does not exist in ledger parameters setup
+@DMF823=DMF service
+@DMF824=Validate ODBC query
+@DMF825=This table contains the validation information of the ODBC query
+@DMF826=Status of the validation
+@DMF827=Generate main account template
+@DMF828='%1' '%2' header record(s) inserted in staging
+@DMF829='%1' '%2' child record(s) inserted in staging
+@DMF830='%1' '%2' header record(s) didn't insert in staging
+@DMF831='%1' '%2' child record(s) didn't insert in staging
+@DMF832=Only folder name will be copied.
+@DMF833=Computer name
+ ;Computer name
+@DMF834=The view contains the model element information
+@DMF835=Expense forecast
+@DMF836=Hour forecast
+@DMF837=Item forecast
+@DMF838=Status of the query validation
+@DMF839=Status of the connection string validation
+@DMF840=BOM approver personnel number
+@DMF841=Country region id
+@DMF842=The execution is in batch
+@DMF843=Invalid data type
+@DMF844=Auto-generate data
+@DMF845=Generate data automatically
+@DMF846=Generate from method
+@DMF847=This wizard helps you create a custom entity for data import/export.
+@DMF848=Custom entity wizard
+@DMF849=Entity table %1 exists. Processing has been stopped.
+@DMF850=Creation of the entity table has been stopped.
+@DMF851=Entity class %1 exists. Processing has been stopped.
+@DMF852=Creation of entity class has been stopped.
+@DMF853=Entity query %1 exists. Processing has been stopped.
+@DMF854=Creation of entity query has been stopped.
+@DMF855=Status of the threads
+@DMF856=Validate whether the shared directory has access
+@DMF857=Validate service account access to directory
+@DMF858=Validate whether the shared directory is accessible
+@DMF859=Validation status for shared directory
+@DMF860=Select class names, table name , query name and parameters.
+@DMF861=Name of the entity class to be generated
+@DMF862=Name of the entity table to be generated
+@DMF863=Artifact names
+@DMF864=Name of the entity query to be generated
+@DMF865=Entity table name
+@DMF866=Entity class name
+@DMF867=Entity query name
+@DMF868=Entity %1 %2 exists. Processing is stopped.
+@DMF869=Send from query
+@DMF870=Selects through a query and sends them in an XML string.
+@DMF871=Send list of
+@DMF872=Sends from the system in an XML string.
+@DMF873=Generate variance approver
+@DMF874=Show password
+@DMF875=Prompt password
+@DMF876=Prompt for password
+@DMF877=Validate the connection string
+@DMF878=Source column is empty.
+@DMF879=Target column is empty.
+@DMF880=Target column is not allowed for mapping.
+@DMF881=Validate user credentials
+@DMF882=Auto-generated
+@DMF883=True if field is generated by number sequence
+@DMF884=Model element
+@DMF885=The mandatory field %1 is not mapped
+@DMF886=Ignore error
+@DMF887=Ignore errors during source to staging process
+@DMF888=Name of employee responsible - sales
+@DMF889=Name of employee responsible - worker
+@DMF890=Party number for employee responsible - sales
+@DMF891=Responsible sales personnel num
+@DMF892=Party number for employee responsible -  worker
+@DMF893=Personnel number - worker
+@DMF894=Sync created by external
+@DMF895=Dimension view name
+@DMF896=Cached display value
+@DMF897=Test connection failed
+@DMF898=Query validation failed
+@DMF899=Add the mandatory fields and map them
+@DMF900=Functionality is not supported for composite entities
+@DMF901=The service account for the Data import/export framework does not have access to the shared directory
+@DMF902=No records available for preview.
+@DMF903=DSN location
+@DMF904=Select DSN location
+@DMF905=Dimension attribute name %1 is not exist in dimension list
+@DMF906=Specify directory for source data
+@DMF907=Party name
+@DMF908=Email
+@DMF909=Party number
+@DMF910=Email ID
+@DMF911=Storage dimension group name
+@DMF912=Tracking dimension group name
+@DMF913=Delivery percentage
+@DMF914=Invent line discount code
+@DMF915=Over delivery percentage
+@DMF916=Price value
+@DMF917=Invent price date
+@DMF918=Invent price quantity
+@DMF919=Invent price unit
+@DMF920=Invent item tax group
+@DMF921=Invent under delivery percentage
+@DMF922=Invent unit ID
+@DMF923=Invent line discount
+@DMF924=Validate service account access to shared directory in parameters form
+@DMF925=Specify number of threads
+@DMF926=Number of staging records to be executed
+@DMF927=The DIXF service is unavailable. Please contact the system administrator.
+@DMF928=Number of tasks in line should be more than '1' when number of tasks in header is not '1'
+@DMF929=File is on server
+@DMF930=Yes, if file is on server.
+@DMF931=Function for generate item group
+@DMF932=Function that generates model group
+@DMF933=Number of tasks in header cannot be more than '1' when number of tasks in line is '1'
+@DMF934=Enter the shared directory in the parameters
+@DMF935=Item '%1' cannot be imported as product '%2' does not exist
+@DMF936=Unable to copy source file to shared directory.
+@DMF937=The file for entity %1 has %2 error(s)
+@DMF938=Route table
+@DMF939=Function that generates route link
+@DMF940=Function that generates docuRef
+@DMF941=Route operation table
+@DMF942=Function that generates route requirement
+@DMF943=Number sequence is not set
+@DMF944=Function that generates hcmWorker delegate worker PartyName 1
+@DMF945=Function that generates hcmWorker delegate worker PartyName 4
+@DMF946=Function that generates hcmWorker delegate worker PartyNumber 2
+@DMF947=Function that generates hcmWorker delegate worker PartyNumber 5
+@DMF948=Function that generates hcmWorker worker personnel number 6
+@DMF949=Function that generates hcmWorker worker personnel number 3
+@DMF950=Function that generates shared category
+@DMF951=Function that generates tax/vat report category MX
+@DMF952=Function that generates tax/vat report category MX
+@DMF953=Function that generates round off gain ledger dimension
+@DMF954=Function that generates round off loss ledger dimension
+@DMF955=Sales tax period
+@DMF956=Work calendar date line
+@DMF957=EcoRes category attribute
+@DMF958=WorkCalendar date
+@DMF959=WorkCalendar table
+@DMF960=WorkTime line
+@DMF961=WorkTime table
+@DMF962=OmDepartment
+@DMF963=DocuType
+@DMF964=TrvCost type
+@DMF965=TrvPay method
+@DMF966=Sales tax group
+@DMF967=Tax table
+@DMF968=Tax authority
+@DMF969=TaxItemGroupHeading
+@DMF970=Item sales tax group
+@DMF971=Tax group data
+@DMF972=Tax parameters
+@DMF973=Tax data
+@DMF974=Barcode setup
+@DMF975=Vend group
+@DMF976=Category table
+@DMF977=Payment method
+@DMF978=TrvExp sub-category
+@DMF979=TrvPBSCat Codes
+@DMF980=TrvAppEmplSub
+@DMF981=Service for data project
+@DMF982=Function that generates sub category
+@DMF983=Function that generates location
+@DMF984=Function that generates incoming ledger dimension
+@DMF985=Function that generates cash discount outgoing ledger dimension
+@DMF986=Function that generates penny difference vendor ledger dimension
+@DMF987=Function that generates penny difference customer ledger dimension
+@DMF988=Function that generates tax free percent ledger dimension
+@DMF989=Function that generates tax incoming ledger dimension
+@DMF990=Function that generates tax offset use tax ledger dimension
+@DMF991=Function that generates tax outgoing ledger dimension
+@DMF992=Function that generates tax report ledger dimension
+@DMF993=Function that generates tax unrealized receivables ledger dimension
+@DMF994=Function that generates tax unrealized payables ledger dimension
+@DMF995=Function that generates tax use tax ledger dimension
+@DMF996=TaxLedgerAccount group
+@DMF997=Function that generates dimensions
+@DMF998=Function that generates payment
+@DMF999=Function that generates route worker
+@DMF1000=Function that generates compensation level
+@DMF1001=Function that generates job
+@DMF1002=Function that generates Job type
+@DMF1003=Function that generates preferred certificate
+@DMF1004=Function that generates preferred education discipline
+@DMF1005=Function that generates preferred skill
+@DMF1006=Function that generates hcm responsibility
+@DMF1007=Function that generates survey company
+@DMF1008=Function that generates task
+@DMF1009=Function that generates title
+@DMF1010=Job details
+@DMF1011=Delegated worker party name
+@DMF1012=Delegating worker party name
+@DMF1013=Delegated worker party number
+@DMF1014=Delegated worker personal number
+@DMF1015=Delegating worker party number
+@DMF1016=Delegating worker personal number
+@DMF1017='%1' and '%2' does not exist '%3'
+@DMF1018=Function that generates action ID
+@DMF1019=Function that generates category
+@DMF1020=Function that generates category hierarchy
+@DMF1021=Function that generates commodity
+@DMF1022=Function that generates project global category
+@DMF1023=Function that generates parent category
+@DMF1024=Function that generates procurement
+@DMF1025=Product category hierarchy
+@DMF1026=Product category hierarchy role
+@DMF1027='%1' Path specified for '%2' does not exist on server
+@DMF1028=Completed directory
+@DMF1029=File not found
+@DMF1030=Type of file
+@DMF1031=Processing directory
+@DMF1032=Retail barcode mask
+@DMF1033=Scalable
+@DMF1034=Function that generates CustTrading partner code
+@DMF1035=Retail info code id
+@DMF1036=Retail info sub code
+@DMF1037=Name of architect - worker
+@DMF1038=Party number for employee architect -  worker
+@DMF1039=Personnel number of architect - worker
+@DMF1040=Function that generates worker architect record
+@DMF1041=Validate item
+@DMF1042=Function that generates confirming PO
+@DMF1043=Separate values
+@DMF1044=Values
+@DMF1045=Constraint ranges
+@DMF1046=Ranges of constraint
+@DMF1047=Function that generates dimension
+@DMF1048=Dimension hierarchy
+@DMF1049=Product attribute
+@DMF1050=Product attribute type
+@DMF1051=Trv cost type rates
+@DMF1052=Workflow workItem queue
+@DMF1053=Closed for pickup - Monday
+@DMF1054=Closed for pickup - Friday
+@DMF1055=Closed for pickup - Saturday
+@DMF1056=Closed for pickup - Sunday
+@DMF1057=Closed for pickup - Thursday
+@DMF1058=Closed for pickup - Tuesday
+@DMF1059=Closed for pickup - Wednesday
+@DMF1060=Outgoing account
+@DMF1061=Incoming account
+@DMF1062=Tax free percent account
+@DMF1063=Tax incoming account
+@DMF1064=Tax offset account
+@DMF1065=Tax outgoing account
+@DMF1066=Tax report account
+@DMF1067=Tax unrealized payables account
+@DMF1068=Tax unrealized receivables account
+@DMF1069=Tax use account
+@DMF1070=Vat type - SG
+@DMF1071=Function that generates tax group heading link
+@DMF1072=Function that generates tax item group heading link
+@DMF1073=Function that generates TaxTable link
+@DMF1074=Function that generates work calendar date link
+@DMF1075=Function that generates work timetable link
+@DMF1076=Function that generates TrvCostType link
+@DMF1077=Function that generates tax report period
+@DMF1078=Hcm certificate description
+@DMF1079=Description - education
+@DMF1080=Importance - education
+@DMF1081=Description - job tasks
+@DMF1082=Note - task
+@DMF1083=Note - assignment
+@DMF1084=Level - rating
+@DMF1085=Description - responsibility
+@DMF1086=Note - responsibility
+@DMF1087=Description - skill
+@DMF1088=Importance - skill
+@DMF1089=Note - skill
+@DMF1090=Max number of positions
+@DMF1091=Note - line
+@DMF1092=Rating - model
+@DMF1093=Function that generates assignmentReasonCode
+@DMF1094=Function that generates company location
+@DMF1095=Function that generates department
+@DMF1096=Function that generates HcmPositionHierarchy
+@DMF1097=Function that generates legalEntity
+@DMF1098=Function that generates position
+@DMF1099=Function that generates position type
+@DMF1100=Function that generates default values
+@DMF1101=Function that generates ecoRes attributes
+@DMF1102=Barcode setup table
+@DMF1103=TrvPayMethod table
+@DMF1104=ProjJournalTrans
+@DMF1105=projJournalTable
+@DMF1106=Name does not exist in proj parameters setup
+@DMF1107=Function that generates JournalLink
+@DMF1108=Document friendly name
+@DMF1109=Function that generates assignee
+@DMF1110=Function that generates asset om parent link
+@DMF1111=Function that generates organization unit link
+@DMF1112=Function that generates use in
+@DMF1113=Shared category
+@DMF1114=Parent unit type
+@DMF1115=Function that generates expense
+@DMF1116=Function that generates project
+@DMF1117=Function that generates route
+@DMF1118=Function that generates list
+@DMF1119=Function that generates range
+@DMF1120=TrvAppEmplSub table
+@DMF1121=Function that generates category table
+@DMF1122=Enable Anti-Corruption flag & message
+@DMF1123=Anti-Corruption text approver
+@DMF1124=Anti-Corruption text submitter
+@DMF1125=Cust group
+@DMF1126=Expense notification parameters
+@DMF1127=Anticorruption
+@DMF1128=Billing cycle
+@DMF1129=Billing cycle close day for each month
+@DMF1130=Cc: Delegate
+@DMF1131=The field indicates if the delegate needs to be included in the CC
+@DMF1132=Cc: Manager
+@DMF1133=The field indicates if the manager needs to be included in the CC
+@DMF1134=Expense notification
+@DMF1135=User ID field name
+@DMF1136=Cc: Owner
+@DMF1137=The field indicates if the expense owner needs to be included in the CC (This check box will be effective only for expense report related queries. For all other queries this check box will be ignored)
+@DMF1138=A unique identification for the header, criteria and messages
+@DMF1139=The text in the message text box appears after saving. This is a read only field.
+@DMF1140=The text in the subject text box appears after saving. This is a read only field.
+@DMF1141=Table field as place holder
+@DMF1142=Help Text of the field
+@DMF1143=Field label name
+@DMF1144=No. of days for reminder
+@DMF1145=No. of days to repeat
+@DMF1146=Day interval.
+@DMF1147=Number of times a notification should be sent.
+@DMF1148=Packed Query Object
+@DMF1149=The file that contains the query would be browsed and selected using this field. The field would then display the file path.
+@DMF1150=Use values?
+@DMF1151=Indicates if the “No. of days for reminder” and “No. if days to repeat” should be used in the query or not?
+@DMF1152=Function that generates MS IT notification place holders
+@DMF1153=Email for Workflow Notification
+@DMF1154=Enter the email id which will be used to send custom workflow email and notifications
+@DMF1155=Check for meal expenses (Fraud & Compliance)
+@DMF1156=Indicates that meal expenses and per diem expenses should not be submitted for the same period in the same expense report unless the per diem expense is marked for meal reductions
+@DMF1157=Include weekends in per diem calculation
+@DMF1158=Receipts are mandatory for payment
+@DMF1159=Set the flag if receipts are mandatory for payments.
+@DMF1160=To identify if any non-working days (weekends excluded) that fall within the travel duration (if any) should be considered for the Per-diem calculations or not
+@DMF1161=Include non-working weekdays in per diem calculation
+@DMF1162=AP user role
+@DMF1163=AP user role help
+@DMF1164=No. of days to start per diem
+@DMF1165=Calendar to define non-working week days
+@DMF1166=Number of days to consider weekends for per diem
+@DMF1167=SAFE limit web service URL
+@DMF1168=SAFE limit web service URL help
+@DMF1169=Display personal Charges
+@DMF1170=Description of personal expense
+@DMF1171=Weekend days
+@DMF1172=Used to identify the weekend days for the company
+@DMF1173=WorkflowWorkItemQueue table
+@DMF1174=Case workflow
+@DMF1175=Association type
+@DMF1176=RoundOff loss ledger dimension
+@DMF1177=Audit policy
+@DMF1178=Account turn over Prod
+@DMF1179=Account turn over Profit
+@DMF1180=Account turn over Sales
+@DMF1181=Account cost
+@DMF1182=Account invoice turn over
+@DMF1183=Account offset
+@DMF1184=Account payroll allocation
+@DMF1185=Category name
+@DMF1186=Account resource
+@DMF1187=Account resource issue Offset
+@DMF1188=Account WIP issue
+@DMF1189=Account WIP valuation
+@DMF1190=Account SMA accrued revenue
+@DMF1191=Account SMA WIP subscription
+@DMF1192=Account status accountItem
+@DMF1193=Expense category value
+@DMF1194=Account expense
+@DMF1195=Shared category expense
+@DMF1196=Account expense sub
+@DMF1197=Tax item group expense
+@DMF1198=Tax item group expense
+@DMF1199=Alternate item sales tax group - employee
+@DMF1200=Account WIP cost accrued
+@DMF1201=Account WIP cost value
+@DMF1202=Account WIP production
+@DMF1203=Account WIP profit
+@DMF1204=Account WIP sales value
+@DMF1205=DMF Trv exp Subcategory entity
+@DMF1206=MS IT notification parameters
+@DMF1207=Condition type (exemptions) value
+@DMF1208=Condition type value
+@DMF1209=Account key (Exemptions) value
+@DMF1210=Account key value
+@DMF1211=Error file path
+@DMF1212=Error directory for error
+@DMF1213=Execute target step
+@DMF1214=Target step
+@DMF1215=Hierarchy purpose value
+@DMF1216=Policy type value
+@DMF1217=Assignment relation type
+@DMF1218=Assignment relation type value
+@DMF1219=Policy violation level
+@DMF1220=Workflow time span relation type
+@DMF1221=Workflow time span relation type
+@DMF1222=Expense policy
+@DMF1223=Function that generates Hierarchy link
+@DMF1224=Range values
+@DMF1225=Range value
+@DMF1226=Function that generates audit policy rule
+@DMF1227=Function that generates sysPolicy
+@DMF1228=Function that generates trvPolicy language text
+@DMF1229=Function that generates expression
+@DMF1230=Function that generates Workflow message text
+@DMF1231=Function that generates expression table
+@DMF1232=Function that generates sequence number
+@DMF1233=Function that generates WorkFlowAssignment table
+@DMF1234=Function that generates WorkFlowElement table
+@DMF1235=Function that generates WorkflowMaxRuntime table
+@DMF1236=Function that generates WorkFlowStep table
+@DMF1237=Function that generates WorkFlowTimeSpan table
+@DMF1238=Function that generates WorkFlowVersion table
+@DMF1239=Function that generates WorkFlowVersion table notes
+@DMF1240=Function that generates WorkflowEscalation table
+@DMF1241=Retail category
+@DMF1242=Function that generates retail category
+@DMF1243=Variant id value
+@DMF1244=Function that generates OM Internal Organization
+@DMF1245=Function that generates retail Channel table
+@DMF1246=Function to generate retailHour
+@DMF1247=Release all retained amount
+@DMF1248=Function that generates AgreementLine
+@DMF1249=Final invoice
+ ;Des
+@DMF1250=Function that generates tax1099 box detail
+@DMF1251=Function that generates Purch agreement header
+@DMF1252=Hello World
+@DMF1253=SAP account keys
+@DMF1254=SAP condition keys
+@DMF1255=Is require renewal
+@DMF1256=Function that generates HcmWorker
+@DMF1257=EcoRes bounded lower currency value
+@DMF1258=EcoRes bounded upper currency Value
+@DMF1259=EcoRes bounded upper datetime Value
+@DMF1260=EcoRes bounded upper float value
+@DMF1261=EcoRes bounded upper int value
+@DMF1262=HcmPosition hierarchy parent position ID
+@DMF1263=HcmPosition worker assignment Valid from
+@DMF1264=HcmPosition worker assignment Valid to
+@DMF1265=HcmReason code reason code ID
+@DMF1266=HcmTitle title ID
+@DMF1267=HcmPosition detail valid from
+@DMF1268=HcmPosition detail valid to
+@DMF1269=Function that generates position default dimension
+@DMF1270=Fixed asset from inventory
+@DMF1271=Specify if this fixed asset was transferred from inventory.
+@DMF1272=ICMS credit
+@DMF1273=Is the fixed asset to receive ICMS tax credit in installments?
+@DMF1274=Function that generates asset source type CN
+@DMF1275=Function that generates main account due from
+@DMF1276=Function that generates main account due to
+@DMF1277=Function that generates LvPaymTrans codes
+@DMF1278=Function that generates agreement HeaderExt RU
+@DMF1279=Function that generates taxationCode table BR
+@DMF1280=Function that generates vat schedule IN
+@DMF1281=Function that generates tax incoming ShortTerm ledgerDim
+@DMF1282=Function that generates tax incoming LongTerm ledgerDim
+@DMF1283=Function that generates tax deferred ledgerDimension RU
+@DMF1284=Function that generates tax FineLedger dimension RU
+@DMF1285=Function that generates tax goods InRouteLedger dimension
+@DMF1286=Function that generates tax incoming deferred ledgerDim
+@DMF1287=Function that generates tax incoming difference ledgerDim
+@DMF1288=Function that generates tax incoming diffOffset ledgerDim
+@DMF1289=Function that generates tax incoming payment ledgerDim
+@DMF1290=Function that generates tax outgoing deferred ledgerDim
+@DMF1291=Function that generates tax Outgoing difference ledgerDim
+@DMF1292=Function that generates tax outgoing diffOffset ledgerDim
+@DMF1293=Function that generates tax outgoing offset ledger dimension
+@DMF1294=Function that generates tax salesOffset ledgerDim BR
+@DMF1295=Function that generates taxation code table
+@DMF1296=Reason code number.
+@DMF1297=Function that generates tax ledger account group
+@DMF1298=Function that generates tax component table IN
+@DMF1299=Function that generates cust tariff code table IN
+@DMF1300=Function that generates excise tariff codes IN
+@DMF1301=Function that generates exim product group table IN
+@DMF1302=Function that generates service code table IN
+@DMF1303=Direction export
+@DMF1304=Tariff code export
+@DMF1305=Retail information subcode ID Ex2
+@DMF1306=Text for retail information subcode ID Ex2
+@DMF1307=Function that generates invent location IN
+@DMF1308=Function that generates logistics postal address IN
+@DMF1309=Function that generates CFOP table BR
+@DMF1310=Help text for retail temp value Ex2
+@DMF1311=Help text for retail package ID
+@DMF1312=Function that generates transportation document
+@DMF1313=Value for local delivery date
+@DMF1314=Value for status type
+@DMF1315=Function that generates exchange rate type payable
+@DMF1316=Value for avail sales date
+@DMF1317=Value for service category
+@DMF1318=Function that generates exchange rate type receivables
+@DMF1319=The value %1 in field SysPolicyRuleType_Name is not found in the related table PolicyruleType
+@DMF1320=Procurement hierarchy name
+@DMF1321=Procurement name
+@DMF1322=EcoRes attribute modifier
+@DMF1323=EcoRes attribute name
+@DMF1324=EcoRes attributeType name
+@DMF1325=EcoRes category name
+@DMF1326=EcoRes category hierarchy name
+@DMF1327=Procurement description
+@DMF1328=Procurement category name value
+@DMF1329=Commodity hierarchy name
+@DMF1330=EcoResValue currency value
+@DMF1331=No. of days for reminder - billing cycle
+@DMF1332=Query - file
+@DMF1333=Expression predicate - Field name
+@DMF1334=Expression predicate - Prj field name LH
+@DMF1335=Expression predicate - Prj Field name RH
+@DMF1336=Expression prj field name
+@DMF1337=Expression proj DS display name
+@DMF1338=SysPolicy description
+@DMF1339=ElementTable name
+@DMF1340=ElementTable sequence
+@DMF1341=Expression predicate - field name RH
+@DMF1342=Expression predicate sequence
+@DMF1343=TimeSpan table hour calendar
+@DMF1344=TimeSpan table hour calendar provider
+@DMF1345=TimeSpan table hour include day
+@DMF1346=TimeSpan table WeeklydayOfWeek
+@DMF1347=TimeSpan table YearlydayOfWeek
+@DMF1348=TimeSpan table YearlyWeekInMonth
+@DMF1349=TimeSpanTable DailyUseNonCalendar
+@DMF1350=Rating level id
+@DMF1351=HcmWorker - WorkerPartyName
+@DMF1352=Route approved
+@DMF1353=Route name
+@DMF1354=Name of employee responsible - routeVersion
+@DMF1355=Party number for employee responsible - routeVersion
+@DMF1356=RouteVersion approverPersonnelNumber
+@DMF1357=Set description
+@DMF1358=Rating norm factor
+@DMF1359=Function that generates purchLine
+@DMF1360=Function that generates bank currency transfer log RU
+@DMF1361=Function that generates bank respWorker Worker RU
+@DMF1362=Function that generates parent main account BR
+@DMF1363=Function that generates company location IN
+@DMF1364=Function that generates transfer yearend account ES
+@DMF1365=Function that generates Cust bank account
+@DMF1366=Function that generates customs TariffCode table IN
+@DMF1367=Function that generates ledger voucher type CN
+@DMF1368=Function that generates payment  instruction ID
+@DMF1369=Function that generates vend bank account
+@DMF1370=Function that generates SalesTax FormTypes IN
+@DMF1371=Function that generates Tax With itemGrup heading TH
+@DMF1372=Query criteria
+@DMF1373=This table contains information on query criteria
+@DMF1374=Auto default
+@DMF1375=Identity
+@DMF1376=Is auto default
+@DMF1377=Identification number
+@DMF1378=Specify query criteria
+@DMF1379=Generate from query
+@DMF1380=Directory for staging to source files
+@DMF1381=Staging fields
+@DMF1382=Select the fields from staging
+@DMF1383=Buffer size cannot be less than zero
+@DMF1384=Number of tasks
+@DMF1385=Specify the numbers of tasks
+@DMF1386=Number of bundle size in line should be equal to or less than the %1
+@DMF1387=Number of bundle size in header should be greater than the %1
+@DMF1388=Staging error log
+@DMF1389=Preview error log
+@DMF1390=Number of entities in array [%1] does not match the  number of file paths in array [%2]
+@DMF1391=RowId' field is not present in this entity. For composite entities, the 'RowId' [Integer] field must be added to staging table. 
+@DMF1392=The DIXF service is not installed on a computer running an AOS instance
+@DMF1393=Service connection url
+@DMF1394=DMF service connection url
+@DMF1395=Service connection url
+@DMF1396=Define default values
+@DMF1397=The default value to be used for the field
+@DMF1398=Target column is not allowed for mapping - as field is marked as "Auto"
+@DMF1399=Target column is not allowed for mapping - as field is marked as "Default"
+@DMF1400=Auto default is not allowed on primary fields
+@DMF1401=Skip row
+@DMF1402=Data rows to skip
+@DMF1403=Invalid data file
+@DMF1404=No rows available for preview
+@DMF1405=Total discount purch
+@DMF1406=Total discount Sales
+@DMF1407=Package execution failed please check event log in DMF service box
+@DMF1408=Data exported to %1
+@DMF1409=Export data to flat file
+@DMF1410=Function that generates TaxRegistration
+@DMF1411=Please select a data format
+@DMF1412=Data was not exported
+@DMF1413=Destination data source
+@DMF1414=Data format
+@DMF1415=Validate the directory for staging to source files in parameters form
+@DMF1416=Number of entity array [%1] does not match with number of file path array [%2],please cross check
+@DMF1417=Scheduled status
+@DMF1418=File name is mandatory
+@DMF1419=Codepage is mandatory
+@DMF1420=Locale is mandatory
+@DMF1421=Regional options
+@DMF1422=Is manual
+@DMF1423=Is manually added
+@DMF1424=The retail status type
+@DMF1425=Cannot uncheck enable/disable fields once mandatory primary field is checked
+@DMF1426=Function that generates VendInvoiceDeclaration_IS
+@DMF1427=Data access mode
+@DMF1428=Copy error data rows to error file
+@DMF1429=Table or View
+@DMF1430=Table or View - fast load
+@DMF1431=Create error file
+@DMF1432=Processing group is required
+@DMF1433=Function that generates TaxWithholdItemGroupHeading_TH
+@DMF1434=Number of entity array [%1] does not match with number of batch tasks [%2],please cross check.
+@DMF1435=Function that generates CustInvoiceTrans
+@DMF1436=Issue with SSIS integration
+@DMF1437=Error exist with ODBC mapping
+@DMF1438=Error exist in ODBC connection string
+@DMF1439=Issue is exist for export to file
+@DMF1440=Error exist in show preview with SSIS
+@DMF1441=Issue exist in generate staging data
+@DMF1442=Query execution did not return any columns please check the query
+@DMF1443=Batch - %1
+@DMF1444=Shared working directory should be filled in.
+@DMF1445=Error directory
+@DMF1446=Function that generates CustVendExternalItem
+@DMF1447=Module type value
+@DMF1448=Function that generates EcoResProdMastModelingPolicy
+@DMF1449=Product master
+ ;Product master
+@DMF1450=The field value %1 is mandatory for product sub-type %2
+@DMF1451=Function that generates EcoResDimension
+@DMF1452=%1 record does not exist in EcoResProduct table
+@DMF1453=Is composite entity
+@DMF1454=Processing group - '%1' is not valid
+@DMF1455=Working times line
+@DMF1456=Sales tax group header
+@DMF1457=Function that generates company ID
+@DMF1458=Function that generates HCMBenefit
+@DMF1459=Function that generates HcmUnion agreement
+@DMF1460=Function to generate Payroll earningCode
+@DMF1461=Function to generate Payroll payCycle
+@DMF1462=Function that generates preferred screening
+@DMF1463=Function that generates preferred exam
+@DMF1464=There is no file to copy in the directory %1
+@DMF1465=Function that generates ReasonReferences
+@DMF1466=Maximum insert commit size
+@DMF1467=The batch size cannot be zero when destination format is table or view - fast load
+@DMF1468=The batch size should be more than zero when destination format is table or view - fast load
+@DMF1469=Function that generates pos permission group
+@DMF1470=PosPermissionGroupId value
+@DMF1471=The field '%1' is not present in source
+@DMF1472=Get data from staging to target
+@DMF1473=Function that generates PayrollPositionHcmBenefit
+@DMF1474=File path is invalid
+@DMF1475=Use SQL data reader
+@DMF1476=SQL data reader would be used to copy to staging
+@DMF1477=Unable to obtain RECID from SystemSequences table
+@DMF1478=Directory option is only supported in batch
+@DMF1479=Staging:-
+@DMF1480=Target:-
+@DMF1481=The field %1 is already mapped with some other field, you cannot map it again
+@DMF1482=Function that generates locations information
+@DMF1483=Function that generates ship carrier info
+@DMF1484=You cannot select %1 which is already marked as Default in source
+@DMF1485=Field %1 does not exist in source
+@DMF1486=Set-based processing
+@DMF1487=Value for set based
+@DMF1488=Set based option not supported for query having more than one datasource
+@DMF1489=Bundle size
+@DMF1490=Bundle size value
+@DMF1491=Export to Finance and Operations
+@DMF1492=Specify the method for loading data into the destination. Loading double-byte character set (DBCS) data requires use of one of the fast load options
+@DMF1493=Specify the batch size that the OLE DB destination tries to commit during fast load operations. The default value of 2147483647 indicates that all data is committed in a single batch.
+@DMF1494=Correct address attribute is missing in the file
+@DMF1495=Set based option is only supported for direct field assignments
+@DMF1496=Execute target step should be executed in batch
+@DMF1497=Record cannot be deleted
+@DMF1498=Please select value from any of the lookups
+@DMF1499=For composite entity, all the entities should run either with single task or with multiple tasks
+@DMF1500=AOS service user does not have access to the shared working directory
+@DMF1501=Sample file not found in '%1'
+@DMF1502=Correct Address attribute is missing in file
+@DMF1503=Date control value
+@DMF1504=The DMFAssetEntity staging table contains the details related to the fixed assets.
+@DMF1505=The DMFBarcodeSetupEntity staging table contains information about the configuration of bar code types.
+@DMF1506=The DMFBOMEntity staging table contains the bill of materials lines. A BOM line connects to an item to consume and a BOM version to which the line applies.
+@DMF1507=The DMFBOMVersionEntity staging table contains all the BOM versions.
+@DMF1508=The DMFCategoryTable staging table contains expense category definitions.
+@DMF1509=The DMFContactPersonEntity table contains the contact persons for all organizations.
+@DMF1510=The DMFCustTableEntity table contains a list of customers for the accounts receivable and customer relationship management.
+@DMF1511=The DMFTaxOnItemEntity table contains a set of Tax Codes for each Item Sales Tax Group.
+@DMF1512=The DMFDimensionHierarchyEntity table contains information about a dimension set and an ordered set of dimension attributes.
+@DMF1513=The DMFDocuTypeEntity table contains the document types that are linked to table records. Each document type defines how a document is managed and stored by the document management system.
+@DMF1514=The DMFEcoResAttributeEntity table contains information about the attributes.
+@DMF1515=The DMFEcoResAttributeTypeEntity table contains type definitions for variables.
+@DMF1517=The DMFEcoResCategoryHierarcyEntity table stores all of the available categories.
+@DMF1518=The DMFEcoResCategoryHierarchyRoleEntity table stores information about the category hierarchies and the category hierarchy roles that are associated with it.
+@DMF1519=The DMFEmployeeEntity table contains the records for the employees and contractors that are used with the HRM and payroll tables.
+@DMF1520=The DMFHcmJobDetailEntity table provides date effective information that is related to a specific job.
+@DMF1521=The DMFHcmPositionDetailEntity table provides date effective information related to a specific position.
+@DMF1522=The DMFInventJournalTransEntity table contains information about items and represents a line in an inventory journal.
+@DMF1523=The DMFInventTableEntity table contains information about items.
+@DMF1524=The DMFLedgerJournalTransEntity table contains the transaction detail information that pertains to a single journal. The individual transaction lines are also referred to as voucher lines.
+@DMF1525=The DMFMainAccountEntity table contains account values that do not include dimension attribute values.
+@DMF1526=The DMFBarcodeSetupEntity table contains information about the configuration of bar code types.
+@DMF1527=The DMFOMHierarchyTypeEntity table contains the information about the hierarchies.
+@DMF1528=The DMFOMOperatingUnitEntity table is the base table for each of the operating units.
+@DMF1529=The DMFPriceDiscAdmTransEntity table contains trade agreement journal lines.
+@DMF1530=The DMFProductMasterEntity table contains information about items.
+@DMF1531=The DMFProjJournalTransEntity table is used to store the journal lines of project hour or fee journals.
+@DMF1532=The DMFProjTableEntity table contains information about each project and subproject.
+@DMF1533=The DMFPurchLineEntity table contains all purchase order lines regardless whether they have been posted or not.
+@DMF1534=The DMFPurchTableEntity table contains all the purchase order headers regardless of whether they have been posted.
+@DMF1535=The DMFTaxDataEntity table contains the tax percentage, limits on the tax base amount, and effective date ranges for which this record applies.
+@DMF1536=The DMFRouteOperationEntity table contains route operation relations. Each relation describes the parameters that will be used for a specific entity.
+@DMF1537=The DMFSalesTableEntity table contains all sales order headers regardless of whether they have been posted.
+@DMF1538=The DMFSharedCategoryEntity table contains all of the categories that are defined for global use.
+@DMF1539=The DMFSysPolicySourceDocumentRuleEntity table contains the packed query, which represents rules against the source document.
+@DMF1540=The DMFTaxAuthorityAddressEntity table contains the tax authorities and their address information. A tax authority is a governmental unit to which sales tax is reported and paid.
+@DMF1541=The DMFTaxGroupDataEntity table contains all of the tax codes that could be calculated for a specific tax group. This table is a child of the TaxGroupHeading table.
+@DMF1542=The DMFTaxGroupHeadingEntity table contains basic information about the sales tax groups that determine the sales tax and duty calculation for customers, vendors, or ledger accounts.
+@DMF1543=The DMFTaxItemGroupHeadingEntity table contains basic information about the item sales tax groups.
+@DMF1544=The DMFTaxLedgerAccountGroupEntity table contains the ledger posting groups for sales taxes.
+@DMF1545=The DMFTaxParametersEntity table contains all of the setup information associated with the Tax table.
+@DMF1546=The DMFTaxTableEntity table contains sales the tax codes for the sales taxes and duties that the company is obligated to calculate, collect, and pay to sales tax authorities.
+@DMF1547=The DMFExpenseNotificationParametersEntity table contains all of the setup information associated with the Expense table.
+@DMF1548=Query structure does not match entity data
+@DMF1549=The DMFProductEntity table contains information about items.
+@DMF1550=The DMFTrvAppEmplSubEntity table contains the delegates for a worker, along with the time span the delegation is valid.
+@DMF1551=The DMFTrvCostTypeEntity table contains expense types.
+@DMF1552=The DMFTrvCostTypeRatesEntity table stores mileage rate information.
+@DMF1553=The DMFTrvExpSubCategoryEntity table contains sub-categories that are defined for use in Expense Management.
+@DMF1554=The DMFTrvPBSCatCodesEntity table contains mappings between the imported category codes and Operations categories. Mappings are automatically applied during the import of credit card transactions.
+@DMF1555=The DMFTrvPolicyRuleEntity table contains all the policies defined for Expense management.
+@DMF1556=The DMFTrvValidatePaymentEntity table contains valid combinations of the expense category and the payment methods.
+@DMF1557=The DMFUnitOfMeasureEntity table contains information about the units.
+@DMF1558=The DMFVendGroupEntity table contains definitions of vendor groups.
+@DMF1559=The DMFVendInvoiceInfoTableEntity table contains the vendor invoices for one or more purchase orders.
+@DMF1560=The DMFVendInvoiceInfoLineEntity table contains the vendor invoices for one or more purchase orders.
+@DMF1561=The DMFVendTableEntity table contains vendors for accounts payable.
+@DMF1562=The DMFWorkCalendarDateEntity table contains all the dates when the working time information has been defined for the calendars that are being used throughout the application.
+@DMF1563=The DMFWorkCalendarDateLineEntity table contains all the work time intervals for all the calendar days for all the calendars.
+@DMF1564=The DMFWorkCalendarTableEntity table contains all the defined calendars.
+@DMF1565=The DMFWorkflowTableEntity table contains information about a workflow configuration.
+@DMF1566=The DMFWorkflowWorkItemQueueEntity table contains the queue definitions that are used for the task assignments.
+@DMF1567=Function that generates summery update
+@DMF1568=The DMFWorkTimeLineEntity table contains working time templates for each weekday. The templates are used as a basis for creating the working time calendars.
+@DMF1569=The DMFWorkTimeTableEntity table contains definitions of working time templates.
+@DMF1574=The Data import/export framework only supports the custom list dimension
+@DMF1575=Postal Fax name
+@DMF1576=Postal phone name
+@DMF1577=Postal telex name
+@DMF1578=Postal URL name
+@DMF1579=Postal email name
+@DMF1580=Function that generates default order settings
+@DMF1581=Function that generates MarkupTrans
+@DMF1582=Function that generates Dimension attribute value
+@DMF1583=The DMFBudgetTransactionLine table contains the budget account entries.
+@DMF1584='%1' record does not exist in Budget Transaction Header
+@DMF1585=Function that generates the budget header
+@DMF1586=%1 Ledger dimension is not belong to shared %2 Accounting structure
+@DMF1587=DefinitionGroupAccess
+@DMF1588=This table contains information about the security setup to view the processing groups
+@DMF1589=Setup of roles for processing group
+@DMF1590=Setup for the processing groups
+@DMF1591=Security role name
+@DMF1592=Function that generates UnitOfMeasure_W
+@DMF1593=User %1 does not have the access to the processing group %2
+@DMF1594=Entity names cannot be longer than 40 characters. Please provide a new name for entity %1 %2. 
+@DMF1595=Function that generates to inventory dimension
+@DMF1596=To identify the warehouse
+@DMF1597=To batch or serial number
+@DMF1598=To location in a warehouse
+@DMF1599=To unique ID for the pallet (Serial Shipping Container Code)
+@DMF1600=Function that generates exchange rate type
+@DMF1601=Default value is not exist for mandatory field %1
+@DMF1602=%1 column separator cannot be same as data separator
+@DMF1603=%1 row separator cannot be same as data separator
+@DMF1604=%1 data separator cannot be same as row separator
+@DMF1605=The lead time changed, change the date value of field %1 from %2 to %3
+@DMF1606=Entity name can contain only characters
+@DMF1607=Function that generates calculation frequency
+@DMF1608=Function that generates Earning code
+@DMF1609=Function that generates Worker Legal Entity
+@DMF1610=The company id
+@DMF1611=Function that generates password
+@DMF1612=ProjOnAccTrans
+@DMF1613=ProjInvoiceTable
+@DMF1614=SysEmailParameters
+@DMF1615=SyncParameters
+@DMF1616=SysServerConfig
+@DMF1617=Function that generates sales responsible
+@DMF1618=Registration number table value
+@DMF1619=Value for registration number
+@DMF1620=Tin number
+@DMF1621=Value of tin number
+@DMF1622=Trader ECC registration number
+@DMF1623=Value for trader ECC registration number
+@DMF1624=IECRegistrationNumber table value
+@DMF1625=Value of IECRegistrationNumber table
+@DMF1626=Man ECC Registration number
+@DMF1627=Value of Man ECC registration number
+@DMF1628=Origin value
+@DMF1629=Function that generates ProjOnAccTransTaxExtension record
+@DMF1630=Function that generates TaxInformation
+@DMF1631=Function that generates TaxWithholdItemGroueading
+@DMF1632=Function that generates Attribute
+@DMF1633=Function that generates cluster name
+@DMF1634=Function that generates ProjOnSales
+@DMF1635=No yes combo
+@DMF1636=Select the option
+@DMF1637=Function that generates AxdDocumentParameters record
+@DMF1638=Function to generate DocuParameters record
+@DMF1639=Function that generates DocuSharePointParameters record
+@DMF1640=Document parameters
+@DMF1641=DocuDataSource
+@DMF1642=ContentType
+@DMF1643=DocuTableEnabled
+@DMF1644=Function that generates LogisticsLocation record
+@DMF1645=Function that generates ProjFundingLimitWorker record
+@DMF1646=Function that generates ProjFundingRuleWorker record
+@DMF1647=Function that generates ProjFundingSourceID record
+@DMF1648=Function that generates ProjGrant
+@DMF1649=Function that generates PSACustomerRetentionTermTable record
+@DMF1650=Function that generates ProjFundingSourceDefaultDim record
+@DMF1651=ProjAllTrxType
+@DMF1652=Value for type of time period
+@DMF1653=BI time period type
+@DMF1654=Function that generates BI date hierarchy
+@DMF1655=Report deployment settings
+@DMF1656=BITimePeriodsMDX
+@DMF1657=Outbound ports for electrical payments
+@DMF1658=Function that generates AifOutboundPort record
+@DMF1659=Function that generates CustVendProcessingData record
+@DMF1660=AifWebsites
+@DMF1661=AifLookupEntry
+@DMF1662=Collaboration workspaces
+@DMF1663=EP document parameters
+@DMF1664=Municipal state
+@DMF1665=BI report servers
+@DMF1666=Function that generates EPGlobalParameters record
+@DMF1667=Function that generates UserRequestParameters
+@DMF1668=Element
+ ;XML format type
+@DMF1669=XML structure
+@DMF1670=Root element
+@DMF1671=Xml attributes
+@DMF1672=XML pattern
+@DMF1673=Validation for the record of table '%1'.
+@DMF1674=Function that generates Party
+@DMF1675=Function that generates ProjFundingLimit record
+@DMF1676=Function that generates ProjFundingRule
+@DMF1677=ContractId
+@DMF1678=Select for all processing groups or single processing group
+@DMF1679=Apply processing group to
+@DMF1680=Select the relationship type
+@DMF1681=Root element is mandatory for XML source type
+@DMF1682=Already record is there with the same role name for processing group selection type %1
+@DMF1683=The processing group should be filled in
+@DMF1684=The role name should be filled in
+@DMF1685=The user name should be filled in
+@DMF1686=NumberSequenceTable
+@DMF1687=The user do not have access to the entity %1
+@DMF1688=Function that generates the EP global parameters
+@DMF1689=smmBusRel table
+@DMF1690=EPWebSiteParameters
+@DMF1691=Function that generates number sequence scope
+@DMF1692=Fields in the target table
+@DMF1693=DMFCustomWizard table
+@DMF1694=This table contains the field details of target tables
+@DMF1695=FieldSelection
+@DMF1696=Please mark minimum one field as present in source.
+@DMF1697=Select the fields from the target table to get generated in the staging table.
+@DMF1698=Partition Name
+@DMF1699=Function that generates BI analysis server
+@DMF1700=Function that generates BI analysis server partition
+@DMF1701=BIConfiguration
+@DMF1702=Display name of the field.
+@DMF1703=%1 data separator cannot be same as column separator
+@DMF1704=Excel
+@DMF1705=Root element is mandatory for XML data export
+@DMF1706=Project server settings
+@DMF1707=You cannot select %1 which is already marked as auto in source
+@DMF1708=Export is not possible when entity type is 'Table'
+@DMF1709=RefRecId field '%1' is deleted from staging table and no corresponding field is created in staging table '%2' as there is no relation present in target table '%3' for this field.
+@DMF1710=Has access to entity ?
+@DMF1711=If selected, the entity will be accessible to the given role or user.
+@DMF1712=Has access to processing group ?
+@DMF1713=If selected, the processing group will be accessible to the given role or user.
+@DMF1714=Entity must be filled in
+@DMF1715=Processing group must be filled in
+@DMF1716=Select the user(s)
+@DMF1717=Select entity name(s).
+@DMF1718=Sheet lookup
+@DMF1719=Excel sheet name
+@DMF1720=Ignore error for target
+@DMF1721=Operation has been cancelled.
+@DMF1722=select * from %1%2%3
+@DMF1723=The table holds the excel sheet number
+@DMF1724=Request parameters
+@DMF1725=Comparison Id
+@DMF1726=Source and target comparisonId
+@DMF1727=The DMFComparisonentitylist table contains the information about entity list
+@DMF1728=Comparison window
+@DMF1729=Round off accrued
+@DMF1730=Reverse accrued periods
+@DMF1731=Available entities
+@DMF1732=Reverse accrued on credit
+@DMF1733=Accrued round off
+@DMF1734=This wizard helps you compare entity data across companies.
+@DMF1735=Click Finish to create the data configuration artifacts.
+@DMF1736=Select a comparison Id
+@DMF1737=Select the comparison processing group to configure
+@DMF1738=Function that generates system exchange rate Type 
+@DMF1739=Function that generates rating Model 1
+@DMF1740=Function that generates production flow dequantityUnit 
+@DMF1741=Function that generates analysis dimension attribute RU 
+@DMF1742=Function that generates invent sum dimension focus RU 
+@DMF1743=Post the estimated sales tax in connection with packing slip and product receipt updates to the General ledger module?
+@DMF1744=Function that generates clearing ledger dimension 
+@DMF1745=Function that generates Debts transit ledger dimension RU 
+@DMF1746=Function that generates Purch agreement dimension PSN 
+@DMF1747=Function that generates purch agreement structure PSN 
+@DMF1748=Function that generates RTax25 Profit table 
+@DMF1749=Function that generates RTax25 ledger dimension 
+@DMF1750=DirParameters
+@DMF1751=SIGParameters
+@DMF1752=WrkCtrParameters
+@DMF1753=EMSParameter
+@DMF1754=Configuration data wizard
+@DMF1755=Function that generates issue clearing PDC 
+@DMF1756=Function that generates receipt clearing PDC 
+@DMF1757=Function that generates WHT clearing PDC 
+@DMF1758=Function that generates dispute ledger dimension 
+@DMF1759=Function that generates alien ID identificationType 
+@DMF1760=Function that generates procurement category 
+@DMF1761=Function that generates Salary Clearing Ledger dimension
+@DMF1762=Select the entity name
+@DMF1763=Select the legal entity for source and target
+@DMF1764=COSParameters
+@DMF1765=User cannot select source company more than one
+@DMF1766=This company has already been marked for use as source data
+@DMF1767=Function that generates expense account
+@DMF1768=Function that generates provision account
+@DMF1769=Function that generates main-account report
+@DMF1770=Function that generates expression main account
+@DMF1771=Is precalculated data actual?
+@DMF1772=State of transaction precalculated data.
+@DMF1773=Data comparison between companies
+@DMF1774=Source to target
+@DMF1775=Only in source
+@DMF1776=Only in target
+@DMF1777=Data configuration wizard
+@DMF1778=Comparison results
+@DMF1779=Provide a name for the comparison processing group so that you can identify it.
+@DMF1780=Name the comparison processing group
+@DMF1781=Select one or more source entities
+@DMF1782=Select entities to compare
+@DMF1783=Copies the data from target to source
+@DMF1784=Select source and target companies
+@DMF1785=Entity mapping
+@DMF1786=Entities to compare
+@DMF1787=Comparison name
+@DMF1788=Target companies
+@DMF1789=User description 
+@DMF1790=Cash denominations 
+@DMF1791=Mix and match discount header 
+@DMF1792=Mix and match discount line
+@DMF1793=Assortment header 
+@DMF1794=Assortment line 
+@DMF1795=Product category 
+@DMF1796=This table contain the comparison results
+@DMF1797=Compare entity data between companies
+@DMF1798=Details
+ ;DMF Comparison details
+@DMF1799=Excel sheet lookup value is mandatory
+@DMF1800=Root element is mandatory for XML file
+@DMF1801=Unable to generate comparison results. Please see the event viewer
+@DMF1802=Staging to target
+@DMF1803=The wizard has created the comparison processing group, and will run the comparison when you click Finish.
+@DMF1804=Source type is Finance and Operations
+@DMF1805=Populate the data in the target
+@DMF1806=Select only one
+@DMF1807=You cannot use the same company for both source and target in a comparison.
+@DMF1808=Select the source company, and one or more target companies to compare it to.
+@DMF1809=It will create the data from source to target
+@DMF1810=Function that generates EP personal ID code type
+@DMF1811=Function that generates national ID identification type
+@DMF1812=Function that generates SSN identification type
+@DMF1813=Comparison name cannot be empty
+@DMF1814=At least one entity should be selected
+@DMF1815=You cannot select more than one source company
+@DMF1816=Please select the source company
+@DMF1817=Please select at least one target company
+@DMF1818=This wizard helps you copy entity data across companies.
+@DMF1819=Copy entity data between companies
+@DMF1820=Copy company data to multiple other companies
+@DMF1821=Compare entity data between companies
+@DMF1822=Retail payment method
+@DMF1823=%1 : %2 records copied to staging
+@DMF1824=Please select a record before updating to staging/target
+@DMF1825=Selected object is of type map
+@DMF1826=Placeholder
+@DMF1827=%1 records written to %2 company (%3 records created, %4 records updated)
+@DMF1828=Function that generates site dimension attribute
+@DMF1829=Target will run on batch if number of thread greater than one
+@DMF1830=XML is not in correct format
+@DMF1831='%1' '%2' record(s) inserted into '%3' company for target
+@DMF1832=Function that generates production flow Unit
+@DMF1833=Display menu item name
+@DMF1834=Comparison name has already been used
+@DMF1835=Grant access to
+@DMF1836=Compare entity wizard
+@DMF1837=Available source companies
+@DMF1838=Congratulations
+@DMF1839=Comparison processing group
+@DMF1840=Comparison: %1 (%2) - (%3)
+@DMF1841=Copy entity wizard
+@DMF1842=Name the copy entity processing group
+@DMF1843=Provide a name for the copy entity processing group so that you can run identify it.
+@DMF1844=Select entities to copy
+@DMF1845=Select one or more entities to copy.
+@DMF1846=Entities to copy
+@DMF1847=Select the source company, and one or more target companies to copy the selected entities to.
+@DMF1848=The wizard has created the copy entity processing group, and will copy the entities to the new companies when you click Finish.
+@DMF1849=Copy processing group
+@DMF1850=Table will contain the export details
+@DMF1851=Entity export details
+@DMF1852=Export file path
+@DMF1853=Export to file is not supported for composite entity
+@DMF1854=No of threads for the entity %1 should be more than one for batch execution
+@DMF1855=Sample file is in incorrect format
+@DMF1856=Authorization types
+@DMF1857=Authorization type information
+@DMF1858=Closing status information
+@DMF1859=Drawer type
+@DMF1860=Ledger bank
+@DMF1861=Ledger accounts or bank
+@DMF1862=Option for none item or  barcode item
+@DMF1863=Select the rounding method
+@DMF1864=Pin pad device name
+@DMF1865=Scale type
+@DMF1866=Default method for tender
+@DMF1867=Function to generate published version of the organization hierarchy
+@DMF1868=Function to generate category RecId based on category name and hierarchy name
+@DMF1869=Function to generate category hierarchy RecId based on name
+@DMF1870=Function to generate product RecId based on display product number
+@DMF1871=Function to generate product receipt journal
+@DMF1872=Function to generate purchase order confirmation
+@DMF1873=Function to generate product RecId based on display product number
+@DMF1874=Function to generate product relation type RecId based on its name
+@DMF1875=Function to generate product master RecId based on ItemId
+@DMF1876=Function to generate product type
+@DMF1877=Function to generate published and exploded version of the assortment
+@DMF1878=Function to generate gift card transaction bringing the balance to the desired level
+@DMF1879=Delay for linked items
+@DMF1880=Drawer device name
+@DMF1881=Dual display image interval
+@DMF1882=EFT company id
+@DMF1883=EFT data
+@DMF1884=EFT Merchant id
+@DMF1885=EFT password
+@DMF1886=EFT user id
+@DMF1887=End track 1
+@DMF1888=End track 2
+@DMF1889=Fiscal printer device name
+@DMF1890=Keylock device name
+@DMF1891=MICR driver name
+@DMF1892=MSR device name
+@DMF1893=Pharmacy port
+@DMF1894=Printer 2 character set
+@DMF1895=Printer 2 device name
+@DMF1896=Printer 2 document insert removal timeout
+@DMF1897=Printer 1 device name
+@DMF1898=Scale device name
+@DMF1899=Scanner device name
+@DMF1900=Function to generate discount validation type
+@DMF1901=Function to generate mix and match line group
+@DMF1902=Function to generate price discount group
+@DMF1903=Function to generate customer address book for the store
+@DMF1904=Function to generate database profile for the store
+@DMF1905=Function to generate employee address book for the store
+@DMF1906=Function to generate functional profile ID to be used by the store
+@DMF1907=Function to generate visual profile ID to be used by the store
+@DMF1908=Function to statement number sequences for the store
+@DMF1909=Function to generate offline profile ID to be used by the store
+@DMF1910=Function to generate channel RecId based on store number
+@DMF1911=Function to generate from warehouse address
+@DMF1912=Generate default transfer line data
+@DMF1913=Function to generate transfer order receipt journal
+@DMF1914=Function to generate transfer order shipment journal
+@DMF1915=Generate security role for user
+@DMF1916=Compare processing group
+@DMF1917=Default tender function
+ ;DMF
+@DMF1918=Receipt setup location's information
+ ;DMF
+@DMF1919=Type of drawer
+@DMF1920=Cash changer port settings
+@DMF1921=CCTV port
+@DMF1922=Printer2 logo bitmap
+@DMF1923=Printer logo bitmap
+@DMF1924=Printer device name
+@DMF1925=Scanner2 device name
+@DMF1926=Function to generate discount type
+@DMF1927=Function to generate price group associations for the store
+@DMF1928=Type id of card
+@DMF1929=Type id of tender
+@DMF1930=EFT terminal id
+@DMF1931=Function to generate to warehouse address
+@DMF1932=Maximum amount allowed to enter
+@DMF1933=Line number allowed  in transaction
+@DMF1934=Maximum amount counting difference
+@DMF1935=Maximum difference amount
+@DMF1936=Minimum change amount
+@DMF1937=Overtender amount
+@DMF1938=Undertender amount 
+@DMF1939=Unique index on staging table is not defined
+@DMF1940=Function to generate retail employment type
+ ;Employee
+@DMF1941=Function to generate retail staff id
+ ;Employee
+@DMF1942=Comma separated file
+@DMF1943=Semicolon separated file
+@DMF1944=Colon separated file
+@DMF1945=Tab separated file
+@DMF1946=Vertical bar separated file
+@DMF1947=XML attribute
+@DMF1948=XML element
+DMFEntityReadDatasources=Read Only Datasources
+ ;Entity's read only datasources
+DMFEntityWriteDatasources=Data \r\nEntity Write datasources
+ ;Entity's write datasources
+DMFEntityDependencies=Entity dependencies
+@DMF1949=Process
+ ;The name of the button group on the processing group app bar.
+@DMF1950=Has source mapping been generated
+@DMF1951=Upload file
+@DMF1952=File uploaded successfully
+@DMF1953=File upload failed. %1
+@DMF1954=View execution log
+@DMF1955=Upload sample file
+@DMF1956=Composite entity should have entities added to it.
+StagingExtensionGroup=Extension group
+ ;staging table extension group
+StagingDeveloperDocumentation=Data entity staging table
+ ;staging table developer documention
+StagingToDataEntityRelationshipRole=Data entity
+ ;staging data entity relation entity relationship role
+InvalidValueForField=Value %1 is invalid for field %2
+ ;Generic error message when validation fails for a record
+DataManagementEntity=Data management
+ ;Data Management Entity label
+DMFFieldNotFound=Field '%1' not found in system
+ ;Source field mapping error
+DMFPackageFilePath=Export Package File Path
+ ;Exported package file path
+DMFEntityRecordWriteFailed=Validations failed while writing entity record
+ ;Error message when validate write failed for an entity record
+DMFDefinitionGroupIdNotSpecified=Data project Id is not specified.
+ ;API Error: Source Data project Id not specified not specified as input
+DMFPackageNameNotSpecified=Package name is not specified.
+ ;API Error: Package Name Not Specified as input
+DMFDefinitionGroupNotFound=Data project %1 does not exist.
+ ;API Error: Specified Data project not found
+DMFAutoMapFailed=Automatic mapping failed.
+ ;API Error: Automatic mapping failed.
+DMFPackageUrlNotSpecified=Package url is not specified.
+ ;API Error: Package url is not specified.
+TemplateID=Template ID
+ ;Template ID
+DataManagementTemplate=Data management template
+ ;Data management template
+ValidateTemplate=Validate template
+ ;Validates the data management template
+ImportTemplate=Import template
+ ;Imports the data management template
+ExportTemplate=Export template
+ ;Exports the data management template
+TemplateStatus=Template status
+ ;Data management template status
+DependenciesOverridden=Dependencies overridden
+ ;Dependencies overridden
+LastValidatedDateTime=Last validated date
+ ;Template last validated date time
+DiscoverDependencies=Discover dependencies
+ ;Crawl aot and discover dependencies between entities.
+ValidationRequired=Validation required
+ ;entity required for validation.
+NewDependency=New dependency
+ ;Dependency is new.
+SourceEntityName=Source Entity Name
+ ;Name of the source entity of the dependency. Dependent entity.
+MissingDependency=Relation %1 to %2 does not exist in the system. Therefore, dependency has been removed.
+ ;Warning shown when a dependency is removed.
+UndefinedRelation=Relation %1 not found.
+ ;Error message shown when relation is not found
+NotDataManagementEntity=%1 is not a data management entity. Therefore, not supported.
+ ;Error message shown when an entity is added that is not a data management entity.
+ApplyTransform=Apply transforms
+ ;Apply transforms
+NoRelationExists=No relation exists between %1 and %2
+ ;Error message shown when no relation exists between two entities.
+NoDependencyFound=No dependency found for %1
+ ;Warning shown when no dependency is found associated with an entity.
+EmptyTemplate=No associated entities found for %1 template.
+ ;Warning shown.
+NoInstanceFound=No records found for %1
+ ;Warning shown when the entity is empty.
+ConfigCompleteStatus=Completed
+ ;Status shown when entity is fully configured.
+ConfigNotStartedStatus=Not started
+ ;Status shown when entity configuration has not started.
+ConfigIncompleteStatus=Incomplete
+ ;Status shown when entity is in the process of being configured.
+MissingTemplateSourceEntityEntryMessage=No entry found for %1 in %2 template. Seek assistance from your system administrator.
+ ;Message shown when no template entry can be found.
+DGTemplateSourceEntityMissingError=No entry found for %1 in %2 template.
+ ;Error shown when no template entry can be found.
+ArrayElement2=Array element 2
+ ;Array element 2
+ArrayElement3=Array element 3
+ ;Array element 3
+IgnoreBlankValues=Ignore blank values
+ ;Ignore blank values
+IgnoreBlankValuesHelpText=If value in file is blank then ignore the field during import
+ ;If value in file is blank then ignore the field during import
+DMFWriterTTSLevelInvalid=Write cannot be called in an outer transaction scope 
+ ;API Error : Outer transaction not allowed for DMFEntityWriter.Write
+DMFValidateEnumValue=%1 is a not valid value for %2 field.
+ ;DMF validation error
+PercentageValidated=Valid
+ ;Field label for percentage of Valid dependencies.
+EntityInstanceRecId=Entity Id
+ ;Identifies an instance of an entity.
+ConfigProgressSummaryChartApproved=Approved
+ ;Shown when user hovers over chart.
+ConfigProgressSummaryChartRemaining=Remaining
+ ;Shown when user hovers over chart.
+ConfigProgressSummaryChartTitle=Percentage
+ ;Chart title.
+DependencyValidationPassed=Validation status
+ ;Validation status
+TmpDMFDGTemplateSourceEntityConfigProgressSummaryChart=Chart data
+DGTemplateSourceEntityConfigProgressComputed=Validation percentage
+DGTemplateSourceEntityConfigProgressComputedDevDoc=Calculates percentage of dependencies that passed validation
+ ;New Comment
+DGTemplateSourceEntityConfigProgressDependencyLineCompleted=Approved
+ ;Field label. Users will mark this field once they have configured a dependency.
+PercentageApproved=Approved
+ ;Percentage of configuration approved.
+EntityNotDefined=Provided table id does not correspond to any existing entity.
+ ;Error message shown when table id does not match to an entity.
+DGTemplateSourceEntityConfigProgress=Configuration progress
+ ;Table label.
+DGTemplateSourceEntityDependencies=Dependencies
+ ;Table label.
+DMFDGTemplateSourceEntityConfigProgressDetailsDialogCaption=Configuration status
+ ;Caption appearing at the top of slider.
+ExecutionStatus=Execution status
+ ;Execution status
+Created=Created:
+ ;Number of records created
+Updated=Updated:
+ ;Number of records updated
+WithErrors=With errors:
+ ;Number of records with errors
+DeleteJob=Do you want to delete the current job?
+ ;Message to delete the temporary job created for reimport
+MappingLastModifiedDateTime=Mapping last modified date time
+ ;Mapping last modified date time
+StagingLastModifiedDateTime=Staging last modified date time
+ ;Staging last modified date time
+TargetLastModifiedDateTime=Target last modified date time
+ ;Target last modified date time
+DMFValidateRelationNameError=Relationship '%1' does not exist between Source entity '%2' which is dependent on entity '%3'
+ ;Error message if source entity and dependee entity have no relation with relation name provided
+DMFValidateNoRelationError=Relationship does not exist between Source entity '%1' which is dependent on entity '%2'
+ ;Error message if source entity and dependee entity have no relation
+DMFValidateDependeeEntity=Source entity %1 is dependent on %2 entity. %2 entity does not exist
+ ;Error if dependee entity does not exists in DMFEntity
+DMFValidateSourceEntity=Source entity %1 does not exist
+ ;Error if source entity does not exists in DMFEntity
+DMFDependencyName=Dependency
+ ;EDT label.
+SystemFieldsMappingValidationError=System field %1 cannot be mapped
+ ;System fields cannot be used for mapping.
+DMFSourceFileTypePackageImport=Import now to copy data from package file to target
+ ;Import now will copy data from package file to target
+ViewDetails=View details
+ConfigurationStatus=Configuration status
+ ;Status of the configuration.
+NoTemplateDefined=%1 is not defined.
+ ;Error shown when template is not defined.
+ValidationChartTitle=Validated
+ ;Chart title.
+ApprovedChartTitle=Approved
+ ;Chart title.
+ConfigProgressSummaryChartPassed=Passed
+ ;Shown when user hovers over chart.
+ConfigProgressSummaryChartFailed=Failed
+ ;Shown when user hovers over chart.
+ApproveFailingDependenciesWarning=Dependencies that fail validation cannot be approved.
+ ;Warning shown.
+ApproveAllValid=Approve all
+ ;Button label.
+InvalidDatasource=Invalid datasource, Composite entity expected.
+ ;Invalid data for composite entity
+ParentEntityName=Parent Entity Name
+ ;DMFCompositeEntityList form
+TargetEntityValidations=Target Entity Validations
+ ;DMFCompositeEntityList form
+ExecutionSummaryStatusUnknown=Unknown
+ ;execution summary status enum
+ExecutionSummaryStatusNotRun=Not run
+ ;execution summary status enum
+ExecutionSummaryStatusExecuting=Executing
+ ;execution summary status enum
+ExecutionSummaryStatusSucceeded=Succeeded
+ ;execution summary status enum
+ExecutionSummaryStatusPartiallySucceeded=Partially succeeded
+ ;execution summary status enum
+ExecutionSummaryStatusFailed=Failed
+ ;execution summary status enum
+ExecutionSummaryStatusCanceled=Canceled
+ ;execution summary status enum
+ExecutionDetailsNotFound=Execution details were not found for execution id: %1
+ ;DMF error
+EntityExecutionRecordNotSpecified=A valid entity execution record was not specified.
+ ;DMF error
+ExecutionSummaryStatus=Execution summary status
+ ;execution summary status enum
+DMFDefinitionGroupAlreadyExists=Data project '%1' already exists.
+ ;Data project '%1' already exists.
+DMFGenerateMappingFromScratch=Do you want to generate the mapping from scratch ?
+ ;If yes, generate the mapping from scratch, else generate using modification.
+DMFPackage=Package
+ ;Package
+ExportPackage=Export package
+ ;Export package
+DMFDefinitionGroupEntitySequence=Data project entity sequence
+ ;Execution unit, level and sequence for entities in a data project
+DMFExecutionUnit=Execution unit
+ ;Execution unit
+DMFLevelInExecutionUnit=Level in execution unit
+ ;Level in execution unit
+DMFSequenceInLevel=Sequence in level
+ ;Sequence in level
+DMFFailLevelOnError=Fail batch on error for level
+ ;Fail level on error
+DMFFailExecutionUnitOnError=Fail batch on error for execution unit
+ ;Fail execution unit on error
+FormRefNotDefined=% does not have any form associated with it.
+ ;Error message shown when no formref is defined for entity.
+EntityVirtualFieldNameLabel=Entity virtual field
+ ;Default entity virtual field name label.
+EntityVirtualFieldNameHelpText=Entity virtual field help text
+ ;Default entity virtual field name help text.
+CSVUnicode=Comma separated file(Unicode)
+ ;Comma separated file(Unicode)
+SemiColonUnicode=Semicolon separated file(Unicode)
+ ;Semicolon separated file(Unicode)
+ColonUnicode=Colon separated file(Unicode)
+ ;Colon separated file(Unicode)
+TabUnicode=Tab separated file(Unicode)
+ ;Tab separated file(Unicode)
+VerticalBarUnicode=Vertical bar separated file(Unicode)
+ ;Vertical bar separated file(Unicode)
+DMFDefinitionGroupTemplateValidateEntityData=Validate entity data
+ ;Button label.
+DMFDGTemplateSourceEntityConfigProgressValidatorJob=Perform entity data validation.
+ ;Class description.
+DMFEntityMissingError=Target entity missing. %1 needs to be added to Data Management > Data entities
+ ;Error message shown when dmf entity is missing.
+DMFNoEntityExists=Entity for data project '%1' does not exist.
+ ;Entities do not exist for import/export.
+EntityConfigStatusMissing=Configuration status not available. Please refresh configuration status and try again.
+ ;Warning shown.
+EntityConfigRunValidation=Run configuration validation
+ ;Button label.
+MessagePostProcessingError=Post processing error
+ ;Integration activity message for post process error
+DMFEntityNotFound=Entity '%1' not found.
+ ;Entity not found in DMFEntity table
+SourceFormatNotFound=Source format '%1' is invalid does not exist.
+ ;Source format not found
+DMFDefinitionGroupEntityNotFound=Entity '%1' not found in data project '%2'.
+ ;DMFDefinitionGroupEntity invalid.
+SourceMismatched=Specified source name '%1' does not match the currently configured source on the entity '%2' in data project '%3'.
+ ;New Comment
+DMFExecutionHistoricalData=Historical data
+ ;Historical data
+DMFViewHistoricalRuns=View historical runs
+ ;View historical runs
+DMFErrorCount=Num of error records
+ ;Num of error records
+DMFNoRelatedDuplicates=There are no related duplicates to display
+ ;There are no related duplicates to display
+DMFMarkDuplicates=The selected records will be marked as duplicate
+ ;The selected records will be marked as duplicate
+DMFMultipleRecordsNotSelected=At least two records should be selected for the operation to be performed.
+ ;At least two records should be selected for the operation to be performed.
+DMFShowAllFields=Show all fields
+ ;Show all fields
+DMFShowDuplicates=Show duplicates
+ ;Show duplicates
+DMFBulkUpdate=Bulk update
+ ;Bulk Update the selected data
+DMFShowRelatedDuplicates=Show related duplicates 
+ ;Show related duplicates
+DMFDeDup=Mark duplicates
+ ;Mark duplicates
+DMFStagingNewCount=Num of staging records
+ ;Num of staging records
+DMFRecordStatus=Status
+ ;Status
+DMFApplyTemplateOption=Entity replace or merge
+ ;Entity replace or merge on defintion group or template
+DMFCreateTemplateFromDataProject=Create from data project
+ ;Create a template from data project
+DMFApplyTemplate=Apply Template
+ ;Apply Template
+DMFCompositeEntityExportFileFormat=Composite entity can only be exported in XML format
+ ;Composite entity can only be exported in XML format
+DMFNoCompositeEntityStagingData=Staging data not available for Composite entity - %1, please view staging data for child entities
+ ;View staging data for child entities
+DMFNoRelationExists=There is no existing relation between parent - %1 and child - %2 of composite entity
+ ;There is no existing relation between parent  and child of composite entity
+DMFRegenerateEntities=There is no entity with name '%1'. Regenerate the entities to overcome the issue
+ ;There is no entity with selected entity. Regenerate the entities to overcome the issue
+DMFEnableRecurringDataJob=Enable recurring data job
+ ;Enable recurring data job
+DMFDisableRecurringDataJob=Disable recurring data job
+ ;Disable recurring data job
+DMFRecurringDataJobEnabled=Recurring data job '%1' is enabled.
+ ;Recurring data job enabled message
+DMFRecurringDataJobDisabled=Recurring data job '%1' is disabled.
+ ;Recurring data job disabled message
+DMFRecurringDataJobSchedulingFailed=Scheduling recurring data job '%1' failed. Retry again.
+ ;Data job scheduling failed error
+DMFRecurringDataJobInvalidRecurrence=Set valid recurrence before attempting to enable recurring data job '%1'.
+ ;Invalid recurrence for data job
+DMFRecurringDataJobNotEnabled=Recurring data job '%1' is not enabled. Do you want to close the form ?.
+ ;Data job not enabled error
+DMFManageRecurringDataJobMessages=Manage messages
+ ;Manage queue messages
+DMFSetupRecurrenceForProcessingJob=Set processing recurrence
+ ;Processing recurrence setup label
+DMFSetupRecurrenceForMonitoringJob=Set monitoring recurrence
+ ;Monitoring recurrence setup label
+DMFClientIdNotConfigured=At least one client id must be enabled for the recurring data job before it can be activated.
+ ;Client id needed
+DMFSetupActivityAuthorization=Setup authorization policy
+ ;Setup recurring data job authorization
+DMFManageActivityAuthorization=Manage authorization policy
+ ;Manage recurring data job authorization
+DMFMessageProcessingStartDateTime=Processing started date time
+ ;Message processing start date time
+DMFMessageProcessingEndDateTime=Processing completed date time
+ ;Processing end date time
+DMFActivityMessagesLabel=Processing status for recurring data job
+ ;New Comment
+DMFStagingUnsupportedFieldType=Container type field '%1' must not be mapped to file
+ ;Container type field '%1' must not be mapped to file
+DMFAddEntityToSelectedEntityList=At least one entity must be added to the data project
+ ;Info message - At least one entity must be added to the data project
+DMFNoUpdateEntityPermission=User does not have permission to update the entity %1.
+ ;Error message
+DMFNoAddEntityPermission=User does not have permission to add the entity %1.
+ ;Error message
+DMFNoUseEntityPermission=User does not have permission to use entity %1.
+ ;Error message
+JobIdNotSpecifiedError=Job Id has not been specified.
+ ;Batch importer error
+ImportRequiresBatchModeError=Import is only supported in batch mode.
+ ;Batch import error
+ImportDataProjectNotSpecifiedError=A valid data project was not specified for import.
+ ;Batch import error
+ExportDataProjectCannotBeImportedError='%1' is an exportable data project and cannot be used for import.
+ ;Import error
+BatchImportRequiresYesBatchSettingError=Batch processing must be set to Yes for importing in batch mode.
+ ;Import error
+ImportProcessTaskCaption=Import process: %1
+ ;Batch import task caption
+BatchImportScheduledInfoMesg=Batch import scheduled.  Import job Id: "%1".  Batch job description: "%2"
+ ;Bath import info mesg
+UnsupportedTaskClassIdError=An unsupported scheduler task class Id was specified: %1
+ ;Import scheduler error
+BatchTaskFailError=Batch task %1 failed.
+ ;Batch import error
+SourceToStagingImportFailed=Import failed at source to staging step.
+ ;Import error
+StagingToTargetImportFailed=Import failed at staging to target step.
+ ;Import error
+EntityImportError=Import execution failed for entity %1: %2
+ ;Import error
+ImportExecutionUnitError=Failing execution unit on error.  Execution Unit: %1, Entity: %2.
+ ;Batch import error
+ImportExecutionLevelError=Failing execution level on error.  Execution Unit: %1, Level: %2, Entity: %3.
+ ;Batch import error
+ImportSchedulerStartedMesg=Import scheduler started.  Last processed: Execution unit: %1, Level: %2, Sequence: %3
+ ;Batch import mesg
+ExecutionUnitCompletedMesg=Execution unit completed.  Execution unit: %1
+ ;Batch import mesg
+ImportSchedulerCompletedMesg=Import scheduler completed.  Processed Execution unit: %1, Level: %2, Sequence: %3
+ ;Batch import mesg
+ImportSchedulerAbortedError=Import scheduler aborted.  Processed Execution unit: %1, Level: %2, Sequence: %3
+ ;Batch import error
+TaskDependencyNotFoundError=Error: Completion scheduler task dependency was not found for batch Id %1.  Context: %2
+ ;Batch import error
+NewTasksScheduledMesg=New tasks scheduled.  Execution unit: %1, Level: %2, Sequence: %3
+ ;Batch import mesg
+ImportSchedulerRuntimeCaption=Import scheduler. Job: %1, Unit: %2, Level: %3, Sequence: %4
+ ;Import scheduler batch task caption
+ImportSchedulerDescription=Import scheduler
+ ;Batch task caption
+SchedulerTasksScheduledMesg=Scheduler tasks scheduled.  Job: %1, Entity task: %2, Tasks scheduled: %3
+ ;Batch import info mesg
+ImportUpdateConflictNoRetriesError=Import to target: %1 failed due to update conflict in DMFDefinitionGroupExecution.  Retry count: %2. All retries exhausted.
+ ;batch import error
+ImportUpdateConflictWarning=Import to target: %1 update conflict in DMFDefinitionGroupExecution.  Retry count: %2.
+ ;batch import warning
+ImportUpdateConflictRethrowError=Import to target: %1 failed due to update conflict in DMFDefinitionGroupExecution.  ttslevel: %2. Rethrowing.
+ ;Batch import error
+DataProjectExistsNoOverwrite=The data project '%1' exists and overwrite has not been specified.
+ ;import error
+EntityDoesNotExistInTarget=Entity %1 does not exist in the target environment.
+ ;import error
+IncorrectEntityFieldMappingError=The mapping is incorrect for entity %1 and field %2.
+ ;Import error
+DataProjectDoesNotExistError=Data project %1 does not exist.
+ ;Import error
+BatchImportStartedMesg=Starting import in batch.  Import job: %1.  Batch job: %2
+ ;Import mesg
+ImportToStagingCaption=Import to staging: %1 (%2)
+ ;Batch task caption
+ExecDataNotFoundError=DefinitionGroupExecution data was not found: Job Id: %1, Entity: %2
+ ;Import error
+ApplyTransformError=An error occurred when applying transformations.
+ ;Import error
+ParallelTaskCountMesg=Parallel tasks configured for %1: %2, Staging records: %3
+ ;Import info mesg
+ImportToTargetCaption=Import to target: %1 (%2)
+ ;Import task caption
+ImportToTargetParallelTaskCaption=Import to target parallel task: %1[%2] (%3)
+ ;Import task caption
+ImportToTargetStatusTaskCaption=Import to target status update: %1 (%2)
+ ;Import task caption
+ImportStatusUpdateConflictNoRetriesError=Import to target status update: %1 failed due to update conflict.  Retry count: %2. All retries exhausted.
+ ;Import error
+ImportStatusUpdateConflictWarning=Import to target status update: %1 update conflict.  Retry count: %2.
+ ;Import warning
+ImportStatusUpdateConflictRethrowError=Import to target status update: %1 failed due to update conflict.  ttslevel: %2. Rethrowing.
+ ;Import error
+RefreshList=Refresh list
+ ;DMF button text
+ImportExecParameters=Entity import execution parameters
+ ;DMF form caption
+ImportThresholdCount=Import threshold record count
+ ;DMF EDT Label
+ImportThresholdCountHelpText=Specifies the number of records for this threshold.
+ ;DMF EDT help text
+ImportTaskCount=Import task count
+ ;DMF EDT label
+ImportTaskCountHelpText=Specifies the number of parallel tasks to use for import.
+ ;DMF EDT help text
+ConfigureExecutionParamsText=Configure entity execution parameters
+ ;DMF button text
+ConfigureExecutionParamsHelpText=Configure import execution parameters for entities.
+ ;DMF button help text
+ImportInBatch=Import in batch
+ ;DMF Menu item label
+ImportInBatchHelpText=Run import in batch
+ ;DMF Menu item help text
+DMFConfigureDataSource=Configure data source
+ ;DMF control text
+DMFDataEntities=Data entities
+ ;DMF control text
+DMFFrameworkParameters=Framework parameters
+ ;DMF control text
+DMFImportExport=Import / Export
+ ;Form Caption
+DMFName=Name
+ ;Control label
+DMFTemplateIdNotSpecifiedError=Template Id must be specified.
+ ;DMF error
+DMFTemplateDoesNotExist=Template %1 does not exist.
+ ;DMF Error
+DMFTemplateExists=The template %1 exists and overwrite has not been specified.
+ ;DMF Error
+DMFUseSampleFile=Use sample file
+ ;control text
+DMFViewMap=View map
+ ;control text
+DMFNoExportFileFoundForEntity=No export file found for entity - %1 in execution - %2
+ ;Info msg: No export file found for entity - %1 in execution - %2
+DMFBatchInformationNotFound=Batch information was not found
+ ;Info msg: Batch information was not found
+DMFValidODBCConnection=ODBC connection is valid
+ ;Info msg: ODBC connection is valid
+DMFInvalidArgumentParm=Invalid argument: params
+ ;Info msg: Invalid argument: params
+DMFFileDoesNotExistOrAccessDenied=The file does not exist or access is denied.
+ ;info msg: The file does not exist or access denied.
+DMFUnableToMapFileFormatToEntityAutomatically=Unable to map file format to entity automatically
+ ;Info msg: Unable to map file format to entity automatically
+DMFUnableToMapExportFileFormatToEntityAutomatically=Unable to map export file format to entity automatically.
+ ;Info msg: Unable to map export file format to entity automatically.
+DMFGenericErrorFormat=Error message: %1, Stack trace: %2
+ ;Generic error message format
+DMFPackageFileNotGeneratedForExecution=Package file id is not generated for data job id '%1'
+ ;package file generation failure
+IntegrationMessageNotFound=Message with id '%1' was not found in the message table.
+ ;Message not found
+IntegrationMessageProcessedAlready=Message with id '%1' was processed before. This message data will not be processed again and must be cleaned up.
+ ;Message already processed
+IntegrationBridgeContractObjectInvalid=IntegrationBridgeContract object is null or invalid.
+ ;Bridge contract invalid
+IntegrationActivityCannotBeUpdated=Cannot update Integration Activity with state '%1'.
+ ;Activity cannot be updated
+IntegrationActivityNotSaved=Integration Activity not saved
+ ;Activity not saved
+IntegrationMonitoringBatchName=Dynamics 365 for Finance and Operations Integration monitoring batch manager
+ ;Activity Monitoring batch name
+ActivityObjectInvalid=Activity object is null or invalid.
+ ;Activity object invalid
+ActivityMessageContextObjectInvalid=ActivityMessageContext object is null or invalid.
+ ;ActivityMessageContext object invalid
+ImportLocationInvalidInBridgeContract=Import location is invalid or not specified in the bridge contract object.
+ ;Import location invalid
+IntegrationMessageExistsAlready=Message with id '%1' already exists. The export job will not be processed further.
+ ;Message exists
+ActivityRuntimeTableReferenceNotFound=Runtime record was not found for recurring data job with id '%1'.
+ ;Runtime reference not found
+RecurringImportDataJobFileDownloadFailure=Could not download file '%1' from central storage for recurring import data job with execution id '%2'.
+ ;File download failure
+RecurringDataJobSchedulingFailed=Scheduling recurring data job '%1' failed.
+ ;New Comment
+RecurringMonitorDataJobSchedulingFailed=Scheduling monitor data job for recurring data job '%1' failed.
+ ;New Comment
+RecurringDataJobStopFailed=Could not disable recurring data job '%1'.
+ ;New Comment
+RecurringMonitorDataJobStopFailed=Could not disable monitor job for recurring data job '%1'.
+ ;New Comment
+RecordNotFoundInEntity=This record does not belong to %1 entity.
+ ;Error shown when recId is not found in entity.
+DMFSelectSourceDataFormat=Select the source data format.
+ ;log message: Select the source data format.
+ViewDMFExecutionsSince=View data jobs started in
+ ;View jobs started since
+ExecutionPastDay=Last 24 hours
+ ;Jobs in last day
+ExecutionPast3Days=Last 3 days
+ ;Jobs in last month
+ExecutionPastWeek=Last week
+ ;Jobs past week
+ExecutionPastMonth=Last month
+ ;Jobs in last month
+ExecutionAll=All jobs
+ ;All jobs
+ExecutionPast3Months=Last 3 months
+ ;Jobs in last 3 months
+ExecutionPast6Months=Last 6 months
+ ;Jobs in the last 6 months
+DMFDataFileNotFound=Upload data file for entity '%1'.
+ ;Import error message
+DMFAutoNumSeqUpdateError=Exception while setting auto number sequence field %1 for child entities
+ ;Error while mapping num seq for child
+DMFSourceTypeNotFound=Source type must be selected
+ ;Source type must be selected
+DMFEntityRecreation=The entity list is being refreshed. You may continue your work while this happens. The completion status of this operation can be found in the message center.
+ ;Entity list is being refreshed in background.
+DMFEntityCreationSuccessful=Entity list was successfully refreshed.
+ ;Entities created successfully.
+DMFErrorProcessingBulkEntityCreation=Error encountered while creating entity data. Please contact your administrator if this persists.
+ ;Error encountered while creating entity data. Please contact your administrator if this occurs again.
+DMFEntityTab=Entity settings
+ ;Advanced option for entity sync
+DMFEntityRefresh=Refresh entity list
+ ;Sync entities
+DMFRunDataProjectNoEntityError=There is no entity to run the data project '%1'.
+ ;There is no entity to run the data project.
+DMFAutoSyncEntitiesCaption=Specify if entity changes are to be automatically synchronized or not
+ ;Auto sync option
+DMFEntityTabTitleText=Advanced entity configuration settings
+ ;Advanced entity settings
+DMFEntityRefreshGroup=Data import/export framework requires entity list is up-to-date. Click button below to refresh
+ ;Entity refresh
+DMFEntityExecutionAdvanced=Configure processing options for entities to optimize data import/export operations
+ ;New Comment
+DMFExportDataProjectExpected=Data project must be of type 'Export'
+ ;Export data project expected
+DMFSkipStaging=Skip staging
+ ;control name : skip staging
+DMFSetSkipStagingToNo=Skip staging for %1 will be set to 'No'
+ ;info message: Skip staging for %1 will be set to 'No'
+DMFEntityModelView=Entity model view
+ ;control name: Model view
+DMFEntityCategoryView=Entity category view
+ ;control name: category view
+DMFMenuMustBeModelOrCategoryView=Caller menu must be 'DMFModelView' or 'DMFEntityCategoryView'
+ ;info message: Menu must be DMFModelView or DMFEntityCategoryView
+DMFUseDataAreaFromMessage=Specify if the legal entity for processing would be picked from the submitted job. If no, messages would be processed in the company context in which this job is scheduled to run.
+ ;Company over-ride from message
+DMFProcessMessagesSeriallyTitle=Process messages in order
+ ;Process messages in order
+DMFUseDataAreaFromMessageTitle=Use company from message
+ ;Use company from messahe
+DMFUseDataAreaMessageFormTitle=Process message in this company
+ ;Process message in this company
+DMFFileHasNoContent=No content was found in the uploaded data file (file length is 0).
+ ;Invalid file content
+DMFInvalidCompanyInSubmittedJob=The submitted job had invalid company '%1' specified.
+ ;Invalid company
+ActivityTableReferenceNotFound=Activity record was not found for recid '%1'.
+ ;Activity reference invalid
+MessagePreProcessingError=Pre-processing failure
+ ;Pre process failure status
+DMFIsDataAreaSetOnMessage=Is company specified in the request message
+ ;Is company specified in the submitted job
+DMFCompositeSyncError=Composite entity synchronization failed. Exception details %1
+ ;Error on build for composite entiy
+DMFImportableFields=Importable fields
+ ;Importable fields
+DMFTimeZonePreference=Time zone preference
+ ;Time zone preference
+DMFAutoTimezone=Auto
+ ;Auto
+DMFNoTimezone=No conversion
+ ;No conversion
+DMFUserTimezone=User
+ ;User
+DMFCompanyTimezone=Company
+ ;Company
+DMFManualTimezone=Manual
+ ;Manual
+DMFNoOfRecordsExported=%1 records exported
+ ;%1 records exported
+DMFNoOfRecordsMovedToTarget=%1 pending / %2 in target
+ ;%1 pending / %2 in target
+DMFITWorkspace=Data Management IT
+ ;Data management IT workspace
+DMFITProjectsAndJobsTabPage=Data projects and jobs
+ ;Data projects and jobs
+DMFITSubmittedDataJobs=Recurring data jobs
+ ;Submitted data jobs
+DMFITRecentDataJobs=Recent runs
+ ;Recent data jobs
+DMFITUpcomingDataJobs=Upcoming data jobs
+ ;Upcoming data jobs
+DMFHasRecurringDataJobs=Has recurring data jobs
+ ;Has recurring data jobs
+DMFDataProjectName=Data project name
+ ;Data project name
+DMFManageEntities=Manage entities
+ ;Manage entities
+DMFTotalRunCountForActivity=Total jobs run
+ ;New Comment
+DMFEntitiesCount=Entities count
+ ;New Comment
+GreaterThanLastActivityStartedDateTime=Since last recurring job started date time
+ ;Custom DMF range function
+GreaterThanLastActivityCompletedDateTime=Since last recurring job completed date time
+ ;Custom DMF range function
+GreaterThanLastExecutionDateTime=Since last run completed date time
+ ;Custom DMF range function
+GreaterThanLastSuccessfulExecutionDateTime=Since last successful run completed date time
+ ;Custom DMF range function
+DMFDataProjectRoleSetup=Set up roles for data projects
+ ;Set up roles for data projects
+DMFSamplePackageFilePath=Package File Path
+ ;Package File Path
+DMFBitmapImagesCopyingError=Error copying bitmap images to staging
+ ;Error copying bitmap images
+DMFBitmapDataExportError=Error exporting the bitmap data
+ ;Error exporting the bitmap data
+DMFTemplates=Templates
+ ;Templates
+@DMF1957=Data is unicode, but source format selected is non-unicode.
+ ;The exported records having the unicode data
+DataProjectMustBeDefinedForActivity=Valid data project must be specified for recurring data job '%1'
+ ;Data project needed for activity
+DataManagementITAdministrator=Data Management IT Administrator
+ ;Data Management IT Administrator
+DataManagementITMaintain=Maintain data management parameters, reference data, entities, projects and jobs for enterprise
+ ;Data management duty
+DMFDataJobLastRunDateTime=Data job last run date time
+ ;Last run date time for recurring data job
+EntityNotPublishedToEntityStore=%1 entity was not published to %2 entity store
+ ;New Comment
+DMFNumberOfTargetRecords=Num of target records
+ ;Number of records in target
+DMFDataJobNumberOfRuns=Number of times data job has run
+ ;Number of times data job has been run
+DMFEntityNotEnabledForCurrentCompany=Entity "%1" is not enabled for country "%2"
+ ;Entity "%1" is not enabled for country "%2"
+DMFEntityHasVirtualFields=Staging cannot be skipped for export , as entity %1 has virtual fields : %2
+ ;info msg: Staging cannot be skipped for export , as entity %1 has virtual fields : %2
+DMFSubmittedDataJobExternalIdentifier=Submitted job identifier
+ ;Id from external subsystem for submitted job
+DMFEntityHasNonEditableFields=Fields '%1' in the file are not automatically mapped , as these are non-editable field(s).
+ ;info msg: Fields '%1' in the file are not automatically mapped , as these are non-editable field(s).
+DMFSourceMapError=Source fields could not be mapped successfully. Click "View map" on entity card to review.
+ ;Source map error
+DMFCheckTansforms=If source file requires transforms, click "View map", use "Transformations" tab to upload and apply transforms to generate source field mapping.
+ ;Check transforms
+DMFRecurringInboundMessages=Inbound messages
+ ;Incoming message
+DMFRecurringOutboundMessages=Outbound messages
+ ;Outbound messages
+DMFNumberOfMessagesProcessed=Number of messages processed
+ ;Processed message count
+DMFToggleExecHistory=Show Composite Entity Details
+ ;Show/Hide execution history
+DMFUploadPackage=Upload package file
+ ;Upload package file
+DMFPackageFile=Package file
+ ;Package file
+DMFFieldConfigurationDisabled=Field(s) - '%1' are disabled and cannot be used for import/export.
+ ;Field(s) - '%1' are disabled and cannot be used for import/export.
+@DMF1958=Invalid Enum Value
+ ;Staging log message
+@DMF1959=File contains duplicate rows, cannot insert data into staging due to unique key violation.
+ ;Violation of PRIMARY KEY constraint
+@DMF1960=Node with '%1' could not be found in the source file.
+ ;Invalid XML node.
+DMFExportFailedDueToInsufficientFieldRights=Export failed due to insufficient field access right for the following fields: %1
+ ;Export failed due to insufficient field access right for the following fields: %1
+DMFSetOperationsNotSupported=Set operations not supported for '%1' entity
+ ;info msg: Set operations not supported for '%1'
+DMFEntityDoesNotExist=Entity '%1' does not exist
+ ;info msg: Entity %1 does not exist
+EntityConfigKeyNotEnabled=Configuaration key not enabled for the entity '%1'
+ ;Configuaration key not enabled for the entity.
+DMFImportDataPackage=Import Data Package
+ ;Import Data Package
+DMFSourceDataPackage=Source Data Package
+ ;Source data package
+DMFTargetDataPackage=Target Data Package
+ ;Target data package
+DMFDataPackageZipFile=Upload data package zip file
+ ;Upload data package zip file
+DMFExportDataPackage=Export Data Package
+ ;Export data package
+DMFInvalidManifestFile=Wrong or corrupted manifest file.
+ ;Wrong or corrupted manifest file
+SubmittedJobIdIsInvalid=Job with identifier '%1' cannot be found. 
+ ;Invalid submitted job id
+ActivityIdIsInvalid=Activity for the specified id '%1' cannot be found.
+ ;ActivityId invalid
+DMFCompositeEntities=Composite Entities
+ ;Composite Entities
+DMFMarkOriginal=Mark Original
+ ;Mark Original
+DMFDataPackages=Data packages
+ ;Data packages
+DMFLoading=Loading ...
+ ;Loading data
+DMFApplicableRoles=Applicable roles
+ ;Applicable roles
+DMFApplicableLegalEntities=Applicable legal entities
+ ;Applicable legal entities
+DMFAddEntities=Add entities
+ ;Add entities
+DMFJobExecution=Job execution
+ ;Job execution
+DMFDeduplicate=De-duplicate
+ ;De-duplicate
+DMFDataSourceError=Could not create datasource
+ ;Could not create datasource
+DMFExecutionLog=Execution log
+ ;Execution log
+DMFInvalidXSLFile=Invalid XSL file.
+ ;Info msg: Invalid XSL file.
+DMFCannotMapAutoDefaultFields=Column '%1'  is not allowed for mapping - as field is marked as 'Default'.
+ ;info msg: column is not allowed for mapping - as field is marked as "Default".
+DMFCannotMapAutoGeneratedFields=Column '%1' is not allowed for mapping - as field is marked as 'Auto'.
+ ;info msg: column is not allowed for mapping - as field is marked as 'Auto'.
+DMFRemoveDuplicates=Remove duplicates
+ ;control name: Remove duplicates
+DMFEntityRecordInsertFailed=Error(s) occurred while writing entity record
+ ;Error(s) occurred while writing entity record.
+DMFInvalidCompositeFileData=File does not contain the required data for entity: '%1'
+ ;Invalid data for the composite entity in the file.
+DMFDeleteCompositeChildFromMapping=Deleting the child entity '%1' from mapping is not allowed
+ ;Deleting the child entity from mapping is not allowed.
+DMFInvalidTargetEntity=Invalid target entity '%1'.
+ ;info msg: Invalid target entity.
+DMFInvalidRelationBetweenParentAndChildEntity=Invalid relation between parent, %1 and child entity, %2
+ ;info msg: Invalid relation between parent, %1 and child entity, %2
+DMFInvalidParentEntity=Invalid parent entity %1
+ ;info msg: invalid parent entity
+DMFTargetEntityDoesNotExist=Entity %1 does not exist
+ ;info msg: Entity %1 does not exist
+DMFDataProjectContainIllegalCharacters=Data project name '%1' contains illegal character %2
+ ;info msg: Data project name '%1' contains illegal characters
+DMFParentEntityNodeDeleteError=Cannot delete the parent entity '%1' if child entity %2' exists, first delete the child entity and then try again
+ ;Cannot delete the parent entity node if child entity exists, first delete the child entity and then try again
+DataManagementAdministratorRole=Data management administrator
+ ;Data management admin role
+DataManagementAdministratorDuty=Maintain data import export parameters, entity data synchronization, data templates, data projects, recurring data jobs and staging data
+ ;Duty for data management admin
+DataManagementAdministratorPrivilege=Maintain data import export parameters, entity data synchronization, data templates, data projects, recurring data jobs and staging data
+ ;Privilege for data management administrator
+DataManagementMigrationUserRole=Data management migration user
+ ;Data migration user role
+DataManagementOperationUserRole=Data management operations user
+ ;Data import export user role
+DataManagementOperationMaintainDuty=Maintain data import export operation processes
+ ;Data operation maintain duty
+DataManagementOperationViewDuty=View data import export operation processes
+ ;Data operation view duty
+DataManagementOperationMaintainPrivilege=Maintain data import export tasks
+ ;Data operation maintain privilege
+DataManagementOperationViewPrivilege=View data import export tasks
+ ;Data operation view privilege
+DataManagementFoundationConfigurationEntitiesMaintain=Maintain Configuration entity data in foundation for data management
+ ;Foundation configuration entity maintain
+DataManagementFoundationConfigurationEntitiesView=View Configuration entity data in foundation for data management
+ ;Foundation configuration entity view
+DataManagementFoundationMasterEntitiesMaintain=Maintain Master entity data in foundation for data management
+ ;Foundation master entity maintain
+DataManagementFoundationMasterEntitiesView=View Master entity data in foundation for data management
+ ;Foundation configuration entity view
+DataManagementFoundationParameterEntitiesMaintain=Maintain Parameters entity data in foundation for data management
+ ;Foundation parameters entity maintain
+DataManagementFoundationParametersEntitiesView=View Parameters entity data in foundation for data management
+ ;Foundation parameters entity view
+DataManagementFoundationReferenceEntitiesMaintain=Maintain Reference entity data in foundation for data management
+ ;Foundation ref entity maintain
+DataManagementFoundationReferenceEntitiesView=View Reference entity data in foundation for data management
+ ;Foundation ref entity view
+BatchJobEntityMaintainPrivilege=Maintain batch job entity data
+ ;Batch job entity maintain
+BatchJobEntityViewPrivilege=View batch job entity data
+ ;Batch job entity view
+@FF001=Row delimiter specified for parsing the sample file is invalid
+ ;Invalid row delimiter
+@FF002=Column delimiter specified for parsing the sample file is invalid
+ ;Invalid column delimiter
+@FF003=DIXF Service could not download file for soure field mapping
+ ;File download error
+@FF004=Header row was not found in the sample file with the specified row delimiter
+ ;Header row not found
+@FF005=No columns were found in the source file with the specified column delimiter
+ ;Columns not found
+ImportFailedFieldAccess=Import failed.User has no access rights to the following fields: %1
+ ;Import field access
+FieldAccess=User has no access rights to the following fields: %1
+ ;Field access
+XSLTContentInvalid=XSLT file content is invalid. Validate that XSLT file with identifier '%1' is accessible in central storage.
+ ;XSLT file invalid
+AutoSequence=Auto Sequence
+ ;Sequence the entities for data project
+DMFCountryRegionCode=Country region code
+ ;Country region code
+DMFConfigurationKeyName=Configuration key name
+ ;Configuration key name
+DMFTags=Tags
+ ;Tags
+DMFIsShared=Is shared
+ ;Is shared
+DMFEntityCategory=Entity category
+ ;Entity category
+DMFIsTransformed=Is transformed
+ ;Is transformed
+DMFViewExecutionHistory=View execution history
+ ;View execution history
+DMFImportExportJobSchedule=Data import and export job
+ ;Data import and export job
+DMFTargetMapping=Action - Mapping
+ ;New Comment
+DMFInputFilePath=Input file path
+ ;Input file path
+DMFMsgDisplayed=Message displayed
+ ;Message displayed
+DMFIsSource=Is source
+ ;Is source
+DMFComparisonResultDetails=Comparison result details
+ ;Comparison result details
+DMFDSNNameFilePath=DSN Name File Path
+ ;DSN Name File Path
+DMFXmlStyle=XML Style
+ ;XML Style
+DMFOriginalRecId=Original staging record Id
+ ;Original recId
+DMFDuplicateRecId=Duplicate staging record Id
+ ;Duplicate recId
+DMFOriginalSampleFilePath=Original sample file path
+ ;Original sample file path
+DMFServiceFilePath=Service file path
+ ;Service file path
+DMFEntityTransforms=Entity transforms
+ ;Entity transforms
+DMFFieldEnumName=Field enum name
+ ;Field enum name
+DMFInfologStartLine=Infolog start line
+ ;Infolog start line
+DMFStagingErrorCount=Staging error count
+ ;Staging error count
+DMFTargetErrorCount=Target error count
+ ;Target error count
+DMFReRun=Re-run
+ ;Re-run
+DMFStagingRecordId=Staging record id
+ ;Staging record id
+DMFStagingColName=Staging column name
+ ;Staging column name
+DMFDeDuplicateRecordDetails=Duplicate record details
+ ;Duplicate record details
+DMFEntitySequencingReadTables=Entity sequencing read tables
+ ;Entity sequencing read tables
+DMFErrorAccessingFile=Error accessing file
+ ;Error accessing file
+DMFStagingValidationLog=Staging validation log
+ ;Staging validation log
+DMFEntityTableId=Entity table Id
+ ;Entity table id
+DMFIsSystemStagingField=System staging field
+ ;System staging field
+DMFArrayFieldName=Array field name
+ ;Array field name
+DMFPercentageValidated=Percentage validated
+ ;Percentage validated
+DMFPercentageApproved=Percentage approved
+ ;Percentage approved
+DMFTotalLines=Total lines
+ ;Total lines
+DMFAutoSyncEntityChanges=Sync entity changes automatically
+ ;Sync entity changes automatically
+DMFNoChildEntitiesExist=At least one child entity must exist for a composite entity, '%1' to perform import/export operation
+ ;info msg: At least one child entity must exist for a composite entity, '%1' to perform import/export operation
+DMFSetBasedWithMultipleTasksNotAllowed=Set based operation on the entity '%1' with more than one task is not supported
+ ;info msg: Set based operation on the entity '%1' with more than one task is not supported
+DMFCustomSequenceDefinedForEntity=Custom sequence is defined for the entity '%1' , more than one task is not supported
+ ;info msg:Custom sequence is defined for the entity, more than one task is not supported
+DMFEntityHasContainerFields=Staging cannot be skipped for export , as entity %1 has container fields : %2
+ ;info msg: Staging cannot be skipped for export , as entity %1 has container fields : %2
+DMFVirtualField=Staging cannot be skipped for export, as '%1' is a virtual field.
+ ;info msg:Staging cannot be skipped for export, as '%1' is a virtual field.
+DMFContainerField=Staging cannot be skipped for export, as '%1' is a container field.
+ ;info msg:Staging cannot be skipped for export, as '%1' is a container field.
+DMFMappingSkippedDueToInsufficientRights=Mapping has been skipped for %1.%2 due to insufficient field access right
+ ;info msg:Mapping has been skipped for %1.%2 due to insufficient field access right
+DMFInvalidStagingTable=Invalid staging table '%1'
+ ;info msg: Invalid staging table
+@DMF1961=Invalid relations between Entities
+ ;Error(s) Composite Export
+@DMF1962=Error(s) while writing Data to XML file or uploading file
+ ;Error(s) Composite Export
+@DMF1963=XML file is in incorrect format or did not contain schema for none of the entities
+ ;Invalid XML for Composite
+@DMF1964=Error(s) while downloading the file
+ ;Error(s) Download file
+@DMF1965=Error(s) while uploading the file
+ ;Error(s) Upload file
+DMFEntityModuleView=Entity module view
+ ;Entity module view
+@DMF1966=None of the columns used for mapping matches with columns in uploaded file
+ ;Error mapping
+DMFTruncateEntityData=Truncate entity data
+ ;Truncate entity data
+DMFErrorDeletingEntityData=Error deleting entity '%1' data
+ ;info msg: error deleting entity data
+DMFNoPermissionToDeleteEntityData=You do not have permissions, entity data can be deleted only by System Administrator.
+ ;info msg: Do not have permissions, data can be deleted only by System Administrator.
+DMFExportInBatchCaption='Export process: %1'
+ ;Export in batch process
+DMFBatchExportScheduledInfoMesg=Batch export scheduled. Export job id: "%1". Batch job description: "%2"
+ ;Batch export info message
+ExportDataProjectNotSpecifiedError=A valid data project was not specified for export.
+ ;Batch export error
+ExportInBatch=Export in batch
+ ;Export in batch
+ExportInBatchHelpText=Run export in batch
+ ;Run export in batch
+DMFRunInBatch=Run in batch
+ ;control name: run in batch
+DMFRunAsync=Run asynchronously
+ ;control name: Run asynchronously
+DMFInvalidBuffer=Function %1 called with invalid buffer.
+ ;info msg: Function %1 called with invalid buffer.
+DMFIssueExistsInAutoGenerateNumberSequence=Issue exists in auto generation of number sequence
+ ;info msg: Issue exists in auto generation of number sequence
+DMFExportEntityWriterDescription=Export data from target to external source
+ ;Export data from target to other source.
+DMFExportStagingTargetMsg=Move to staging from target: %1 (%2)
+ ;Move to staging from target
+DMFExportDataException=Could not export data from target to destination
+ ;Exception while exporting the data to the destination
+DMFExportTaskScheduler=Export scheduler
+ ;Export scheduler
+TargetToStagingExportFailed=Export failed while copying data from target to staging
+ ;Export failed while copying data from target to staging
+StagingToSourceExportFailed=Export failed while copying data from staging to destination
+ ;Export failed while copying data from staging to destination
+EntityExportError=Export execution failed for entity %1: %2
+ ;Export error
+ExportSchedulerStartedMesg=Export scheduler started.  Last processed: Execution unit: %1, Level: %2, Sequence: %3
+ ;Batch export message
+ExportSchedulerCompletedMesg=Export scheduler completed.  Processed Execution unit: %1, Level: %2, Sequence: %3
+ ;Batch export message
+ExportSchedulerAbortedError=Export scheduler aborted.  Processed Execution unit: %1, Level: %2, Sequence: %3
+ ;Batch export error
+ExportSchedulerRuntimeCaption=Export scheduler. Job: %1, Unit: %2, Level: %3, Sequence: %4
+ ;Export scheduler batch task caption
+@DMF1967=OLEDB Connection failed
+ ;OLEDB Connection failed
+@DMF1968=Database could not be found
+ ;Database could not be found
+@DMF1969=Package Execution Failed for Entity Store
+ ;Package Execution Failed for Entity Store
+@DMF1970=An Error occured while truncating the records
+ ;An Error occured while truncating the records
+@DMF1971=Unable to modify the Source Query
+ ;Unable to modify the Source Query
+@DMF1972=Unable to retrieve the primary key columns
+ ;Unable to retrieve the primary key columns
+@DMF1973=Error occurred during publishing the entity
+ ;Error occurred during publishing the entity
+@DMF1974=Test Connection failed for Entity Store
+ ;Test Connection failed for Entity Store
+@DMF1975=Failed to get the list of Entity Attributes in Entity Store
+ ;Failed to get the list of Entity Attributes in Entity Store
+@DMF1976=Error occurred while appending the entity schema to Entity Store
+ ;Error occurred while appending the entity schema to Entity Store
+@DMF1977=Unable to retrieve the Non Primary Key Columns
+ ;Unable to retrieve the Non Primary Key Columns
+@DMF1978=Unable to get the target table row count
+ ;Unable to get the target table row count
+@DMF1979=Error occurred while retreving the additional columns
+ ;Error occurred while retreving the additional columns
+@DMF1980=Error occurred while generating a source query in case of staging
+ ;Error occurred while generating a source query in case of staging
+@DMF1981=An Error occurred adding the look up component
+ ;An Error occurred adding the look up component
+@DMF1982=An Error occurred adding the OLEDB command component
+ ;An Error occurred adding the OLEDB command component
+@DMF1983=An Error occurred adding the Row Number Transformation component
+ ;An Error occurred adding the Row Number Transformation component
+@DMF1984=An Error occurred updating the look up component
+ ;An Error occurred updating the look up component
+@DMF1985=An Error occurred updating the OLEDB command component
+ ;An Error occurred updating the OLEDB command component
+@DMF1986=An Error occurred updating the Row Number Transformation component
+ ;An Error occurred updating the Row Number Transformation component
+@DMF1987=An Error occurred in add data flow component for Entity Store
+ ;An Error occurred in add data flow component for Entity Store
+@DMF1988=An Error occured while deleting the duplicate records
+ ;An Error occured while deleting the duplicate records
+DMFDataProject=Data Project
+ ;Data project
+DMFNoMultiSelect=Multi select is not allowed
+ ;Multiple selection of records not allowed
+DMFRefreshType=Refresh type
+ ;Data push type
+DMFDataProjectNeverExecuted=Data project %1 is never been executed
+ ;Error: Data project never been executed
+DMFEntityStore=Entity store
+ ;Entity store
+DMFEntityRePublishConfirm=Entites %1 already published to %2, re-publishing would drop existing data.Do you still want to continue?
+ ;Entity republish requires a confirmation for already published entities
+DMFConfigEntity=Configure entity stores
+ ;New Comment
+DMFAppendSchemaFailed=Failed to append schema to the %1 entity in SQL External Data Services
+ ;Error : Failed to append schema to the entity
+DMFAppendSchemaSuccess=The schema of %1 entity has been successfully appended in SQL External Data Services
+ ;Info : The schema of entity has been successfully appended in SQL External Data
+DMFCompareSchemaHelp=Compare the schema of the source name in Opeartions and in SQL server master data services.
+ ;Compare schema help text
+DMFCompareSource=Compare source names
+ ;Compare source name schemas
+DMFConnString=Data Source=%1;Initial Catalog=%2;User ID=%3;Password=%4;
+ ;Connection string
+DMFAddColumnStr={\"%1\":\"%2\"}
+ ;Additional column string
+DMFEntityPublishSuccess=Successfully published entity %2 for the source format of %1
+ ;info : Entity has been successfully published
+DMFConnStringIS=Data Source=%1;Initial Catalog=%2;Integrated Security=SSPI;
+ ;Connection string without password
+DMFQueryNotSupported=Query is not supported for change tracking, this entity cannot be published
+ ;Error : Query is not supported for change tracking, this entity cannot be published
+DMFEntityCannotPublish=Entity %1 cannot be published
+ ;Error : Entity cannot be published
+DMFPublish=Publish
+ ;Label : Publish
+DMFPublishedEntities=Published entities
+ ;List of published entities
+DMFPublishAll=Publish all
+ ;Publish all entiites selected
+DMFConnStrOLEDB=Provider=SQLOLEDB.1;Integrated Security=SSPI;Initial Catalog=%1;Data Source=%2;
+ ;Connection string for OLEDB provider
+DMFIncrementalPushNotSupport=Entity - %1 does not support for incremental push.
+ ;Warning : Incremental push not supported
+DMFRecordsInserted=%1 records inserted,%2 records updated to enity %3 in %4
+ ;Count for number of records inserted or updated for entity
+DMFExportPackage=ExportPackage-%1
+ ;New Comment
+DMFPackageExportDescription=Package export: %1
+ ;Export package description
+DMFDefaultRefreshType=Default refresh type
+DMFDeafultRefreshTypeHelp=Default refresh type for data push
+ ;Defines the type of data push
+DMFEntityDB=Entity DB
+ ;Entity database
+DMFStagingImported=%1: Staging imported 0 records.  Error not flagged.
+ ;New Comment
+DMFIncrementalPush=Incremental push only
+ ;Type of data refresh
+DMFFullPush=Full push only
+ ;Type of data refresh
+SchedularTasksCalled=ScheduleTasks Called.  ExecutionId: %1, Entity Task: %2
+ ;New Comment
+DMFUnableToGetResourceFolder=Unable to get resources folder for entity %1 in package folder '%2'
+ ;Error: Unable to get resources folder for entity in package folder
+DMFCCINotSupport=This option requires SQL Server 2014 or later. Some editions of SQl Azure DB may not support CCIs.
+ ;Create clustered index field requires requires SQL Server 2014 or later. Some editions of SQl Azure DB may not support CCIs.
+DMFCluseredColumnIndex=Create clustered column store Indexes
+ ;Field to store clusered indexes.
+DMFCompareSchemaDescription=This table is used to compare the schemas in entity database.
+ ;Developer documentation for DMFEntityDBCompareSchema table.
+TaskScheduled=Task %1 scheduled: %2
+ ;New Comment
+DMFAttributeNameExtDB=Attribute name in ext db
+ ;Attribute name in extended db
+DMFAttributeTypeExtDB=Attribute type in ext db
+ ;Attribute type in extended db
+DMFEntitySyncVersion=This table contains sync version information for the entity.
+ ;Developer documentation for DMFEntityDBSyncVersion table.
+DMFPublisedEntityTable=The DMFPublishedEntity table contains the basic data of the published entities.
+ ;Developer documentation for DMFPublishedEntity table.
+DMFOpenDataProject=Open data project
+ ;Button : Open data project
+DMFExtDBEntityName=Ext DB entity name
+ ;Control : Ext DB Entity name
+DMFIsInEnityDB=In entity db
+ ;Control : Is in entity database.
+DMFAppendEntity=Appends entity schema to corresponding ExtDBEntity in SQL Server Master Data Services.
+ ;Button help text : Append entity schema
+DMFDataProjectCreationFailed=Error while creating definition group for entity %1
+ ;Error while creating definition group for entity %1
+DMFTestEntityStoreConnectionFailed=Test connection failed,unable to connect to the database server
+ ;Test connection failed,unable to connect to the database server
+DMFPublishJobScheduled=Publish Job has been scheduled
+ ;Publish Job has been scheduled
+DMFExport=Export
+ ;New Comment
+DMFEnableCTCheck=Do you want to enable Change tracking for entire target entity: %1 ?
+DMFCTEnableSuccess=Change tracking has been enabled successfully for the entity: %1.
+ ;New Comment
+DMFCTDisableSuccess=Change tracking has been disabled successfully for the entity: %1.
+ ;New Comment
+DMFCTNotEnabled=Change tracking is not enabled for this entity: %1
+ ;Change tracking is not enabled
+DMFDisableCTError=Error occured while disabling chnage tracking for the table %1
+ ;Disble CT throw error
+CheckingCompletionStatusForExecutionUnit=Checking completion status for Execution Unit: %1, Level: %2, Sequence: %3
+ ;New Comment
+CompositeEntityCannotPublish=Entity %1 cannot be published as it is Composite Entity
+ ;New Comment
+PublishJobCompleted=Published job is completed
+ ;New Comment
+SuccessfullPublishEntity=Successfully published entity %2 to %1
+ ;New Comment
+ChangeTrackingDisableFailed=%1 is linked with another entity; cannot disable Change Tracking
+ ;New Comment
+ChangeTrackingQueryRootData=Change tracking query root data must be '%1'
+ ;New Comment
+ChangeTrackingNotSupported=Entity %1 is not supported for change tracking.
+ ;New Comment
+BatchExporterEnd=DMFBatchExporter Ended
+ ;New Comment
+BatchSchedularStart=Starting export scheduler
+ ;New Comment
+CouldNotGetQueryForDataEntity=Could not get the query for the data entity: %1
+ ;New Comment
+InvalidDataField=Invalid data field value for entity %1, field %2
+ ;New Comment
+TriggerScope=Scope and data entity must be specified in order to create after delete triggers.
+ ;New Comment
+DMFFieldIgnoredForCCI='%1' field is not supported for publish with CCI.
+ ;New Comment
+NewLabel1=Issue exists in auto generation of number sequence
+ ;info msg: Issue exists in auto generation of number sequence
+DMFIsEntityPublished=Published
+ ;Entity is published or not.
+DMFRunSequentially=Run sequentially
+ ;Run in sequence
+DMFConnStrFormat=The connection string should be of format Data Source=serverName;Initial Catalog=databaseName;Integrated Security=False;User ID=userid;Password=***
+ ;Connection string format
+DMFBatchExportStart=DMFBatchExporter Started
+ ;Batch start logging message
+DMFCTEnabledList=Succesfully enabled to tables: %1
+ ;Change tracking enabled successfully.
+DMFCTNotSupport=Entity %1 is not supported for change tracking as it doesnt have any primary index or alternate key
+ ;Change tracking is not supported.
+DMFIncrementalNotSupport=Incremental push is not supported for entity %1, as change tracking query is not enabled on it.
+ ;Incremental push not supported.
+DMFCTEnabled=Change tracking is already enabled on entity %1. Please disable and try again.
+ ;Change tracking is already enabled
+DMFEntityDropSuccess=The Entity %1 has been successfully dropped from the %2.
+ ;Entity schema dropped successfully.
+DMFEntityNotPublished=The Entity %1 has not been published to %2.
+ ;Entity not published
+DMFUnSupportScheduler=Error: An unsupported scheduler task class Id was specified: %1
+ ;An unsupported scheduler task class Id was specified
+DMFExecFailed=Error: Execution failed for %1: %2
+ ;Error: Execution failed
+DMFCannotExport=Entity %1 cannot be exported as it is a Composite entity
+ ;Entity cannot be exported as it is a Composite entity
+DMFIncrementalPushNotSupported=Incremental push is not supported as entity %1 doesn't have any primary index or alternate key.
+ ;Incremental push not supported.
+DMFIncreNotSupport=Incremental push is not supported for entity %1, as it doesn't have any primary key or alternate key
+ ;Incremental push not supported
+DMFShowPublished=Show published only
+ ;Show published entities only
+DMFChangeTracking=Change tracking
+ ;Change tracking
+DMFConfigureEntityStore=Configure Entity export to database
+ ;Configure entity store
+DMFAzureSQLDB=Azure SQL DB
+ ;Azure Sql DB
+DMFEnableCTPrimaryTable=Enable primary table
+ ;Enable change tracking for root table
+DMFEnableCTEntireEntity=Enable entire entity
+ ;Enable change tracking for all data sources
+DMFEnableCTCustom=Enable custom query
+ ;Enable change tracking based on a custom query
+DMFCustomQueryNotPresent=Custom query is not present on entity %1
+ ;Custom query is not available for this entity
+DMFValidate=Validate
+ ;Validate
+DMFHide=Hide
+ ;hides the connection string
+DMFAifSqlCTEnabledDevDoc=The AifSqlChangeTrackingEnabledTables table is used to store the change tracking enabled names of tables with respect to data entity.
+ ;Developer documentation
+DMFCTEnabledListLabel=List of change tracking enabled tables
+ ;List of change tracking enabled tables
+DMFDropEntity=Drop entity
+ ;Drops schema of entity
+DMFChangeTrackingType=Change tracking type
+ ;Type of change tracking
+DMFPrimaryTable=Primary table
+ ;Root table of entity
+DMFCustom=Custom
+ ;Custom query
+DMFDropScheduled=Drop job has been scheduled
+ ;Drop schema scheduled
+DMFDropSchemaSuccess=Entities %1 are succesfully dropped from %2
+ ;Entites are successfully dropped
+DMFDropJobCompleted=Drop job has been successfully completed
+ ;Drop schema job completed
+DMFSyncVersion=Entity sync version
+ ;Sync version of entity
+DMFEntityStoreError=Entity Store kernel Hotfix is required
+ ;Entity Store kernel Hotfix is required
+DMFConnectionStringError=Please specify the connection string for %1
+ ;Please specify the connection string
+@DMF1989=Error occurred during drop schema
+ ;Error occurred during drop schema
+DMFShow=Show
+ ;Show the entity store connection string
+DMFCannotExportStringField=Cannot export column '%1' as it exceeds the maximum supported length %2
+ ;info:Cannot export column '%1' as it exceeds the maximum supported length %2
+@DMF1990=Source file is not in the excel format
+ ;Incorrect excel format
+ODBCNotSupportedError=ODBC is not supported.
+ ;Error message
+DMFNonEditableFieldError=Non-editable fields were not allowed to mark as Auto default or Auto-generated
+ ;Non-editable fields were not allowed to mark as auto default or auto generate in mapping
+DMFUseEnumLabel=Use enum label
+ ;Use enum label
+DMFChildFieldsCannotBeAutoGenerated='%1' is a related field and can be marked Auto-generate in the parent entity only.
+ ;info msg: '%1' is a related field and can be marked Auto-generate in the parent entity only.
+DMFAckDownloadError=Error in recurring outbound
+ ;Error in recurring outbound
+DMFInvalidMessageState=Recurring data job failure for message state %1
+ ;New Comment
+DMFIncreNotSupportedForCompositeEntity=Incremental push not supported for composite entity
+ ;info msg:Incremental push not supported for composite entity
+DMFSupportedDataSource=Specify the supported data source type
+ ;help txt : Specify the supported data source type
+DMFMessageCleanUp=Clean up is successfully done
+ ;info:Clean up is successfully done
+DMFProcessingMsgCannotBeDeleted=In process messages cannot be deleted.
+ ;info: In process messages cannot be deleted
+DMFCleanupRecurMsg=Message clean up
+ ;Clean up messages from queue
+DMFCleanOrphanMsg=Delete unreferenced messages
+ ;Clean orphan messages and records.
+@DMF1991=SSIS Helper configuration file was not found
+ ;Error message for SSIS helper
+DMFWorkspaceJobExecuted=Execution time
+ ;Label for when a job executed
+DMFWorkspaceAllProjects=All projects
+ ;Label for all projects on the workspace
+DMFWorkspaceImportProjects=Import projects
+ ;Label for import projects on the workspace
+DMFWorkspaceExportProjects=Export projects
+ ;Label for export projects on the workspace
+DMFWorkspaceProjectType=Project type
+ ;Label for the data operation project type for the workspace
+DMFStandardView=Standard view
+ ;Label for the standard view on the workspace
+DMFEnhancedView=Enhanced view
+ ;Label for the enhanced view on the workspace
+LoadDefaultTemplates=Load default templates
+ ;Label for form to load default templates
+LoadTemplatePrefix=Loading template %1:
+ ;Label for infolog prefix during template load
+LoadTemplateDuplicateRenamed=The existing template was renamed to %1.
+ ;Label for template rename message during load
+LoadTemplateDuplicateNoUniqueID=Could not generate a unique template ID. Delete the old template and try again.
+ ;Label for duplicate template not created message during load
+LoadTemplateEntityDoesNotExist=Entity definition for entity %1 with name %2 does not exist.
+ ;Label for message that entity doesn't exist during load
+DefaultTemplateTable=Default templates
+ ;Label for the temp table that stores information about default templates
+DefaultTemplateLoadAll=Load all
+ ;Label for button to load all default templates
+DefaultTemplateLoadSelected=Load selected
+ ;Label for button to load selected default templates
+DMFDefinitionGroupAddEntity=Add entity
+ ;Label for adding entity to configurations
+DMFDefinitionGroupAddTemplate=Add template
+ ;Label for adding template to configurations
+DMFDefinitionGroupTemplateHeaderEntity=Definition group template header
+ ;Label for the definition group template header entity
+DMFDefinitionGroupTemplateLineEntity=Definition group line entity
+ ;Label for the definition group template line entity
+DMFDefinitionGroupTemplateDetails=Template details
+ ;Label for the template details
+DMFImportTemplateErrorTemplateExists=The template %1 already exists. Enter a new name for the template.
+ ;Label for when a template already exists
+DMFImportTemplateUploadTemplate=Upload template
+ ;Label for uploading a template
+DMFImportTemplateCreateTemplate=Create template
+ ;Label for creating a new template
+DMFEntityResequenceBy=Resequence by
+ ;Label for resequence by option
+DMFEntityResequence=Resequence
+ ;Label for resequence
+DMFAddMultipleSelected=Add selected
+ ;Label for add selected button on DMFAddEntity
+DMFDataSourceExtensionNotUnique=That extension is already used by data source %1. You must choose a different file extension to associate with this data source.
+ ;Label for default extension validation
+DMFDataSourceDefaultExtension=Default extension
+ ;Label for default extension
+DMFDefinitionGroupAddMultiple=Add multiple
+ ;Label for adding multiple entities to project
+DMFDefinitionGroupAddFile=Add file
+ ;Label for adding file to definition group
+DMFEntityResequenceStartWithUnit=Starting unit
+ ;Label for resequence by unit
+DMFEntityResequenceStartWithLevel=Starting level
+ ;Label for resequence by level
+DMFEntityResequenceStartWithSequence=Starting sequence
+ ;Label for resequence by sequence
+DMFEntityResequenceIncrementBy=Increment by
+ ;Label for resequence increment unit
+DMFSortBy=Sort by
+ ;Label for sort options for templates
+DMFDataManagementGroupDetails=Data management group details
+ ;Label for the data management group details entity
+DMFOpenInExcel=Open in Excel
+ ;Label for the open in excel functionality
+DMFImportTemplateReplaceTemplate=Replace from template
+ ;Label for the replace with template functionality
+DMFSortByUnitLevelSequence=Unit, level, sequence
+ ;Label for the sort option unit, level, sequence
+DMFRemoveEntity=Remove entity
+ ;Label for remove entity
+DMFAddEntity=Add entity
+ ;Label for the add entity functionality
+DMFEnableEntityToSelectedEntityList=Select an entity. At least one entity must be enabled in the data project.
+ ;Label to check for enabled entities on import
+DMFProjectCategoryProject=Project
+ ;Label for project category
+DMFProjectCategoryConfiguration=Configuration
+ ;Label for project category configuration
+DMFProjectCategoryIntegration=Integration
+ ;Label for project category integration
+DMFProjectCategoryOther=Other
+ ;Label for project category other
+DMFProjectCategory=Project category
+ ;Label for project category enumeration
+DMFAddFile=Add file
+ ;Label for adding a file
+DMFEnhancedViewInfo=Standard view has been deprecated, and will be removed in early 2018. You can change your default view to Enhanced on the Data management framework parameters page.
+ ;Label for user information about the enhanced view functionality when they open a form in standard view
+DMFFormView=View defaults
+ ;Label for the form view
+DMFFormViewDefault=Default by user
+ ;Label for the default behavior for standard or enhanced view
+DMFSourceDoesNotMatch=Can't find a source data format with default file extension '%1'. Use the Configure data sources workspace tile to add the extension.
+ ;Error when trying to default exetension during file import/export
+DMFSortByNone=No sort
+ ;Label for the default sort state
+DMFDefaultExtension=Default extension
+ ;Label for default extension on DMF data source
+DMFIsObsolete=Obsolete
+ ;Label for is obsolete field on DMFEntity
+DMFProjectContainsObsolete=This project contains one or more obsolete entities. You may want to replace them.
+ ;Label to warn if project contains obsolete entities
+DMFTemplateHeaderDocumentation=This entity contains information about the template header.
+ ;{Locked} Label for developer documentation on the DMFDefinitionGroupTemplateHeaderEntity entity
+DMFTemplateLineDocumentation=This entity contains information about the template entity lines.
+ ;{Locked} Label for developer documentation for the DMFDefinitionGroupTemplateLineEntity entity
+DMFFormViewParametersDocumentation=This table contains information about user preferences for the form view.
+ ;{Locked} Label for developer documentation for the DMFFormViewParameters table
+DMFFormViewParameters=Form view parameters
+ ;Label for the DMFFormViewParameters table
+DMFSelectTargetDataFormat=Select the target data format
+ ;log message: Select the target data format.
+DMFEntityNotDefaulted=Entity not found. Select an entity name first and upload the file.
+ ;Error when defaulting from file and entity name doesn't match
+DMFFileExtensionNotMapped=The file extension is not mapped to a data source
+ ;Error when file extension isn't mapped to uploaded file
+LoadTemplateKeepExisting=Keep existing template
+ ;Label for control to specify whether to keep existing template
+DMFExclusionMapping=Mapping
+ ;Label for exclusion mapping
+DMFTemplateExclusionFields=Template exclusion fields
+ ;Label for the template exclusion fields
+DMFEntityFields=Entity fields
+ ;Label for the entity fields
+DMFEntityField=Entity field
+ ;Label for an entity field
+DMFExclusionRemoveMap=Remove map
+ ;Label for the checkbox to remove a mapping field
+DMFExclusionField=Exclusion field
+ ;Label for a single exclusion field
+DMFInvalidQueryFilter=The query filter for entity %1 was invalid. The query filter has been removed.
+ ;Error when a query filter is invalid and must be removed.
+DMFAddGroupName=Please add a group name before you add entities
+ ;Error for adding entities to project without a name
+DMFGenerateFileFailed=Could not generate a file for the entity '%1'. The entity has been skipped.
+ ;Error for when package download cannot generate a file for an entity.
+DMFSourceAlreadyExists=Source with name '%1' already exists. Please provide unique source name.\r\n
+ ;info: Source with name '%1' already exists. Please provide unique source name.
+DMFMaxFieldSize=Maximum supported length for column '%1' is '%2' characters for entity '%3'.
+ ;warning msg: Maximum supported length for column '%1' is %2 characters.
+DMFInfoIfStagingContainsErrorRecords=Click the Validate all button to see detailed error messages.
+ ;Info: If staging contains error Records.
+DMFCompanyWrongProjectType=Data project must be of type 'Copy into legal entity'.
+ ;Label for error when the data project has an incorrect project type.
+DMFCompanyErrorSkipStaging=All entities must use staging tables for copying into legal entities. Please remove any entities that skip staging tables.
+ ;Label for when a company copy data project has one or more entities that skip staging tables.
+DMFCompanyExecutionFormat=Copy legal entity %1 to %2 - %3
+ ;Label for the execution id generated for copy company jobs.
+DMFCompanyExecutionDescription=Copy legal entity data for %1 to %2
+ ;Label for the execution description generated for copy company jobs.
+DMFCompanyFailedToWriteStagingToTarget=Failed to write staging data to target for legal entity %1.
+ ;Label for a write failure from the staging tables to the target company data.
+DMFCompanySourceToStagingForCompany=Copy legal entity %1 source to legal entity %2 staging.
+ ;{Locked} Label for telemetry when the company copy operation begins for source to company staging.
+DMFCompanyWillNotCopyToCompany=Data will not copy to legal entity %1.
+ ;Label for warning when data will not copy to a given company due to error.
+DMFCompanyTargetCompany=Target company
+ ;Label for the target company where staging data will import.
+DMFCompanyDoesNotExist=Target legal entity '%1' does not exist. No data will be copied for this legal entity.
+ ;Label for error when a company does not exist for company copy.
+DMFCompanyNoCompaniesExist=No valid legal entities found.
+ ;Label for error when no companies pass validation
+DMFCompanyCopyLimit=Maximum number of legal entities that can be copied into
+ ;Label for parameter that controls the number of legal entities that can be copied in a single operation.
+DMFCompanyCopyLimitError=Number of target legal entities exceeds the specified limit. Update the maximum in the framework parameters or remove legal entities.
+ ;Label for error when the selection of companies exceeds the legal entity limit found in DMF parameters.
+DMFCompanyCopyAsyncSuccess=Copy into legal entity processing job '%1' completed successfully.
+ ;Label for successful execution of an async company copy.
+DMFCompanyCopyAsyncFailure=Error processing data project '%1' for the destination legal entities.
+ ;Label for error in execution of a company copy async operation.
+DMFCompanyBatchCaption=Copy into legal entity process: '%1'
+ ;Label for the process caption used for company copy in batch by default.
+DMFCompanyBatchBegin=Copy into legal entity job begin.
+ ;Label for telemetry when the company copy batch process starts execution.
+DMFCompanyBatchEnd=Copy into legal entity job end.
+ ;Label for telemetry when the company copy batch process ends execution.
+DMFCompanyProjectDoesNotExist=A valid data project was not specified for copy into legal entity.
+ ;Label for error when a data project could not be found for company copy.
+DMFCompanyCopyLimitNonZero=The copy into legal entity limit cannot be zero.
+ ;Label for warning when the user attempts to enter a zero value as the company copy limit.
+DMFEntityQueryCreated=A query filter of type '%1' has been created for entity '%2'.
+ ;Label for telemetry when a query filter is applied to a project entity.
+DMFCopyCompany=Copy into legal entity
+ ;Label for copy company
+DMFCopyCompanyBatch=Copy into legal entity in batch
+ ;Label for the option to copy companies in batch.
+DMFExecutionGroup=Execution group
+ ;Label for the execution group when multiple execution jobs are linked.
+DMFExecutionExported=Exported
+ ;Label for the exported records in an export execution job
+DMFExecutionTotal=Total
+ ;Label for the total number of records in an execution job
+DMFExecutionPending=Pending
+ ;Label for the pending number of records in an execution job
+DMFExecutionInTarget=In staging
+ ;Label for the number of records in target for an execution job
+DMFExecutionCreated=Created
+ ;Label for the number of records created in an execution job
+DMFExecutionUpdated=Updated
+ ;Label for the number of records updated in an execution job
+DMFExecutionStartTime=Start time
+ ;Label for the start time of an execution job
+DMFExecutionEndTime=End time
+ ;Label for the end time of an execution job
+DMFExecutionShowAll=All
+ ;Label for the show all filter for an execution job
+DMFExecutionShowError=Errors
+ ;Label for the show errors filter for an execution job
+DMFExecutionShowPending=Pending
+ ;Label for the show pending filter for an execution job
+DMFCompanyJobScheduled=Copy into legal entity job scheduled. Please refresh the form to see current status.
+ ;Label for the user notification when a copy company job is scheduled.
+DMFRulesType=Rule type
+ ;Label for the DMFRules rules type
+DMFRulesTypeLegalEntity=Legal entity to legal entity
+ ;Label for DMFRule LE to LE
+DMFRulesTypeNumberSequence=Number sequence
+ ;Label for DMFRule number sequence
+DMFSourceLegalEntity=Source legal entity
+ ;Label for source legal entities
+DMFDestinationLegalEntities=Destination legal entities
+ ;Label for destination legal entities
+DMFCopyCompanyUpdateLegalEntity=Select existing
+ ;Label for updating an existing legal entity
+DMFCopyCompanyEntities=Selected entities
+ ;Label for import export form caption
+DMFCopyCompanyRemoveLegalEntities=Remove
+ ;Label for removing legal entities from copy company project
+DMFRuleLoaded=Rule '%1' loaded for project '%2'
+ ;Label for copy company instrumentation
+DMFCompanyInvalidLE=Invalid legal entity.
+ ;Error message for invalid legal entities
+DMFCompanyLEAlreadyAdded=Legal entity already exists as destination
+ ;Error message for adding duplicate legal entities
+DMFCompanyDefinitionGroup=The definition group must be of type copy into legal entity.
+ ;Error message for writing to DMFRules with wrong project type
+DMFCompanyLegalEntities=Destination legal entities
+ ;Label for legal entities
+DMFDisableAll=Disable all
+ ;Label for the command to disable all entities
+DMFEnableAll=Enable all
+ ;Label for the command to enable all entities
+DMFDisable=Disable
+ ;Label for disabling an entity in a data project
+DMFEntityQueryUpdated=A query filter of type '%1' has been updated for entity '%2'.
+ ;Label for telemetry when a query filter is automatically applied for an entity
+DMFExecutionShowUnfinished=Unfinished
+ ;Label for the unfinished filter
+DMFRulesTable=Rules for a copy company processing group
+ ;Label for DMFRules table.
+DMFCopyCompanyProjects=Copy into legal entity projects
+ ;Label for the copy company projects on the data management workspace.
+DMFExecutionUnfinished=Unfinished
+ ;Label for unfinished records in execution history
+DMFUploadLoadingPackage=Loading information.
+ ;Label for when package upload begins.
+DMFUploadPackageLoaded=Information loaded
+ ;Label for when package load finishes.
+DMFCompanyEntityTypeError=Entity '%1' with entity category '%2' is not supported for copy into legal entity.
+ ;Label for error when an unsupported entity category entity is added to a data project.
+DMFCompanyEntityReadOnlyError=The entity '%1' cannot be copied into another legal entity because type '%2' is not supported.
+ ;Label for error when an unsupported entity is added to a copy company project.
+DMFProjectStart=Data project started for operation type '%1', project category '%2', and '%3' entities.
+ ;Label for telemetry when a
+DMFEntityQueryCreateFailure=Failure to create query filter for entity '%1'. No query has been added to the entity.
+ ;Label for error when the entity query fails during entity processing.
+DMFEntityQueryUpdateFailure=Failure to update query filter for entity '%1'. The query has not been updated.
+ ;Label for error when the entity fails to update its query during processing.
+DMFRulesEnable=Copy number sequences
+ ;Label for enabling rule.
+DMFRulesNumberSeqResetSmallestValue=Reset to smallest value
+ ;Label for resetting number sequence to smallest value.
+DMFRulesTypeNoRule=No rule
+ ;Label for DMFRulesType no rule.
+DMFExecutionHistoryEntityProcessingStatus=Entity processing status
+ ;Label for DMFExecutionHistory entity processing status
+DMFExecutionHistoryFilter=Filter
+ ;Label for DMFExecutionHistory Filter
+DMFExecutionHistoryFilterAll=All
+ ;Label for DMFExecutionHistory filter all
+DMFExecutionHistoryFilterErrors=Errors
+ ;Label for DMFExecutionHistory filter errors
+DMFExecutionHistoryFilterUnfinished=Unfinished
+ ;Label for DMFExecutionHistory filter unfinished
+DMFExecutionHistoryFilterPending=Pending
+ ;Label for DMFExecutionHistory filter pending
+DMFEntityContainsBinaryFiles=Entity '%1' contains binary fields - '%2', which require resource files. Please use source format - 'Package' to upload them for import.
+ ;info : Entity contains binary fields which require resource files. Please use source format - 'Package' to upload them.
+DMFRulesNumberSequenceTable=Number sequence rule table
+ ;Label for DMFRulesNumberSequence
+Delete=Delete
+ ;Delete change tracking for entity store
+DeleteChangeTracking=Delete is auto enabled for Entities with change tracking. To enable delete, enable change tracking and re-publish Entities.
+ ;Delete change tracking tooltip.
+@DMF1992=An error occured while processing delete change tracking
+ ;An error occured while processing delete change tracking
+@DMF1993=Number of records deleted
+ ;Number of records deleted
+NumberOfRecordsProcessed=Number of records processed
+ ;Number of records processed
+TrackDeletes=Track deletes
+ ;Track deletes
+NotSupported=Not supported
+ ;Not supported
+DMFEntityNotSupportForLegalEntityCopy=Entity %1 is not supported for copy into legal entity
+ ;Error message for unsupported entities
+DMFMapEntitySourceToTarget=Map Entity(Source) to Target
+ ;caption: Map Entity(source) to target
+DMFEntitySource=Entity (Source)
+ ;Entity (Source)
+DMFProjectCategoryHelpText=Set a project category to help group and manage your data projects.
+ ;Help text: Set a project category to help group and manage your data projects.
+DMFTruncateEntityHelpText=Control whether all records in an entity must be deleted before an import is performed.
+ ;Help text: Control whether all records in an entity must be deleted before an import is performed.
+DMFExecutionUnitHelpText=Entities are exported or imported in sequence. The order is controlled by the values in the Execution unit, then the Level in execution unit, and finally the Sequence. 
+ ;Help text: Entities are exported or imported in sequence. The order is controlled by the values in the Execution unit, then the Level in execution unit, and finally the Sequence.
+DMFLevelExecutionUnitHelpText=Entities are exported or imported in sequence. The order is controlled by the values in the Execution unit, then the Level in execution unit, and finally the Sequence. 
+ ;Help text: Entities are exported or imported in sequence. The order is controlled by the values in the Execution unit, then the Level in execution unit, and finally the Sequence.
+DMFSequenceHelpText=Entities are exported or imported in sequence. The order is controlled by the values in the Execution unit, then the Level in execution unit, and finally the Sequence. 
+ ;Help text: Entities are exported or imported in sequence. The order is controlled by the values in the Execution unit, then the Level in execution unit, and finally the Sequence.
+DMFObsoleteHelpText=Read-only value that is true if you have selected an older (obsolete) version of a data entity. You may encounter this error if you are working with an older data package or project. 
+ ;Help text: Read-only value that is true if you have selected an older (obsolete) version of a data entity. You may encounter this error if you are working with an older data package or project.
+DMFSourceFormatHelpText=The file format in which data is stored externally. The values in this list are managed in the Data source page.
+ ;Help text: The file format in which data is stored externally. The values in this list are managed in the Data source page.
+DMFDisableHelpText=Set to stop an entity from processing. Use this flag to leave an entity in a project without having to process it each type an import or export is run. 
+ ;Help text: Set to stop an entity from processing. Use this flag to leave an entity in a project without having to process it each type an import or export is run.
+DMFRefreshTypeHelpText=Control the amount of data that is exported. Full push only always exports all the records for an entity. Incremental push only exports only the new or updated records since the job was last run.
+ ;Help text: Control the amount of data that is exported. Full push only always exports all the records for an entity. Incremental push only exports only the new or updated records since the job was last run.
+DMFExecutionOnErrorHelpText=If set, when an entity in an execution unit fails to process, all entities in the execution unit also fail.
+ ;Help text: If set, when an entity in an execution unit fails to process, all entities in the execution unit also fail.
+DMFExecutionLevelOnErrorHelpText=If set, when an entity in a level within an execution unit fails to process, all entities in that level within the execution unit also fail.
+ ;Help text: If set, when an entity in a level within an execution unit fails to process, all entities in that level within the execution unit also fail.
+DMFSkipStagingHelpText=Provides the option to directly export the data to a file, and bypass the staging table. This option should only be used for entities for which it is safe to bypass the staging table, because bypassing staging will also bypass any business logic written on staging table events. The developer of the entity must fully understand the implications of bypassing staging if business logic was written on staging events for the entity. If no business logic is written on the staging events, then it is likely safe to skip staging.
+ ;Help text: Provides the option to directly export the data to a file, and bypass the staging table. This option should only be used for entities for which it is safe to bypass the staging table, because bypassing staging will also bypass any business logic written on staging table events. The developer of the entity must fully understand the implications of bypassing staging if business logic was written on staging events for the entity. If no business logic is written on the staging events, then it is likely safe to skip staging.
+DMFUseSampleFileHelpText=Select a custom file template to be used as the template for the export job. An example might be when you only want to export specific columns, and already have a sample file. 
+ ;Help text:Select a custom file template to be used as the template for the export job. An example might be when you only want to export specific columns, and already have a sample file.
+DMFSelectFieldsHelpText=Choose which fields from the entity to export. For a given entity, only the applicable values will be available.
+ ;Help text:Choose which fields from the entity to export. For a given entity, only the applicable values will be available.
+DMFTargetDataFormatHelpText=The file format in which data is stored externally. The values in this list are managed in the Data source page.
+ ;Help text: The file format in which data is stored externally. The values in this list are managed in the Data source page.
+IntegrationMessageBatchStatus=Get batch status
+ ;Get batch status
+IntegrationMessageBatchStatusRefreshScheduled=The batch status refresh is scheduled asynchronously. Please refresh the form to view the updated batch status.
+ ;The batch status refresh is scheduled asynchronously.
+IntegrationMessageBatchStatusRefreshError=Error in refreshing message batch status of recurring data job %1: %2
+ ;Error message for during refreshing message batch status of integration recurring data job
+IntegrationMessageBatchStatusRefreshCompleted=The batch status refresh is completed. Please refresh the form to view the updated batch status.
+ ;The batch status refresh completion message
+IntegrationMessageStatus=Message status
+ ;Message status
+EnableTargetTriggers=Enable triggers in target database
+ ;Setting that controls if we should configure SSIS to fire triggers when exporting to a database.
+OverwriteExistingEntityForImport=Click Yes to overwrite the existing entity '%1'.
+ ;Confirm overwriting existing entity for a project
+PreventUpload=Prevent upload when zero records
+ ;Prevent upload when zero records
+TotalRecordsExported=Total records exported
+ ;Total records exported
+PreventUploadHelp=The option to remove blank files can only be used with files or data packages.
+ ;Prevent upload feature help text
+NoPackageMessage=Package is not available for execution - %1
+ ;No package message

@@ -1,0 +1,28 @@
+DocuView_DocuRef_TypeCopy1=The type of attachment. Note that you cannot change the attachment type after the record has been created.
+ ;Description text for the DocuRef_TypeCopy1 control on the DocuView form
+DocuView_DocuRef_Type=The type of attachment. Note that you cannot change the attachment type after the record has been created.
+ ;Description text for the DocuRef_Type control on the DocuView form
+DocuView_DocuRef_NameCopy2=Enter the description of the document reference.
+ ;Description text for the DocuRef_NameCopy2 control on the DocuView form
+DocuView_DocuRef_Name=Enter the description of the document reference.
+ ;Description text for the DocuRef_Name control on the DocuView form
+DocuView_DocuRef_RestrictionCopy1=Specify if the document reference should be used only internally or externally. For example, an external document might be an invoice.
+ ;Description text for the DocuRef_RestrictionCopy1 control on the DocuView form
+DocuView_IsValueAttachedCopy1=Indicates if a document or file is attached to the selected document reference.
+ ;Description text for the IsValueAttachedCopy1 control on the DocuView form
+DocuView_Identification_RefTableId=The ID of the table that contains the reference transaction.
+ ;Description text for the Identification_RefTableId control on the DocuView form
+DocuView_Identification_RefRecId=The record ID of reference transaction.
+ ;Description text for the Identification_RefRecId control on the DocuView form
+DocuView_Identification_RefCompanyId=The ID of the company accounts that the record refers to.
+ ;Description text for the Identification_RefCompanyId control on the DocuView form
+DocuView_FilterToCreatedBy=The user name of the person who created the document reference.
+ ;Description text for the FilterToCreatedBy control on the DocuView form
+DocuView_FileType=The file name extension of the attached file.
+ ;Description text for the FileType control on the DocuView form
+DocuView_DocuRef_NameCopy1=The path for the original file.
+ ;Description text for the DocuRef_NameCopy1 control on the DocuView form
+LogisticsContactInfo_IsPrimary=A primary address is the principal postal address for the selected party. A primary address can also be the default address for the party.
+ ;Description text for the IsPrimary control on the LogisticsContactInfo form
+LogisticsContactInfo_IsPrivate=If the address is marked as private, you must be assigned to the appropriate role to view the address.
+ ;Description text for the IsPrivate control on the LogisticsContactInfo form

@@ -1,0 +1,152 @@
+NewLabel0=Merkjaskrár stofnaðar þann 29.05.2014 kl. 13:27:47 fyrir merkjaskrárkenni CurrencyExchange og tungumál is-IS
+ ;Label file comment - see above label
+ConversionFactor=Umreiknistuðull
+ ;Exchange rate conversion factor
+ExchangeValue=Gengi
+ ;Exchange rates exchange value
+TriangulationCurrencies=Þríhliðunargjaldmiðlar
+ ;New Comment
+AddRemoveExchangeRates=Bæta við eða fjarlægja gengi
+ ;New Comment
+TmpExchangeRatesDevDoc=Taflan TmpExchangeRates inniheldur tímabundnar færslur sem eru notaðar þegar skjámyndin ExchangeRates er birt.
+ ;New Comment
+ExchangeRateEntityDevDoc=The ExchangeRateEntity data entity is used to store exchange rates for a currency pair and a rate type.
+ ;{locked}Exchange rate entity developer documentation
+ExchangeRateStagingDevDoc=Sviðsetningataflan ExchangeRateEntity er notuð til að flytja inn og út gengi fyrir gjaldmiðilspör og gengisgerðir.
+ ;Exchange rate stating table developer documentation
+InvalidExchangeRate=Ekki var hægt að flytja inn gengi fyrir gjaldmiðilsparið {0} og {1}. Hafðu samband við söluaðila til að fá aðstoð eða sláðu handvirkt inn gengi fyrir {2}.
+ ;Exchange rate provider error in C#
+ISONameCubanConvertiblePeso=Kúbverskur pesi
+ ;ISO Currency Name
+ISONameTurkmenistanNewManat=Túrkmenskt manat
+ ;ISO Currency Name
+ISONameZambianKwacha=Sambísk kvaka
+ ;ISO Currency Name
+ExchangeRateImport=Flytja inn gengi
+ ;Entity privilege level
+ExchangeRateExport=Flytja út gengi
+ ;Entity privilege level
+Supplemental_CurrencyImport=Flytja inn gjaldmiðla
+ ;Entity privilege level
+Supplemental_CurrencyExport=Flytja út gjaldmiðla
+ ;Entity privilege level
+Currency_MessageDeveloper_UpdateCurrencyPair=Updating currency pair from currency %1 to currency %2
+ ;{Locked}
+Currency_MessageDeveloper_AddNewRate=Adding new exchange rate %1 valid from %2 from currency %3 to currency %4
+ ;{Locked}
+Currency_MessageDeveloper_ActivateProvider=Activating exchange rate provider {0}
+ ;{Locked}
+Currency_MessageDeveloper_SearchingAssembly=Searching for exchange rate providers in assembly {0}
+ ;{Locked}
+Currency_EntityEnum_EntityName=Gjaldmiðlar
+ ;Entity name
+Currency_EntityDeveloper_CurrencyEntityDevDoc=The CurrencyEntity entity contains the currencies that are used in the application for foreign exchange. Exchange rates are created based on these currencies.
+ ;{Locked}
+Currency_EntityField_CurrencyCode=Gjaldmiðilskóði
+ ;CurrencyEntity field name.
+Currency_EntityLabel_CurrencyRevaluationAccountLabel=Gjaldmiðilsendurmatslykill í fjárhag
+ ;Label for CurrencyRevaluationAccountEntity
+Currency_EntityDeveloper_CurrencyRevaluationAccountEntityDevDoc=The CurrencyRevaluationAccountEntity entity contains the gain loss account for individual currencies.
+ ;{Locked}
+Currency_EntityFieldLabel_RoundingRuleFixedAssetDepreciation=Sléttunarregla fyrir afskriftir eigna
+ ;CurrencyEntity field label
+Currency_EntityFieldLabel_RoundingMethodFixedAssetDepreciation=Sléttunaraðferð fyrir afskriftir eigna
+ ;CurrencyEntity field label
+Currency_EntityFieldLabel_RoundingMethodPrices=Sléttunaraðferð fyrir verð
+ ;CurrencyEntity field label
+Currency_EntityFieldLabel_RoundingMethodPurchaseOrders=Sléttunaraðferð fyrir innkaupapantanir
+ ;CurrencyEntity field label
+Currency_EntityFieldLabel_RoundingMethodSalesOrders=Sléttunaraðferð fyrir sölupantanir
+ ;CurrencyEntity field label
+Currency_EntityFieldLabel_RoundingRulePrices=Sléttunarregla fyrir verð
+ ;CurrencyEntity field label
+Currency_EntityFieldLabel_RoundingRulePurchaseOrders=Sléttunarregla fyrir innkaupapantanir
+ ;CurrencyEntity field label
+Currency_EntityFieldLabel_RoundingRuleSalesOrders=Sléttunarregla fyrir sölupantanir
+ ;CurrencyEntity field label
+EntitiesMaintainDuty=Vinna með fyrirmynd gjaldmiðlaeininga
+ ;Maintain Currency entities duty.
+EntitiesViewDuty=Skoða fyrirmynd gjaldmiðlaeininga
+ ;View Currency entities duty.
+Currency_EntityMessage_RateMustBePositive=Gengið verður að vera hærra en núll
+ ;ExchangeRateEntity set based error message.
+Currency_EntityTitle=Gengi
+ ;ExchangeRateEntity title.
+Currency_EntityMessage_InvalidCurrency=Tilgreindur gjaldmiðill er ógildur
+ ;ExchangeRateEntity error.
+Currency_EntityMessage_MissingRate=Ekki tókst að finna gengi fyrir gerð gengis %1 milli gjaldmiðlanna %2 og %3 á gengisdagsetningunni %4. Hafa skal samband við kerfisstjóra til að leysa þessa villu.
+ ;Set based error message.
+Currency_EntityLabel_ExchangeRateTypeLabel=Gerð gengis
+ ;Label for ExchangeRateTypeEntity
+Currency_EntityDeveloper_ExchangeRateTypeEntityDevDoc=The ExchangeRateTypeEntity entity stores exchange rate types that allow exchange rates to be categorized.
+ ;{Locked}
+Currency_ConfigField_ServiceTimeout=Service Timeout
+ ;{Locked}
+Currency_ConfigField_OandaName=Foreign Exchange Rates Powered by OANDA
+ ;{Locked}
+Currency_ConfigField_OandaAPIKey=API key
+ ;{Locked}
+Currency_FieldTitle_Value=Gildi
+ ;Exchange rate provider configuration value field title.
+Currency_ConfigField_DecimalPlaces=Decimal places
+ ;{Locked}
+Currency_ConfigMessage_DecimalPlacesInvalid=Fjöldi aukastafa verður að verða á milli 1 og 12
+ ;Decimal places validation error for OANDA exchange rate provider.
+Currency_ConfigMessage_OANDAKeyRequired=Þessi veita krefst gilds OANDA-lykils til að hægt sé að flytja inn gengi. 
+ ;Warning message for the OANDA exchange rate provider.
+Currency_ConfigField_QuoteType=Gerð tilboðs
+ ;Quote type for OANDA provider.
+Currency_ConfigEnum_QuoteTypeAverageBid=Meðaltilboð
+ ;Quote type average bid
+Currency_ConfigEnum_QuoteTypeAverageAsk=Umbeðið meðalverð
+ ;Quote type average ask
+Currency_ConfigEnum_QuoteTypeMidpoint=Um miðju
+ ;Quote type midpoint
+Currency_ConfigEnum_QuoteTypeHighBid=Hátt tilboð
+ ;Quote type high bid
+Currency_ConfigEnum_QuoteTypeHighAsk=Hátt umbeðið verð
+ ;Quote type high ask
+Currency_ConfigEnum_QuoteTypeLowBid=Lágt tilboð
+ ;Quote type low bid
+Currency_ConfigEnum_QuoteTypeLowAsk=Lágt umbeðið verð
+ ;Quote type low ask
+Currency_ConfigEnum_QuoteTypePeriodAverageBid=Tímabil meðaltilboðs
+ ;Quote type average over time period.
+Currency_ConfigEnum_QuoteTypePeriodAverageAsk=Tímabil umbeðins meðalverðs
+ ;Quote type average over time period.
+Currency_ConfigField_SingleRateForDateRange=Einn taxti fyrir dagsetningabil
+ ;exchange rate provider configuration option.
+Currency_EntityLabel_CurrencyISOCode=ISO-gjaldmiðilskóðar
+ ;CurrencyISOCodeEntity label.
+Currency_EntityDeveloper_CurrencyISOCodeEntityDevDoc=The CurrencyISOCodeEntity entity contains the list of ISO Currency Codes that are supported in the application as defined by the International Organization for Standardization.
+ ;{Locked}
+Currency_ModuleName=Gjaldmiðill
+ ;Displayed in upgrade.
+Currency_UpgradeStep=Dulkóða gildisreit.
+ ;Upgrade step.
+Currency_ParameterGroup=Gjaldmiðill
+ ;Field group caption for the SystemParameters form.
+Currency_TableFieldLabel_SystemParametersCurrencyCodeLabel=Gjaldmiðill kerfis
+ ;Label for the SystemCurrencyCode field on the SystemParameters table.
+Currency_TableFieldLabel_SystemParametersExchangeRateTypeLabel=Gengisgerð kerfis
+ ;Label for the SystemExchangeRateType field on the SystemParameters table.
+ExchangeRateCurrencyPairCalculationRulesEntityMaintain=Vinna með reglu fyrir útreikning á gengi fyrir VSK-einingu
+ ;Maintain privilege for ExchangeRateCurrencyPairCalculationRulesEntity
+ExchangeRateCurrencyPairCalculationRulesEntityView=Sýna reglu fyrir útreikning á gengi fyrir VSK-einingu
+ ;View privilege for ExchangeRateCurrencyPairCalculationRulesEntity
+Currency_Message_CurrencyRequiredForRounding=Gjaldmiðils er krafist fyrir sléttun.
+ ;Error from currency rounding API's
+Currency_Message_CurrencyRequiredForDecimals=Gjaldmiðils er krafist til að fá fjölda aukastafa.
+ ;Error from currency rounding API's
+Currency_Message_CurrencyRequiredForRoundingPrecision=Gjaldmiðils er krafist til að fá sléttunarnákvæmni.
+ ;Error from currency rounding API's
+Currency_ConfigField_PreventImportOnNationalHoliday=Koma í veg fyrir innflutning á þjóðhátíðardegi
+ ;Exchange rate provider configuration option.
+Currency_ConfigField_QuoteTypeLocked=Quote type
+ ;{Locked}
+Currency_Message_QuoteTypeMissing=Skilgreiningarlykillinn „Tegund tilboðs“ fyrir veitanda gengis fannst ekki. Smelltu á „Endurstilla gildi“ og veldu síðan gildi fyrir „Tegund tilboðs“ á síðunni „Grunnstilla veitendur gengis“.  
+ ;Exchange rate provider configuration error
+Currency_Message_StartDateAlreadyExists=Ekki er hægt að bæta gengi við, upphafsdagur er þegar til. Færa skal inn upphafsdag sem er ekki þegar til.
+ ;Exchange rate error message
+Currency_Monetary_unit_declensions=Frávik peningaliðar
+ ;Monetary unit declensions

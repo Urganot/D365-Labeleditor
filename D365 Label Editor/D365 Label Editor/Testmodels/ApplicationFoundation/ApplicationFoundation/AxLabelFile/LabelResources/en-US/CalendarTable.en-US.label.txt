@@ -1,0 +1,4 @@
+CalendarTable_OnValueChanged=In the selected cell of %1, enter a value.
+ ;Instruction message for entering a value in the CalendarTable.
+CalendarTable_OnSelectionChanged=Select a cell in the %1.
+ ;Instruction message for selecting a cell in the CalendarTable.

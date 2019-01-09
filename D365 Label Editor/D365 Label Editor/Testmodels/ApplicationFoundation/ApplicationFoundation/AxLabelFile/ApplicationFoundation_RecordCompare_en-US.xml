@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AxLabelFile xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+	<Name>ApplicationFoundation_RecordCompare_en-US</Name>
+	<LabelContentFileName>ApplicationFoundation_RecordCompare.en-US.label.txt</LabelContentFileName>
+	<LabelFileId>ApplicationFoundation_RecordCompare</LabelFileId>
+	<RelativeUriInModelStore>ApplicationFoundation/ApplicationFoundation/AxLabelFile/LabelResources/en-US/ApplicationFoundation_RecordCompare.en-US.label.txt</RelativeUriInModelStore>
+</AxLabelFile>

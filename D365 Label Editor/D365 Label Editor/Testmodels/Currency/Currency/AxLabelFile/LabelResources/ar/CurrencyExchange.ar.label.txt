@@ -1,0 +1,152 @@
+NewLabel0=ملفات التسمية المنشأة في 05/29/2014 الساعة 13:27:47 لمعرف ملف التسمية CurrencyExchange واللغة en-US
+ ;Label file comment - see above label
+ConversionFactor=معامل التحويل
+ ;Exchange rate conversion factor
+ExchangeValue=قيمة التبادل‬
+ ;Exchange rates exchange value
+TriangulationCurrencies=عملات التحويل الثلاثي
+ ;New Comment
+AddRemoveExchangeRates=إضافة أسعار الصرف أو إزالتها‬
+ ;New Comment
+TmpExchangeRatesDevDoc=يحتفظ جدول TmpExchangeRates بالسجلات المؤقتة المستخدمة أثناء عرض نموذج ExchangeRates.
+ ;New Comment
+ExchangeRateEntityDevDoc=The ExchangeRateEntity data entity is used to store exchange rates for a currency pair and a rate type.
+ ;{locked}Exchange rate entity developer documentation
+ExchangeRateStagingDevDoc=يُستخدم جدول التشغيل المرحلي ExchangeRateEntity لاستيراد أسعار الصرف وتصديرها لزوج العملات ونوع السعر.
+ ;Exchange rate stating table developer documentation
+InvalidExchangeRate=تعذر استيراد سعر الصرف لزوج العملات {0} و{1}. اتصل بالموفر للحصول على المساعدة أو أدخل سعر الصرف يدويًا لـ {2}.
+ ;Exchange rate provider error in C#
+ISONameCubanConvertiblePeso=البيزو الكوبي القابل للتحويل‬
+ ;ISO Currency Name
+ISONameTurkmenistanNewManat=المانات التركمانستاني الجديد
+ ;ISO Currency Name
+ISONameZambianKwacha=الكواشا الزامبية
+ ;ISO Currency Name
+ExchangeRateImport=استيراد أسعار الصرف
+ ;Entity privilege level
+ExchangeRateExport=تصدير أسعار الصرف
+ ;Entity privilege level
+Supplemental_CurrencyImport=استيراد العملات
+ ;Entity privilege level
+Supplemental_CurrencyExport=تصدير العملات
+ ;Entity privilege level
+Currency_MessageDeveloper_UpdateCurrencyPair=Updating currency pair from currency %1 to currency %2
+ ;{Locked}
+Currency_MessageDeveloper_AddNewRate=Adding new exchange rate %1 valid from %2 from currency %3 to currency %4
+ ;{Locked}
+Currency_MessageDeveloper_ActivateProvider=Activating exchange rate provider {0}
+ ;{Locked}
+Currency_MessageDeveloper_SearchingAssembly=Searching for exchange rate providers in assembly {0}
+ ;{Locked}
+Currency_EntityEnum_EntityName=العملات
+ ;Entity name
+Currency_EntityDeveloper_CurrencyEntityDevDoc=The CurrencyEntity entity contains the currencies that are used in the application for foreign exchange. Exchange rates are created based on these currencies.
+ ;{Locked}
+Currency_EntityField_CurrencyCode=كود العملة
+ ;CurrencyEntity field name.
+Currency_EntityLabel_CurrencyRevaluationAccountLabel=حساب إعادة تقييم دفتر الأستاذ الخاص بالعملات
+ ;Label for CurrencyRevaluationAccountEntity
+Currency_EntityDeveloper_CurrencyRevaluationAccountEntityDevDoc=The CurrencyRevaluationAccountEntity entity contains the gain loss account for individual currencies.
+ ;{Locked}
+Currency_EntityFieldLabel_RoundingRuleFixedAssetDepreciation=قاعدة تقريب إهلاك الأصل الثابت
+ ;CurrencyEntity field label
+Currency_EntityFieldLabel_RoundingMethodFixedAssetDepreciation=أسلوب تقريب إهلاك الأصل الثابت
+ ;CurrencyEntity field label
+Currency_EntityFieldLabel_RoundingMethodPrices=أسلوب تقريب الأسعار
+ ;CurrencyEntity field label
+Currency_EntityFieldLabel_RoundingMethodPurchaseOrders=أسلوب تقريب أوامر الشراء
+ ;CurrencyEntity field label
+Currency_EntityFieldLabel_RoundingMethodSalesOrders=أسلوب تقريب أوامر المبيعات
+ ;CurrencyEntity field label
+Currency_EntityFieldLabel_RoundingRulePrices=قاعدة تقريب الأسعار
+ ;CurrencyEntity field label
+Currency_EntityFieldLabel_RoundingRulePurchaseOrders=قاعدة تقريب أوامر الشراء
+ ;CurrencyEntity field label
+Currency_EntityFieldLabel_RoundingRuleSalesOrders=قاعدة تقريب أوامر المبيعات
+ ;CurrencyEntity field label
+EntitiesMaintainDuty=الاحتفاظ بالكيانات الرئيسية للعملة
+ ;Maintain Currency entities duty.
+EntitiesViewDuty=عرض الكيانات الرئيسية للعملة
+ ;View Currency entities duty.
+Currency_EntityMessage_RateMustBePositive=يجب أن يكون سعر الصرف أكبر من صفر.
+ ;ExchangeRateEntity set based error message.
+Currency_EntityTitle=أسعار الصرف
+ ;ExchangeRateEntity title.
+Currency_EntityMessage_InvalidCurrency=العملة المحددة غير صالحة.
+ ;ExchangeRateEntity error.
+Currency_EntityMessage_MissingRate=يتعذر العثور على سعر صرف لنوع سعر الصرف %1 بين العملات %2 و%3 بتاريخ الصرف %4. لحل هذا الخطأ، اتصل بمسؤول النظام.
+ ;Set based error message.
+Currency_EntityLabel_ExchangeRateTypeLabel=نوع سعر الصرف
+ ;Label for ExchangeRateTypeEntity
+Currency_EntityDeveloper_ExchangeRateTypeEntityDevDoc=The ExchangeRateTypeEntity entity stores exchange rate types that allow exchange rates to be categorized.
+ ;{Locked}
+Currency_ConfigField_ServiceTimeout=Service Timeout
+ ;{Locked}
+Currency_ConfigField_OandaName=Foreign Exchange Rates Powered by OANDA
+ ;{Locked}
+Currency_ConfigField_OandaAPIKey=API key
+ ;{Locked}
+Currency_FieldTitle_Value=القيمة
+ ;Exchange rate provider configuration value field title.
+Currency_ConfigField_DecimalPlaces=Decimal places
+ ;{Locked}
+Currency_ConfigMessage_DecimalPlacesInvalid=يجب أن يكون عدد المنازل العشرية بين 1 و12
+ ;Decimal places validation error for OANDA exchange rate provider.
+Currency_ConfigMessage_OANDAKeyRequired=مفتاح صالح من OANDA مطلوب لهذا الموفر لاستيراد أسعار الصرف. 
+ ;Warning message for the OANDA exchange rate provider.
+Currency_ConfigField_QuoteType=نوع عرض الأسعار
+ ;Quote type for OANDA provider.
+Currency_ConfigEnum_QuoteTypeAverageBid=متوسط العرض
+ ;Quote type average bid
+Currency_ConfigEnum_QuoteTypeAverageAsk=متوسط الطلب
+ ;Quote type average ask
+Currency_ConfigEnum_QuoteTypeMidpoint=نقطة المنتصف
+ ;Quote type midpoint
+Currency_ConfigEnum_QuoteTypeHighBid=عرض مرتفع
+ ;Quote type high bid
+Currency_ConfigEnum_QuoteTypeHighAsk=طلب مرتفع
+ ;Quote type high ask
+Currency_ConfigEnum_QuoteTypeLowBid=عرض منخفض
+ ;Quote type low bid
+Currency_ConfigEnum_QuoteTypeLowAsk=طلب منخفض
+ ;Quote type low ask
+Currency_ConfigEnum_QuoteTypePeriodAverageBid=متوسط العرض للفترة
+ ;Quote type average over time period.
+Currency_ConfigEnum_QuoteTypePeriodAverageAsk=متوسط الطلب للفترة
+ ;Quote type average over time period.
+Currency_ConfigField_SingleRateForDateRange=سعر موحد لنطاق التاريخ
+ ;exchange rate provider configuration option.
+Currency_EntityLabel_CurrencyISOCode=أكواد عملة ISO
+ ;CurrencyISOCodeEntity label.
+Currency_EntityDeveloper_CurrencyISOCodeEntityDevDoc=The CurrencyISOCodeEntity entity contains the list of ISO Currency Codes that are supported in the application as defined by the International Organization for Standardization.
+ ;{Locked}
+Currency_ModuleName=العملة
+ ;Displayed in upgrade.
+Currency_UpgradeStep=قم بتشفير حقل القيمة.
+ ;Upgrade step.
+Currency_ParameterGroup=العملة
+ ;Field group caption for the SystemParameters form.
+Currency_TableFieldLabel_SystemParametersCurrencyCodeLabel=عملة النظام
+ ;Label for the SystemCurrencyCode field on the SystemParameters table.
+Currency_TableFieldLabel_SystemParametersExchangeRateTypeLabel=نوع سعر صرف النظام
+ ;Label for the SystemExchangeRateType field on the SystemParameters table.
+ExchangeRateCurrencyPairCalculationRulesEntityMaintain=الاحتفاظ بقواعد حساب سعر الصرف لكيان ضريبة المبيعات
+ ;Maintain privilege for ExchangeRateCurrencyPairCalculationRulesEntity
+ExchangeRateCurrencyPairCalculationRulesEntityView=عرض قواعد حساب سعر الصرف لكيان ضريبة المبيعات
+ ;View privilege for ExchangeRateCurrencyPairCalculationRulesEntity
+Currency_Message_CurrencyRequiredForRounding=يُتطلب وجود عملة للتقريب.
+ ;Error from currency rounding API's
+Currency_Message_CurrencyRequiredForDecimals=العملة مطلوبة لاسترداد عدد الكسور العشرية.
+ ;Error from currency rounding API's
+Currency_Message_CurrencyRequiredForRoundingPrecision=يُتطلب وجود عملة لاسترداد دقة التقريب.
+ ;Error from currency rounding API's
+Currency_ConfigField_PreventImportOnNationalHoliday=منع الاستيراد في الأعياد الرسمية
+ ;Exchange rate provider configuration option.
+Currency_ConfigField_QuoteTypeLocked=Quote type
+ ;{Locked}
+Currency_Message_QuoteTypeMissing=تعذر العثور على نوع عرض الأسعار لمفتاح تكوين موفر أسعار الصرف. انقر فوق إعادة تعيين القيم ثم حدد قيمة نوع عرض الأسعار على صفحة موفري تكوين أسعار الصرف.  
+ ;Exchange rate provider configuration error
+Currency_Message_StartDateAlreadyExists=لا يمكن إضافة سعر الصرف، تاريخ البدء موجود بالفعل. أدخل تاريخ بدء غير موجود بالفعل.
+ ;Exchange rate error message
+Currency_Monetary_unit_declensions=عمليات صرف الوحدات النقدية
+ ;Monetary unit declensions

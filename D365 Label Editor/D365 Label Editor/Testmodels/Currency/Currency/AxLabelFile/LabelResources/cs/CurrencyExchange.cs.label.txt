@@ -1,0 +1,152 @@
+NewLabel0=Soubory popisků vytvořené 29. 5. 2014 ve 13:27:47 pro soubor popisků Id CurrencyExchange a jazyk en-US
+ ;Label file comment - see above label
+ConversionFactor=Koeficient převodu
+ ;Exchange rate conversion factor
+ExchangeValue=Směnná hodnota
+ ;Exchange rates exchange value
+TriangulationCurrencies=Měny triangulace
+ ;New Comment
+AddRemoveExchangeRates=Přidat nebo odebrat směnné kurzy
+ ;New Comment
+TmpExchangeRatesDevDoc=V tabulce TmpExchangeRates se nachází dočasné záznamy používané při zobrazení formuláře ExchangeRates.
+ ;New Comment
+ExchangeRateEntityDevDoc=The ExchangeRateEntity data entity is used to store exchange rates for a currency pair and a rate type.
+ ;{locked}Exchange rate entity developer documentation
+ExchangeRateStagingDevDoc=Tabulka fázování ExchangeRateEntity je používána k importu a exportu směnných kurzů pro pár měny a typ sazby.
+ ;Exchange rate stating table developer documentation
+InvalidExchangeRate=Směnný kurz pro pár měny {0} a {1} nelze importovat. Požádejte poskytovatele o asistenci nebo zadejte směnný kurz pro {2} ručně.
+ ;Exchange rate provider error in C#
+ISONameCubanConvertiblePeso=Kubánské konvertibilní peso
+ ;ISO Currency Name
+ISONameTurkmenistanNewManat=Turkmenský nový manat
+ ;ISO Currency Name
+ISONameZambianKwacha=Zambijská kwacha
+ ;ISO Currency Name
+ExchangeRateImport=Importovat směnné kurzy
+ ;Entity privilege level
+ExchangeRateExport=Exportovat směnné kurzy
+ ;Entity privilege level
+Supplemental_CurrencyImport=Importovat měny
+ ;Entity privilege level
+Supplemental_CurrencyExport=Exportovat měny
+ ;Entity privilege level
+Currency_MessageDeveloper_UpdateCurrencyPair=Updating currency pair from currency %1 to currency %2
+ ;{Locked}
+Currency_MessageDeveloper_AddNewRate=Adding new exchange rate %1 valid from %2 from currency %3 to currency %4
+ ;{Locked}
+Currency_MessageDeveloper_ActivateProvider=Activating exchange rate provider {0}
+ ;{Locked}
+Currency_MessageDeveloper_SearchingAssembly=Searching for exchange rate providers in assembly {0}
+ ;{Locked}
+Currency_EntityEnum_EntityName=Měny
+ ;Entity name
+Currency_EntityDeveloper_CurrencyEntityDevDoc=The CurrencyEntity entity contains the currencies that are used in the application for foreign exchange. Exchange rates are created based on these currencies.
+ ;{Locked}
+Currency_EntityField_CurrencyCode=Kód měny
+ ;CurrencyEntity field name.
+Currency_EntityLabel_CurrencyRevaluationAccountLabel=Účet přecenění měny hlavní knihy
+ ;Label for CurrencyRevaluationAccountEntity
+Currency_EntityDeveloper_CurrencyRevaluationAccountEntityDevDoc=The CurrencyRevaluationAccountEntity entity contains the gain loss account for individual currencies.
+ ;{Locked}
+Currency_EntityFieldLabel_RoundingRuleFixedAssetDepreciation=Pravidlo zaokrouhlování odpisů dlouhodobého majetku
+ ;CurrencyEntity field label
+Currency_EntityFieldLabel_RoundingMethodFixedAssetDepreciation=Způsob zaokrouhlování odpisů dlouhodobého majetku
+ ;CurrencyEntity field label
+Currency_EntityFieldLabel_RoundingMethodPrices=Způsob zaokrouhlování cen
+ ;CurrencyEntity field label
+Currency_EntityFieldLabel_RoundingMethodPurchaseOrders=Způsob zaokrouhlování nákupních objednávek
+ ;CurrencyEntity field label
+Currency_EntityFieldLabel_RoundingMethodSalesOrders=Způsob zaokrouhlování prodejních objednávek
+ ;CurrencyEntity field label
+Currency_EntityFieldLabel_RoundingRulePrices=Pravidlo zaokrouhlování cen
+ ;CurrencyEntity field label
+Currency_EntityFieldLabel_RoundingRulePurchaseOrders=Pravidlo zaokrouhlování nákupních objednávek
+ ;CurrencyEntity field label
+Currency_EntityFieldLabel_RoundingRuleSalesOrders=Pravidlo zaokrouhlování prodejních objednávek
+ ;CurrencyEntity field label
+EntitiesMaintainDuty=Udržovat entity měny – hlavní
+ ;Maintain Currency entities duty.
+EntitiesViewDuty=Zobrazit entity měny – hlavní
+ ;View Currency entities duty.
+Currency_EntityMessage_RateMustBePositive=Směnný kurz musí být větší než nula
+ ;ExchangeRateEntity set based error message.
+Currency_EntityTitle=Směnné kurzy
+ ;ExchangeRateEntity title.
+Currency_EntityMessage_InvalidCurrency=Zadaná měna není platná
+ ;ExchangeRateEntity error.
+Currency_EntityMessage_MissingRate=Pro datum směny %4 nelze nalézt směnný kurz pro typ směnného kurzu %1 mezi měnou %2 a měnou %3. Chcete-li vyřešit tento problém, kontaktujte správce systému.
+ ;Set based error message.
+Currency_EntityLabel_ExchangeRateTypeLabel=Typ směnného kurzu
+ ;Label for ExchangeRateTypeEntity
+Currency_EntityDeveloper_ExchangeRateTypeEntityDevDoc=The ExchangeRateTypeEntity entity stores exchange rate types that allow exchange rates to be categorized.
+ ;{Locked}
+Currency_ConfigField_ServiceTimeout=Service Timeout
+ ;{Locked}
+Currency_ConfigField_OandaName=Foreign Exchange Rates Powered by OANDA
+ ;{Locked}
+Currency_ConfigField_OandaAPIKey=API key
+ ;{Locked}
+Currency_FieldTitle_Value=Hodnota
+ ;Exchange rate provider configuration value field title.
+Currency_ConfigField_DecimalPlaces=Decimal places
+ ;{Locked}
+Currency_ConfigMessage_DecimalPlacesInvalid=Počet desetinných míst musí být v rozmezí hodnot 1 až 12
+ ;Decimal places validation error for OANDA exchange rate provider.
+Currency_ConfigMessage_OANDAKeyRequired=Aby bylo možné importovat směnné kurzy, pro tohoto poskytovatele je vyžadován platný klíč z OANDA. 
+ ;Warning message for the OANDA exchange rate provider.
+Currency_ConfigField_QuoteType=Typ nabídky
+ ;Quote type for OANDA provider.
+Currency_ConfigEnum_QuoteTypeAverageBid=Průměrná cena poptávky
+ ;Quote type average bid
+Currency_ConfigEnum_QuoteTypeAverageAsk=Průměrná cena nabídky
+ ;Quote type average ask
+Currency_ConfigEnum_QuoteTypeMidpoint=Střední bod
+ ;Quote type midpoint
+Currency_ConfigEnum_QuoteTypeHighBid=Vysoká cena poptávky
+ ;Quote type high bid
+Currency_ConfigEnum_QuoteTypeHighAsk=Vysoká cena nabídky
+ ;Quote type high ask
+Currency_ConfigEnum_QuoteTypeLowBid=Nízká cena poptávky
+ ;Quote type low bid
+Currency_ConfigEnum_QuoteTypeLowAsk=Nízká cena nabídky
+ ;Quote type low ask
+Currency_ConfigEnum_QuoteTypePeriodAverageBid=Průměrná cena poptávky za období
+ ;Quote type average over time period.
+Currency_ConfigEnum_QuoteTypePeriodAverageAsk=Průměrná cena nabídky za období
+ ;Quote type average over time period.
+Currency_ConfigField_SingleRateForDateRange=Jedna sazba pro rozsah dat
+ ;exchange rate provider configuration option.
+Currency_EntityLabel_CurrencyISOCode=Kódy měn dle ISO
+ ;CurrencyISOCodeEntity label.
+Currency_EntityDeveloper_CurrencyISOCodeEntityDevDoc=The CurrencyISOCodeEntity entity contains the list of ISO Currency Codes that are supported in the application as defined by the International Organization for Standardization.
+ ;{Locked}
+Currency_ModuleName=Měna
+ ;Displayed in upgrade.
+Currency_UpgradeStep=Zašifrujte pole hodnoty.
+ ;Upgrade step.
+Currency_ParameterGroup=Měna
+ ;Field group caption for the SystemParameters form.
+Currency_TableFieldLabel_SystemParametersCurrencyCodeLabel=Systémová měna
+ ;Label for the SystemCurrencyCode field on the SystemParameters table.
+Currency_TableFieldLabel_SystemParametersExchangeRateTypeLabel=Typ směnného kurzu systému
+ ;Label for the SystemExchangeRateType field on the SystemParameters table.
+ExchangeRateCurrencyPairCalculationRulesEntityMaintain=Udržovat Pravidla výpočtu směnného kurzu pro entitu DPH
+ ;Maintain privilege for ExchangeRateCurrencyPairCalculationRulesEntity
+ExchangeRateCurrencyPairCalculationRulesEntityView=Zobrazit Pravidla výpočtu směnného kurzu pro entitu DPH
+ ;View privilege for ExchangeRateCurrencyPairCalculationRulesEntity
+Currency_Message_CurrencyRequiredForRounding=K zaokrouhlení je potřeba měna.
+ ;Error from currency rounding API's
+Currency_Message_CurrencyRequiredForDecimals=K získání počtu desetinných míst je potřeba měna.
+ ;Error from currency rounding API's
+Currency_Message_CurrencyRequiredForRoundingPrecision=K získání přesnosti zaokrouhlování je potřeba měna.
+ ;Error from currency rounding API's
+Currency_ConfigField_PreventImportOnNationalHoliday=Zabránit importu v den státního svátku
+ ;Exchange rate provider configuration option.
+Currency_ConfigField_QuoteTypeLocked=Quote type
+ ;{Locked}
+Currency_Message_QuoteTypeMissing=Nelze najít typ nabídky klíče konfigurace poskytovatele směnného kurzu. Klikněte na možnost Obnovit hodnoty a potom na stránce Konfigurovat poskytovatele směnných kurzů vyberte hodnotu Typ nabídky.  
+ ;Exchange rate provider configuration error
+Currency_Message_StartDateAlreadyExists=Nelze přidat směnný kurz, počáteční datum již existuje. Zadejte počáteční datum, které ještě neexistuje.
+ ;Exchange rate error message
+Currency_Monetary_unit_declensions=Skloňování měnové jednotky
+ ;Monetary unit declensions

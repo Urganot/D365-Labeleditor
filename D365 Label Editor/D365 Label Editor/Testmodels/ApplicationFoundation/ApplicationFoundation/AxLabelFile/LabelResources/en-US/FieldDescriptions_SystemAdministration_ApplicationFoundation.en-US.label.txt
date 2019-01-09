@@ -1,0 +1,98 @@
+SysEmailParameters_SMTP_SMTPRelayServerName=Specify the name of the outgoing SMTP mail server. This information is provided by the system administrator or your Internet Service Provider (ISP).
+ ;Description text for the SMTP_SMTPRelayServerName control on the SysEmailParameters form
+SysEmailParameters_SMTP_SMTPServerIPAddress=Type the local computer's name or Internet Protocol (IP) address.
+ ;Description text for the SMTP_SMTPServerIPAddress control on the SysEmailParameters form
+SysEmailParameters_SMTP_SMTPPortNumber=Specify the port number to be used with the SMTP server (the default is 25). This port number should not be changed unless the system is specifically set up to use an alternate port.
+ ;Description text for the SMTP_SMTPPortNumber control on the SysEmailParameters form
+SysEmailParameters_SMTP_SMTPUserName=Type a valid user name (if the SMTP server requires authentication).
+ ;Description text for the SMTP_SMTPUserName control on the SysEmailParameters form
+SysEmailParameters_SMTP_Password=Type a valid password (if the SMTP server requires authentication). If you access the SMTP server through more than one client, the password must be entered from each client.
+ ;Description text for the SMTP_Password control on the SysEmailParameters form
+SysEmailRetrySchedule_RetrySchedule_RetrySequenceNum=The retry sequence number that corresponds to the first, second, and subsequent attempts to send a message that failed to be sent the first time.
+ ;Description text for the RetrySchedule_RetrySequenceNum control on the SysEmailRetrySchedule form
+SysOutgoingEmailTable_OutgoingEmail_StatusInfoDetails=The current status of the email message. NOTE: The Waiting status is followed by a number "n" in parentheses, such as 1. This number indicates the number of unsuccessful attempts to send the email message, according to the retry schedule. The number cannot be more than the number of retry entries in the Retry schedule page.
+ ;Description text for the OutgoingEmail_StatusInfoDetails control on the SysOutgoingEmailTable form
+SysDatabaseLog_SysDatabaseLog_Description=The identifier for the record that was changed.
+ ;Description text for the SysDatabaseLog_Description control on the SysDatabaseLog form
+SysDatabaseLog_DocumentIsSigned=Indicates whether an electronic signature was provided for the document.
+ ;Description text for the DocumentIsSigned control on the SysDatabaseLog form
+SysDatabaseLog_HistoryDocumentIsSigned=Indicates whether an electronic signature was provided for the document.
+ ;Description text for the HistoryDocumentIsSigned control on the SysDatabaseLog form
+SysDatabaseLog_SignedBy=The name of the user who signed for the change.
+ ;Description text for the SignedBy control on the SysDatabaseLog form
+SysDatabaseLog_SIGSignatureLog_SigneeId=The name of the user who signed for the change.
+ ;Description text for the SIGSignatureLog_SigneeId control on the SysDatabaseLog form
+SysDatabaseLog_DBHistory_createdBy=The user who made the change.
+ ;Description text for the DBHistory_createdBy control on the SysDatabaseLog form
+SysDatabaseLog_SIGSignatureLog_LoginId=The ID of the user who signed for the change.
+ ;Description text for the SIGSignatureLog_LoginId control on the SysDatabaseLog form
+SysDatabaseLog_SIGSignatureLog_ReasonCode=The reason code that was provided when the document was signed. A reason code indicates the purpose of a signature.
+ ;Description text for the SIGSignatureLog_ReasonCode control on the SysDatabaseLog form
+SysDatabaseLogSetup_DatabaseLog_logType=The types of changes to the specified table or field to be recorded in the log file.
+ ;Description text for the DatabaseLog_logType control on the SysDatabaseLogSetup form
+SysDatabaseLogSetup_SIGSignatureControlled=Indicates whether changes to the table or field require a signature.
+ ;Description text for the SIGSignatureControlled control on the SysDatabaseLogSetup form
+SysSecRoleExcludeUsers_SecurityUserRole_AssignmentMode=Indicates whether the user was assigned to the role manually or automatically. If the user was excluded from the role, this field displays Manual. If this field displays None, the user is not currently assigned to the role.
+ ;Description text for the SecurityUserRole_AssignmentMode control on the SysSecRoleExcludeUsers form
+SysSecRoleExcludeUsers_UserInfo_accountType=Indicates whether the user is authenticated by Active Directory or by a claims-based authentication provider.
+ ;Description text for the UserInfo_accountType control on the SysSecRoleExcludeUsers form
+SysSecRolesEditUsers_queryString=Displays the query that is used as the basis for the automatic role assignment rule.
+ ;Description text for the queryString control on the SysSecRolesEditUsers form
+BITimePeriodsMDX_BITimePeriodsMDX_TemplateMDX=Enter the MDX for the template.
+ ;Description text for the BITimePeriodsMDX_TemplateMDX control on the BITimePeriodsMDX form
+SIGSignatureDelegation_SIGSignatureDelegation_SignFor=The ID of the user whose changes are signed for.
+ ;Description text for the SIGSignatureDelegation_SignFor control on the SIGSignatureDelegation form
+SIGSignatureDelegation_signeeCN=The name of the user whose changes are signed for. The user name is displayed automatically when you select the ID of the user to sign for.
+ ;Description text for the signeeCN control on the SIGSignatureDelegation form
+SIGSignatureDelegation_signForCN=The name of the user whose changes are signed for. The user name is displayed automatically when you select the ID of the user to sign for.
+ ;Description text for the signForCN control on the SIGSignatureDelegation form
+SIGSignatureReview_SignatureVerified=If this option is selected, the cryptographic certificate of the signer has been verified, and the signature is valid. If the option is cleared, the signature or the data may have been tampered with, and an alert was sent to the person who was set up to receive signature alerts.
+ ;Description text for the SignatureVerified control on the SIGSignatureReview form
+SIGSignDocument_TmpSignDocument_Comment=Enter a comment related to the signature. This field might be required, depending on how electronic signatures were set up.
+ ;Description text for the TmpSignDocument_Comment control on the SIGSignDocument form
+SIGSignDocument_SIGParameters_Warning=The terms and conditions of signing.
+ ;Description text for the SIGParameters_Warning control on the SIGSignDocument form
+SIGSignDocument_TmpSignDocument_SigneeId=The user ID of the person who provides the signature. If your user ID is not displayed by default, select it in the list.
+ ;Description text for the TmpSignDocument_SigneeId control on the SIGSignDocument form
+SysSecSegregationOfDutiesRule_Grid_SecurityDuty1=Select the first duty to include in the rule. A conflict is logged if an attempt is made to assign the first duty and the second duty to the same role, or to assign a user to two roles that contain the conflicting duties.
+ ;Description text for the Grid_SecurityDuty1 control on the SysSecSegregationOfDutiesRule form
+SysSecSegregationOfDutiesRule_Grid_SecurityDuty2=Select the duty that must conflict with the first duty. A conflict is logged if an attempt is made to assign the first duty and the second duty to the same role, or to assign a user to two roles that contain the conflicting duties.
+ ;Description text for the Grid_SecurityDuty2 control on the SysSecSegregationOfDutiesRule form
+SysServerConfig_InvalidField=A value that determines the system behavior when SELECT statements access fields that have not been explicitly selected. If the value of this field is set to 0 (zero), no error is generated. If the value is set to 1, an error is generated.
+ ;Description text for the InvalidField control on the SysServerConfig form
+SysServerConfig_MaxJoinError=A value that determines the behavior when the number of joins in a table exceeds the maximum number of joins allowed. If the value is set to 1, an error is generated. If the value is set to 0 (zero), a warning is generated.
+ ;Description text for the MaxJoinError control on the SysServerConfig form
+SysServerConfig_MaxJoin=The maximum number of tables allowed in a JOIN statement. If this limit is exceeded, a message is displayed, but application logic continues to run.
+ ;Description text for the MaxJoin control on the SysServerConfig form
+SysServerConfig_ClientCacheFactor=A value that is used to determine the relationship between the number of elements in the record cache stored on the server and the number of elements stored in the Windows client record cache. For example, if the cache limit for the Framework table group is 2,000, and the cache factor is 20, 2,000 elements can be saved in the record cache on the server, but only 100 (2,000/20) elements can be saved in the record cache on the client.
+ ;Description text for the ClientCacheFactor control on the SysServerConfig form
+SysServerConfig_EntireTable=The size beyond which the table cache will be flushed to disk.
+ ;Description text for the EntireTable control on the SysServerConfig form
+SysServerConfig_CopyOfEntireTable=The size beyond which the table cache will be flushed to disk.
+ ;Description text for the CopyOfEntireTable control on the SysServerConfig form
+SystemParameters_SystemLineNumber_SystemLineNumberIncrement=Enter the increment to use when new line numbers are assigned to the purchase order lines. The increment is a default for all purchase order lines and other order lines, such as sales and production order lines.
+ ;Description text for the SystemLineNumber_SystemLineNumberIncrement control on the SystemParameters form
+SystemParameters_ChartOfAccounts_ChartOfAccountsDelimiter=Select the symbol to use as the separator between financial dimensions.
+ ;Description text for the ChartOfAccounts_ChartOfAccountsDelimiter control on the SystemParameters form
+SystemParameters_EventParams_MaxDays=Enter the number of days that should be added to the time limit that is set up for alerts.
+ ;Description text for the EventParams_MaxDays control on the SystemParameters form
+SystemParameters_EventParams_AlertTemplateId=Select the ID of the email template you created for alert notifications.
+ ;Description text for the EventParams_AlertTemplateId control on the SystemParameters form
+SystemParameters_EventParams_DrillDownGroupId=Enter a value that corresponds to the database where the event occurred. The database value is required if you want a user to be able to drill-down to the event from the alert notification.
+ ;Description text for the EventParams_DrillDownGroupId control on the SystemParameters form
+SystemParameters_General_FilePath=Select a shared network location for file storage. When you generate a file, such as a report, the file is created in this location. Subsequently you can copy the file to a different location. In addition, when you run a batch job that generates files, the files are stored in this location until you retrieve them. Files that are generated by a batch job can be retrieved in the Generated files form. Click Home > Inquiries > Batch jobs > Generated files. Make sure that all users have access to the network in order to access and print files that are stored in this location.
+ ;Description text for the General_FilePath control on the SystemParameters form
+SystemParameters_referenceLabel=Select the number sequence to use to generate workflow configuration ID numbers, workflow instance ID numbers, and alert rule ID numbers.
+ ;Description text for the referenceLabel control on the SystemParameters form
+SysUsersOnline_SessionType=The type of session. The options are as follows: User (a Windows client connection), Business Connector (a connection that uses the Business Connector Proxy, and Worker (a worker thread that is generated by a batch process).
+ ;Description text for the SessionType control on the SysUsersOnline form
+SysUserLog_OnlineTime=The length of time that the user was signed in. If a user's computer hibernates, the user remains signed in to the system.
+ ;Description text for the OnlineTime control on the SysUserLog form
+SysUserLog_SysUserLog_SessionId=Because a user can log on several times daily, a unique session ID is assigned every time that a client logs on. The session ID number is reset daily.
+ ;Description text for the SysUserLog_SessionId control on the SysUserLog form
+SysUserLog_Time_LogoutDateTime=The date and time that the system recognized the user as signed out. This time is updated every 15 minutes until the system no longer detects the client on the network. Even if the user does not sign out successfully, this time is approximately when the client was disconnected.
+ ;Description text for the Time_LogoutDateTime control on the SysUserLog form
+FormRunConfigurationParameters_EnabledExplicitPersonalization=Explicit personalization options are manual changes to the layout such as moving, renaming or hiding controls.
+ ;Description Text for the FormRunConfigurationOptions_Form_EnabledExplicitPersonalization and FormRunConfigurationOptions_General_EnabledExplicitPersonalization controls on the FormRunConfigurationParameters form
+SystemParameters_BlobLinkExpirationTimeSpanInMinutes=Enter the number of minutes that download links should remain active. Enter '0' for default timeout duration of %1 minute(s)
+ ;Description text for the BlobLinkExpirationTimeSpanInMinutes controls on the SystemParameters form

@@ -1,0 +1,560 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader><data name="NewLabel0" xml:space="preserve">
+                        <value>Label files created on 03/25/2016 16:55:36 for label file Id SysAppDesigner and language en-US</value>
+	<comment>Label file comment - see above label</comment></data><data name="DesignerFormCaption" xml:space="preserve">
+                        <value>Manage mobile workspaces</value>
+	<comment>New Comment</comment></data><data name="AddNewApp" xml:space="preserve">
+                        <value>Create</value>
+	<comment>New Comment</comment></data><data name="Delete" xml:space="preserve">
+                        <value>Delete</value>
+	<comment>New Comment</comment></data><data name="AppTitleLabel" xml:space="preserve">
+                        <value>Name</value>
+	<comment>New Comment</comment></data><data name="AppDescriptionLabel" xml:space="preserve">
+                        <value>Description</value>
+	<comment>New Comment</comment></data><data name="MobileApps" xml:space="preserve">
+                        <value>Mobile workspace</value>
+	<comment>New Comment</comment></data><data name="PageListGroupCaption" xml:space="preserve">
+                        <value>Pages</value>
+	<comment>New Comment</comment></data><data name="AddPage" xml:space="preserve">
+                        <value>Add page</value>
+	<comment>New Comment</comment></data><data name="AddTask" xml:space="preserve">
+                        <value>Add action</value>
+	<comment>New Comment</comment></data><data name="PageTitleLabel" xml:space="preserve">
+                        <value>Page title</value>
+	<comment>New Comment</comment></data><data name="PageDescriptionLabel" xml:space="preserve">
+                        <value>Page description</value>
+	<comment>New Comment</comment></data><data name="PageControlListGroupCaption" xml:space="preserve">
+                        <value>Build a page</value>
+	<comment>New Comment</comment></data><data name="AddPageControls" xml:space="preserve">
+                        <value>Select fields</value>
+	<comment>New Comment</comment></data><data name="PublishApp" xml:space="preserve">
+                        <value>Publish mobile workspace</value>
+	<comment>New Comment</comment></data><data name="ExportApp" xml:space="preserve">
+                        <value>Export mobile workspace</value>
+	<comment>New Comment</comment></data><data name="BackButtonLabel" xml:space="preserve">
+                        <value>Back</value>
+	<comment>New Comment</comment></data><data name="DoneButtonLabel" xml:space="preserve">
+                        <value>Done</value>
+	<comment>New Comment</comment></data><data name="CancelButtonLabel" xml:space="preserve">
+                        <value>Cancel</value>
+	<comment>New Comment</comment></data><data name="CloseButtonLabel" xml:space="preserve">
+                        <value>Close</value>
+	<comment>New Comment</comment></data><data name="StopRecordingButtonLabel" xml:space="preserve">
+                        <value>Done</value>
+	<comment>New Comment</comment></data><data name="ControlListNameColumnLabel" xml:space="preserve">
+                        <value>Name</value>
+	<comment>New Comment</comment></data><data name="ControlListTypeColumnLabel" xml:space="preserve">
+                        <value>Type</value>
+	<comment>New Comment</comment></data><data name="PageListTitleColumnLabel" xml:space="preserve">
+                        <value>Title</value>
+	<comment>New Comment</comment></data><data name="NotificationHubFormCaption" xml:space="preserve">
+                        <value>Notification hub configuration</value>
+	<comment>New Comment</comment></data><data name="HubConnectionString" xml:space="preserve">
+                        <value>Notification hub connection string</value>
+	<comment>New Comment</comment></data><data name="HubName" xml:space="preserve">
+                        <value>Notification hub name</value>
+	<comment>New Comment</comment></data><data name="TaskListGroupCaption" xml:space="preserve">
+                        <value>Actions</value>
+	<comment>New Comment</comment></data><data name="TaskListTitleColumnLabel" xml:space="preserve">
+                        <value>Title</value>
+	<comment>New Comment</comment></data><data name="TaskDescriptionLabel" xml:space="preserve">
+                        <value>Action description</value>
+	<comment>New Comment</comment></data><data name="TaskTitleLabel" xml:space="preserve">
+                        <value>Action title</value>
+	<comment>New Comment</comment></data><data name="ImportApp" xml:space="preserve">
+                        <value>Import</value>
+	<comment>New Comment</comment></data><data name="AppListGroupCaption" xml:space="preserve">
+                        <value>Mobile workspaces</value>
+	<comment>New Comment</comment></data><data name="ReturnToAppList" xml:space="preserve">
+                        <value>Return to dashboard</value>
+	<comment>New Comment</comment></data><data name="AppReadyText" xml:space="preserve">
+                        <value>Your mobile workspace is ready</value>
+	<comment>New Comment</comment></data><data name="AddDetailsPage" xml:space="preserve">
+                        <value>Add details page</value>
+	<comment>New Comment</comment></data><data name="Icon_Admin" xml:space="preserve">
+                        <value>Admin</value>
+	<comment>New Comment</comment></data><data name="Icon_BarChartHorizontal" xml:space="preserve">
+                        <value>Bar Chart Horizontal</value>
+	<comment>New Comment</comment></data><data name="Icon_BenefitsManagement" xml:space="preserve">
+                        <value>Benefits Management</value>
+	<comment>New Comment</comment></data><data name="Icon_BudgetPlanning" xml:space="preserve">
+                        <value>Budget Planning</value>
+	<comment>New Comment</comment></data><data name="Icon_CatalogManagement" xml:space="preserve">
+                        <value>Catalog Management</value>
+	<comment>New Comment</comment></data><data name="Icon_Checklist" xml:space="preserve">
+                        <value>Checklist</value>
+	<comment>New Comment</comment></data><data name="Icon_CourseManagement" xml:space="preserve">
+                        <value>Course Management</value>
+	<comment>New Comment</comment></data><data name="Icon_CompensationManagement" xml:space="preserve">
+                        <value>Compensation Management</value>
+	<comment>New Comment</comment></data><data name="Icon_CostAdministration" xml:space="preserve">
+                        <value>Cost Administration</value>
+	<comment>New Comment</comment></data><data name="Icon_CostAnalysis" xml:space="preserve">
+                        <value>Cost Analysis</value>
+	<comment>New Comment</comment></data><data name="Icon_CustomerInvoicing" xml:space="preserve">
+                        <value>Customer Invoicing</value>
+	<comment>New Comment</comment></data><data name="Icon_DataManagement" xml:space="preserve">
+                        <value>Data Management</value>
+	<comment>New Comment</comment></data><data name="Icon_DiscreteManufacturing" xml:space="preserve">
+                        <value>Discrete Manufacturing</value>
+	<comment>New Comment</comment></data><data name="Icon_ElectronicReporting" xml:space="preserve">
+                        <value>Electronic Reporting</value></data><data name="Icon_EmployeeSelfService" xml:space="preserve">
+                        <value>Employee Self Service</value>
+	<comment>New Comment</comment></data><data name="Icon_GeneralJournalProcessing" xml:space="preserve">
+                        <value>General Journal Processing</value>
+	<comment>New Comment</comment></data><data name="Icon_InvoiceComplete" xml:space="preserve">
+                        <value>Invoice Complete</value>
+	<comment>New Comment</comment></data><data name="Icon_InvoiceInquiry" xml:space="preserve">
+                        <value>Invoice Inquiry</value>
+	<comment>New Comment</comment></data><data name="Icon_InvoicePrep" xml:space="preserve">
+                        <value>Invoice Prep</value>
+	<comment>New Comment</comment></data><data name="Icon_KanbanManufacturing" xml:space="preserve">
+                        <value>Kanban Manufacturing</value>
+	<comment>New Comment</comment></data><data name="Icon_LifecycleManagement" xml:space="preserve">
+                        <value>Lifecycle Management</value>
+	<comment>New Comment</comment></data><data name="Icon_ManagerSelfService" xml:space="preserve">
+                        <value>Manager Self Service</value></data><data name="Icon_MasterPlanning" xml:space="preserve">
+                        <value>Master Planning</value>
+	<comment>New Comment</comment></data><data name="Icon_OutboundWorkMonitoring" xml:space="preserve">
+                        <value>Outbound Work Monitoring</value></data><data name="Icon_OutboundWorkPlanning" xml:space="preserve">
+                        <value>Outbound Work Planning</value>
+	<comment>New Comment</comment></data><data name="Icon_ProcessManufacturing" xml:space="preserve">
+                        <value>Process Manufacturing</value>
+	<comment>New Comment</comment></data><data name="Icon_ProductionFloorManagement" xml:space="preserve">
+                        <value>Production Floor Management</value>
+	<comment>New Comment</comment></data><data name="Icon_ProductManagement" xml:space="preserve">
+                        <value>Product Management</value>
+	<comment>New Comment</comment></data><data name="Icon_ProductRelease" xml:space="preserve">
+                        <value>Product Release</value>
+	<comment>New Comment</comment></data><data name="Icon_ProductReturn" xml:space="preserve">
+                        <value>Product Return</value>
+	<comment>New Comment</comment></data><data name="Icon_ProductVariant" xml:space="preserve">
+                        <value>Product Variant</value>
+	<comment>New Comment</comment></data><data name="Icon_ProjectManagement" xml:space="preserve">
+                        <value>Project Management</value>
+	<comment>New Comment</comment></data><data name="Icon_Questionnaire" xml:space="preserve">
+                        <value>Questionnaire</value>
+	<comment>New Comment</comment></data><data name="Icon_RecruitmentManagment" xml:space="preserve">
+                        <value>Recruitment Managment</value>
+	<comment>New Comment</comment></data><data name="Icon_ReservationManagment" xml:space="preserve">
+                        <value>Reservation Managment</value>
+	<comment>New Comment</comment></data><data name="Icon_Retail" xml:space="preserve">
+                        <value>Retail</value>
+	<comment>New Comment</comment></data><data name="Icon_RetailFinancials" xml:space="preserve">
+                        <value>Retail Financials</value>
+	<comment>New Comment</comment></data><data name="Icon_RetailIT" xml:space="preserve">
+                        <value>Retail IT</value>
+	<comment>New Comment</comment></data><data name="Icon_RetailManage" xml:space="preserve">
+                        <value>Retail Manage</value>
+	<comment>New Comment</comment></data><data name="Icon_Tag" xml:space="preserve">
+                        <value>Tag</value>
+	<comment>New Comment</comment></data><data name="Icon_VendorPayment" xml:space="preserve">
+                        <value>Vendor Payment</value>
+	<comment>New Comment</comment></data><data name="Icon_WorkforceManagement" xml:space="preserve">
+                        <value>Workforce Management</value>
+	<comment>New Comment</comment></data><data name="Icon_Calendar" xml:space="preserve">
+                        <value>Calendar</value>
+	<comment>New Comment</comment></data><data name="Icon_Calculator" xml:space="preserve">
+                        <value>Calculator</value>
+	<comment>New Comment</comment></data><data name="Icon_ContactInfo" xml:space="preserve">
+                        <value>Contact Info</value>
+	<comment>New Comment</comment></data><data name="Icon_DeliveryTruck" xml:space="preserve">
+                        <value>Delivery Truck</value>
+	<comment>New Comment</comment></data><data name="Icon_ExpenseReport" xml:space="preserve">
+                        <value>Expense Report</value>
+	<comment>New Comment</comment></data><data name="Icon_Forklift" xml:space="preserve">
+                        <value>Forklift</value>
+	<comment>New Comment</comment></data><data name="Icon_Giftbox" xml:space="preserve">
+                        <value>Giftbox</value>
+	<comment>New Comment</comment></data><data name="Icon_Group" xml:space="preserve">
+                        <value>Group</value>
+	<comment>New Comment</comment></data><data name="Icon_Invoice" xml:space="preserve">
+                        <value>Invoice</value>
+	<comment>New Comment</comment></data><data name="Icon_MachineOperations" xml:space="preserve">
+                        <value>Machine Operations</value>
+	<comment>New Comment</comment></data><data name="Icon_Money" xml:space="preserve">
+                        <value>Money</value>
+	<comment>New Comment</comment></data><data name="Icon_Org" xml:space="preserve">
+                        <value>Org</value>
+	<comment>New Comment</comment></data><data name="Icon_Product" xml:space="preserve">
+                        <value>Product</value>
+	<comment>New Comment</comment></data><data name="Icon_PhoneBook" xml:space="preserve">
+                        <value>Phone Book</value>
+	<comment>New Comment</comment></data><data name="Icon_TimeSheet" xml:space="preserve">
+                        <value>TimeSheet</value>
+	<comment>New Comment</comment></data><data name="Color0" xml:space="preserve">
+                        <value>Blue</value>
+	<comment>New Comment</comment></data><data name="Color1" xml:space="preserve">
+                        <value>Pomegranate</value>
+	<comment>New Comment</comment></data><data name="Color2" xml:space="preserve">
+                        <value>Raspberry</value>
+	<comment>New Comment</comment></data><data name="Color3" xml:space="preserve">
+                        <value>Dark Orange</value>
+	<comment>New Comment</comment></data><data name="Color4" xml:space="preserve">
+                        <value>Green</value>
+	<comment>New Comment</comment></data><data name="Color5" xml:space="preserve">
+                        <value>Blueberry</value>
+	<comment>New Comment</comment></data><data name="Color6" xml:space="preserve">
+                        <value>Grape</value>
+	<comment>New Comment</comment></data><data name="Color7" xml:space="preserve">
+                        <value>Light Blue</value>
+	<comment>New Comment</comment></data><data name="Color8" xml:space="preserve">
+                        <value>Light Green</value>
+	<comment>New Comment</comment></data><data name="Color9" xml:space="preserve">
+                        <value>Pink</value>
+	<comment>New Comment</comment></data><data name="Color10" xml:space="preserve">
+                        <value>Teal</value>
+	<comment>New Comment</comment></data><data name="Color11" xml:space="preserve">
+                        <value>Medium Dark Blue</value>
+	<comment>New Comment</comment></data><data name="Color12" xml:space="preserve">
+                        <value>Cordovan</value>
+	<comment>New Comment</comment></data><data name="Color13" xml:space="preserve">
+                        <value>Dark Cordovan</value>
+	<comment>New Comment</comment></data><data name="Color14" xml:space="preserve">
+                        <value>Black</value>
+	<comment>New Comment</comment></data><data name="AppColor" xml:space="preserve">
+                        <value>Workspace color</value>
+	<comment>New Comment</comment></data><data name="AppIcon" xml:space="preserve">
+                        <value>Workspace icon</value>
+	<comment>New Comment</comment></data><data name="None" xml:space="preserve">
+                        <value>None</value>
+	<comment>New Comment</comment></data><data name="Edit" xml:space="preserve">
+                        <value>Edit</value>
+	<comment>New Comment</comment></data><data name="AddEditTask" xml:space="preserve">
+                        <value>Add edit action</value>
+	<comment>New Comment</comment></data><data name="PageControlsRecordingName" xml:space="preserve">
+                        <value>Add controls to page</value>
+	<comment>New Comment</comment></data><data name="TaskControlsRecordingName" xml:space="preserve">
+                        <value>Add controls to action</value>
+	<comment>New Comment</comment></data><data name="TaskControlListGroupCaption" xml:space="preserve">
+                        <value>Build an action</value>
+	<comment>New Comment</comment></data><data name="PageControlTabPageCaption" xml:space="preserve">
+                        <value>Fields</value>
+	<comment>New Comment</comment></data><data name="TaskAllowOffline" xml:space="preserve">
+                        <value>Allow offline</value>
+	<comment>New Comment</comment></data><data name="AddListItemCreateTask" xml:space="preserve">
+                        <value>Add create item action</value>
+	<comment>New Comment</comment></data><data name="PBLGroupCaption" xml:space="preserve">
+                        <value>Logic</value>
+	<comment>New Comment</comment></data><data name="PBLExportLabel" xml:space="preserve">
+                        <value>Download</value>
+	<comment>New Comment</comment></data><data name="PBLDeleteLabel" xml:space="preserve">
+                        <value>Delete</value>
+	<comment>New Comment</comment></data><data name="PBLFilenameLabel" xml:space="preserve">
+                        <value>File name</value>
+	<comment>New Comment</comment></data><data name="PageNameLabel" xml:space="preserve">
+                        <value>Page name</value>
+	<comment>New Comment</comment></data><data name="TaskNameLabel" xml:space="preserve">
+                        <value>Action name</value>
+	<comment>New Comment</comment></data><data name="ControlDetailsButtonLabel" xml:space="preserve">
+                        <value>Properties</value>
+	<comment>New Comment</comment></data><data name="ControlDetailsDialogCaption" xml:space="preserve">
+                        <value>Control properties</value>
+	<comment>New Comment</comment></data><data name="ControlNameLabel" xml:space="preserve">
+                        <value>Control name</value>
+	<comment>New Comment</comment></data><data name="ControlLabelLabel" xml:space="preserve">
+                        <value>Control label</value>
+	<comment>New Comment</comment></data><data name="ListFetchSizeLabel" xml:space="preserve">
+                        <value>List fetch size</value>
+	<comment>New Comment</comment></data><data name="AddTaskControls" xml:space="preserve">
+                        <value>Record action</value>
+	<comment>New Comment</comment></data><data name="SelectPage" xml:space="preserve">
+                        <value>Select existing page</value>
+	<comment>New Comment</comment></data><data name="SelectTask" xml:space="preserve">
+                        <value>Select existing action</value>
+	<comment>New Comment</comment></data><data name="ConfirmAppTaskRecordingEnd" xml:space="preserve">
+                        <value>Have you performed all necessary data operations (save, delete, submit etc.) for this task?</value>
+	<comment>New Comment</comment></data><data name="DeserializeFailed" xml:space="preserve">
+                        <value>We could not open the file you provided. It seems the file is corrupt. Please re-export the file from the original system and try importing again.</value>
+	<comment>New Comment</comment></data><data name="InfoDSCommitWillStopRecording" xml:space="preserve">
+                        <value>We have automatically ended the field selection process for you because we detected that a CRUD operation has been performed on the data you are using. This helps prevent creating pages that have unintended side effects on data.</value>
+	<comment>New Comment</comment></data><data name="ConfirmOverwriteFields" xml:space="preserve">
+                        <value>Re-selecting the fields will clear the fields you have already selected. Do you still wish to proceed?</value>
+	<comment>New Comment</comment></data><data name="ErrorFormCalledIncorrectly" xml:space="preserve">
+                        <value>Form has been called incorrectly</value>
+	<comment>New Comment</comment></data><data name="ErrorNoPageOrActionFound" xml:space="preserve">
+                        <value>No page or action found</value>
+	<comment>New Comment</comment></data><data name="ErrorNoPageFound" xml:space="preserve">
+                        <value>No page metadata found</value>
+	<comment>New Comment</comment></data><data name="ErrorNoActionFound" xml:space="preserve">
+                        <value>No action metadata found</value>
+	<comment>New Comment</comment></data><data name="ConfirmUpdateExistingWorkspace" xml:space="preserve">
+                        <value>The Id of this mobile workspace matches the Id of an existing one. Would you like to replace the existing one with this one?</value>
+	<comment>New Comment</comment></data><data name="AddLookupPage" xml:space="preserve">
+                        <value>Add lookup page</value>
+	<comment>New Comment</comment></data><data name="LookupDisplayField" xml:space="preserve">
+                        <value>Select field to display</value>
+	<comment>New Comment</comment></data><data name="LookupValueField" xml:space="preserve">
+                        <value>Select field data</value>
+	<comment>New Comment</comment></data><data name="OverrideControlLabel" xml:space="preserve">
+                        <value>Override control label</value>
+	<comment>New Comment</comment></data><data name="ControlLabelRequiredMessage" xml:space="preserve">
+                        <value>A control label is required</value>
+	<comment>New Comment</comment></data><data name="PageDocManagementEnabled" xml:space="preserve">
+                        <value>Document management</value>
+	<comment>New Comment</comment></data><data name="DocumentManagementAppNotFound" xml:space="preserve">
+                        <value>Document management app template not found</value>
+	<comment>New Comment</comment></data><data name="DetailPageRecordingNotFound" xml:space="preserve">
+                        <value>Details page recording not found</value>
+	<comment>New Comment</comment></data><data name="ListStyleSimple" xml:space="preserve">
+                        <value>Simple</value>
+	<comment>New Comment</comment></data><data name="ListStyleCard" xml:space="preserve">
+                        <value>Card</value>
+	<comment>New Comment</comment></data><data name="ListStyle" xml:space="preserve">
+                        <value>Style</value>
+	<comment>New Comment</comment></data><data name="EnumName" xml:space="preserve">
+                        <value>Enum</value>
+	<comment>New Comment</comment></data><data name="WorkspaceAttributeNotFound" xml:space="preserve">
+                        <value>SysAppWorkspaceAttribute is not found on class %1</value>
+	<comment>New Comment</comment></data><data name="WorkspacePublished" xml:space="preserve">
+                        <value>published</value>
+	<comment>New Comment</comment></data><data name="WorkspaceNotPublished" xml:space="preserve">
+                        <value>not published</value>
+	<comment>New Comment</comment></data><data name="PublishWorkspace" xml:space="preserve">
+                        <value>Publish</value>
+	<comment>New Comment</comment></data><data name="UnPublishWorkspace" xml:space="preserve">
+                        <value>Unpublish</value>
+	<comment>New Comment</comment></data><data name="OnWorkspacePublished" xml:space="preserve">
+                        <value>Mobile workspace %1 has been successfully published</value>
+	<comment>New Comment</comment></data><data name="OnWorkspaceUnpublished" xml:space="preserve">
+                        <value>Mobile workspace %1 has been successfully unpublished</value>
+	<comment>New Comment</comment></data><data name="WorkspaceId" xml:space="preserve">
+                        <value>Id</value>
+	<comment>New Comment</comment></data><data name="Export" xml:space="preserve">
+                        <value>Export</value>
+	<comment>New Comment</comment></data><data name="DeleteWorkspace" xml:space="preserve">
+                        <value>Mobile workspace %1 will be deleted</value>
+	<comment>New Comment</comment></data><data name="FromFile" xml:space="preserve">
+                        <value>From file system</value>
+	<comment>New Comment</comment></data><data name="FromResource" xml:space="preserve">
+                        <value>From resource</value>
+	<comment>New Comment</comment></data><data name="ErrorResourceTypeNotScript" xml:space="preserve">
+                        <value>Resource type should be script</value>
+	<comment>New Comment</comment></data><data name="ErrorResourceNotFound" xml:space="preserve">
+                        <value>Resource not found</value>
+	<comment>New Comment</comment></data><data name="WorkspaceInMetadata" xml:space="preserve">
+                        <value>In metadata</value>
+	<comment>New Comment</comment></data><data name="WorkspaceInDataBase" xml:space="preserve">
+                        <value>In database</value>
+	<comment>New Comment</comment></data><data name="WorkspaceSave" xml:space="preserve">
+                        <value>Save</value>
+	<comment>New Comment</comment></data><data name="WorkspaceDiscard" xml:space="preserve">
+                        <value>Discard</value>
+	<comment>New Comment</comment></data><data name="WorkspaceAlreadyExistAsResourceError" xml:space="preserve">
+                        <value>The mobile workspace already exists as a resource</value>
+	<comment>New Comment</comment></data><data name="RemoveBusinessLogicFromDBConfirm" xml:space="preserve">
+                        <value>This will remove the business logic currently saved with this mobile workspace so that you can specify the location for new business logic. Are you sure you want to remove the curent business logic?</value>
+	<comment>New Comment</comment></data><data name="WorkspaceClassAppIdEmptyError" xml:space="preserve">
+                        <value>AppId is empty on class: %1</value>
+	<comment>New Comment</comment></data><data name="DeserializeWorkspaceFromResourceFailed" xml:space="preserve">
+                        <value>We could not load the mobile workspace from metadata. The resource %1 failed to deserialize</value>
+	<comment>New Comment</comment></data><data name="DeserializeWorkspaceFromAppStoreFailed" xml:space="preserve">
+                        <value>We could not load the mobile workspace %1 from database. The file failed to deserialize</value>
+	<comment>New Comment</comment></data><data name="ViewRecordingSteps" xml:space="preserve">
+                        <value>Job steps</value>
+	<comment>New Comment</comment></data><data name="JobError" xml:space="preserve">
+                        <value>Unable to perform the requested operation</value>
+	<comment>The generic error to be shown when a job error occurs</comment></data><data name="ControlNotFoundError" xml:space="preserve">
+                        <value>Control %1 was not found</value>
+	<comment>New Comment</comment></data><data name="PropertySetError" xml:space="preserve">
+                        <value>Setting value of field %1 failed</value>
+	<comment>New Comment</comment></data><data name="PropertyGetError" xml:space="preserve">
+                        <value>Getting value of field %1 failed</value>
+	<comment>New Comment</comment></data><data name="CommandFailedError" xml:space="preserve">
+                        <value>Command %1 failed on %2</value>
+	<comment>New Comment</comment></data><data name="FormNotFoundError" xml:space="preserve">
+                        <value>Form %1 not found</value>
+	<comment>New Comment</comment></data><data name="AppIDUsedByMultipleWorkspaceClassError" xml:space="preserve">
+                        <value>AppId %1 is already in use by workspace class %2 and cannot be assigned to workspace class %3</value>
+	<comment>Error message when the same appId is getting registered for the second time</comment></data><data name="ResourceNameNotSpecifiedAndWorkspaceNotInDBError" xml:space="preserve">
+                        <value>The mobile workspace referred by AppId %1 is not found in database and no resource name has been specified in the workspace class</value>
+	<comment>Error message when workspace is not found in database and no AOT resource name have been specified</comment></data><data name="BusinessLogicResourceNotFoundError" xml:space="preserve">
+                        <value>We could not load the business logic file . The resource %1 is not found</value>
+	<comment>Error message when an AX resource is not found for business logic</comment></data><data name="WorkspaceResourceNotFoundError" xml:space="preserve">
+                        <value>We could not load the mobile workspace from metadata. The resource %1 is not found</value>
+	<comment>Error message when an AX resource is not found for the mobile workspace</comment></data><data name="LoadingForWorkspaceClass" xml:space="preserve">
+                        <value>Mobile workspace class: %1</value>
+	<comment>A prefix that is added when loading mobile workspaces from class</comment></data><data name="UncaughtExceptionGetAppMetadata" xml:space="preserve">
+                        <value>Error was thrown while calling getWorkspaceMetadata for mobile workspace class %1</value>
+	<comment>Error message shown when there is an error during getting app metadata</comment></data><data name="UncaughtExceptionOnEndJob" xml:space="preserve">
+                        <value>Error was thrown while calling onEndJob for mobile workspace class %1</value>
+	<comment>Error message shown when a call to end job on the workspace class throws an exception</comment></data><data name="UncaughtExceptionOnBeginJob" xml:space="preserve">
+                        <value>Error was thrown while calling onBeginJob for mobile workspace class %1</value>
+	<comment>Error message shown when a call to begin job on the workspace class throws an exception</comment></data><data name="UncaughtExceptionGetEnumValues" xml:space="preserve">
+                        <value>Error was thrown while calling getEnumValues for mobile workspace class %1</value>
+	<comment>Error message shown when a call to getEnumValue on the workspace class throws an exception</comment></data><data name="MultipleDataSourceSaveEncountered" xml:space="preserve">
+                        <value>Multiple data updates have been encountered. Please make sure all updates for the current action belong to the same entity.</value>
+	<comment>Error message shown when multiple datasource save is encountered during mobile app action recording</comment></data><data name="ClosedTheLastFormRecordingStopped" xml:space="preserve">
+                        <value>We have automatically ended the field selection process, because we detected that the starting form of the action has been closed.  </value>
+	<comment>Info message shown when a user closes the first form of a recording</comment></data><data name="UncaughtExceptionPopulateAppMetadataFromDataContract" xml:space="preserve">
+                        <value>Exception in populating pages in app metadata for workspace %1</value>
+	<comment>Message logged when there is exception in populating pages in app metadata for workspace</comment></data><data name="WorkSpaceClassNotFound" xml:space="preserve">
+                        <value>Workspace class not found by given workspace class id</value>
+	<comment>Message logged when workspace class not found by given workspace class id</comment></data><data name="ReferenceControlClassDoNotHaveEntity" xml:space="preserve">
+                        <value>Data contract class %1 of workspace %2 is referred as a referenced class but is missing SysAppEntityAttribute</value>
+	<comment>Message logged when reference data contract class is not an entity</comment></data><data name="ReferenceControlMethodDoesNotReturnClass" xml:space="preserve">
+                        <value>Method %1 of data contract class %2 of workspace %3 represents a reference control but is not returning a data contract class</value>
+	<comment>Message logged when method represents a reference control but does not returns a data contract class</comment></data><data name="ListControlMethodDoesNotReturnList" xml:space="preserve">
+                        <value>Method %1 of data contract class %2 of workspace %3 represents a list control but does not returns a List</value>
+	<comment>Message logged when method represents a list control but does not returns a List</comment></data><data name="PageMethodNotReturningDataContractClass" xml:space="preserve">
+                        <value>Page method %1 of workspace %2 defining page is not returning a data contract class</value>
+	<comment>Message logged when get methods defining pages not returning a data contract class</comment></data><data name="PageNotFoundInWorkspace" xml:space="preserve">
+                        <value>Page %1 not found in workspace %2</value>
+	<comment>Message logged when page not found in workspace</comment></data><data name="ListControlItemContractIsNotAClass" xml:space="preserve">
+                        <value>Method %1 of data contract class %2 of workspace %3 has %4 as item contract name of SysAppCollectionAttribute but it does not denotes a valid class</value>
+	<comment>Message logged when item Contract Name of SysAppCollectionAttribute does not denotes a valid class.</comment></data><data name="ListControlHasNestedListControl" xml:space="preserve">
+                        <value>Method %1 of data contract class %2 is a child of list control defined under data contract class %3 of workspace %4</value>
+	<comment>Message logged when method has nested list controls</comment></data><data name="UncaughtExceptionPopulatePagesAndActions" xml:space="preserve">
+                        <value>Exception in generating metadata for %1 workspace</value>
+	<comment>Message logged when when there is an exception in populating page metadata for workspace</comment></data><data name="ActionMethodNotAcceptingDataContractClass" xml:space="preserve">
+                        <value>Action method %1 of workspace %2 defining action has more than one parameter and second parameter is not a data contract class</value>
+	<comment>Message logged when put methods defining actions not accepting a data contract class</comment></data><data name="ActionMethodNotAcceptingOneParameter" xml:space="preserve">
+                        <value>Action method %1 of workspace %2 defining action is not accepting one parameter</value>
+	<comment>Message logged when put methods defining actions not accepting one parameter</comment></data><data name="ActionNotFoundInWorkspace" xml:space="preserve">
+                        <value>Action %1 not found in workspace %2</value>
+	<comment>Message logged when action not found in workspace</comment></data><data name="ReferenceControlHasCircularDependency" xml:space="preserve">
+                        <value>Method %1 of %2 data contract class of workspace %3 returns %4 as a referenced class of reference control has circular dependency</value>
+	<comment>Message logged when data contract class defining reference controls has circular dependency</comment></data><data name="MethodReturnTypeNotSupported" xml:space="preserve">
+                        <value>Return type of method %1 of data contract class %2 of workspace %3 is not supported for generating control</value>
+	<comment>Message logged when Return type of the method is not supported for generating control</comment></data><data name="ReferenceControlMethodCanNotReturnCollection" xml:space="preserve">
+                        <value>Method %1 of data contract class %2 of workspace %3 represents a reference field and can not be a collection</value>
+	<comment>Message logged when fields of reference control is a collection</comment></data><data name="ListControlHasCircularDependency" xml:space="preserve">
+                        <value>Method %1 of %2 data contract class of workspace %3 returns %4 as a item contract class of list control has circular dependency</value>
+	<comment>Message logged when method defining list has circular dependent item contract class name</comment></data><data name="ReferenceControlClassCanNotBeImageReference" xml:space="preserve">
+                        <value>Method %1 of data contract class %2 of workspace %3 with SysAppRelationalAttribute returns ImageReference</value>
+	<comment>Message logged when method with SysAppRelationalAttribute returns ImageReference</comment></data><data name="LookupPageShouldHaveOneListControl" xml:space="preserve">
+                        <value>Method %1 of %2 workspace class defining Lookup Page should have only one control and that control should be of type List</value>
+	<comment>Message logged when lookup page defining method do not have proper controls</comment></data><data name="MethodNotFoundInWorkspace" xml:space="preserve">
+                        <value>Page %1 not found in workspace %2</value>
+	<comment>Message logged when method is not found in workspace</comment></data><data name="UncaughtExceptionexecuteRequest" xml:space="preserve">
+                        <value>Uncaught exception in executing request for app for workspace %1</value>
+	<comment>Message logged when there is uncaught exception in executing request</comment></data><data name="UncaughtExceptioniteratePageMethods" xml:space="preserve">
+                        <value>Exception found in iterating page method %1 in workspace %2</value>
+	<comment>Message logged when exception is encountered while iterating get methods</comment></data><data name="UncaughtExceptioniterateActionMethods" xml:space="preserve">
+                        <value>Exception found in iterating action method %1 in workspace %2</value>
+	<comment>Message logged when exception is encountered while iterating put methods</comment></data><data name="SamePageAlreadyExists" xml:space="preserve">
+                        <value>Page %1 already exists in workspace %2</value>
+	<comment>Message logged when page already exists in workspace</comment></data><data name="SameActionAlreadyExists" xml:space="preserve">
+                        <value>Action %1 already exists in workspace %2</value>
+	<comment>Message logged when action already exists in workspace</comment></data><data name="FailedInAppCallClientMessage" xml:space="preserve">
+                        <value>Error occured in application code</value>
+	<comment>Message shown in mobile client if error occured while calling application code</comment></data><data name="FailedInAppCallInfoLogMessage" xml:space="preserve">
+                        <value>Exception while calling %1 method of workspace %2</value>
+	<comment>Message logged when exception occured while calling application code</comment></data></root>

@@ -1,0 +1,80 @@
+Connector=Connector
+ ;connector
+Activity=Activity
+ ;activity
+ConnectorName=Name
+ ;connector name
+ConnectorTransportType=Transport type
+ ;connector transport type
+EntityName=Entity name
+ ;activity entity name
+ActivityDirection=Direction
+ ;activity direction
+ConnectorDescription=Description
+ ;description
+Activities=Integration activities
+ ;list of activities
+ActivateActivity=Activate
+ ;activate an activity
+DeactivateActivity=Deactivate
+ ;deactivate an activity
+Connectors=Connectors
+ ;list of connectors
+IntegrationActivityActive=Active
+ ;active
+IntegrationActivityInactive=Inactive
+ ;inactive
+IntegrationActivityEditFilterQuery=Apply filter
+ ;Edits the query used to filter results.
+XslTransforms=Xsl transforms
+ ;Transforms list
+XslTransformStage=Transform order
+ ;Ordering of transforms
+IntegrationActivityEditXslTransform=Apply xsl transforms
+ ;Edits the xsl transforms
+IntegrationActivityEditRecurrence=Recurrence
+ ;Edits the recurrence of the activty
+IntegrationActivityRuntimeMessageCount=Message count
+ ;The number of messages in the Activity Runtime details table.
+ActivityName=Name
+ ;Activity name
+IntegrationActivityRuntimeLastRunDate=Last run date
+ ;Last Run Date
+IntegrationActivityRuntimeMonitoringDetailsFormCaption=Connector logs
+ ;The caption of the form
+IntegrationConnectorRuntimeMonitoringButton=View logs
+ ;View activity monitoring for the connector
+IntegrationActivityAckTimestamp=Acknowledgement received time
+ ;The time the ack was sent
+IntegrationMessageId=Message id
+ ;The message identifier the ack was sent for
+IntegrationAadClientId=Client id
+ ;The client identifier
+IntegrationAckHistoryTab=Messages received
+ ;The history of client acks to the connector service.
+IntegrationAckHistoryClearButton=Clear acknowledgement logs
+ ;The button title for clearing ack logs to the connector service.
+InitialActivity=Initial activity
+ ;Initial activity
+IntegrationExecutionHistoryTab=Execution history
+ ;The history of DIXF executions for an activity
+IntegrationExecutionHistoryStatus=Status
+ ;The status of the staging table
+IntegrationExecutionHistoryStartTime=Start time
+ ;The start time of the staging execution
+IntegrationExecutionHistoryEndTime=End time
+ ;The end time of the target
+IntegrationExecutionHistoryDuration=Duration (s)
+ ;The end - start time
+IntegrationExecutionHistoryNumberOfErrors=Errors
+ ;The total - completed
+IntegrationExecutionHistoryTotal=Total
+ ;The total
+IntegrationExecutionHistoryNumberCreated=Created
+ ;Created in target
+IntegrationExecutionHistoryNumberUpdated=Updated
+ ;Updated in target
+IntegrationConnectorSecurityTab=Security
+ ;Security tab
+DMFEntityXMLName=Public entity name
+ ;The public OData entity name to override expected XML row names

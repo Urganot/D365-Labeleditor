@@ -1,0 +1,152 @@
+NewLabel0=ラベル ファイル (作成日: 05/29/2014 13:27:47、ラベル ファイル ID: CurrencyExchange、言語: en-US)
+ ;Label file comment - see above label
+ConversionFactor=変換係数
+ ;Exchange rate conversion factor
+ExchangeValue=交換価値
+ ;Exchange rates exchange value
+TriangulationCurrencies=三通貨換算
+ ;New Comment
+AddRemoveExchangeRates=為替レートの追加または削除
+ ;New Comment
+TmpExchangeRatesDevDoc=TmpExchangeRates テーブルには、ExchangeRates フォームを表示する際に使用される一時レコードが格納されます。
+ ;New Comment
+ExchangeRateEntityDevDoc=The ExchangeRateEntity data entity is used to store exchange rates for a currency pair and a rate type.
+ ;{locked}Exchange rate entity developer documentation
+ExchangeRateStagingDevDoc=ExchangeRateEntity ステージング テーブルは、特定の通貨ペアとレート タイプの為替レートをインポートしたりエクスポートしたりする際に使用します。
+ ;Exchange rate stating table developer documentation
+InvalidExchangeRate=通貨ペア {0} と {1} の為替レートをインポートできませんでした。ご利用のプロバイダーに問い合わせるか、{2} の為替レートを手動で入力してください。
+ ;Exchange rate provider error in C#
+ISONameCubanConvertiblePeso=キューバ兌換ペソ
+ ;ISO Currency Name
+ISONameTurkmenistanNewManat=トルクメニスタン新マナト
+ ;ISO Currency Name
+ISONameZambianKwacha=ザンビア クワチャ
+ ;ISO Currency Name
+ExchangeRateImport=為替レートのインポート
+ ;Entity privilege level
+ExchangeRateExport=為替レートのエクスポート
+ ;Entity privilege level
+Supplemental_CurrencyImport=通貨のインポート
+ ;Entity privilege level
+Supplemental_CurrencyExport=通貨のエクスポート
+ ;Entity privilege level
+Currency_MessageDeveloper_UpdateCurrencyPair=Updating currency pair from currency %1 to currency %2
+ ;{Locked}
+Currency_MessageDeveloper_AddNewRate=Adding new exchange rate %1 valid from %2 from currency %3 to currency %4
+ ;{Locked}
+Currency_MessageDeveloper_ActivateProvider=Activating exchange rate provider {0}
+ ;{Locked}
+Currency_MessageDeveloper_SearchingAssembly=Searching for exchange rate providers in assembly {0}
+ ;{Locked}
+Currency_EntityEnum_EntityName=通貨
+ ;Entity name
+Currency_EntityDeveloper_CurrencyEntityDevDoc=The CurrencyEntity entity contains the currencies that are used in the application for foreign exchange. Exchange rates are created based on these currencies.
+ ;{Locked}
+Currency_EntityField_CurrencyCode=通貨コード
+ ;CurrencyEntity field name.
+Currency_EntityLabel_CurrencyRevaluationAccountLabel=通貨元帳の再評価勘定
+ ;Label for CurrencyRevaluationAccountEntity
+Currency_EntityDeveloper_CurrencyRevaluationAccountEntityDevDoc=The CurrencyRevaluationAccountEntity entity contains the gain loss account for individual currencies.
+ ;{Locked}
+Currency_EntityFieldLabel_RoundingRuleFixedAssetDepreciation=固定資産減価償却の丸めルール
+ ;CurrencyEntity field label
+Currency_EntityFieldLabel_RoundingMethodFixedAssetDepreciation=固定資産減価償却の丸め方法
+ ;CurrencyEntity field label
+Currency_EntityFieldLabel_RoundingMethodPrices=価格の丸め方法
+ ;CurrencyEntity field label
+Currency_EntityFieldLabel_RoundingMethodPurchaseOrders=発注書の丸め方法
+ ;CurrencyEntity field label
+Currency_EntityFieldLabel_RoundingMethodSalesOrders=販売注文の丸め方法
+ ;CurrencyEntity field label
+Currency_EntityFieldLabel_RoundingRulePrices=価格の丸めルール
+ ;CurrencyEntity field label
+Currency_EntityFieldLabel_RoundingRulePurchaseOrders=発注書の丸めルール
+ ;CurrencyEntity field label
+Currency_EntityFieldLabel_RoundingRuleSalesOrders=販売注文の丸めルール
+ ;CurrencyEntity field label
+EntitiesMaintainDuty=通貨エンティティ マスターの管理
+ ;Maintain Currency entities duty.
+EntitiesViewDuty=通貨エンティティ マスターの表示
+ ;View Currency entities duty.
+Currency_EntityMessage_RateMustBePositive=為替レートは 0 より大きくする必要があります
+ ;ExchangeRateEntity set based error message.
+Currency_EntityTitle=為替レート
+ ;ExchangeRateEntity title.
+Currency_EntityMessage_InvalidCurrency=指定した通貨は無効です
+ ;ExchangeRateEntity error.
+Currency_EntityMessage_MissingRate=交換日 %4 時点の通貨 %2 と %3 の間の為替レート タイプ %1 に対する為替レートが見つかりません。このエラーを解決するには、システム管理者に問い合わせてください。
+ ;Set based error message.
+Currency_EntityLabel_ExchangeRateTypeLabel=為替レート タイプ
+ ;Label for ExchangeRateTypeEntity
+Currency_EntityDeveloper_ExchangeRateTypeEntityDevDoc=The ExchangeRateTypeEntity entity stores exchange rate types that allow exchange rates to be categorized.
+ ;{Locked}
+Currency_ConfigField_ServiceTimeout=Service Timeout
+ ;{Locked}
+Currency_ConfigField_OandaName=Foreign Exchange Rates Powered by OANDA
+ ;{Locked}
+Currency_ConfigField_OandaAPIKey=API key
+ ;{Locked}
+Currency_FieldTitle_Value=値
+ ;Exchange rate provider configuration value field title.
+Currency_ConfigField_DecimalPlaces=Decimal places
+ ;{Locked}
+Currency_ConfigMessage_DecimalPlacesInvalid=小数点以下の桁数は 1 ～ 12 の範囲にする必要があります
+ ;Decimal places validation error for OANDA exchange rate provider.
+Currency_ConfigMessage_OANDAKeyRequired=このプロバイダーが為替レートをインポートするためには、OANDA からの有効なキーが必要です。
+ ;Warning message for the OANDA exchange rate provider.
+Currency_ConfigField_QuoteType=見積タイプ
+ ;Quote type for OANDA provider.
+Currency_ConfigEnum_QuoteTypeAverageBid=平均売値
+ ;Quote type average bid
+Currency_ConfigEnum_QuoteTypeAverageAsk=平均買値
+ ;Quote type average ask
+Currency_ConfigEnum_QuoteTypeMidpoint=中間値
+ ;Quote type midpoint
+Currency_ConfigEnum_QuoteTypeHighBid=売値高
+ ;Quote type high bid
+Currency_ConfigEnum_QuoteTypeHighAsk=買値高
+ ;Quote type high ask
+Currency_ConfigEnum_QuoteTypeLowBid=売値低
+ ;Quote type low bid
+Currency_ConfigEnum_QuoteTypeLowAsk=買値低
+ ;Quote type low ask
+Currency_ConfigEnum_QuoteTypePeriodAverageBid=期間平均売値
+ ;Quote type average over time period.
+Currency_ConfigEnum_QuoteTypePeriodAverageAsk=期間平均買値
+ ;Quote type average over time period.
+Currency_ConfigField_SingleRateForDateRange=日付範囲の単一レート
+ ;exchange rate provider configuration option.
+Currency_EntityLabel_CurrencyISOCode=ISO 通貨コード
+ ;CurrencyISOCodeEntity label.
+Currency_EntityDeveloper_CurrencyISOCodeEntityDevDoc=The CurrencyISOCodeEntity entity contains the list of ISO Currency Codes that are supported in the application as defined by the International Organization for Standardization.
+ ;{Locked}
+Currency_ModuleName=通貨
+ ;Displayed in upgrade.
+Currency_UpgradeStep=値フィールドを暗号化します。
+ ;Upgrade step.
+Currency_ParameterGroup=通貨
+ ;Field group caption for the SystemParameters form.
+Currency_TableFieldLabel_SystemParametersCurrencyCodeLabel=システム通貨
+ ;Label for the SystemCurrencyCode field on the SystemParameters table.
+Currency_TableFieldLabel_SystemParametersExchangeRateTypeLabel=システム為替レート タイプ
+ ;Label for the SystemExchangeRateType field on the SystemParameters table.
+ExchangeRateCurrencyPairCalculationRulesEntityMaintain=売上税エンティティの為替レート計算ルールの管理
+ ;Maintain privilege for ExchangeRateCurrencyPairCalculationRulesEntity
+ExchangeRateCurrencyPairCalculationRulesEntityView=売上税エンティティの為替レート計算ルールの表示
+ ;View privilege for ExchangeRateCurrencyPairCalculationRulesEntity
+Currency_Message_CurrencyRequiredForRounding=通貨は丸めに必要です。
+ ;Error from currency rounding API's
+Currency_Message_CurrencyRequiredForDecimals=通貨は小数点以下の桁数を取得するのに必要です。
+ ;Error from currency rounding API's
+Currency_Message_CurrencyRequiredForRoundingPrecision=通貨は丸め桁数を取得するのに必要です。
+ ;Error from currency rounding API's
+Currency_ConfigField_PreventImportOnNationalHoliday=国民の祝日にはインポートしない
+ ;Exchange rate provider configuration option.
+Currency_ConfigField_QuoteTypeLocked=Quote type
+ ;{Locked}
+Currency_Message_QuoteTypeMissing=為替レート プロバイダーのコンフィギュレーション キー見積タイプが見つかりませんでした。[値のリセット] をクリックし、[為替レート プロバイダーのコンフィギュレーション] ページで、[見積タイプ] の値を選択します。
+ ;Exchange rate provider configuration error
+Currency_Message_StartDateAlreadyExists=為替レートを追加できません。開始日は既に存在します。既に存在しない開始日を入力してください。
+ ;Exchange rate error message
+Currency_Monetary_unit_declensions=通貨単位の語形変化
+ ;Monetary unit declensions

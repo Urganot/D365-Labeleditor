@@ -1,0 +1,152 @@
+NewLabel0=Label files created on 05/29/2014 13:27:47 for label file Id CurrencyExchange and language en-US
+ ;Label file comment - see above label
+ConversionFactor=Conversion factor
+ ;Exchange rate conversion factor
+ExchangeValue=Exchange value
+ ;Exchange rates exchange value
+TriangulationCurrencies=Triangulation currencies
+ ;New Comment
+AddRemoveExchangeRates=Add or remove exchange rates
+ ;New Comment
+TmpExchangeRatesDevDoc=The TmpExchangeRates table holds temporary records used while displaying the ExchangeRates form.
+ ;New Comment
+ExchangeRateEntityDevDoc=The ExchangeRateEntity data entity is used to store exchange rates for a currency pair and a rate type.
+ ;{locked}Exchange rate entity developer documentation
+ExchangeRateStagingDevDoc=The ExchangeRateEntity staging table is used to import and export exchange rates for a currency pair and a rate type.
+ ;Exchange rate stating table developer documentation
+InvalidExchangeRate=The exchange rate for currency pair {0} and {1} could not be imported. Contact your provider for assistance or manually enter an exchange rate for {2}.
+ ;Exchange rate provider error in C#
+ISONameCubanConvertiblePeso=Cuban Convertible Peso
+ ;ISO Currency Name
+ISONameTurkmenistanNewManat=Turkmenistan New Manat
+ ;ISO Currency Name
+ISONameZambianKwacha=Zambian Kwacha
+ ;ISO Currency Name
+ExchangeRateImport=Import exchange rates
+ ;Entity privilege level
+ExchangeRateExport=Export exchange rates
+ ;Entity privilege level
+Supplemental_CurrencyImport=Import currencies
+ ;Entity privilege level
+Supplemental_CurrencyExport=Export currencies
+ ;Entity privilege level
+Currency_MessageDeveloper_UpdateCurrencyPair=Updating currency pair from currency %1 to currency %2
+ ;{Locked}
+Currency_MessageDeveloper_AddNewRate=Adding new exchange rate %1 valid from %2 from currency %3 to currency %4
+ ;{Locked}
+Currency_MessageDeveloper_ActivateProvider=Activating exchange rate provider {0}
+ ;{Locked}
+Currency_MessageDeveloper_SearchingAssembly=Searching for exchange rate providers in assembly {0}
+ ;{Locked}
+Currency_EntityEnum_EntityName=Currencies
+ ;Entity name
+Currency_EntityDeveloper_CurrencyEntityDevDoc=The CurrencyEntity entity contains the currencies that are used in the application for foreign exchange. Exchange rates are created based on these currencies.
+ ;{Locked}
+Currency_EntityField_CurrencyCode=Currency code
+ ;CurrencyEntity field name.
+Currency_EntityLabel_CurrencyRevaluationAccountLabel=Currency ledger revaluation account
+ ;Label for CurrencyRevaluationAccountEntity
+Currency_EntityDeveloper_CurrencyRevaluationAccountEntityDevDoc=The CurrencyRevaluationAccountEntity entity contains the gain loss account for individual currencies.
+ ;{Locked}
+Currency_EntityFieldLabel_RoundingRuleFixedAssetDepreciation=Fixed asset depreciation rounding rule
+ ;CurrencyEntity field label
+Currency_EntityFieldLabel_RoundingMethodFixedAssetDepreciation=Fixed asset depreciation rounding method
+ ;CurrencyEntity field label
+Currency_EntityFieldLabel_RoundingMethodPrices=Prices rounding method
+ ;CurrencyEntity field label
+Currency_EntityFieldLabel_RoundingMethodPurchaseOrders=Purchase orders rounding method
+ ;CurrencyEntity field label
+Currency_EntityFieldLabel_RoundingMethodSalesOrders=Sales orders rounding method
+ ;CurrencyEntity field label
+Currency_EntityFieldLabel_RoundingRulePrices=Prices rounding rule
+ ;CurrencyEntity field label
+Currency_EntityFieldLabel_RoundingRulePurchaseOrders=Purchase orders rounding rule
+ ;CurrencyEntity field label
+Currency_EntityFieldLabel_RoundingRuleSalesOrders=Sales orders rounding rule
+ ;CurrencyEntity field label
+EntitiesMaintainDuty=Maintain currency entities master
+ ;Maintain Currency entities duty.
+EntitiesViewDuty=View currency entities master
+ ;View Currency entities duty.
+Currency_EntityMessage_RateMustBePositive=The exchange rate must be greater than zero
+ ;ExchangeRateEntity set based error message.
+Currency_EntityTitle=Exchange rates
+ ;ExchangeRateEntity title.
+Currency_EntityMessage_InvalidCurrency=The specified currency is not valid
+ ;ExchangeRateEntity error.
+Currency_EntityMessage_MissingRate=An exchange rate cannot be found for exchange rate type %1 between currencies %2 and %3 on exchange date %4. To resolve this error, contact your system administrator.
+ ;Set based error message.
+Currency_EntityLabel_ExchangeRateTypeLabel=Exchange rate type
+ ;Label for ExchangeRateTypeEntity
+Currency_EntityDeveloper_ExchangeRateTypeEntityDevDoc=The ExchangeRateTypeEntity entity stores exchange rate types that allow exchange rates to be categorized.
+ ;{Locked}
+Currency_ConfigField_ServiceTimeout=Service Timeout
+ ;{Locked}
+Currency_ConfigField_OandaName=Foreign Exchange Rates Powered by OANDA
+ ;{Locked}
+Currency_ConfigField_OandaAPIKey=API key
+ ;{Locked}
+Currency_FieldTitle_Value=Value
+ ;Exchange rate provider configuration value field title.
+Currency_ConfigField_DecimalPlaces=Decimal places
+ ;{Locked}
+Currency_ConfigMessage_DecimalPlacesInvalid=The number of decimal places must be between 1 and 12
+ ;Decimal places validation error for OANDA exchange rate provider.
+Currency_ConfigMessage_OANDAKeyRequired=A valid key from OANDA is required for this provider to import exchange rates. 
+ ;Warning message for the OANDA exchange rate provider.
+Currency_ConfigField_QuoteType=Quote type
+ ;Quote type for OANDA provider.
+Currency_ConfigEnum_QuoteTypeAverageBid=Average bid
+ ;Quote type average bid
+Currency_ConfigEnum_QuoteTypeAverageAsk=Average ask
+ ;Quote type average ask
+Currency_ConfigEnum_QuoteTypeMidpoint=Midpoint
+ ;Quote type midpoint
+Currency_ConfigEnum_QuoteTypeHighBid=High bid
+ ;Quote type high bid
+Currency_ConfigEnum_QuoteTypeHighAsk=High ask
+ ;Quote type high ask
+Currency_ConfigEnum_QuoteTypeLowBid=Low bid
+ ;Quote type low bid
+Currency_ConfigEnum_QuoteTypeLowAsk=Low ask
+ ;Quote type low ask
+Currency_ConfigEnum_QuoteTypePeriodAverageBid=Period average bid
+ ;Quote type average over time period.
+Currency_ConfigEnum_QuoteTypePeriodAverageAsk=Period average ask
+ ;Quote type average over time period.
+Currency_ConfigField_SingleRateForDateRange=Single rate for date range
+ ;exchange rate provider configuration option.
+Currency_EntityLabel_CurrencyISOCode=ISO currency codes
+ ;CurrencyISOCodeEntity label.
+Currency_EntityDeveloper_CurrencyISOCodeEntityDevDoc=The CurrencyISOCodeEntity entity contains the list of ISO Currency Codes that are supported in the application as defined by the International Organization for Standardization.
+ ;{Locked}
+Currency_ModuleName=Currency
+ ;Displayed in upgrade.
+Currency_UpgradeStep=Encrypt value field.
+ ;Upgrade step.
+Currency_ParameterGroup=Currency
+ ;Field group caption for the SystemParameters form.
+Currency_TableFieldLabel_SystemParametersCurrencyCodeLabel=System currency
+ ;Label for the SystemCurrencyCode field on the SystemParameters table.
+Currency_TableFieldLabel_SystemParametersExchangeRateTypeLabel=System exchange rate type
+ ;Label for the SystemExchangeRateType field on the SystemParameters table.
+ExchangeRateCurrencyPairCalculationRulesEntityMaintain=Maintain Exchange rate calculation rules for VAT entity
+ ;Maintain privilege for ExchangeRateCurrencyPairCalculationRulesEntity
+ExchangeRateCurrencyPairCalculationRulesEntityView=View Exchange rate calculation rules for VAT entity
+ ;View privilege for ExchangeRateCurrencyPairCalculationRulesEntity
+Currency_Message_CurrencyRequiredForRounding=A currency is required for rounding.
+ ;Error from currency rounding API's
+Currency_Message_CurrencyRequiredForDecimals=A currency is required to retrieve the number of decimals.
+ ;Error from currency rounding API's
+Currency_Message_CurrencyRequiredForRoundingPrecision=A currency is required to retrieve the rounding precision.
+ ;Error from currency rounding API's
+Currency_ConfigField_PreventImportOnNationalHoliday=Prevent import on national holiday
+ ;Exchange rate provider configuration option.
+Currency_ConfigField_QuoteTypeLocked=Quote type
+ ;{Locked}
+Currency_Message_QuoteTypeMissing=The exchange rate provider configuration key Quote type could not be found. Click Reset values and then select a Quote type value on the Configure exchange rate providers page.  
+ ;Exchange rate provider configuration error
+Currency_Message_StartDateAlreadyExists=Exchange rate cannot be added, the Start date already exists. Enter a Start date that does not already exist.
+ ;Exchange rate error message
+Currency_Monetary_unit_declensions=Monetary unit declensions
+ ;Monetary unit declensions

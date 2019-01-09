@@ -1,0 +1,74 @@
+NewLabel0=Label files created on 07/13/2015 10:13:02 for label file Id SysLcsCps and language en-US
+ ;Label file comment - see above label
+IssueSavingError=An error occured while submitting the issue, please try again later.
+ ;An error occured while calling Lifecycle Services to save the data input by the user.
+IssueSavingComplete=Thank you for submitting your issue. Your system administrator will contact you with the next steps.
+ ;The data input by the user was successfully saved, give the user a tracking id.
+LcsProjectNotConfiguredError=A Lifecycle Services  project  is not configured in Support Contact (System parameters > Help). Please contact your system administrator.
+ ;The Lifecycle Services settings have not been completed by an administrator in Support Contact section of Help setup.
+EntryFormGuidance=Create an issue for your support team to investigate. If necessary, they will submit the issue to Microsoft support.
+EntryFormIssueTitle=Issue
+EntryFormIssueDescription=Description
+EntryFormCriticalIssue=Is this issue stopping you from working?
+EntryFormWorkStoppage=Does this issue have the potential to create a company-wide work stoppage?
+EntryFormAllowEmailCollection=To submit your request, Microsoft must store your email address in Lifecycle Services. Your support team will use this address to contact you. Do you want to share your email address?
+EntryFormTitle=Contact support
+PrivacyLink=Microsoft Privacy Statement
+ ;Standard link to the privacy policy
+PrivacyStatement=Your privacy is important to us.
+ContactSupport=Contact your support team
+ ;SysLCSCPSIssueEntry menu item label.
+TaskRecording=Task recording
+ ;The task recording group label.
+UploadExisting=Upload
+ ;The browse button control label.
+RemoveSelectedTaskRecording=Do you want to remove the selected recording?
+ ;Confirmation message label before clearing the selected file.
+RemoveSelectedButtonText=Remove the selected task recording?
+ ;Button label which will be shown as help text when user mouse hoven on the button.
+LCSProject=LCS project
+ ;Label for the LCS project selection field.
+CPSTabText=Support contact
+ ;Label for the Cloud-powered support tab in system parameters form.
+InvalidTaskRecordingFile=The data in the file might be incorrectly formatted. Make sure you are using a Task recorder package (.axtr) or Task recorder file (.xml) that was downloaded from Task recorder, then try again.
+ ;Error message when the file is in corrupted format or wrong xml file is used as task recording file.
+CancelButtonText=Go back
+ ;Cancel button caption
+SubmitButtonText=Submit
+ ;Submit button caption
+ContactSupportDescription=By default, Contact your support is connected to Cloud-powered support for the LCS project associated with your environment, and stores all filed issues there.
+ ;Description
+TaskRecordingFileSizeLimit=You can upload a task recording file up to 4 MB in size.
+ ;Task recording file size limit.
+LCSLibrary=Library
+ ;Column header for the library names
+LCSLibraryId=Library ID
+ ;Column header for the library ids
+AttachmentFileSizeLimit=You can upload a file up to 4 MB in size.
+ ;Attachment file size limit.
+FileAttachment=File attachment
+ ;The file attachment group label
+ErrorDuringFileUpload=An error occurred while uploading the file
+ ;Unknown error while uploading a task recording or attachment
+RemoveSelectedAttachment=Do you want to remove the selected attachment?
+ ;Confirmation message label before clearing the selected file.
+IssueOccuredDateTime=Time when issue occurred
+ ;Rough estimate of the time when the issue occured
+ContinueButtonText=Create
+ ;Button text for contining with issue submittion workflow after searching for an existing issue.
+IssueSearchNoResultsText=No results found
+ ;Label for when there are no results after doing an issue search.
+IssueListHelpText=Search for an existing fix before creating a new issue for your support team.
+ ;Header text on issue list form.
+IssueSearchLoadingResults=Loading results
+ ;Text to be displayed while loading existing solutions from issue search.
+IssueSearchAdvancedSearch=Advanced search
+ ;Link text for opening the issue search results page.
+IssueSearchFormTitle=Support
+ ;Title for the support/issue search form.
+Publisher=Publisher: %1
+ ;%1 should be replaced with the publisher name.
+ErrorLoadingIssueSearchResults=An error occured while loading results, please try again later.
+ ;Friendly error message for an issue while loading issue search results.
+CloseButtonText=Close
+ ;Button text for closing the search for existing issue form.

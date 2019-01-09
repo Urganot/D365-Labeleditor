@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Diagnostics
+  GenerationTime="2018-09-23T23:37:36.1142277-07:00">
+  <Items>
+    <Diagnostic>
+      <DiagnosticType>Generation</DiagnosticType>
+      <Severity>Informational</Severity>
+      <Path>dynamics://View/CurrencyISOCodeEntity</Path>
+      <ElementType>View</ElementType>
+      <Moniker>IsRuntimeServicesMode</Moniker>
+      <Line>0</Line>
+      <Column>0</Column>
+      <Message>Is Runtime Services mode: False</Message>
+    </Diagnostic>
+    <Diagnostic>
+      <DiagnosticType>TaskListItem</DiagnosticType>
+      <Severity>Informational</Severity>
+      <Path>dynamics://Class/ExchangeRateProviderCBRF_RU/Method/getExchangeRates</Path>
+      <ElementType>Class Method</ElementType>
+      <Moniker>TaskListItem</Moniker>
+      <Line>99</Line>
+      <Column>9</Column>
+      <EndLine>99</EndLine>
+      <EndColumn>49</EndColumn>
+      <Message>TODO : Bug opened by kewilli #3352427</Message>
+    </Diagnostic>
+    <Diagnostic>
+      <DiagnosticType>ExternalReference</DiagnosticType>
+      <Severity>Warning</Severity>
+      <Path>dynamics://Reference/Microsoft.Dynamics.Framework.Metadata.Ax</Path>
+      <Moniker>AssemblyFileNotFound</Moniker>
+      <Message>Assembly 'Microsoft.Dynamics.Framework.BusinessConnector, Version=6.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35' failed to load because it was not found.</Message>
+    </Diagnostic>
+    <Diagnostic>
+      <DiagnosticType>ExternalReference</DiagnosticType>
+      <Severity>Warning</Severity>
+      <Path>dynamics://Reference/Microsoft.OData.Edm</Path>
+      <Moniker>AssemblyFileNotFound</Moniker>
+      <Message>Assembly 'System.Xml, Version=2.0.5.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e' failed to load because it was not found.</Message>
+    </Diagnostic>
+    <Diagnostic>
+      <DiagnosticType>Compile</DiagnosticType>
+      <Severity>Warning</Severity>
+      <Path>dynamics://Class/RNumDateInWordConverter/Method/languageExistsInSystem</Path>
+      <ElementType>Class Method</ElementType>
+      <Moniker>ObsoleteEntityUsageWithReason</Moniker>
+      <Line>595</Line>
+      <Column>30</Column>
+      <EndLine>595</EndLine>
+      <EndColumn>56</EndColumn>
+      <Message>'languageCount' is obsolete: ''The languageCount and index2languageID methods are obsolete. Please .Net APIs to iterate through supported languages. Ax list consists of System.Globalization.CultureTypes.AllCultures except InvariantCulture.''.</Message>
+    </Diagnostic>
+    <Diagnostic>
+      <DiagnosticType>Compile</DiagnosticType>
+      <Severity>Warning</Severity>
+      <Path>dynamics://Class/RNumDateInWordConverter/Method/languageExistsInSystem</Path>
+      <ElementType>Class Method</ElementType>
+      <Moniker>ObsoleteEntityUsageWithReason</Moniker>
+      <Line>597</Line>
+      <Column>17</Column>
+      <EndLine>597</EndLine>
+      <EndColumn>47</EndColumn>
+      <Message>'index2languageID' is obsolete: ''The languageCount and index2languageID methods are obsolete. Please .Net APIs to iterate through supported languages. Ax list consists of System.Globalization.CultureTypes.AllCultures except InvariantCulture.''.</Message>
+    </Diagnostic>
+    <Diagnostic>
+      <DiagnosticType>Compile</DiagnosticType>
+      <Severity>Warning</Severity>
+      <Path>dynamics://Class/RNumDateInWordConverter/Method/numeralsToTxtGlobal</Path>
+      <ElementType>Class Method</ElementType>
+      <Moniker>IntegerDivAndModLosePrecision</Moniker>
+      <Line>618</Line>
+      <Column>32</Column>
+      <EndLine>618</EndLine>
+      <EndColumn>71</EndColumn>
+      <Message>The integer division and modulo operators lose precision with operands other than integers.</Message>
+    </Diagnostic>
+    <Diagnostic>
+      <DiagnosticType>Compile</DiagnosticType>
+      <Severity>Warning</Severity>
+      <Path>dynamics://Class/RNumDateInWordConverter/Method/numeralsToTxtGlobal</Path>
+      <ElementType>Class Method</ElementType>
+      <Moniker>TypeConversionLosesRangeAndPrecision</Moniker>
+      <Line>618</Line>
+      <Column>9</Column>
+      <EndLine>618</EndLine>
+      <EndColumn>72</EndColumn>
+      <Message>The type conversion from 'real' to 'int' loses range and precision.</Message>
+    </Diagnostic>
+    <Diagnostic>
+      <DiagnosticType>Compile</DiagnosticType>
+      <Severity>Warning</Severity>
+      <Path>dynamics://Class/RNumDateInWordConverter/Method/numeralsToTxtGlobal/MethodVariable/checkPower</Path>
+      <ElementType>Class Method LocalFunction</ElementType>
+      <Moniker>TypeConversionLosesPrecision</Moniker>
+      <Line>644</Line>
+      <Column>17</Column>
+      <EndLine>644</EndLine>
+      <EndColumn>46</EndColumn>
+      <Message>The type conversion from 'System.Double' to 'int64' loses precision.</Message>
+    </Diagnostic>
+    <Diagnostic>
+      <DiagnosticType>Compile</DiagnosticType>
+      <Severity>Warning</Severity>
+      <Path>dynamics://Class/RNumDateInWordConverter/Method/numeralsToTxtGlobal</Path>
+      <ElementType>Class Method</ElementType>
+      <Moniker>TypeConversionLosesPrecision</Moniker>
+      <Line>737</Line>
+      <Column>13</Column>
+      <EndLine>737</EndLine>
+      <EndColumn>41</EndColumn>
+      <Message>The type conversion from 'System.Double' to 'int64' loses precision.</Message>
+    </Diagnostic>
+    <Diagnostic>
+      <DiagnosticType>Metadata</DiagnosticType>
+      <Severity>Warning</Severity>
+      <Path>AxDataEntityViewExtension/SystemParametersEntity.EntityExtension/Fields/ChartOfAccountsDelimiter/DataField</Path>
+      <Moniker>ReferencedObjectIsObsolete</Moniker>
+      <Message>Referenced object 'ChartOfAccountsDelimiter' is marked as obsolete. </Message>
+    </Diagnostic>
+  </Items>
+  <Aliases />
+</Diagnostics>

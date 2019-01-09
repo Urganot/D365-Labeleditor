@@ -1,0 +1,50 @@
+CurrencyEuroDenomination_CurrencyCode=要命名为三边转换币种的币种代码。
+ ;Description text for the CurrencyCode control on the CurrencyEuroDenomination form
+Currency_CurrencyCode=所选币种的唯一标识符。此代码最多包含三个字符。例如，USD 是 美元，EUR 是欧元，CAD 是加拿大元。
+ ;Description text for the CurrencyCode control on the Currency form
+Currency_GridCurrencyName=所选币种的名称。此名称将与币种代码一同打印在支票和其他单据上。
+ ;Description text for the GridCurrencyName control on the Currency form
+Currency_CurrencyName=所选币种的名称。此名称将与币种代码一同打印在支票和其他单据上。
+ ;Description text for the CurrencyName control on the Currency form
+Currency_Symbol=所选币种的符号。符号常用在报表上。
+ ;Description text for the Symbol control on the Currency form
+Currency_GridCurrency=由国际标准组织 (International Organization for Standardization, ISO) 定义的标准币种代码。
+ ;Description text for the GridCurrency control on the Currency form
+Currency_ISOCode=由国际标准组织 (International Organization for Standardization, ISO) 定义的标准币种代码。
+ ;Description text for the ISOCode control on the Currency form
+Currency_IsEuro=其他币种（定义为票面金额币种）通过其进行三边转换的币种。
+ ;Description text for the IsEuro control on the Currency form
+Currency_Group_OnLineConversionTool=选中此选项可以在联机数字转换工具的计算中包括所选币种。该工具会自动将以记帐币种显示的在交易记录行输入的金额转换为以所选币种显示的金额。以所选币种显示的转换金额在数据库中不保存。
+ ;Description text for the Group_OnLineConversionTool control on the Currency form
+Currency_Group_CurrencyPrefix=如果选中“转换”选项，则输入在所选币种金额之前打印输出的文本。
+ ;Description text for the Group_CurrencyPrefix control on the Currency form
+Currency_Group_CurrencySuffix=如果选中“转换”选项，则输入在所选币种金额之后打印输出的文本。
+ ;Description text for the Group_CurrencySuffix control on the Currency form
+Currency_GeneralRoundingPrecision=输入舍入金额的单位。例如，您可以输入 0.10 或 1.00。
+ ;Description text for the GeneralRoundingPrecision control on the Currency form
+Currency_RoundOffSalesOrder=输入用于销售订单、采购订单或价格的舍入金额的单位。
+ ;Description text for the RoundOffSalesOrder control on the Currency form
+Currency_RoundOffPurch=输入用于销售订单、采购订单或价格的舍入金额的单位。
+ ;Description text for the RoundOffPurch control on the Currency form
+Currency_Price_RoundOffPrice=输入用于销售订单、采购订单或价格的舍入金额的单位。
+ ;Description text for the Price_RoundOffPrice control on the Currency form
+Currency_AssetDep_JP_RoundOffAssetDep_JP=输入用于销售订单、采购订单或价格的舍入金额的单位。
+ ;Description text for the AssetDep_JP_RoundOffAssetDep_JP control on the Currency form
+Currency_RoundOffTypeSalesOrder=选择适用于“舍入规则”字段中输入的化整单位的右侧数字的化整形式。选择“标准”向上舍入数字 5 或 5 以上的数字，向下舍入 5 以下的数字。选择“舍尾”向下舍入所有数字。选择“进位”向上舍入所有数字。
+ ;Description text for the RoundOffTypeSalesOrder control on the Currency form
+Currency_RoundOffTypePurch=选择适用于“舍入规则”字段中输入的化整单位的右侧数字的化整形式。选择“标准”向上舍入数字 5 或 5 以上的数字，向下舍入 5 以下的数字。选择“舍尾”向下舍入所有数字。选择“进位”向上舍入所有数字。
+ ;Description text for the RoundOffTypePurch control on the Currency form
+Currency_Price_RoundOffTypePrice=选择适用于“舍入规则”字段中输入的化整单位的右侧数字的化整形式。选择“标准”向上舍入数字 5 或 5 以上的数字，向下舍入 5 以下的数字。选择“舍尾”向下舍入所有数字。选择“进位”向上舍入所有数字。
+ ;Description text for the Price_RoundOffTypePrice control on the Currency form
+Currency_AssetDep_JP_RoundOffTypeAssetDep_JP=选择适用于“舍入规则”字段中输入的化整单位的右侧数字的化整形式。选择“标准”向上舍入数字 5 或 5 以上的数字，向下舍入 5 以下的数字。选择“舍尾”向下舍入所有数字。选择“进位”向上舍入所有数字。
+ ;Description text for the AssetDep_JP_RoundOffTypeAssetDep_JP control on the Currency form
+ExchangeRateProviderConfiguration_ExchangeRateProviderConfiguration_Name=汇率提供方的名称。
+ ;Description text for the ExchangeRateProviderConfiguration_Name control on the ExchangeRateProviderConfiguration form
+ExchangeRateProviderConfiguration_ExchangeRateProviderConfiguration_Name1=汇率提供方的名称。
+ ;Description text for the ExchangeRateProviderConfiguration_Name1 control on the ExchangeRateProviderConfiguration form
+ExchangeRateProviderConfiguration_ExchangeRateProviderConfigurationDetails_Key=提供方所需的每条配置信息的唯一标识符。此信息为您通过单击“添加”按钮添加的每个汇率提供方自动添加。
+ ;Description text for the ExchangeRateProviderConfigurationDetails_Key control on the ExchangeRateProviderConfiguration form
+ExchangeRateProviderConfiguration_ExchangeRateProviderConfigurationDetails_Value=每个参数的信息。此信息为您通过单击“添加”按钮添加的每个汇率提供方添加。
+ ;Description text for the ExchangeRateProviderConfigurationDetails_Value control on the ExchangeRateProviderConfiguration form
+CurrencyNameDeclension_W_InsertAndBeforePenny_InsertAndBeforePenny=选择此选项可以打印单元与部件之间的连接。
+ ;Description text for the InsertAndBeforePenny_InsertAndBeforePenny control on the CurrencyNameDeclension_W form

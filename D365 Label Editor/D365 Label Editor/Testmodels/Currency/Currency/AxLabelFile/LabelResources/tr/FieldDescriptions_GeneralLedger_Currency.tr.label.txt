@@ -1,0 +1,50 @@
+CurrencyEuroDenomination_CurrencyCode=Üç taraflı kur çevrimi para birimini gösteren para birimi kodu.
+ ;Description text for the CurrencyCode control on the CurrencyEuroDenomination form
+Currency_CurrencyCode=Seçili para biriminin benzersiz tanımlayıcısı. Bu kod en fazla üç karakter içerebilir. Örneğin USD Amerika Birleşik Devletleri doları, EUR Avro, CAD Kanada dolarıdır.
+ ;Description text for the CurrencyCode control on the Currency form
+Currency_GridCurrencyName=Seçili para biriminin adı. Bu ad, para birimi koduyla birlikte çeklere ve diğer belgelere yazdırılır.
+ ;Description text for the GridCurrencyName control on the Currency form
+Currency_CurrencyName=Seçili para biriminin adı. Bu ad, para birimi koduyla birlikte çeklere ve diğer belgelere yazdırılır.
+ ;Description text for the CurrencyName control on the Currency form
+Currency_Symbol=Seçilen para biriminin simgesi. Simgeler genellikle raporlarda kullanılır.
+ ;Description text for the Symbol control on the Currency form
+Currency_GridCurrency=Uluslararası Standartlar Kuruluşu (ISO) tarafından tanımlanan standart para birimi kodu.
+ ;Description text for the GridCurrency control on the Currency form
+Currency_ISOCode=Uluslararası Standartlar Kuruluşu (ISO) tarafından tanımlanan standart para birimi kodu.
+ ;Description text for the ISOCode control on the Currency form
+Currency_IsEuro=Nominal para birimleri olarak tanımlanan diğer para birimlerinin üç taraflı kur çevrimlerinin yapıldığı para birimi.
+ ;Description text for the IsEuro control on the Currency form
+Currency_Group_OnLineConversionTool=Seçilen para birimini çevrimiçi sayısal dönüştürme aracının hesaplamalarına dahil etmek için bu seçeneği belirtin. Araç, hareket satırlarına muhasebe para birimi cinsinden girilen tutarları, seçili para birimindeki tutarlara otomatik olarak dönüştürür. Dönüştürülüp seçili para birimi cinsinden yapılan tutarlar veritabanına kaydedilmez.
+ ;Description text for the Group_OnLineConversionTool control on the Currency form
+Currency_Group_CurrencyPrefix=Dönüştürme seçeneği belirtildiyse, seçilen para birimi cinsindeki tutarın önüne yazdırılacak metni girin.
+ ;Description text for the Group_CurrencyPrefix control on the Currency form
+Currency_Group_CurrencySuffix=Dönüştürme seçeneği belirtildiyse, seçilen para birimi cinsindeki tutardan sonra yazdırılacak metni girin.
+ ;Description text for the Group_CurrencySuffix control on the Currency form
+Currency_GeneralRoundingPrecision=Tutarların yuvarlanacağı birimi girin. Örneğin, 0,10 veya 1,00 girebilirsiniz.
+ ;Description text for the GeneralRoundingPrecision control on the Currency form
+Currency_RoundOffSalesOrder=Satış siparişlerinde, satınalma siparişlerinde ve fiyatlarda tutarların yuvarlanacağı birimi girin.
+ ;Description text for the RoundOffSalesOrder control on the Currency form
+Currency_RoundOffPurch=Satış siparişlerinde, satınalma siparişlerinde ve fiyatlarda tutarların yuvarlanacağı birimi girin.
+ ;Description text for the RoundOffPurch control on the Currency form
+Currency_Price_RoundOffPrice=Satış siparişlerinde, satınalma siparişlerinde ve fiyatlarda tutarların yuvarlanacağı birimi girin.
+ ;Description text for the Price_RoundOffPrice control on the Currency form
+Currency_AssetDep_JP_RoundOffAssetDep_JP=Satış siparişlerinde, satınalma siparişlerinde ve fiyatlarda tutarların yuvarlanacağı birimi girin.
+ ;Description text for the AssetDep_JP_RoundOffAssetDep_JP control on the Currency form
+Currency_RoundOffTypeSalesOrder=Yuvarlama kuralı alanına girilen yuvarlama biriminin sağındaki rakam için geçerli olan yuvarlama kuralını seçin. 5 ve üzerindeki rakamları yukarıya, 5 ve altındaki rakamları aşağıya yuvarlamak için Normal'i seçin. Tüm rakamları aşağıya yuvarlamak için Aşağı yuvarlama'yı seçin. Tüm sayıları yukarıya yuvarlamak için Yukarı yuvarlama'yı seçin.
+ ;Description text for the RoundOffTypeSalesOrder control on the Currency form
+Currency_RoundOffTypePurch=Yuvarlama kuralı alanına girilen yuvarlama biriminin sağındaki rakam için geçerli olan yuvarlama kuralını seçin. 5 ve üzerindeki rakamları yukarıya, 5 ve altındaki rakamları aşağıya yuvarlamak için Normal'i seçin. Tüm rakamları aşağıya yuvarlamak için Aşağı yuvarlama'yı seçin. Tüm sayıları yukarıya yuvarlamak için Yukarı yuvarlama'yı seçin.
+ ;Description text for the RoundOffTypePurch control on the Currency form
+Currency_Price_RoundOffTypePrice=Yuvarlama kuralı alanına girilen yuvarlama biriminin sağındaki rakam için geçerli olan yuvarlama kuralını seçin. 5 ve üzerindeki rakamları yukarıya, 5 ve altındaki rakamları aşağıya yuvarlamak için Normal'i seçin. Tüm rakamları aşağıya yuvarlamak için Aşağı yuvarlama'yı seçin. Tüm sayıları yukarıya yuvarlamak için Yukarı yuvarlama'yı seçin.
+ ;Description text for the Price_RoundOffTypePrice control on the Currency form
+Currency_AssetDep_JP_RoundOffTypeAssetDep_JP=Yuvarlama kuralı alanına girilen yuvarlama biriminin sağındaki rakam için geçerli olan yuvarlama kuralını seçin. 5 ve üzerindeki rakamları yukarıya, 5 ve altındaki rakamları aşağıya yuvarlamak için Normal'i seçin. Tüm rakamları aşağıya yuvarlamak için Aşağı yuvarlama'yı seçin. Tüm sayıları yukarıya yuvarlamak için Yukarı yuvarlama'yı seçin.
+ ;Description text for the AssetDep_JP_RoundOffTypeAssetDep_JP control on the Currency form
+ExchangeRateProviderConfiguration_ExchangeRateProviderConfiguration_Name=Döviz kuru sağlayıcının adı.
+ ;Description text for the ExchangeRateProviderConfiguration_Name control on the ExchangeRateProviderConfiguration form
+ExchangeRateProviderConfiguration_ExchangeRateProviderConfiguration_Name1=Döviz kuru sağlayıcının adı.
+ ;Description text for the ExchangeRateProviderConfiguration_Name1 control on the ExchangeRateProviderConfiguration form
+ExchangeRateProviderConfiguration_ExchangeRateProviderConfigurationDetails_Key=Sağlayıcının istediği yapılandırma bilgilerinin her parçası için benzersiz kimlik. Ekle düğmesine tıklayarak her döviz kuru sağlayıcı ekleyişinizde bu bilgiler otomatik olarak eklenir.
+ ;Description text for the ExchangeRateProviderConfigurationDetails_Key control on the ExchangeRateProviderConfiguration form
+ExchangeRateProviderConfiguration_ExchangeRateProviderConfigurationDetails_Value=Her bir anahtar için bilgi. Ekle düğmesine tıklayarak her döviz kuru sağlayıcı ekleyişinizde bu bilgiler eklenir.
+ ;Description text for the ExchangeRateProviderConfigurationDetails_Value control on the ExchangeRateProviderConfiguration form
+CurrencyNameDeclension_W_InsertAndBeforePenny_InsertAndBeforePenny=Birimler ve bölümler arasındaki bağlantıyı yazdırmak için bu seçeneği belirtin.
+ ;Description text for the InsertAndBeforePenny_InsertAndBeforePenny control on the CurrencyNameDeclension_W form

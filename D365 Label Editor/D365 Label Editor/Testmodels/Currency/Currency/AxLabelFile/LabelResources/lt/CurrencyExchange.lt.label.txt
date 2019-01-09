@@ -1,0 +1,152 @@
+NewLabel0=Žymų failai, sukurti 2014-05-29 13:27:47, skirti žymos failui, kurio ID CurrencyExchange, ir kalbai en-US
+ ;Label file comment - see above label
+ConversionFactor=Konvertavimo koeficientas
+ ;Exchange rate conversion factor
+ExchangeValue=Valiutos kurso reikšmė
+ ;Exchange rates exchange value
+TriangulationCurrencies=Trianguliacijos valiutos
+ ;New Comment
+AddRemoveExchangeRates=Įtraukti arba šalinti valiutos kursus
+ ;New Comment
+TmpExchangeRatesDevDoc=Lentelėje TmpExchangeRates pateikiami laikinieji įrašai, naudojami rodant formą ExchangeRates.
+ ;New Comment
+ExchangeRateEntityDevDoc=The ExchangeRateEntity data entity is used to store exchange rates for a currency pair and a rate type.
+ ;{locked}Exchange rate entity developer documentation
+ExchangeRateStagingDevDoc=Paruošimo lentelė ExchangeRateEntity naudojama valiutų poros ir kurso tipo valiutos kursams importuoti ir eksportuoti.
+ ;Exchange rate stating table developer documentation
+InvalidExchangeRate=Nepavyko importuoti valiutų porai {0} ir {1} skirto valiutos kurso. Kreipkitės pagalbos į paslaugų teikėją arba rankiniu būdu įveskite {2} valiutos kursą.
+ ;Exchange rate provider error in C#
+ISONameCubanConvertiblePeso=Kubos konvertuojamasis pesas
+ ;ISO Currency Name
+ISONameTurkmenistanNewManat=Turkmėnistano naujasis manatas
+ ;ISO Currency Name
+ISONameZambianKwacha=Zambijos kvača
+ ;ISO Currency Name
+ExchangeRateImport=Importuoti valiutų kursus
+ ;Entity privilege level
+ExchangeRateExport=Eksportuoti valiutų kursus
+ ;Entity privilege level
+Supplemental_CurrencyImport=Importuoti valiutas
+ ;Entity privilege level
+Supplemental_CurrencyExport=Eksportuoti valiutas
+ ;Entity privilege level
+Currency_MessageDeveloper_UpdateCurrencyPair=Updating currency pair from currency %1 to currency %2
+ ;{Locked}
+Currency_MessageDeveloper_AddNewRate=Adding new exchange rate %1 valid from %2 from currency %3 to currency %4
+ ;{Locked}
+Currency_MessageDeveloper_ActivateProvider=Activating exchange rate provider {0}
+ ;{Locked}
+Currency_MessageDeveloper_SearchingAssembly=Searching for exchange rate providers in assembly {0}
+ ;{Locked}
+Currency_EntityEnum_EntityName=Valiutos
+ ;Entity name
+Currency_EntityDeveloper_CurrencyEntityDevDoc=The CurrencyEntity entity contains the currencies that are used in the application for foreign exchange. Exchange rates are created based on these currencies.
+ ;{Locked}
+Currency_EntityField_CurrencyCode=Valiutos kodas
+ ;CurrencyEntity field name.
+Currency_EntityLabel_CurrencyRevaluationAccountLabel=Valiutos didžiosios knygos perkainojimo sąskaita
+ ;Label for CurrencyRevaluationAccountEntity
+Currency_EntityDeveloper_CurrencyRevaluationAccountEntityDevDoc=The CurrencyRevaluationAccountEntity entity contains the gain loss account for individual currencies.
+ ;{Locked}
+Currency_EntityFieldLabel_RoundingRuleFixedAssetDepreciation=Ilgalaikio turto nusidėvėjimo apvalinimo taisyklė
+ ;CurrencyEntity field label
+Currency_EntityFieldLabel_RoundingMethodFixedAssetDepreciation=Ilgalaikio turto nusidėvėjimo apvalinimo metodas
+ ;CurrencyEntity field label
+Currency_EntityFieldLabel_RoundingMethodPrices=Kainų apvalinimo metodas
+ ;CurrencyEntity field label
+Currency_EntityFieldLabel_RoundingMethodPurchaseOrders=Pirkimo užsakymų apvalinimo metodas
+ ;CurrencyEntity field label
+Currency_EntityFieldLabel_RoundingMethodSalesOrders=Pardavimo užsakymų apvalinimo metodas
+ ;CurrencyEntity field label
+Currency_EntityFieldLabel_RoundingRulePrices=Kainų apvalinimo taisyklė
+ ;CurrencyEntity field label
+Currency_EntityFieldLabel_RoundingRulePurchaseOrders=Pirkimo užsakymų apvalinimo taisyklė
+ ;CurrencyEntity field label
+Currency_EntityFieldLabel_RoundingRuleSalesOrders=Pardavimo užsakymų apvalinimo taisyklė
+ ;CurrencyEntity field label
+EntitiesMaintainDuty=Prižiūrėti pagrindinius valiutų objektus
+ ;Maintain Currency entities duty.
+EntitiesViewDuty=Peržiūrėti pagrindinius valiutų objektus
+ ;View Currency entities duty.
+Currency_EntityMessage_RateMustBePositive=Valiutos kursas turi būti didesnis už nulį
+ ;ExchangeRateEntity set based error message.
+Currency_EntityTitle=Valiutos kursai
+ ;ExchangeRateEntity title.
+Currency_EntityMessage_InvalidCurrency=Nurodyta valiuta netinkama
+ ;ExchangeRateEntity error.
+Currency_EntityMessage_MissingRate=Nepavyksta rasti valiutų %2 ir %3 kurso tipo %1 naudojant keitimo datą %4. Norėdami ištaisyti šią klaidą, kreipkitės į savo sistemos administratorių.
+ ;Set based error message.
+Currency_EntityLabel_ExchangeRateTypeLabel=Valiutos kurso tipas
+ ;Label for ExchangeRateTypeEntity
+Currency_EntityDeveloper_ExchangeRateTypeEntityDevDoc=The ExchangeRateTypeEntity entity stores exchange rate types that allow exchange rates to be categorized.
+ ;{Locked}
+Currency_ConfigField_ServiceTimeout=Service Timeout
+ ;{Locked}
+Currency_ConfigField_OandaName=Foreign Exchange Rates Powered by OANDA
+ ;{Locked}
+Currency_ConfigField_OandaAPIKey=API key
+ ;{Locked}
+Currency_FieldTitle_Value=Vertė
+ ;Exchange rate provider configuration value field title.
+Currency_ConfigField_DecimalPlaces=Decimal places
+ ;{Locked}
+Currency_ConfigMessage_DecimalPlacesInvalid=Dešimtainių skilčių skaičius turi būti nuo 1 iki 12
+ ;Decimal places validation error for OANDA exchange rate provider.
+Currency_ConfigMessage_OANDAKeyRequired=Šiam teikėjui reikia galiojančio rakto iš OANDA, kad būtų galima importuoti valiutų kursus. 
+ ;Warning message for the OANDA exchange rate provider.
+Currency_ConfigField_QuoteType=Pasiūlymo tipas
+ ;Quote type for OANDA provider.
+Currency_ConfigEnum_QuoteTypeAverageBid=Vidutinė pardavimo kaina
+ ;Quote type average bid
+Currency_ConfigEnum_QuoteTypeAverageAsk=Vidutinė pirkimo kaina
+ ;Quote type average ask
+Currency_ConfigEnum_QuoteTypeMidpoint=Vidurio taškas
+ ;Quote type midpoint
+Currency_ConfigEnum_QuoteTypeHighBid=Aukšta pardavimo kaina
+ ;Quote type high bid
+Currency_ConfigEnum_QuoteTypeHighAsk=Aukšta pirkimo kaina
+ ;Quote type high ask
+Currency_ConfigEnum_QuoteTypeLowBid=Žema pardavimo kaina
+ ;Quote type low bid
+Currency_ConfigEnum_QuoteTypeLowAsk=Žema pirkimo kaina
+ ;Quote type low ask
+Currency_ConfigEnum_QuoteTypePeriodAverageBid=Laikotarpio pardavimo kainos vidurkis
+ ;Quote type average over time period.
+Currency_ConfigEnum_QuoteTypePeriodAverageAsk=Laikotarpio pirkimo kainos vidurkis
+ ;Quote type average over time period.
+Currency_ConfigField_SingleRateForDateRange=Vienas kursas, taikomas datos diapazonui
+ ;exchange rate provider configuration option.
+Currency_EntityLabel_CurrencyISOCode=ISO valiutų kodai
+ ;CurrencyISOCodeEntity label.
+Currency_EntityDeveloper_CurrencyISOCodeEntityDevDoc=The CurrencyISOCodeEntity entity contains the list of ISO Currency Codes that are supported in the application as defined by the International Organization for Standardization.
+ ;{Locked}
+Currency_ModuleName=Valiuta
+ ;Displayed in upgrade.
+Currency_UpgradeStep=Užšifruoti vertės lauką.
+ ;Upgrade step.
+Currency_ParameterGroup=Valiuta
+ ;Field group caption for the SystemParameters form.
+Currency_TableFieldLabel_SystemParametersCurrencyCodeLabel=Sistemos valiuta
+ ;Label for the SystemCurrencyCode field on the SystemParameters table.
+Currency_TableFieldLabel_SystemParametersExchangeRateTypeLabel=Sistemos valiutos kurso tipas
+ ;Label for the SystemExchangeRateType field on the SystemParameters table.
+ExchangeRateCurrencyPairCalculationRulesEntityMaintain=Tvarkyti PVM objekto valiutos kurso apskaičiavimo taisykles
+ ;Maintain privilege for ExchangeRateCurrencyPairCalculationRulesEntity
+ExchangeRateCurrencyPairCalculationRulesEntityView=Peržiūrėti PVM objekto valiutos kurso apskaičiavimo taisykles
+ ;View privilege for ExchangeRateCurrencyPairCalculationRulesEntity
+Currency_Message_CurrencyRequiredForRounding=Norint apvalinti būtina valiuta.
+ ;Error from currency rounding API's
+Currency_Message_CurrencyRequiredForDecimals=Reikia valiutos norint nuskaityti dešimtainių dalių skaičių.
+ ;Error from currency rounding API's
+Currency_Message_CurrencyRequiredForRoundingPrecision=Reikia valiutos norint nuskaityti apvalinimo tikslumą.
+ ;Error from currency rounding API's
+Currency_ConfigField_PreventImportOnNationalHoliday=Neleisti importuoti nacionalinės šventės metu
+ ;Exchange rate provider configuration option.
+Currency_ConfigField_QuoteTypeLocked=Quote type
+ ;{Locked}
+Currency_Message_QuoteTypeMissing=Nerastas valiutų kursų teikėjo konfigūracijos rakto pasiūlymo tipas. Spustelėkite Iš naujo nustatyti vertes ir valiutų kursų teikėjų konfigūracijos puslapyje pasirinkite pasiūlymo tipo vertę.
+ ;Exchange rate provider configuration error
+Currency_Message_StartDateAlreadyExists=Valiutos kurso įtraukti negalima, pradžios data jau yra. Įveskite pradžios datą, kurios dar nėra.
+ ;Exchange rate error message
+Currency_Monetary_unit_declensions=Piniginio vieneto linksniavimas
+ ;Monetary unit declensions

@@ -1,0 +1,71 @@
+OpenFormExpectedTime=Open form expected total time < {0} ms
+UserActionExpectedTime=User action expected total time < {0} ms
+ ;New Comment
+UnitFormat={0}{1}
+ ;New Comment
+AttributeWithUnit={0}: {1}{2}
+ ;New Comment
+ms=ms
+ ;New Comment
+s=s
+ ;New Comment
+KB={0} KB
+ ;New Comment
+PreviewTitle=Performance
+ ;New Comment
+ServerTime=Server
+ ;New Comment
+DownloadSize=Download size
+ ;New Comment
+TotalTime=Total time
+ ;New Comment
+TotalClient=Total client (ms)
+ ;New Comment
+TotalServer=Total server (ms)
+ ;New Comment
+RenderTime=Client
+ ;New Comment
+ProvideFeedback=Provide feedback
+ ;New Comment
+ServerCallsTitle=Server calls
+ ;New Comment
+ServerInteraction=Interaction
+ ;New Comment
+ServerDuration=Duration
+ ;New Comment
+ServerQueryCount=Query count
+ ;New Comment
+ServerQueryDuration=Query time (ms)
+ ;New Comment
+ActivityId=Activity ID
+ ;New Comment
+SessionId=Session ID
+ ;New Comment
+BrowserSessionActivityID=Session ID:
+ ;New Comment
+BrowserInteractionTimestamp=Search timestamp: {0}
+ ;New Comment
+InteractionNumber=Interaction number
+ ;New Comment
+TotalServerTime=Total server time
+ ;New Comment
+MillisecondsAbbreviation=ms
+ ;New Comment
+ServerPerformanceCounters=Server performance counters
+ ;New Comment
+Action=Action:
+ ;New Comment
+ClientAction=Client
+ ;New Comment
+ServerAction=Server
+ ;New Comment
+ServerActionLong={0} (Server)
+ ;New Comment
+History=History
+ ;New Comment
+Details=Performance details
+ ;New Comment
+Back=Back
+ ;New Comment
+Counters=Counters
+ ;New Comment

@@ -1,0 +1,132 @@
+NewLabel0=Label files created on 04/07/2014 12:17:20 for label file Id SysTest and language en-US
+ ;Label file comment - see above label
+SysTestDataset_TableName=Datasets
+ ;SysTestDataset - Table Name
+SysTestDataset_TableDescription=The SysTestDataset table contains the names of the datasets imported to the system.
+ ;SysTestDataset - Table Documentation
+SysTestDatasetId_Label=Dataset
+ ;SysTestDatasetId - EDT Label
+SysTestDatasetId_HelpText=The ID of a dataset.
+ ;SysTestDatasetId - EDT Help Text
+SysTestDatasetPartition_Label=Dataset partitions
+ ;SysTestDatasetPartition - Table Name
+SysTestDatasetPartition_TableDescription=The SysTestDatasetPartition table contains the relationship between datasets and partitions.
+ ;SysTestDatasetPartition - Table Documentation
+Error_TestableNotExists=There is no class with the name %1. If it's a recently created class make sure it was built.
+ ;%1 - Class name; Error shown when the testable class specified is not found in the system.
+Error_MultipleDatasetAttributes=More than one dataset dependency is specified. Test can't execute.
+ ;Error shown when multiple dataset dependencies are speciried in the test case.
+Error_MissingNumberSeqGenerator=Can't find a class extending the NumberSeqApplicationModule class that can generate data types for the module %1.
+ ;%1 - NumberSeqModule name; Error shown when the no class is found that can generate types for the specified number sequence module.
+SysTestDatasetName_Label=Dataset Name
+ ;SysTestDatasetName - EDT Label
+SysTestDatasetName_HelpText=The name of the dataset.
+ ;SysTestDatasetName - EDT Help Text
+Error_DatasetNotFound=The specified dataset %1 could not be found. Test can't execute.
+ ;Error shown when a test depends on a dataset that does not exist.
+SysTestPartition_Label=Test Partitions
+ ;SysTestPartitions - Table Label
+SysTestPartition_DevDoc=The SysTestPartition table contains references to partitions created for the execution of Xpp tests.
+ ;SysTestPartitions - Table Developer Documentation
+SysTestGranularity_Unit=Unit test
+ ;Name for test that are of granularity 'Unit'
+SysTestGranularity_Component=Component test
+ ;Name for test that are of granularity 'Component'
+SysTestGranularity_Integration=Integration test
+ ;Name for test that are of granularity 'Integration'
+SysTestGranularity_BusinessCycle=Business cycle test
+ ;Name for test that are of granularity 'BusinessCycle'
+Error_WaitForAsyncTasks=An error occurred while waiting for the async task(s) to complete. See the internal error message for details.
+ ;Error shown when the WaitAll API failes while waiting on async tasks that execute tests.
+SysTestBatch_FailuresGroupDescription=Re-executed Tests
+ ;The description for the group of tests that failed during the multi-threaded execution.
+SysTestBatch_SingleThreadedDescription=Single Threaded Tests
+ ;The description for the group of tests that need to be run in single thread mode.
+SysTestBatch_HeaderCaption=Test fixture execution: %1
+ ;The caption of the batch job that executes tests in parallel.
+SysTestBatch_TaskDescription=Unit tests: Group %
+ ;The description for the batch task that executes tests in parallel.
+SysTest_ResultsMainSuiteName=AX Test Suite
+ ;The name of the main suite for the XML file with test results.
+SysTest_ResultsParallelSuiteName=Parallel Execution
+ ;The name of the suite of tests that were executed in parallel.
+SysTestBatch_TestClassGroupDescription=Group %1
+ ;The description of a group of test classes to be used in the HTML and XML files with results.
+Error_UnableToOpenFile=Unable to open the file %1
+ ;Error shown when the SysTest Framework is unable to open the %1 file.
+SysTestBatchClass_Label=List of tests to run in parallel
+ ;SysTestBatchClass - Table Label
+SysTestBatchClass_DevDoc=The SysTestBatchClass table contains the list of test classes to run in parallel.
+ ;SysTestBatchClass - Table Developer Documentation
+SysTestBatchClassGroup_Label=Groups of test to run in parallel
+ ;SysTestBatchClassGroup - Table Label
+SysTestBatchClassGroup_DevDoc=The SysTestBatchClassGroup table contains the groups of tests classes to run in parallel.
+ ;SysTestBatchClassGroup - Table Developer Documentation
+SysTestBatchResults_Label=Tests results
+ ;SysTestBatchResults - Table Label
+SysTestBatchResults_DevDoc=The SysTestBatchResults table contains the results from the tests that are executed in parallel.
+ ;SysTestBatchResults - Table Developer Documentation
+SysTestBatchRun_Label=Test execution identifiers
+ ;SysTestBatchRun - Table Label
+SysTestBatchRun_DevDoc=The SysTestBatchRun saves the identifiers of each execution of tests through the Batch Framework.
+ ;SysTestBatchRun - Table Developer Documentation
+SysTestClassGroups_Label=Tests groups
+ ;SysTestClassGroups - Table Label
+SysTestClassGroups_DevDoc=The SysTestClassGroups contains the definition of groups of test classes.
+ ;SysTestClassGroups - Table Developer Documentation
+SysTestGroupDependencies_Label=Tests groups dependencies
+ ;SysTestGroupsDependencies - Table Label
+SysTestGroupDependencies_DevDoc=The SysTestGroupDependencies table contanis the dependencies between test class groups.
+ ;SysTestGroupsDependencies - Table Developer Documentation
+SysTestBatchRunId_Label=Tests Batch Execution Id
+ ;SysTestBatchRunId - EDT Label
+SysTestBatchRunId_HelpText=Identification of the execution of tests through the Batch Framework.
+ ;SysTestBatchRunId - EDT Help Text
+SysTestFixtureSuiteFullName_Label=Test fixture suite(s) full name 
+ ;SysTestFixtureSuiteFullName - EDT Label
+SysTestFixtureSuiteFullName_HelpText=Name of all suite and sub suites of the test fixture.
+ ;SysTestFixtureSuiteFullName - EDT Help Text
+Error_BatchNotStarted=The batch job was not started in less than %1 seconds.
+ ;Error shown when the batch job to execute the tests do not starts in less than %1 seconds.
+Error_BatchDidNotFinish=The batch job was unable to finish in less than %1 seconds.
+ ;Error shown when the batch job is unable to finish before %1 seconds.
+SysTestExecutionMode_ReExecution=Re-execution
+ ;The description for the re-execution mode of tests.
+SysTestExecutionMode_Parallel=Parallel
+ ;The description for the parallel execution mode of tests.
+SysTestExecutionMode_SingleThreaded=Single Threaded
+ ;The description for the single threaded execution mode of tests.
+SysTestResultsTable_Label=Test results
+ ;SysTestResultsTable - Table Label
+SysTestResultsTable_DevDoc=The SysTestResultsTable contains the results of tests executed with the SysTest Framework.
+ ;SysTestResultsTable -Table Developer Documentation
+SysTestExecutionMode_Label=Test execution mode
+ ;SysTestExecutionMode - Enum Label
+SysTestWellKnownCompanyConstants_Label=Company names
+ ;SysTestWellKnownCompanyConstants - Enum Label
+SysTestWellKnownDatasetConstants_Label=Dataset names
+ ;SysTestWellKnownDatasetConstants - Enum Label
+SysTestWellKnownCompanyConstants_HelpText=Company Names usable for test cases
+ ;SysTestWellKnownCompanyConstants - Enum Help text
+SysTestWellKnownDatasetConstants_HelpText=Dataset names usable for test cases
+ ;SysTestWellKnownDatasetConstants - Enum HelpText
+SysTestAssertNotEquals_ExpectedDescriber=Expected different than
+ ;Description for the expected parameter in the negative comparison (such as AssertNotEquals)
+SysTestSuiteCleanupError=Test suite data cleanup did fail.
+ ;Error message when test suite cleanup throws an error.
+SysTestCleanupError=Test data cleanup did fail.
+ ;Error message when test suite cleanup throws an error.
+SysTestUninitializedCLRMessage=Could not get message from CLR exception.
+ ;Initializes CLR message.
+SysTestTransactionIsolation_DevDoc=The SysTestTransactionIsolation table stores the current reference to the isolation guid as well as the transaction isolation mode being used.
+ ;SysTestTransactionIsolation - table developer documentation.
+SysTestTransactionIsolation_Label=Test transaction isolation method
+ ;SysTestTransactionIsolation - table label.
+SysTestDataLeakDetectionAssertMessage=Leaked data found at tables:%1
+ ;Error message on the data leak detection. %1 is a placeholder for the collection of tables that were detected to have leaks.
+SysTestInvalidTest=Test case was skipped because it is invalid.
+ ;Invalid test case.
+SysTestServicesTestRunDisabledError=Running tests through SysTestServices service is disabled on this server.
+ ;Test execution using the SysTestServices endpoint is disabled.
+SysTestServicesTestGuidEmptyError=Test guid cannot be empty. Test run result cannot be retrieved if the test guid is empty. Exiting test execution.
+ ;Test guid cannot be empty for test execution using the SysTestServices endpoint.

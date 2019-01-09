@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Diagnostics
+  GenerationTime="2018-09-18T02:03:19.1213061-07:00">
+  <Items>
+    <Diagnostic>
+      <DiagnosticType>VisualStudioIntegration</DiagnosticType>
+      <Severity>Informational</Severity>
+      <Path>C:\AOSService\PackagesLocalDirectory\bin\xppbp.exe</Path>
+      <Moniker>C:\AOSService\PackagesLocalDirectory\bin\xppbp.exe -metadata="C:\AOSService\PackagesLocalDirectory" -compilerMetadata="C:\AOSService\PackagesLocalDirectory" -packagesRoot="C:\AOSService\PackagesLocalDirectory" -all -module="Currency" -model="Currency" -xmlLog="C:\AOSService\PackagesLocalDirectory\Currency\BPCheck.Currency.xml" </Moniker>
+      <Message>C:\AOSService\PackagesLocalDirectory\bin\xppbp.exe -metadata="C:\AOSService\PackagesLocalDirectory" -compilerMetadata="C:\AOSService\PackagesLocalDirectory" -packagesRoot="C:\AOSService\PackagesLocalDirectory" -all -module="Currency" -model="Currency" -xmlLog="C:\AOSService\PackagesLocalDirectory\Currency\BPCheck.Currency.xml" </Message>
+    </Diagnostic>
+  </Items>
+  <Aliases />
+</Diagnostics>

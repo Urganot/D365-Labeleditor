@@ -1,0 +1,2 @@
+ColorPickerHexColorAria=Color picker, hex color value {0}
+ ;Label for aria-label attribute for the hex color value

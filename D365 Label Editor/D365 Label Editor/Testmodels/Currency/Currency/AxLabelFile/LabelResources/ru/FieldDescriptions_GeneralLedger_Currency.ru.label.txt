@@ -1,0 +1,50 @@
+CurrencyEuroDenomination_CurrencyCode=Код валюты, которая должна быть деноминирована до валюты триангуляции.
+ ;Description text for the CurrencyCode control on the CurrencyEuroDenomination form
+Currency_CurrencyCode=Уникальный идентификатор для выбранной валюты. Этот код может содержать до трех символов. Например, USD — доллар США, EUR — евро, CAD — Доллар, Канада.
+ ;Description text for the CurrencyCode control on the Currency form
+Currency_GridCurrencyName=Имя выбранной валюты. Имя вместе с кодом валюты печатается на чеках и других документах.
+ ;Description text for the GridCurrencyName control on the Currency form
+Currency_CurrencyName=Имя выбранной валюты. Имя вместе с кодом валюты печатается на чеках и других документах.
+ ;Description text for the CurrencyName control on the Currency form
+Currency_Symbol=Символ выбранной валюты. Символы часто используются в отчетах.
+ ;Description text for the Symbol control on the Currency form
+Currency_GridCurrency=Стандартный код валюты, определенный Международной организацией по стандартизации (International Organization for Standardization, ISO).
+ ;Description text for the GridCurrency control on the Currency form
+Currency_ISOCode=Стандартный код валюты, определенный Международной организацией по стандартизации (International Organization for Standardization, ISO).
+ ;Description text for the ISOCode control on the Currency form
+Currency_IsEuro=Валюта, через которую выполняется триангуляция других валют, которые определены как валюты номинала.
+ ;Description text for the IsEuro control on the Currency form
+Currency_Group_OnLineConversionTool=Установите этот параметр, чтобы включить выбранную валюту в расчеты интерактивного конвертора. Это средство автоматически конвертирует суммы, введенные в строках проводки в валюте учета, в суммы в выбранной валюте. Конвертированные суммы в выбранной валюте не хранятся в базе данных.
+ ;Description text for the Group_OnLineConversionTool control on the Currency form
+Currency_Group_CurrencyPrefix=Ввод текста, который будет печататься перед суммой в выбранной валюте, если установлен параметр "Конвертация".
+ ;Description text for the Group_CurrencyPrefix control on the Currency form
+Currency_Group_CurrencySuffix=Ввод текста, который будет печататься после суммы в выбранной валюте, если установлен параметр "Конвертация".
+ ;Description text for the Group_CurrencySuffix control on the Currency form
+Currency_GeneralRoundingPrecision=Введите единицы для точностей округления. Например, можно ввести 0,10 или 1,00.
+ ;Description text for the GeneralRoundingPrecision control on the Currency form
+Currency_RoundOffSalesOrder=Введите единицы для округления сумм по заказам на продажу, заказам на покупку или ценам.
+ ;Description text for the RoundOffSalesOrder control on the Currency form
+Currency_RoundOffPurch=Введите единицы для округления сумм по заказам на продажу, заказам на покупку или ценам.
+ ;Description text for the RoundOffPurch control on the Currency form
+Currency_Price_RoundOffPrice=Введите единицы для округления сумм по заказам на продажу, заказам на покупку или ценам.
+ ;Description text for the Price_RoundOffPrice control on the Currency form
+Currency_AssetDep_JP_RoundOffAssetDep_JP=Введите единицы для округления сумм по заказам на продажу, заказам на покупку или ценам.
+ ;Description text for the AssetDep_JP_RoundOffAssetDep_JP control on the Currency form
+Currency_RoundOffTypeSalesOrder=Выберите соглашение по округлению, применяемое к цифрам справа от единицы округления, введенной в поле "Правило округления". Выберите "Обычная", для округления вверх чисел 5 и больше и округления в меньшую сторону чисел меньше 5. Выберите "В меньшую сторону" для округления всех чисел вниз. Выберите "В большую сторону" для округления всех чисел в большую сторону.
+ ;Description text for the RoundOffTypeSalesOrder control on the Currency form
+Currency_RoundOffTypePurch=Выберите соглашение по округлению, применяемое к цифрам справа от единицы округления, введенной в поле "Правило округления". Выберите "Обычная", для округления вверх чисел 5 и больше и округления в меньшую сторону чисел меньше 5. Выберите "В меньшую сторону" для округления всех чисел вниз. Выберите "В большую сторону" для округления всех чисел в большую сторону.
+ ;Description text for the RoundOffTypePurch control on the Currency form
+Currency_Price_RoundOffTypePrice=Выберите соглашение по округлению, применяемое к цифрам справа от единицы округления, введенной в поле "Правило округления". Выберите "Обычная", для округления вверх чисел 5 и больше и округления в меньшую сторону чисел меньше 5. Выберите "В меньшую сторону" для округления всех чисел вниз. Выберите "В большую сторону" для округления всех чисел в большую сторону.
+ ;Description text for the Price_RoundOffTypePrice control on the Currency form
+Currency_AssetDep_JP_RoundOffTypeAssetDep_JP=Выберите соглашение по округлению, применяемое к цифрам справа от единицы округления, введенной в поле "Правило округления". Выберите "Обычная", для округления вверх чисел 5 и больше и округления в меньшую сторону чисел меньше 5. Выберите "В меньшую сторону" для округления всех чисел вниз. Выберите "В большую сторону" для округления всех чисел в большую сторону.
+ ;Description text for the AssetDep_JP_RoundOffTypeAssetDep_JP control on the Currency form
+ExchangeRateProviderConfiguration_ExchangeRateProviderConfiguration_Name=Имя поставщика валютного курса.
+ ;Description text for the ExchangeRateProviderConfiguration_Name control on the ExchangeRateProviderConfiguration form
+ExchangeRateProviderConfiguration_ExchangeRateProviderConfiguration_Name1=Имя поставщика валютного курса.
+ ;Description text for the ExchangeRateProviderConfiguration_Name1 control on the ExchangeRateProviderConfiguration form
+ExchangeRateProviderConfiguration_ExchangeRateProviderConfigurationDetails_Key=Уникальный идентификатор для каждой части сведений о конфигурации, требуемых для поставщика. Эти сведения автоматически добавлены для каждого поставщика валютного курса, которых вы добавляете, нажимая на кнопку "Добавить".
+ ;Description text for the ExchangeRateProviderConfigurationDetails_Key control on the ExchangeRateProviderConfiguration form
+ExchangeRateProviderConfiguration_ExchangeRateProviderConfigurationDetails_Value=Данные для каждого ключа. Эти сведения добавлены для каждого поставщика валютного курса, которых вы добавляете, нажимая на кнопку "Добавить".
+ ;Description text for the ExchangeRateProviderConfigurationDetails_Value control on the ExchangeRateProviderConfiguration form
+CurrencyNameDeclension_W_InsertAndBeforePenny_InsertAndBeforePenny=Установите этот параметр для печати союза "и" между единицами измерения и частями.
+ ;Description text for the InsertAndBeforePenny_InsertAndBeforePenny control on the CurrencyNameDeclension_W form

@@ -1,0 +1,152 @@
+NewLabel0=Labelbestanden gemaakt op 29-05-2014 13:27:47 voor labelbestand-id CurrencyExchange en taal en-US
+ ;Label file comment - see above label
+ConversionFactor=Omrekeningsfactor
+ ;Exchange rate conversion factor
+ExchangeValue=Wisselwaarde
+ ;Exchange rates exchange value
+TriangulationCurrencies=Triangulatievaluta's
+ ;New Comment
+AddRemoveExchangeRates=Wisselkoersen toevoegen of verwijderen
+ ;New Comment
+TmpExchangeRatesDevDoc=De tabel TmpExchangeRates bevat tijdelijke records die worden gebruikt tijdens het weergeven van het formulier ExchangeRates.
+ ;New Comment
+ExchangeRateEntityDevDoc=The ExchangeRateEntity data entity is used to store exchange rates for a currency pair and a rate type.
+ ;{locked}Exchange rate entity developer documentation
+ExchangeRateStagingDevDoc=De faseringstabel ExchangeRateEntity wordt gebruikt om wisselkoersen te importeren en te exporteren voor een valutapaar en een koerstype.
+ ;Exchange rate stating table developer documentation
+InvalidExchangeRate=De wisselkoers voor valutapaar {0} en {1} kan niet worden geïmporteerd. Neem contactpersoon met uw provider op voor hulp of voer handmatig een wisselkoers voor {2} in.
+ ;Exchange rate provider error in C#
+ISONameCubanConvertiblePeso=Cubaanse convertibele peso
+ ;ISO Currency Name
+ISONameTurkmenistanNewManat=Nieuwe Turkmeense manat
+ ;ISO Currency Name
+ISONameZambianKwacha=Zambiaanse kwacha
+ ;ISO Currency Name
+ExchangeRateImport=Wisselkoersen importeren
+ ;Entity privilege level
+ExchangeRateExport=Wisselkoersen exporteren
+ ;Entity privilege level
+Supplemental_CurrencyImport=Valuta's importeren
+ ;Entity privilege level
+Supplemental_CurrencyExport=Valuta's exporteren
+ ;Entity privilege level
+Currency_MessageDeveloper_UpdateCurrencyPair=Updating currency pair from currency %1 to currency %2
+ ;{Locked}
+Currency_MessageDeveloper_AddNewRate=Adding new exchange rate %1 valid from %2 from currency %3 to currency %4
+ ;{Locked}
+Currency_MessageDeveloper_ActivateProvider=Activating exchange rate provider {0}
+ ;{Locked}
+Currency_MessageDeveloper_SearchingAssembly=Searching for exchange rate providers in assembly {0}
+ ;{Locked}
+Currency_EntityEnum_EntityName=Valuta's
+ ;Entity name
+Currency_EntityDeveloper_CurrencyEntityDevDoc=The CurrencyEntity entity contains the currencies that are used in the application for foreign exchange. Exchange rates are created based on these currencies.
+ ;{Locked}
+Currency_EntityField_CurrencyCode=Valutacode
+ ;CurrencyEntity field name.
+Currency_EntityLabel_CurrencyRevaluationAccountLabel=Herwaarderingsrekening van grootboek van valuta
+ ;Label for CurrencyRevaluationAccountEntity
+Currency_EntityDeveloper_CurrencyRevaluationAccountEntityDevDoc=The CurrencyRevaluationAccountEntity entity contains the gain loss account for individual currencies.
+ ;{Locked}
+Currency_EntityFieldLabel_RoundingRuleFixedAssetDepreciation=Afrondingsregel voor afschrijving van vaste activa
+ ;CurrencyEntity field label
+Currency_EntityFieldLabel_RoundingMethodFixedAssetDepreciation=Afrondingsmethode voor afschrijving van vaste activa
+ ;CurrencyEntity field label
+Currency_EntityFieldLabel_RoundingMethodPrices=Afrondingsmethode voor prijzen
+ ;CurrencyEntity field label
+Currency_EntityFieldLabel_RoundingMethodPurchaseOrders=Afrondingsmethode voor aankooporders
+ ;CurrencyEntity field label
+Currency_EntityFieldLabel_RoundingMethodSalesOrders=Afrondingsmethode voor verkooporders
+ ;CurrencyEntity field label
+Currency_EntityFieldLabel_RoundingRulePrices=Afrondingsregel voor prijzen
+ ;CurrencyEntity field label
+Currency_EntityFieldLabel_RoundingRulePurchaseOrders=Afrondingsregel voor aankooporders
+ ;CurrencyEntity field label
+Currency_EntityFieldLabel_RoundingRuleSalesOrders=Afrondingsregel voor verkooporders
+ ;CurrencyEntity field label
+EntitiesMaintainDuty=Valuta-entiteitenmodel onderhouden
+ ;Maintain Currency entities duty.
+EntitiesViewDuty=Valuta-entiteitenmodel weergeven
+ ;View Currency entities duty.
+Currency_EntityMessage_RateMustBePositive=De wisselkoers moet groter zijn dan nul
+ ;ExchangeRateEntity set based error message.
+Currency_EntityTitle=Wisselkoersen
+ ;ExchangeRateEntity title.
+Currency_EntityMessage_InvalidCurrency=De opgegeven valuta is niet geldig
+ ;ExchangeRateEntity error.
+Currency_EntityMessage_MissingRate=Er is geen wisselkoers gevonden voor het wisselkoerstype %1 voor de valuta's %2 en %3 op wisselkoersdatum %4. Als u deze fout wilt oplossen, neemt u contact op met de systeembeheerder.
+ ;Set based error message.
+Currency_EntityLabel_ExchangeRateTypeLabel=Wisselkoerstype
+ ;Label for ExchangeRateTypeEntity
+Currency_EntityDeveloper_ExchangeRateTypeEntityDevDoc=The ExchangeRateTypeEntity entity stores exchange rate types that allow exchange rates to be categorized.
+ ;{Locked}
+Currency_ConfigField_ServiceTimeout=Service Timeout
+ ;{Locked}
+Currency_ConfigField_OandaName=Foreign Exchange Rates Powered by OANDA
+ ;{Locked}
+Currency_ConfigField_OandaAPIKey=API key
+ ;{Locked}
+Currency_FieldTitle_Value=Waarde
+ ;Exchange rate provider configuration value field title.
+Currency_ConfigField_DecimalPlaces=Decimal places
+ ;{Locked}
+Currency_ConfigMessage_DecimalPlacesInvalid=Het aantal decimale posities moet liggen tussen 1 en 12
+ ;Decimal places validation error for OANDA exchange rate provider.
+Currency_ConfigMessage_OANDAKeyRequired=Er is een geldige sleutel van OANDA voor deze provider vereist om wisselkoersen te importeren. 
+ ;Warning message for the OANDA exchange rate provider.
+Currency_ConfigField_QuoteType=Type offerte
+ ;Quote type for OANDA provider.
+Currency_ConfigEnum_QuoteTypeAverageBid=Gemiddeld bod
+ ;Quote type average bid
+Currency_ConfigEnum_QuoteTypeAverageAsk=Gemiddelde vraag
+ ;Quote type average ask
+Currency_ConfigEnum_QuoteTypeMidpoint=Middelpunt
+ ;Quote type midpoint
+Currency_ConfigEnum_QuoteTypeHighBid=Hoog bod
+ ;Quote type high bid
+Currency_ConfigEnum_QuoteTypeHighAsk=Hoge vraag
+ ;Quote type high ask
+Currency_ConfigEnum_QuoteTypeLowBid=Laag bod
+ ;Quote type low bid
+Currency_ConfigEnum_QuoteTypeLowAsk=Lage vraag
+ ;Quote type low ask
+Currency_ConfigEnum_QuoteTypePeriodAverageBid=Gemiddeld bod van periode
+ ;Quote type average over time period.
+Currency_ConfigEnum_QuoteTypePeriodAverageAsk=Gemiddelde vraag van periode
+ ;Quote type average over time period.
+Currency_ConfigField_SingleRateForDateRange=Eén tarief voor datumbereik
+ ;exchange rate provider configuration option.
+Currency_EntityLabel_CurrencyISOCode=ISO-valutacodes
+ ;CurrencyISOCodeEntity label.
+Currency_EntityDeveloper_CurrencyISOCodeEntityDevDoc=The CurrencyISOCodeEntity entity contains the list of ISO Currency Codes that are supported in the application as defined by the International Organization for Standardization.
+ ;{Locked}
+Currency_ModuleName=Valuta
+ ;Displayed in upgrade.
+Currency_UpgradeStep=Waardeveld coderen.
+ ;Upgrade step.
+Currency_ParameterGroup=Valuta
+ ;Field group caption for the SystemParameters form.
+Currency_TableFieldLabel_SystemParametersCurrencyCodeLabel=Systeemvaluta
+ ;Label for the SystemCurrencyCode field on the SystemParameters table.
+Currency_TableFieldLabel_SystemParametersExchangeRateTypeLabel=Wisselkoerstype systeem
+ ;Label for the SystemExchangeRateType field on the SystemParameters table.
+ExchangeRateCurrencyPairCalculationRulesEntityMaintain=Regels voor berekenen van wisselkoers onderhouden voor btw-entiteit
+ ;Maintain privilege for ExchangeRateCurrencyPairCalculationRulesEntity
+ExchangeRateCurrencyPairCalculationRulesEntityView=Regels voor berekenen van wisselkoers weergeven voor btw-entiteit
+ ;View privilege for ExchangeRateCurrencyPairCalculationRulesEntity
+Currency_Message_CurrencyRequiredForRounding=Er is een valuta vereist voor afronding.
+ ;Error from currency rounding API's
+Currency_Message_CurrencyRequiredForDecimals=Er is een valuta vereist om het aantal decimalen op te halen.
+ ;Error from currency rounding API's
+Currency_Message_CurrencyRequiredForRoundingPrecision=Er is een valuta vereist om de afrondingsprecisie op te halen.
+ ;Error from currency rounding API's
+Currency_ConfigField_PreventImportOnNationalHoliday=Importeren op nationale feestdag voorkomen
+ ;Exchange rate provider configuration option.
+Currency_ConfigField_QuoteTypeLocked=Quote type
+ ;{Locked}
+Currency_Message_QuoteTypeMissing=De configuration key Type offerte voor de wisselkoersprovider is niet gevonden. Klik op Waarden opnieuw instellen en selecteer een waarde voor Type offerte op de pagina Wisselkoersproviders configureren.  
+ ;Exchange rate provider configuration error
+Currency_Message_StartDateAlreadyExists=Kan wisselkoers niet toevoegen omdat de begindatum al voorkomt. Voer een begindatum die nog niet voorkomt.
+ ;Exchange rate error message
+Currency_Monetary_unit_declensions=Verzwakkingen monetaire eenheid
+ ;Monetary unit declensions

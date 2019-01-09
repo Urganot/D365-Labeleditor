@@ -1,0 +1,20 @@
+DimensionValueDetails_GridValue=The dimension value for the dimension that is selected in the Financial dimensions page.
+ ;Description text for the GridValue control on the DimensionValueDetails form
+DimensionValueDetails_GroupValue=The dimension value for the dimension that is selected in the Financial dimensions page.
+ ;Description text for the GroupValue control on the DimensionValueDetails form
+DimensionValueDetails_GridDescription=The description for the financial dimension value.
+ ;Description text for the GridDescription control on the DimensionValueDetails form
+DimensionValueDetails_GroupDescription=The description for the financial dimension value.
+ ;Description text for the GroupDescription control on the DimensionValueDetails form
+DimensionValueDetails_Administration_ActiveFrom=Enter or select the date when the financial dimension value becomes active. If the date fields are blank, the financial dimension value remains active unless you select the Suspended option.
+ ;Description text for the Administration_ActiveFrom control on the DimensionValueDetails form
+DimensionValueDetails_Administration_ActiveTo=Enter or select the date when the financial dimension value is no longer active. If the date fields are blank, the financial dimension value remains active unless you select the Suspended option. A financial dimension value is considered inactive when the system date falls outside the range that is indicated by the Active from and Active to fields.
+ ;Description text for the Administration_ActiveTo control on the DimensionValueDetails form
+DimensionValueDetails_Administration_IsSuspended=Select this option to prevent all postings to the selected financial dimension value. You cannot suspend a financial dimension value that is assigned as a budget group account on another account. To remove this assignment, you have to modify the criteria for the budget group member that has the financial dimension that contains that account.
+ ;Description text for the Administration_IsSuspended control on the DimensionValueDetails form
+DimensionValueDetails_GroupDimension=Enter a name for the group dimension. This name can be used to group specific financial dimension values into the same dimension value when you consolidate legal entities. This field is available only when Shared value is selected in the Select the level of dimension value to display field.
+ ;Description text for the GroupDimension control on the DimensionValueDetails form
+DimensionValueDetails_Administration_IsTotal=Select this option to add together amounts from one or more financial dimension values. This field is available only when Shared value is selected in the Select the level of dimension value to display field.
+ ;Description text for the Administration_IsTotal control on the DimensionValueDetails form
+DimensionValueDetails_Administration_IsBlockedForManualEntry=Select this option to prevent default data for this financial dimension value from being displayed in journals. This field is available only when Shared value is selected in the Select the level of dimension value to display field.
+ ;Description text for the Administration_IsBlockedForManualEntry control on the DimensionValueDetails form

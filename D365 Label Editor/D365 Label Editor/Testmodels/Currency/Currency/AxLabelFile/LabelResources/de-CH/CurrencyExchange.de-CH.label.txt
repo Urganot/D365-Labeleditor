@@ -1,0 +1,152 @@
+NewLabel0=Beschriftungsdateien erstellt am 29.05.2014 13:27:47 für Beschriftungsdateikennung 'CurrencyExchange' und Sprache en-US
+ ;Label file comment - see above label
+ConversionFactor=Umrechnungsfaktor
+ ;Exchange rate conversion factor
+ExchangeValue=Tauschwert
+ ;Exchange rates exchange value
+TriangulationCurrencies=Triangulationswährungen
+ ;New Comment
+AddRemoveExchangeRates=Wechselkurse hinzufügen oder entfernen
+ ;New Comment
+TmpExchangeRatesDevDoc=Die Tabelle 'TmpExchangeRates' enthält temporäre Datensätze, die bei der Anzeige des Formulars 'ExchangeRates' verwendet werden.
+ ;New Comment
+ExchangeRateEntityDevDoc=The ExchangeRateEntity data entity is used to store exchange rates for a currency pair and a rate type.
+ ;{locked}Exchange rate entity developer documentation
+ExchangeRateStagingDevDoc=Die Stagingtabelle 'ExchangeRateEntity' wird zum Import und Export von Wechselkursen für ein Währungspaar und einen Kurstyp verwendet.
+ ;Exchange rate stating table developer documentation
+InvalidExchangeRate=Der Wechselkurs für das Währungspaar {0} und {1} wurde nicht importiert. Wenden Sie sich an Ihren Anbieter, oder geben Sie manuell einen Wechselkurs für {2} ein.
+ ;Exchange rate provider error in C#
+ISONameCubanConvertiblePeso=Kubanischer Peso Convertible
+ ;ISO Currency Name
+ISONameTurkmenistanNewManat=Neuer Turkmenistan-Manat
+ ;ISO Currency Name
+ISONameZambianKwacha=Sambischer Kwacha
+ ;ISO Currency Name
+ExchangeRateImport=Wechselkurse importieren
+ ;Entity privilege level
+ExchangeRateExport=Wechselkurse exportieren
+ ;Entity privilege level
+Supplemental_CurrencyImport=Währungen importieren
+ ;Entity privilege level
+Supplemental_CurrencyExport=Währungen exportieren
+ ;Entity privilege level
+Currency_MessageDeveloper_UpdateCurrencyPair=Updating currency pair from currency %1 to currency %2
+ ;{Locked}
+Currency_MessageDeveloper_AddNewRate=Adding new exchange rate %1 valid from %2 from currency %3 to currency %4
+ ;{Locked}
+Currency_MessageDeveloper_ActivateProvider=Activating exchange rate provider {0}
+ ;{Locked}
+Currency_MessageDeveloper_SearchingAssembly=Searching for exchange rate providers in assembly {0}
+ ;{Locked}
+Currency_EntityEnum_EntityName=Währungen
+ ;Entity name
+Currency_EntityDeveloper_CurrencyEntityDevDoc=The CurrencyEntity entity contains the currencies that are used in the application for foreign exchange. Exchange rates are created based on these currencies.
+ ;{Locked}
+Currency_EntityField_CurrencyCode=Währungscode
+ ;CurrencyEntity field name.
+Currency_EntityLabel_CurrencyRevaluationAccountLabel=Konto für die Währungsneubewertung des Sachkontos
+ ;Label for CurrencyRevaluationAccountEntity
+Currency_EntityDeveloper_CurrencyRevaluationAccountEntityDevDoc=The CurrencyRevaluationAccountEntity entity contains the gain loss account for individual currencies.
+ ;{Locked}
+Currency_EntityFieldLabel_RoundingRuleFixedAssetDepreciation=Rundungsregel für die Anlagenabschreibung
+ ;CurrencyEntity field label
+Currency_EntityFieldLabel_RoundingMethodFixedAssetDepreciation=Rundungsmethode für die Anlagenabschreibung
+ ;CurrencyEntity field label
+Currency_EntityFieldLabel_RoundingMethodPrices=Rundungsmethode für Preise
+ ;CurrencyEntity field label
+Currency_EntityFieldLabel_RoundingMethodPurchaseOrders=Rundungsmethode für Bestellungen
+ ;CurrencyEntity field label
+Currency_EntityFieldLabel_RoundingMethodSalesOrders=Rundungsmethode für Aufträge
+ ;CurrencyEntity field label
+Currency_EntityFieldLabel_RoundingRulePrices=Rundungsregel für Preise
+ ;CurrencyEntity field label
+Currency_EntityFieldLabel_RoundingRulePurchaseOrders=Rundungsregel für Bestellungen
+ ;CurrencyEntity field label
+Currency_EntityFieldLabel_RoundingRuleSalesOrders=Rundungsregel für Aufträge
+ ;CurrencyEntity field label
+EntitiesMaintainDuty=Master für Währungsentitäten verwalten
+ ;Maintain Currency entities duty.
+EntitiesViewDuty=Master für Währungsentitäten anzeigen
+ ;View Currency entities duty.
+Currency_EntityMessage_RateMustBePositive=Der Wechselkurs muss grösser als Null sein.
+ ;ExchangeRateEntity set based error message.
+Currency_EntityTitle=Wechselkurse
+ ;ExchangeRateEntity title.
+Currency_EntityMessage_InvalidCurrency=Die angegebene Währung ist ungültig.
+ ;ExchangeRateEntity error.
+Currency_EntityMessage_MissingRate=Für den Wechselkurstyp %1 zwischen den Währungen %2 und %3 am Wechselkursdatum %4 wurde kein Wechselkurs gefunden. Wenden Sie sich zur Behebung dieses Problems an den Systemadministrator.
+ ;Set based error message.
+Currency_EntityLabel_ExchangeRateTypeLabel=Wechselkurstyp
+ ;Label for ExchangeRateTypeEntity
+Currency_EntityDeveloper_ExchangeRateTypeEntityDevDoc=The ExchangeRateTypeEntity entity stores exchange rate types that allow exchange rates to be categorized.
+ ;{Locked}
+Currency_ConfigField_ServiceTimeout=Service Timeout
+ ;{Locked}
+Currency_ConfigField_OandaName=Foreign Exchange Rates Powered by OANDA
+ ;{Locked}
+Currency_ConfigField_OandaAPIKey=API key
+ ;{Locked}
+Currency_FieldTitle_Value=Wert
+ ;Exchange rate provider configuration value field title.
+Currency_ConfigField_DecimalPlaces=Decimal places
+ ;{Locked}
+Currency_ConfigMessage_DecimalPlacesInvalid=Die Anzahl der Dezimalstellen muss zwischen 1 und 12 liegen.
+ ;Decimal places validation error for OANDA exchange rate provider.
+Currency_ConfigMessage_OANDAKeyRequired=Für diesen Anbieter ist ein gültiger OANDA-Schlüssel erforderlich, um Wechselkurse importieren zu können.
+ ;Warning message for the OANDA exchange rate provider.
+Currency_ConfigField_QuoteType=Notierungstyp
+ ;Quote type for OANDA provider.
+Currency_ConfigEnum_QuoteTypeAverageBid=Geldkurs – Durchschnitt
+ ;Quote type average bid
+Currency_ConfigEnum_QuoteTypeAverageAsk=Briefkurs – Durchschnitt
+ ;Quote type average ask
+Currency_ConfigEnum_QuoteTypeMidpoint=Mittelwert
+ ;Quote type midpoint
+Currency_ConfigEnum_QuoteTypeHighBid=Geldkurs – Hoch
+ ;Quote type high bid
+Currency_ConfigEnum_QuoteTypeHighAsk=Briefkurs – Hoch
+ ;Quote type high ask
+Currency_ConfigEnum_QuoteTypeLowBid=Geldkurs – Tief
+ ;Quote type low bid
+Currency_ConfigEnum_QuoteTypeLowAsk=Briefkurs – Tief
+ ;Quote type low ask
+Currency_ConfigEnum_QuoteTypePeriodAverageBid=Periode Geldkurs – Durchschnitt
+ ;Quote type average over time period.
+Currency_ConfigEnum_QuoteTypePeriodAverageAsk=Periode Briefkurs – Durchschnitt
+ ;Quote type average over time period.
+Currency_ConfigField_SingleRateForDateRange=Einzelkurs für Datumsbereich
+ ;exchange rate provider configuration option.
+Currency_EntityLabel_CurrencyISOCode=ISO-Währungscodes
+ ;CurrencyISOCodeEntity label.
+Currency_EntityDeveloper_CurrencyISOCodeEntityDevDoc=The CurrencyISOCodeEntity entity contains the list of ISO Currency Codes that are supported in the application as defined by the International Organization for Standardization.
+ ;{Locked}
+Currency_ModuleName=Währung
+ ;Displayed in upgrade.
+Currency_UpgradeStep=Wertfeld verschlüsseln
+ ;Upgrade step.
+Currency_ParameterGroup=Währung
+ ;Field group caption for the SystemParameters form.
+Currency_TableFieldLabel_SystemParametersCurrencyCodeLabel=Systemwährung
+ ;Label for the SystemCurrencyCode field on the SystemParameters table.
+Currency_TableFieldLabel_SystemParametersExchangeRateTypeLabel=System-Wechselkurstyp
+ ;Label for the SystemExchangeRateType field on the SystemParameters table.
+ExchangeRateCurrencyPairCalculationRulesEntityMaintain=Wechselkurs-Berechnungsregeln für Mehrwertsteuer-Entität beibehalten
+ ;Maintain privilege for ExchangeRateCurrencyPairCalculationRulesEntity
+ExchangeRateCurrencyPairCalculationRulesEntityView=Wechselkurs-Berechnungsregeln für Mehrwertsteuer-Entität anzeigen
+ ;View privilege for ExchangeRateCurrencyPairCalculationRulesEntity
+Currency_Message_CurrencyRequiredForRounding=Eine Währung ist für die Rundung erforderlich.
+ ;Error from currency rounding API's
+Currency_Message_CurrencyRequiredForDecimals=Eine Währung wird benötigt, um die Anzahl der Dezimalstellen abzurufen.
+ ;Error from currency rounding API's
+Currency_Message_CurrencyRequiredForRoundingPrecision=Eine Währung wird benötigt, um die Rundungsgenauigkeit abzurufen.
+ ;Error from currency rounding API's
+Currency_ConfigField_PreventImportOnNationalHoliday=Import an Feiertagen verhindern
+ ;Exchange rate provider configuration option.
+Currency_ConfigField_QuoteTypeLocked=Quote type
+ ;{Locked}
+Currency_Message_QuoteTypeMissing=Der Konfigurationsschlüssel für den Wechselkursanbieter "Angebotstyp" konnte nicht gefunden werden. Klicken Sie auf "Werte zurücksetzen" und wählen Sie dann einen Wert "Angebotstyp" auf der Seite "Wechselkursanbieter konfigurieren" aus.  
+ ;Exchange rate provider configuration error
+Currency_Message_StartDateAlreadyExists=Wechselkurs kann nicht hinzugefügt werden, das Startdatum ist bereits vorhanden. Geben Sie ein Startdatum ein, das nicht bereits vorhanden ist.
+ ;Exchange rate error message
+Currency_Monetary_unit_declensions=Währungseinheitenabfälle
+ ;Monetary unit declensions

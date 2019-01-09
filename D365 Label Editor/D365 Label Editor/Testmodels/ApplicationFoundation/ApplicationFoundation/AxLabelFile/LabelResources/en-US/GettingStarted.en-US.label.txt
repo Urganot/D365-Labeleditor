@@ -1,0 +1,19 @@
+ContactUs=Contact us
+GetDynamics=Get Microsoft Dynamics 365 for Finance and Operations, Enterprise edition
+CompletionTime=%1 mins
+PromptText=Hi %1! Welcome to Dynamics 365 for Finance and Operations. I've made a couple of guides that'll help you to get started.
+PersonaTitle=Customer service rep
+PersonaName=Lisa
+GetDynamicsLink=Dynamics.com
+ContactUsNumber=1-888-477-7989
+ExpCompletionTime=%1 minutes
+RemotePartNotAllowed=Getting started pane cannot be embedded as a remote mode form part
+DoNotShowAgain=Do not show again
+GettingStartedCaption=Getting started
+ ;New Comment
+GettingStartedLibraryConfigNotFound=Getting started config key is empty. Please contact your system administrator.
+ ;New Comment
+PopulatingGettingStartedLibrariesFailed=Populating the BPM task guides from Lifecycle Services for the selected library has failed.
+ ;New Comment
+TaskGuidesNotFound=Task guides are not found for the getting started library. Please contact your system administrator.
+ ;New Comment

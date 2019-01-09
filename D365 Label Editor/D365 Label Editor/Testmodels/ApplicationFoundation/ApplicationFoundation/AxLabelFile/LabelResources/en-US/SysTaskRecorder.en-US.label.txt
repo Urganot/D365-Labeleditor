@@ -1,0 +1,819 @@
+﻿CommandUserAction=%2 the %1.
+ ;%1 = the control name. %2-%4 = the values for the control
+MenuItemUserAction=Go to %1.
+ ;%1 the name of the form
+AppBarTab_TabShown=On the Action Pane, click %1.
+ ;%1 = the control name. %2-%4 = the values for the control
+Grid_NavigationAction=In the list, click the link in the selected row.
+ ;New Comment
+Grid_ChangeSelectedIndex=In the list, select row %3.
+ ;%3 = the row number
+DropDialogButton_RequestPopup=Click %1 to open the drop dialog.
+ ;%1 = the control name. %2-%4 = the values for the control
+PropertyValidateReference=Validate the value for %1 matches the value copied in step %2.
+ ;%1 = the control name. %2-%4 = the values for the control
+PropertyValidateValue=Validate that the value for %1 is '%2'.
+ ;%1 = the control name. %2-%4 = the values for the control
+PropertyCopy=Note the value in the %1 field to reference later
+ ;%1 = the control name. %2-%4 = the values for the control
+PropertySetReference=Use the value noted previously in the %1 field
+ ;%1 = the control name. %2-%4 = the values for the control
+PropertySetValue=In the %1 field, enter '%2'.
+ ;%1 = the control name. %2-%4 = the values for the control
+ClickCommand=NL Click %1.
+ ;%1 = the control name. %2-%4 = the values for the control
+ExecuteHyperlinkCommand=NL Click %1 %2 %3 %4 %5 %6 %7 %8.
+ ;%1-8 the URL parameters
+ValidationUserAction=Validation: '%1'.
+ ;%1 = user specified name of the validation step
+TaskRecorderUsingSavepoint=Rollback changes to business data.
+ ;New Comment
+DialogName=Row selection dialog
+ ;Name of the FormRowSelectionDialog
+SelectByIndexButton=Select by index
+ ;The caption of the SelectByIndexButton
+ExecuteActionSearchClick=Use action search to find '%4' and then select it from the result list.
+ ;%1 is the form name in this case. %3 is button name, and %4 is button label.
+CancelButton=Cancel
+ ;The caption of the CancelButton
+WrongSelectionStaticText=Please provide a filter expression that applies to the row or choose to select based on the row's index. Otherwise, no row selection will be recorded.
+ ;The notification for the user when wron filter expression was entered
+SetValueCommand=In the %1 field, set the value to '%3'.
+ ;%1 = the control name. %2-%4 = the values for the control
+UploadRecording=Upload
+ ;New Comment
+DropDialogButton_Click=Click %1.
+ ;%1 = the control name. %2-%4 = the values for the control
+MultilineInput_Value_Example=In the %1 field, type a value.
+ ;%1 = the control name. %2-%4 = the values for the control
+RadioButton_Value_Example=In the %1 field, select an option.
+ ;%1 = the control name. %2-%4 = the values for the control
+FormHasMetadataHelp=Form has metadata.
+ ;Taskrecorder serialization
+FormHasMetadata=Has metadata
+ ;Taskrecorder serialization
+PersistedRecording=Recording
+ ;Persisted recording
+SelectPersistedRecording=Select a recent recording
+ ;Select persisted recording
+LoadPersistedRecording=Open
+ ;Load button
+FormContextID=Form ID
+ ;New Comment
+FormContextIDHelp=Recorded form ID.
+ ;New Comment
+CommandArgumentIdx=Argument index
+ ;New Comment
+CommandArgumentIdxHelp=Recorded command argument index.
+ ;New Comment
+CommandArgumentValue=Value
+ ;New Comment
+CommandArgumentValueHelp=Command argument value.
+ ;New Comment
+Name=Name
+ ;New Comment
+CommandNameHelp=Recorded command name.
+ ;New Comment
+ControlNameHelp=Recorded control name.
+ ;New Comment
+ControlType=Control type
+ ;New Comment
+ControlTypeHelp=Recorded control type.
+ ;New Comment
+NodeID=ID
+NodeIDHelp=Recorded node ID.
+ ;New Comment
+IsForm=Is form
+ ;New Comment
+IsFormHelp=Indicates if the node is a form.
+ ;New Comment
+IsReference=Is reference
+ ;New Comment
+IsReferenceHelp=Is reference property.
+ ;New Comment
+LabelID=Label ID
+ ;New Comment
+LabelIDHelp=Recorded label ID.
+ ;New Comment
+MenuItemNameHelp=Menu item name.
+ ;New Comment
+PropertyNameHelp=Property name.
+ ;New Comment
+PropertyValueHelp=Property value.
+ ;New Comment
+PropertyValue=Value
+ ;New Comment
+ScopeNameHelp=Recorded scope name.
+ ;New Comment
+SequenceNumber=Sequence number
+ ;New Comment
+SequenceNumberHelp=Recorded sequence number.
+ ;New Comment
+ValidationComment=Comment
+ ;New Comment
+ValidationCommentHelp=Validation comment.
+ ;New Comment
+RecordingNameHelp=Recording name
+ ;New Comment
+ValidationNameHelp=Recorded validation.
+ ;New Comment
+FormContext=Form context
+ ;New Comment
+FormContextDevDoc=This table is used for persisting form context information for task recordings.
+ ;New Comment
+Node=Task recording node
+ ;New Comment
+NodeDevDoc=This table is used for persisting recording node information for task recordings.
+ ;New Comment
+CommandArgument=Command argument
+ ;New Comment
+CommandArgumentDevDoc=This table is used for persisting command argument information for task recordings.
+ ;New Comment
+Command=Command
+ ;New Comment
+CommandDevDoc=This table is used for persisting user command information for task recordings.
+ ;New Comment
+FormUserAction=Form user action
+ ;New Comment
+FormUserActionDevDoc=This table is used for persisting user command information for task recordings.
+ ;New Comment
+MenuItemUserActionTable=Menu item user action
+ ;New Comment
+MenuItemUserActionDevDoc=This table is used for persisting menu item user action information for task recordings.
+ ;New Comment
+PropertyUserAction=Property user action
+ ;New Comment
+PropertyUserActionDevDoc=This table is used for persisting property user action information for task recordings.
+ ;New Comment
+Scope=Scope
+ ;New Comment
+ScopeDevDoc=This table is used for persisting scope information for task recordings.
+ ;New Comment
+NodeUserAction=User action
+ ;New Comment
+NodeUserActionDevDoc=This table is used for persisting user action information for task recordings.
+ ;New Comment
+AnnotationUserAction=Annotation user action
+ ;New Comment
+ValidationUserActionDevDoc=This table is used for persisting validation user action information for task recordings.
+ ;New Comment
+AnnotationUserActionDevDoc=This table is used for persisting annotation user action information for task recordings.
+ ;New Comment
+RecordingDevDoc=This table contains persisted task recordings.
+ ;New Comment
+Description=Description
+ ;New Comment
+DescriptionHelp=User action description.
+ ;New Comment
+CreateNewRecording=Creating a new recording
+ ;New Comment
+UpdateExistingRecording=Update recording steps
+ ;New Comment
+CloseForm=Close the page.
+ ;Close form step
+TaskBeginUserAction=Sub-task: %1.
+ ;%1 = the name of the sub task
+TaskEndUserAction=End sub-task: %1.
+ ;%1 = the name of the sub task
+TaskUserActionDevDoc=This table is used for persisting task user action information for task recordings.
+ ;New Comment
+TaskUserAction=Task user action
+ ;New Comment
+ConfigureTracing=Configure tracing
+ ;New Comment
+ValidationName=Name
+ ;New Comment
+RecordingInfoDescription=Download the recording using the options below. After downloading the recording you can play the recording as a guide, or edit the recording.
+ ;New Comment
+EnableAdvancedRowSelection=Use advanced row selection
+ ;New Comment
+PausePlayback=Pause 
+ ;New Comment
+StepPlayback=Play next pending step
+ ;New Comment
+RunPlayback=Play all pending steps
+ ;New Comment
+PreRecordingOptionsCaption=What would you like to do?
+ ;New Comment
+RecordingOnCaption=Recording controls
+ ;New Comment
+PlaybackOptionsCaption=Playback controls
+ ;New Comment
+StepsCaption=Steps
+ ;New Comment
+RecordingStoppedCaption=Your recording is ready
+ ;New Comment
+TracingInfoCaption=Tracing
+ ;New Comment
+NewValidationCaption=Add developer placeholder
+ ;New Comment
+NewTaskCaption=New sub-task
+ ;New Comment
+CreateRecordingText=Create recording
+ ;New Comment
+PlaybackRecordingText=Play recording as guide
+ ;New Comment
+StartNewRecordingText=Start
+ ;New Comment
+CancelNewRecordingText=Back
+ ;New Comment
+StartExistingRecordingText=Start
+ ;New Comment
+CancelExistingRecordingText=Back
+ ;New Comment
+PauseRecordingText=Pause
+ ;New Comment
+ContinueRecordingText=Continue
+ ;New Comment
+StopRecordingText=Stop
+ ;New Comment
+StartTaskText=Start sub-task
+ ;New Comment
+EndTaskText=End sub-task
+ ;New Comment
+AddValidationText=Add developer placeholder
+ ;New Comment
+DownloadRecordingText=Save as developer recording
+ ;New Comment
+DownloadTraceInfo=Download the trace we have collected during the recording of your business process. The trace file will be deleted once downloaded.
+ ;New Comment
+DownloadTraceText=Download trace
+ ;New Comment
+DoneText=Return to main menu
+ ;New Comment
+AddValidationEnterText=OK
+ ;New Comment
+AddValidationCancelText=Cancel
+ ;New Comment
+StartTaskEnterText=OK
+ ;New Comment
+StartTaskCancelText=Cancel
+ ;New Comment
+CollectTracesLabel=Collect traces
+ ;New Comment
+ScenarioNameLabel=Recording name
+ ;New Comment
+SelectRecordingLabel=Select a recent recording
+ ;New Comment
+FinalRecordingNameLabel=Name
+ ;New Comment
+NewTaskNameLabel=Provide a name for the sub-task
+ ;New Comment
+NewTaskCommentLabel=Comment
+ ;New Comment
+Grid_LoadNextPage=In the list, go to the next page.
+ ;New Comment
+Grid_LoadPreviousPage=In the list, go to the previous page.
+ ;New Comment
+Group_FrameOptionValueChanged=Select the check box on the header of %1.
+ ;%1 = the control name. %2-%4 = the values for the control
+AnalyzeTraceText=Analyze trace
+ ;New Comment
+ControlLabel=Control Label
+ ;New Comment
+NodeScreenshotUri=Node Screenshot Uri
+ ;New Comment
+ControlLabelHelp=UI label for a control in a form
+ ;New Comment
+NodeScreenshotUriHelp=The Uri where the screenshot image is stored
+ ;New Comment
+WordDocumentDescription=The Microsoft Word document for your recording contains the recorded steps as well as any screenshots that were captured.
+ ;New Comment
+DownloadWordDocumentText=Export as Word document
+ ;New Comment
+CaptureScreenshotLabel=Capture screenshots
+ ;New Comment
+RequestPopup=Hover over %1 to see the enhanced preview.
+ ;%1 = the control name. %2-%4 = the values for the control
+BPMInfoCaption=Business Process Modeler
+ ;New Comment
+DownloadPackageText=Save to this PC
+ ;New Comment
+Grid_MarkActiveRow=In the list, mark the selected row.
+ ;New Comment
+Grid_UnmarkActiveRow=In the list, unmark the selected row.
+ ;New Comment
+Grid_SetMarkAllRecordsMode=In the list, mark or unmark all rows.
+ ;New Comment
+SystemDefinedNewButton_Click=In the Action Pane tab, click %1.
+ ;%1 = the control name. %2-%4 = the values for the control
+CommandButton_Click=Click %1.
+ ;%1 = the control name. %2-%4 = the values for the control
+ToggleButton_Click=Click %1.
+ ;%1 = the control name. %2-%4 = the values for the control
+MenuItemButton_Click=Click %1.
+ ;%1 = the control name. %2-%4 = the values for the control
+PivotItem_ActivateTab=Click the %1 tab.
+ ;%1 = the control name. %2-%4 = the values for the control
+CheckBox_Input=Set %1 to '%2'.
+ ;%1 = the control name. %2-%4 = the values for the control
+Input_RequestPopup=In the %1 field, click the drop-down button to open the lookup.
+ ;%1 = the control name. %2-%4 = the values for the control
+Input_ExecuteHyperlink=Click to follow the link in the %1 field.
+ ;%1 = the control name. %2-%4 = the values for the control
+SectionPage_ExpandedChanged=Expand or collapse the %1 section.
+ ;%1 = the control name. %2-%4 = the values for the control
+Grid_AdvancedRowSelection=Open the advanced row selection dialog
+ ;New Comment
+Button_Click=Click %1.
+ ;%1 = the control name. %2-%4 = the values for the control
+MenuButton_Click=Click %1.
+ ;%1 = the control name. %2-%4 = the values for the control
+MenuButton_ClickMenuButton=Click %1.
+ ;%1 = the control name. %2-%4 = the values for the control
+MenuItem_Click=Click %1.
+ ;%1 = the control name. %2-%4 = the values for the control
+QuickFilter_ApplyFilterForTaskRecorder=Use the Quick Filter to filter on the %3 field with a value of '%4'.
+ ;%3 = the field name. %4 = the filter value
+QuickFilter_ApplyFilterForTaskRecorder_Example=Use the Quick Filter to find records. For example, filter on the %3 field with a value of '%4'.
+ ;%3 = the field name. %4 = the filter value
+RecordingIsNotFound=Recording is not found
+OpenTraceParserMenuItemLabel=Traces
+ ;Label for the menu item that opens the Data Expansion Tool.
+OpenTraceParserMenuItemHelp=Opens the Trace Parser to view existing traces.
+ ;Help text for the menu item that opens the Data Expansion Tool.
+LaunchDETText=Create data expansion project
+ ;Label for the button that creates a new data expansion project from a trace.
+PropertyLabelValue=Value Label
+ ;New Comment
+PropertyLabelValueHelp=Property Value Label
+ ;New Comment
+RowSelectionDialogFailedApply=Row Selection Dialog has failed to apply by given criteria. Please select record by index.
+ ;New Comment
+RowSelectionDialogFailedinit=Row Selection Dialog failed to initialize. Please select record by index.
+ ;New Comment
+Tree_SelectionPathChanged=In the tree, select '%3'.
+ ;%3 = the path of the tree node
+Tree_NodePathChecked=In the tree, check '%3'.
+ ;%3 = the path of the tree node
+Tree_ExpandingPath=In the tree, expand '%3'.
+ ;%3 = the path of the tree node
+Tree_SelectRangePath=In the tree, select everything from '%3' to '%4'.
+ ;%3-%4 = the paths of the tree nodes
+Tree_ToggleSelectionPath=In the tree, expand or collapse '%3'.
+ ;%3 = the path of the tree node
+CommandReturnValue=Return value of the command
+ ;New Comment
+ExecuteShortcuts=Use the %3 shortcut.
+ ;%3 = the shortcut name
+TaskGuideName=Name
+ ;Name of the task guide
+TaskGuideDescription=Description
+ ;Description of the task guide
+TaskRecorderCaption=Task recorder
+TaskGuideFinishedText=You successfully completed the Task guide for '%1".
+ ;%1 = name of the task guide
+TaskGuideFinishedNextSteps=Return to where you started the guide, or continue from where it ended.
+ContinueLabelText=Continue
+ReturnLabelText=Return
+TaskGuideCompletedLabel=Task guide completed
+TaskGuideCannotStart=Task guide '%1' is in progress. Please complete it before starting a new guide.
+ ;%1 = name of the task guide. Shown as error message if user starts a new guide without finishing an existing one.
+Table_SelectActiveCell=In the %1 table, select the cell in row %4, column %3.
+ ;%1 = the control name. %2-%4 = the values for the control. Label for Table select active cell command
+TaskRecorderIsolationActivationLabel=The rollback feature has known limitations for rolling back changes in certain scenarios. It will not be able to rollback deletions or updates to existing data, nor rollback batch jobs that have been triggered, or data that has been modified in other sessions (such as in remote form parts). Please consider these limitations when using this feature. 
+ ;New Comment
+UpdateRecordingText=Playback recording
+ ;New Comment
+CreateRecordingHelpText=Creating a new recording allows you to capture your business process using Task recorder. When you stop recording, you will be presented with options for saving the recording.
+ ;New Comment
+UpdateRecordingHelpText=Updating steps in a recording allows you to edit the sequence of steps in an existing recording. You can record new steps, or delete existing steps.
+ ;New Comment
+PlaybackRecordingHelpText=Playing a recording as a task guide allows you to validate that a recording plays as expected in Task guide mode.
+ ;New Comment
+PlayTaskGuideRecording=Playing a recording as a Task guide
+ ;New Comment
+Use=New Text
+ ;New Comment
+DeserializeFailed=Task recorder could not open the recording. The  data in the file might be incorrectly formatted. Make sure you are using a Task recorder recording (.axtr or xml) that was downloaded from Task recorder, then try again. 
+ ;New Comment
+TaskGuideNameLabel=Task guide name
+ ;New Comment
+RecordingFlowDoneBoxText=You have not downloaded your recording yet. Would you like to download it now?
+ ;New Comment
+RecordingResourceNotFound=Task recorder could not find the resource named %1.
+ ;New Comment
+StopTaskGuideLabel=Stop Task guide
+ ;New Comment
+StepsCountCaption=Number of steps
+ ;New Comment
+AuthorNewTaskGuide=Author a new Task guide
+ ;New Comment
+ScenarioDescriptionLabel=Recording description
+ ;New Comment
+AnnotationTitle=Title
+ ;New Comment
+AnnotationDescription=Notes
+ ;New Comment
+AnnotationRecordingValueType=Is the value you used just an example?
+ ;New Comment
+AnnotationPreview=Task guide preview
+ ;New Comment
+OKButton=OK
+ ;New Comment
+PropertySetValue_Example=In the %1 field, enter a value.
+ ;%1 = the control name. %2-%4 = the values for the control
+SetValueComand_Example=In the %1 field, enter a value.
+ ;%1 = the control name. %2-%4 = the values for the control
+CheckBox_Input_Example=Select or clear the %1 check box.
+ ;%1 = the control name. %2-%4 = the values for the control
+Grid_ChangeSelectedIndex_Example=In the list, find and select the desired record.
+ ;New Comment
+Date_Value=In the %1 field, set the date to '%2'.
+ ;%1 = the control name. %2-%4 = the values for the control
+Date_Value_Example=In the %1 field, enter a date.
+ ;%1 = the control name. %2-%4 = the values for the control
+ComboBox_Value=In the %1 field, select '%2'.
+ ;%1 = the control name. %2-%4 = the values for the control
+ComboBox_Value_Example=In the %1 field, select an option.
+ ;%1 = the control name. %2-%4 = the values for the control
+Int64_Value_Example=In the %1 field, enter a number.
+ ;%1 = the control name. %2-%4 = the values for the control
+Integer_Value_Example=In the %1 field, enter a number.
+ ;%1 = the control name. %2-%4 = the values for the control
+Real_Value=Set %1 to '%2'.
+ ;%1 = the control name. %2-%4 = the values for the control
+Real_Value_Example=In the %1 field, enter a number.
+ ;%1 = the control name. %2-%4 = the values for the control
+Input_Value_Example=In the %1 field, type a value.
+ ;%1 = the control name. %2-%4 = the values for the control
+Time_Value_Example=In the %1 field, enter a time.
+ ;%1 = the control name. %2-%4 = the values for the control
+DateTime_Value_Example=In the %1 field, enter a date and time.
+ ;%1 = the control name. %2-%4 = the values for the control
+DateTime_Value=In the %1 field, set the date and time to '%2'.
+ ;%1 = the control name. %2-%4 = the values for the control
+CheckBox_Value=Select or clear the %1 check box.
+ ;%1 = the control name. %2-%4 = the values for the control
+CheckBox_Value_Example=Select or clear the %1 check box.
+ ;%1 = the control name. %2-%4 = the values for the control
+Input_Value=In the %1 field, type '%2'.
+ ;%1 = the control name. %2-%4 = the values for the control
+PlayToStep=Play to selected step
+ ;New Comment
+SkipNextStep=Delete step
+ ;New Comment
+StepPreview=Step preview
+ ;New Comment
+TaskGuideCannotStartAlreadyRecording=A recording is currently in progress. Please stop the recording before starting a new guide.
+ ;New Comment
+CancelTaskGuide=Back
+ ;New Comment
+StartTaskGuide=Start Task guide
+ ;New Comment
+TaskRecorderCannotStartGuideInProgress=A new recording cannot start while a guide is in progress
+ ;New Comment
+TaskRecorderCannotStartRecordingInProgress=A new recording cannot start while another recording is in progress
+ ;New Comment
+AdvancedRecordingOptions=Recording options
+ ;New Comment
+OpenTaskGuide=Open Task guide
+ ;New Comment
+DeleteAnnotation=Delete
+ ;New Comment
+DeleteAnnotationHelpText=Delete annotations from this step
+ ;New Comment
+SaveAnnotation=OK
+ ;New Comment
+SaveAnnotationHelpText=Save annotations on this step
+ ;New Comment
+SelectBPMLibraryText=Select one of your business process libraries
+ ;New Comment
+LoadFromLCS=Select the Lifecycle Services library
+ ;New Comment
+SaveRecodingToLCSText=Save to Lifecycle Services
+ ;New Comment
+SaveToLCSDescription=Saving your recording to a Lifecycle Services (LCS) library will publish the diagram for the recording on the specified business process. If the selected LCS library is set as a Help library, then you will be able to find the Task guide for this recording by searching from the Help menu.
+ ;New Comment
+BPMTreeDescription=Select the business process to associate with the recording
+ ;New Comment
+SaveButton=Save
+ ; Caption for save
+SaveToLCSSuccessMessage=Saving to Lifecycle Services was successful.
+SaveToLCSFailedMessage=Saving to Lifecycle Services failed.
+GetLineFailedMessage=Failed to get a BPM line with id '%1' from Lifecycle Services.
+ ;New Comment
+GetTaskGuideUrlFailedMessage=Failed to get the download url for a Task guide stored at BPM line with id '%1'.
+ ;New Comment
+UploadArtifactFailedMessage=Failed to save an artifact in Lifecycle Services to the BPM line with id '%1'.
+ ;New Comment
+UploadToCloudStorageFailedMessage=Saving to the cloud storage failed.
+ ;New Comment
+GetTaskGuideForBPMLineFailed=Failed to find the Task guide associated with the BPM line.
+ ;New Comment
+LoadLibrariesFailed=Loading frameworks from Lifecycle Services failed.
+ ;New Comment
+PopulatingBPMTreeFailed=Populating the BPM tree from Lifecycle Services for the selected framework has failed.
+ ;New Comment
+LCSLoadingIndicator=Loading your library information from Lifecycle Services.
+ ;New Comment
+GetTaskGuideForFormFailed=Failed to find the Task guide associated with the opened page.
+ ;New Comment
+GetAccessTokenFailedMessage=Failed to generate the security access token for Dynamics Lifecycle services. Please contact your system administrator.
+NoHelpContentFoundMessage=No help content is available for this page.
+ ;New Comment
+RefreshForm=Refresh the page.
+ ;Refresh form step
+InfoStepDefaultLabel=Informational step
+ ;New Comment
+CreateInfoStep=New info step
+ ;New Comment
+UpdateInfoStep=Update info step
+ ;New Comment
+InfoStepText=Text
+ ;New Comment
+InfoStepNotes=Notes
+ ;New Comment
+InfoStepCancel=Cancel
+ ;New Comment
+InfoStepOk=OK
+ ;New Comment
+NameConflict=Name '%1' already exists, please specify another
+ ;New Comment
+TaskGuideHidden=Hide this step
+ ;New Comment
+RestoreStep=Restore step
+ ;New Comment
+AnnotationStepInstruction=Step instruction
+ ;New Comment
+StandardExampleLabel={ standard example text }
+ ;New Comment
+CustomExampleLabel={ your example text }
+ ;New Comment
+NavigationDashboardMenu=Dashboard
+ ;New Comment
+NavigationWorkspacesMenu=All workspaces
+ ;New Comment
+Grid_ChangeSelectedIndexInCache=In the list, select row %3.
+ ;%3 = the row number
+Grid_ChangeSelectedIndexInCache_Example=In the list, find and select the desired record.
+ ;New Comment
+FilterPane_ApplyFilters=Apply the following filters: %3
+ ;New Comment
+FilterPane_ResetFilters=Click Reset.
+ ;New Comment
+FilterPane_FilterExpression=Add or modify a filter. 
+ ;New Comment
+FilterManager_ApplyGridFilter=Apply column filter.
+ ;New Comment
+FilterManager_ApplyFilters=Apply column filter.
+ ;New Comment
+FilterManager_ResetFilters=Click Clear.
+ ;Text to show when clearing a filter from grid column filtering. Must be kept in sync with the other FilterManager_ResetFilter labels.
+FilterManager_ResetFilterCollection=Click Clear.
+ ;Text to show when clearing a filter from grid column filtering. Must be kept in sync with the other FilterManager_ResetFilter labels.
+FilterManager_ResetFilterCollectionForTaskRecorder=Click Clear.
+ ;Text to show when clearing a filter from grid column filtering. Must be kept in sync with the other FilterManager_ResetFilter labels.
+FilterManager_ApplyFiltersForTaskRecorder=%6
+ ;New Comment
+FilterManager_SetSortsForTaskRecorder=%8
+ ;New Comment
+FilterPane_TaskRecorderAddFilterExpression=Add filter
+ ;New Comment
+FilterManager_SetSort=Apply column sort.
+ ;New Comment
+FilterManager_SetSorts=Apply column sort.
+ ;New Comment
+FilterManager_GetFilter=Open column filter.
+ ;New Comment
+FilterManager_GetFilters=Open %5 column filter.
+ ;New Comment
+PropertySetValue_Custom=In the %1 field, {text}.
+ ;%1 = the control name. (text) = user specified text
+Input_Value_Custom=In the %1 field, {text}.
+ ;%1 = the control name. (text) = user specified text
+TaskGuide_GenericErrorTitle=Oops!
+ ;New Comment
+TaskGuide_FormNotFoundError=You seem to have gotten off track. Please navigate to %1 to continue with this Task guide.
+ ;%1 = the name of the form
+TaskGuide_FormNotFound_GenericForm=the page
+ ;New comment
+TaskGuideCompletionTimeLabel=Expected completion time
+ ;New Comment
+TaskGuideProgressLabel=Progress
+ ;New Comment
+QuickFilter_ApplyQuickFilter=Use the Quick Filter to filter on the %3 field with a value of '%4'.
+ ;%3 = the field name. %4 = the filter value
+QuickFilter_ApplyQuickFilter_Example=Use the Quick Filter to find records. For example, filter on the %3 field with a value of '%4'.
+ ;%3 = the field name. %4 = the filter value
+EditRecordingText=Edit Recording Steps Without Playback
+ ;New Comment
+EditRecordingHelpText=Editing recording steps without playback allows you to add steps inline or reorder steps of an existing recording.\r\nYou can select step(s) in the recording and without having to playback to that step, you can record a new step\r\nafter that step. You can also select a step and move it to a different location in the recording. \r\nIt also allows you to modify the text that is used and displayed throughout the recording. \r\nYou can also hide steps and tasks in the recording. recording. You can also hide steps and tasks in the recording.
+ ;New Comment
+EditExistingRecording=Edit Recording Steps Without Playback
+ ;New Comment
+StopEditing=Done editing
+ ;New Comment
+LoadFromFileText=Open from this PC
+ ;New Comment
+LoadFromLCSText=Open from Lifecycle Services
+ ;New Comment
+LoadFromFile=Open from this PC
+ ;New Comment
+LoadFromLCSStore=Open from Lifecycle Services
+ ;New Comment
+LoadFromPersistence=Open from recents
+ ;New Comment
+ExistingRecordingLocation=Open a recording
+ ;New Comment
+LoadFromPersistenceHelpText=Warning: Modifying a recent recording will overwrite the previous version if you do not change the name of the recording.
+ ;New Comment
+LoadFromPersistenceText=Open from recents
+ ;New Comment
+LoadPersistedRecordingDefaultOption=Select an option
+ ;New Comment
+LoadFromFileBrowse=Browse
+ ;New Comment
+RecordingFileUploadStarted=Loading...
+ ;New Comment
+DownloadPackageDescription=The recording can be used to play a guide, add or remove steps in the recording, or edit the recording's text.
+ ;New Comment
+DownloadRecordingDescription=The developer recording is useful for developer scenarios, such as test code generation.
+ ;New Comment
+Group_CheckBox_FrameOptionValueChanged=Select or clear the %1 check box.
+ ;%1 = the control name. %2-%4 = the values for the control
+Group_RadioButton_FrameOptionValueChanged=Select the %1 option.
+ ;%1 = the control name. %2-%4 = the values for the control
+Group_Chevron_FrameOptionValueChanged=Click the arrow to expand or collapse the %1 section.
+ ;%1 = the control name. %2-%4 = the values for the control
+AnchorButton_Click=Click %1.
+ ;%1 = the control name. %2-%4 = the values for the control
+CheckBox_SetValue=%3 the %1 check box.
+ ;%1 = the control name. %2 = the property name. %3 = select/clear custom property label.
+Slider_SetValue=Select %3 in the %1 field.
+ ;Check box style: toggle. %1 = the control name. %2 = the property name. %3 = yes/no custom property label.
+Tree_SelectionPathChanged_Custom=In the tree, select '{text}'.
+ ;(text) = the user's custom text
+Tree_NodePathChecked_Custom=In the tree, check '{text}'.
+ ;(text) = the user's custom text
+Tree_ExpandingPath_Custom=In the tree, expand '{text}'.
+ ;(text) = the user's custom text
+Tree_ToggleSelectionPath_Custom=In the tree, expand or collapse '{text}'.
+ ;(text) = the user's custom text
+Check=Select
+ ;New Comment
+Uncheck=Clear
+ ;New Comment
+Yes=Yes
+ ;New Comment
+No=No
+ ;New Comment
+SectionPage_ExpandedChanged_Expand=Expand the %1 section.
+ ;%1 = the control name. %2-%4 = the values for the control
+SectionPage_ExpandedChanged_Close=Collapse the %1 section.
+ ;%1 = the control name. %2-%4 = the values for the control
+Group_FrameOptionValueChanged_CheckBox_Check=Select the %1 check box.
+ ;New Comment
+Group_FrameOptionValueChanged_CheckBox_Uncheck=Clear the %1 check box.
+ ;New Comment
+Group_FrameOptionValueChanged_Section_Expand=Expand the %1 section.
+ ;New Comment
+Group_FrameOptionValueChanged_Section_Close=Collapse the %1 section.
+ ;New Comment
+TaskGuideTaskHidden=Hide this task
+ ;New Comment
+StepsActionsMenu=Step actions
+ ;New Comment
+FilterManager_ApplyFilterItem=Enter a filter value of "%2" on the "%1" field using the "%3" filter operator.
+ ;New Comment
+StepsRecordedText=%1 steps recorded / %2 steps pending
+ ;%1 number of steps recorder. %2 number of steps not yet recorded
+LaunchPersonalizationPane=Launch personalization flyout for %1
+ ;%1 = the control name.
+PlayToSelectedStepHelpText=This option will cause Task recorder to begin playing and recording pending steps, beginning at the next pending step and pausing after playing the step that was selected in the list when this option was clicked.
+ ;New Comment
+PlayNextPendingStepHelpText=This option will cause Task recorder to execute and record the next pending step, which is indicated by the arrow in the Steps list.
+ ;New Comment
+PlayAllPendingStepsHelpText=This option will cause Task recorder to play and record all remaining pending steps, until there are no remaining pending steps.
+ ;New Comment
+PausePlaybackHelpText=This option allows you to pause playback manually.
+ ;New Comment
+DeleteStepHelpText=This option will allow you to remove steps from the recording.\r\nIf you delete a pending step, it will be skipped during playback, and it will not be recorded.\r\nIf you delete a recorded step, then it will be flagged for removal and it will not be included in the recording when you Save the recording.\r\nYou cannot delete a task while it is in progress.\r\n
+ ;New Comment
+RestoreStepHelpText=This option will allow you to restore steps that were deleted after being recorded.
+ ;New Comment
+TaskHelpText=This option allows you to add special steps to the recording. These special steps are task steps, and you can use them to indicate when a sub-task begins and when it ends.
+ ;New Comment
+NewRecordTask=Use the shortcut for creating a new record.
+ ;Label for the NewRecord task
+SaveRecordTask=Use the shortcut for saving a record.
+ ;Label for the SaveRecord task
+GridViewTask=Use the shortcut for switching to Grid view.
+ ;Label for the GridView task
+DetailsViewTask=Use the shortcut for switching to Details view.
+ ;Label for the DetailsView task
+DeleteRecordTask=Use the shortcut for deleting a record.
+ ;Label for the DeleteRecord task
+InvokeDefaultButtonTask=Use the shortcut for invoking the default button.
+ ;Label for the InvokeDefaultButton task
+AttachRecordTask=Use the shortcut for attaching to a record.
+ ;Label for the AttachRecord task
+RefreshTask=Use the shortcut to refresh.
+ ;Label for the Refresh task
+RestoreTask=Use the shortcut to restore.
+ ;Label for the Restore task
+HeaderViewTask=Use the shortcut for switching to Header view.
+ ;Label for the HeaderView task
+LinesViewTask=Use the shortcut for switching to Lines view.
+ ;Label for the LinesView task
+ViewEditTask=Use the shortcut for switching to View or Edit mode.
+ ;Label for the ViewEdit task
+ExportToExcelTask=Use the shortcut for Export to Excel.
+ ;Label for the ExportToExcel task
+ToggleFactBoxPaneTask=Use the shortcut to hide or show the FactBox pane.
+ ;Label for the ToggleFactBoxPane task
+PreviousRecordTask=Use the shortcut to go to the previous record.
+ ;Label for the PreviousRecord task
+NextRecordTask=Use the shortcut to go to the next record.
+ ;Label for the NextRecord task
+FirstRecordTask=Use the shortcut to go to the first record.
+ ;Label for the FirstRecord task
+AdvancedFilterSortTask=Use the shortcut for advanced filter and sort.
+ ;Label for the AdvancedFilterSort task
+LastRecordTask=Use the shortcut to go to the last record.
+ ;Label for the LastRecord task
+SelectAllTask=Use the shorcut for selecting all records in a grid.
+ ;Label for the SelectAll task
+EscapeTask=Use the Escape key to close the form.
+ ;Label for the Escape task
+ForceCloseTask=Use the shortcut to force close the form.
+ ;Label for the ForceClose task
+SetValueFromLookUp=In the %1 field, enter or select a value.
+ ;%1 = control name
+SetValueFromLookUp_Example=In the %1 field, enter or select a value.
+ ;%1 = control name
+OpenGridView=Click the form caption.
+ ;New Comment
+FilterPane_ApplyFilterItem=Enter a filter value of "%2" on the "%1" field using the "%3" filter operator
+ ;New Comment
+PrivacyStatementText=Any information that you enter into the application while you are recording is captured and included in the recording file. If you decide to share the recording file, others may be able to see the information that was captured.
+ ;New Comment
+EditInlineExistingRecordingText=Edit Recording
+ ;New Comment
+EditInlineExistingRecordingHelpText=Editing a recording allows you to insert or reorder the steps of a recording without playing it back. You can also edit the text in the description, steps, and annotations.
+ ;New Comment
+InsertStep=Insert step
+ ;New Comment
+InsertStepHelpText=This option allows you to insert a step or multiple steps after the step you’ve selected in the pane. To insert steps, you must have the form specified in the Open this form to insert steps field open.
+ ;New Comment
+StopEditingInline=Done editing inline
+ ;New Comment
+EditInfoGroupCaption=Recording name and description
+ ;New Comment
+StepResultantContextText=Open this form to insert steps
+ ;New Comment
+MoveStepAfter=Move step after
+ ;New Comment
+MoveStepAfterHelpText=This option allows you to move the step currently selected in the pane. After you click Move step after, select the target step after which you want the step to appear.
+ ;New Comment
+LaunchPersonalizationPaneFromToolbar=Select %1 to launch personalization flyout
+ ;%1 = control name. Task recorder step to launch personalization flyout from toolbar
+PersonalizationToolbarClearButton=Click Manage > Clear on the Personalization Toolbar
+ ;Task recorder step for clicking Manage then Clear on the Personalization Toolbar
+PersonalizationToolbarImportButton=Click Manage > Import on the Personalization Toolbar
+ ;Task recorder step for clicking Manage then Import on the Personalization Toolbar
+PersonalizationToolbarExportButton=Click Manage > Export on the Personalization Toolbar
+ ;Task recorder step for clicking Manage then Export on the Personalization Toolbar
+PersonalizationSelectControlForAdd=Select %1 to add a field to it
+ ;Task recorder step to select a control to add a field to it
+PersonalizationSelectControlForMove=Select %1 to move it
+ ;Task recorder step to select a control to move it
+PersonalizationMoveControlToBeginning=Move %1 to the beginning of %2
+ ;%1 = the control, %2 = the parent control. Task recorder step to move a control to the beginning of the parent control
+PersonalizationMoveControlAfterControl=Move %1 after %2 within %3
+ ;%1 = the control, %2 = the control to move after, %3 = the parent control
+PersonalizationToolbarAddAFieldButton=Click the Add a Field button on the Personalization Toolbar
+ ;Task recorder step to click Add a Field button on the Personalization Toolbar
+PersonalizationToolbarAddFieldToSummaryButton=Click the Add field to summary button on the Personalization Toolbar
+ ;Task recorder step to click Add field to summary button on the Personalization Toolbar
+PersonalizationToolbarHideButton=Click the Hide button on the Personalization Toolbar
+ ;Task recorder step to click Hide button on the Personalization Toolbar
+PersonalizationToolbarLockButton=Click the Lock button on the Personalization Toolbar
+ ;Task recorder step to click Lock button on the Personalization Toolbar
+PersonalizationToolbarMoveButton=Click the Move button on the Personalization Toolbar
+ ;Task recorder step to click Move button on the Personalization Toolbar
+PersonalizationToolbarSkipButton=Click the Skip button on the Personalization Toolbar
+ ;Task recorder step to click Skip button on the Personalization Toolbar
+PersonalizationToolbarSelectButton=Click the Select button on the Personalization Toolbar
+ ;Task recorder step to click Select button on the Personalization Toolbar
+PersonalizeThisForm=Click Personalize this form
+ ;Task recorder step to click Personalize this form button
+PersonalizationToolbarCloseButton=Click the Close button in the Personalization Toolbar
+ ;Task recorder step to click Close button on the Personalization Toolbar
+PersonalizationHideControl=Select %1 to hide it
+ ;%1 = control name. Task recorder step to select a control to hide it
+PersonalizationUnhideControl=Select %1 to show it
+ ;%1 = control name. Task recorder step to select a control to show it
+PersonalizationAddControlToSummary=Select %1 to add it to field summary
+ ;%1 = control name. Task recorder step to select a control to add it to summary
+PersonalizationRemoveControlFromSummary=Select %1 to remove it from field summary
+ ;%1 = control name. Task recorder step to select a control to remove it from summary
+PersonalizationSkipControl=Select %1 to skip it in tab sequence
+ ;%1 = control name. Task recorder step to select a control to skip it in tab sequence
+PersonalizationUnskipControl=Select %1 to unskip it in tab sequence
+ ;%1 = control name. Task recorder step to select a control to unskip it in tab sequence
+PersonalizationLockControl=Select %1 to lock it from editing
+ ;%1 = control name. Task recorder step to select a control to lock it from editing
+PersonalizationUnlockControl=Select %1 to unlock it for editing
+ ;%1 = control name. Task recorder step to select a control to unlock it for editing
+GetUserTokenFailedMessage=Failed to generate the user token for Dynamics Lifecycle services on behalf on user %1. Please contact your system administrator.

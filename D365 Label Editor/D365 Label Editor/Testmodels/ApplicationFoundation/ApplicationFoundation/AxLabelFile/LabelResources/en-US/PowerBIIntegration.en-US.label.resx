@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader><data name="PowerBICannotLogin" xml:space="preserve">
+                        <value>You are already logged in to PowerBI</value>
+	<comment>Label for login to power bi from</comment></data><data name="LoginToPowerBIMessage" xml:space="preserve">
+                        <value>Please log in to Power BI to access its resource</value>
+	<comment>Label for accessing Power BI</comment></data><data name="LoginToPowerBI" xml:space="preserve">
+                        <value>Login to Power BI</value>
+	<comment>LoginPowerBI caption</comment></data><data name="EmptyEmail" xml:space="preserve">
+                        <value>Email and password cannot be empty</value>
+	<comment>Email password comment</comment></data><data name="AddRemovePowerBITiles" xml:space="preserve">
+                        <value>Open tile catalog</value>
+	<comment>Caption used when adding or removing power bi tiles</comment></data><data name="LoginPowerBI" xml:space="preserve">
+                        <value>Login to Power BI</value>
+	<comment>Link label for first time experience of integrating the power BI tiles</comment></data><data name="PowerBIFirstTimeExperienceAdvertisement" xml:space="preserve">
+                        <value>Connect your Power BI account for immediate access to your favorite reporting visualizations right here in Dynamics 365 for Finance and Operations.</value>
+	<comment>Advertisement of the Power BI generic</comment></data><data name="PowerBINoTilesFound" xml:space="preserve">
+                        <value>Could not find any Power BI tiles.</value>
+	<comment>Displayed on the picker dialog when no power BI controls are available</comment></data><data name="PowerBISectionCaption" xml:space="preserve">
+                        <value>Power BI</value>
+	<comment>Caption on groups and tabs containing power BI content.</comment></data><data name="PowerBIOptionsMenuHint" xml:space="preserve">
+                        <value>You can always add Power BI controls from the Options menu</value>
+	<comment>A hint that power BI charts can be added from the Options menu.</comment></data><data name="GetAccessTokenFailedMessage" xml:space="preserve">
+                        <value>Failed to generate the security access token for Power BI API services. Please contact your system administrator.</value>
+	<comment>Error string displayed when unable to generate a token for the Power BI API.</comment></data><data name="PowerBIConfiguration" xml:space="preserve">
+                        <value>Power BI configuration</value>
+	<comment>Caption for table PowerBIConfig</comment></data><data name="ApplicationKey" xml:space="preserve">
+                        <value>Application key</value>
+	<comment>Caption for EDT PowerBIApplicationKey</comment></data><data name="PowerBIApiAddress" xml:space="preserve">
+                        <value>Power BI API Address</value>
+	<comment>Caption for the PowerBIApiAddress column</comment></data><data name="PowerBIRedirectUrl" xml:space="preserve">
+                        <value>Redirect URL</value>
+	<comment>Caption for the RedirectUrl column</comment></data><data name="ClientID" xml:space="preserve">
+                        <value>Client ID</value>
+	<comment>Label for the PowerBIClientID EDT.</comment></data><data name="SetUpPowerBIConfiguration" xml:space="preserve">
+                        <value>Set up Power BI configuration</value>
+	<comment>Caption for Power BI group</comment></data><data name="AzureADTenant" xml:space="preserve">
+                        <value>Azure AD Tenant</value>
+	<comment>Caption for Tenant field.</comment></data><data name="PowerBINotEnabled" xml:space="preserve">
+                        <value>Power BI is not enabled. Contact your administrator to enable Power BI.</value>
+	<comment>Error message displayed when Power BI is not enabled.</comment></data><data name="IncorrectEmailOrPassword" xml:space="preserve">
+                        <value>Incorrect email or password supplied.</value>
+	<comment>Error message displayed when email or password are incorrect.</comment></data><data name="ApplyTileFilter" xml:space="preserve">
+                        <value>Apply tile filter</value>
+	<comment>Label for apply tile filter checkbox</comment></data><data name="TileFilterTableName" xml:space="preserve">
+                        <value>Tile filter table</value>
+	<comment>Label for the TileFilterTableName column</comment></data><data name="TileFilterColumnName" xml:space="preserve">
+                        <value>Tile filter column</value>
+	<comment>Label for the TileFilterColumnName column</comment></data><data name="AzureADAuthorityUri" xml:space="preserve">
+                        <value>Azure AD authority URI</value>
+	<comment>Label for AzureADAuthorityUri column</comment></data><data name="AzureADPowerBIApiResourceUri" xml:space="preserve">
+                        <value>Azure AD Power BI resource URI</value>
+	<comment>Label for AzureADPowerBIApiResourceUri column</comment></data><data name="GetDashboardsErrorMessage" xml:space="preserve">
+                        <value>An error occurred getting the Power BI dashboards. Please contact your administrator.</value>
+	<comment>Get dashboards error message.</comment></data><data name="GetTilesErrorMessage" xml:space="preserve">
+                        <value>An error occurred getting the Power BI tiles. Please contact your administrator.</value>
+	<comment>Get tiles error message.</comment></data><data name="GetTileIFrameInfoErrorMessage" xml:space="preserve">
+                        <value>An error occurred getting the Power BI tile information. Please contact your administrator.</value>
+	<comment>Get tile iFrame info error message.</comment></data><data name="GetTokenErrorMessage" xml:space="preserve">
+                        <value>An error occurred attempting to connect to the Power BI service. Please contact your administrator.</value>
+	<comment>Error message when unable to get a token.</comment></data><data name="PowerBITileEmbedUrlLabel" xml:space="preserve">
+                        <value>Embed URL</value>
+	<comment>Label for EDT PowerBITileEmbedUrl</comment></data><data name="PowerBITileEmbedUrlHelpText" xml:space="preserve">
+                        <value>The URL to use for embedding the Power BI tile.</value>
+	<comment>Help text for EDT PowerBITileEmbedUrl</comment></data><data name="PowerBIAuthHyperlink" xml:space="preserve">
+                        <value>Click here to provide authorization to Power BI</value>
+	<comment>Hyperlink caption for Power BI authorization</comment></data><data name="AuthorizePowerBICaption" xml:space="preserve">
+                        <value>Authorize Power BI</value>
+	<comment>Caption for Power BI authorization dialog.</comment></data><data name="AuthorizePowerBIInstructions" xml:space="preserve">
+                        <value>Authorization must be given to Power BI in order to access your Power BI dashboards and tiles. Click the link below to begin the authorization process. Once authorization has been granted return to this page and click the Close button.</value>
+	<comment>Static text instructions for the Power BI authorization dialog.</comment></data><data name="CloseButtonCaption" xml:space="preserve">
+                        <value>Close</value>
+	<comment>Caption text for the close button.</comment></data><data name="GetGroupsErrorMessage" xml:space="preserve">
+                        <value>An error occurred getting the Power BI groups. Please contact your system administrator.</value>
+	<comment>Error message</comment></data><data name="CrossDomainNotSupported" xml:space="preserve">
+                        <value>Power BI only supports accounts from the same tenant, %1, or from verified domains of that tenant.</value>
+	<comment>Error shown when a non tenant user is trying to access Power BI API web service.</comment></data><data name="GetReportsErrorMessage" xml:space="preserve">
+                        <value>An error occurred getting the Power BI reports. Please contact your administrator.</value>
+	<comment>Get reports error message.</comment></data><data name="AddRemovePowerBIReports" xml:space="preserve">
+                        <value>Open report catalog</value>
+	<comment>Caption used when adding or removing power bi reports</comment></data><data name="PowerBIReportName" xml:space="preserve">
+                        <value>Power BI Report Name</value>
+	<comment>Power BI Report Name</comment></data><data name="PowerBIReportsGroupName" xml:space="preserve">
+                        <value>Power BI Reports</value>
+	<comment>Power BI Reports</comment></data><data name="OpenReportInPowerBI" xml:space="preserve">
+                        <value>Open in Power BI</value>
+	<comment>The caption of action pane button control on PowerBI report form</comment></data><data name="PowerBIReportDataObjectNotSet" xml:space="preserve">
+                        <value>PowerBI report form must be opened with proper menu item.</value>
+	<comment>The PowerBI report data object is not set on the form.</comment></data><data name="NoLinkSectionWorkspace" xml:space="preserve">
+                        <value>Power BI Reports cannot be added to workspace without link section.  Please contact your system administrator.</value>
+	<comment>Error message</comment></data><data name="DeployPbixButton" xml:space="preserve">
+                        <value>Deploy Power BI files</value>
+	<comment>PowerBIPbixDeployForm</comment></data><data name="LCSProjectIdNotSet" xml:space="preserve">
+                        <value>You must provide the LCS project ID with PowerBI assets in Life cycle services help configuration field in the System Administration &amp;gt; System Parameters &amp;gt; Help form.</value>
+	<comment>PowerBIPbixDeployForm</comment></data><data name="PbixDeploymentSucceeded" xml:space="preserve">
+                        <value>Deployment successful for file %1.</value>
+	<comment>PowerBIPbixDeployForm</comment></data><data name="PbixDeploymentFailed" xml:space="preserve">
+                        <value>Deployment failed for file %1.</value>
+	<comment>PowerBIPbixDeployForm</comment></data><data name="DeployPbixFormHeader" xml:space="preserve">
+                        <value>Deploy Power BI report files</value>
+	<comment>PowerBIPbixDeployForm</comment></data><data name="PowerBINeedsAzureSql" xml:space="preserve">
+                        <value>This function should be used to deploy DirectQuery PowerBI reports authored with Entity store into a production instance of Dynamics 365 for Finance and Operations. If you want to deploy this report to the current environment, please refer to the wiki article https://ax.help.dynamics.com/en/wiki/power-bi-content-from-microsoft-and-your-partners/.</value>
+	<comment>New Comment</comment></data><data name="PBIReportNameNotSet" xml:space="preserve">
+                        <value>The embedded Power BI report name is not set.</value>
+	<comment>The embedded Power BI report name is not set.</comment></data><data name="EmbeddedPBIReportNotFound" xml:space="preserve">
+                        <value>Embedded Power BI report %1 is not found.</value>
+	<comment>parameter: report name</comment></data><data name="AccessPBIEmbeddedFailedMessage" xml:space="preserve">
+                        <value>Failed to access Power BI Embedded environment. Please contact your system administrator.</value>
+	<comment>Failed to access Power BI Embedded environment. Please contact your system administrator.</comment></data><data name="PublishEmbeddedPBIReportFailed" xml:space="preserve">
+                        <value>Failed to publish Power BI Embedded report %1.</value>
+	<comment>parameter: power bi report resource name</comment></data><data name="PBIReportResourceNameNotSet" xml:space="preserve">
+                        <value>The embedded Power BI report resource name is not set.</value>
+	<comment>The embedded Power BI report resource name is not set.</comment></data><data name="PBIEmbeddedNotEnabled" xml:space="preserve">
+                        <value>Power BI embedded is not enabled.  Please contact your system administrator.</value>
+	<comment>Power BI embedded is not enabled</comment></data><data name="PBINotSupportedInServiceFabriceDeployments" xml:space="preserve">
+                        <value>Power BI integration is not supported in Service Fabric deployments</value>
+	<comment>Error message when accessing PBI integration for Service Fabric deployments.</comment></data><data name="CannotRetrieveAssetsFromLCSAssetLibraryClient" xml:space="preserve">
+                        <value>Cannot retrieve assets from LCS asset library. Project id %1. User %2. Please contact your administrator.</value>
+	<comment>Error message when retrieving assets from LCS asset library.</comment></data><data name="CannotRetrieveSharedAssetsFromLCSAssetLibraryClient" xml:space="preserve">
+                        <value>Cannot retrieve shared assets from LCS asset library. Project id %1. User %2. Please contact your administrator.</value>
+	<comment>Error message when retrieving shared assets from LCS asset library.</comment></data><data name="CannotRetrieveFileAssetFromLCS" xml:space="preserve">
+                        <value>Cannot retrieve file asset from LCS. Project id %1. Asset id %2.</value></data></root>

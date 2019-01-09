@@ -1,0 +1,40 @@
+STName=%1
+ ;name
+Help=Help :
+ ;help
+Label=Label : 
+ ;label
+Type=Type :
+ ;type
+Name=Name :
+ ;name
+Position=Position :
+ ;position
+DataSource=Data Source :
+ ;data source
+Functions=Functions
+ ;functions
+Save=Save
+ ;save
+HideFunctions=Show/Hide functions
+ ;hide functions
+HideAssignments=Show/Hide assignments
+ ;hide assignment
+DeleteSelection=Delete selection
+ ;delete selection
+MAPERR001=Invalid source / target.
+ ;invalid source target
+MAPERR002=Function already mapped to a target.
+ ;function mapped
+MAPERR003=Not a valid datatype between source and target.
+ ;invalid datatype
+MAPERR004=All mandatory columns should be mapped.
+ ;mandatory columns not mapped
+MAPERR101=Error occurred while loading mapper control.
+ ;mapper control error
+MAPERR102=Error occurred while saving the map.
+ ;save error
+MAPERR103=Source / target columns not specified.
+ ;source, target not specified
+MAPERR999=An unknown error occurred in the mapper control. Please contact administrator for more details.
+ ;generic error

@@ -1,0 +1,24 @@
+NewLabel0=Label files created on 09/20/2016 18:23:08 for label file Id ImageAnnotator and language en-US
+ ;Label file comment - see above label
+UnableToOpenPrintWindow=Unable to open print window.
+ ;Label used to display error.
+PageNumberString={0} / {1}
+ ;{0} is the current page number and {1} is the total page number
+PrintImage=Print Image
+ ;Title of the print page.
+ImageAnnotatorAnnotate=Annotate
+ ;Image Annotator tool bar button text
+ImageAnnotatorControllerClassNameMissing=ImageAnnotatorControllerClassName is not attached to the control
+ ;Control property was not set error
+ImageAnnotatorFormRunObjectMissing=Unexpected error: Form run object is null
+ ;The form run information missing error
+ImageAnnotatorDatasourceMissing=Datasource is not attached to the control
+ ;Datasource missing error
+ImageAnnotatorImageStreamNotReadable=Image stream not readable.
+ ;Label to throw error during stream validation
+ImageAnnotatorUnsupportedImageType=Unsupported image type - %1.
+ ;Label to throw error during convertion of image mimetype to System.Drawing.Imaging.ImageFormat
+ImageAnnotatorWrongControllerClassError=Use %1 as image annotator controller class for %2 table(image source).
+ ;%1 classstr(DocuRefImageAnnotatorController) %2 tableStr(DocuRef)
+ImageAnnotatorFindAttachmentRecordsMethodMissing=Form %1 do not have a method named 'findAttachmentRecords'.
+ ;findAttachmentRecords method is expected in update forms, %1 form name

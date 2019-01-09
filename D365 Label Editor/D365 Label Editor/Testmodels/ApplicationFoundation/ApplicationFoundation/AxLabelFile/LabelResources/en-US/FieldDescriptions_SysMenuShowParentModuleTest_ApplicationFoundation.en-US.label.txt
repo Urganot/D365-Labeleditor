@@ -1,0 +1,2 @@
+BatchAlerts_AlertMeBy=Select the type of notification to receive. The notification can be a pop-up window or an email message. The options vary, depending on the notification settings in the Options page. (Click System administration > Common > Users > Users. Click Options, and then click Notifications.)
+ ;Description text for the AlertMeBy control on the BatchAlerts form

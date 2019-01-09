@@ -1,0 +1,50 @@
+CurrencyEuroDenomination_CurrencyCode=Den valutakod som ska betecknas för trianguleringsvalutan.
+ ;Description text for the CurrencyCode control on the CurrencyEuroDenomination form
+Currency_CurrencyCode=Unik identifierare för den valda valutan. Koden får innehålla maximalt tre tecken. Till exempel, USD är amerikanska dollar, EUR är euro och CAD är kanadensiska dollar.
+ ;Description text for the CurrencyCode control on the Currency form
+Currency_GridCurrencyName=Namn på vald valuta. Namnet skrivs ut på checkar och andra dokument ihop med valutakoden.
+ ;Description text for the GridCurrencyName control on the Currency form
+Currency_CurrencyName=Namn på vald valuta. Namnet skrivs ut på checkar och andra dokument ihop med valutakoden.
+ ;Description text for the CurrencyName control on the Currency form
+Currency_Symbol=Symbolen för den valda valutan. Symboler används ofta i rapporter.
+ ;Description text for the Symbol control on the Currency form
+Currency_GridCurrency=Standardkoden för valutan som den definieras av den internationella standardiseringsorganisationen (ISO, International Organization for Standardization).
+ ;Description text for the GridCurrency control on the Currency form
+Currency_ISOCode=Standardkoden för valutan som den definieras av den internationella standardiseringsorganisationen (ISO, International Organization for Standardization).
+ ;Description text for the ISOCode control on the Currency form
+Currency_IsEuro=Valutan som andra valutor, som definieras som valutavalörer, trianguleras igenom.
+ ;Description text for the IsEuro control on the Currency form
+Currency_Group_OnLineConversionTool=Välj det här alternativet om du vill inkludera den valda valutan i det numeriska onlinekonverteringsverktygets beräkningar. Verktyget konverterar automatiskt belopp som har angetts på transaktionsrader i redovisningsvalutan till belopp i den valda valutan. De konverterade beloppen i den valda valutan sparas inte i databasen.
+ ;Description text for the Group_OnLineConversionTool control on the Currency form
+Currency_Group_CurrencyPrefix=Ange texten som skrivs ut framför beloppet i den valda valutan om alternativet Konvertering har valts.
+ ;Description text for the Group_CurrencyPrefix control on the Currency form
+Currency_Group_CurrencySuffix=Ange texten som skrivs ut efter beloppet i den valda valutan om alternativet Konvertering har valts.
+ ;Description text for the Group_CurrencySuffix control on the Currency form
+Currency_GeneralRoundingPrecision=Ange enhet för avrundningsbelopp. Du kan till exempel ange 0,10 eller 1,00.
+ ;Description text for the GeneralRoundingPrecision control on the Currency form
+Currency_RoundOffSalesOrder=Ange enhet för avrundningsbelopp på försäljningsorder, inköpsorder eller priser.
+ ;Description text for the RoundOffSalesOrder control on the Currency form
+Currency_RoundOffPurch=Ange enhet för avrundningsbelopp på försäljningsorder, inköpsorder eller priser.
+ ;Description text for the RoundOffPurch control on the Currency form
+Currency_Price_RoundOffPrice=Ange enhet för avrundningsbelopp på försäljningsorder, inköpsorder eller priser.
+ ;Description text for the Price_RoundOffPrice control on the Currency form
+Currency_AssetDep_JP_RoundOffAssetDep_JP=Ange enhet för avrundningsbelopp på försäljningsorder, inköpsorder eller priser.
+ ;Description text for the AssetDep_JP_RoundOffAssetDep_JP control on the Currency form
+Currency_RoundOffTypeSalesOrder=Välj avrundningspraxis för numret till höger om den avrundningsenhet som har anges i fältet Avrundningsregel. Välj Normal om du vill avrunda siffran 5 och högre uppåt och avrunda siffror som är mindre än 5 nedåt. Välj Nedåt för att avrunda alla siffror nedåt. Välj Uppåt om du vill avrunda alla siffror uppåt.
+ ;Description text for the RoundOffTypeSalesOrder control on the Currency form
+Currency_RoundOffTypePurch=Välj avrundningspraxis för numret till höger om den avrundningsenhet som har anges i fältet Avrundningsregel. Välj Normal om du vill avrunda siffran 5 och högre uppåt och avrunda siffror som är mindre än 5 nedåt. Välj Nedåt för att avrunda alla siffror nedåt. Välj Uppåt om du vill avrunda alla siffror uppåt.
+ ;Description text for the RoundOffTypePurch control on the Currency form
+Currency_Price_RoundOffTypePrice=Välj avrundningspraxis för numret till höger om den avrundningsenhet som har anges i fältet Avrundningsregel. Välj Normal om du vill avrunda siffran 5 och högre uppåt och avrunda siffror som är mindre än 5 nedåt. Välj Nedåt för att avrunda alla siffror nedåt. Välj Uppåt om du vill avrunda alla siffror uppåt.
+ ;Description text for the Price_RoundOffTypePrice control on the Currency form
+Currency_AssetDep_JP_RoundOffTypeAssetDep_JP=Välj avrundningspraxis för numret till höger om den avrundningsenhet som har anges i fältet Avrundningsregel. Välj Normal om du vill avrunda siffran 5 och högre uppåt och avrunda siffror som är mindre än 5 nedåt. Välj Nedåt för att avrunda alla siffror nedåt. Välj Uppåt om du vill avrunda alla siffror uppåt.
+ ;Description text for the AssetDep_JP_RoundOffTypeAssetDep_JP control on the Currency form
+ExchangeRateProviderConfiguration_ExchangeRateProviderConfiguration_Name=Valutakursleverantörens namn.
+ ;Description text for the ExchangeRateProviderConfiguration_Name control on the ExchangeRateProviderConfiguration form
+ExchangeRateProviderConfiguration_ExchangeRateProviderConfiguration_Name1=Valutakursleverantörens namn.
+ ;Description text for the ExchangeRateProviderConfiguration_Name1 control on the ExchangeRateProviderConfiguration form
+ExchangeRateProviderConfiguration_ExchangeRateProviderConfigurationDetails_Key=Det unika id:t för varje konfigurationsuppgift som krävs av leverantören. Den här informationen läggs till automatiskt för varje valutakursleverantör som du lägger till genom att klicka på knappen Lägg till.
+ ;Description text for the ExchangeRateProviderConfigurationDetails_Key control on the ExchangeRateProviderConfiguration form
+ExchangeRateProviderConfiguration_ExchangeRateProviderConfigurationDetails_Value=Information för varje nyckel. Den här informationen läggs till för varje valutakursleverantör som du lägger till genom att klicka på knappen Lägg till.
+ ;Description text for the ExchangeRateProviderConfigurationDetails_Value control on the ExchangeRateProviderConfiguration form
+CurrencyNameDeclension_W_InsertAndBeforePenny_InsertAndBeforePenny=Välj det här alternativet om du vill skriva ut förbindelsen och mellan enheterna och delarna.
+ ;Description text for the InsertAndBeforePenny_InsertAndBeforePenny control on the CurrencyNameDeclension_W form

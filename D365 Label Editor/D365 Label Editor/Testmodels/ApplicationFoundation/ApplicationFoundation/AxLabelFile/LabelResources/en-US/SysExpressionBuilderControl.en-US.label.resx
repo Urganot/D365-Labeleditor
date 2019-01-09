@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader><data name="ExpressionSaveButton" xml:space="preserve">
+                        <value>Save</value>
+	<comment>Save button</comment></data><data name="ExpressionClearButton" xml:space="preserve">
+                        <value>Clear</value>
+	<comment>Clear button</comment></data><data name="FieldName" xml:space="preserve">
+                        <value>Name</value>
+	<comment>Field name</comment></data><data name="FieldDatasource" xml:space="preserve">
+                        <value>Datasource</value>
+	<comment>Datasource</comment></data><data name="Operators" xml:space="preserve">
+                        <value>Operators</value>
+	<comment>Operators</comment></data><data name="OperatorTypes" xml:space="preserve">
+                        <value>Operator Types</value>
+	<comment>Operator types</comment></data><data name="Operator_Or" xml:space="preserve">
+                        <value>Or</value>
+	<comment>Or group operator</comment></data><data name="Operator_And" xml:space="preserve">
+                        <value>And</value>
+	<comment>And group operator</comment></data><data name="Operator_AndEither" xml:space="preserve">
+                        <value>And either</value>
+	<comment>And either group operator</comment></data><data name="OperatorDisplayed_Or" xml:space="preserve">
+                        <value>OR</value>
+	<comment>Display value Or</comment></data><data name="OperatorDisplayed_Either" xml:space="preserve">
+                        <value>EITHER</value>
+	<comment>Display value Either</comment></data><data name="OperatorDisplayed_Where" xml:space="preserve">
+                        <value>Where</value>
+	<comment>Display value where</comment></data><data name="OperatorDisplayed_And" xml:space="preserve">
+                        <value>And</value>
+	<comment>Display value And</comment></data><data name="FieldLabel_CreatedBy" xml:space="preserve">
+                        <value>.Created by</value>
+	<comment>Created by field value</comment></data><data name="FieldLabel_CreatedDate" xml:space="preserve">
+                        <value>.Created date</value>
+	<comment>Created date field value</comment></data><data name="EmptyExpressionMessage" xml:space="preserve">
+                        <value>This expression is empty.</value>
+	<comment>Empty expression</comment></data><data name="AddPredicateButton" xml:space="preserve">
+                        <value>Add line</value>
+	<comment>Add a new predicate</comment></data><data name="RemovePredicateButton" xml:space="preserve">
+                        <value>Remove line</value>
+	<comment>Remove this predicate</comment></data><data name="ExpressionDateTypes_Relative" xml:space="preserve">
+                        <value>Relative</value>
+	<comment>A date field of type relative</comment></data><data name="ExpressionDateTypes_Absolute" xml:space="preserve">
+                        <value>Absolute</value>
+	<comment>A date field of type absolute</comment></data><data name="ExpressionDateOperatorTypes_Plus" xml:space="preserve">
+                        <value>+</value>
+	<comment>A Plus days operator for a relative date</comment></data><data name="ExpressionDateOperatorTypes_Minus" xml:space="preserve">
+                        <value>-</value>
+	<comment>A Minus Days operator for a relative date</comment></data><data name="ExpressionStartDayTypes_Today" xml:space="preserve">
+                        <value>Today</value>
+	<comment>Today as the offset date for a relative date</comment></data><data name="ExpressionStartDayTypes_FirstDayOfMonth" xml:space="preserve">
+                        <value>First day of month</value>
+	<comment>The first day of the month as the offset date for a relative date</comment></data><data name="ExpressionStartDayTypes_LastDayOfMonth" xml:space="preserve">
+                        <value>Last day of month</value>
+	<comment>The last day of the month as the offset date for a relative date</comment></data><data name="Operator_String_BeginsWith" xml:space="preserve">
+                        <value>begins with</value>
+	<comment>New Comment</comment></data><data name="Operator_String_Contains" xml:space="preserve">
+                        <value>contains</value>
+	<comment>New Comment</comment></data><data name="Operator_String_Equals" xml:space="preserve">
+                        <value>equals</value>
+	<comment>New Comment</comment></data><data name="Operator_String_NotEquals" xml:space="preserve">
+                        <value>not equals</value>
+	<comment>New Comment</comment></data><data name="Operator_Numeric_EqualTo" xml:space="preserve">
+                        <value>equal to</value>
+	<comment>New Comment</comment></data><data name="Operator_Numeric_NotEqualTo" xml:space="preserve">
+                        <value>not equal to</value>
+	<comment>New Comment</comment></data><data name="Operator_Numeric_GreaterThan" xml:space="preserve">
+                        <value>greater than</value>
+	<comment>New Comment</comment></data><data name="Operator_Numeric_GreaterThanOrEqualTo" xml:space="preserve">
+                        <value>greater than or equal to</value>
+	<comment>New Comment</comment></data><data name="Operator_Numeric_LessThan" xml:space="preserve">
+                        <value>less than</value>
+	<comment>New Comment</comment></data><data name="Operator_Numeric_LessThanOrEqualTo" xml:space="preserve">
+                        <value>less than or equal to</value>
+	<comment>New Comment</comment></data><data name="Operator_NumericCurrency_EqualTo" xml:space="preserve">
+                        <value>equal to</value>
+	<comment>New Comment</comment></data><data name="Operator_NumericCurrency_NotEqualTo" xml:space="preserve">
+                        <value>not equal to</value>
+	<comment>New Comment</comment></data><data name="Operator_NumericCurrency_GreaterThan" xml:space="preserve">
+                        <value>greater than</value>
+	<comment>New Comment</comment></data><data name="Operator_NumericCurrency_GreaterThanOrEqualTo" xml:space="preserve">
+                        <value>greater than or equal to</value>
+	<comment>New Comment</comment></data><data name="Operator_NumericCurrency_LessThan" xml:space="preserve">
+                        <value>less than</value>
+	<comment>New Comment</comment></data><data name="Operator_NumericCurrency_LessThanOrEqualTo" xml:space="preserve">
+                        <value>less than or equal to</value>
+	<comment>New Comment</comment></data><data name="Operator_HierarchySurrogate_IsAtOrBelow" xml:space="preserve">
+                        <value>is at or below</value>
+	<comment>New Comment</comment></data><data name="Operator_HierarchySurrogate_IsAtOrAbove" xml:space="preserve">
+                        <value>is at or above</value>
+	<comment>New Comment</comment></data><data name="Operator_HierarchySurrogate_IsAt" xml:space="preserve">
+                        <value>is at</value>
+	<comment>New Comment</comment></data><data name="Operator_HierarchySurrogate_IsBelow" xml:space="preserve">
+                        <value>is below</value>
+	<comment>New Comment</comment></data><data name="Operator_HierarchySurrogate_IsAbove" xml:space="preserve">
+                        <value>is above</value>
+	<comment>New Comment</comment></data><data name="Operator_Surrogate_Equals" xml:space="preserve">
+                        <value>equals</value>
+	<comment>New Comment</comment></data><data name="Operator_Surrogate_NotAquals" xml:space="preserve">
+                        <value>not equals</value>
+	<comment>New Comment</comment></data><data name="Operator_SimpleSurrogate_Equals" xml:space="preserve">
+                        <value>equals</value>
+	<comment>New Comment</comment></data><data name="Operator_SimpleSurrogate_NotEquals" xml:space="preserve">
+                        <value>not equals</value>
+	<comment>New Comment</comment></data><data name="Operator_Date_OnOrAfter" xml:space="preserve">
+                        <value>on or after</value>
+	<comment>New Comment</comment></data><data name="Operator_Date_OnOrBefore" xml:space="preserve">
+                        <value>on or before</value>
+	<comment>New Comment</comment></data><data name="Operator_Enum_EqualTo" xml:space="preserve">
+                        <value>equal to</value>
+	<comment>New Comment</comment></data><data name="Operator_Enum_NotEqualTo" xml:space="preserve">
+                        <value>not equal to</value>
+	<comment>New Comment</comment></data><data name="OperatorType_Value" xml:space="preserve">
+                        <value>value</value>
+	<comment>New Comment</comment></data></root>

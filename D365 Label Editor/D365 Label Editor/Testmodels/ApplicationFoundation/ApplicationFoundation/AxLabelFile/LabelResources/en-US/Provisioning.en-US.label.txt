@@ -1,0 +1,14 @@
+ErrorUnkownFailure=Failed to process provisioning message.
+ ;Generic provisioning error message.
+ErrorMissingRequiredField=Missing required Field %1.
+ ;Validate a provisioning message field has value when required.
+ErrorUnknownUserPrincipal=Cannot find SID for user principal %1 and tenant network domain %2.
+ ;Validate user principal in provisioning message.
+ErrorNewMessageMustBeActive=New provisioning message must be at active state.
+ ;Validate new provision message state.
+ErrorNewMessageMustBeCompany=New provisioning message must be at company plan level.
+ ;Validate new provision message plan level.
+ErrorNoDefaultAdminUser=No default admin user is found.
+ ;Validate default admin user exists in Finance and Operations.
+ErrorNullMessage=Provisioning message cannot be null.
+ ;Validate a provisioning message is not null.

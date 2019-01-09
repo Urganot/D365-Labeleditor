@@ -1,0 +1,1197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Diagnostics
+  GenerationTime="2018-09-23T23:34:45.5372722-07:00">
+  <Items>
+    <Diagnostic>
+      <DiagnosticType>VisualStudioIntegration</DiagnosticType>
+      <Severity>Informational</Severity>
+      <Path>C:\AOSService\PackagesLocalDirectory\bin\labelc.exe</Path>
+      <Moniker>C:\AOSService\PackagesLocalDirectory\bin\labelc.exe -metadata="C:\AOSService\PackagesLocalDirectory" -output="C:\AOSService\PackagesLocalDirectory\Currency\Resources" -modelmodule="Currency" </Moniker>
+      <Message>C:\AOSService\PackagesLocalDirectory\bin\labelc.exe -metadata="C:\AOSService\PackagesLocalDirectory" -output="C:\AOSService\PackagesLocalDirectory\Currency\Resources" -modelmodule="Currency" </Message>
+    </Diagnostic>
+    <Diagnostic>
+      <DiagnosticType>Unspecified</DiagnosticType>
+      <Severity>Informational</Severity>
+      <Path>labelc.exe</Path>
+      <Moniker>Compiling Primary Resource file for CurrencyExchange</Moniker>
+      <Message>Compiling Primary Resource file for CurrencyExchange</Message>
+    </Diagnostic>
+    <Diagnostic>
+      <DiagnosticType>Unspecified</DiagnosticType>
+      <Severity>Informational</Severity>
+      <Path>labelc.exe</Path>
+      <Moniker>Compiling Primary Resource file for FieldDescriptions_GeneralLedger_Currency</Moniker>
+      <Message>Compiling Primary Resource file for FieldDescriptions_GeneralLedger_Currency</Message>
+    </Diagnostic>
+    <Diagnostic>
+      <DiagnosticType>Unspecified</DiagnosticType>
+      <Severity>Informational</Severity>
+      <Path>labelc.exe</Path>
+      <Moniker>Generating Primary resource assembly for CurrencyExchange</Moniker>
+      <Message>Generating Primary resource assembly for CurrencyExchange</Message>
+    </Diagnostic>
+    <Diagnostic>
+      <DiagnosticType>Unspecified</DiagnosticType>
+      <Severity>Informational</Severity>
+      <Path>labelc.exe</Path>
+      <Moniker>Generating Primary resource assembly for FieldDescriptions_GeneralLedger_Currency</Moniker>
+      <Message>Generating Primary resource assembly for FieldDescriptions_GeneralLedger_Currency</Message>
+    </Diagnostic>
+    <Diagnostic>
+      <DiagnosticType>Unspecified</DiagnosticType>
+      <Severity>Informational</Severity>
+      <Path>labelc.exe</Path>
+      <Moniker>Compiling label file CurrencyExchange for language ar</Moniker>
+      <Message>Compiling label file CurrencyExchange for language ar</Message>
+    </Diagnostic>
+    <Diagnostic>
+      <DiagnosticType>Unspecified</DiagnosticType>
+      <Severity>Informational</Severity>
+      <Path>labelc.exe</Path>
+      <Moniker>Compiling label file CurrencyExchange for language fr-BE</Moniker>
+      <Message>Compiling label file CurrencyExchange for language fr-BE</Message>
+    </Diagnostic>
+    <Diagnostic>
+      <DiagnosticType>Unspecified</DiagnosticType>
+      <Severity>Informational</Severity>
+      <Path>labelc.exe</Path>
+      <Moniker>Compiling label file CurrencyExchange for language zh-Hans</Moniker>
+      <Message>Compiling label file CurrencyExchange for language zh-Hans</Message>
+    </Diagnostic>
+    <Diagnostic>
+      <DiagnosticType>Unspecified</DiagnosticType>
+      <Severity>Informational</Severity>
+      <Path>labelc.exe</Path>
+      <Moniker>Compiling label file FieldDescriptions_GeneralLedger_Currency for language fi</Moniker>
+      <Message>Compiling label file FieldDescriptions_GeneralLedger_Currency for language fi</Message>
+    </Diagnostic>
+    <Diagnostic>
+      <DiagnosticType>Unspecified</DiagnosticType>
+      <Severity>Informational</Severity>
+      <Path>labelc.exe</Path>
+      <Moniker>Compiling label file FieldDescriptions_GeneralLedger_Currency for language tr</Moniker>
+      <Message>Compiling label file FieldDescriptions_GeneralLedger_Currency for language tr</Message>
+    </Diagnostic>
+    <Diagnostic>
+      <DiagnosticType>Unspecified</DiagnosticType>
+      <Severity>Informational</Severity>
+      <Path>labelc.exe</Path>
+      <Moniker>Compiling label file CurrencyExchange for language cs</Moniker>
+      <Message>Compiling label file CurrencyExchange for language cs</Message>
+    </Diagnostic>
+    <Diagnostic>
+      <DiagnosticType>Unspecified</DiagnosticType>
+      <Severity>Informational</Severity>
+      <Path>labelc.exe</Path>
+      <Moniker>Compiling label file CurrencyExchange for language fr-CA</Moniker>
+      <Message>Compiling label file CurrencyExchange for language fr-CA</Message>
+    </Diagnostic>
+    <Diagnostic>
+      <DiagnosticType>Unspecified</DiagnosticType>
+      <Severity>Informational</Severity>
+      <Path>labelc.exe</Path>
+      <Moniker>Compiling label file FieldDescriptions_GeneralLedger_Currency for language fr-BE</Moniker>
+      <Message>Compiling label file FieldDescriptions_GeneralLedger_Currency for language fr-BE</Message>
+    </Diagnostic>
+    <Diagnostic>
+      <DiagnosticType>Unspecified</DiagnosticType>
+      <Severity>Informational</Severity>
+      <Path>labelc.exe</Path>
+      <Moniker>Compiling label file CurrencyExchange for language da</Moniker>
+      <Message>Compiling label file CurrencyExchange for language da</Message>
+    </Diagnostic>
+    <Diagnostic>
+      <DiagnosticType>Unspecified</DiagnosticType>
+      <Severity>Informational</Severity>
+      <Path>labelc.exe</Path>
+      <Moniker>Compiling label file FieldDescriptions_GeneralLedger_Currency for language ar</Moniker>
+      <Message>Compiling label file FieldDescriptions_GeneralLedger_Currency for language ar</Message>
+    </Diagnostic>
+    <Diagnostic>
+      <DiagnosticType>Unspecified</DiagnosticType>
+      <Severity>Informational</Severity>
+      <Path>labelc.exe</Path>
+      <Moniker>Compiling label file CurrencyExchange for language fr</Moniker>
+      <Message>Compiling label file CurrencyExchange for language fr</Message>
+    </Diagnostic>
+    <Diagnostic>
+      <DiagnosticType>Unspecified</DiagnosticType>
+      <Severity>Informational</Severity>
+      <Path>labelc.exe</Path>
+      <Moniker>Compiling label file CurrencyExchange for language de-AT</Moniker>
+      <Message>Compiling label file CurrencyExchange for language de-AT</Message>
+    </Diagnostic>
+    <Diagnostic>
+      <DiagnosticType>Unspecified</DiagnosticType>
+      <Severity>Informational</Severity>
+      <Path>labelc.exe</Path>
+      <Moniker>Compiling label file FieldDescriptions_GeneralLedger_Currency for language cs</Moniker>
+      <Message>Compiling label file FieldDescriptions_GeneralLedger_Currency for language cs</Message>
+    </Diagnostic>
+    <Diagnostic>
+      <DiagnosticType>Unspecified</DiagnosticType>
+      <Severity>Informational</Severity>
+      <Path>labelc.exe</Path>
+      <Moniker>Compiling label file FieldDescriptions_GeneralLedger_Currency for language fr-CA</Moniker>
+      <Message>Compiling label file FieldDescriptions_GeneralLedger_Currency for language fr-CA</Message>
+    </Diagnostic>
+    <Diagnostic>
+      <DiagnosticType>Unspecified</DiagnosticType>
+      <Severity>Informational</Severity>
+      <Path>labelc.exe</Path>
+      <Moniker>Compiling label file CurrencyExchange for language fr-CH</Moniker>
+      <Message>Compiling label file CurrencyExchange for language fr-CH</Message>
+    </Diagnostic>
+    <Diagnostic>
+      <DiagnosticType>Unspecified</DiagnosticType>
+      <Severity>Informational</Severity>
+      <Path>labelc.exe</Path>
+      <Moniker>Compiling label file FieldDescriptions_GeneralLedger_Currency for language da</Moniker>
+      <Message>Compiling label file FieldDescriptions_GeneralLedger_Currency for language da</Message>
+    </Diagnostic>
+    <Diagnostic>
+      <DiagnosticType>Unspecified</DiagnosticType>
+      <Severity>Informational</Severity>
+      <Path>labelc.exe</Path>
+      <Moniker>Compiling label file CurrencyExchange for language de-CH</Moniker>
+      <Message>Compiling label file CurrencyExchange for language de-CH</Message>
+    </Diagnostic>
+    <Diagnostic>
+      <DiagnosticType>Unspecified</DiagnosticType>
+      <Severity>Informational</Severity>
+      <Path>labelc.exe</Path>
+      <Moniker>Compiling label file FieldDescriptions_GeneralLedger_Currency for language zh-Hans</Moniker>
+      <Message>Compiling label file FieldDescriptions_GeneralLedger_Currency for language zh-Hans</Message>
+    </Diagnostic>
+    <Diagnostic>
+      <DiagnosticType>Unspecified</DiagnosticType>
+      <Severity>Informational</Severity>
+      <Path>labelc.exe</Path>
+      <Moniker>Compiling label file CurrencyExchange for language en-AU</Moniker>
+      <Message>Compiling label file CurrencyExchange for language en-AU</Message>
+    </Diagnostic>
+    <Diagnostic>
+      <DiagnosticType>Unspecified</DiagnosticType>
+      <Severity>Informational</Severity>
+      <Path>labelc.exe</Path>
+      <Moniker>Compiling label file FieldDescriptions_GeneralLedger_Currency for language de-AT</Moniker>
+      <Message>Compiling label file FieldDescriptions_GeneralLedger_Currency for language de-AT</Message>
+    </Diagnostic>
+    <Diagnostic>
+      <DiagnosticType>Unspecified</DiagnosticType>
+      <Severity>Informational</Severity>
+      <Path>labelc.exe</Path>
+      <Moniker>Compiling label file CurrencyExchange for language hu</Moniker>
+      <Message>Compiling label file CurrencyExchange for language hu</Message>
+    </Diagnostic>
+    <Diagnostic>
+      <DiagnosticType>Unspecified</DiagnosticType>
+      <Severity>Informational</Severity>
+      <Path>labelc.exe</Path>
+      <Moniker>Compiling label file FieldDescriptions_GeneralLedger_Currency for language fr-CH</Moniker>
+      <Message>Compiling label file FieldDescriptions_GeneralLedger_Currency for language fr-CH</Message>
+    </Diagnostic>
+    <Diagnostic>
+      <DiagnosticType>Unspecified</DiagnosticType>
+      <Severity>Informational</Severity>
+      <Path>labelc.exe</Path>
+      <Moniker>Compiling label file CurrencyExchange for language en-IN</Moniker>
+      <Message>Compiling label file CurrencyExchange for language en-IN</Message>
+    </Diagnostic>
+    <Diagnostic>
+      <DiagnosticType>Unspecified</DiagnosticType>
+      <Severity>Informational</Severity>
+      <Path>labelc.exe</Path>
+      <Moniker>Compiling label file CurrencyExchange for language en-CA</Moniker>
+      <Message>Compiling label file CurrencyExchange for language en-CA</Message>
+    </Diagnostic>
+    <Diagnostic>
+      <DiagnosticType>Unspecified</DiagnosticType>
+      <Severity>Informational</Severity>
+      <Path>labelc.exe</Path>
+      <Moniker>Compiling label file CurrencyExchange for language en-GB</Moniker>
+      <Message>Compiling label file CurrencyExchange for language en-GB</Message>
+    </Diagnostic>
+    <Diagnostic>
+      <DiagnosticType>Unspecified</DiagnosticType>
+      <Severity>Informational</Severity>
+      <Path>labelc.exe</Path>
+      <Moniker>Compiling label file CurrencyExchange for language is</Moniker>
+      <Message>Compiling label file CurrencyExchange for language is</Message>
+    </Diagnostic>
+    <Diagnostic>
+      <DiagnosticType>Unspecified</DiagnosticType>
+      <Severity>Informational</Severity>
+      <Path>labelc.exe</Path>
+      <Moniker>Compiling label file FieldDescriptions_GeneralLedger_Currency for language fr</Moniker>
+      <Message>Compiling label file FieldDescriptions_GeneralLedger_Currency for language fr</Message>
+    </Diagnostic>
+    <Diagnostic>
+      <DiagnosticType>Unspecified</DiagnosticType>
+      <Severity>Informational</Severity>
+      <Path>labelc.exe</Path>
+      <Moniker>Compiling label file FieldDescriptions_GeneralLedger_Currency for language en-CA</Moniker>
+      <Message>Compiling label file FieldDescriptions_GeneralLedger_Currency for language en-CA</Message>
+    </Diagnostic>
+    <Diagnostic>
+      <DiagnosticType>Unspecified</DiagnosticType>
+      <Severity>Informational</Severity>
+      <Path>labelc.exe</Path>
+      <Moniker>Compiling label file CurrencyExchange for language de</Moniker>
+      <Message>Compiling label file CurrencyExchange for language de</Message>
+    </Diagnostic>
+    <Diagnostic>
+      <DiagnosticType>Unspecified</DiagnosticType>
+      <Severity>Informational</Severity>
+      <Path>labelc.exe</Path>
+      <Moniker>Compiling label file FieldDescriptions_GeneralLedger_Currency for language it</Moniker>
+      <Message>Compiling label file FieldDescriptions_GeneralLedger_Currency for language it</Message>
+    </Diagnostic>
+    <Diagnostic>
+      <DiagnosticType>Unspecified</DiagnosticType>
+      <Severity>Informational</Severity>
+      <Path>labelc.exe</Path>
+      <Moniker>Compiling label file CurrencyExchange for language en-MY</Moniker>
+      <Message>Compiling label file CurrencyExchange for language en-MY</Message>
+    </Diagnostic>
+    <Diagnostic>
+      <DiagnosticType>Unspecified</DiagnosticType>
+      <Severity>Informational</Severity>
+      <Path>labelc.exe</Path>
+      <Moniker>Compiling label file CurrencyExchange for language en-NZ</Moniker>
+      <Message>Compiling label file CurrencyExchange for language en-NZ</Message>
+    </Diagnostic>
+    <Diagnostic>
+      <DiagnosticType>Unspecified</DiagnosticType>
+      <Severity>Informational</Severity>
+      <Path>labelc.exe</Path>
+      <Moniker>Compiling label file CurrencyExchange for language ja</Moniker>
+      <Message>Compiling label file CurrencyExchange for language ja</Message>
+    </Diagnostic>
+    <Diagnostic>
+      <DiagnosticType>Unspecified</DiagnosticType>
+      <Severity>Informational</Severity>
+      <Path>labelc.exe</Path>
+      <Moniker>Compiling label file FieldDescriptions_GeneralLedger_Currency for language de-CH</Moniker>
+      <Message>Compiling label file FieldDescriptions_GeneralLedger_Currency for language de-CH</Message>
+    </Diagnostic>
+    <Diagnostic>
+      <DiagnosticType>Unspecified</DiagnosticType>
+      <Severity>Informational</Severity>
+      <Path>labelc.exe</Path>
+      <Moniker>Compiling label file CurrencyExchange for language en-IE</Moniker>
+      <Message>Compiling label file CurrencyExchange for language en-IE</Message>
+    </Diagnostic>
+    <Diagnostic>
+      <DiagnosticType>Unspecified</DiagnosticType>
+      <Severity>Informational</Severity>
+      <Path>labelc.exe</Path>
+      <Moniker>Compiling label file CurrencyExchange for language lv</Moniker>
+      <Message>Compiling label file CurrencyExchange for language lv</Message>
+    </Diagnostic>
+    <Diagnostic>
+      <DiagnosticType>Unspecified</DiagnosticType>
+      <Severity>Informational</Severity>
+      <Path>labelc.exe</Path>
+      <Moniker>Compiling label file CurrencyExchange for language it-CH</Moniker>
+      <Message>Compiling label file CurrencyExchange for language it-CH</Message>
+    </Diagnostic>
+    <Diagnostic>
+      <DiagnosticType>Unspecified</DiagnosticType>
+      <Severity>Informational</Severity>
+      <Path>labelc.exe</Path>
+      <Moniker>Compiling label file FieldDescriptions_GeneralLedger_Currency for language hu</Moniker>
+      <Message>Compiling label file FieldDescriptions_GeneralLedger_Currency for language hu</Message>
+    </Diagnostic>
+    <Diagnostic>
+      <DiagnosticType>Unspecified</DiagnosticType>
+      <Severity>Informational</Severity>
+      <Path>labelc.exe</Path>
+      <Moniker>Compiling label file FieldDescriptions_GeneralLedger_Currency for language de</Moniker>
+      <Message>Compiling label file FieldDescriptions_GeneralLedger_Currency for language de</Message>
+    </Diagnostic>
+    <Diagnostic>
+      <DiagnosticType>Unspecified</DiagnosticType>
+      <Severity>Informational</Severity>
+      <Path>labelc.exe</Path>
+      <Moniker>Compiling label file FieldDescriptions_GeneralLedger_Currency for language en-IE</Moniker>
+      <Message>Compiling label file FieldDescriptions_GeneralLedger_Currency for language en-IE</Message>
+    </Diagnostic>
+    <Diagnostic>
+      <DiagnosticType>Unspecified</DiagnosticType>
+      <Severity>Informational</Severity>
+      <Path>labelc.exe</Path>
+      <Moniker>Compiling label file CurrencyExchange for language es-MX</Moniker>
+      <Message>Compiling label file CurrencyExchange for language es-MX</Message>
+    </Diagnostic>
+    <Diagnostic>
+      <DiagnosticType>Unspecified</DiagnosticType>
+      <Severity>Informational</Severity>
+      <Path>labelc.exe</Path>
+      <Moniker>Compiling label file FieldDescriptions_GeneralLedger_Currency for language en-AU</Moniker>
+      <Message>Compiling label file FieldDescriptions_GeneralLedger_Currency for language en-AU</Message>
+    </Diagnostic>
+    <Diagnostic>
+      <DiagnosticType>Unspecified</DiagnosticType>
+      <Severity>Informational</Severity>
+      <Path>labelc.exe</Path>
+      <Moniker>Compiling label file FieldDescriptions_GeneralLedger_Currency for language lt</Moniker>
+      <Message>Compiling label file FieldDescriptions_GeneralLedger_Currency for language lt</Message>
+    </Diagnostic>
+    <Diagnostic>
+      <DiagnosticType>Unspecified</DiagnosticType>
+      <Severity>Informational</Severity>
+      <Path>labelc.exe</Path>
+      <Moniker>Compiling label file CurrencyExchange for language nb-NO</Moniker>
+      <Message>Compiling label file CurrencyExchange for language nb-NO</Message>
+    </Diagnostic>
+    <Diagnostic>
+      <DiagnosticType>Unspecified</DiagnosticType>
+      <Severity>Informational</Severity>
+      <Path>labelc.exe</Path>
+      <Moniker>Compiling label file FieldDescriptions_GeneralLedger_Currency for language en-IN</Moniker>
+      <Message>Compiling label file FieldDescriptions_GeneralLedger_Currency for language en-IN</Message>
+    </Diagnostic>
+    <Diagnostic>
+      <DiagnosticType>Unspecified</DiagnosticType>
+      <Severity>Informational</Severity>
+      <Path>labelc.exe</Path>
+      <Moniker>Compiling label file FieldDescriptions_GeneralLedger_Currency for language is</Moniker>
+      <Message>Compiling label file FieldDescriptions_GeneralLedger_Currency for language is</Message>
+    </Diagnostic>
+    <Diagnostic>
+      <DiagnosticType>Unspecified</DiagnosticType>
+      <Severity>Informational</Severity>
+      <Path>labelc.exe</Path>
+      <Moniker>Compiling label file CurrencyExchange for language en-SG</Moniker>
+      <Message>Compiling label file CurrencyExchange for language en-SG</Message>
+    </Diagnostic>
+    <Diagnostic>
+      <DiagnosticType>Unspecified</DiagnosticType>
+      <Severity>Informational</Severity>
+      <Path>labelc.exe</Path>
+      <Moniker>Compiling label file CurrencyExchange for language nl</Moniker>
+      <Message>Compiling label file CurrencyExchange for language nl</Message>
+    </Diagnostic>
+    <Diagnostic>
+      <DiagnosticType>Unspecified</DiagnosticType>
+      <Severity>Informational</Severity>
+      <Path>labelc.exe</Path>
+      <Moniker>Compiling label file CurrencyExchange for language lt</Moniker>
+      <Message>Compiling label file CurrencyExchange for language lt</Message>
+    </Diagnostic>
+    <Diagnostic>
+      <DiagnosticType>Unspecified</DiagnosticType>
+      <Severity>Informational</Severity>
+      <Path>labelc.exe</Path>
+      <Moniker>Compiling label file FieldDescriptions_GeneralLedger_Currency for language ja</Moniker>
+      <Message>Compiling label file FieldDescriptions_GeneralLedger_Currency for language ja</Message>
+    </Diagnostic>
+    <Diagnostic>
+      <DiagnosticType>Unspecified</DiagnosticType>
+      <Severity>Informational</Severity>
+      <Path>labelc.exe</Path>
+      <Moniker>Compiling label file CurrencyExchange for language pt-BR</Moniker>
+      <Message>Compiling label file CurrencyExchange for language pt-BR</Message>
+    </Diagnostic>
+    <Diagnostic>
+      <DiagnosticType>Unspecified</DiagnosticType>
+      <Severity>Informational</Severity>
+      <Path>labelc.exe</Path>
+      <Moniker>Compiling label file CurrencyExchange for language es</Moniker>
+      <Message>Compiling label file CurrencyExchange for language es</Message>
+    </Diagnostic>
+    <Diagnostic>
+      <DiagnosticType>Unspecified</DiagnosticType>
+      <Severity>Informational</Severity>
+      <Path>labelc.exe</Path>
+      <Moniker>Compiling label file CurrencyExchange for language it</Moniker>
+      <Message>Compiling label file CurrencyExchange for language it</Message>
+    </Diagnostic>
+    <Diagnostic>
+      <DiagnosticType>Unspecified</DiagnosticType>
+      <Severity>Informational</Severity>
+      <Path>labelc.exe</Path>
+      <Moniker>Compiling label file FieldDescriptions_GeneralLedger_Currency for language en-GB</Moniker>
+      <Message>Compiling label file FieldDescriptions_GeneralLedger_Currency for language en-GB</Message>
+    </Diagnostic>
+    <Diagnostic>
+      <DiagnosticType>Unspecified</DiagnosticType>
+      <Severity>Informational</Severity>
+      <Path>labelc.exe</Path>
+      <Moniker>Compiling label file CurrencyExchange for language tr</Moniker>
+      <Message>Compiling label file CurrencyExchange for language tr</Message>
+    </Diagnostic>
+    <Diagnostic>
+      <DiagnosticType>Unspecified</DiagnosticType>
+      <Severity>Informational</Severity>
+      <Path>labelc.exe</Path>
+      <Moniker>Compiling label file FieldDescriptions_GeneralLedger_Currency for language et</Moniker>
+      <Message>Compiling label file FieldDescriptions_GeneralLedger_Currency for language et</Message>
+    </Diagnostic>
+    <Diagnostic>
+      <DiagnosticType>Unspecified</DiagnosticType>
+      <Severity>Informational</Severity>
+      <Path>labelc.exe</Path>
+      <Moniker>Compiling label file CurrencyExchange for language et</Moniker>
+      <Message>Compiling label file CurrencyExchange for language et</Message>
+    </Diagnostic>
+    <Diagnostic>
+      <DiagnosticType>Unspecified</DiagnosticType>
+      <Severity>Informational</Severity>
+      <Path>labelc.exe</Path>
+      <Moniker>Compiling label file FieldDescriptions_GeneralLedger_Currency for language lv</Moniker>
+      <Message>Compiling label file FieldDescriptions_GeneralLedger_Currency for language lv</Message>
+    </Diagnostic>
+    <Diagnostic>
+      <DiagnosticType>Unspecified</DiagnosticType>
+      <Severity>Informational</Severity>
+      <Path>labelc.exe</Path>
+      <Moniker>Compiling label file FieldDescriptions_GeneralLedger_Currency for language pl</Moniker>
+      <Message>Compiling label file FieldDescriptions_GeneralLedger_Currency for language pl</Message>
+    </Diagnostic>
+    <Diagnostic>
+      <DiagnosticType>Unspecified</DiagnosticType>
+      <Severity>Informational</Severity>
+      <Path>labelc.exe</Path>
+      <Moniker>Compiling label file FieldDescriptions_GeneralLedger_Currency for language en-MY</Moniker>
+      <Message>Compiling label file FieldDescriptions_GeneralLedger_Currency for language en-MY</Message>
+    </Diagnostic>
+    <Diagnostic>
+      <DiagnosticType>Unspecified</DiagnosticType>
+      <Severity>Informational</Severity>
+      <Path>labelc.exe</Path>
+      <Moniker>Compiling label file FieldDescriptions_GeneralLedger_Currency for language it-CH</Moniker>
+      <Message>Compiling label file FieldDescriptions_GeneralLedger_Currency for language it-CH</Message>
+    </Diagnostic>
+    <Diagnostic>
+      <DiagnosticType>Unspecified</DiagnosticType>
+      <Severity>Informational</Severity>
+      <Path>labelc.exe</Path>
+      <Moniker>Compiling label file CurrencyExchange for language en-US</Moniker>
+      <Message>Compiling label file CurrencyExchange for language en-US</Message>
+    </Diagnostic>
+    <Diagnostic>
+      <DiagnosticType>Unspecified</DiagnosticType>
+      <Severity>Informational</Severity>
+      <Path>labelc.exe</Path>
+      <Moniker>Compiling label file CurrencyExchange for language nl-BE</Moniker>
+      <Message>Compiling label file CurrencyExchange for language nl-BE</Message>
+    </Diagnostic>
+    <Diagnostic>
+      <DiagnosticType>Unspecified</DiagnosticType>
+      <Severity>Informational</Severity>
+      <Path>labelc.exe</Path>
+      <Moniker>Compiling label file CurrencyExchange for language pl</Moniker>
+      <Message>Compiling label file CurrencyExchange for language pl</Message>
+    </Diagnostic>
+    <Diagnostic>
+      <DiagnosticType>Unspecified</DiagnosticType>
+      <Severity>Informational</Severity>
+      <Path>labelc.exe</Path>
+      <Moniker>Compiling label file CurrencyExchange for language ru</Moniker>
+      <Message>Compiling label file CurrencyExchange for language ru</Message>
+    </Diagnostic>
+    <Diagnostic>
+      <DiagnosticType>Unspecified</DiagnosticType>
+      <Severity>Informational</Severity>
+      <Path>labelc.exe</Path>
+      <Moniker>Compiling label file CurrencyExchange for language fi</Moniker>
+      <Message>Compiling label file CurrencyExchange for language fi</Message>
+    </Diagnostic>
+    <Diagnostic>
+      <DiagnosticType>Unspecified</DiagnosticType>
+      <Severity>Informational</Severity>
+      <Path>labelc.exe</Path>
+      <Moniker>Compiling label file FieldDescriptions_GeneralLedger_Currency for language pt-BR</Moniker>
+      <Message>Compiling label file FieldDescriptions_GeneralLedger_Currency for language pt-BR</Message>
+    </Diagnostic>
+    <Diagnostic>
+      <DiagnosticType>Unspecified</DiagnosticType>
+      <Severity>Informational</Severity>
+      <Path>labelc.exe</Path>
+      <Moniker>Compiling label file FieldDescriptions_GeneralLedger_Currency for language en-NZ</Moniker>
+      <Message>Compiling label file FieldDescriptions_GeneralLedger_Currency for language en-NZ</Message>
+    </Diagnostic>
+    <Diagnostic>
+      <DiagnosticType>Unspecified</DiagnosticType>
+      <Severity>Informational</Severity>
+      <Path>labelc.exe</Path>
+      <Moniker>Compiling label file FieldDescriptions_GeneralLedger_Currency for language nb-NO</Moniker>
+      <Message>Compiling label file FieldDescriptions_GeneralLedger_Currency for language nb-NO</Message>
+    </Diagnostic>
+    <Diagnostic>
+      <DiagnosticType>Unspecified</DiagnosticType>
+      <Severity>Informational</Severity>
+      <Path>labelc.exe</Path>
+      <Moniker>Compiling label file CurrencyExchange for language sv</Moniker>
+      <Message>Compiling label file CurrencyExchange for language sv</Message>
+    </Diagnostic>
+    <Diagnostic>
+      <DiagnosticType>Unspecified</DiagnosticType>
+      <Severity>Informational</Severity>
+      <Path>labelc.exe</Path>
+      <Moniker>Compiling label file CurrencyExchange for language en-ZA</Moniker>
+      <Message>Compiling label file CurrencyExchange for language en-ZA</Message>
+    </Diagnostic>
+    <Diagnostic>
+      <DiagnosticType>Unspecified</DiagnosticType>
+      <Severity>Informational</Severity>
+      <Path>labelc.exe</Path>
+      <Moniker>Compiling label file FieldDescriptions_GeneralLedger_Currency for language en-SG</Moniker>
+      <Message>Compiling label file FieldDescriptions_GeneralLedger_Currency for language en-SG</Message>
+    </Diagnostic>
+    <Diagnostic>
+      <DiagnosticType>Unspecified</DiagnosticType>
+      <Severity>Informational</Severity>
+      <Path>labelc.exe</Path>
+      <Moniker>Compiling label file FieldDescriptions_GeneralLedger_Currency for language ru</Moniker>
+      <Message>Compiling label file FieldDescriptions_GeneralLedger_Currency for language ru</Message>
+    </Diagnostic>
+    <Diagnostic>
+      <DiagnosticType>Unspecified</DiagnosticType>
+      <Severity>Informational</Severity>
+      <Path>labelc.exe</Path>
+      <Moniker>Compiling label file FieldDescriptions_GeneralLedger_Currency for language nl-BE</Moniker>
+      <Message>Compiling label file FieldDescriptions_GeneralLedger_Currency for language nl-BE</Message>
+    </Diagnostic>
+    <Diagnostic>
+      <DiagnosticType>Unspecified</DiagnosticType>
+      <Severity>Informational</Severity>
+      <Path>labelc.exe</Path>
+      <Moniker>Compiling label file CurrencyExchange for language th</Moniker>
+      <Message>Compiling label file CurrencyExchange for language th</Message>
+    </Diagnostic>
+    <Diagnostic>
+      <DiagnosticType>Unspecified</DiagnosticType>
+      <Severity>Informational</Severity>
+      <Path>labelc.exe</Path>
+      <Moniker>Compiling label file FieldDescriptions_GeneralLedger_Currency for language sv</Moniker>
+      <Message>Compiling label file FieldDescriptions_GeneralLedger_Currency for language sv</Message>
+    </Diagnostic>
+    <Diagnostic>
+      <DiagnosticType>Unspecified</DiagnosticType>
+      <Severity>Informational</Severity>
+      <Path>labelc.exe</Path>
+      <Moniker>Compiling label file FieldDescriptions_GeneralLedger_Currency for language en-US</Moniker>
+      <Message>Compiling label file FieldDescriptions_GeneralLedger_Currency for language en-US</Message>
+    </Diagnostic>
+    <Diagnostic>
+      <DiagnosticType>Unspecified</DiagnosticType>
+      <Severity>Informational</Severity>
+      <Path>labelc.exe</Path>
+      <Moniker>Compiling label file FieldDescriptions_GeneralLedger_Currency for language nl</Moniker>
+      <Message>Compiling label file FieldDescriptions_GeneralLedger_Currency for language nl</Message>
+    </Diagnostic>
+    <Diagnostic>
+      <DiagnosticType>Unspecified</DiagnosticType>
+      <Severity>Informational</Severity>
+      <Path>labelc.exe</Path>
+      <Moniker>Compiling label file FieldDescriptions_GeneralLedger_Currency for language th</Moniker>
+      <Message>Compiling label file FieldDescriptions_GeneralLedger_Currency for language th</Message>
+    </Diagnostic>
+    <Diagnostic>
+      <DiagnosticType>Unspecified</DiagnosticType>
+      <Severity>Informational</Severity>
+      <Path>labelc.exe</Path>
+      <Moniker>Compiling label file FieldDescriptions_GeneralLedger_Currency for language en-ZA</Moniker>
+      <Message>Compiling label file FieldDescriptions_GeneralLedger_Currency for language en-ZA</Message>
+    </Diagnostic>
+    <Diagnostic>
+      <DiagnosticType>Unspecified</DiagnosticType>
+      <Severity>Informational</Severity>
+      <Path>labelc.exe</Path>
+      <Moniker>Compiling label file FieldDescriptions_GeneralLedger_Currency for language es-MX</Moniker>
+      <Message>Compiling label file FieldDescriptions_GeneralLedger_Currency for language es-MX</Message>
+    </Diagnostic>
+    <Diagnostic>
+      <DiagnosticType>Unspecified</DiagnosticType>
+      <Severity>Informational</Severity>
+      <Path>labelc.exe</Path>
+      <Moniker>Compiling label file FieldDescriptions_GeneralLedger_Currency for language es</Moniker>
+      <Message>Compiling label file FieldDescriptions_GeneralLedger_Currency for language es</Message>
+    </Diagnostic>
+    <Diagnostic>
+      <DiagnosticType>Unspecified</DiagnosticType>
+      <Severity>Informational</Severity>
+      <Path>labelc.exe</Path>
+      <Moniker>Generating satellite resource assembly for label file CurrencyExchange, language ar</Moniker>
+      <Message>Generating satellite resource assembly for label file CurrencyExchange, language ar</Message>
+    </Diagnostic>
+    <Diagnostic>
+      <DiagnosticType>Unspecified</DiagnosticType>
+      <Severity>Informational</Severity>
+      <Path>labelc.exe</Path>
+      <Moniker>Generating satellite resource assembly for label file CurrencyExchange, language fr-BE</Moniker>
+      <Message>Generating satellite resource assembly for label file CurrencyExchange, language fr-BE</Message>
+    </Diagnostic>
+    <Diagnostic>
+      <DiagnosticType>Unspecified</DiagnosticType>
+      <Severity>Informational</Severity>
+      <Path>labelc.exe</Path>
+      <Moniker>Generating satellite resource assembly for label file CurrencyExchange, language zh-Hans</Moniker>
+      <Message>Generating satellite resource assembly for label file CurrencyExchange, language zh-Hans</Message>
+    </Diagnostic>
+    <Diagnostic>
+      <DiagnosticType>Unspecified</DiagnosticType>
+      <Severity>Informational</Severity>
+      <Path>labelc.exe</Path>
+      <Moniker>Generating satellite resource assembly for label file FieldDescriptions_GeneralLedger_Currency, language fi</Moniker>
+      <Message>Generating satellite resource assembly for label file FieldDescriptions_GeneralLedger_Currency, language fi</Message>
+    </Diagnostic>
+    <Diagnostic>
+      <DiagnosticType>Unspecified</DiagnosticType>
+      <Severity>Informational</Severity>
+      <Path>labelc.exe</Path>
+      <Moniker>Generating satellite resource assembly for label file FieldDescriptions_GeneralLedger_Currency, language tr</Moniker>
+      <Message>Generating satellite resource assembly for label file FieldDescriptions_GeneralLedger_Currency, language tr</Message>
+    </Diagnostic>
+    <Diagnostic>
+      <DiagnosticType>Unspecified</DiagnosticType>
+      <Severity>Informational</Severity>
+      <Path>labelc.exe</Path>
+      <Moniker>Generating satellite resource assembly for label file CurrencyExchange, language cs</Moniker>
+      <Message>Generating satellite resource assembly for label file CurrencyExchange, language cs</Message>
+    </Diagnostic>
+    <Diagnostic>
+      <DiagnosticType>Unspecified</DiagnosticType>
+      <Severity>Informational</Severity>
+      <Path>labelc.exe</Path>
+      <Moniker>Generating satellite resource assembly for label file CurrencyExchange, language fr-CA</Moniker>
+      <Message>Generating satellite resource assembly for label file CurrencyExchange, language fr-CA</Message>
+    </Diagnostic>
+    <Diagnostic>
+      <DiagnosticType>Unspecified</DiagnosticType>
+      <Severity>Informational</Severity>
+      <Path>labelc.exe</Path>
+      <Moniker>Generating satellite resource assembly for label file FieldDescriptions_GeneralLedger_Currency, language ar</Moniker>
+      <Message>Generating satellite resource assembly for label file FieldDescriptions_GeneralLedger_Currency, language ar</Message>
+    </Diagnostic>
+    <Diagnostic>
+      <DiagnosticType>Unspecified</DiagnosticType>
+      <Severity>Informational</Severity>
+      <Path>labelc.exe</Path>
+      <Moniker>Generating satellite resource assembly for label file FieldDescriptions_GeneralLedger_Currency, language fr-BE</Moniker>
+      <Message>Generating satellite resource assembly for label file FieldDescriptions_GeneralLedger_Currency, language fr-BE</Message>
+    </Diagnostic>
+    <Diagnostic>
+      <DiagnosticType>Unspecified</DiagnosticType>
+      <Severity>Informational</Severity>
+      <Path>labelc.exe</Path>
+      <Moniker>Generating satellite resource assembly for label file FieldDescriptions_GeneralLedger_Currency, language zh-Hans</Moniker>
+      <Message>Generating satellite resource assembly for label file FieldDescriptions_GeneralLedger_Currency, language zh-Hans</Message>
+    </Diagnostic>
+    <Diagnostic>
+      <DiagnosticType>Unspecified</DiagnosticType>
+      <Severity>Informational</Severity>
+      <Path>labelc.exe</Path>
+      <Moniker>Generating satellite resource assembly for label file CurrencyExchange, language da</Moniker>
+      <Message>Generating satellite resource assembly for label file CurrencyExchange, language da</Message>
+    </Diagnostic>
+    <Diagnostic>
+      <DiagnosticType>Unspecified</DiagnosticType>
+      <Severity>Informational</Severity>
+      <Path>labelc.exe</Path>
+      <Moniker>Generating satellite resource assembly for label file CurrencyExchange, language fr-CH</Moniker>
+      <Message>Generating satellite resource assembly for label file CurrencyExchange, language fr-CH</Message>
+    </Diagnostic>
+    <Diagnostic>
+      <DiagnosticType>Unspecified</DiagnosticType>
+      <Severity>Informational</Severity>
+      <Path>labelc.exe</Path>
+      <Moniker>Generating satellite resource assembly for label file FieldDescriptions_GeneralLedger_Currency, language cs</Moniker>
+      <Message>Generating satellite resource assembly for label file FieldDescriptions_GeneralLedger_Currency, language cs</Message>
+    </Diagnostic>
+    <Diagnostic>
+      <DiagnosticType>Unspecified</DiagnosticType>
+      <Severity>Informational</Severity>
+      <Path>labelc.exe</Path>
+      <Moniker>Generating satellite resource assembly for label file FieldDescriptions_GeneralLedger_Currency, language fr-CA</Moniker>
+      <Message>Generating satellite resource assembly for label file FieldDescriptions_GeneralLedger_Currency, language fr-CA</Message>
+    </Diagnostic>
+    <Diagnostic>
+      <DiagnosticType>Unspecified</DiagnosticType>
+      <Severity>Informational</Severity>
+      <Path>labelc.exe</Path>
+      <Moniker>Generating satellite resource assembly for label file CurrencyExchange, language de-AT</Moniker>
+      <Message>Generating satellite resource assembly for label file CurrencyExchange, language de-AT</Message>
+    </Diagnostic>
+    <Diagnostic>
+      <DiagnosticType>Unspecified</DiagnosticType>
+      <Severity>Informational</Severity>
+      <Path>labelc.exe</Path>
+      <Moniker>Generating satellite resource assembly for label file CurrencyExchange, language de-CH</Moniker>
+      <Message>Generating satellite resource assembly for label file CurrencyExchange, language de-CH</Message>
+    </Diagnostic>
+    <Diagnostic>
+      <DiagnosticType>Unspecified</DiagnosticType>
+      <Severity>Informational</Severity>
+      <Path>labelc.exe</Path>
+      <Moniker>Generating satellite resource assembly for label file FieldDescriptions_GeneralLedger_Currency, language da</Moniker>
+      <Message>Generating satellite resource assembly for label file FieldDescriptions_GeneralLedger_Currency, language da</Message>
+    </Diagnostic>
+    <Diagnostic>
+      <DiagnosticType>Unspecified</DiagnosticType>
+      <Severity>Informational</Severity>
+      <Path>labelc.exe</Path>
+      <Moniker>Generating satellite resource assembly for label file CurrencyExchange, language de</Moniker>
+      <Message>Generating satellite resource assembly for label file CurrencyExchange, language de</Message>
+    </Diagnostic>
+    <Diagnostic>
+      <DiagnosticType>Unspecified</DiagnosticType>
+      <Severity>Informational</Severity>
+      <Path>labelc.exe</Path>
+      <Moniker>Generating satellite resource assembly for label file FieldDescriptions_GeneralLedger_Currency, language de-AT</Moniker>
+      <Message>Generating satellite resource assembly for label file FieldDescriptions_GeneralLedger_Currency, language de-AT</Message>
+    </Diagnostic>
+    <Diagnostic>
+      <DiagnosticType>Unspecified</DiagnosticType>
+      <Severity>Informational</Severity>
+      <Path>labelc.exe</Path>
+      <Moniker>Generating satellite resource assembly for label file CurrencyExchange, language fr</Moniker>
+      <Message>Generating satellite resource assembly for label file CurrencyExchange, language fr</Message>
+    </Diagnostic>
+    <Diagnostic>
+      <DiagnosticType>Unspecified</DiagnosticType>
+      <Severity>Informational</Severity>
+      <Path>labelc.exe</Path>
+      <Moniker>Generating satellite resource assembly for label file CurrencyExchange, language hu</Moniker>
+      <Message>Generating satellite resource assembly for label file CurrencyExchange, language hu</Message>
+    </Diagnostic>
+    <Diagnostic>
+      <DiagnosticType>Unspecified</DiagnosticType>
+      <Severity>Informational</Severity>
+      <Path>labelc.exe</Path>
+      <Moniker>Generating satellite resource assembly for label file FieldDescriptions_GeneralLedger_Currency, language de-CH</Moniker>
+      <Message>Generating satellite resource assembly for label file FieldDescriptions_GeneralLedger_Currency, language de-CH</Message>
+    </Diagnostic>
+    <Diagnostic>
+      <DiagnosticType>Unspecified</DiagnosticType>
+      <Severity>Informational</Severity>
+      <Path>labelc.exe</Path>
+      <Moniker>Generating satellite resource assembly for label file CurrencyExchange, language en-CA</Moniker>
+      <Message>Generating satellite resource assembly for label file CurrencyExchange, language en-CA</Message>
+    </Diagnostic>
+    <Diagnostic>
+      <DiagnosticType>Unspecified</DiagnosticType>
+      <Severity>Informational</Severity>
+      <Path>labelc.exe</Path>
+      <Moniker>Generating satellite resource assembly for label file CurrencyExchange, language en-IE</Moniker>
+      <Message>Generating satellite resource assembly for label file CurrencyExchange, language en-IE</Message>
+    </Diagnostic>
+    <Diagnostic>
+      <DiagnosticType>Unspecified</DiagnosticType>
+      <Severity>Informational</Severity>
+      <Path>labelc.exe</Path>
+      <Moniker>Generating satellite resource assembly for label file FieldDescriptions_GeneralLedger_Currency, language en-GB</Moniker>
+      <Message>Generating satellite resource assembly for label file FieldDescriptions_GeneralLedger_Currency, language en-GB</Message>
+    </Diagnostic>
+    <Diagnostic>
+      <DiagnosticType>Unspecified</DiagnosticType>
+      <Severity>Informational</Severity>
+      <Path>labelc.exe</Path>
+      <Moniker>Generating satellite resource assembly for label file CurrencyExchange, language it-CH</Moniker>
+      <Message>Generating satellite resource assembly for label file CurrencyExchange, language it-CH</Message>
+    </Diagnostic>
+    <Diagnostic>
+      <DiagnosticType>Unspecified</DiagnosticType>
+      <Severity>Informational</Severity>
+      <Path>labelc.exe</Path>
+      <Moniker>Generating satellite resource assembly for label file FieldDescriptions_GeneralLedger_Currency, language en-IN</Moniker>
+      <Message>Generating satellite resource assembly for label file FieldDescriptions_GeneralLedger_Currency, language en-IN</Message>
+    </Diagnostic>
+    <Diagnostic>
+      <DiagnosticType>Unspecified</DiagnosticType>
+      <Severity>Informational</Severity>
+      <Path>labelc.exe</Path>
+      <Moniker>Generating satellite resource assembly for label file FieldDescriptions_GeneralLedger_Currency, language fr-CH</Moniker>
+      <Message>Generating satellite resource assembly for label file FieldDescriptions_GeneralLedger_Currency, language fr-CH</Message>
+    </Diagnostic>
+    <Diagnostic>
+      <DiagnosticType>Unspecified</DiagnosticType>
+      <Severity>Informational</Severity>
+      <Path>labelc.exe</Path>
+      <Moniker>Generating satellite resource assembly for label file CurrencyExchange, language is</Moniker>
+      <Message>Generating satellite resource assembly for label file CurrencyExchange, language is</Message>
+    </Diagnostic>
+    <Diagnostic>
+      <DiagnosticType>Unspecified</DiagnosticType>
+      <Severity>Informational</Severity>
+      <Path>labelc.exe</Path>
+      <Moniker>Generating satellite resource assembly for label file CurrencyExchange, language ja</Moniker>
+      <Message>Generating satellite resource assembly for label file CurrencyExchange, language ja</Message>
+    </Diagnostic>
+    <Diagnostic>
+      <DiagnosticType>Unspecified</DiagnosticType>
+      <Severity>Informational</Severity>
+      <Path>labelc.exe</Path>
+      <Moniker>Generating satellite resource assembly for label file FieldDescriptions_GeneralLedger_Currency, language hu</Moniker>
+      <Message>Generating satellite resource assembly for label file FieldDescriptions_GeneralLedger_Currency, language hu</Message>
+    </Diagnostic>
+    <Diagnostic>
+      <DiagnosticType>Unspecified</DiagnosticType>
+      <Severity>Informational</Severity>
+      <Path>labelc.exe</Path>
+      <Moniker>Generating satellite resource assembly for label file CurrencyExchange, language en-MY</Moniker>
+      <Message>Generating satellite resource assembly for label file CurrencyExchange, language en-MY</Message>
+    </Diagnostic>
+    <Diagnostic>
+      <DiagnosticType>Unspecified</DiagnosticType>
+      <Severity>Informational</Severity>
+      <Path>labelc.exe</Path>
+      <Moniker>Generating satellite resource assembly for label file FieldDescriptions_GeneralLedger_Currency, language it-CH</Moniker>
+      <Message>Generating satellite resource assembly for label file FieldDescriptions_GeneralLedger_Currency, language it-CH</Message>
+    </Diagnostic>
+    <Diagnostic>
+      <DiagnosticType>Unspecified</DiagnosticType>
+      <Severity>Informational</Severity>
+      <Path>labelc.exe</Path>
+      <Moniker>Generating satellite resource assembly for label file CurrencyExchange, language en-SG</Moniker>
+      <Message>Generating satellite resource assembly for label file CurrencyExchange, language en-SG</Message>
+    </Diagnostic>
+    <Diagnostic>
+      <DiagnosticType>Unspecified</DiagnosticType>
+      <Severity>Informational</Severity>
+      <Path>labelc.exe</Path>
+      <Moniker>Generating satellite resource assembly for label file FieldDescriptions_GeneralLedger_Currency, language en-NZ</Moniker>
+      <Message>Generating satellite resource assembly for label file FieldDescriptions_GeneralLedger_Currency, language en-NZ</Message>
+    </Diagnostic>
+    <Diagnostic>
+      <DiagnosticType>Unspecified</DiagnosticType>
+      <Severity>Informational</Severity>
+      <Path>labelc.exe</Path>
+      <Moniker>Generating satellite resource assembly for label file CurrencyExchange, language en-ZA</Moniker>
+      <Message>Generating satellite resource assembly for label file CurrencyExchange, language en-ZA</Message>
+    </Diagnostic>
+    <Diagnostic>
+      <DiagnosticType>Unspecified</DiagnosticType>
+      <Severity>Informational</Severity>
+      <Path>labelc.exe</Path>
+      <Moniker>Generating satellite resource assembly for label file CurrencyExchange, language es</Moniker>
+      <Message>Generating satellite resource assembly for label file CurrencyExchange, language es</Message>
+    </Diagnostic>
+    <Diagnostic>
+      <DiagnosticType>Unspecified</DiagnosticType>
+      <Severity>Informational</Severity>
+      <Path>labelc.exe</Path>
+      <Moniker>Generating satellite resource assembly for label file CurrencyExchange, language en-AU</Moniker>
+      <Message>Generating satellite resource assembly for label file CurrencyExchange, language en-AU</Message>
+    </Diagnostic>
+    <Diagnostic>
+      <DiagnosticType>Unspecified</DiagnosticType>
+      <Severity>Informational</Severity>
+      <Path>labelc.exe</Path>
+      <Moniker>Generating satellite resource assembly for label file FieldDescriptions_GeneralLedger_Currency, language de</Moniker>
+      <Message>Generating satellite resource assembly for label file FieldDescriptions_GeneralLedger_Currency, language de</Message>
+    </Diagnostic>
+    <Diagnostic>
+      <DiagnosticType>Unspecified</DiagnosticType>
+      <Severity>Informational</Severity>
+      <Path>labelc.exe</Path>
+      <Moniker>Generating satellite resource assembly for label file FieldDescriptions_GeneralLedger_Currency, language en-AU</Moniker>
+      <Message>Generating satellite resource assembly for label file FieldDescriptions_GeneralLedger_Currency, language en-AU</Message>
+    </Diagnostic>
+    <Diagnostic>
+      <DiagnosticType>Unspecified</DiagnosticType>
+      <Severity>Informational</Severity>
+      <Path>labelc.exe</Path>
+      <Moniker>Generating satellite resource assembly for label file FieldDescriptions_GeneralLedger_Currency, language fr</Moniker>
+      <Message>Generating satellite resource assembly for label file FieldDescriptions_GeneralLedger_Currency, language fr</Message>
+    </Diagnostic>
+    <Diagnostic>
+      <DiagnosticType>Unspecified</DiagnosticType>
+      <Severity>Informational</Severity>
+      <Path>labelc.exe</Path>
+      <Moniker>Generating satellite resource assembly for label file FieldDescriptions_GeneralLedger_Currency, language ja</Moniker>
+      <Message>Generating satellite resource assembly for label file FieldDescriptions_GeneralLedger_Currency, language ja</Message>
+    </Diagnostic>
+    <Diagnostic>
+      <DiagnosticType>Unspecified</DiagnosticType>
+      <Severity>Informational</Severity>
+      <Path>labelc.exe</Path>
+      <Moniker>Generating satellite resource assembly for label file CurrencyExchange, language en-GB</Moniker>
+      <Message>Generating satellite resource assembly for label file CurrencyExchange, language en-GB</Message>
+    </Diagnostic>
+    <Diagnostic>
+      <DiagnosticType>Unspecified</DiagnosticType>
+      <Severity>Informational</Severity>
+      <Path>labelc.exe</Path>
+      <Moniker>Generating satellite resource assembly for label file CurrencyExchange, language en-IN</Moniker>
+      <Message>Generating satellite resource assembly for label file CurrencyExchange, language en-IN</Message>
+    </Diagnostic>
+    <Diagnostic>
+      <DiagnosticType>Unspecified</DiagnosticType>
+      <Severity>Informational</Severity>
+      <Path>labelc.exe</Path>
+      <Moniker>Generating satellite resource assembly for label file CurrencyExchange, language it</Moniker>
+      <Message>Generating satellite resource assembly for label file CurrencyExchange, language it</Message>
+    </Diagnostic>
+    <Diagnostic>
+      <DiagnosticType>Unspecified</DiagnosticType>
+      <Severity>Informational</Severity>
+      <Path>labelc.exe</Path>
+      <Moniker>Generating satellite resource assembly for label file CurrencyExchange, language en-NZ</Moniker>
+      <Message>Generating satellite resource assembly for label file CurrencyExchange, language en-NZ</Message>
+    </Diagnostic>
+    <Diagnostic>
+      <DiagnosticType>Unspecified</DiagnosticType>
+      <Severity>Informational</Severity>
+      <Path>labelc.exe</Path>
+      <Moniker>Generating satellite resource assembly for label file FieldDescriptions_GeneralLedger_Currency, language en-CA</Moniker>
+      <Message>Generating satellite resource assembly for label file FieldDescriptions_GeneralLedger_Currency, language en-CA</Message>
+    </Diagnostic>
+    <Diagnostic>
+      <DiagnosticType>Unspecified</DiagnosticType>
+      <Severity>Informational</Severity>
+      <Path>labelc.exe</Path>
+      <Moniker>Generating satellite resource assembly for label file FieldDescriptions_GeneralLedger_Currency, language en-SG</Moniker>
+      <Message>Generating satellite resource assembly for label file FieldDescriptions_GeneralLedger_Currency, language en-SG</Message>
+    </Diagnostic>
+    <Diagnostic>
+      <DiagnosticType>Unspecified</DiagnosticType>
+      <Severity>Informational</Severity>
+      <Path>labelc.exe</Path>
+      <Moniker>Generating satellite resource assembly for label file FieldDescriptions_GeneralLedger_Currency, language lt</Moniker>
+      <Message>Generating satellite resource assembly for label file FieldDescriptions_GeneralLedger_Currency, language lt</Message>
+    </Diagnostic>
+    <Diagnostic>
+      <DiagnosticType>Unspecified</DiagnosticType>
+      <Severity>Informational</Severity>
+      <Path>labelc.exe</Path>
+      <Moniker>Generating satellite resource assembly for label file CurrencyExchange, language fi</Moniker>
+      <Message>Generating satellite resource assembly for label file CurrencyExchange, language fi</Message>
+    </Diagnostic>
+    <Diagnostic>
+      <DiagnosticType>Unspecified</DiagnosticType>
+      <Severity>Informational</Severity>
+      <Path>labelc.exe</Path>
+      <Moniker>Generating satellite resource assembly for label file CurrencyExchange, language lv</Moniker>
+      <Message>Generating satellite resource assembly for label file CurrencyExchange, language lv</Message>
+    </Diagnostic>
+    <Diagnostic>
+      <DiagnosticType>Unspecified</DiagnosticType>
+      <Severity>Informational</Severity>
+      <Path>labelc.exe</Path>
+      <Moniker>Generating satellite resource assembly for label file CurrencyExchange, language es-MX</Moniker>
+      <Message>Generating satellite resource assembly for label file CurrencyExchange, language es-MX</Message>
+    </Diagnostic>
+    <Diagnostic>
+      <DiagnosticType>Unspecified</DiagnosticType>
+      <Severity>Informational</Severity>
+      <Path>labelc.exe</Path>
+      <Moniker>Generating satellite resource assembly for label file CurrencyExchange, language pl</Moniker>
+      <Message>Generating satellite resource assembly for label file CurrencyExchange, language pl</Message>
+    </Diagnostic>
+    <Diagnostic>
+      <DiagnosticType>Unspecified</DiagnosticType>
+      <Severity>Informational</Severity>
+      <Path>labelc.exe</Path>
+      <Moniker>Generating satellite resource assembly for label file FieldDescriptions_GeneralLedger_Currency, language en-IE</Moniker>
+      <Message>Generating satellite resource assembly for label file FieldDescriptions_GeneralLedger_Currency, language en-IE</Message>
+    </Diagnostic>
+    <Diagnostic>
+      <DiagnosticType>Unspecified</DiagnosticType>
+      <Severity>Informational</Severity>
+      <Path>labelc.exe</Path>
+      <Moniker>Generating satellite resource assembly for label file CurrencyExchange, language th</Moniker>
+      <Message>Generating satellite resource assembly for label file CurrencyExchange, language th</Message>
+    </Diagnostic>
+    <Diagnostic>
+      <DiagnosticType>Unspecified</DiagnosticType>
+      <Severity>Informational</Severity>
+      <Path>labelc.exe</Path>
+      <Moniker>Generating satellite resource assembly for label file FieldDescriptions_GeneralLedger_Currency, language nl</Moniker>
+      <Message>Generating satellite resource assembly for label file FieldDescriptions_GeneralLedger_Currency, language nl</Message>
+    </Diagnostic>
+    <Diagnostic>
+      <DiagnosticType>Unspecified</DiagnosticType>
+      <Severity>Informational</Severity>
+      <Path>labelc.exe</Path>
+      <Moniker>Generating satellite resource assembly for label file CurrencyExchange, language lt</Moniker>
+      <Message>Generating satellite resource assembly for label file CurrencyExchange, language lt</Message>
+    </Diagnostic>
+    <Diagnostic>
+      <DiagnosticType>Unspecified</DiagnosticType>
+      <Severity>Informational</Severity>
+      <Path>labelc.exe</Path>
+      <Moniker>Generating satellite resource assembly for label file FieldDescriptions_GeneralLedger_Currency, language is</Moniker>
+      <Message>Generating satellite resource assembly for label file FieldDescriptions_GeneralLedger_Currency, language is</Message>
+    </Diagnostic>
+    <Diagnostic>
+      <DiagnosticType>Unspecified</DiagnosticType>
+      <Severity>Informational</Severity>
+      <Path>labelc.exe</Path>
+      <Moniker>Generating satellite resource assembly for label file FieldDescriptions_GeneralLedger_Currency, language sv</Moniker>
+      <Message>Generating satellite resource assembly for label file FieldDescriptions_GeneralLedger_Currency, language sv</Message>
+    </Diagnostic>
+    <Diagnostic>
+      <DiagnosticType>Unspecified</DiagnosticType>
+      <Severity>Informational</Severity>
+      <Path>labelc.exe</Path>
+      <Moniker>Generating satellite resource assembly for label file CurrencyExchange, language en-US</Moniker>
+      <Message>Generating satellite resource assembly for label file CurrencyExchange, language en-US</Message>
+    </Diagnostic>
+    <Diagnostic>
+      <DiagnosticType>Unspecified</DiagnosticType>
+      <Severity>Informational</Severity>
+      <Path>labelc.exe</Path>
+      <Moniker>Generating satellite resource assembly for label file FieldDescriptions_GeneralLedger_Currency, language th</Moniker>
+      <Message>Generating satellite resource assembly for label file FieldDescriptions_GeneralLedger_Currency, language th</Message>
+    </Diagnostic>
+    <Diagnostic>
+      <DiagnosticType>Unspecified</DiagnosticType>
+      <Severity>Informational</Severity>
+      <Path>labelc.exe</Path>
+      <Moniker>Generating satellite resource assembly for label file FieldDescriptions_GeneralLedger_Currency, language en-US</Moniker>
+      <Message>Generating satellite resource assembly for label file FieldDescriptions_GeneralLedger_Currency, language en-US</Message>
+    </Diagnostic>
+    <Diagnostic>
+      <DiagnosticType>Unspecified</DiagnosticType>
+      <Severity>Informational</Severity>
+      <Path>labelc.exe</Path>
+      <Moniker>Generating satellite resource assembly for label file FieldDescriptions_GeneralLedger_Currency, language en-ZA</Moniker>
+      <Message>Generating satellite resource assembly for label file FieldDescriptions_GeneralLedger_Currency, language en-ZA</Message>
+    </Diagnostic>
+    <Diagnostic>
+      <DiagnosticType>Unspecified</DiagnosticType>
+      <Severity>Informational</Severity>
+      <Path>labelc.exe</Path>
+      <Moniker>Generating satellite resource assembly for label file CurrencyExchange, language et</Moniker>
+      <Message>Generating satellite resource assembly for label file CurrencyExchange, language et</Message>
+    </Diagnostic>
+    <Diagnostic>
+      <DiagnosticType>Unspecified</DiagnosticType>
+      <Severity>Informational</Severity>
+      <Path>labelc.exe</Path>
+      <Moniker>Generating satellite resource assembly for label file FieldDescriptions_GeneralLedger_Currency, language en-MY</Moniker>
+      <Message>Generating satellite resource assembly for label file FieldDescriptions_GeneralLedger_Currency, language en-MY</Message>
+    </Diagnostic>
+    <Diagnostic>
+      <DiagnosticType>Unspecified</DiagnosticType>
+      <Severity>Informational</Severity>
+      <Path>labelc.exe</Path>
+      <Moniker>Generating satellite resource assembly for label file CurrencyExchange, language nb-NO</Moniker>
+      <Message>Generating satellite resource assembly for label file CurrencyExchange, language nb-NO</Message>
+    </Diagnostic>
+    <Diagnostic>
+      <DiagnosticType>Unspecified</DiagnosticType>
+      <Severity>Informational</Severity>
+      <Path>labelc.exe</Path>
+      <Moniker>Generating satellite resource assembly for label file FieldDescriptions_GeneralLedger_Currency, language lv</Moniker>
+      <Message>Generating satellite resource assembly for label file FieldDescriptions_GeneralLedger_Currency, language lv</Message>
+    </Diagnostic>
+    <Diagnostic>
+      <DiagnosticType>Unspecified</DiagnosticType>
+      <Severity>Informational</Severity>
+      <Path>labelc.exe</Path>
+      <Moniker>Generating satellite resource assembly for label file CurrencyExchange, language pt-BR</Moniker>
+      <Message>Generating satellite resource assembly for label file CurrencyExchange, language pt-BR</Message>
+    </Diagnostic>
+    <Diagnostic>
+      <DiagnosticType>Unspecified</DiagnosticType>
+      <Severity>Informational</Severity>
+      <Path>labelc.exe</Path>
+      <Moniker>Generating satellite resource assembly for label file CurrencyExchange, language tr</Moniker>
+      <Message>Generating satellite resource assembly for label file CurrencyExchange, language tr</Message>
+    </Diagnostic>
+    <Diagnostic>
+      <DiagnosticType>Unspecified</DiagnosticType>
+      <Severity>Informational</Severity>
+      <Path>labelc.exe</Path>
+      <Moniker>Generating satellite resource assembly for label file FieldDescriptions_GeneralLedger_Currency, language pl</Moniker>
+      <Message>Generating satellite resource assembly for label file FieldDescriptions_GeneralLedger_Currency, language pl</Message>
+    </Diagnostic>
+    <Diagnostic>
+      <DiagnosticType>Unspecified</DiagnosticType>
+      <Severity>Informational</Severity>
+      <Path>labelc.exe</Path>
+      <Moniker>Generating satellite resource assembly for label file FieldDescriptions_GeneralLedger_Currency, language it</Moniker>
+      <Message>Generating satellite resource assembly for label file FieldDescriptions_GeneralLedger_Currency, language it</Message>
+    </Diagnostic>
+    <Diagnostic>
+      <DiagnosticType>Unspecified</DiagnosticType>
+      <Severity>Informational</Severity>
+      <Path>labelc.exe</Path>
+      <Moniker>Generating satellite resource assembly for label file FieldDescriptions_GeneralLedger_Currency, language es-MX</Moniker>
+      <Message>Generating satellite resource assembly for label file FieldDescriptions_GeneralLedger_Currency, language es-MX</Message>
+    </Diagnostic>
+    <Diagnostic>
+      <DiagnosticType>Unspecified</DiagnosticType>
+      <Severity>Informational</Severity>
+      <Path>labelc.exe</Path>
+      <Moniker>Generating satellite resource assembly for label file CurrencyExchange, language ru</Moniker>
+      <Message>Generating satellite resource assembly for label file CurrencyExchange, language ru</Message>
+    </Diagnostic>
+    <Diagnostic>
+      <DiagnosticType>Unspecified</DiagnosticType>
+      <Severity>Informational</Severity>
+      <Path>labelc.exe</Path>
+      <Moniker>Generating satellite resource assembly for label file CurrencyExchange, language nl-BE</Moniker>
+      <Message>Generating satellite resource assembly for label file CurrencyExchange, language nl-BE</Message>
+    </Diagnostic>
+    <Diagnostic>
+      <DiagnosticType>Unspecified</DiagnosticType>
+      <Severity>Informational</Severity>
+      <Path>labelc.exe</Path>
+      <Moniker>Generating satellite resource assembly for label file FieldDescriptions_GeneralLedger_Currency, language pt-BR</Moniker>
+      <Message>Generating satellite resource assembly for label file FieldDescriptions_GeneralLedger_Currency, language pt-BR</Message>
+    </Diagnostic>
+    <Diagnostic>
+      <DiagnosticType>Unspecified</DiagnosticType>
+      <Severity>Informational</Severity>
+      <Path>labelc.exe</Path>
+      <Moniker>Generating satellite resource assembly for label file FieldDescriptions_GeneralLedger_Currency, language nb-NO</Moniker>
+      <Message>Generating satellite resource assembly for label file FieldDescriptions_GeneralLedger_Currency, language nb-NO</Message>
+    </Diagnostic>
+    <Diagnostic>
+      <DiagnosticType>Unspecified</DiagnosticType>
+      <Severity>Informational</Severity>
+      <Path>labelc.exe</Path>
+      <Moniker>Generating satellite resource assembly for label file FieldDescriptions_GeneralLedger_Currency, language es</Moniker>
+      <Message>Generating satellite resource assembly for label file FieldDescriptions_GeneralLedger_Currency, language es</Message>
+    </Diagnostic>
+    <Diagnostic>
+      <DiagnosticType>Unspecified</DiagnosticType>
+      <Severity>Informational</Severity>
+      <Path>labelc.exe</Path>
+      <Moniker>Generating satellite resource assembly for label file FieldDescriptions_GeneralLedger_Currency, language ru</Moniker>
+      <Message>Generating satellite resource assembly for label file FieldDescriptions_GeneralLedger_Currency, language ru</Message>
+    </Diagnostic>
+    <Diagnostic>
+      <DiagnosticType>Unspecified</DiagnosticType>
+      <Severity>Informational</Severity>
+      <Path>labelc.exe</Path>
+      <Moniker>Generating satellite resource assembly for label file CurrencyExchange, language sv</Moniker>
+      <Message>Generating satellite resource assembly for label file CurrencyExchange, language sv</Message>
+    </Diagnostic>
+    <Diagnostic>
+      <DiagnosticType>Unspecified</DiagnosticType>
+      <Severity>Informational</Severity>
+      <Path>labelc.exe</Path>
+      <Moniker>Generating satellite resource assembly for label file CurrencyExchange, language nl</Moniker>
+      <Message>Generating satellite resource assembly for label file CurrencyExchange, language nl</Message>
+    </Diagnostic>
+    <Diagnostic>
+      <DiagnosticType>Unspecified</DiagnosticType>
+      <Severity>Informational</Severity>
+      <Path>labelc.exe</Path>
+      <Moniker>Generating satellite resource assembly for label file FieldDescriptions_GeneralLedger_Currency, language nl-BE</Moniker>
+      <Message>Generating satellite resource assembly for label file FieldDescriptions_GeneralLedger_Currency, language nl-BE</Message>
+    </Diagnostic>
+    <Diagnostic>
+      <DiagnosticType>Unspecified</DiagnosticType>
+      <Severity>Informational</Severity>
+      <Path>labelc.exe</Path>
+      <Moniker>Generating satellite resource assembly for label file FieldDescriptions_GeneralLedger_Currency, language et</Moniker>
+      <Message>Generating satellite resource assembly for label file FieldDescriptions_GeneralLedger_Currency, language et</Message>
+    </Diagnostic>
+    <Diagnostic>
+      <DiagnosticType>Unspecified</DiagnosticType>
+      <Severity>Informational</Severity>
+      <Path>labelc.exe</Path>
+      <Moniker>Done!</Moniker>
+      <Message>Done!</Message>
+    </Diagnostic>
+  </Items>
+  <Aliases />
+</Diagnostics>

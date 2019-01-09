@@ -1,0 +1,152 @@
+NewLabel0=ไฟล์ป้ายชื่อสร้างเมื่อ 05/29/2014 13:27:47 สำหรับรหัสไฟล์ป้ายชื่อ CurrencyExchange และภาษา en-US
+ ;Label file comment - see above label
+ConversionFactor=ตัวคูณการแปลง
+ ;Exchange rate conversion factor
+ExchangeValue=ค่าการแลกเปลี่ยน
+ ;Exchange rates exchange value
+TriangulationCurrencies=สกุลเงินระบบสามสกุลเงิน
+ ;New Comment
+AddRemoveExchangeRates=เพิ่มหรือลบอัตราแลกเปลี่ยน
+ ;New Comment
+TmpExchangeRatesDevDoc=ตาราง TmpExchangeRates จะเก็บเรกคอร์ดชั่วคราวที่ใช้ขณะแสดงแบบฟอร์ม ExchangeRates
+ ;New Comment
+ExchangeRateEntityDevDoc=The ExchangeRateEntity data entity is used to store exchange rates for a currency pair and a rate type.
+ ;{locked}Exchange rate entity developer documentation
+ExchangeRateStagingDevDoc=ตารางการจัดเตรียม ExchangeRateEntity ใช้เพื่อนำเข้าและส่งออกอัตราแลกเปลี่ยนสำหรับคู่สกุลเงินและชนิดอัตราแลกเปลี่ยน
+ ;Exchange rate stating table developer documentation
+InvalidExchangeRate=ไม่สามารถนำเข้าอัตราแลกเปลี่ยนสำหรับคู่สกุลเงิน {0} และ {1} ติดต่อผู้ให้บริการของคุณสำหรับความช่วยเหลือหรือการป้อนข้อมูลอัตราแลกเปลี่ยนสำหรับ {2} ด้วยตนเอง
+ ;Exchange rate provider error in C#
+ISONameCubanConvertiblePeso=เปโซแปลงสภาพคิวบา
+ ;ISO Currency Name
+ISONameTurkmenistanNewManat=มานาทใหม่เติร์กเมนิสถาน
+ ;ISO Currency Name
+ISONameZambianKwacha=ควาชาแซมเบีย
+ ;ISO Currency Name
+ExchangeRateImport=นำเข้าอัตราแลกเปลี่ยน
+ ;Entity privilege level
+ExchangeRateExport=ส่งออกอัตราแลกเปลี่ยน
+ ;Entity privilege level
+Supplemental_CurrencyImport=นำเข้าสกุลเงิน
+ ;Entity privilege level
+Supplemental_CurrencyExport=ส่งออกสกุลเงิน
+ ;Entity privilege level
+Currency_MessageDeveloper_UpdateCurrencyPair=Updating currency pair from currency %1 to currency %2
+ ;{Locked}
+Currency_MessageDeveloper_AddNewRate=Adding new exchange rate %1 valid from %2 from currency %3 to currency %4
+ ;{Locked}
+Currency_MessageDeveloper_ActivateProvider=Activating exchange rate provider {0}
+ ;{Locked}
+Currency_MessageDeveloper_SearchingAssembly=Searching for exchange rate providers in assembly {0}
+ ;{Locked}
+Currency_EntityEnum_EntityName=สกุลเงิน
+ ;Entity name
+Currency_EntityDeveloper_CurrencyEntityDevDoc=The CurrencyEntity entity contains the currencies that are used in the application for foreign exchange. Exchange rates are created based on these currencies.
+ ;{Locked}
+Currency_EntityField_CurrencyCode=รหัสสกุลเงิน
+ ;CurrencyEntity field name.
+Currency_EntityLabel_CurrencyRevaluationAccountLabel=บัญชีการประเมินค่าใหม่ของบัญชีแยกประเภทสกุลเงิน
+ ;Label for CurrencyRevaluationAccountEntity
+Currency_EntityDeveloper_CurrencyRevaluationAccountEntityDevDoc=The CurrencyRevaluationAccountEntity entity contains the gain loss account for individual currencies.
+ ;{Locked}
+Currency_EntityFieldLabel_RoundingRuleFixedAssetDepreciation=กฎการปัดเศษค่าเสื่อมราคาของสินทรัพย์ถาวร
+ ;CurrencyEntity field label
+Currency_EntityFieldLabel_RoundingMethodFixedAssetDepreciation=วิธีการปัดเศษค่าเสื่อมราคาของสินทรัพย์ถาวร
+ ;CurrencyEntity field label
+Currency_EntityFieldLabel_RoundingMethodPrices=วิธีการปัดเศษราคา
+ ;CurrencyEntity field label
+Currency_EntityFieldLabel_RoundingMethodPurchaseOrders=วิธีการปัดเศษของใบสั่งซื้อ
+ ;CurrencyEntity field label
+Currency_EntityFieldLabel_RoundingMethodSalesOrders=วิธีการปัดเศษของใบสั่งขาย
+ ;CurrencyEntity field label
+Currency_EntityFieldLabel_RoundingRulePrices=กฎการปัดเศษราคา
+ ;CurrencyEntity field label
+Currency_EntityFieldLabel_RoundingRulePurchaseOrders=กฎการปัดเศษของใบสั่งซื้อ
+ ;CurrencyEntity field label
+Currency_EntityFieldLabel_RoundingRuleSalesOrders=กฎการปัดเศษของใบสั่งขาย
+ ;CurrencyEntity field label
+EntitiesMaintainDuty=รักษาข้อมูลหลักของเอนทิตี้สกุลเงิน
+ ;Maintain Currency entities duty.
+EntitiesViewDuty=ดูข้อมูลหลักของเอนทิตี้สกุลเงิน
+ ;View Currency entities duty.
+Currency_EntityMessage_RateMustBePositive=อัตราแลกเปลี่ยนต้องมากกว่าศูนย์
+ ;ExchangeRateEntity set based error message.
+Currency_EntityTitle=อัตราแลกเปลี่ยน
+ ;ExchangeRateEntity title.
+Currency_EntityMessage_InvalidCurrency=สกุลเงินที่ระบุไม่ถูกต้อง
+ ;ExchangeRateEntity error.
+Currency_EntityMessage_MissingRate=ไม่พบอัตราแลกเปลี่ยนสำหรับชนิดอัตราแลกเปลี่ยน %1 ระหว่างสกุลเงิน %2 และ %3 ในวันที่แลกเปลี่ยน %4 เพื่อแก้ไขข้อผิดพลาดนี้ ติดต่อผู้ดูแลระบบของคุณ
+ ;Set based error message.
+Currency_EntityLabel_ExchangeRateTypeLabel=ชนิดอัตราแลกเปลี่ยน
+ ;Label for ExchangeRateTypeEntity
+Currency_EntityDeveloper_ExchangeRateTypeEntityDevDoc=The ExchangeRateTypeEntity entity stores exchange rate types that allow exchange rates to be categorized.
+ ;{Locked}
+Currency_ConfigField_ServiceTimeout=Service Timeout
+ ;{Locked}
+Currency_ConfigField_OandaName=Foreign Exchange Rates Powered by OANDA
+ ;{Locked}
+Currency_ConfigField_OandaAPIKey=API key
+ ;{Locked}
+Currency_FieldTitle_Value=ค่า
+ ;Exchange rate provider configuration value field title.
+Currency_ConfigField_DecimalPlaces=Decimal places
+ ;{Locked}
+Currency_ConfigMessage_DecimalPlacesInvalid=จำนวนของตำแหน่งทศนิยมต้องอยู่ระหว่าง 1 ถึง 12
+ ;Decimal places validation error for OANDA exchange rate provider.
+Currency_ConfigMessage_OANDAKeyRequired=ต้องมีคีย์ที่ถูกต้องจาก OANDA สำหรับตัวให้บริการนี้ที่จะนำเข้าอัตราแลกเปลี่ยน 
+ ;Warning message for the OANDA exchange rate provider.
+Currency_ConfigField_QuoteType=ชนิดใบเสนอราคา
+ ;Quote type for OANDA provider.
+Currency_ConfigEnum_QuoteTypeAverageBid=การประมูลค่าเฉลี่ย
+ ;Quote type average bid
+Currency_ConfigEnum_QuoteTypeAverageAsk=การเสนอค่าเฉลี่ย
+ ;Quote type average ask
+Currency_ConfigEnum_QuoteTypeMidpoint=จุดกึ่งกลาง
+ ;Quote type midpoint
+Currency_ConfigEnum_QuoteTypeHighBid=การประมูลค่าสูง
+ ;Quote type high bid
+Currency_ConfigEnum_QuoteTypeHighAsk=การเสนอค่าสูง
+ ;Quote type high ask
+Currency_ConfigEnum_QuoteTypeLowBid=การประมูลค่าต่ำ
+ ;Quote type low bid
+Currency_ConfigEnum_QuoteTypeLowAsk=การเสนอค่าต่ำ
+ ;Quote type low ask
+Currency_ConfigEnum_QuoteTypePeriodAverageBid=การประมูลค่าเฉลี่ยของรอบระยะเวลา
+ ;Quote type average over time period.
+Currency_ConfigEnum_QuoteTypePeriodAverageAsk=การเสนอค่าเฉลี่ยของรอบระยะเวลา
+ ;Quote type average over time period.
+Currency_ConfigField_SingleRateForDateRange=อัตราเดียวสำหรับช่วงวันที่
+ ;exchange rate provider configuration option.
+Currency_EntityLabel_CurrencyISOCode=รหัสสกุลเงิน ISO
+ ;CurrencyISOCodeEntity label.
+Currency_EntityDeveloper_CurrencyISOCodeEntityDevDoc=The CurrencyISOCodeEntity entity contains the list of ISO Currency Codes that are supported in the application as defined by the International Organization for Standardization.
+ ;{Locked}
+Currency_ModuleName=สกุลเงิน
+ ;Displayed in upgrade.
+Currency_UpgradeStep=เข้ารหัสลับฟิลด์ค่า
+ ;Upgrade step.
+Currency_ParameterGroup=สกุลเงิน
+ ;Field group caption for the SystemParameters form.
+Currency_TableFieldLabel_SystemParametersCurrencyCodeLabel=สกุลเงินของระบบ
+ ;Label for the SystemCurrencyCode field on the SystemParameters table.
+Currency_TableFieldLabel_SystemParametersExchangeRateTypeLabel=ชนิดอัตราแลกเปลี่ยนของระบบ
+ ;Label for the SystemExchangeRateType field on the SystemParameters table.
+ExchangeRateCurrencyPairCalculationRulesEntityMaintain=รักษากฎการคำนวณอัตราแลกเปลี่ยนสำหรับเอนทิตี้ภาษีขาย
+ ;Maintain privilege for ExchangeRateCurrencyPairCalculationRulesEntity
+ExchangeRateCurrencyPairCalculationRulesEntityView=ดูกฎการคำนวณอัตราแลกเปลี่ยนสำหรับเอนทิตี้ภาษีขาย
+ ;View privilege for ExchangeRateCurrencyPairCalculationRulesEntity
+Currency_Message_CurrencyRequiredForRounding=ต้องใช้สกุลเงินสำหรับการปัดเศษ
+ ;Error from currency rounding API's
+Currency_Message_CurrencyRequiredForDecimals=ต้องใช้สกุลเงินในการดึงข้อมูลจำนวนของทศนิยม
+ ;Error from currency rounding API's
+Currency_Message_CurrencyRequiredForRoundingPrecision=ต้องใช้สกุลเงินในการดึงข้อมูลความแม่นยำในการปัดเศษ
+ ;Error from currency rounding API's
+Currency_ConfigField_PreventImportOnNationalHoliday=ป้องกันการนำเข้าในวันหยุดประจำชาติ
+ ;Exchange rate provider configuration option.
+Currency_ConfigField_QuoteTypeLocked=Quote type
+ ;{Locked}
+Currency_Message_QuoteTypeMissing=ไม่พบชนิดใบเสนอราคาคีย์การตั้งค่าคอนฟิกตัวให้บริการอัตราแลกเปลี่ยน คลิกรีเซ็ตค่า จากนั้นเลือกค่าของชนิดใบเสนอราคาบนหน้าตั้งค่าคอนฟิกตัวให้บริการอัตราแลกเปลี่ยน  
+ ;Exchange rate provider configuration error
+Currency_Message_StartDateAlreadyExists=ไม่สามารถเพิ่มอัตราแลกเปลี่ยน วันที่เริ่มต้นนี้มีอยู่แล้ว ป้อนวันที่เริ่มต้นที่ยังไม่มีอยู่
+ ;Exchange rate error message
+Currency_Monetary_unit_declensions=การกระจายค่าหน่วยทางการเงิน
+ ;Monetary unit declensions

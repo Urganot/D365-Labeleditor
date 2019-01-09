@@ -1,0 +1,152 @@
+NewLabel0=Sildifaili CurrencyExchange koodile ja keelele en-US loodi sildifailid 29. mail 2014 kell 13:27:47
+ ;Label file comment - see above label
+ConversionFactor=Tuletustegur
+ ;Exchange rate conversion factor
+ExchangeValue=Vahetusväärtus
+ ;Exchange rates exchange value
+TriangulationCurrencies=Ühisvaluutad
+ ;New Comment
+AddRemoveExchangeRates=Vahetuskursside lisamine või eemaldamine
+ ;New Comment
+TmpExchangeRatesDevDoc=Tabelis TmpExchangeRates on ajutised kirjed, mida kasutatakse vormi ExchangeRates kuvamisel.
+ ;New Comment
+ExchangeRateEntityDevDoc=The ExchangeRateEntity data entity is used to store exchange rates for a currency pair and a rate type.
+ ;{locked}Exchange rate entity developer documentation
+ExchangeRateStagingDevDoc=Vahetabelit ExchangeRateEntity kasutatakse valuutapaari ja hinna tüübi vahetuskursside importimiseks ja eksportimiseks.
+ ;Exchange rate stating table developer documentation
+InvalidExchangeRate=Valuutapaari {0} ja {1} vahetuskurssi ei õnnestunud importida. Pöörduge abi saamiseks oma teenusepakkuja poole või sisestage {2} vahetuskurss käsitsi.
+ ;Exchange rate provider error in C#
+ISONameCubanConvertiblePeso=Kuuba konverteeritav peeso
+ ;ISO Currency Name
+ISONameTurkmenistanNewManat=Türkmenistani uus manat
+ ;ISO Currency Name
+ISONameZambianKwacha=Zambia kvatša
+ ;ISO Currency Name
+ExchangeRateImport=Impordi vahetuskursid
+ ;Entity privilege level
+ExchangeRateExport=Ekspordi vahetuskursid
+ ;Entity privilege level
+Supplemental_CurrencyImport=Impordi valuutad
+ ;Entity privilege level
+Supplemental_CurrencyExport=Ekspordi valuutad
+ ;Entity privilege level
+Currency_MessageDeveloper_UpdateCurrencyPair=Updating currency pair from currency %1 to currency %2
+ ;{Locked}
+Currency_MessageDeveloper_AddNewRate=Adding new exchange rate %1 valid from %2 from currency %3 to currency %4
+ ;{Locked}
+Currency_MessageDeveloper_ActivateProvider=Activating exchange rate provider {0}
+ ;{Locked}
+Currency_MessageDeveloper_SearchingAssembly=Searching for exchange rate providers in assembly {0}
+ ;{Locked}
+Currency_EntityEnum_EntityName=Valuutad
+ ;Entity name
+Currency_EntityDeveloper_CurrencyEntityDevDoc=The CurrencyEntity entity contains the currencies that are used in the application for foreign exchange. Exchange rates are created based on these currencies.
+ ;{Locked}
+Currency_EntityField_CurrencyCode=Valuutakood
+ ;CurrencyEntity field name.
+Currency_EntityLabel_CurrencyRevaluationAccountLabel=Valuuta pearaamatu ümberhindamise konto
+ ;Label for CurrencyRevaluationAccountEntity
+Currency_EntityDeveloper_CurrencyRevaluationAccountEntityDevDoc=The CurrencyRevaluationAccountEntity entity contains the gain loss account for individual currencies.
+ ;{Locked}
+Currency_EntityFieldLabel_RoundingRuleFixedAssetDepreciation=Põhivara kulumi ümardamisreegel
+ ;CurrencyEntity field label
+Currency_EntityFieldLabel_RoundingMethodFixedAssetDepreciation=Põhivara kulumi ümardamismeetod
+ ;CurrencyEntity field label
+Currency_EntityFieldLabel_RoundingMethodPrices=Hindade ümardamismeetod
+ ;CurrencyEntity field label
+Currency_EntityFieldLabel_RoundingMethodPurchaseOrders=Ostutellimuste ümardamismeetod
+ ;CurrencyEntity field label
+Currency_EntityFieldLabel_RoundingMethodSalesOrders=Müügitellimuste ümardamismeetod
+ ;CurrencyEntity field label
+Currency_EntityFieldLabel_RoundingRulePrices=Hindade ümardamisreegel
+ ;CurrencyEntity field label
+Currency_EntityFieldLabel_RoundingRulePurchaseOrders=Ostutellimuste ümardamisreegel
+ ;CurrencyEntity field label
+Currency_EntityFieldLabel_RoundingRuleSalesOrders=Müügitellimuste ümardamisreegel
+ ;CurrencyEntity field label
+EntitiesMaintainDuty=Valuuta üksuste koondandmete säilitamine
+ ;Maintain Currency entities duty.
+EntitiesViewDuty=Valuuta üksuste koondandmete kuvamine
+ ;View Currency entities duty.
+Currency_EntityMessage_RateMustBePositive=Vahetuskurss peab olema suurem kui null
+ ;ExchangeRateEntity set based error message.
+Currency_EntityTitle=Vahetuskursid
+ ;ExchangeRateEntity title.
+Currency_EntityMessage_InvalidCurrency=Määratud valuuta on kehtetu
+ ;ExchangeRateEntity error.
+Currency_EntityMessage_MissingRate=Vahetuskursi tüübi %1 jaoks ei leitud vahetuskurssi valuutade %2 ja %3 vahel ning vahetuskuupäeval %4. Pöörduge selle tõrke lahendamiseks oma süsteemiadministraatori poole.
+ ;Set based error message.
+Currency_EntityLabel_ExchangeRateTypeLabel=Vahetuskursi tüüp
+ ;Label for ExchangeRateTypeEntity
+Currency_EntityDeveloper_ExchangeRateTypeEntityDevDoc=The ExchangeRateTypeEntity entity stores exchange rate types that allow exchange rates to be categorized.
+ ;{Locked}
+Currency_ConfigField_ServiceTimeout=Service Timeout
+ ;{Locked}
+Currency_ConfigField_OandaName=Foreign Exchange Rates Powered by OANDA
+ ;{Locked}
+Currency_ConfigField_OandaAPIKey=API key
+ ;{Locked}
+Currency_FieldTitle_Value=Väärtus
+ ;Exchange rate provider configuration value field title.
+Currency_ConfigField_DecimalPlaces=Decimal places
+ ;{Locked}
+Currency_ConfigMessage_DecimalPlacesInvalid=Kümnendkohtade arv peab olema vahemikus 1–12
+ ;Decimal places validation error for OANDA exchange rate provider.
+Currency_ConfigMessage_OANDAKeyRequired=Selleks, et see pakkuja saaks vahetuskursse importida, on nõutav OANDA-st pärinev kehtiv võti. 
+ ;Warning message for the OANDA exchange rate provider.
+Currency_ConfigField_QuoteType=Pakkumise tüüp
+ ;Quote type for OANDA provider.
+Currency_ConfigEnum_QuoteTypeAverageBid=Keskmine pakkumine
+ ;Quote type average bid
+Currency_ConfigEnum_QuoteTypeAverageAsk=Keskmine nõudlus
+ ;Quote type average ask
+Currency_ConfigEnum_QuoteTypeMidpoint=Keskpunkt
+ ;Quote type midpoint
+Currency_ConfigEnum_QuoteTypeHighBid=Kõrge pakkumine
+ ;Quote type high bid
+Currency_ConfigEnum_QuoteTypeHighAsk=Kõrge nõudlus
+ ;Quote type high ask
+Currency_ConfigEnum_QuoteTypeLowBid=Madal pakkumine
+ ;Quote type low bid
+Currency_ConfigEnum_QuoteTypeLowAsk=Madal nõudlus
+ ;Quote type low ask
+Currency_ConfigEnum_QuoteTypePeriodAverageBid=Perioodi keskmine pakkumine
+ ;Quote type average over time period.
+Currency_ConfigEnum_QuoteTypePeriodAverageAsk=Perioodi keskmine nõudlus
+ ;Quote type average over time period.
+Currency_ConfigField_SingleRateForDateRange=Üks määr kuupäevavahemiku jaoks
+ ;exchange rate provider configuration option.
+Currency_EntityLabel_CurrencyISOCode=ISO valuutakoodid
+ ;CurrencyISOCodeEntity label.
+Currency_EntityDeveloper_CurrencyISOCodeEntityDevDoc=The CurrencyISOCodeEntity entity contains the list of ISO Currency Codes that are supported in the application as defined by the International Organization for Standardization.
+ ;{Locked}
+Currency_ModuleName=Valuuta
+ ;Displayed in upgrade.
+Currency_UpgradeStep=Väärtuse välja krüptimine.
+ ;Upgrade step.
+Currency_ParameterGroup=Valuuta
+ ;Field group caption for the SystemParameters form.
+Currency_TableFieldLabel_SystemParametersCurrencyCodeLabel=Süsteemivaluuta
+ ;Label for the SystemCurrencyCode field on the SystemParameters table.
+Currency_TableFieldLabel_SystemParametersExchangeRateTypeLabel=Süsteemi vahetuskursi tüüp
+ ;Label for the SystemExchangeRateType field on the SystemParameters table.
+ExchangeRateCurrencyPairCalculationRulesEntityMaintain=Käibemaksuüksuse vahetuskursi arvutusreeglite haldamine
+ ;Maintain privilege for ExchangeRateCurrencyPairCalculationRulesEntity
+ExchangeRateCurrencyPairCalculationRulesEntityView=Käibemaksuüksuse vahetuskursi arvutusreeglite vaatamine
+ ;View privilege for ExchangeRateCurrencyPairCalculationRulesEntity
+Currency_Message_CurrencyRequiredForRounding=Ümardamise jaoks on vaja valuutat.
+ ;Error from currency rounding API's
+Currency_Message_CurrencyRequiredForDecimals=Kümnendkohtade arvu toomiseks on vaja valuutat.
+ ;Error from currency rounding API's
+Currency_Message_CurrencyRequiredForRoundingPrecision=Ümardamistäpsuse toomiseks on vaja valuutat.
+ ;Error from currency rounding API's
+Currency_ConfigField_PreventImportOnNationalHoliday=Vältida importimist riiklikel pühadel
+ ;Exchange rate provider configuration option.
+Currency_ConfigField_QuoteTypeLocked=Quote type
+ ;{Locked}
+Currency_Message_QuoteTypeMissing=Vahetuskursi pakkuja konfiguratsioonivõtme pakkumise tüüpi ei leitud. Klõpsake käsku Lähtesta väärtused ja seejärel valige pakkumise tüübi väärtus lehel Vahetuskursi pakkujate konfigureerimine.
+ ;Exchange rate provider configuration error
+Currency_Message_StartDateAlreadyExists=Vahetuskurssi ei saa lisada, kuna alguskuupäev on juba olemas. Sisestage alguskuupäev, mida pole veel olemas.
+ ;Exchange rate error message
+Currency_Monetary_unit_declensions=Valuutaühikute käänamine
+ ;Monetary unit declensions

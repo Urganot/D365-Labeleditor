@@ -1,0 +1,1523 @@
+﻿NewLabel0=Label files created on 04/08/2013 13:10:47 for label file Id ApplicationFoundation and language en-US
+ ;Label file comment - see above label
+ChooseOptions=Choose your personalization options
+ ;New Comment
+DefaultViewEditMode=Default view/edit mode
+ ;Used on the SysUserSetup form.
+SignoutAfterMin=Sign out after (minutes)
+ ;Used on the SysUserSetup form.
+DefaultCompanySignIn=Company
+ ;Label on SysUserSetup
+SitemapAppLinksTitle=App links
+ ;Title string for Sitemap
+ManageUsersLabel=Manage users
+ ;System Administration Workspace
+ManageBatchJobsLabel=Manage batch jobs
+ ;System Administration Workspace
+AccessServicePortal=Access service portal
+ ;System Administration workspace
+ChangeSystemParam=Change system parameters
+ ;System Administration workspace
+SetupPartitionsLabel=Setup partitions
+ ;System Administration workspace
+ManageFeatureConfig=Manage feature configuartion
+ ;System Administration workspace
+BIRealValue=Business Intelligence real value
+ ;New Comment
+KpiPercentageValueType=Percentage
+ ;The type of a percentage for a KPI value
+KpiCurrencyValueType=Currency
+ ;The type of a currency for a KPI value
+KpiIntegerValueType=Integer
+ ;Integer data type for a KPI value.
+KpiSumValGroup2Abbreviation=K
+ ;Abbreviation used for thousands grouping
+KpiSumValGroup3Abbreviation=M
+ ;Abbreviation used for millions grouping
+KpiSumValGroup4Abbreviation=B
+ ;Abbreviation used for billions grouping
+KpiSumValGroup5Abbreviation=T
+ ;Abbreviation used for trillions grouping
+KpiSumValGroupUnknown=ER
+ ;Text to display for an unknown grouping for a KPI summary value
+KpiSumValGroup6Abbreviation=Q
+ ;Abbreviation used for quadrillions grouping
+NewLabel20448798=New Text
+ ;New Comment
+NewLabel524536430=New Text
+ ;New Comment
+SysUserManagementShowHideList=Show/hide list
+ ;New Comment
+SysUserManagementDetailsView=Details view
+ ;New Comment
+SysUserManagementGridView=Grid view
+ ;New Comment
+SysUserManagementUserId=User ID
+ ;New Comment
+UserInfoEnabled=Enabled
+ ;New Comment
+UserInfoCompany=Company
+ ;New Comment
+WorkflowListPageCaption=All workflows
+ ;Caption for the workflow list page
+WorkflowSelectWorkflowType=Select workflow type
+ ;Caption for the select workflow type slider
+GraphAPIErrorMsg=The service you are trying to reach is currently unavailable. Please contact your System Administrator for further assistance.
+ ;This is a generic error message to show the client whenever we are unable to reach GraphAPI due to whatever reason.
+GraphAPIImportCompleteMsg=Import completed successfully.
+ ;Import completed successfully.
+SysUserMSODSImportError=Import user failed. Please contact your System Administrator for further assistance.
+ ;This is a generic error message shown when import user failed due to an unknown reason.
+SysUserMSODSImportNoUser=Import user failed. No user was selected to import.
+ ;This is an error message shown when user tries to import without selecting any user to be imported.
+SysUserManagementDuplicateDomainAndAliasError=User with this domain and alias already exists.
+ ;Error message when try to create user with existing (domain, alias) pair
+WebAppsServer=Office Web Apps Server
+ ;Office Web Apps Server
+NativelyWebRenderable=Natively Web Renderable
+ ;Used in document handling
+HTMLFileExtension=HTML file
+ ;Docu: Description of enabled extension
+HTMFileExtension=HTM file
+ ;Docu: Description of enabled extension
+PNGFileExtension=PNG image
+ ;Docu: Description of enabled extension
+XMLFileExtension=XML file
+ ;Docu: Description of enabled extension
+MHTFileExtension=MHT file
+ ;Docu: Description of enabled extension
+MHTMLFileExtension=MHTML file
+ ;Docu: Description of enabled extension
+XHTMLFileExtension=XHTML file
+ ;Docu: Description of enabled extension
+SGMLFileExtension=SGML file
+ ;Docu: Description of enabled extension
+DaysAgo=%1 days ago
+ ;Generic message for number of days ago something occurred
+LastYear=Last year
+ ;Generic string for Last year
+YearsAgo=%1 years ago
+ ;Generic message for the number of years ago something occurred
+MonthsAgo=%1 months ago
+ ;Generic message for the number of months ago something occurred
+MoreThanTenYearsAgo=10+ years ago
+ ;Generic message for something that happened more than 10 years ago
+SysServiceConfigPreventUpdate=Updating TenantId value is not allowed.
+ ;Changing TenantId is not supported.
+SysServiceConfigPreventDelete=Unsetting TenantId value is not allowed.
+ ;Changing Tenantid is not supported.
+SysServiceConfigEntityLabel=Service configuration settings
+ ;Updatable view to update service configuration settings
+SysUserManagemenetEmptyUserIdError=User ID cannot be empty.
+ ;Used on SysUserManagement form
+SysUserManagemenetDuplicateUserIdError=User with ID '%1' already exists.
+ ;Used on SysUserManagement form
+SysUserManagemenetCannotDisableAdmin='Admin' user cannot be disabled.
+ ;Used on SysUserManagement form
+LoadedPackages=Loaded Packages and their models
+ ;Used on SysAbout to show loaded package files
+SysUserManagemenetCannotChangeGuestField=Field '%1' cannot be changed for 'Guest' user.
+ ;Error message when somebody tries change one of immutable Guest user fields.
+DocumentUploadStandardStyle=Standard
+ ;Standard style for the document upload control
+DocumentUploadMinimalStyle=Minimal
+ ;Minimal style for the document upload control
+DocuUpload_InvalidFileName=The file name that you entered contains characters that are not valid. Enter a valid file name.
+ ;Warning message to the user which shows the user specific document name has invalid characters.
+DocuUpload_UploadFailed=%1 failed to upload. Please try to upload the document again.
+ ;Warning message when a file failed to upload successfully
+DocuUpload_UploadFailedWithMessage=Upload of '%1' failed. %2
+ ;%1 = file name, %2 specific error message.
+OfficeIntegrationController_InvalidCustomInitialTemplateFilters=The custom initial template filters were not valid.
+ ;The message for the exception thrown when a custom initial template filters supplied by an implementer of the OfficeITemplateCustomExporter interface were not valid.
+SysUserSetup_ThemeTeal=Teal
+ ;Name of color theme
+SysUserSetup_ThemeDefault=Default theme
+ ;Name of color theme
+SysUserSetup_ThemeGreen=Green
+ ;Name of color theme
+SysUserSetup_ThemePomegranate=Pomegranate
+ ;Name of color theme
+SysUserSetup_ThemeDarkOrange=Dark orange
+ ;Name of color theme
+SysUserSetup_ThemePink=Pink
+ ;Name of color theme
+SysUserSetup_SelectTheme=Color theme
+ ;Label for theme picker
+SysUserSetup_SelectDensity=Size
+ ;Label for density picker
+SysUserSetup_DensityCompressed=Compressed
+ ;Name for density
+SysUserSetup_DensityStandard=Standard
+ ;Name for density
+SysTestSecurityScope_InvalidReference=Role '%1' is referenced by test class '%2', but it does not exist in the database
+ ;InvalidReference
+SysTestSecurityScope_ReservedReference=The system administrator and system user roles can not explicitly be granted to tests
+ ;Reserved reference
+SysTestSecurityScope_AdminUser=Role contexts can only be changed for an admin user
+ ;AdminUser
+SysTestSecurityScope_NonDisposed=A non-disposed security role scope already exists within the session
+ ;New Comment
+SysTestSecurityScope_NonExisting=The security role '%1' does not exist
+ ;New Comment
+SysTableBrowser_MissingTableId=Table Id is not specified.
+ ;Table Id required when running table browser.
+SysTableBrowser_MissingForm=The form for table browser is not specified.
+ ;Form is not specified when running table browser.
+SysTableBrowser_MissingTableName=The name of the table or view is not specified.
+ ;Table name is required when running table browser.
+SysTableBrowser_HideSystemFields=Hide system fields
+ ;Hidding system fields
+SysTableBrowser_ShowSystemFields=Show system fields
+ ;Showing system fields
+SysTableBrowser_ShowHideSysFieldsHelpText=Shows or hides the system fields in the grid.
+ ;Help text to the show or hide system fields.
+SysTableBrowser_TableNotSynced=Cannot browse '%1'. Verify the table or view has been built and synchronized. If it has been built and synchronized, reset the IIS and try again.
+ ;Table has not been built and/or synchronized.
+NumberSeq_GeneratorNotFound=The class that generates data types for the '%1' type is not found.
+ ;%1 - name of an EDT; Error message shown when the automatic number sequence generation cold not find a suitable generator to provide for the specified EDT data type.
+NumberSeq_WarningAutoGeneratedType=Automatically generated types for the ExtendedDataType %1, Module NumberSeqModule::%2.
+ ;%1 - name of an EDT; %2 - Symbol of the enum NumberSeqModule; warning message shown when a number sequence is automatically generated for the current session.
+SysTestSecurityScope_DoNotDefineAdmin=A SysTestSecurityAttribute is not allowed to define an 'admin' persona.
+ ;New Comment
+SysTestSecurityScope_AlreadyDefined=Multiple SysTestSecurityAttributes define the '%1' persona.
+ ;New Comment
+SysTestSecurityScope_MultipleDefaults=Multiple SysTestSecurityAttributes define a default persona.
+ ;New Comment
+SysTestSecurityScope_PersonaNotExist=The persona '%1' does not exist
+ ;New Comment
+DateEffectivePaneRecordUnavailable=Information for this record is unavailable for the date you selected
+ ;Message for DateEffectivenessPaneController when no record is found for the given date
+SysTestSecurityScope_NoContext=The test execution does not currently have a security context. Please ensure that you are running under SysTest
+ ;New Comment
+SysTestSecurityScope_DupContext=The test execution currently has a security context (duplicate). This may mean that a previous test failed to clean up.
+ ;New Comment
+SysTestSecurityScope_InTTS=A business transaction can not be open while changing user personas
+ ;New Comment
+DimensionCombinationEntityDevHelp=The DimensionCombinationEntity contains information about accounts and various dimensions combinations that are used.
+ ;{Locked}
+DimensionAttributeValueSetViewDevHelp=The DimensionAttributeValueSetView contains sets of dimension attribute values to be used by the financial dimensions subsystem.
+ ;{Locked}
+DimensionSetEntityDevHelp=The DimensionSetEntity contains sets of dimension attribute values to be used by the financial dimensions subsystem.
+ ;{Locked}
+DimensionSQLKeyColumnName=The name of the column that contains the specific instance of the backing entity for the dimension attribute value.
+ ;The name of the column that contains the specific instance of the backing entity for the dimension attribute value.
+DimensionSQLValueColumnName=The name of the column that contains the value for the dimension attribute value.
+ ;The name of the column that contains the value for the dimension attribute value.
+DataEntitiesDataSourceValidateWriteFailed=validateWrite failed on data source '%1'
+ ;%1 : name of the data source that failed validateWrite. validateWrite is a method name and should not be translated.
+DataEntitiesDataSourceValidateFieldFailed=validateField failed on field '%1'
+ ;%1 : name of the field that failed validateField. validateField is a method name and should not be translated.
+DataEntitiesReadOnlyError=insert/update/delete not allowed for entity with ReadOnly = Yes
+ ;ReadOnly is a property, i.e. not to be  translated.
+DMFEntitySequencing=Entity sequence
+DMFDataEntityName=Data entity name
+DataEntitiesNoAllowEdit=update not allowed for field '%1'
+ ;%1 : name of field that have AllowEdit = No
+DataEntitiesNoAllowEditOnCreate=insert not allowed for field '%1'
+ ;%1 : name of field that have AllowEditOnCreate = No
+NoDefaultAdminUser=The default admin user does not exists!
+ ;{Locked} Not user visible
+ProvisioningMessageId=Provisioning message id
+ ;This identifier is for CLIX provisioning system to track provisioning calls.
+ProvisioningServiceDescription=The AOS provisioning end point
+ ;{Locked} Not user visible
+ProvisioningStateActive=Active
+ ;New Comment
+ProvisioningStateWarn=Warned
+ ;New Comment
+ProvisioningStateSuspended=Suspended
+ ;New Comment
+ProvisioningStateDelete=Deleted
+ ;New Comment
+ProvisioningPlanLevelCompany=Company
+ ;New Comment
+ProvisioningPlanLevelUser=User
+ ;New Comment
+ProvisioningPlanLevelDevice=Device
+ ;New Comment
+EmptyText=None
+ ;Used instead of providing text
+ProvisoningPlanLimitHQSeats=HQ Seats
+ ;New Comment
+ProvisoningPlanLimitRetailDevices=Retail Devices
+ ;New Comment
+ProvisioningFailToSaveMessage=Failed to save the provisioning message
+ ;{Locked} Not user visible
+ProvisioningMessageTableLabel=Provisioning Messages
+ ;{Locked} Not user visible
+ProvisioningConnectionStringFormat=Data Source=%1; Initial Catalog=%2; User Id=%3; Password=%4
+ ;{Locked} Not user visible
+ProvisioningMissingConnectionStringInfo=Data for setting channel database connection string was not present in the provisioning message.
+ ;New Comment
+SysClassRunner_MissingClassName=The name of the class is not specified.
+ ;The name of the class not specified for SysClassRunner form.
+SysClassRunner_DisplayText=Run class: '%1'
+ ;The display text for the SysClassRunner form.
+SysClassRunner_Label=Class runner
+ ;The label for the SysClassRunner menuitem.
+UserSettings=User options
+ ;The menu text and form title for SysUserSetup form.
+SysClassRunner_HelpText=Runs main method in specified class.
+ ;The helptext for the SysClassRunner menuitem.
+SysClassRunner_MainNotExist=Cannot find method with signature: 'public static void Main(Args args)' on class %1'
+ ;Error when main method with correct signature does  not exist on the class.
+SysClassRunner_ClassNotExist=The specified class '%1' does not exist.
+ ;Error when class does not exist.
+OpenReportLabel=Open report
+ ;Caption for the hyperlink on the Power BI Report Viewer control
+iFrameNotRenderedMessage=This report cannot be displayed.
+ ;Message shown when the iFrame cannot be rendered on the client
+WorkflowImport=Import workflow
+ ;Dialog caption for workflow import
+DimensionEntitiesDimensionValueNotExist=The dimension value %1 does not exist for dimension %2 in the specified values %3.  \r\nThings to try:\r\n • Make sure that the value for dimension %2 exists.\r\n • Make sure the order of dimension values matches the default format for data entities.
+ ;A value for that dimension could not be found.
+DimensionEntitiesAttributeAndValueCountMismatch=The number of dimension values specified in %1 is different from the number set up in the default format for data entities.\r\nThings to try:\r\n • Make sure the number of dimension values specified matches the default format for data entities.\r\n • Make sure that any dimension values specified that include the chart of accounts delimiter character in the name escape the delimiter character with a backslash character '\\'.
+ ;The number of dimension values is not the same as dimensions setup for integration.
+DefaultDimensionIntegrationStructureDisplay=Default dimension integration structure
+DefaultDimensionIntegrationValues=Default dimension values
+DimensionEntitiesDimensionStructureNotCreated=No active format for data entities has been set up.\r\nSet up an active format for each dimension format type. 
+ ;There are no financial dimensions added to the financial dimension structure for data entities.
+DimensionBusinessUnitRecordId=BusinessUnit record Id
+ ;Record Id column for BusinessUnit dimension
+DimensionBusinessUnitValue=BusinessUnit dimension value
+ ;Value column for BusinessUnit dimension
+DimensionDepartmentRecordId=Department record Id
+ ;Record Id column for Department dimension
+DimensionDepartmentValue=Department dimension value
+ ;Value column for Department dimension
+DimensionCostCenterRecordId=CostCenter record Id
+ ;Record Id column for CostCenter dimension
+DimensionCostCenterValue=CostCenter dimension value
+ ;Value column for CostCenter dimension
+DimensionItemGroupRecordId=ItemGroup record Id
+ ;Record Id column for ItemGroup dimension
+DimensionItemGroupValue=ItemGroup dimension value
+ ;Value column for ItemGroup dimension
+DimensionRetailchannelRecordId=Retailchannel record Id
+ ;Record Id column for Retailchannel dimension
+DimensionRetailchannelValue=Retailchannel dimension value
+ ;Value column for Retailchannel dimension
+DimensionTerminalRecordId=Terminal record Id
+ ;Record Id column for Terminal dimension
+DimensionTerminalValue=Terminal dimension value
+ ;Value column for Terminal dimension
+DimensionWorkerRecordId=Worker record Id
+ ;Record Id column for Worker dimension
+DimensionWorkerValue=Worker dimension value
+ ;Value column for Worker dimension
+DimensionValueFieldHelpText=Unique key for identification of the dimension value
+ ;Help Text for dimension value fields
+DataEntityFieldValueDoesNotExist=Field value '%1' is not in the acceptable set of values for the field '%2'.
+ ;New Comment
+DateEffectiveFutureAndPastFormTitle=Modify or create
+ ;Window title for the future/past date effective maintenance dialogs
+HTMLEditorBoldLabel=Bold
+ ;Label for the bold command in the HTML editor
+HTMLEditorItalicLabel=Italic
+ ;Label for the italic command in the HTML editor
+HTMLEditorUnderlineLabel=Underline
+ ;Label for the underline command in the HTML editor
+HTMLEditorFormatLabel=Format
+ ;Label for the format command in the HTML editor
+HTMLEditorFontLabel=Font name
+ ;Label for the font name command in the HTML editor
+HTMLEditorSizeLabel=Font size
+ ;Label for the font size command in the HTML editor
+HTMLEditorColorLabel=Text color
+ ;Label for the text color command in the HTML editor
+HTMLEditorBackgroundLabel=Fill color
+ ;Label for the background color command in the HTML editor
+HTMLEditorLeftLabel=Align left
+ ;Label for the align left command in the HTML editor
+HTMLEditorCenterLabel=Align center
+ ;Label for the align center command in the HTML editor
+HTMLEditorRightLabel=Align right
+ ;Label for the align right command in the HTML editor
+HTMLEditorIndentLabel=Indent more
+ ;Label for the indent more command in the HTML editor
+HTMLEditorOutdentLabel=Indent less
+ ;Label for the indent less command in the HTML editor
+HTMLEditorUnorderedListLabel=Insert unordered list
+ ;Label for the insert unordered list command in the HTML editor
+HTMLEditorOrderedListLabel=Insert ordered list
+ ;Label for the insert ordered list command in the HTML editor
+HTMLEditorImageLabel=Insert image
+ ;Label for the insert image command in the HTML editor
+HTMLEditorLinkLabel=Insert link
+ ;Label for the insert link command in the HTML editor
+HTMLEditorCleanLabel=Remove formatting
+ ;Label for the remove formatting command in the HTML editor
+HTMLEditorHtmlLabel=View source
+ ;Label for the view source command in the HTML editor
+HierarchyViewerAccessibleDescription=Hierarchy Viewer
+ ;An accessible description of the Hierarchy Viewer control
+HierarchyViewerAccessibleDescriptionPrevChildren=Previous Children
+ ;An accessible description of the Hierarchy Viewer control's previous children button
+HierarchyViewerAccessibleDescriptionNextChildren=Next Children
+ ;An accessible description of the Hierarchy Viewer control's next children button
+HierarchyViewerAccessibleDescriptionPrevGrandchildren=Previous grandchildren
+ ;An accessible description of the Hierarchy Viewer control's previous grandchildren button
+HierarchyViewerAccessibleDescriptionNextGrandchildren=Next grandchildren
+ ;An accessible description of the Hierarchy Viewer control's next grandchildren button
+SMTPSettings=SMTP settings
+ ;SysEmailParameters SMTP fast tab
+DNSSettings=DNS settings
+ ;SysEmailParameters DNS fast tab
+AttachmentSettings=Attachment settings
+ ;SysEmailParamaters Attachement fast tab
+EmailSubMenu=Email setup
+ ;Submenu to group email setup
+UploadEmailTemplate=Upload email template
+ ;Email template upload
+UploadEmailTemplateControlLabel=Specify email template by uploading appropriate HTML content
+ ;Email template file upload control label
+EmailDownloadFailed=Could not download and save the email template after it was uploaded. Error: %1
+ ;Download error when downloading email template
+EmailTemplateEmpty=Empty email template specified. Email message table is not updated.
+ ;Info for nmot updating email message table
+EmailUploadFailed=HTML template file was not uploaded successfully. Retry again.
+ ;HTML email template upload failure
+UseDefaultCredentials=Use default credentials
+ ;Default credentials to use
+SSLRequired=Specify if SSL is required
+ ;SSL requirement for outgoing SMTP server
+SysEmailTable_HasMessageBody=Has body
+ ;SysEmailTable/SysEmailSystemTable: Indicates that an email message has content in the body of the message
+ReportServerIPRetrievingError=Retrieving the SSRS Server IP Address failed with the following error: {0}
+ ;The error message when failing to retrieve the SSRS report server IP address in the azure service configuration file
+ColorPickerHexColor=Hex #
+ ;Hex color value prompt for the color picker control
+ColorPickerColorPreview=Color
+ ;Color preview display prompt for the color picker control
+SysClassRunner_RunCompleted=Class '%1' completed.
+ ;Class runner completion message
+SysClassRunner_RunError=There was an error running the class. Check the infolog for details.
+ ;Class runner error info
+SysClassRunner_Parameters=Parameters to the class main method
+ ;Prompt for the class runner parameters
+SysClassRunner_ParametersHelp=Enter parameters to pass to the main method 
+ ;Help text for the class runner parameters
+SysClassRunner_Running=Running class '%1'
+ ;Class running message
+FieldDescriptionsPageName=Page name
+ ;Header for the page lookup column
+FieldDescriptionsPageAOTName=Page AOT name
+ ;Header for the page lookup column
+FieldDescriptionsFieldName=Field name
+FieldDescriptionsControlName=Control name
+FieldDescriptionsFieldDescription=Field description
+FieldDescriptionsCaption=Field descriptions
+FieldDescriptionsFormName=Select a page
+FieldDescriptionsIncludeFieldsWithoutDescription=Include fields without a description
+FieldDescriptionsFormDescription=This page allows you to view or export field descriptions. Field descriptions are only available for more complex fields that need additional explanation. Some pages don’t have any descriptions.
+FieldDescriptionsFormExplanation=To list the fields and descriptions for a specific page, enter part or all of the page name in the Select a page field and then click the drop-down arrow to select from a filtered list of pages. By default, this report includes only fields that have a field description. To display all the fields on a page, set Include fields without a description to Yes. To export the field descriptions for a page, click the Open in Microsoft Office icon in the upper-right corner, then select FieldDescriptionTmp.
+FieldDescriptionsView=View form field descriptions
+ ;View security privilege label
+FormAOTName=Form AOT name
+ColorPickerLookupCaption=Select Color
+ ;The caption on the color picker lookup form
+ContainerLengthInvalid=The container length is invalid. Minimum length is %1. Actual length is %2.
+ ;Error text when a container is expected to be a certain length.
+SysClassRunner_StateVersionMismatch=Incorrect version of a packed object, SysClassRunnerState, operation not possible
+ ;Version mismatch between pack/unpack for SysClassRunnerState.
+SIGProcSetupTempTableError=You can’t set up electronic signature requirements for temporary tables.
+ ;Electronic signature error message if temporary tables are selected
+NoPersonWithThatName=No person with that name was found.
+ ;Error message when typing in person name in new/edit user form
+MultiplePersonsWithThatName=%1 persons with that name were found.  Use lookup to select.
+ ;Error message when typing in person name in new user found, but the name did not uniquely identify a person in DirPerson table.
+Mapper_Help=Help : 
+ ;Tooltip text label for help
+Mapper_Label=Label : 
+ ;Tooltip text label for label
+Mapper_Type=Type : 
+ ;Tooltip text label for type
+Mapper_Name=Name : 
+ ;Tooltip text label for name
+Mapper_Position=Position : 
+ ;Tooltip text label for position
+Mapper_DataSource=Data Source : 
+ ;Tooltip text label for data source
+Mapper_ErrorCode101=Error while loading control
+ ;Generic error message while loading mapper control
+Mapper_Functions=Functions
+ ;Functions title of mapper control
+NewLabel2=New Text
+ ;New Comment
+Mapper_Save=Save Mappings
+ ;Save button text
+NewLabel3=New Text
+ ;New Comment
+OfficeWebAppsServerTokenRefreshed=Office Web Apps Server token was successfully refreshed
+ ;Refresh successful
+OfficeWebAppsServerTokenNotRefreshed=Office Web Apps Server token was not able to be refreshed
+ ;Refresh not successful
+OfficeWebAppsServerTokenRefresh=Token refresh
+ ;Office Web Apps Server token refresh button
+OfficeWebAppsServerTokenRefreshHelpText=Office Web Apps Server token refresh in case the secret token has accidentally been made public
+ ;Office Web Apps Server token refresh button helptext
+Mapper_HideFunctions=Show/Hide Functions
+ ;Display text for show/hide functions on the mapper control
+Mapper_HideAssignments=Show/Hide Assignments
+ ;Display text for show/hide assignments on the mapper control
+Mapper_DeleteSelection=Delete Selection
+ ;Display text for delete selection on the mapper control
+Mapper_ErrorCode999=An error occurred in mapper control. Please contact administrator for more details.
+ ;Generic exception message to display if no exception is matched
+NewLabel4=Error while saving
+ ;Error message displayed while exception occured on save action
+Mapper_ErrorCode102=Error while saving
+ ;Exception message to display when error occured at save action
+Mapper_ErrorCode001=Invalid source / target
+Mapper_ErrorCode002=Function already mapped to a target
+Mapper_ErrorCode003=Not a valid datatype between source and target
+Mapper_ErrorCode004=All mandatory columns should be mapped
+SysLocalizationCountryRegionCode=Localized functionality region
+ ;SysLocalizationCountryRegionCode enum
+SysLocalizationCountryRegionCode_Default=Detect using company address
+ ;SysLocalizationCountryRegionCode.Default enum value
+SysLocalizationCountryRegionCodeUnsupported=Trying to use unsupported country or region code %1, localized functionality for it is disabled.
+ ;Warning shown to the user when the system is configured to use unsupported country
+SysExpressionControlRecordNotFound=Expression record could not be found.
+ ;SysExpressionControl record not found error
+SysExpressionControlValidDocumentNeeded=Valid document name must be specified for the expression control.
+ ;SysExpressionControl valid document required error
+SysConfigurationKeysTabCaption=Configuration keys
+ ;Tab showing configuration keys
+SysConfigurationKeyGroupsTabCaption=Configuration key groups
+ ;Tab showing configuration key groups
+SysConfigurationKeyGroupsDetailsCaption=Included configuration keys
+ ;Header for configuration key group details pane listing included configuration keys
+SysConfigurationSaveConfirmation=Do you want to save changes done to configuration?
+ ;Confrmation shown after user changed configuration before saving
+SysConfigurationKeyGroupName=Configuration key group name
+ ;Label for SysConfigurationKeyGroupName EDT
+SysUserSetupLanguage_RefreshNotification=You have changed your language preferences. Refresh your browser to apply this change.
+ ;Label for SysUserSetup language switch
+DocuTemplate_UnknownStorageLocation=Unknown template storage location.
+ ;DocuTemplate table: Error when retrieving a template and it could not be determined where it is stored.
+DocuTemplate_RootDataEntityNameLabel=Root data entity
+ ;DocuTemplateRootEntityName EDT: Label for the name of a root data entity
+DocuTemplate_TemplateTypeLabel=Template type
+ ;DocuTemplateType EDT: Label for the type of template (i.e. Excel/Word/...)
+DocuTemplate_FormCaption=Document templates
+ ;DocuTemplate form: Title of the "Document templates" form
+DocuTemplate_DownloadButton=Download
+ ;DocuTemplate form: Caption for the download template button
+DocuTemplate_IncorrectUploadStrategyUsed=An incorrect file upload strategy was used to upload the file.
+ ;DocuTemplateUploadDialog form: Error when a wrong file upload strategy is used to upload a file.
+DocuTemplate_ReplaceTemplatePrompt=A template with this name already exists, would you like to replace it?
+ ;DocuTemplateUploadDialog form: Prompt that asks a user if they want to replace an existing template (Yes/No dialog)
+DocuTemplate_UploadDialogCaption=Upload template
+ ;DocuTemplateUploadDialog form: title of the "Upload template" dialog
+DocuTemplate_TemplateIdentityCaption=Template Identity
+ ;DocuTemplateUploadDialog form: Caption for the template identity group
+DocuTemplate_PerCompanyCaption=Specific company
+ ;DocuTemplateUploadDialog form: Caption for the option to associate a company with the template
+DocuTemplate_PerLanguageCaption=Specific language
+ ;DocuTemplateUploadDialog form: Caption for the option to associate a language with the template
+DocuTemplate_TemplateDetailsCaption=Template details
+ ;DocuTemplateUploadDialog form: Caption for the template details group
+CompanyChooserInvalidCompany=The company you entered is not valid. Please type a valid company code and try again.
+ ;SysComplanyChooser: invalid company entered
+DocuTemplate_DifferentRootEntityError=Templates with the same template name must have the same root data entity.
+ ;DocuTemplate table: Validation failure when a template is being uploaded that does not have the same root data entity name as other templates that have the same template name.
+DocuTemplate_UploadedFileNameCaption=Uploaded file name
+ ;DocuTemplateUploadDialog form: Caption for the uploaded file name.
+DocuTemplate_ApplyRecordFilterLabel=Apply current record filter
+ ;DocuTemplateApplyRecordFilter EDT: Label, Indicates if the template should have a filter for the current record automatically applied when launched from the "Open in Microsoft Office" button
+DocuTemplate_ApplyCompanyFilterLabel=Apply company filter
+ ;DocuTemplateApplyCompanyFilter EDT: Label, Indicates if the template should have a filter for the company automatically applied when launched from the "Open in Microsoft Office" button
+DocuTemplate_ListInOfficeMenuLabel=List in Open in Office menu
+ ;DocuTemplateListInOfficeMenu EDT: Label, Indicates if the template is listed in the "Open in Microsoft Office" menu
+DocuTemplate_DisplayNameLabel=Template display name
+ ;DocuTemplateDisplayName EDT: Label, Display name for a template
+DocuTemplateTrimmingFailed=Workbook trimming attempted to remove fields from template %1 that do not apply in the current context, but that trimming was not successful. The original template will be provided instead.
+ ;Document generation trimming failure for template
+DocuTemplateMaintain_Label=Maintain document templates
+ ;Label for the DocuTemplateMaintain privilege and duty
+UnitOfMeasureConversionEntityDeveloperDocumentation=The UnitOfMeasureConversionEntity data entity contains a definition of the conversion between two units of measure.
+ ;{locked} Developer documentation.
+UnitOfMeasureImportUnitConversions=Import unit conversions
+ ;Data Entity SecurityPrivilege Unit of measure
+UnitOfMeasureExportUnitConversions=Export unit conversions
+ ;Data Entity SecurityPrivilege Unit of measure
+DocuTemplate_UnableToDetermineRootEntityError=Invalid template. Unable to determine the root data entity.
+ ;DocuTemplateUploadDialog form: Error displayed when an uploaded template could not be parsed to determine its root data entity name.
+DocuTemplateDefinition_Unknown=Unknown
+ ;DocuTemplate definition enum -- unknown definition location
+DocuTemplateDefinition_User=User
+ ;DocuTemplate definition enum -- user defined template
+DocuTemplateDefinition_System=System
+ ;DocuTemplate definition enum -- system defined template
+DocuTemplateDefinition_Overridden=Override
+ ;DocuTemplate definition enum -- user overridden system defined template
+DocuTemplateDefinition_Label=Defined by
+ ;DocuTemplate definition enum -- enum type caption
+DocuTemplate_ReloadSystemTemplatesButton=Reload system templates
+ ;DocuTemplate form: Caption for the reload system templates button
+DocuTemplate_ReloadTemplateWarning=Warning: This will reload the system templates.  Any overriden templates will be reset to the system defined version.  Continue?
+ ;DocuTemplate form: Warning message that indicates to the user that all conflicting templates will be overwritten
+DocuTemplateRegistration_AddingTemplate=Adding template: %1 (%2)
+ ;DocuTemplateRegistrationBase class: Processing message -- %1 template name; %2 template type
+DocuTemplateRegistration_NoSkipOrReplaceWarning=Encountered an existing template and not in skip or replace mode
+ ;DocuTemplateRegistrationBase class: Warning that indicates that a conflicting template was found, but the class is not skipping or replacing existing templates.
+DocuTemplateRegistration_ResourceTypeMismatch=The type of the document stored in the resource does not match the defined template type
+ ;DocuTemplateRegistrationBase class: Error that indicates that the type of file stored in a resource does not match the type defined for the template.
+DocuTemplate_UploadRestrictedWrongType=The uploaded template was of type %2 when %1 was expected.
+ ;DocuTemplateUploadDialog form: Error for when the user uploads the wrong type of template when a specific type was requested -- %1: expected type; %2: actual type
+DocuTemplate_UploadRestrictedWrongRootEntity=The uploaded template had a root data entity of %2 when %1 was expected.
+ ;DocuTemplateUploadDialog form: Error for when the user uploads a template that has a root data entity that does not match the requested entity type -- %1: expected entity name; %2: actual entity name
+DocuTemplateRegion_EdtLabel=Country/region
+ ;DocuTemplateRegion EDT: Label, "Country/Region" used in DocuTemplate* forms/tables
+DocuTemplate_PerCountryRegionCaption=Specific country/region
+ ;DocuTemplateUploadDialog form: Label used to indicate if a template should be uploaded to a specific country/region
+DocuTemplate_LookupCountryRegion=Country/region
+ ;Used in a lookup as the field header for country/region (ISO) codes
+Docu_ErrorWhileAttaching=An error occured while attaching the document.
+ ;Document management: Generic error message used when attaching a document fails.
+Docu_IncorrectDocuType=The provided document type is not a %1 type.
+ ;Document management: Error used when an incorrect DocuType record is used because of a wrong action class. -- %1 a resolved label indicating the class of docuType (File, URL, or Note)
+Docu_UnsupportedStorageType=Unsupported file storage location.
+ ;Document management: Error used when using an unsupported file storage location.
+DocuDeleteOrphanTaskClassDescription=Deletes an orphaned document reference.
+ ;Class description for DocuDeleteOrphanTask
+DocuDeleteOrphanTaskRunException=Caught exception deleting document reference '%1'.
+ ;Diagnostic message when an exception is generated while deleting an orphaned reference. %1 = reference name.
+DocuRefScanOrphansTaskClassDescription=Scan for orphaned document references.
+ ;Class description for DocuRefScanOrphansTask
+DocuDeleteOrphanTaskBundleClassDescription=Deletes a bundle of orphaned document references.
+ ;Class description for DocuDeleteOrphanTaskBundle
+DocuMigrateDatabaseFilesException=Caught exception migrating files from database into blob storage
+ ;Diagnostic message when an exception is generated while migrating files stored in the database
+DocuMigrateDatabaseFilesNoLocation=File couldn't be saved in blob storage
+ ;Diagnostic message when an saving a file into blob storage fails
+DocuMigrateDatabaseFilesTaskClassDescription=Migrates files stored in the database to blob storage.
+ ;Class description for DocuMigrateDatabaseFilesTask
+DocuMigrateDocuTypesException=Caught exception migrating document types from database to archive
+ ;Diagnostic message when an exception is generated while migrating document types from database to archive
+DocuMigrateScriptFailure=Migrating files from database into blob storage or migrating document types failed.
+ ;Diagnostic message when the batch script fails to migrate all appropriate document value and document type records
+DocuMigrateTaskAlreadyScheduled=File migration already scheduled
+ ;Info message shown if a file migration is attempted to be scheduled when a migration is already scheduled
+DocuMigrateTaskScheduled=File migration scheduled
+ ;Info message shown once a file migration is scheduled
+DocuMigrateTaskNotNeeded=No records need updating
+ ;Info message shown if a file migration is attempted to be scheduled but no records need to be updated
+DMFFormRefNotSpecifiedForEntity=No form is associated with data entity - %1.
+ ;FormRef on data entity must be specified to view target data
+DMFExecutionSummary=Execution summary
+ ;Job execution summary for a DMF job process.
+WorkflowElementActionEntityLabel=Workflow element action
+ ;Entity label
+WorkflowElementEntityLabel=Workflow element
+ ;Entity label
+WorkflowElementLinkEntityLabel=Workflow element link
+ ;Entity label
+WorkflowElementNotificationEntityLabel=Workflow element notification
+ ;Entity label
+WorkflowElementNotificationMessageEntityLabel=Workflow element notification message
+ ;Entity label
+WorkflowElementOutcomeMessageEntityLabel=Workflow element outcome message
+ ;Entity label
+WorkflowEscalationPathEntityLabel=Workflow escalation path
+ ;Entity label
+WorkflowLineItemEntityLabel=Workflow line item
+ ;Entity label
+WorkflowParallelBranchEntityLabel=Workflow parallel branch
+ ;Entity label
+WorkflowStepEntityLabel=Workflow step
+ ;Entity label
+WorkflowStepMessageEntityLabel=Workflow step message
+ ;Entity label
+WorkflowSubworkflowEntityLabel=Workflow subworkflow
+ ;Entity label
+WorkflowVersionEntityLabel=Workflow version
+ ;Entity label
+WorkflowVersionNotesEntityLabel=Workflow version notes
+ ;Entity label
+WorkflowVersionNotificationEntityLabel=Workflow version notification
+ ;Entity label
+WorkflowVersionNotificationMessageEntityLabel=Workflow version notification message
+ ;Entity label
+ExpressionEntityLabel=Expression
+ ;Entity label
+LCSServiceAdministration=Lifecycle Services
+ ;LCS service administration link
+WorkflowServiceGroup=Workflow services group
+ ;Workflow services group
+DMFEntityMetadataNotFound=Entity metadata could not be retrieved for entity - %1.
+ ;Entity sync error - metadata could not be found
+DMFEntitySynchronizeError=Error synching entity metadata for entity - %1. Message - %2.
+ ;General entity sync error
+UnitOfMeasureWizardIntro=Standard units are set up based on The International System of Units - SI (metric units) or The U.S. Customary Units (U.S. Standard units). Select which system to use and decide to create conversion factors for the units
+ ;Unit of measure creation
+UnitOfMeasureWizardUnits=The following units will be created. You can adjust the decimal precision and description for any of the units
+ ;Unit of measure creation
+UnitOfMeasureWizardConversions=The following unit conversions will be created. You can adjust the rounding for any of the unit conversions
+ ;Unit of measure creation
+UnitOfMeasureWizardComplete=The following units and their corresponding unit conversions will be created
+ ;Unit of measure creation
+SIUnits=International System of Units
+ ;Unit of measure, SI Units
+USUnits=U.S. Customary Units
+ ;Unit of measure, U.S. Customary Units
+UnitOfMeasureExistingUnits=Existing units
+ ;Unit of measure, view existing units
+UnitOfMeasureExistingConverions=Existing unit conversions
+ ;Unit of measure, view existing unit conversions
+UnitOfMeasureImportUnits=Import units
+ ;Data Entity SecurityPrivilege Inventory
+UnitOfMeasureExportUnits=Export units
+ ;Data Entity SecurityPrivilege Inventory
+UnitOfMeasureEntityDeveloperDocumentation=The UnitOfMeasureEntity data entity contains information about the units.
+ ; {locked} Developer documentation.
+UnitOfMeasureSystemLanguageDeveloperDocumentation=The UnitOfMeasureSystemLanguage view contains information about the system language for each unit.
+ ; {locked} Developer documentation.
+DocuType_SharePointLocationCaption=SharePoint Address
+ ;DocuType form: caption for SharePoint address field
+DocuType_DatabaseNotSupportedForDocuAction=The database is not a supported storage location for files. Use a different location.
+ ;DocuType form:  Message indicating that the DocuFilePlace::Database is not supported for the specified ActionClassId.
+SPSelectionDlg_Caption=Folder selection
+ ;SharePointSelectionDlg form caption
+DocuType_SharePointWriteError=A valid %1 must be specified when the %2 is %3.
+ ;DocuType.validateWrite: %1=@ApplicationFoundation:DocuType_SharePointLocationCaption, %2=DocuType FilePlace label, %3=DocuFilePlace::SharePoint
+DocuStorageProviderType=Document Storage Provider Type
+ ;Enum of document storage providers
+SPSelectionDlg_ErrorNoProxy=Unable to communicate with the SharePoint server: %1
+ ;Error message when a proxy cannot be generated for specified server. %1: the server host name.
+SPServerUserNotAuthorized=You are not authorized to connect to '%1'
+ ;Error message to user when they are not authorized to communicate with the specificied SharePoint server. %1: Server host name
+OneDriveDefaultLibraryTitle=Documents
+ ;The title of the psuedo libary displayed for a user's OneDrive document storage location.
+SPServerCommunicationSuccess=Successfully connected to SharePoint server '%1'
+ ;Status message when the SharePoint server was validate. %1: the server host name.
+DocuParam_SharePointConfigure=Configure SharePoint storage options
+ ;Main instruction text for the SharePoint tab in the DocuParameters form.
+DocuParam_DefaultSharePointServer=Default SharePoint server
+ ;Label of the DefaultSharePointServer field in the DocuParameters table.
+DocuParam_NavigateSharePointServer=Open SharePoint
+ ;Label of the button on the DocuParameters form that will open a new browser and attempt to navigate to the specified SharePoint server.
+DocuParam_SharePointServerUpdated=%1 was updated to '%2'
+ ;Message to user when the supplied value for the DefaultSharePointServer field has been updated. %1: the field's label, %2: the new value.
+DocuParam_SharePointServerCleared=%1 was cleared because '%2' is not a valid value
+ ;Message to user when the supplied value for the DefaultSharePointServer field has been updated. %1: the field's label, %2: the new value.
+DocuParam_NavigateSharePointServerFailed=Unable to open SharePoint site '%1'
+ ;Message to user in response to a failed attempt to browse to the specified DefaultSharePointServer. %1: specified server
+DocuParam_TestSharePointServer=Test SharePoint connection
+ ;Label on button on the DocuParameter form which tests whether a connection can be made to the specified SharePoint server.
+DocuParam_FileMigration=Migrate Files
+ ;Label of the migrate files tab page and button on the DocuParameters form
+DocuParam_FileMigrationTitle=Migrate database files to blob storage
+ ;Label of the migrate files tab page title on the DocuParameters form
+DocuParam_ResetFileTypesButtonLabel=Reload defaults
+ ;Label for button used to reload the default file types for document management
+DocuParam_ResetFileTypesConfirmation=Warning: This will reload the default file types. Any added file types will not be affected. Continue?
+ ;Confirmation before the default document management file types are reset.
+DocuType_SharePointNotConfigured=A SharePoint server is not configured. Please go to the %1 form to do this.
+ ;Error message that occurs when a user attempts to setup a DocuType with SharePoint storage and a default server is not configured. %1: the DocuParamerters form name.
+DocuValueAccessInformation=Access Information
+ ;Field label for the AccessInformation field on the DocuValue table.
+DocuValueOriginalFileName=Original file name
+ ;Field label for OriginalFileName field on the DocuValue table.
+DocuDefaultAttachmentLabel=Is default attachment
+ ;Label for a column that indicates if the current attachment is considered as the default attachment
+DocuRef_DuplicateDocumentIdError=The document ID field must be unique
+ ;Validation error when a duplicate value exists on the document ID column.
+DocuRef_DefaultAttachmentError=Only one document can be marked as default for each record
+ ;Validation error when more than one document attachment record is marked as default.
+DocuRef_DocumentIdLabel=Document ID
+ ;Label for the Document ID column on DocuRef
+DocuRefEntityLabel=Base document attachments entity
+ ;Label for the Document Attachments entity
+DocuRefEntity_UpdateNotSupported=Updating document attachments is not supported
+ ;Error text indicating that using the DocuRefEntity is not supported for update.
+DocuRefEntity_FileFieldBlank='%1' is required when attaching a file
+ ;Error text indicating that a file attachment is missing information -- %1: the field's name
+DocuUpgradeModule=Document management
+ ;Module name for the document management upgrade script
+DMFEntityRecreateError=Error recreating data entity - %1. Message - %2.
+ ;New Comment
+DMFEntityNameInvalid=Invalid data entity name.
+ ;Entity name is invalid.
+DMFParametersAutoSync=Auto sync data entity changes
+ ;DMF Parameter to auto sync changes
+DMFEntityNotInSQLError=Data entity table for - %1 was not found. Rebuild and retry the sync.
+ ;Error if backing table is not found for the entity
+DMFEntityStagingNotInSQLError=Data entity staging table - %1 is invalid or was not found. Rebuild and retry the sync.
+ ;Staging table not found
+DMFDictTableNotInitializedForEntity=Cannot create DictTable object for data entity - %1.
+ ;DictTable not initialized for entity
+DMFCannotMakeEntityRecord=Cannot create record for data entity - %1. The most common cause is if the entity metadata is not compiled. Recompile and retry database sync.
+ ;Cannot make entity record
+SysConfigurationToBeEnabled=Items to be enabled
+ ;Tab header for the list of keys/groups that are going to be enabled
+SysConfigurationToBeDisabled=Items to be disabled
+ ;SysConfigurationToBeEnabled Items to be enabled Tab header for the list of keys/groups that are going to be enabled
+SysMenuNavigationCannotGetCountry=Unable to find what country or region does the current company belong to, country-specific menu items will be hidden.
+ ;Warning shown to the user if an error is triggered when getting current country information
+SysLoadStartPageCannotGetUserSetting=Unable to get user-configured dashboard, using the default dashboard.
+ ;Warning shown to the user if an error is triggered when getting user's selection for dashboard.
+SysPolicyMaintainPrivilege=Maintain policy
+ ;SysPolicy maintain privilege
+SysPolicyAvailableOrganizations=Available organizations
+ ;Available organizations
+SysPolicySelectedOrganizations=Selected organizations
+ ;Selected organizations
+NumberSeqFieldDoesNotAllowEditing=Field '%1' does not allow editing.
+ ;An error message that is given when a read-only number-sequence controlled field is being set through code
+EmailProviders=Email providers
+ ;SysEmailParameters email providers TOC tab
+EmailProviderNonInteractive=Batch email provider
+ ;SysEmailParameters non-interactive email provider selection
+EmailProviderInteractiveEnabled=Enabled interactive email providers
+ ;SysEmailParameters interactive email provider selection
+EmailProviderSelection=Email provider selection
+ ;SysUserSetup group for selecting an email provider
+EmailProviderSMTPDescription=Use the Dynamics 365 for Finance and Operations email client
+ ;SysMailer SMTP provider description
+EmailProviderEMLDescription=Use an email app, such as Outlook
+ ;SysMailer EML provider description
+EmailProviderInteractiveSelect=How would you like to send email?
+ ;SysMailerSelectInteractive dialog caption
+EmailAttachmentSizeLimitExceeded=The file, %1, has not been attached to the email as it exceeds the maximum size (%2MB) for attachments.
+ ;SysMailerMessageBuilder warning message for files exceeding the attachment size limit
+EmailProviderInvalid=%1 is not a valid email provider
+ ;SysMailer invalid ID notification
+EmailProviderInteractiveEnabledRequired=At least one interactive email provider must be enabled.
+ ;SysEmailParameters interactive email provider enabled error message
+EmailProviderInteractiveDisableInUseConfirmation=Some users currently have %1 configured as their email provider. If you disable it they will be prompted to select a new email provider the next time they send an email. Are you sure you want to continue?
+ ;SysEmailParameters confirmation shown when disabling an interactive email provider that is currently in use
+EmailProviderNotFound=No configured email provider could be found to complete this operation.
+ ;SysMailerFactory error if a mailer is not configured.
+EmailProviderSMTPServerNotFound=Unable to send mail because the Outgoing mail server value of SysEmailParameters form is empty.
+ ;SysMailerFactory warning if the SMTP Server hasn't been configured.
+EmailProviderPromptDescription=Prompt for which email provider to use
+ ;SysUserSetup always prompt for provider selection
+EmailProviderInteractiveInvalid=%1 is not a valid interactive email provider
+ ;SysMailer invalid interactive ID notification
+EmailProviderNonInteractiveInvalid=%1 is not a valid batch email provider
+ ;SysMailer invalid batch ID notification
+EmailProviderInteractiveSelectAskOnceHelp=This option can be changed in user options
+ ;SysMailerSelectInteractive DontAskAgain help text
+OfficeOpenLinesInExcel=Open lines in Excel
+ ;Generic text that can be used whenever an excel experience is offered for the lines of a transaction or journal
+DocuTemplateNotFound=Template %1 not found
+ ;Template not found warning
+DocuTemplateGenerationFailed=Document for template %1 could not be generated
+ ;Document generation failure for template
+DateEffectivePaneRecordAsOfDate=Showing record as of %1
+ ;Message for DateEffectivenessPaneController when displaying record as of a date
+DateEffectivenessPaneShowingAllRecords=Showing all records
+ ;Message for DateEffectivenessPaneController when displaying all records
+NumberSequenceEntityView=View number sequence code entity
+ ;View privilege for NumberSequenceEntity
+NumberSequenceEntityMaintain=Maintain number sequence code entity
+ ;Maintain privilege for NumberSequenceEntity
+DMFDataProjects=Data projects
+ ;Data projects
+DMFScheduledJobs=Scheduled Jobs
+ ;Scheduled jobs
+DMFJobHistory=Job history
+ ;Data Job history
+DMFUploadDataProject=Upload data project
+ ;Upload data project
+DMFDownloadDataProject=Download data project
+ ;Download data project
+DMFUploadImportFiles=Upload import files
+ ;Upload files for import
+DMFJobDetails=Job details
+ ;Job details
+DMFSelectedFilesAndEntities=Selected files and entities
+ ;Selected files and entities
+DMFAdvancedOptions=Choose advanced options for data import
+ ;DMF data import advanced
+DMFEntitiesProcessed=Entities processed:
+ ;Processed entities
+DMFRecordsInsertedInTarget=Records created:
+ ;Records created in target
+DMFRecordsUpdatedInTarget=Records updated:
+ ;Records updated in target
+DMFRecordsErrored=Records errored:
+ ;Records that did not get to target
+DMFErrorSummary=Error summary
+ ;Error summary
+DMFJobSummary=Job summary
+ ;Job summary
+DMFJobStatus=Job status
+ ;Job status
+DMFReapplyMap=Reapply map
+ ;Reapply map after transform
+DMFExecutionRecordStatus=Record counts
+ ;Record status tab page
+DMFExecutionEntities=Entity Status
+ ;Execution entities status
+DMFApplyTransform=Apply transform
+ ;Apply transform
+DMFDownloadSelected=Download selected
+ ;Download selected records
+DMFImportSelected=Import selected
+ ;Import selected records
+DMFExecutionDetails=Execution details
+ ;Execution details
+DMFExecutionStagingDetails=Execution staging details
+ ;Staging execution details
+DMFLoadDataProject=Load project
+ ;Load data project
+DMFImportJobScheduledTitle=Data import job scheduled
+ ;Title data import job scheduled
+DMFImportJobScheduledMessage=Data import job scheduled. You can check the status of this job using id '%1'.
+ ;Import job scheduled message
+DMFImportDataSynchronous=Import sync
+ ;Sync data import
+DMFImportDataAsynchronous=Import async
+ ;Async data import
+ExpressionBuilder_FieldNotFound=The field could not be found.
+ ;The specified field was not found in the expression projection.
+DMFRunDataImportForProject=Import data
+ ;Import data for project now
+DMFDefinitionGroupEntityTitle=Data project entities
+ ;Data project entities
+DMFRunImportForExecutionSync=Import now
+ ;Run import for an execution (synchronously)
+DMFDefinitionGroupExecutionDetails=Data project execution details
+ ;New Comment
+DMFRunWithNewFiles=Re-import
+ ;New Comment
+DMFExportDataSync=Export now
+ ;Export data synchronously
+DMFExportDataAdvancedOptions=Export options
+ ;Advanced options for export
+DMFSampleExportFiles=Sample files for export
+ ;Sample files for export
+DMFExportDataAsync=Export async
+ ;Export data asynchronously
+DMFExportSelectFieldGroup=Select field group for entity export
+ ;Field group for entity export
+DMFExportedRecords=Number of exported records
+ ;Exported records
+DMFShowDataProjectOfType=View data project type
+ ;Data project type
+DMFRunExportWithNewFiles=Re-export
+ ;Reexport with new files
+SysUserSetup_ThemeRaspberry=Raspberry
+ ;Name of color theme
+SysUserSetup_ThemeBlueberry=Blueberry
+ ;Name of color theme
+SysUserSetup_ThemeGrape=Grape
+ ;Name of color theme
+SysUserSetup_ThemeLightBlue=Light Blue
+ ;Name of color theme
+SysUserSetup_ThemeLightGreen=Light Green
+ ;Name of color theme
+SysUserSetup_ThemeMediumDarkBlue=Medium Dark Blue
+ ;Name of color theme
+SysUserSetup_ThemeCordovan=Cordovan
+ ;Name of color theme
+SysUserSetup_ThemeDarkCordovan=Dark Cordovan
+ ;Name of color theme
+SysUserSetup_ThemeHighContrastWhite=High Contrast White
+ ;Name of color theme
+SysExpressionControlSaveExpressionLabel=Save Expression
+ ;Save Expression label for task recorder
+SysExpressionControlUpdateExpressionLabel=Update Expression
+ ;Update Expression label for task recorder
+ChangeCountryRegionDisclaimer=Changing the current country/region can cause features to stop working and can result in data loss.  This tool is for demo purposes only and it can only be used in the Contoso demo company. Use this tool only as directed by demo scripts or task guides.
+ ;Disclaimer prompted when user attempts to change country/region on installation when demo data is loaded.
+ChangeCountryRegionCaption=Reset the Country/Region for demo
+ ;Caption for the dialog to reset the country/region.
+CurrentCountryRegion=Current Country/Region
+ ;Current Country/Region of the address.
+NewCountryRegion=New Country/Region
+ ;New Country/Region of the address.
+WorkflowNotificationUserIdMissing=Cannot create the workflow notification.  A valid user id has not been provided. 
+ ;Error message when workflow notification cannot be created because of a missing user Id
+WorkflowNotificationSubjectAndMessageMissing=Cannot create the workflow notification.  A valid subject and message have not been provided. 
+ ;Error message when workflow notification cannot be created because of a missing subject and instruction.
+DMFRecurringDataJobSetup=Create recurring data job
+ ;New Comment
+DMFManageRecurringDataJobActivities=Manage scheduled data jobs
+ ;New Comment
+DMFOperationType=Data project operation type
+ ;DMF operation type
+DMFPackageExportConfirmation=Choose Yes to export a data package in addition to individual files.
+ ;Package export option
+DMFImportOperation=Import
+ ;Import
+DMFExportOperation=Export
+ ;Export
+DMFSampleFileFormat=Upload sample file format
+ ;Upload sample file for export
+DMFUploadDataFile=Upload data file
+ ;Data file for import
+DMFFileUploadFailed=File upload for entity '%1' in data project '%2' did not succeed.
+ ;File upload failure
+DMFConfirmSampleFileOverwrite=Click Yes to overwrite the existing file for entity '%1'.
+ ;New Comment
+DMFReRunProject=Run project
+ ;Rerun data project
+DMFDownloadDataPackage=Download data package
+ ;Download data package
+DMFDataPackageCreateConfirmation=Data package does not exist. Click Yes to create a new package.
+ ;Data package create confirmation
+DMFSourceDataFormat=Source data format
+ ;Source data format
+DMFTargetDataFormat=Target data format
+ ;Target data format
+DMFDictEntityInitFailure=Could not initialize dict object for entity '%1'.
+ ;Entity init failure
+DMFConfirmDataPackageExport=Generate data package
+ ;Specify data package generation
+DMFExportJobScheduledMessage=Data export job scheduled. You can check the status of this job using id '%1'.
+ ;Export job scheduled
+DMFExportJobCompletionMessage=Export data processing job '%1' completed successfully.
+ ;New Comment
+DMFImportJobCompletionMessage=Import data processing job '%1' completed successfully.
+ ;New Comment
+DMFSourceMapInvalidForDefinitionGroup=Source map is invalid for data project '%1'.
+ ;Invalid source map
+DMFAddEntity=Add entity
+ ;Add entity button
+DMFExportFileForEntityNotGenerated=Could not generate export file for entity '%1' for job '%2'
+ ;Export entity file not generated
+DMFDataProjectTypeIsInvalid=Data project '%1' is initialized with invalid operation type.
+ ;Invalid data project type
+DMFPackageDownloadError=Error downloading data package for job '%1'. 
+ ;Package download error.
+DMFPackageDownloadPrefix=Data package download
+ ;Data package prefix
+DMFValidDataProjectOrJobRecordRequired=Valid data project or data job record is required
+ ;Export import data buffer required
+DMFDataProjectError=Error processing data project '%1' using job '%2'. 
+ ;Import /export data job error
+SysUserSetup_RefreshNotification=You have changed your preferences. Refresh your browser to apply this change.
+ ;Label for general change in preferences in SysUserSetup form requiring browser to be refreshed.
+DimensionEnumerationEntityDevHelp=The DimensionEnumerationEntity contains sets of dimension attribute enum values to be used by the financial dimensions subsystem.
+ ;{Locked}
+CustomPostingLayer1=Custom layer 1
+ ;Custom posting layers
+CustomPostingLayer2=Custom layer 2
+ ;Custom posting layers
+CustomPostingLayer3=Custom layer 3
+ ;Custom posting layers
+CustomPostingLayer4=Custom layer 4
+ ;Custom posting layers
+CustomPostingLayer5=Custom layer 5
+ ;Custom posting layers
+CustomPostingLayer6=Custom layer 6
+ ;Custom posting layers
+CustomPostingLayer7=Custom layer 7
+ ;Custom posting layers
+ExcelNamedRangeBookmarkExceedsLimit=Bookmark for named range %1 exceeded the size limit and has been truncated.
+ ;Warning message for XMLWorkbook_RU
+DMFProcessMessagesInOrderReceived=Process messages only in the order received
+ ;Strictly serial processing
+DMFActivityQueueTrend=Queue trend
+ ;Trend of load in an activity queue
+DMFActivityMessages=Activity messages
+ ;Messages for an activity
+IntegrationMessageStateEnqueued=Queued
+ ;Enqueue message
+IntegrationMessageStateDequeued=Dequeued
+ ;Dequeued message
+IntegrationMessageStateDownloaded=Downloaded
+ ;Downloaded message
+IntegrationMessageStateAcked=Acknowledged
+ ;User acknowledged
+IntegrationMessageStateProcessed=Processed
+ ;Message processed
+IntegrationMessageStateProcessWithError=Processed with error
+ ;Message processed with errors
+IntegrationMessageStateInProcess=In process
+ ;In process
+IntegrationActivityMessageStatus=Activity message status
+ ;New Comment
+IntegrationActivityDataSource=Supported data source type
+ ;Package or File
+IntegrationActivityPackageDataSource=Data package
+ ;Package data source
+DMFManageRecurringDataJobs=Manage recurring data jobs
+ ;Manage recurring data jobs
+Favorites=Favorites
+ ;Menu favorites for user
+Recent=Recent
+ ;Menu recent for user
+Links=Links
+ ;Dashboard Links
+DocuSPSiteRecordPosition=Page %1 of %2
+ ;SharePoint Site result page counts. %1 = current page number, %2 = total pages
+DocuSPSiteSearchTitleField=Title
+ ;Label for DocuSiteSearchFields::Title
+DocuSPSiteSearchTitleAndDescriptionFields=Title and description
+ ;Label for DocuSiteSearchFields::TitleAndDescription
+DocuSPSiteTitle=Title
+ ;SharePoint site title label
+DocuSPSiteDescription=Description
+ ;SharePoint site description label
+DocuSPSiteSearchFields=Search fields
+ ;Prompt for site search fields option
+DocuSPSiteList=Sites
+ ;Caption for SharePoint site list
+DocuSPFolders=Folders
+ ;Caption for SharePoint folder tree view
+DocuSPNextSiteResults=Next page of sites
+ ;Help text for retrieving the next page of matching sites
+DocuSPPreviousSiteResults=Previous page of sites
+ ;Help text for retrieving the previous page of matching sites
+DocuFileSaveDownload=Download
+ ;Download button label on DocuFileSaveDialog
+DocuFileSaveOneDriveForBusiness=OneDrive for Business
+ ;OneDrive button label on DocuFileSaveDialog
+DocuFileSaveSharePoint=SharePoint
+ ;SharePoint button label on DocuFileSaveDialog
+DocuFileSaveLocations=Recent folders (%1)
+ ;Label on MRU group label on DocuFileSaveDialog. %1 = Storage provider: SharePoint or OneDrive
+DocuFileSaveDeleteLocation=Delete %1
+ ;Menu item deleting a location on DocuFileSaveDialog. %1 = location name
+DocuFileSaveOpenLocation=Open %1
+ ;Menu item for opening a location. %1 = name of location
+DocuFileSaveBrowseLocation=Browse
+ ;Toolbar button label for browsing to a location on DocuFileSaveDialog
+DocuFileSaveFilename=File name
+ ;Field label for file name on DocuSaveFileDialog
+DocuFileSaveOpenOnSave=Open file after save
+ ;Checkbox label on DocuFileSaveDialog
+DocuFileSaveSaveButton=Save
+ ;Save button label on DocuFileSaveDialog
+DocuFileSaveCancelButton=Cancel
+ ;Cancel button label on DocuFileSaveDialog
+DocuFileSaveBackButton=Back
+ ;Cancel button label on DocuFileSaveDialog in back state
+DocuFileSaveDefaultCaption=Save To
+ ;Default caption on the DocuFileSaveDialog
+DocuStorageProviderAzure=Azure
+ ;DocuStorageProviderType enum Azure member
+DocuStorageProviderSharePoint=SharePoint
+ ;DocuStorageProviderType enum SharePoint member
+DocuStorageProviderOneDriveBusiness=OneDrive for Business
+ ;DocuStorageProviderType enum OneDrive for Business
+DocuStorageLocationTempTitle=Title
+ ;Label for title field on DocuStorageLocationTemp table
+DocuStorageLocationTempStorageAddress=Storage Address
+ ;Label for storageAddress field on DocuStorageLocationTemp table
+DocuStorageLocationTempNavigationAddress=Navigation Address
+ ;Label for navigationAddress field on DocuStorageLocationTemp table
+DocuStorageLocationTempStorageProvider=Storage Provider
+ ;Label for storageProviderId field on DocuStorageLocationTemp table
+DocuFileNameValidationMessage=Valid file or folder names cannot begin or end with a dot and cannot contain any of the following characters: " # % * : < > ? / \\ |.
+ ;Warning message for an invalid filename
+DocuFileSaveNoOneDrive=Unable to determine OneDrive for Business site.
+ ;Warning message displayed by the DocuFileSaveDialog when the user's OneDrive for Business site can't be determined.
+DocuFileSaveConfirmReplace=A file named '%1' already exists at the selected location. Replace the existing file?
+ ;%1=Name of file
+DocuFileSaveUseUniqueName=Do you want to use the next unique filename,\n'%1'?
+ ;%1 = the new file name. The file name may have spaces so keep the '\n' to prevent the name from breaking across lines.
+DocuFileSaveInfo=File saved to %1
+ ;Info message displayed when a file is saved. %1=File URL
+DocuFileSaveDialogExtension=Extension
+ ;Label on file extension display.
+SPSelectionDlg_UnknownError=An unknown error has occurred while communicating with the SharePoint server '%1'.
+ ;%1 = SharePoint server host name
+Collate=Collated
+ ;Print properties for report
+PrintBothSidesProperty=Print on both sides
+ ;Print properties for report
+Settings=Settings
+ ;Settings
+Default=Default
+ ;Label for Enum
+Portrait=Portrait
+ ;Label for Enum
+Landscape=Landscape
+ ;Label for Enum
+LookupService_InvalidRequest=Invalid lookup request.
+ ;Label for the error when a clientside only control makes an invalid lookup request.
+FlipOnLongEdge=Flip pages on long edge
+ ;Label for enum
+FlipOnShortEdge=Flip pages on short edge
+ ;Label for enum
+WorkflowSystemSettingsEntityLabel=Workflow system parameters
+ ;Entity label
+WorkflowOrganizationSettingsEntityLabel=Workflow organization parameters
+ ;Entity label
+EmailTemplateSystemEntityLabel=System email template
+ ;Entity label
+EmailTemplateMessageSystemEntityLabel=System email template message
+ ;Entity label
+EmailTemplateOrganizationEntityLabel=Organization email template
+ ;Entity label
+EmailTemplateMessageOrganizationEntityLabel=Organization email template message
+ ;Entity label
+PrinterNameNotSupplied=Printer name should be supplied by the user.
+ ;New Comment
+CryptoPasswordHash=Password hash
+ ;Edt label to hold password hash.
+CryptoPasswordSalt=Password salt
+ ;Edt label to hold password salt.
+CryptoPasswordIterations=Iterations count for key deviation function
+ ;Edt label to hold iterations count of key deviation function.
+SysExpressionLookupError=Lookup is invalid for the selected field
+ ;SysExpressionBuilderControl was unable to perform a field lookup
+TableGroupAllTableAndGroupSpecifiedError=Only %1 or %2 can be specified. Clear the value of either %1 or %2.
+ ;Table or Group relation validation error message. %1 and %2 are both field names.
+SysUserSetup_InvalidRegion=The region specified for date, time, and number format is not valid. Select a valid region.
+ ;Notification for invalid region selection
+GanttControlActivityDblClickAction=Double click on activity
+ ;Instruction for task recorder when user double clicks an activity in the gantt chart
+GanttControlActivitySelectedAction=Select activity
+ ;Instruction for task recorder when user selects an activity in the gantt chart
+GanttControlSummaryActivityOpenedAction=Expand group
+ ;Instruction for task recorder when user expands a group in the gantt chart
+GanttControlSummaryActivityClosed=Collapse group
+ ;Instruction for task recorder when user collapses a group in the gantt chart
+ConfigModeWarning=This form is read-only unless the system is in the maintenance mode. Maintenance mode can be enabled in this environment by running maintenance job from LCS, or using Deployment.Setup tool locally
+ ;A warning that is shown when a user opens the SysConfiguration form while not in the maintenance mode, making the form read-only.
+GanttControlActivityChangedAction=Change activity
+ ;Instruction for task recorder when user changes an activity in the gantt chart
+GanttControlActivitiesChangedAction=Change selected activities
+ ;When the Gantt chart allows multiple activities to be changed at once, this is the instruction for the task recorder when user changes one or more activities
+GanttModificationTypeMove=Move
+ ;An activity was moved on the gantt chart
+GanttModificationTypeResize=Resize
+ ;The duration of an activity was changed on the gantt chart
+GanttModificationTypeChangeProgress=Progress change
+ ;The completion percentage of an activity was changed on the gantt chart
+GanttModificationType=Modification type
+ ;The type of modification made to an activity on the gantt chart
+SysExpressionControlInvalidParametersError=The action could not be completed. Please try again.
+ ;Generic error for commands called with invalid parameters.
+DMFImportJobScheduled=Data import job scheduled. Please refresh the form  to view current status.
+ ;Data import job scheduled
+DMFExportJobScheduled=Data export job scheduled. Please refresh the form  to view current status.
+ ;Data export job scheduled
+NoRecordFound=No record found for the particular activity Id %1 in PrintingLogTable
+ ;New Comment
+RetailChannelsConfigKey=Retail channels
+ ;Configuration key for retail channels.
+MCRCallCenterConfigKey=Call center
+ ;Configuration key for call center.
+NoPrintingStatus=No printing status found.
+ ;New Comment
+NoContractFound=No PrintContract found in downloaded object.
+ ;New Comment
+URLManipulationsGroupCaption=URL manipulations
+ ;New Comment
+FinalProductBuildVersion=Installed product version : %1
+ ;Product version for previous releases of application
+PlatformBuildVersion=Installed platform version : %1 (%2)
+ ;display Platform version
+AzureActiveDirectoryUsers=Azure Active Directory Users
+ ;SysUserMSODSUserImport.MSODSUsersTabPage caption
+NetworkAlias=Network Alias
+ ;SysUserMSODSUserTmp.NetworkAlias field label
+EmailAddress=Email Address
+ ;SysUserMSODSUserTmp.EmailAddress field label
+OrganizationLegalPrivacy=Legal and Privacy
+ ;used in System Paramenters Tab
+SetupLegalAndPrivacy=Set up Legal terms and Privacy and Cookies  for your Organization
+ ;Legal terms and Privacy on Parameters Form
+OrganizationLegalTermsLocation=Legal terms URL
+ ;Legal terms location for organization
+OrganizationPrivacyStatementLocation=Privacy and Cookies URL
+ ;Privacy Statement location for organization
+OrganizationPrivacyLink=Your organization's Privacy and Cookies
+ ;used to navigate to organization privacy statement
+OrganizationLegalTermsLink=Your organization's Legal terms
+ ;used to navigate to organization legal terms
+MicrosoftPrivacyLink=Microsoft Privacy and Cookies
+ ;used to navigate to Microsofts privacy statement
+MicrosoftLegalTermsLink=Microsoft Legal terms
+ ;used to navigate to Microsofts legal terms
+ContextMenuExpandAll=Expand All
+ ;used in context menus to expand all items
+ContextMenuCollapseAll=Collapse All
+ ;used in context menus to collapse all items
+ViewMicrosoftLegalPrivacyLinks=View Microsoft Legal and Privacy Links
+ ;used in security context
+SysUserSetup_WorkflowTab=Workflow
+ ;Used in SysUserSetup
+SysUserSetup_PrefStartup=Startup
+ ;Used in SysUserSetup
+SysUserSetup_LanguageRegion=Language and country/region preferences
+ ;Used in SysUserSetup
+SysUserSetup_AccountGroupName=Account
+ ;Used in SysUserSetup
+SysUserSetup_AccountInformationTab=Account
+ ;Used in SysUserSetup
+SysUserSetup_PreferencesMainInstruction=Set up default preference
+ ;Used in SysUserSetup
+SysUserSetup_WorkflowMainInstruction=Set up workflow options
+ ;Used in SysUserSetup
+SysUserSetup_ThemeDensityMainInstruction=Choose color theme and the size of elements
+ ;Used in SysUserSetup
+SysUserSetup_ThemeTab=Visual
+ ;Used in SysUserSetup
+SysUserSetup_GeneralTab=Preferences
+ ;Used in SysUserSetup
+SysUserSetup_CountryRegionField=Country/region
+ ;Used in SysUserSetup
+SysUserSetup_DocumentHandling=Enable document handling
+ ;Used in SysUserSetup
+SysUserSetup_Email=Email
+ ;Used in SysUserSetup
+SysUserSetup_QueryParameter=Automatically update query parameter
+ ;Used in SysUserSetup
+SysUserSetup_SetupAccount=Set up account information
+ ;Used in UserTitleString
+EmailProviderExchangeDescription=Use Exchange email server
+ ;SysMailerExchange description
+EmailProviderExchangeErrorMessage=Exchange server could not be contacted. Security token could not be obtained. Ensure a valid Office 365 license is available for this tenant.
+ ;Error displayed when connection to Exchange server fails.
+SystemTracingUserLabel=System tracing user
+ ;Label for System tracing user security role
+ExtFeedTypeYammerGroup=Yammer Group
+ ;ExternalFeedType enum label
+ExtFeedTypeYammerUser=Yammer User
+ ;ExternalFeedType enum label
+ExtFeedTypeYammerTopic=Yammer Topic
+ ;ExternalFeedType enum label
+ExtFeedTypeTwitterTimeline=Twitter Widget
+ ;ExternalFeedType enum label
+ExtFeedTypeLinkedInMemberProfile=LinkedIn Member Profile
+ ;ExternalFeedType enum label
+ExtFeedTypeLinkedInCompanyProfile=LinkedIn Company Profile
+ ;ExternalFeedType enum label
+ExtFeedTypeLinkedInCompanyInsiders=LinkedIn Company Insider
+ ;ExternalFeedType enum label
+ExtFeedTypeLinkedInSchoolAlumni=LinkedIn School Alumni
+ ;ExternalFeedType enum label
+ExtFeedConfigureSource=Configure the content source
+ ;Button label on unconfigured feed control
+ExtFeedNoContent=There is no content to display.
+ ;Message shown in ExternalFeedControl when it doesn't have any content.
+ExtFeedConfigureFormMenuItem=Configure external feed
+ ;Label on menu item pointing to the ExternalFeedConfiguration form
+ExtFeedConfigureFormCaption=Configure external feeds
+ ;Caption on ExternalFeedConfiguration form
+ExtFeedConfigurationTable=External feed configuration
+ ;Table label
+ExtFeedConfigurationFeedId=Feed Id
+ ;Table field label
+ExtFeedConfigurationFeedType=Feed type
+ ;Table field label
+ExtFeedConfigurationFeedContainer=Feed container
+ ;Table field label
+ExtFeedConfigurationFormName=Hosting form
+ ;Table field label
+ExtFeedConfigurationTargetControl=Feed control name
+ ;Table field label
+ExtFeedConfigurationDescription=Description
+ ;Table field label
+ExtFeedUrlParserFormCaption=Feed URL parser
+ ;Caption on ExternalFeedUrlParser dialog
+ExtFeedUrlParserMenuItem=Parse feed URL
+ ;Caption for menu item pointing to the  ExternalFeedUrlParser dialog
+ExtFeedUrl=Feed URL
+ ;Label for field containing a feed URL to be parsed
+ExtFeedUrlParseInstruction=Copy and paste the Yammer URL or Twitter Widget URL that will be parsed for feed details
+ ;Instruction on ExternalFeedUrlParser dialog
+ExtFeedUrlParsedSuccess=Feed URL successfully parsed
+ ;Message displayed after successfully parsing a feed URL
+ExtFeedUrlNotParsed=Unable to parse URL
+ ;Messsage displayed after failing to parse a feed URL
+ExtFeedUrlParserParse=Parse
+ ;Label on button that invokes URL parsing
+Privilege_SystemAdministrationWorkspaceView=View system administration workspace
+OfficeIntegrationPowerUserRole=Office integration power user
+ ;Security role label
+ExternalFeedConfigurationMaintainDuty=Maintain external feed configuration
+ ;Security duty label for ExternalFeedMaintain
+ExternalFeedConfigurationPriviledge=Maintain external feed configuration
+ ;Security priviledge label for ExternalFeedMaintain
+SysUserRequestWorkflowParameters=User workflow parameters
+ ;Parameters for user workflow
+NewUserEmail=New User Email
+ ;New user email template
+PartyIProviderNotImplementedError=An implementation of the PartyIProvider interface is required and was not found.  Ensure an implementation of the PartyIProvider interface is provided.
+ ;Error message when no PartyIProvider instance has been implemented.
+LogisticsIProviderNotImplementedError=An implementation of the LogisticsIProvider interface is required and was not found.  Ensure an implementation of the LogisticsIProvider interface is provided.
+ ;Error message when no LogisticsIProvider instance has been implemented.
+SysUserRequestInactivateUserAutomatedTaskLabel=Automated user inactivation
+ ;Workflow task label
+SysUserRequestInactivateUserAutomatedTaskHelp=Use this element to automatically inactivate an existing user
+ ;Workflow task help
+SysUserRequestCannotEditSubmitted=Submitted user requests cannot be edited.
+ ;Error message shown if the user tries to edit a request that's already submitted for approval
+SysUserRequestApprovePrivilege=Approve user requests
+ ;Privilege label
+SysUserRequestSubmitPrivilege=Submit user requests
+ ;Privilege label
+SysUserRequestAddUserTemplateLabel=User request workflow (platform)
+ ;Workflow template label
+SysUserRequestInactivateUserTemplateLabel=Inactivate user request workflow (platform)
+ ;Workflow template label
+SysUserRequestReprovisionExistingUserPrompt=Matching user record already exists. Do you want to reuse the existing user configuration?
+ ;Yes/no dialog prompt shown if user already exists.
+SysUserRequestInvalidRole=Requested role %1 is invalid.
+ ;Error message shown if invalid role was forced into request somehow
+SysUserRequestInvalid=User request is invalid.
+ ;Error message shown if some request validation logic fails
+ConnectToLCS=Connect to Lifecycle Services
+ ;Dialog caption for LCS Connect dialog
+LCSConnectInstruction=Authorization must be given to Dynamics 365 for Finance and Operations in order to access Lifecycle Services. Click the link below to begin the authorization process. Once authorization has been granted return to this page and click the Ok button.
+ ;LCS connect instruction
+ClickToConnectToLCS=Click here to connect to Lifecycle Services
+ ;Instruction on the hyperlink
+ApplicationBuildVersion=Installed product version : %1 (%2)
+ ;Application release name with version
+ErrorAsyncCallDetectedForLCS=We cannot authenticate with Lifecycle Services during an asynchronous call.
+ ;Error message when a user tries to authenticate with LCS from an async call
+DocuViewerContainerOneChildEnabledValidation=At least one child control need to be enabled
+ ;Label to throw error for child control validations
+DocuViewerContainerFormDatasourceMissing=Unexpected error: Form datasource object is null
+ ;Form datasource object is missing error
+ImageAnnotatorDefaultDocument=Show attachment in default view.
+ ;Used by Image annotator side by side control.
+CatCXMLPunchoutSessionHelp=The CatCXMLPunchoutSession table is used to store the incoming punchout response.
+ ;{locked}CatCXMLPunchoutSession table developer help
+GanttDateAndTimeFormatConcat=%1 %2
+ ;Used to format date and time for Gantt control
+GanttTimescaleIncrements=Increments
+ ;EDT Label
+GanttActivityType=Activity type
+ ;EDT Label
+EmailTypeNotSupported=This email type is not supported in Azure AD B2B
+ ;Error message shown for not supported email type
+NumberSequenceDeployments=Number sequence deployments
+ ;Label for NumberSequenceDeployment table
+NumberSequenceDeploymentDeveloperDoc=The NumberSequenceDeployment table contains the running sequence of numbers for all sequences that are configured in a multi-deployment environment. The NumberSequenceDeployment table contains the next sequence number, the lowest possible sequence number, and the highest possible sequence number for each configured deployment sequence. The NumberSequenceDeployment table is used in conjunction with the NumberSequenceTable and Deployment tables.
+ ;Developer documentation label for NumberSequenceDeployment table
+NumberSequenceDeploymentLowestAlreadyExist=The lowest number, %1, already exists in another number sequence deployment range for number sequence, %2.
+ ;Number sequence deployment error message to ensure that the lowest number doesn't exist in another number sequence range.
+NumberSequenceDeploymentHighestAlreadyExist=The highest number, %1, already exists in another number sequence deployment range for number sequence, %2.
+ ;Number sequence deployment error message to ensure that the highest number doesn't exist in another number sequence range.
+NumberSequenceDeploymentActiveRangeExist=An active number sequence deployment already exists for number sequence, %1. There can only be one active number sequence per deployment.
+ ;Number sequence deployment can only have on active number sequence per deployment.
+NumberSequenceDeploymentNoActiveExist=No active number sequence deployment exists for number sequence, %1. At least one must be active.
+ ;No active number sequence deployment exists at least one must exists per deployment.
+NumberAllocationPerDeployment=Number allocation per deployment
+ ;Group title for the number sequence per deployment setup form
+NumberSequenceDeploymentLowestOutsideBoundary=The lowest number, %1, for a deployment, can't be lower than the number sequence, %2's lowest number, which is %3.
+ ;Warning message if the lowest value for a given deployment is lower than the number sequence lowest value.
+NumberSequenceDeploymentHighestOutsideBoundary=The highest number, %1, for a deployment, can't be higher than the number sequence, %2's highest number, which is %3.
+ ;Warning message if the highest value for a given deployment is higher than the number sequence lowest value.
+NumberSequenceCannotExecuteDoUpdate=Can't execute the doUpdate method for %1 in a multi-deployment environment because it will cause inconsistencies in the number sequence.
+ ;Warning message if doUpdate is call on number sequence table in a hybrid enabled environment
+NumberSequenceCannotExecuteDoInsert=Can't execute the doInsert method for %1 in a multi-deployment environment because it will cause inconsistencies in the number sequence.
+ ;Warning message if doInsert is call on number sequence table in a hybrid enabled environment
+NumberSequenceCannotExecuteDoDelete=Can't execute the doDelete method for %1 in a multi-deployment environment because it will cause inconsistencies in the number sequence.
+ ;Warning message if doDelete is call on number sequence table in a hybrid enabled environment
+CannotDeleteNumberSequenceDeploymentInUse=Can't delete a number sequence deployment that is already in use.
+ ;Warning message that a number sequence deployment that is already in use cannot be deleted.
+CanOnlyCreateOneNumberSequenceDeploymentPerContinuous=Only one number sequence deployment can be created for a continuous number sequence, %1.
+ ;Warning message if you try to create more than one number sequence deployment for a continuous number sequence.
+CascadeCallerSessionDateTime=Cascade to business operations
+ ;Boolean value indicating whether to cascade date and time of caller sessions in runas and runasync commands.
+UseLegacyModeForSysQueryRelations=Use legacy mode for query relations
+ ;Boolean value indicating whether to use legacy mode for query parameters.
+DocuStorageProviderStorageFramework=Storage Framework
+ ;DocuStorageProviderType enum Storage Framework member
+DataEntity_SysAADClientTableEntity_Label=Azure active directory applications
+ ;Label for the SysAADClientTableEntity data entity
+DataEntity_SysAADClientTableEntity_DeveloperDescription=The SysAADClientTableEntity data entity contains information about azure active directory applications
+ ;{locked}Developer documentation for theSysAADClientTableEntity data entity.
+ISVModule=3rd party solution
+ ;Entity module metadata for ISV
+ActiveDirectoryUsers=Active Directory Users
+ ;SysUserMSODSUserImport.MSODSUsersTabPage AD caption
+NextFrame=Next
+ ;Next frame
+DisplayNameToFilter=Display Name
+ ;User information to filter
+TrustedDomainName=Domain Name
+ ;Trusted domain name
+AliasNameToFilter=Alias Name
+ ;Alias name to filter
+FirstNameToFilter=First Name
+ ;First name to filter
+LastNameToFilter=Last Name
+ ;Last name to filter
+TitleToFilter=Title
+ ;Title to filter
+CompanyToFilter=Company
+ ;Company to filter
+DepartmentToFilter=Department
+ ;Department to filter
+MultipleUsersWithMatchingName=There are multiple users with matching name '%1'. 
+ ;There are multiple users with matching name.
+DatabaseLogConfigurationFailure=Unable to configure Database logging. %1
+ ;Unable to configure Database logging.
+DatabaseLogConfigurationFailureTimeSuggestion=For SQL timeout errors, please retry when the logged tables are not in use
+ ;For SQL timeout errors, please retry when the logged tables are not in use
+ImportUserErrorByNullObjectID=Your user objectID is null. Please contact your System Administrator for further assistance.
+ ;The user objectID needs to be not null to import user.
+SysDatabaseLog_MaxTablesConfigured=When you select %1 or more tables and %2 or more log operations for logging, this can have a performance impact on the system. Do you want to continue?
+ ;SysDatabaseLog_MaxTablesConfigured Message box for confirmation show when large number of tables are configured for logging
+SysDatabaseLog_WideTableConfigured=You have configured logging for %1 table and enabled logging for more than %2 fields. This can have a performance impact on the system. Do you want to continue?
+ ;SysDatabaseLog_WideTableConfigured Message box for confirmation show when large number of fields are configured for logging
+ExistingPerson=This person already exists. Please choose a different person.
+ ;Entered the existing person.
+WorkflowLegalEntityAssignmentGroup=Security role user selection
+ ;Caption for the table group WorkflowParameters.RequireExplicitAssignmentToLE
+RequireExplicitAssignmentToLegalEntityLabel=Require explicitly assigned users
+ ;Label for edit method WorkflowParameters.editRequireExplicitAssignmentToLegalEntity
+RequireExplicitAssignmentToLegalEntityHelpText=Require explicitly assigned users for any workflow task or approval that requires security role resolution.
+ ;Helptext for edit method WorkflowParameters.editRequireExplicitAssignmentToLegalEntity.
+CleanBatchHistoryCaption=Batch job history clean-up.
+ ;Caption for the batch job history clean up form.
+CleanBatchHistoryHelpText=Deletes history older than specified limit
+ ;Help text for the batch job history clean up control.
+CleanBatchHistoryQueryTitle=Select batch history clean-up criteria
+ ;Title for the query to delete batch job history.
+CleanBatchHistoryCustomCaption=Batch job history clean-up (custom).
+ ;Caption for the batch job history clean up form (customizable).
+Calendar_Today=Today
+Calendar_Session=Session Date
+Calendar_Next=Next Month
+Calendar_Prev=Previous Month
+Calendar_Intro=Session Date Calendar
+SysQueryFormShowTableNames=Show table names
+ ;Checkbox to show table names
+AdminUserCannotBeDeleted=Admin user cannot be deleted. Please contact your System Administrator for further assistance.
+ ;Admin user cannot be deleted
+SysUserRequest_ProvisionB2BUser=Provision Azure AD B2B user
+ ;User request workflow automated provision task
+NumberSequenceUpdating=Updating number sequence %1
+ ;Progress indicator for updating number sequences
+NumberSequenceMissingDeployment=Number sequences missing deployment information
+ ;Number sequence wizard page title
+NumberSequenceReferenceTableMissing=No reference table is defined for %1.
+ ;Warning message for number sequence wizard
+JSONFileExtension=JSON file
+ ;Docu: Description of enabled extension
+B2BInvitationConfig=Configuration for B2B Invitation
+ ;Configuration for B2B invitation
+B2BInviteRedirectUrl=Invitation Redirect URL
+ ;D365 URL
+B2BClientId=Client ID
+ ;ClientID for B2B service
+B2BApplicationKey=Application Key
+ ;Application Key for B2B service
+B2BInviteEndPoint=Invitation End Point
+ ;Invitation End Point
+B2BEstsLoginEndpoint=Ests Login End Point
+ ;Ests Login End Point
+B2BGraphResource=Graph Resource
+ ;Graph Resource
+B2BTenantID=Tenant ID
+ ;Tenant ID
+B2BInvitationConfigCaption=B2B Invitation Configuration
+ ;B2B Invitation Configuration Caption
+B2BImportUserSuccess=Successfully import user to AAD
+ ;Success status of sending B2B user to AAD
+B2BImportUserFailed=Failed to import user to AAD
+ ;Failed status of sending B2B user to AAD
+B2BImportUserAndSendInvitationSuccess=Successfully import user to AAD and sent an invitation to user's email
+ ;Success import user and send an invitation
+B2BImportUserAndSendInvitationFailed=Failed to import user to AAD and could not send an invitation
+ ;Failed import user and send an invitation
+B2BIsEncrypted=B2B application key is or is not encrypted 
+ ;True if application key is encrypted
+SysDatabaseLogWizardTreeNodeLabel=%1 (%2) : %3
+ ;Label used to populate the tree node labels. %1 is the ax object name, %2 is the type of the artifact and %3 is the label name of the table

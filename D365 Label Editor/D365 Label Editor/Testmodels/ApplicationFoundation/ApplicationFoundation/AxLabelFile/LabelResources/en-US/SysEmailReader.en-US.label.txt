@@ -1,0 +1,2 @@
+SysEmailPopClient_RunningProcess=Current process could not be started. Previous process is still running (%1 – %2) or previous process was aborted and it is necessary to reset.
+ ;SysEmail Reader API

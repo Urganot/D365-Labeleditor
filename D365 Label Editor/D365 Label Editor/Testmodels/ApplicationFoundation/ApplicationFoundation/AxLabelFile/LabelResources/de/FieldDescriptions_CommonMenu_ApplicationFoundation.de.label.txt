@@ -1,0 +1,12 @@
+WorkflowWorkList_Subject=Instructions that describe the action that the work item requires.
+ ;Description text for the Subject control on the WorkflowWorkList form
+SysFileStore_Details1_Completed=If this option is selected, there is no operation in progress that involves the file.
+ ;Description text for the Details1_Completed control on the SysFileStore form
+DocumentFileList_DocuValueMetaData_ContentType=The type of document that you are referencing. You define the content types for the document files in the Document content types page.
+ ;Description text for the DocuValueMetaData_ContentType control on the DocumentFileList form
+DocumentFileList_DocuValueMetaData_Status=The workflow status of the selected document. The options are as follows: Draft (the document is newly created and has not been submitted to workflow), In progress (the document has been submitted to workflow), Completed (all steps in the workflow process are complete).
+ ;Description text for the DocuValueMetaData_Status control on the DocumentFileList form
+SystemDate_Session=The date and time for this session. Use these controls to temporarily change the session date and time. The values are reset when the client is closed.
+ ;Description text for the Session control on the SystemDate form
+SysRecordTemplateTable_Grid_AllowBlank=Allow records to be created without using templates.
+ ;Description text for the Grid_AllowBlank control on the SysRecordTemplateTable form

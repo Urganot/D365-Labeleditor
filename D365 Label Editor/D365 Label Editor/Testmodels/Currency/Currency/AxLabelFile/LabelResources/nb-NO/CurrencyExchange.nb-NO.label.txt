@@ -1,0 +1,152 @@
+NewLabel0=Etikettfiler opprettet den 29.05.2014 13:27:47 for etikettfil-ID CurrencyExchange og språket en-US
+ ;Label file comment - see above label
+ConversionFactor=Konverteringsfaktor
+ ;Exchange rate conversion factor
+ExchangeValue=Valutakursverdi
+ ;Exchange rates exchange value
+TriangulationCurrencies=Trianguleringsvalutaer
+ ;New Comment
+AddRemoveExchangeRates=Legg til eller fjern valutakurser
+ ;New Comment
+TmpExchangeRatesDevDoc=Tabellen TmpExchangeRates inneholder midlertidige poster under visning av ExchangeRates-skjemaet.
+ ;New Comment
+ExchangeRateEntityDevDoc=The ExchangeRateEntity data entity is used to store exchange rates for a currency pair and a rate type.
+ ;{locked}Exchange rate entity developer documentation
+ExchangeRateStagingDevDoc=Oppsamlingstabellen ExchangeRateEntity brukes til å importere og eksportere valutakurser for et valutapar og en valutakurstype.
+ ;Exchange rate stating table developer documentation
+InvalidExchangeRate=Valutakursen for valutapar {0} og {1} kunne ikke importeres. Kontakt leverandøren for å få hjelp, eller angi en valutakurs for {2} manuelt.
+ ;Exchange rate provider error in C#
+ISONameCubanConvertiblePeso=Kubanske konvertible pesos
+ ;ISO Currency Name
+ISONameTurkmenistanNewManat=Turkmenske nye manat
+ ;ISO Currency Name
+ISONameZambianKwacha=Zambiske kwacha
+ ;ISO Currency Name
+ExchangeRateImport=Importer valutakurser
+ ;Entity privilege level
+ExchangeRateExport=Eksporter valutakurser
+ ;Entity privilege level
+Supplemental_CurrencyImport=Importer valutaer
+ ;Entity privilege level
+Supplemental_CurrencyExport=Eksporter valutaer
+ ;Entity privilege level
+Currency_MessageDeveloper_UpdateCurrencyPair=Updating currency pair from currency %1 to currency %2
+ ;{Locked}
+Currency_MessageDeveloper_AddNewRate=Adding new exchange rate %1 valid from %2 from currency %3 to currency %4
+ ;{Locked}
+Currency_MessageDeveloper_ActivateProvider=Activating exchange rate provider {0}
+ ;{Locked}
+Currency_MessageDeveloper_SearchingAssembly=Searching for exchange rate providers in assembly {0}
+ ;{Locked}
+Currency_EntityEnum_EntityName=Valutaer
+ ;Entity name
+Currency_EntityDeveloper_CurrencyEntityDevDoc=The CurrencyEntity entity contains the currencies that are used in the application for foreign exchange. Exchange rates are created based on these currencies.
+ ;{Locked}
+Currency_EntityField_CurrencyCode=Valutakode
+ ;CurrencyEntity field name.
+Currency_EntityLabel_CurrencyRevaluationAccountLabel=Finansrevalueringskonto for valuta
+ ;Label for CurrencyRevaluationAccountEntity
+Currency_EntityDeveloper_CurrencyRevaluationAccountEntityDevDoc=The CurrencyRevaluationAccountEntity entity contains the gain loss account for individual currencies.
+ ;{Locked}
+Currency_EntityFieldLabel_RoundingRuleFixedAssetDepreciation=Regel for avrunding av avskrivning av anleggsmidler
+ ;CurrencyEntity field label
+Currency_EntityFieldLabel_RoundingMethodFixedAssetDepreciation=Metode for avrunding av avskrivning av anleggsmidler
+ ;CurrencyEntity field label
+Currency_EntityFieldLabel_RoundingMethodPrices=Metode for avrunding av priser
+ ;CurrencyEntity field label
+Currency_EntityFieldLabel_RoundingMethodPurchaseOrders=Metode for avrunding av bestillinger
+ ;CurrencyEntity field label
+Currency_EntityFieldLabel_RoundingMethodSalesOrders=Metode for avrunding av salgsordrer
+ ;CurrencyEntity field label
+Currency_EntityFieldLabel_RoundingRulePrices=Regel for avrunding av priser
+ ;CurrencyEntity field label
+Currency_EntityFieldLabel_RoundingRulePurchaseOrders=Regel for avrunding av bestillinger
+ ;CurrencyEntity field label
+Currency_EntityFieldLabel_RoundingRuleSalesOrders=Regel for avrunding av salgsordrer
+ ;CurrencyEntity field label
+EntitiesMaintainDuty=Vedlikehold valutaenhetsstandard
+ ;Maintain Currency entities duty.
+EntitiesViewDuty=Vis valutaenhetsstandard
+ ;View Currency entities duty.
+Currency_EntityMessage_RateMustBePositive=Valutakursen må være høyere enn null
+ ;ExchangeRateEntity set based error message.
+Currency_EntityTitle=Valutakurser
+ ;ExchangeRateEntity title.
+Currency_EntityMessage_InvalidCurrency=Den angitte valutaen er ikke gyldig
+ ;ExchangeRateEntity error.
+Currency_EntityMessage_MissingRate=Finner ikke en valutakurs for valutakurstypen %1 mellom valutaene %2 og %3 på valutadatoen %4. Kontakt systemansvarlig for å rette opp denne feilen.
+ ;Set based error message.
+Currency_EntityLabel_ExchangeRateTypeLabel=Valutakurstype
+ ;Label for ExchangeRateTypeEntity
+Currency_EntityDeveloper_ExchangeRateTypeEntityDevDoc=The ExchangeRateTypeEntity entity stores exchange rate types that allow exchange rates to be categorized.
+ ;{Locked}
+Currency_ConfigField_ServiceTimeout=Service Timeout
+ ;{Locked}
+Currency_ConfigField_OandaName=Foreign Exchange Rates Powered by OANDA
+ ;{Locked}
+Currency_ConfigField_OandaAPIKey=API key
+ ;{Locked}
+Currency_FieldTitle_Value=Verdi
+ ;Exchange rate provider configuration value field title.
+Currency_ConfigField_DecimalPlaces=Decimal places
+ ;{Locked}
+Currency_ConfigMessage_DecimalPlacesInvalid=Antall desimalplasser må være mellom 1 og 12
+ ;Decimal places validation error for OANDA exchange rate provider.
+Currency_ConfigMessage_OANDAKeyRequired=En gyldig nøkkel fra OANDA kreves for denne leverandøren for å importere valutakurser. 
+ ;Warning message for the OANDA exchange rate provider.
+Currency_ConfigField_QuoteType=Tilbudstype
+ ;Quote type for OANDA provider.
+Currency_ConfigEnum_QuoteTypeAverageBid=Gjennomsnittlig bud
+ ;Quote type average bid
+Currency_ConfigEnum_QuoteTypeAverageAsk=Gjennomsnittlig tilbud
+ ;Quote type average ask
+Currency_ConfigEnum_QuoteTypeMidpoint=Midtpunkt
+ ;Quote type midpoint
+Currency_ConfigEnum_QuoteTypeHighBid=Høyt bud
+ ;Quote type high bid
+Currency_ConfigEnum_QuoteTypeHighAsk=Høyt tilbud
+ ;Quote type high ask
+Currency_ConfigEnum_QuoteTypeLowBid=Lavt bud
+ ;Quote type low bid
+Currency_ConfigEnum_QuoteTypeLowAsk=Lavt tilbud
+ ;Quote type low ask
+Currency_ConfigEnum_QuoteTypePeriodAverageBid=Gjennomsnittlig bud i periode
+ ;Quote type average over time period.
+Currency_ConfigEnum_QuoteTypePeriodAverageAsk=Gjennomsnittlig tilbud i periode
+ ;Quote type average over time period.
+Currency_ConfigField_SingleRateForDateRange=Én sats for datoområde
+ ;exchange rate provider configuration option.
+Currency_EntityLabel_CurrencyISOCode=ISO-valutakoder
+ ;CurrencyISOCodeEntity label.
+Currency_EntityDeveloper_CurrencyISOCodeEntityDevDoc=The CurrencyISOCodeEntity entity contains the list of ISO Currency Codes that are supported in the application as defined by the International Organization for Standardization.
+ ;{Locked}
+Currency_ModuleName=Valuta
+ ;Displayed in upgrade.
+Currency_UpgradeStep=Krypter verdifelt.
+ ;Upgrade step.
+Currency_ParameterGroup=Valuta
+ ;Field group caption for the SystemParameters form.
+Currency_TableFieldLabel_SystemParametersCurrencyCodeLabel=Systemvaluta
+ ;Label for the SystemCurrencyCode field on the SystemParameters table.
+Currency_TableFieldLabel_SystemParametersExchangeRateTypeLabel=Valutakurstype for system
+ ;Label for the SystemExchangeRateType field on the SystemParameters table.
+ExchangeRateCurrencyPairCalculationRulesEntityMaintain=Vedlikehold beregningsregler for valutakurs for mva-enhet
+ ;Maintain privilege for ExchangeRateCurrencyPairCalculationRulesEntity
+ExchangeRateCurrencyPairCalculationRulesEntityView=Vis beregningsregler for valutakurs for mva-enhet
+ ;View privilege for ExchangeRateCurrencyPairCalculationRulesEntity
+Currency_Message_CurrencyRequiredForRounding=En valuta er obligatorisk for avrunding.
+ ;Error from currency rounding API's
+Currency_Message_CurrencyRequiredForDecimals=Det kreves en valuta for å hente antallet desimaler.
+ ;Error from currency rounding API's
+Currency_Message_CurrencyRequiredForRoundingPrecision=Det kreves en valuta for å hente avrundingspresisjonen.
+ ;Error from currency rounding API's
+Currency_ConfigField_PreventImportOnNationalHoliday=Hindre import på nasjonal helligdag
+ ;Exchange rate provider configuration option.
+Currency_ConfigField_QuoteTypeLocked=Quote type
+ ;{Locked}
+Currency_Message_QuoteTypeMissing=Finner ikke tilbudstypen for leverandøren av konfigurasjonsnøkkelen for valutakursen. Klikk Tilbakestill verdier, og velg deretter en tilbudstypeverdi på siden Konfigurer valutakursleverandører.  
+ ;Exchange rate provider configuration error
+Currency_Message_StartDateAlreadyExists=Valutakurs kan ikke legges til fordi startdatoen allerede finnes. Angi en startdato som ikke allerede finnes.
+ ;Exchange rate error message
+Currency_Monetary_unit_declensions=Myntenhetnedganger
+ ;Monetary unit declensions

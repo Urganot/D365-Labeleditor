@@ -1,0 +1,70 @@
+Tooltip_ItemNumber=Item number
+ ;Item number
+Tooltip_Reference=Reference
+ ;Reference
+Tooltip_RequirementDate=Requirement date
+ ;Requirement date
+Tooltip_Days=Days
+ ;Days
+Tooltip_ToDate=To date
+ ;To date
+Tooltip_RequirementQty=Requirement quantity
+ ;Requirement quantity
+Tooltip_WithQty=With quantity
+ ;With quantity
+Tooltip_ToQty=To quantity
+ ;To quantity
+Tooltip_CoverageQty=Coverage quantity
+ ;Coverage quantity
+Tooltip_CoverageStatus=Coverage status
+ ;Coverage status
+Tooltip_RequestedDate=Requested date
+ ;Requested date
+Tooltip_RequestedQty=Requested quantity
+ ;Requested quantity
+Tooltip_Suborder=Suborder
+ ;Suborder
+Tooltip_Configuration=Configuration
+ ;Configuration
+Tooltip_Size=Size
+ ;Size
+Tooltip_Color=Color
+ ;Color
+Tooltip_Style=Style
+ ;Style
+Tooltip_Site=Site
+ ;Site
+Tooltip_Warehouse=Warehouse
+ ;Warehouse
+Tooltip_BatchNumber=Batch number
+ ;Batch number
+Tooltip_Location=Location
+ ;Location
+Tooltip_PalletId=Pallet ID
+ ;Pallet ID
+Tooltip_SerialNumber=Serial number
+ ;Serial number
+Tooltip_InventoryStatus=Inventory status
+ ;Inventory status
+Tooltip_LicensePlate=License plate
+ ;License plate
+Arrow_Days=days
+ ;days
+Type_NoAction=No action
+ ;No action
+Type_Planned=Planned
+ ;Planned
+Type_Firmed=Firmed
+ ;Firmed
+ScreenReader_NodeDescription=Action {0} {1} {2} item {3}, {4}
+ ;Screen reader node description
+ScreenReader_PredecessorsCount=Is a result of {0} actions.
+ ;Screen reader predecessors count
+ScreenReader_SuccessorsCount=Results in {0} actions.
+ ;Screen reader successors count
+TaskRecorder_SelectedNodeChanged=Select node in action graph
+ ;Task recorder action name
+TaskRecorder_FocusedNodeChanged=Focus on node in action graph
+ ;Task recorder action name
+TaskRecorder_CenteredNodeChanged=Center on node in action graph
+ ;Task recorder action name

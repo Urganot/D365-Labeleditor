@@ -1,0 +1,50 @@
+CurrencyEuroDenomination_CurrencyCode=Triangulatsioonvaluutaks määratud valuutakood.
+ ;Description text for the CurrencyCode control on the CurrencyEuroDenomination form
+Currency_CurrencyCode=Valitud valuuta ainuidentifikaator. See kood võib sisaldada kuni kolme märki. Näiteks USD on USA dollar, EUR on euro ja CAD on Kanada dollar.
+ ;Description text for the CurrencyCode control on the Currency form
+Currency_GridCurrencyName=Valitud valuuta nimi. Nimi ja valuutakood prinditakse tšekkidele ja muudele dokumentidele.
+ ;Description text for the GridCurrencyName control on the Currency form
+Currency_CurrencyName=Valitud valuuta nimi. Nimi ja valuutakood prinditakse tšekkidele ja muudele dokumentidele.
+ ;Description text for the CurrencyName control on the Currency form
+Currency_Symbol=Valitud valuuta sümbol. Sümboleid kasutatakse sageli aruannetes.
+ ;Description text for the Symbol control on the Currency form
+Currency_GridCurrency=Rahvusvahelise Standardiorganisatsiooni (ISO) määratletud standardvaluutakood.
+ ;Description text for the GridCurrency control on the Currency form
+Currency_ISOCode=Rahvusvahelise Standardiorganisatsiooni (ISO) määratletud standardvaluutakood.
+ ;Description text for the ISOCode control on the Currency form
+Currency_IsEuro=Valuuta, mille kaudu teisi valuutasid, mida määratletakse põhivaluutadena, trianguleeritakse.
+ ;Description text for the IsEuro control on the Currency form
+Currency_Group_OnLineConversionTool=Tehke see valik valitud valuuta kaasamiseks võrgus asuva valuutateisendustööriista arvutustesse. Tööriist teisendab kanderidadele ettevõtte valuutas sisestatud summad automaatselt summadesse valitud valuutas. Teisendatud valitud valuutas summasid andmebaasi ei salvestata.
+ ;Description text for the Group_OnLineConversionTool control on the Currency form
+Currency_Group_CurrencyPrefix=Kui on märgitud valik Teisendamine, saate sisestada valitud valuutas summa ette prinditava teksti.
+ ;Description text for the Group_CurrencyPrefix control on the Currency form
+Currency_Group_CurrencySuffix=Kui on märgitud valik Teisendamine, saate sisestada valitud valuutas summa järele prinditava teksti.
+ ;Description text for the Group_CurrencySuffix control on the Currency form
+Currency_GeneralRoundingPrecision=Sisestage ümardamissummade ühik. Näiteks võite sisestada 0.10 või 1.00.
+ ;Description text for the GeneralRoundingPrecision control on the Currency form
+Currency_RoundOffSalesOrder=Sisestage summade ümardusühik müügitellimustele, ostutellimustele või hindadele.
+ ;Description text for the RoundOffSalesOrder control on the Currency form
+Currency_RoundOffPurch=Sisestage summade ümardusühik müügitellimustele, ostutellimustele või hindadele.
+ ;Description text for the RoundOffPurch control on the Currency form
+Currency_Price_RoundOffPrice=Sisestage summade ümardusühik müügitellimustele, ostutellimustele või hindadele.
+ ;Description text for the Price_RoundOffPrice control on the Currency form
+Currency_AssetDep_JP_RoundOffAssetDep_JP=Sisestage summade ümardusühik müügitellimustele, ostutellimustele või hindadele.
+ ;Description text for the AssetDep_JP_RoundOffAssetDep_JP control on the Currency form
+Currency_RoundOffTypeSalesOrder=Valige ümardamisreegel, mis kehtib ümardusühikust paremal oleva arvu kohta, mis sisestatakse väljale Ümardamisreegel. Valige Tavaline numbrite 5 ja suuremate ümardamiseks ülespoole ja 5-st väiksemate numbrite ümardamiseks allapoole. Valige Allapoole kõigi numbrite ümardamiseks allapoole. Valige Ülespoole ümardamine kõigi numbrite ümardamiseks ülespoole.
+ ;Description text for the RoundOffTypeSalesOrder control on the Currency form
+Currency_RoundOffTypePurch=Valige ümardamisreegel, mis kehtib ümardusühikust paremal oleva arvu kohta, mis sisestatakse väljale Ümardamisreegel. Valige Tavaline numbrite 5 ja suuremate ümardamiseks ülespoole ja 5-st väiksemate numbrite ümardamiseks allapoole. Valige Allapoole kõigi numbrite ümardamiseks allapoole. Valige Ülespoole ümardamine kõigi numbrite ümardamiseks ülespoole.
+ ;Description text for the RoundOffTypePurch control on the Currency form
+Currency_Price_RoundOffTypePrice=Valige ümardamisreegel, mis kehtib ümardusühikust paremal oleva arvu kohta, mis sisestatakse väljale Ümardamisreegel. Valige Tavaline numbrite 5 ja suuremate ümardamiseks ülespoole ja 5-st väiksemate numbrite ümardamiseks allapoole. Valige Allapoole kõigi numbrite ümardamiseks allapoole. Valige Ülespoole ümardamine kõigi numbrite ümardamiseks ülespoole.
+ ;Description text for the Price_RoundOffTypePrice control on the Currency form
+Currency_AssetDep_JP_RoundOffTypeAssetDep_JP=Valige ümardamisreegel, mis kehtib ümardusühikust paremal oleva arvu kohta, mis sisestatakse väljale Ümardamisreegel. Valige Tavaline numbrite 5 ja suuremate ümardamiseks ülespoole ja 5-st väiksemate numbrite ümardamiseks allapoole. Valige Allapoole kõigi numbrite ümardamiseks allapoole. Valige Ülespoole ümardamine kõigi numbrite ümardamiseks ülespoole.
+ ;Description text for the AssetDep_JP_RoundOffTypeAssetDep_JP control on the Currency form
+ExchangeRateProviderConfiguration_ExchangeRateProviderConfiguration_Name=Vahetuskursi pakkuja nimi.
+ ;Description text for the ExchangeRateProviderConfiguration_Name control on the ExchangeRateProviderConfiguration form
+ExchangeRateProviderConfiguration_ExchangeRateProviderConfiguration_Name1=Vahetuskursi pakkuja nimi.
+ ;Description text for the ExchangeRateProviderConfiguration_Name1 control on the ExchangeRateProviderConfiguration form
+ExchangeRateProviderConfiguration_ExchangeRateProviderConfigurationDetails_Key=Pakkuja nõutud konfiguratsiooniteabe iga osa kordumatu ID. See teave lisatakse automaatselt iga vahetuskursi pakkuja puhul, kelle lisate, klõpsates nuppu Lisa.
+ ;Description text for the ExchangeRateProviderConfigurationDetails_Key control on the ExchangeRateProviderConfiguration form
+ExchangeRateProviderConfiguration_ExchangeRateProviderConfigurationDetails_Value=Iga nupu teave. See teave lisatakse iga vahetuskursi pakkuja puhul, kelle lisate, klõpsates nuppu Lisa.
+ ;Description text for the ExchangeRateProviderConfigurationDetails_Value control on the ExchangeRateProviderConfiguration form
+CurrencyNameDeclension_W_InsertAndBeforePenny_InsertAndBeforePenny=Märkige see valik, et printida ühikute ja osade vahel sidesõna „ja”.
+ ;Description text for the InsertAndBeforePenny_InsertAndBeforePenny control on the CurrencyNameDeclension_W form

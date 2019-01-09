@@ -1,0 +1,152 @@
+NewLabel0=29.5.2014 13:27:47 luodut etikettitiedostot etikettitiedoston tunnukselle CurrencyExchange ja kielellä en-US
+ ;Label file comment - see above label
+ConversionFactor=Muuntokerroin
+ ;Exchange rate conversion factor
+ExchangeValue=Vaihtoarvo
+ ;Exchange rates exchange value
+TriangulationCurrencies=Triangulaatiovaluutat
+ ;New Comment
+AddRemoveExchangeRates=Lisää tai poista vaihtokurssit
+ ;New Comment
+TmpExchangeRatesDevDoc=TmpExchangeRates-taulukko sisältää väliaikaiset tietueet, joita käytetään ExchangeRates-lomakkeen näyttämisen aikana.
+ ;New Comment
+ExchangeRateEntityDevDoc=The ExchangeRateEntity data entity is used to store exchange rates for a currency pair and a rate type.
+ ;{locked}Exchange rate entity developer documentation
+ExchangeRateStagingDevDoc=Väliaikaista ExchangeRateEntity-taulua käytetään vaihtokurssien valuuttaparin tuontiin ja vientiin ja summan tyyppiin.
+ ;Exchange rate stating table developer documentation
+InvalidExchangeRate=Valuuttaparin {0} ja {1} vaihtokurssia ei voitu tuoda.Pyydä apua ottamalla yhteyttä tarjoajaasi tai kirjoita {2} vaihtokurssi manuaalisesti.
+ ;Exchange rate provider error in C#
+ISONameCubanConvertiblePeso=Kuuban muunnettava peso
+ ;ISO Currency Name
+ISONameTurkmenistanNewManat=Turkmenistanin uusi manat
+ ;ISO Currency Name
+ISONameZambianKwacha=Sambian kwacha
+ ;ISO Currency Name
+ExchangeRateImport=Vaihtokurssien tuonti
+ ;Entity privilege level
+ExchangeRateExport=Vaihtokurssien vienti
+ ;Entity privilege level
+Supplemental_CurrencyImport=Tuo valuutat
+ ;Entity privilege level
+Supplemental_CurrencyExport=Vie valuutat
+ ;Entity privilege level
+Currency_MessageDeveloper_UpdateCurrencyPair=Updating currency pair from currency %1 to currency %2
+ ;{Locked}
+Currency_MessageDeveloper_AddNewRate=Adding new exchange rate %1 valid from %2 from currency %3 to currency %4
+ ;{Locked}
+Currency_MessageDeveloper_ActivateProvider=Activating exchange rate provider {0}
+ ;{Locked}
+Currency_MessageDeveloper_SearchingAssembly=Searching for exchange rate providers in assembly {0}
+ ;{Locked}
+Currency_EntityEnum_EntityName=Valuutat
+ ;Entity name
+Currency_EntityDeveloper_CurrencyEntityDevDoc=The CurrencyEntity entity contains the currencies that are used in the application for foreign exchange. Exchange rates are created based on these currencies.
+ ;{Locked}
+Currency_EntityField_CurrencyCode=Valuuttakoodi
+ ;CurrencyEntity field name.
+Currency_EntityLabel_CurrencyRevaluationAccountLabel=Valuuttakirjanpidon kurssioikaisutili
+ ;Label for CurrencyRevaluationAccountEntity
+Currency_EntityDeveloper_CurrencyRevaluationAccountEntityDevDoc=The CurrencyRevaluationAccountEntity entity contains the gain loss account for individual currencies.
+ ;{Locked}
+Currency_EntityFieldLabel_RoundingRuleFixedAssetDepreciation=Käyttöomaisuuden poiston pyöristyssääntö
+ ;CurrencyEntity field label
+Currency_EntityFieldLabel_RoundingMethodFixedAssetDepreciation=Käyttöomaisuuden poiston pyöristysmenetelmä
+ ;CurrencyEntity field label
+Currency_EntityFieldLabel_RoundingMethodPrices=Hintojen pyöristysmenetelmä
+ ;CurrencyEntity field label
+Currency_EntityFieldLabel_RoundingMethodPurchaseOrders=Ostotilausten pyöristysmenetelmä
+ ;CurrencyEntity field label
+Currency_EntityFieldLabel_RoundingMethodSalesOrders=Myyntitilausten pyöristysmenetelmä
+ ;CurrencyEntity field label
+Currency_EntityFieldLabel_RoundingRulePrices=Hintojen pyöristyssääntö
+ ;CurrencyEntity field label
+Currency_EntityFieldLabel_RoundingRulePurchaseOrders=Ostotilausten pyöristyssääntö
+ ;CurrencyEntity field label
+Currency_EntityFieldLabel_RoundingRuleSalesOrders=Myyntitilausten pyöristyssääntö
+ ;CurrencyEntity field label
+EntitiesMaintainDuty=Ylläpidä valuuttayksiköiden päätietoja
+ ;Maintain Currency entities duty.
+EntitiesViewDuty=Näytä valuuttayksiköiden päätiedot
+ ;View Currency entities duty.
+Currency_EntityMessage_RateMustBePositive=Vaihtokurssin on oltava suurempi kuin nolla.
+ ;ExchangeRateEntity set based error message.
+Currency_EntityTitle=Vaihtokurssit
+ ;ExchangeRateEntity title.
+Currency_EntityMessage_InvalidCurrency=Määritetty valuutta ei kelpaa.
+ ;ExchangeRateEntity error.
+Currency_EntityMessage_MissingRate=Vaihtokurssin tyypille %1 valuuttojen %2 ja %3 välillä ei löydy vaihtokurssia vaihtopäivämääränä %4 . Ota yhteyttä järjestelmänvalvojaan tämän ongelman ratkaisemiseksi.
+ ;Set based error message.
+Currency_EntityLabel_ExchangeRateTypeLabel=Vaihtokurssin tyyppi
+ ;Label for ExchangeRateTypeEntity
+Currency_EntityDeveloper_ExchangeRateTypeEntityDevDoc=The ExchangeRateTypeEntity entity stores exchange rate types that allow exchange rates to be categorized.
+ ;{Locked}
+Currency_ConfigField_ServiceTimeout=Service Timeout
+ ;{Locked}
+Currency_ConfigField_OandaName=Foreign Exchange Rates Powered by OANDA
+ ;{Locked}
+Currency_ConfigField_OandaAPIKey=API key
+ ;{Locked}
+Currency_FieldTitle_Value=Arvo
+ ;Exchange rate provider configuration value field title.
+Currency_ConfigField_DecimalPlaces=Decimal places
+ ;{Locked}
+Currency_ConfigMessage_DecimalPlacesInvalid=Desimaalien määrän on oltava välillä 1–12.
+ ;Decimal places validation error for OANDA exchange rate provider.
+Currency_ConfigMessage_OANDAKeyRequired=Tämän tarjoajan vaihtokurssien tuonti edellyttää kelvollista OANDA-avainta. 
+ ;Warning message for the OANDA exchange rate provider.
+Currency_ConfigField_QuoteType=Tarjoustyyppi
+ ;Quote type for OANDA provider.
+Currency_ConfigEnum_QuoteTypeAverageBid=Keskimääräinen myyntihinta
+ ;Quote type average bid
+Currency_ConfigEnum_QuoteTypeAverageAsk=Keskimääräinen ostohinta
+ ;Quote type average ask
+Currency_ConfigEnum_QuoteTypeMidpoint=Puoliväli
+ ;Quote type midpoint
+Currency_ConfigEnum_QuoteTypeHighBid=Korkein myyntihinta
+ ;Quote type high bid
+Currency_ConfigEnum_QuoteTypeHighAsk=Korkein ostohinta
+ ;Quote type high ask
+Currency_ConfigEnum_QuoteTypeLowBid=Alin myyntihinta
+ ;Quote type low bid
+Currency_ConfigEnum_QuoteTypeLowAsk=Alin ostohinta
+ ;Quote type low ask
+Currency_ConfigEnum_QuoteTypePeriodAverageBid=Kauden keskimääräinen myyntihinta
+ ;Quote type average over time period.
+Currency_ConfigEnum_QuoteTypePeriodAverageAsk=Kauden keskimääräinen ostohinta
+ ;Quote type average over time period.
+Currency_ConfigField_SingleRateForDateRange=Yksi hinta päivämääräalueelle
+ ;exchange rate provider configuration option.
+Currency_EntityLabel_CurrencyISOCode=ISO-valuuttakoodit
+ ;CurrencyISOCodeEntity label.
+Currency_EntityDeveloper_CurrencyISOCodeEntityDevDoc=The CurrencyISOCodeEntity entity contains the list of ISO Currency Codes that are supported in the application as defined by the International Organization for Standardization.
+ ;{Locked}
+Currency_ModuleName=Valuutta
+ ;Displayed in upgrade.
+Currency_UpgradeStep=Salaa arvokenttä.
+ ;Upgrade step.
+Currency_ParameterGroup=Valuutta
+ ;Field group caption for the SystemParameters form.
+Currency_TableFieldLabel_SystemParametersCurrencyCodeLabel=Järjestelmän valuutta
+ ;Label for the SystemCurrencyCode field on the SystemParameters table.
+Currency_TableFieldLabel_SystemParametersExchangeRateTypeLabel=Järjestelmän vaihtokurssin tyyppi
+ ;Label for the SystemExchangeRateType field on the SystemParameters table.
+ExchangeRateCurrencyPairCalculationRulesEntityMaintain=Ylläpidä arvonlisäveroyksikön vaihtokurssin laskentasääntöjä
+ ;Maintain privilege for ExchangeRateCurrencyPairCalculationRulesEntity
+ExchangeRateCurrencyPairCalculationRulesEntityView=Näytä arvonlisäveroyksikön vaihtokurssin laskentasäännöt
+ ;View privilege for ExchangeRateCurrencyPairCalculationRulesEntity
+Currency_Message_CurrencyRequiredForRounding=Pyöristykseen tarvitaan valuutta.
+ ;Error from currency rounding API's
+Currency_Message_CurrencyRequiredForDecimals=Valuutta tarvitaan, jotta desimaalien määrä voidaan noutaa.
+ ;Error from currency rounding API's
+Currency_Message_CurrencyRequiredForRoundingPrecision=Valuutta tarvitaan, jotta pyöristyksen tarkkuus voidaan noutaa.
+ ;Error from currency rounding API's
+Currency_ConfigField_PreventImportOnNationalHoliday=Estä tuonti kansallisina vapaapäivinä
+ ;Exchange rate provider configuration option.
+Currency_ConfigField_QuoteTypeLocked=Quote type
+ ;{Locked}
+Currency_Message_QuoteTypeMissing=Vaihtokurssipalvelun konfigurointiavaimen tarjoustyyppiä ei löydy. Valitse Palauta oletusarvot ja valitse sitten tarjoustyypin arvo Konfiguroi vaihtokurssipalvelut -sivulla.  
+ ;Exchange rate provider configuration error
+Currency_Message_StartDateAlreadyExists=Vaihtokurssia ei voi lisätä, koska alkamispäivä on jo luotuna. Määritä alkamispäivä, joka ei ole vielä luotuna.
+ ;Exchange rate error message
+Currency_Monetary_unit_declensions=Rahallisen yksikön poikkeamat
+ ;Monetary unit declensions

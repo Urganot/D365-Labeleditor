@@ -1,0 +1,110 @@
+ExpressionSaveButton=Save
+ ;Save button
+ExpressionClearButton=Clear
+ ;Clear button
+FieldName=Name
+ ;Field name
+FieldDatasource=Datasource
+ ;Datasource
+Operators=Operators
+ ;Operators
+OperatorTypes=Operator Types
+ ;Operator types
+Operator_Or=Or
+ ;Or group operator
+Operator_And=And
+ ;And group operator
+Operator_AndEither=And either
+ ;And either group operator
+OperatorDisplayed_Or=OR
+ ;Display value Or
+OperatorDisplayed_Either=EITHER
+ ;Display value Either
+OperatorDisplayed_Where=Where
+ ;Display value where
+OperatorDisplayed_And=And
+ ;Display value And
+FieldLabel_CreatedBy=.Created by
+ ;Created by field value
+FieldLabel_CreatedDate=.Created date
+ ;Created date field value
+EmptyExpressionMessage=This expression is empty.
+ ;Empty expression
+AddPredicateButton=Add line
+ ;Add a new predicate
+RemovePredicateButton=Remove line
+ ;Remove this predicate
+ExpressionDateTypes_Relative=Relative
+ ;A date field of type relative
+ExpressionDateTypes_Absolute=Absolute
+ ;A date field of type absolute
+ExpressionDateOperatorTypes_Plus=+
+ ;A Plus days operator for a relative date
+ExpressionDateOperatorTypes_Minus=-
+ ;A Minus Days operator for a relative date
+ExpressionStartDayTypes_Today=Today
+ ;Today as the offset date for a relative date
+ExpressionStartDayTypes_FirstDayOfMonth=First day of month
+ ;The first day of the month as the offset date for a relative date
+ExpressionStartDayTypes_LastDayOfMonth=Last day of month
+ ;The last day of the month as the offset date for a relative date
+Operator_String_BeginsWith=begins with
+ ;New Comment
+Operator_String_Contains=contains
+ ;New Comment
+Operator_String_Equals=equals
+ ;New Comment
+Operator_String_NotEquals=not equals
+ ;New Comment
+Operator_Numeric_EqualTo=equal to
+ ;New Comment
+Operator_Numeric_NotEqualTo=not equal to
+ ;New Comment
+Operator_Numeric_GreaterThan=greater than
+ ;New Comment
+Operator_Numeric_GreaterThanOrEqualTo=greater than or equal to
+ ;New Comment
+Operator_Numeric_LessThan=less than
+ ;New Comment
+Operator_Numeric_LessThanOrEqualTo=less than or equal to
+ ;New Comment
+Operator_NumericCurrency_EqualTo=equal to
+ ;New Comment
+Operator_NumericCurrency_NotEqualTo=not equal to
+ ;New Comment
+Operator_NumericCurrency_GreaterThan=greater than
+ ;New Comment
+Operator_NumericCurrency_GreaterThanOrEqualTo=greater than or equal to
+ ;New Comment
+Operator_NumericCurrency_LessThan=less than
+ ;New Comment
+Operator_NumericCurrency_LessThanOrEqualTo=less than or equal to
+ ;New Comment
+Operator_HierarchySurrogate_IsAtOrBelow=is at or below
+ ;New Comment
+Operator_HierarchySurrogate_IsAtOrAbove=is at or above
+ ;New Comment
+Operator_HierarchySurrogate_IsAt=is at
+ ;New Comment
+Operator_HierarchySurrogate_IsBelow=is below
+ ;New Comment
+Operator_HierarchySurrogate_IsAbove=is above
+ ;New Comment
+Operator_Surrogate_Equals=equals
+ ;New Comment
+Operator_Surrogate_NotAquals=not equals
+ ;New Comment
+Operator_SimpleSurrogate_Equals=equals
+ ;New Comment
+Operator_SimpleSurrogate_NotEquals=not equals
+ ;New Comment
+Operator_Date_OnOrAfter=on or after
+ ;New Comment
+Operator_Date_OnOrBefore=on or before
+ ;New Comment
+Operator_Enum_EqualTo=equal to
+ ;New Comment
+Operator_Enum_NotEqualTo=not equal to
+ ;New Comment
+OperatorType_Value=value
+ ;New Comment

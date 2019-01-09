@@ -1,0 +1,441 @@
+NewLabel0=Label files created on 03/25/2016 16:55:36 for label file Id SysAppDesigner and language en-US
+ ;Label file comment - see above label
+DesignerFormCaption=Manage mobile workspaces
+ ;New Comment
+AddNewApp=Create
+ ;New Comment
+Delete=Delete
+ ;New Comment
+AppTitleLabel=Name
+ ;New Comment
+AppDescriptionLabel=Description
+ ;New Comment
+MobileApps=Mobile workspace
+ ;New Comment
+PageListGroupCaption=Pages
+ ;New Comment
+AddPage=Add page
+ ;New Comment
+AddTask=Add action
+ ;New Comment
+PageTitleLabel=Page title
+ ;New Comment
+PageDescriptionLabel=Page description
+ ;New Comment
+PageControlListGroupCaption=Build a page
+ ;New Comment
+AddPageControls=Select fields
+ ;New Comment
+PublishApp=Publish mobile workspace
+ ;New Comment
+ExportApp=Export mobile workspace
+ ;New Comment
+BackButtonLabel=Back
+ ;New Comment
+DoneButtonLabel=Done
+ ;New Comment
+CancelButtonLabel=Cancel
+ ;New Comment
+CloseButtonLabel=Close
+ ;New Comment
+StopRecordingButtonLabel=Done
+ ;New Comment
+ControlListNameColumnLabel=Name
+ ;New Comment
+ControlListTypeColumnLabel=Type
+ ;New Comment
+PageListTitleColumnLabel=Title
+ ;New Comment
+NotificationHubFormCaption=Notification hub configuration
+ ;New Comment
+HubConnectionString=Notification hub connection string
+ ;New Comment
+HubName=Notification hub name
+ ;New Comment
+TaskListGroupCaption=Actions
+ ;New Comment
+TaskListTitleColumnLabel=Title
+ ;New Comment
+TaskDescriptionLabel=Action description
+ ;New Comment
+TaskTitleLabel=Action title
+ ;New Comment
+ImportApp=Import
+ ;New Comment
+AppListGroupCaption=Mobile workspaces
+ ;New Comment
+ReturnToAppList=Return to dashboard
+ ;New Comment
+AppReadyText=Your mobile workspace is ready
+ ;New Comment
+AddDetailsPage=Add details page
+ ;New Comment
+Icon_Admin=Admin
+ ;New Comment
+Icon_BarChartHorizontal=Bar Chart Horizontal
+ ;New Comment
+Icon_BenefitsManagement=Benefits Management
+ ;New Comment
+Icon_BudgetPlanning=Budget Planning
+ ;New Comment
+Icon_CatalogManagement=Catalog Management
+ ;New Comment
+Icon_Checklist=Checklist
+ ;New Comment
+Icon_CourseManagement=Course Management
+ ;New Comment
+Icon_CompensationManagement=Compensation Management
+ ;New Comment
+Icon_CostAdministration=Cost Administration
+ ;New Comment
+Icon_CostAnalysis=Cost Analysis
+ ;New Comment
+Icon_CustomerInvoicing=Customer Invoicing
+ ;New Comment
+Icon_DataManagement=Data Management
+ ;New Comment
+Icon_DiscreteManufacturing=Discrete Manufacturing
+ ;New Comment
+Icon_ElectronicReporting=Electronic Reporting
+Icon_EmployeeSelfService=Employee Self Service
+ ;New Comment
+Icon_GeneralJournalProcessing=General Journal Processing
+ ;New Comment
+Icon_InvoiceComplete=Invoice Complete
+ ;New Comment
+Icon_InvoiceInquiry=Invoice Inquiry
+ ;New Comment
+Icon_InvoicePrep=Invoice Prep
+ ;New Comment
+Icon_KanbanManufacturing=Kanban Manufacturing
+ ;New Comment
+Icon_LifecycleManagement=Lifecycle Management
+ ;New Comment
+Icon_ManagerSelfService=Manager Self Service
+Icon_MasterPlanning=Master Planning
+ ;New Comment
+Icon_OutboundWorkMonitoring=Outbound Work Monitoring
+Icon_OutboundWorkPlanning=Outbound Work Planning
+ ;New Comment
+Icon_ProcessManufacturing=Process Manufacturing
+ ;New Comment
+Icon_ProductionFloorManagement=Production Floor Management
+ ;New Comment
+Icon_ProductManagement=Product Management
+ ;New Comment
+Icon_ProductRelease=Product Release
+ ;New Comment
+Icon_ProductReturn=Product Return
+ ;New Comment
+Icon_ProductVariant=Product Variant
+ ;New Comment
+Icon_ProjectManagement=Project Management
+ ;New Comment
+Icon_Questionnaire=Questionnaire
+ ;New Comment
+Icon_RecruitmentManagment=Recruitment Managment
+ ;New Comment
+Icon_ReservationManagment=Reservation Managment
+ ;New Comment
+Icon_Retail=Retail
+ ;New Comment
+Icon_RetailFinancials=Retail Financials
+ ;New Comment
+Icon_RetailIT=Retail IT
+ ;New Comment
+Icon_RetailManage=Retail Manage
+ ;New Comment
+Icon_Tag=Tag
+ ;New Comment
+Icon_VendorPayment=Vendor Payment
+ ;New Comment
+Icon_WorkforceManagement=Workforce Management
+ ;New Comment
+Icon_Calendar=Calendar
+ ;New Comment
+Icon_Calculator=Calculator
+ ;New Comment
+Icon_ContactInfo=Contact Info
+ ;New Comment
+Icon_DeliveryTruck=Delivery Truck
+ ;New Comment
+Icon_ExpenseReport=Expense Report
+ ;New Comment
+Icon_Forklift=Forklift
+ ;New Comment
+Icon_Giftbox=Giftbox
+ ;New Comment
+Icon_Group=Group
+ ;New Comment
+Icon_Invoice=Invoice
+ ;New Comment
+Icon_MachineOperations=Machine Operations
+ ;New Comment
+Icon_Money=Money
+ ;New Comment
+Icon_Org=Org
+ ;New Comment
+Icon_Product=Product
+ ;New Comment
+Icon_PhoneBook=Phone Book
+ ;New Comment
+Icon_TimeSheet=TimeSheet
+ ;New Comment
+Color0=Blue
+ ;New Comment
+Color1=Pomegranate
+ ;New Comment
+Color2=Raspberry
+ ;New Comment
+Color3=Dark Orange
+ ;New Comment
+Color4=Green
+ ;New Comment
+Color5=Blueberry
+ ;New Comment
+Color6=Grape
+ ;New Comment
+Color7=Light Blue
+ ;New Comment
+Color8=Light Green
+ ;New Comment
+Color9=Pink
+ ;New Comment
+Color10=Teal
+ ;New Comment
+Color11=Medium Dark Blue
+ ;New Comment
+Color12=Cordovan
+ ;New Comment
+Color13=Dark Cordovan
+ ;New Comment
+Color14=Black
+ ;New Comment
+AppColor=Workspace color
+ ;New Comment
+AppIcon=Workspace icon
+ ;New Comment
+None=None
+ ;New Comment
+Edit=Edit
+ ;New Comment
+AddEditTask=Add edit action
+ ;New Comment
+PageControlsRecordingName=Add controls to page
+ ;New Comment
+TaskControlsRecordingName=Add controls to action
+ ;New Comment
+TaskControlListGroupCaption=Build an action
+ ;New Comment
+PageControlTabPageCaption=Fields
+ ;New Comment
+TaskAllowOffline=Allow offline
+ ;New Comment
+AddListItemCreateTask=Add create item action
+ ;New Comment
+PBLGroupCaption=Logic
+ ;New Comment
+PBLExportLabel=Download
+ ;New Comment
+PBLDeleteLabel=Delete
+ ;New Comment
+PBLFilenameLabel=File name
+ ;New Comment
+PageNameLabel=Page name
+ ;New Comment
+TaskNameLabel=Action name
+ ;New Comment
+ControlDetailsButtonLabel=Properties
+ ;New Comment
+ControlDetailsDialogCaption=Control properties
+ ;New Comment
+ControlNameLabel=Control name
+ ;New Comment
+ControlLabelLabel=Control label
+ ;New Comment
+ListFetchSizeLabel=List fetch size
+ ;New Comment
+AddTaskControls=Record action
+ ;New Comment
+SelectPage=Select existing page
+ ;New Comment
+SelectTask=Select existing action
+ ;New Comment
+ConfirmAppTaskRecordingEnd=Have you performed all necessary data operations (save, delete, submit etc.) for this task?
+ ;New Comment
+DeserializeFailed=We could not open the file you provided. It seems the file is corrupt. Please re-export the file from the original system and try importing again.
+ ;New Comment
+InfoDSCommitWillStopRecording=We have automatically ended the field selection process for you because we detected that a CRUD operation has been performed on the data you are using. This helps prevent creating pages that have unintended side effects on data.
+ ;New Comment
+ConfirmOverwriteFields=Re-selecting the fields will clear the fields you have already selected. Do you still wish to proceed?
+ ;New Comment
+ErrorFormCalledIncorrectly=Form has been called incorrectly
+ ;New Comment
+ErrorNoPageOrActionFound=No page or action found
+ ;New Comment
+ErrorNoPageFound=No page metadata found
+ ;New Comment
+ErrorNoActionFound=No action metadata found
+ ;New Comment
+ConfirmUpdateExistingWorkspace=The Id of this mobile workspace matches the Id of an existing one. Would you like to replace the existing one with this one?
+ ;New Comment
+AddLookupPage=Add lookup page
+ ;New Comment
+LookupDisplayField=Select field to display
+ ;New Comment
+LookupValueField=Select field data
+ ;New Comment
+OverrideControlLabel=Override control label
+ ;New Comment
+ControlLabelRequiredMessage=A control label is required
+ ;New Comment
+PageDocManagementEnabled=Document management
+ ;New Comment
+DocumentManagementAppNotFound=Document management app template not found
+ ;New Comment
+DetailPageRecordingNotFound=Details page recording not found
+ ;New Comment
+ListStyleSimple=Simple
+ ;New Comment
+ListStyleCard=Card
+ ;New Comment
+ListStyle=Style
+ ;New Comment
+EnumName=Enum
+ ;New Comment
+WorkspaceAttributeNotFound=SysAppWorkspaceAttribute is not found on class %1
+ ;New Comment
+WorkspacePublished=published
+ ;New Comment
+WorkspaceNotPublished=not published
+ ;New Comment
+PublishWorkspace=Publish
+ ;New Comment
+UnPublishWorkspace=Unpublish
+ ;New Comment
+OnWorkspacePublished=Mobile workspace %1 has been successfully published
+ ;New Comment
+OnWorkspaceUnpublished=Mobile workspace %1 has been successfully unpublished
+ ;New Comment
+WorkspaceId=Id
+ ;New Comment
+Export=Export
+ ;New Comment
+DeleteWorkspace=Mobile workspace %1 will be deleted
+ ;New Comment
+FromFile=From file system
+ ;New Comment
+FromResource=From resource
+ ;New Comment
+ErrorResourceTypeNotScript=Resource type should be script
+ ;New Comment
+ErrorResourceNotFound=Resource not found
+ ;New Comment
+WorkspaceInMetadata=In metadata
+ ;New Comment
+WorkspaceInDataBase=In database
+ ;New Comment
+WorkspaceSave=Save
+ ;New Comment
+WorkspaceDiscard=Discard
+ ;New Comment
+WorkspaceAlreadyExistAsResourceError=The mobile workspace already exists as a resource
+ ;New Comment
+RemoveBusinessLogicFromDBConfirm=This will remove the business logic currently saved with this mobile workspace so that you can specify the location for new business logic. Are you sure you want to remove the curent business logic?
+ ;New Comment
+WorkspaceClassAppIdEmptyError=AppId is empty on class: %1
+ ;New Comment
+DeserializeWorkspaceFromResourceFailed=We could not load the mobile workspace from metadata. The resource %1 failed to deserialize
+ ;New Comment
+DeserializeWorkspaceFromAppStoreFailed=We could not load the mobile workspace %1 from database. The file failed to deserialize
+ ;New Comment
+ViewRecordingSteps=Job steps
+ ;New Comment
+JobError=Unable to perform the requested operation
+ ;The generic error to be shown when a job error occurs
+ControlNotFoundError=Control %1 was not found
+ ;New Comment
+PropertySetError=Setting value of field %1 failed
+ ;New Comment
+PropertyGetError=Getting value of field %1 failed
+ ;New Comment
+CommandFailedError=Command %1 failed on %2
+ ;New Comment
+FormNotFoundError=Form %1 not found
+ ;New Comment
+AppIDUsedByMultipleWorkspaceClassError=AppId %1 is already in use by workspace class %2 and cannot be assigned to workspace class %3
+ ;Error message when the same appId is getting registered for the second time
+ResourceNameNotSpecifiedAndWorkspaceNotInDBError=The mobile workspace referred by AppId %1 is not found in database and no resource name has been specified in the workspace class
+ ;Error message when workspace is not found in database and no AOT resource name have been specified
+BusinessLogicResourceNotFoundError=We could not load the business logic file . The resource %1 is not found
+ ;Error message when an AX resource is not found for business logic
+WorkspaceResourceNotFoundError=We could not load the mobile workspace from metadata. The resource %1 is not found
+ ;Error message when an AX resource is not found for the mobile workspace
+LoadingForWorkspaceClass=Mobile workspace class: %1
+ ;A prefix that is added when loading mobile workspaces from class
+UncaughtExceptionGetAppMetadata=Error was thrown while calling getWorkspaceMetadata for mobile workspace class %1
+ ;Error message shown when there is an error during getting app metadata
+UncaughtExceptionOnEndJob=Error was thrown while calling onEndJob for mobile workspace class %1
+ ;Error message shown when a call to end job on the workspace class throws an exception
+UncaughtExceptionOnBeginJob=Error was thrown while calling onBeginJob for mobile workspace class %1
+ ;Error message shown when a call to begin job on the workspace class throws an exception
+UncaughtExceptionGetEnumValues=Error was thrown while calling getEnumValues for mobile workspace class %1
+ ;Error message shown when a call to getEnumValue on the workspace class throws an exception
+MultipleDataSourceSaveEncountered=Multiple data updates have been encountered. Please make sure all updates for the current action belong to the same entity.
+ ;Error message shown when multiple datasource save is encountered during mobile app action recording
+ClosedTheLastFormRecordingStopped=We have automatically ended the field selection process, because we detected that the starting form of the action has been closed.  
+ ;Info message shown when a user closes the first form of a recording
+UncaughtExceptionPopulateAppMetadataFromDataContract=Exception in populating pages in app metadata for workspace %1
+ ;Message logged when there is exception in populating pages in app metadata for workspace
+WorkSpaceClassNotFound=Workspace class not found by given workspace class id
+ ;Message logged when workspace class not found by given workspace class id
+ReferenceControlClassDoNotHaveEntity=Data contract class %1 of workspace %2 is referred as a referenced class but is missing SysAppEntityAttribute
+ ;Message logged when reference data contract class is not an entity
+ReferenceControlMethodDoesNotReturnClass=Method %1 of data contract class %2 of workspace %3 represents a reference control but is not returning a data contract class
+ ;Message logged when method represents a reference control but does not returns a data contract class
+ListControlMethodDoesNotReturnList=Method %1 of data contract class %2 of workspace %3 represents a list control but does not returns a List
+ ;Message logged when method represents a list control but does not returns a List
+PageMethodNotReturningDataContractClass=Page method %1 of workspace %2 defining page is not returning a data contract class
+ ;Message logged when get methods defining pages not returning a data contract class
+PageNotFoundInWorkspace=Page %1 not found in workspace %2
+ ;Message logged when page not found in workspace
+ListControlItemContractIsNotAClass=Method %1 of data contract class %2 of workspace %3 has %4 as item contract name of SysAppCollectionAttribute but it does not denotes a valid class
+ ;Message logged when item Contract Name of SysAppCollectionAttribute does not denotes a valid class.
+ListControlHasNestedListControl=Method %1 of data contract class %2 is a child of list control defined under data contract class %3 of workspace %4
+ ;Message logged when method has nested list controls
+UncaughtExceptionPopulatePagesAndActions=Exception in generating metadata for %1 workspace
+ ;Message logged when when there is an exception in populating page metadata for workspace
+ActionMethodNotAcceptingDataContractClass=Action method %1 of workspace %2 defining action has more than one parameter and second parameter is not a data contract class
+ ;Message logged when put methods defining actions not accepting a data contract class
+ActionMethodNotAcceptingOneParameter=Action method %1 of workspace %2 defining action is not accepting one parameter
+ ;Message logged when put methods defining actions not accepting one parameter
+ActionNotFoundInWorkspace=Action %1 not found in workspace %2
+ ;Message logged when action not found in workspace
+ReferenceControlHasCircularDependency=Method %1 of %2 data contract class of workspace %3 returns %4 as a referenced class of reference control has circular dependency
+ ;Message logged when data contract class defining reference controls has circular dependency
+MethodReturnTypeNotSupported=Return type of method %1 of data contract class %2 of workspace %3 is not supported for generating control
+ ;Message logged when Return type of the method is not supported for generating control
+ReferenceControlMethodCanNotReturnCollection=Method %1 of data contract class %2 of workspace %3 represents a reference field and can not be a collection
+ ;Message logged when fields of reference control is a collection
+ListControlHasCircularDependency=Method %1 of %2 data contract class of workspace %3 returns %4 as a item contract class of list control has circular dependency
+ ;Message logged when method defining list has circular dependent item contract class name
+ReferenceControlClassCanNotBeImageReference=Method %1 of data contract class %2 of workspace %3 with SysAppRelationalAttribute returns ImageReference
+ ;Message logged when method with SysAppRelationalAttribute returns ImageReference
+LookupPageShouldHaveOneListControl=Method %1 of %2 workspace class defining Lookup Page should have only one control and that control should be of type List
+ ;Message logged when lookup page defining method do not have proper controls
+MethodNotFoundInWorkspace=Page %1 not found in workspace %2
+ ;Message logged when method is not found in workspace
+UncaughtExceptionexecuteRequest=Uncaught exception in executing request for app for workspace %1
+ ;Message logged when there is uncaught exception in executing request
+UncaughtExceptioniteratePageMethods=Exception found in iterating page method %1 in workspace %2
+ ;Message logged when exception is encountered while iterating get methods
+UncaughtExceptioniterateActionMethods=Exception found in iterating action method %1 in workspace %2
+ ;Message logged when exception is encountered while iterating put methods
+SamePageAlreadyExists=Page %1 already exists in workspace %2
+ ;Message logged when page already exists in workspace
+SameActionAlreadyExists=Action %1 already exists in workspace %2
+ ;Message logged when action already exists in workspace
+FailedInAppCallClientMessage=Error occured in application code
+ ;Message shown in mobile client if error occured while calling application code
+FailedInAppCallInfoLogMessage=Exception while calling %1 method of workspace %2
+ ;Message logged when exception occured while calling application code

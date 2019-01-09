@@ -1,0 +1,152 @@
+NewLabel0=Etikettfiler skapades kl. 13:27:47 2014-05-29 för etikettfils-ID CurrencyExchange och språket en-US
+ ;Label file comment - see above label
+ConversionFactor=Konverteringsfaktor
+ ;Exchange rate conversion factor
+ExchangeValue=Valutavärde
+ ;Exchange rates exchange value
+TriangulationCurrencies=Trianguleringsvalutor
+ ;New Comment
+AddRemoveExchangeRates=Lägg till eller ta bort valutakurser
+ ;New Comment
+TmpExchangeRatesDevDoc=Registret TmpExchangeRates innehåller tillfälliga poster som används vid visningen av formuläret ExchangeRates.
+ ;New Comment
+ExchangeRateEntityDevDoc=The ExchangeRateEntity data entity is used to store exchange rates for a currency pair and a rate type.
+ ;{locked}Exchange rate entity developer documentation
+ExchangeRateStagingDevDoc=Mellanlagringsregistret ExchangeRateEntity används för att importera och exportera valutakurser för ett valutapar och en kurstyp.
+ ;Exchange rate stating table developer documentation
+InvalidExchangeRate=Det gick inte att importera valutakursen för valutaparet {0} och {1}. Kontakta din leverantör för att få hjälp eller ange en växelkurs för {2} manuellt.
+ ;Exchange rate provider error in C#
+ISONameCubanConvertiblePeso=Kubanska konvertibla peso
+ ;ISO Currency Name
+ISONameTurkmenistanNewManat=Turkmenistanska nya manat
+ ;ISO Currency Name
+ISONameZambianKwacha=Zambiska kwacha
+ ;ISO Currency Name
+ExchangeRateImport=Importera valutakurser
+ ;Entity privilege level
+ExchangeRateExport=Exportera valutakurser
+ ;Entity privilege level
+Supplemental_CurrencyImport=Importera valutor
+ ;Entity privilege level
+Supplemental_CurrencyExport=Exportera valutor
+ ;Entity privilege level
+Currency_MessageDeveloper_UpdateCurrencyPair=Updating currency pair from currency %1 to currency %2
+ ;{Locked}
+Currency_MessageDeveloper_AddNewRate=Adding new exchange rate %1 valid from %2 from currency %3 to currency %4
+ ;{Locked}
+Currency_MessageDeveloper_ActivateProvider=Activating exchange rate provider {0}
+ ;{Locked}
+Currency_MessageDeveloper_SearchingAssembly=Searching for exchange rate providers in assembly {0}
+ ;{Locked}
+Currency_EntityEnum_EntityName=Valutor
+ ;Entity name
+Currency_EntityDeveloper_CurrencyEntityDevDoc=The CurrencyEntity entity contains the currencies that are used in the application for foreign exchange. Exchange rates are created based on these currencies.
+ ;{Locked}
+Currency_EntityField_CurrencyCode=Valutakod
+ ;CurrencyEntity field name.
+Currency_EntityLabel_CurrencyRevaluationAccountLabel=Valutaomvärderingskonto
+ ;Label for CurrencyRevaluationAccountEntity
+Currency_EntityDeveloper_CurrencyRevaluationAccountEntityDevDoc=The CurrencyRevaluationAccountEntity entity contains the gain loss account for individual currencies.
+ ;{Locked}
+Currency_EntityFieldLabel_RoundingRuleFixedAssetDepreciation=Avrundningsregel för avskrivning av anläggningstillgångar
+ ;CurrencyEntity field label
+Currency_EntityFieldLabel_RoundingMethodFixedAssetDepreciation=Avrundningsmetod för avskrivning av anläggningstillgångar
+ ;CurrencyEntity field label
+Currency_EntityFieldLabel_RoundingMethodPrices=Prisavrundningsmetod
+ ;CurrencyEntity field label
+Currency_EntityFieldLabel_RoundingMethodPurchaseOrders=Avrundningsmetod för inköpsorder
+ ;CurrencyEntity field label
+Currency_EntityFieldLabel_RoundingMethodSalesOrders=Avrundningsmetod för försäljningsorder
+ ;CurrencyEntity field label
+Currency_EntityFieldLabel_RoundingRulePrices=Prisavrundningsregel
+ ;CurrencyEntity field label
+Currency_EntityFieldLabel_RoundingRulePurchaseOrders=Avrundningsregel för inköpsorder
+ ;CurrencyEntity field label
+Currency_EntityFieldLabel_RoundingRuleSalesOrders=Avrundningsregel för försäljningsorder
+ ;CurrencyEntity field label
+EntitiesMaintainDuty=Underhåll valutaenhetsmallen
+ ;Maintain Currency entities duty.
+EntitiesViewDuty=Visa valutaenhetsmallen
+ ;View Currency entities duty.
+Currency_EntityMessage_RateMustBePositive=Valutakursen måste vara större än noll
+ ;ExchangeRateEntity set based error message.
+Currency_EntityTitle=Valutakurser
+ ;ExchangeRateEntity title.
+Currency_EntityMessage_InvalidCurrency=Den angivna valutan är inte giltig
+ ;ExchangeRateEntity error.
+Currency_EntityMessage_MissingRate=Det finns ingen valutakurs för valutakurstypen %1 mellan den valutorna %2 och %3 på valutakursdatumet %4. Kontakta systemadministratören för att lösa felet.
+ ;Set based error message.
+Currency_EntityLabel_ExchangeRateTypeLabel=Valutakurstyp
+ ;Label for ExchangeRateTypeEntity
+Currency_EntityDeveloper_ExchangeRateTypeEntityDevDoc=The ExchangeRateTypeEntity entity stores exchange rate types that allow exchange rates to be categorized.
+ ;{Locked}
+Currency_ConfigField_ServiceTimeout=Service Timeout
+ ;{Locked}
+Currency_ConfigField_OandaName=Foreign Exchange Rates Powered by OANDA
+ ;{Locked}
+Currency_ConfigField_OandaAPIKey=API key
+ ;{Locked}
+Currency_FieldTitle_Value=Värde
+ ;Exchange rate provider configuration value field title.
+Currency_ConfigField_DecimalPlaces=Decimal places
+ ;{Locked}
+Currency_ConfigMessage_DecimalPlacesInvalid=Antalet decimaler måste vara mellan 1 och 12
+ ;Decimal places validation error for OANDA exchange rate provider.
+Currency_ConfigMessage_OANDAKeyRequired=En giltig nyckel från OANDA krävs för att den här providern ska kunna importera valutakurser. 
+ ;Warning message for the OANDA exchange rate provider.
+Currency_ConfigField_QuoteType=Typ av notering
+ ;Quote type for OANDA provider.
+Currency_ConfigEnum_QuoteTypeAverageBid=Genomsnitt för sälj
+ ;Quote type average bid
+Currency_ConfigEnum_QuoteTypeAverageAsk=Genomsnitt för köp
+ ;Quote type average ask
+Currency_ConfigEnum_QuoteTypeMidpoint=Medel
+ ;Quote type midpoint
+Currency_ConfigEnum_QuoteTypeHighBid=Högsta sälj
+ ;Quote type high bid
+Currency_ConfigEnum_QuoteTypeHighAsk=Högsta köp
+ ;Quote type high ask
+Currency_ConfigEnum_QuoteTypeLowBid=Lägsta sälj
+ ;Quote type low bid
+Currency_ConfigEnum_QuoteTypeLowAsk=Lägsta köp
+ ;Quote type low ask
+Currency_ConfigEnum_QuoteTypePeriodAverageBid=Period - genomsnitt för sälj
+ ;Quote type average over time period.
+Currency_ConfigEnum_QuoteTypePeriodAverageAsk=Period - genomsnitt för köp
+ ;Quote type average over time period.
+Currency_ConfigField_SingleRateForDateRange=Enstaka kurs för datumintervall
+ ;exchange rate provider configuration option.
+Currency_EntityLabel_CurrencyISOCode=ISO-valutakoder
+ ;CurrencyISOCodeEntity label.
+Currency_EntityDeveloper_CurrencyISOCodeEntityDevDoc=The CurrencyISOCodeEntity entity contains the list of ISO Currency Codes that are supported in the application as defined by the International Organization for Standardization.
+ ;{Locked}
+Currency_ModuleName=Valuta
+ ;Displayed in upgrade.
+Currency_UpgradeStep=Kryptera värdefältet.
+ ;Upgrade step.
+Currency_ParameterGroup=Valuta
+ ;Field group caption for the SystemParameters form.
+Currency_TableFieldLabel_SystemParametersCurrencyCodeLabel=Systemvaluta
+ ;Label for the SystemCurrencyCode field on the SystemParameters table.
+Currency_TableFieldLabel_SystemParametersExchangeRateTypeLabel=Systemets valutakurstyp
+ ;Label for the SystemExchangeRateType field on the SystemParameters table.
+ExchangeRateCurrencyPairCalculationRulesEntityMaintain=Bibehåll beräkningsregler för valutakurs för momsenhet
+ ;Maintain privilege for ExchangeRateCurrencyPairCalculationRulesEntity
+ExchangeRateCurrencyPairCalculationRulesEntityView=Visa beräkningsregler för valutakurs för momsenhet
+ ;View privilege for ExchangeRateCurrencyPairCalculationRulesEntity
+Currency_Message_CurrencyRequiredForRounding=Du måste ange en valuta för avrundning.
+ ;Error from currency rounding API's
+Currency_Message_CurrencyRequiredForDecimals=Du måste ange en valuta för att kunna hämta antalet decimaler.
+ ;Error from currency rounding API's
+Currency_Message_CurrencyRequiredForRoundingPrecision=Du måste ange en valuta för att kunna hämta avrundningens noggrannhet.
+ ;Error from currency rounding API's
+Currency_ConfigField_PreventImportOnNationalHoliday=Förhindra import på helgdagar
+ ;Exchange rate provider configuration option.
+Currency_ConfigField_QuoteTypeLocked=Quote type
+ ;{Locked}
+Currency_Message_QuoteTypeMissing=Konfigurationsnyckeln Offerttyp för valutakursleverantören hittades inte. Klicka på Återställ värden och välj ett offerttypsvärde på sidan Ställ in valutakursleverantörer.
+ ;Exchange rate provider configuration error
+Currency_Message_StartDateAlreadyExists=Valutakursen går inte att lägga till, startdatumet finns redan. Ange ett startdatum som inte redan existerar.
+ ;Exchange rate error message
+Currency_Monetary_unit_declensions=Nedgång för monetär enhet
+ ;Monetary unit declensions

@@ -1,0 +1,4 @@
+Session=Session Date
+ ;tool tip for user session date
+Today=Today
+ ;Current Date

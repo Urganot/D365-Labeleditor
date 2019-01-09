@@ -1,0 +1,30 @@
+ValueLabel=Value
+ ;Value of the KPI
+TrendLabel=Trend
+ ;Trend of the KPI
+StatusLabel=Status
+ ;Status of the KPI
+ValueHelp=Value of the KPI
+ ;Help text for KPI value EDT
+TrendHelp=Trend of the KPI
+ ;Help text for KPI trend EDT
+StatusHelp=Status of the KPI
+ ;Help text for KPI status EDT
+PercentageChangeLabel=Percentage change
+ ;Percentage change of the KPI
+PercentageChangeHelp=Percentage change of the KPI
+ ;Help text for KPI percentage change EDT
+GoalLabel=Goal
+ ;Goal of the KPI
+GoalHelp=Goal of the KPI
+ ;Help text for KPI goal EDT
+LastRefreshedLabel=Last refreshed
+ ;Utc date time of last refresh
+LastRefreshedHelp=Last refreshed date and time of the KPI
+ ;Help text for KPI last refresh
+CategoryLabel=Category
+ ;Category of detail data
+KPIDetailCacheLabel=KPI detail cache
+ ;KPI detail cache
+DataLabel=Cached data
+ ;Cached data

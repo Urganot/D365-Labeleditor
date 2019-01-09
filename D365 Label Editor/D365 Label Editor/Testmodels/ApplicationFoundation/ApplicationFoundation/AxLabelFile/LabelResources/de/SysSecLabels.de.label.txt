@@ -1,0 +1,507 @@
+ActionButton_CloseConfigurationControl=Close view
+ActionButton_AddNewNode=Add
+ ;Add new childnodes in the security configuration tree control
+ActionButton_DeleteNode=Delete
+ ;Delete selected node(s) in the security configuration tree control
+ActionButton_CopyNode=Copy
+ ;Copy selected node in the security configuration tree control
+ActionButton_PasteNode=Paste
+ ;Paste copied node into the selected node on the security configuration tree control
+Group_Properties=Properties
+ ;Caption of the properties group in the security configuration control
+AccessGrant_Read=Read
+ ;Grant read access to a resource
+AccessGrant_Update=Update
+ ;Grant update access to a resource
+AccessGrant_Create=Create
+ ;Grant create access to a resource
+AccessGrant_Delete=Delete
+ ;Grant delete access to a resource
+Field_RoleContextString=Security policy context string
+ ;Link XDS policy context string on a role
+Field_ObjectName=Name
+ ;Security object name
+Field_AccessGrant=Grant
+ ;Control for access grant permissions
+Field_ObjectDescription=Description
+ ;Security object description
+Title_SecurityConfiguration=Security configuration
+ ;Title on the security configuration form
+Title_SecurityDiagnostics=Security diagnostics
+ ;Title on the security diagnostics form
+ActionButton_Publish=Publish all
+ ;Caption publish button security configuration form.
+Title_SelectRoles=Select roles
+ ;Caption select roles dialog
+Title_SelectDuties=Select duties
+ ;Caption select duties dialog
+Title_SelectPrivileges=Select privileges
+ ;Caption select privileges dialog
+Tab_PublishActions=Publish actions
+ ;Caption publish buttons tab security configuration form
+Tab_TreeActions=Tree actions
+ ;Caption tree action pane security configuration form
+UnpublishedObjectsHelpText=List of objects that have been modified and changes can be published
+Field_ObjectDescription_Help=Description of the security object
+Field_ObjectIdentifier=Identifier
+ ;Do not show idenfier in UX
+Field_ObjectIdentifier_Help=Identifier for security object. This is AOT Name for metadata and GUID for objects created in database
+Field_ObjectName_Help=Name of the security object
+Table_SysSecDutyLookup=Duties
+Table_SysSecPrivilegeLookup=Privileges
+Table_SysSecRoleLookup=Roles
+Table_SysSecUnpublishedObjects=Unpublished objects
+MenuItem_SysSecConfiguration=Security configuration
+AccessGrant_Invoke=Invoke
+ ;Grant invoke access to a resource
+Field_IntegrationMode=Integration mode
+ ;Enum selection for entity integration mode
+EnumValue_AccessGrant_Unset=Unset
+EnumValue_AccessGrant_Grant=Grant
+EnumValue_AccessGrant_Deny=Deny
+EnumValue_IntegrationMode_All=All
+EnumValue_IntegrationMode_DataServices=Data services
+EnumValue_IntegrationMode_DataManagement=Data Management
+Table_TmpList=Node list mapping table
+CloseForm_UnpublishedObjectsRemaining=There are %1 objects that have not been published. Continue close form?
+Table_Title_Unassigned=N/A
+ ;Header for grid column when table is unassigned
+Title_SelectObjects=Select objects
+ ;Title in add references dialog
+Group_Properties_AddReferencesDialog=Select properties
+Table_SysSecObjectLookup=Select objects
+ActionButton_CreateNewTypeAndAddAsReferenceNode=Create new and add reference
+ActionButton_CollapseMode_ShowAll=Show all levels
+ ;Enable auto-collapsing of columns in the security configuration form
+ActionButton_CollaposeMode_Help=Keep a fixed number of columns visible on the form
+TabHeader_UnPublishedObjects=Unpublished objects (%1)
+Table_NodeReferences=References
+ ;References for object
+ActionButton_CollapseMode_RestrictView=Restrict hierarchy view to four levels
+ ;New Comment
+Field_SysSecType=Type
+ ;Enum for security type (Role, Duty or Privilege)
+Field_IsDeleted=Deleting
+CloseForm_UnpublishedObjectsRemaining_Singular=There is one object that has not been published. Continue close form?
+ActionButton_Publish_Selection=Publish selection
+Info_SegregationOfDuties_UnpublishedRolesCompliant=All unpublished roles are compliant with segregation of duties rules.
+Button_SegregationOfDuties_ValidateUnpublishedRoles=Validate segregation of duties rules for unpublished roles
+Button_Duplicate=Duplicate
+Table_DisabledObjects=Disabled objects
+Title_DisabledObjectsForm=Disabled security metadata objects
+MenuItem_SysSecDisabledObjects=Manage disabled objects
+Field_AOTName=AOT name
+ ;Identifier for metadata objects
+Button_EnableObjects=Enable selected object(s)
+SysSecDisabledObjects_Footer=This is the list of security objects that exist in metadata packages and have been explicitely disabled in the database.
+Field_Label=Label
+Button_Undo_Help=Undo last change for role, duty or privilege
+Button_Redo_Help=Redo last change for role, duty or privilege
+Button_Undo=Undo
+Button_Redo=Redo
+Button_EnableObjects_Help=Enabling an object restores it to the state based on metadata packages. No previous database customizations are restored.
+Sod_DuplicateName=Rule name '%1' is already in use.
+DebugTool_SecurableType_Table=Table
+DebugTool_SecurableType_TableField=Table Field
+DebugTool_SecurableType_DataEntity=Data entity
+DebugTool_SecurableType_FormDatasource=Form Data Source
+ActionButton_Publish_Help=Synchronize security metadata objects listed in grid with the database to make them available for user assignment.
+ActionButton_Publish_Selection_Help=Synchronize selected security metadata objects in grid with the database to make them available for user assignment.
+ActionButton_SynchronizeAll=Synchronize all
+ActionButton_AddReference=Add Reference
+ActionButton_SynchronizeAll_Help=Synchronize all security metadata objects with the database to make them available for user assignment.
+ActionButton_Repair=Repair
+ActionButton_Repair_Help=Re-build indexed data for optimal runtime performance.
+ActionPaneTab_Sod=Segregation of duties
+ActionPaneTab_Data=Data
+Button_ViewRelatedRoles=View related roles
+Button_ViewRelatedObjects=View permissions
+AccessGrant_Correct=Correct
+ ;Grant correct access to a resource
+Button_ObjectIdentifiersVisibility_Show=Show object identifiers
+RelatedObjects_Field_RoleIdentifier=Role identifier
+RelatedObjects_Field_RoleName=Role
+RelatedObjects_Field_SubRoleIdentifier=Sub role identifier
+RelatedObjects_Field_SubRoleName=Sub role
+RelatedObjects_Field_DutyIdentifier=Duty identifier
+RelatedObjects_Field_DutyName=Duty
+RelatedObjects_Field_PrivilegeIdentifier=Privilege identifier
+RelatedObjects_Field_PrivilegeName=Privilege
+RelatedObjects_Field_ResourceType=Resource type
+RelatedObjects_Field_ResourceName=Context \\ Resource
+Button_ObjectIdentifiersVisibility_Hide=Hide object identifiers
+ErrorMessage_ExceptionDataProcessing=Error occured processing data. Please try again.
+ActionButton_CreateNew=Create new
+Button_RemoveCustomizations=Remove customizations
+Button_RemoveCustomizations_help=Remove customizations will restore security back to the metadata baseline. All objects created and customized using the system administration form are removed.
+Button_ImportCustomizations=Import
+Button_ImportCustomizations_help=Allows importing the security data customizations from another environment into this database.
+Button_ExportCustomizations=Export
+Button_ExportCustomizations_help=Exports the customizations that exists in the database.
+ResetCustomizations_Warning=This action removes all security metadata customizations in the database and resets this environment to the baseline metadata packages. We strongly recommend to export before performing this action. Do you want to proceed?
+InfoMessage_FileImportSuccessfully=File has been successfully imported.
+ErrorMessage_FileUploadFailure=No file was uploaded or file is empty
+ErrorMessage_ImportFailure=Error occured during import.
+ErrorMessage_ResetRepositoryFailure=Error occured during reset.
+SecurityCustomizationExportFileName=SecurityDatabaseCustomizations
+ ;file name for security metadata customizations export
+ObjectEventsForm_Caption=Audit trail
+SystemSecurityUserRoleAssociationEntityLabel=Security user role association
+ ;Entity label
+SystemSecuritySegregationOfDutiesRulesEntityLabel=Security segregation of duties rule
+ ;Entity label
+SystemSecuritySodRuleEntityMaintain=Maintain segregation of duties rule entity
+ ;Privilege label
+SystemSecuritySodRuleEntityView=View segregation of duties rule entity
+ ;Privilege label
+SystemSecurityUserRoleAssociationEntityMaintain=Maintain security user role association entity
+ ;Privilege label
+SystemSecurityUserRoleAssociationEntityview=View security user role association entity
+ ;Privilege label
+SystemSegregationOfDutiesConflictEntityLabel=Security segregation of duties conflict
+ ;Entity label
+SystemSecuritySodConflictEntityMaintain=Maintain segregation of duties conflict entity
+ ;Privilege label
+SystemSecuritySodConflictEntityView=View segregation of duties conflict entity
+ ;Privilege label
+SystemUserEntityMaintain=Maintain users entity
+ ;Privilege label
+SystemUserEntityView=View users entity
+ ;Privilege label
+SystemSecurityRoleMetadataCustomizationsEntityLabel=Security role metadata customizations entity
+ ;Entity label
+MetadataCustomizationImportError=Error occured during import metadata customization.
+SystemUserEntityRoleIdentifierField=Role Identifier
+ ;Type label
+SystemSecurityDutyMetadataCustomizationsEntityLabel=Security duty metadata customizations entity
+ ;Entity label
+SystemSecurityRoleCustomizationsEntityMaintain=Maintain security role metadata customizations entity
+ ;Privilege label
+SystemSecurityDutyCustomizationsEntityMaintain=Maintain security duty metadata customizations entity
+ ;Privilege label
+SystemSecurityPrivilegeMetadataCustomizationsEntityLabel=Security privilege metadata customizations entity
+ ;Entity label
+SystemSecurityPrivilegeCustomizationsEntityMaintain=Maintain security privilege metadata customizations entity
+ ;Privilege label
+SystemEntityImportPublishMissingDependenciesWarning=The imported security metadata customizations did not get completely published to the security kernel tables, there are missing dependencies. Proceed with importing security entities or open the security configuration form and review the unpublished objects.
+SystemEntityImportPublishSystemError=An error occured publishing imported security metadata customizations to the security kernel tables.
+SystemSodRuleEntityFirstDutyIdentifierField=First duty identifier
+ ;Entity field
+SystemSodRuleEntityFirstDutyNameField=First duty name
+ ;Entity field
+SystemSodRuleEntitySecondDutyIdentifierField=Second duty identifier
+ ;Entity field
+SystemSodRuleEntitySecondDutyNameField=Second duty name
+ ;Entity field
+SystemSodConflictEntityExistingRoleIdentifierField=Existing role identifier
+ ;Entity field
+SystemSodConflictEntityExistingRoleNameField=Existing role name
+ ;Entity field
+SystemSodConflictEntityExistingDutyIdentifierField=Existing duty identifier
+ ;Entity field
+SystemSodConflictEntityExistingDutyNameField=Existing duty name
+ ;Entity field
+SystemSodConflictEntityNewRoleIdentifierField=New role identifier
+ ;Entity field
+SystemSodConflictEntityNewRoleNameField=New role name
+ ;Entity field
+SystemSodConflictEntityNewDutyIdentifierField=New duty identifier
+ ;Entity field
+SystemSodConflictEntityNewDutyNameField=New duty name
+ ;Entity field
+SystemSodConflictEntityRuleValidFrom=Rule valid from
+ ;Entity field
+SystemSodConflictEntityRuleValidTo=Rule valid to
+ ;Entity field
+SystemSodConflictEntityRuleName=Rule name
+ ;Entity field
+SysUserManagementPrivilegeLabel=User management service
+ ;Privilege label
+SysUserManagementPrivilegeDescription=Allows a user to make calls to AxUserManagement service
+ ;Privilege description
+SystemSecurityUserRoleOrganizationEntityMaintain=Maintain system security user role organization entity
+ ;Privilege label
+SystemSecurityUserRoleOrganizationEntityView=View system security user role organization entity
+ ;Privilege label
+SystemSecurityUserRoleEntity=System security user role organization
+ ;Entity label
+OrganizationTypeNotAllowed=Organization type %1 is not allowed.
+ ;Entity validation messages
+HierarchyTypeNotAllowed=Hierarchy '%1' is only allowed for operating units.
+ ;Entity validation messages
+SysSecChangeType_Different=Different
+ ;Enum element label
+SysSecChangeType_Unique=Unique
+ ;Enum element label
+SysSecChangeType_Equal=Equal
+ ;Enum element label
+SysSecChangeType_Enum=Change type
+ ;Enum label
+SysSecCompareSide_Enum=Compare side
+ ;Enum label
+SysSecCompareSide_Both=Both
+ ;Enum element label
+SysSecCompareSide_Left=Left
+ ;Enum element label
+SysSecCompareSide_Right=Right
+ ;Enum element label
+SysSecRelatedObjects_AuditDataCaption=Audit data
+ ;Form caption when showing audit data
+MenuItem_SecSecObjectEvents=Audit data
+ ;Menu item label
+SysSecObjectEvents_ViewObjectsButton=View permissions
+ ;Button label on security objects event form
+SysSecObjectEvents_CompareEventsButton=Compare permissions
+ ;Button label on security objects event form
+SysSecRelatedObjectsCompare_Caption=Compare permissions
+ ;Caption on form
+ErrorMessage_SecurityConfigurationFormInit=A system failure occured initializing security configuration form. Please try again or contact your system administrator.
+ErrorMessage_SecurityConfigurationFormClose=A system failure occured while closing the security configuration form. Please contact your system administrator if this issue persists.
+ErrorMessage_InitializePublishService=A system failure occured while initializing security data publish service. Please try again or contact your system administrator.
+Title_SelectRolesForDuty=Select the roles below to add the duty %1.
+ ;Select the roles below to add the duty
+Title_SelectDutiesForPrivilege=Select the duties below to add the privilege %1.
+ ;Select the duties below to add the privilege
+Table_SysSecSecurityObjects=Security Objects
+ ;Security Objects including roles, duties and privileges
+InfoMessage_PrivilegeAdded=Privilege is successfully added to the selected roles.
+ ;Privilege is successfully added to the selected roles.
+SysSecDiagnostics_Footer=This is the list of security objects that grant the active security entry point.
+ ;New Comment
+Info_DutyAddedToRoles=Duty is successfully added to the selected roles.
+ ;Duty is successfully added to the selected roles.
+Error_SegregationOfDuties=One or more segregation of duties rules were violated. Operation is cancelled.
+ ;Segregation of Duties violation
+Warning_RolesPublish=One or more roles did not get published. Please navigate to security configuration and re-publish.
+ ;Error during Publishing roles
+Warning_DutyNotAvailable=Duty %1 doesn't exist
+ ;Duty doesn't exist
+Warning_RoleNotAvailable=Role %1 doesn't exist
+ ;Role doesn't exist
+Title_SecurityContext=The permissions for Menu Item %1
+ ;The permissions for menu item
+Field_MenuItemName=Menu item name
+ ;Menu item name
+Field_MenuItemLabel=Menu item label
+ ;Menu item label
+Field_MenuItemType=Menu item type
+ ;Menu item type
+Field_MissingPermission=Missing permissions
+ ;Missing permissions yes or no0
+Title_SecurityDiagnosticsTR=Security diagnostics for task recordings
+ ;Security diagnostics for task recordings
+Button_AddRole=Add roles to user
+ ;Add roles to user
+Button_AddDuty=Add duty to roles
+ ;Add duty to roles
+Button_AddPrivilege=Add privilege to duties
+ ;Add privilege to duties
+RelatedObjects_Field_LicenseWarning=License unknown
+ ;Column header to indicate that the license is set to None because the menu item does not exists or corrupt metadata.
+WarningMessage_FailureToUpdateRoleLicenses=An error occured updating the licenses for published roles. Please synchronize security roles using the 'synchronize all' function on the security configuration form or save configuration again.
+ErrorMessage_FailureToComputeLicenses=An error occured updating role licenses. Please try again or contact your system administrator.
+AddRolesForm_Copy_checkbox_IncludeOrganizations=Include organizations
+ ;Option to include user role organizations when copying user role assignments
+SecUI_Caption_NewRoleName=Enter new role name
+ActionMenuItemTypeCollectionNode=Action menu items
+AddActionMenuItemReferencesDialogCaption=Select action menu items
+AddButtonDefaultLabel=Add
+AddButtonReferenceCollectionNodeLabel=Add references
+AddButtonTypeCollectionNodeLabel=Create new
+AddDataModelReferencesDialogCaption=Select tables or views
+AddDataSourceFieldReferencesDialogCaption=Override entry point grant to data source fields for form '{0}' data source '{1}'
+ ;should not be used in X++
+AddDataSourceReferencesDialogCaption=Override entry point grant to data sources for form '{0}'
+ ;should not be used in X++
+AddDisplayMenuItemReferencesDialogCaption=Select display menu items
+AddEntityFieldReferencesDialogCaption=Select fields for entity '{0}'
+ ;should not be used in X++
+AddEntityMethodReferencesDialogCaption=Select methods for entity '{0}'
+ ;should not be used in X++
+AddEntityReferencesDialogCaption=Select entities
+AddOutputMenuItemReferencesDialogCaption=Select output menu items
+AddReferenceSkippedWarning=Reference to '{0}' was already added and has been skipped. Please refresh your view.
+ ;should not be used in X++
+AddSecuredControlsReferencesDialogCaption=Override entry point grant to secured controls for form '{0}'
+ ;should not be used in X++
+AddServiceOperationReferencesDialogCaption=Select service operations
+AddTableFieldReferencesDialogCaption=Select fields for table '{0}'
+ ;should not be used in X++
+AddViewFieldReferencesDialogCaption=Select fields for view '{0}'
+ ;should not be used in X++
+AskNewDutyNameCaption=Enter new duty name
+AskNewDutyNameForCopyCaption=Enter new duty name for copy of '{0}'
+ ;should not be used in X++
+AskNewDutyNameToReferenceOnPrivilegeCaption=Enter new duty name to reference on privilege {0}
+ ;should not be used in X++
+AskNewDutyNameToReferenceOnRoleCaption=Enter new duty name to reference on role {0}
+ ;should not be used in X++
+AskNewPrivilegeNameCaption=Enter new privilege name
+AskNewPrivilegeNameForCopyAction=Enter new privilege name for copy of '{0}'
+ ;should not be used in X++
+AskNewPrivilegeNameToReferenceOnDutyCaption=Enter new privilege name to reference on duty '{0}'
+ ;should not be used in X++
+AskNewPrivilegeNameToReferenceOnRoleCaption=Enter new privilege name to reference on role '{0}'
+ ;should not be used in X++
+AskNewRoleNameForCopyCaption=Enter new role name for copy of '{0}'
+ ;should not be used in X++
+AskNewRoleNameToReferenceAsParentRoleCaption=Enter new role name to reference on role '{0}' as parent role
+ ;should not be used in X++
+AskNewRoleNameToReferenceAsSubRoleCaption=Enter new role name to reference on role '{0}' as sub role
+ ;should not be used in X++
+AskNewRoleNameToReferenceOnDutyCaption=Enter new role name to reference on duty {0}
+ ;should not be used in X++
+AskNewRoleNameToReferenceOnPrivilegeCaption=Enter new role name to reference on privilege {0}
+ ;should not be used in X++
+DataSourceAllowCreate=AllowCreate
+DataSourceAllowDelete=AllowDelete
+DataSourceAllowEdit=AllowEdit
+DeleteButtonDefaultLabel=Delete
+DeleteButtonReferenceNodeLabel=Remove reference(s)
+DeleteReferences=References exists to '{0}'. Do you want to proceed and remove all references?
+ ;should not be used in X++
+DirectAccessPermissionsNodeLabel=Tables
+DisplayMenuItemTypeCollectionNode=Display menu items
+DutiesLabel=Duties
+EntityPermissionsFieldNodeLabel=Fields
+EntityPermissionsMethodNodeLabel=Methods
+EntityPermissionsNodeLabel=Entities
+FormControlGrantsNodeLabel=Controls
+FormControlNameFormat={0} [Needed Permission: {1}]
+ ;0 = control name, 1 = NeededPermission value, should not be used in X++
+FormDataSourceGrantsNodeLabel=Data sources
+FormGrantsNodeLabel=Forms
+MenuItemTypeCollectionNode=Menu items
+MetadataReferenceNoLongerExists=The metadata reference no longer exists.
+NeededPermission_Correct=Correct
+NeededPermission_Create=Create
+NeededPermission_Delete=Delete
+NeededPermission_Manual=Manual
+NeededPermission_None=None
+NeededPermission_Read=Read
+NeededPermission_Update=Update
+OutputMenuItemTypeCollectionNode=Output menu items
+ParentRolesLabel=Parent roles
+PrivilegesLabel=Privileges
+Publish_Error_DependentDutyMissing=Duty "{0}" has not been published and is dependent.
+ ;should not be used in X++
+Publish_Error_DependentPrivilegeMissing=Privilege "{0}" has not been published and is dependent.
+ ;should not be used in X++
+Publish_Error_DependentRoleMissing=Role "{0}" has not been published and is dependent.
+ ;should not be used in X++
+Publish_Error_MissingDependencies=Publish all failed. There are missing dependent objects that are not published.
+Publish_Error_SelectionMissingDependencies=Selection cannot be published as there are missing unpublished dependent objects.
+ReadObjectNoLongerExists=The object you are trying to view no longer exists. Please refresh your view.
+ReferenceNoLongerExists=The reference you are trying to update no longer exists. Please refresh your view.
+RolesLabel=Roles
+RootNodeLabel=Security
+SegregationOfDutiesViolationError=Role "{0}" is in violation of segregation of duties rule "{1}": The role contains duties "{2}" and "{3}".
+ ;should not be used in X++
+SelectReferenceNoLongerExists=The reference '{0}' no longer exists. Please refresh your view.
+ ;should not be used in X++
+ServiceOperationsPermissionsNodeLabel=Service operations
+SubRolesLabel=Sub roles
+UpdateObjectNoLongerExists=The object you are trying to update no longer exists. Please refresh your view.
+DutiesNodeHelpText= 
+PrivilegesNodeHelpText= 
+RolesNodeHelpText= 
+RootNodeHelpText= 
+AssignRoleRestricted=Role {0} assignment is restricted.
+ ;should not be used in X++
+Create=Create
+Delete=Delete
+DeleteIntegrity=Cannot delete {0} as it is referenced by other objects.
+ ;should not be used in X++
+DeleteInvalidState=Object is marked for update or create and can no longer be set to delete.
+DutyLabel=Duty name
+DutyName=Duty (AOT name)
+EntryPoint=Entry point
+InvalidImportDataException=Security customization data cannot be loaded. Please contact your system administrator.
+InvalidTypeException=Types need to be identical.
+Invoke=Invoke
+NameInUse=The name {0} is already in use.
+ ;should not be used in X++
+NestedTransactionNotSupported=Nested transactions are not supported.
+ObjectInReadOnlyState=Object is in read only state.
+PrivilegeLabel=Privilege name
+PrivilegeName=Privilege (AOT name)
+Read=Read
+ResourceName=Resource (AOT name)
+ResourceType=Resource type
+RoleDeleteNotAllowed={0} is a system role that can not be removed.
+ ;should not be used in X++
+RoleGraphCyclicalReference=Cannot add role {0} as sub-role for role {1} as that would create circular reference.
+ ;should not be used in X++
+RoleGraphCyclicalReferenceDetected=Circular reference detected in role graph.
+RoleLabel=Role name
+RoleName=Role (AOT name)
+RoleUpdateNotAllowed={0} is a system role that can not be updated.
+ ;should not be used in X++
+SubRoleLabel=Sub role name
+SubRoleName=Sub role (AOT name)
+TransactionAlreadyCommitted=Transaction has already been committed. Please start a new transaction.
+TransactionLockException=Could not acquire lock to repository. Try again or contact your system administrator if this issue persists.
+TransactionTimeOut=The database transaction timed out.
+TransactionWithinApplTransaction=Security repository changes within an active application transaction is not supported.
+UnknownObjectIdentifier=Could not find object with identifier {0}.
+ ;should not be used in X++
+UnknownObjectIdentifierException=Unknown object identifier.
+Update=Update
+UpdateInvalidState=Object is marked for create or delete and can no longer be set to update.
+UserIdRequired=User ID is required to make changes to security repository.
+Error_ProcessingTaskRecorder=Error processing task recorder for menu items.
+ ;Error processing task recorder for menu items.
+DebugTool_SecurableType_DataEntityAction=Data entity action
+ ;New Comment
+Title_SecurityEntryPointsTR=Security menu item details
+ ;Menu item details for the selected task recording.
+RelatedObjects_Field_LicenseConfigurationAgnostic=License when configuration key is on
+Form_GroupManagement_Title=Groups
+MenuItem_GroupManagement_Page=Groups
+Form_GroupManagement_DetailsHeader=Group details
+Form_GroupManagement_RoleAssignmentHeader=Group's roles
+Tile_GroupManagement=Manage groups
+Form_GroupManagement_NewUserOptionsGroup=Preferences for new user
+MenuItem_SysSecPartRolesForGroup=Roles for group
+GroupManagement_ID=ID
+ ;ID for active directory groups (uniqueness shared with User ID)
+GroupManagement_Name=Name
+ ;Name for active directory group
+EDT_SysActiveDirectoryGroupName_Label=Name
+Field_SysActiveDirectoryGroupTmp_ObjectID=Object ID
+MenuItem_SysActiveDirectoryGroupImport=Import groups
+SysActiveDirectoryGroupImport_GroupsLabel=Azure Active Directory security groups
+SysActiveDirectoryGroupImport_ImportFailure=Import groups failed. Try again or contact your system administrator if this issue persists.
+SysActiveDirectoryGroupImport_NoGroupsSelected=Select one or more groups to import.
+BatchJobDescription_SysActiveDirectoryGroupSynchronization=Synchronize groups
+MenuItem_SysActiveDirectoryGroupSynchronization=Synchronize
+MenuItem_SysActiveDirectoryGroupSynchronization_HelpText=Synchronizes group names and disables groups that no longer exist in Active Directory.
+Entity_SystemGroupEntity_Label=Active Directory Security groups
+FormControl_SysSecUserAddRoles_CustomFilter=Copy settings from user or group
+FormControl_SysSecUserAddRoles_staticHeader_Group=Select additional roles to assign to this group
+SysSecUserAddRoles_Caption_Group=Assign roles to group
+SysActiveDirectoryGroupImport_GroupAlreadyImported=Group '%1' is already imported.
+SysActiveDirectoryGroupImport_UserIdInUse=User with ID '%1' already exists.
+SystemGroupEntityMaintain=Maintain groups entity
+SystemGroupEntityView=View groups entity
+Privilege_SysGroupMaintain_Label=Create or update groups in the system
+Privilege_SysGroupMaintain_Description=Use active directory security groups to assign roles to a group of users
+SystemGroupEntity_Field_ObjectID=Azure Active Directory object identifier
+GroupSynchronizationCompleteMsg=Group synchronization completed.
+SysSecurityDynamicRoleAssignmentService_Description=Update automatic role assignments and process changes in organizations or role assignment restrictions.
+SysUserMSODSUserImport_HeaderText_DataLoading=Retrieving users from Azure Active Directory.
+SystemSecuritySubRoleEntity=System Security Sub Role
+ ;Entity label
+SystemSecurityDutyEntity=System Security Duty
+ ;Entity label
+SystemSecurityPrivilegeEntity=System Security Privilege
+ ;Entity label
+SystemSecurityPermissionsEntity=System Security Permissions
+ ;Entity label
+SysUserMSODSUserImport_HeaderText_DataLoading_AAD=Retrieving users from Azure Active Directory.
+SysUserMSODSUserImport_HeaderText_DataLoading_AD=Retrieving users from Active Directory.
+SysActiveDirectoryGroupImport_ADGroupsLabel=Active Directory security groups
+SystemSecurityUserRoleDutyPrivilegeEntityMaintain=Maintain system security user role duty privilege entity
+ ;Privilege label
+SystemSecurityUserRoleDutyPrivilegeEntityView=View system security user role duty privilege entity
+ ;Privilege label

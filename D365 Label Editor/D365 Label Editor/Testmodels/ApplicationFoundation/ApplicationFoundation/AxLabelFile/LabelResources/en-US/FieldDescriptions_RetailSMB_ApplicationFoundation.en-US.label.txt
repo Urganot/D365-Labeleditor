@@ -1,0 +1,2 @@
+BatchJobHistory_JobHistoryGroup_OrigStartDateTime=Date and time at which the batch job was scheduled to run.
+ ;Description text for the JobHistoryGroup_OrigStartDateTime control on the BatchJobHistory form

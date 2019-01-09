@@ -1,0 +1,22 @@
+NewLabel0=Label files created on 10/20/2015 14:59:55 for label file Id PowerBIClient and language en-US
+ ;Label file comment - see above label
+LoginPowerBI=Login to Power BI
+ ;Button caption
+PowerBIFirstTimeExperienceAdvertisement=Connect your Power BI account for immediate access to your favorite reporting visualizations right here in Dynamics 365 for Finance and Operations.\r\n
+ ;Instruction text
+PowerBIGetStarted=Get started
+ ;Button caption
+AddTiles=Add / remove Power BI tiles
+ ;Button caption
+HidePowerBI=Don't show anymore
+ ;Button caption
+ResizeLarger=Resize larger
+ ;Button caption
+ResizeSmaller=Resize smaller
+ ;Button caption
+Remove=Remove
+ ;Button caption
+PowerBINoControlsFound=No Power BI tiles found
+ ;Form slider caption
+ShowPowerBIControl=Allow Power BI control
+ ;Checkbox label on the SysGenBlankWorkspaceOptions
