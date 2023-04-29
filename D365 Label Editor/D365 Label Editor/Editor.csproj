@@ -8,7 +8,7 @@
     <OutputType>WinExe</OutputType>
     <RootNamespace>AVA_LabelEditor</RootNamespace>
     <AssemblyName>D365 Labeleditor</AssemblyName>
-    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <WarningLevel>4</WarningLevel>
@@ -31,6 +31,9 @@
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
     <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -79,65 +82,66 @@
     <ApplicationManifest>app.manifest</ApplicationManifest>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="AutoUpdater.NET, Version=1.4.9.0, Culture=neutral, PublicKeyToken=501435c91b35f4bc, processorArchitecture=MSIL">
-      <HintPath>..\packages\Autoupdater.NET.Official.1.4.9\lib\net452\AutoUpdater.NET.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="AutoUpdater.NET, Version=1.8.0.0, Culture=neutral, PublicKeyToken=501435c91b35f4bc, processorArchitecture=MSIL">
+      <HintPath>..\packages\Autoupdater.NET.Official.1.8.0\lib\net45\AutoUpdater.NET.dll</HintPath>
     </Reference>
-    <Reference Include="DeltaCompressionDotNet, Version=1.1.0.0, Culture=neutral, PublicKeyToken=1d14d6e5194e7f4a, processorArchitecture=MSIL">
-      <HintPath>..\packages\DeltaCompressionDotNet.1.1.0\lib\net20\DeltaCompressionDotNet.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="DeltaCompressionDotNet.MsDelta, Version=1.1.0.0, Culture=neutral, PublicKeyToken=46b2138a390abf55, processorArchitecture=MSIL">
-      <HintPath>..\packages\DeltaCompressionDotNet.1.1.0\lib\net20\DeltaCompressionDotNet.MsDelta.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="DeltaCompressionDotNet.PatchApi, Version=1.1.0.0, Culture=neutral, PublicKeyToken=3e8888ee913ed789, processorArchitecture=MSIL">
-      <HintPath>..\packages\DeltaCompressionDotNet.1.1.0\lib\net20\DeltaCompressionDotNet.PatchApi.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="DeltaCompressionDotNet, Version=2.0.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\DeltaCompressionDotNet.2.0.1\lib\net20\DeltaCompressionDotNet.dll</HintPath>
     </Reference>
     <Reference Include="Gat.Controls.AboutBox, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\AboutBox.2.0.0\lib\net451\Gat.Controls.AboutBox.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Mono.Cecil, Version=0.9.6.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756, processorArchitecture=MSIL">
-      <HintPath>..\packages\Mono.Cecil.0.9.6.1\lib\net45\Mono.Cecil.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="Microsoft.Web.WebView2.Core, Version=1.0.1722.45, Culture=neutral, PublicKeyToken=2a8ab48044d2601e, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Web.WebView2.1.0.1722.45\lib\net45\Microsoft.Web.WebView2.Core.dll</HintPath>
     </Reference>
-    <Reference Include="Mono.Cecil.Mdb, Version=0.9.6.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756, processorArchitecture=MSIL">
-      <HintPath>..\packages\Mono.Cecil.0.9.6.1\lib\net45\Mono.Cecil.Mdb.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="Microsoft.Web.WebView2.WinForms, Version=1.0.1722.45, Culture=neutral, PublicKeyToken=2a8ab48044d2601e, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Web.WebView2.1.0.1722.45\lib\net45\Microsoft.Web.WebView2.WinForms.dll</HintPath>
     </Reference>
-    <Reference Include="Mono.Cecil.Pdb, Version=0.9.6.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756, processorArchitecture=MSIL">
-      <HintPath>..\packages\Mono.Cecil.0.9.6.1\lib\net45\Mono.Cecil.Pdb.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="Microsoft.Web.WebView2.Wpf, Version=1.0.1722.45, Culture=neutral, PublicKeyToken=2a8ab48044d2601e, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Web.WebView2.1.0.1722.45\lib\net45\Microsoft.Web.WebView2.Wpf.dll</HintPath>
     </Reference>
-    <Reference Include="Mono.Cecil.Rocks, Version=0.9.6.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756, processorArchitecture=MSIL">
-      <HintPath>..\packages\Mono.Cecil.0.9.6.1\lib\net45\Mono.Cecil.Rocks.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="Mono.Cecil, Version=0.11.5.0, Culture=neutral, PublicKeyToken=50cebf1cceb9d05e, processorArchitecture=MSIL">
+      <HintPath>..\packages\Mono.Cecil.0.11.5\lib\net40\Mono.Cecil.dll</HintPath>
     </Reference>
-    <Reference Include="NuGet.Squirrel, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\squirrel.windows.1.9.0\lib\Net45\NuGet.Squirrel.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="Mono.Cecil.Mdb, Version=0.11.5.0, Culture=neutral, PublicKeyToken=50cebf1cceb9d05e, processorArchitecture=MSIL">
+      <HintPath>..\packages\Mono.Cecil.0.11.5\lib\net40\Mono.Cecil.Mdb.dll</HintPath>
     </Reference>
-    <Reference Include="SharpCompress, Version=0.17.1.0, Culture=neutral, PublicKeyToken=afb0a02973931d96, processorArchitecture=MSIL">
-      <HintPath>..\packages\SharpCompress.0.17.1\lib\net45\SharpCompress.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="Mono.Cecil.Pdb, Version=0.11.5.0, Culture=neutral, PublicKeyToken=50cebf1cceb9d05e, processorArchitecture=MSIL">
+      <HintPath>..\packages\Mono.Cecil.0.11.5\lib\net40\Mono.Cecil.Pdb.dll</HintPath>
     </Reference>
-    <Reference Include="Splat, Version=1.6.2.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Splat.1.6.2\lib\Net45\Splat.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="Mono.Cecil.Rocks, Version=0.11.5.0, Culture=neutral, PublicKeyToken=50cebf1cceb9d05e, processorArchitecture=MSIL">
+      <HintPath>..\packages\Mono.Cecil.0.11.5\lib\net40\Mono.Cecil.Rocks.dll</HintPath>
     </Reference>
-    <Reference Include="Squirrel, Version=1.9.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\squirrel.windows.1.9.0\lib\Net45\Squirrel.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="SharpCompress, Version=0.33.0.0, Culture=neutral, PublicKeyToken=afb0a02973931d96, processorArchitecture=MSIL">
+      <HintPath>..\packages\SharpCompress.0.33.0\lib\net462\SharpCompress.dll</HintPath>
+    </Reference>
+    <Reference Include="Splat, Version=14.6.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Splat.14.6.8\lib\netstandard2.0\Splat.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Management" />
+    <Reference Include="System.Memory, Version=4.0.1.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.5.5\lib\net461\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.6.0.0\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Text.Encoding.CodePages, Version=7.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Text.Encoding.CodePages.7.0.0\lib\net462\System.Text.Encoding.CodePages.dll</HintPath>
+    </Reference>
     <Reference Include="System.Web" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
@@ -152,13 +156,11 @@
     <Reference Include="WindowsBase" />
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
-    <Reference Include="WPFLocalizeExtension, Version=3.0.1.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\WPFLocalizeExtension.3.1.2\lib\net35\WPFLocalizeExtension.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="WPFLocalizeExtension, Version=3.10.0.0, Culture=neutral, PublicKeyToken=c726e0262981a1eb, processorArchitecture=MSIL">
+      <HintPath>..\packages\WPFLocalizeExtension.3.10.0\lib\net452\WPFLocalizeExtension.dll</HintPath>
     </Reference>
-    <Reference Include="XAMLMarkupExtensions, Version=1.2.2.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\XAMLMarkupExtensions.1.3.0\lib\net40\XAMLMarkupExtensions.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="XAMLMarkupExtensions, Version=2.1.3.0, Culture=neutral, PublicKeyToken=c726e0262981a1eb, processorArchitecture=MSIL">
+      <HintPath>..\packages\XAMLMarkupExtensions.2.1.3\lib\net48\XAMLMarkupExtensions.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -317,15 +319,6 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>ShowDiff.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="Testmodels\ApplicationFoundation\ApplicationFoundation\AxLabelFile\LabelResources\en-US\DMF.en-US.label.resx" />
-    <EmbeddedResource Include="Testmodels\ApplicationFoundation\ApplicationFoundation\AxLabelFile\LabelResources\en-US\FieldDescriptions_RetailMain_ApplicationFoundation.en-US.label.resx" />
-    <EmbeddedResource Include="Testmodels\ApplicationFoundation\ApplicationFoundation\AxLabelFile\LabelResources\en-US\NumberSequence.en-US.label.resx" />
-    <EmbeddedResource Include="Testmodels\ApplicationFoundation\ApplicationFoundation\AxLabelFile\LabelResources\en-US\PerformanceTimer.en-US.label.resx" />
-    <EmbeddedResource Include="Testmodels\ApplicationFoundation\ApplicationFoundation\AxLabelFile\LabelResources\en-US\PowerBIIntegration.en-US.label.resx" />
-    <EmbeddedResource Include="Testmodels\ApplicationFoundation\ApplicationFoundation\AxLabelFile\LabelResources\en-US\ProductFramework_KPI.en-US.label.resx" />
-    <EmbeddedResource Include="Testmodels\ApplicationFoundation\ApplicationFoundation\AxLabelFile\LabelResources\en-US\SysAppDesigner.en-US.label.resx" />
-    <EmbeddedResource Include="Testmodels\ApplicationFoundation\ApplicationFoundation\AxLabelFile\LabelResources\en-US\SysEmailReader.en-US.label.resx" />
-    <EmbeddedResource Include="Testmodels\ApplicationFoundation\ApplicationFoundation\AxLabelFile\LabelResources\en-US\SysExpressionBuilderControl.en-US.label.resx" />
     <None Include="app.manifest" />
     <None Include="packages.config" />
     <None Include="Properties\DataSources\Communication.CompositeType.datasource" />
@@ -333,7 +326,6 @@
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
-    <None Include="Testmodels\Currency\BuildModelResult.log" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config">
@@ -360,286 +352,18 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="logo.ico" />
-    <Resource Include="Testmodels\ApplicationFoundation\ApplicationFoundation\AxLabelFile\ApplicationFoundation_en-US.xml" />
-    <Resource Include="Testmodels\ApplicationFoundation\ApplicationFoundation\AxLabelFile\ApplicationFoundation_RecordCompare_en-US.xml" />
-    <Resource Include="Testmodels\ApplicationFoundation\ApplicationFoundation\AxLabelFile\ApplicationIntegration_en-US.xml" />
-    <Resource Include="Testmodels\ApplicationFoundation\ApplicationFoundation\AxLabelFile\AV_en-US.xml" />
-    <Resource Include="Testmodels\ApplicationFoundation\ApplicationFoundation\AxLabelFile\CalendarTable_en-US.xml" />
-    <Resource Include="Testmodels\ApplicationFoundation\ApplicationFoundation\AxLabelFile\Calendar_en-US.xml" />
-    <Resource Include="Testmodels\ApplicationFoundation\ApplicationFoundation\AxLabelFile\ColorPicker_en-US.xml" />
-    <Resource Include="Testmodels\ApplicationFoundation\ApplicationFoundation\AxLabelFile\DataExpTool_en-US.xml" />
-    <Resource Include="Testmodels\ApplicationFoundation\ApplicationFoundation\AxLabelFile\DMF_Labels_in_Language_EN-US.xml" />
-    <Resource Include="Testmodels\ApplicationFoundation\ApplicationFoundation\AxLabelFile\EntityStore_de.xml" />
-    <Resource Include="Testmodels\ApplicationFoundation\ApplicationFoundation\AxLabelFile\EntityStore_en-US.xml" />
-    <Resource Include="Testmodels\ApplicationFoundation\ApplicationFoundation\AxLabelFile\FieldDescriptions_AccountsPayable_ApplicationFoundation_en-US.xml" />
-    <Resource Include="Testmodels\ApplicationFoundation\ApplicationFoundation\AxLabelFile\FieldDescriptions_AccountsReceivable_ApplicationFoundation_en-US.xml" />
-    <Resource Include="Testmodels\ApplicationFoundation\ApplicationFoundation\AxLabelFile\FieldDescriptions_CommonMenu_ApplicationFoundation_en-US.xml" />
-    <Resource Include="Testmodels\ApplicationFoundation\ApplicationFoundation\AxLabelFile\FieldDescriptions_CostAccounting_ApplicationFoundation_en-US.xml" />
-    <Resource Include="Testmodels\ApplicationFoundation\ApplicationFoundation\AxLabelFile\FieldDescriptions_GeneralLedger_ApplicationFoundation_en-US.xml" />
-    <Resource Include="Testmodels\ApplicationFoundation\ApplicationFoundation\AxLabelFile\FieldDescriptions_OrganizationAdministration_ApplicationFoundation_en-US.xml" />
-    <Resource Include="Testmodels\ApplicationFoundation\ApplicationFoundation\AxLabelFile\FieldDescriptions_RetailMain_ApplicationFoundation_en-US.xml" />
-    <Resource Include="Testmodels\ApplicationFoundation\ApplicationFoundation\AxLabelFile\FieldDescriptions_RetailSMB_ApplicationFoundation_en-US.xml" />
-    <Resource Include="Testmodels\ApplicationFoundation\ApplicationFoundation\AxLabelFile\FieldDescriptions_SysMenuShowParentModuleTest_ApplicationFoundation_en-US.xml" />
-    <Resource Include="Testmodels\ApplicationFoundation\ApplicationFoundation\AxLabelFile\FieldDescriptions_SystemAdministration_ApplicationFoundation_en-US.xml" />
-    <Resource Include="Testmodels\ApplicationFoundation\ApplicationFoundation\AxLabelFile\GanttControl_en-US.xml" />
-    <Resource Include="Testmodels\ApplicationFoundation\ApplicationFoundation\AxLabelFile\GettingStarted_en-US.xml" />
-    <Resource Include="Testmodels\ApplicationFoundation\ApplicationFoundation\AxLabelFile\HTMLEditor_en-US.xml" />
-    <Resource Include="Testmodels\ApplicationFoundation\ApplicationFoundation\AxLabelFile\ImageAnnotator_en-US.xml" />
-    <Resource Include="Testmodels\ApplicationFoundation\ApplicationFoundation\AxLabelFile\LabelResources\de\ApplicationFoundation.de.label.txt" />
-    <Resource Include="Testmodels\ApplicationFoundation\ApplicationFoundation\AxLabelFile\LabelResources\de\DMF.de.label.txt" />
-    <Resource Include="Testmodels\ApplicationFoundation\ApplicationFoundation\AxLabelFile\LabelResources\de\EntityStore.de.label.txt" />
-    <Resource Include="Testmodels\ApplicationFoundation\ApplicationFoundation\AxLabelFile\LabelResources\de\FieldDescriptions_AccountsPayable_ApplicationFoundation.de.label.txt" />
-    <Resource Include="Testmodels\ApplicationFoundation\ApplicationFoundation\AxLabelFile\LabelResources\de\FieldDescriptions_AccountsReceivable_ApplicationFoundation.de.label.txt" />
-    <Resource Include="Testmodels\ApplicationFoundation\ApplicationFoundation\AxLabelFile\LabelResources\de\FieldDescriptions_CommonMenu_ApplicationFoundation.de.label.txt" />
-    <Resource Include="Testmodels\ApplicationFoundation\ApplicationFoundation\AxLabelFile\LabelResources\de\SysSecLabels.de.label.txt" />
-    <Resource Include="Testmodels\ApplicationFoundation\ApplicationFoundation\AxLabelFile\LabelResources\de\SysTaskRecorder.de.label.txt" />
-    <Resource Include="Testmodels\ApplicationFoundation\ApplicationFoundation\AxLabelFile\LabelResources\de\SysTest.de.label.txt" />
-    <Resource Include="Testmodels\ApplicationFoundation\ApplicationFoundation\AxLabelFile\LabelResources\de\SysTraceCockpit.de.label.txt" />
-    <Resource Include="Testmodels\ApplicationFoundation\ApplicationFoundation\AxLabelFile\LabelResources\en-US\ApplicationFoundation.en-US.label.txt" />
-    <Resource Include="Testmodels\ApplicationFoundation\ApplicationFoundation\AxLabelFile\LabelResources\en-US\ApplicationFoundation_RecordCompare.en-US.label.txt" />
-    <Resource Include="Testmodels\ApplicationFoundation\ApplicationFoundation\AxLabelFile\LabelResources\en-US\ApplicationIntegration.en-US.label.txt" />
-    <Resource Include="Testmodels\ApplicationFoundation\ApplicationFoundation\AxLabelFile\LabelResources\en-US\AV.en-US.label.txt" />
-    <Resource Include="Testmodels\ApplicationFoundation\ApplicationFoundation\AxLabelFile\LabelResources\en-US\Calendar.en-US.label.txt" />
-    <Resource Include="Testmodels\ApplicationFoundation\ApplicationFoundation\AxLabelFile\LabelResources\en-US\CalendarTable.en-US.label.txt" />
-    <Resource Include="Testmodels\ApplicationFoundation\ApplicationFoundation\AxLabelFile\LabelResources\en-US\ColorPicker.en-US.label.txt" />
-    <Resource Include="Testmodels\ApplicationFoundation\ApplicationFoundation\AxLabelFile\LabelResources\en-US\DataExpTool.en-US.label.txt" />
-    <Resource Include="Testmodels\ApplicationFoundation\ApplicationFoundation\AxLabelFile\LabelResources\en-US\DMF.en-us.label.txt" />
-    <Resource Include="Testmodels\ApplicationFoundation\ApplicationFoundation\AxLabelFile\LabelResources\en-US\EntityStore.en-US.label.txt" />
-    <Resource Include="Testmodels\ApplicationFoundation\ApplicationFoundation\AxLabelFile\LabelResources\en-US\FieldDescriptions_AccountsPayable_ApplicationFoundation.en-US.label.txt" />
-    <Resource Include="Testmodels\ApplicationFoundation\ApplicationFoundation\AxLabelFile\LabelResources\en-US\FieldDescriptions_AccountsReceivable_ApplicationFoundation.en-US.label.txt" />
-    <Resource Include="Testmodels\ApplicationFoundation\ApplicationFoundation\AxLabelFile\LabelResources\en-US\FieldDescriptions_CommonMenu_ApplicationFoundation.en-US.label.txt" />
-    <Resource Include="Testmodels\ApplicationFoundation\ApplicationFoundation\AxLabelFile\LabelResources\en-US\FieldDescriptions_CostAccounting_ApplicationFoundation.en-US.label.txt" />
-    <Resource Include="Testmodels\ApplicationFoundation\ApplicationFoundation\AxLabelFile\LabelResources\en-US\FieldDescriptions_GeneralLedger_ApplicationFoundation.en-US.label.txt" />
-    <Resource Include="Testmodels\ApplicationFoundation\ApplicationFoundation\AxLabelFile\LabelResources\en-US\FieldDescriptions_OrganizationAdministration_ApplicationFoundation.en-US.label.txt" />
-    <Resource Include="Testmodels\ApplicationFoundation\ApplicationFoundation\AxLabelFile\LabelResources\en-US\FieldDescriptions_RetailMain_ApplicationFoundation.en-US.label.txt" />
-    <Resource Include="Testmodels\ApplicationFoundation\ApplicationFoundation\AxLabelFile\LabelResources\en-US\FieldDescriptions_RetailSMB_ApplicationFoundation.en-US.label.txt" />
-    <Resource Include="Testmodels\ApplicationFoundation\ApplicationFoundation\AxLabelFile\LabelResources\en-US\FieldDescriptions_SysMenuShowParentModuleTest_ApplicationFoundation.en-US.label.txt" />
-    <Resource Include="Testmodels\ApplicationFoundation\ApplicationFoundation\AxLabelFile\LabelResources\en-US\FieldDescriptions_SystemAdministration_ApplicationFoundation.en-US.label.txt" />
-    <Resource Include="Testmodels\ApplicationFoundation\ApplicationFoundation\AxLabelFile\LabelResources\en-US\GanttControl.en-US.label.txt" />
-    <Resource Include="Testmodels\ApplicationFoundation\ApplicationFoundation\AxLabelFile\LabelResources\en-US\GettingStarted.en-US.label.txt" />
-    <Resource Include="Testmodels\ApplicationFoundation\ApplicationFoundation\AxLabelFile\LabelResources\en-US\HTMLEditor.en-US.label.txt" />
-    <Resource Include="Testmodels\ApplicationFoundation\ApplicationFoundation\AxLabelFile\LabelResources\en-US\ImageAnnotator.en-US.label.txt" />
-    <Resource Include="Testmodels\ApplicationFoundation\ApplicationFoundation\AxLabelFile\LabelResources\en-US\LeanProductionFlowVisualization.en-US.label.txt" />
-    <Resource Include="Testmodels\ApplicationFoundation\ApplicationFoundation\AxLabelFile\LabelResources\en-US\Mapper.en-US.label.txt" />
-    <Resource Include="Testmodels\ApplicationFoundation\ApplicationFoundation\AxLabelFile\LabelResources\en-US\NumberSequence.en-US.label.txt" />
-    <Resource Include="Testmodels\ApplicationFoundation\ApplicationFoundation\AxLabelFile\LabelResources\en-US\PerformanceCheck.en-US.label.txt" />
-    <Resource Include="Testmodels\ApplicationFoundation\ApplicationFoundation\AxLabelFile\LabelResources\en-US\PerformanceTimer.en-US.label.txt" />
-    <Resource Include="Testmodels\ApplicationFoundation\ApplicationFoundation\AxLabelFile\LabelResources\en-US\PowerBIClient.en-US.label.txt" />
-    <Resource Include="Testmodels\ApplicationFoundation\ApplicationFoundation\AxLabelFile\LabelResources\en-US\PowerBIIntegration.en-US.label.txt" />
-    <Resource Include="Testmodels\ApplicationFoundation\ApplicationFoundation\AxLabelFile\LabelResources\en-US\ProductFramework_KPI.en-US.label.txt" />
-    <Resource Include="Testmodels\ApplicationFoundation\ApplicationFoundation\AxLabelFile\LabelResources\en-US\Provisioning.en-US.label.txt" />
-    <Resource Include="Testmodels\ApplicationFoundation\ApplicationFoundation\AxLabelFile\LabelResources\en-US\ReqActionGraph.en-US.label.txt" />
-    <Resource Include="Testmodels\ApplicationFoundation\ApplicationFoundation\AxLabelFile\LabelResources\en-US\Security.en-US.label.txt" />
-    <Resource Include="Testmodels\ApplicationFoundation\ApplicationFoundation\AxLabelFile\LabelResources\en-US\SysApp.en-US.label.txt" />
-    <Resource Include="Testmodels\ApplicationFoundation\ApplicationFoundation\AxLabelFile\LabelResources\en-US\SysAppDesigner.en-US.label.txt" />
-    <Resource Include="Testmodels\ApplicationFoundation\ApplicationFoundation\AxLabelFile\LabelResources\en-US\SysEmailReader.en-US.label.txt" />
-    <Resource Include="Testmodels\ApplicationFoundation\ApplicationFoundation\AxLabelFile\LabelResources\en-US\SysExpressionBuilderControl.en-US.label.txt" />
-    <Resource Include="Testmodels\ApplicationFoundation\ApplicationFoundation\AxLabelFile\LabelResources\en-US\SysHelp.en-US.label.txt" />
-    <Resource Include="Testmodels\ApplicationFoundation\ApplicationFoundation\AxLabelFile\LabelResources\en-US\SysLcsCps.en-US.label.txt" />
-    <Resource Include="Testmodels\ApplicationFoundation\ApplicationFoundation\AxLabelFile\LabelResources\en-US\SysQuery.en-US.label.txt" />
-    <Resource Include="Testmodels\ApplicationFoundation\ApplicationFoundation\AxLabelFile\LabelResources\en-US\SysSecLabels.en-US.label.txt" />
-    <Resource Include="Testmodels\ApplicationFoundation\ApplicationFoundation\AxLabelFile\LabelResources\en-US\SysTaskRecorder.en-US.label.txt" />
-    <Resource Include="Testmodels\ApplicationFoundation\ApplicationFoundation\AxLabelFile\LabelResources\en-US\SysTest.en-US.label.txt" />
-    <Resource Include="Testmodels\ApplicationFoundation\ApplicationFoundation\AxLabelFile\LabelResources\en-US\SysTraceCockpit.en-US.label.txt" />
-    <Resource Include="Testmodels\ApplicationFoundation\ApplicationFoundation\AxLabelFile\LeanProductionFlowVisualization_en-US.xml" />
-    <Resource Include="Testmodels\ApplicationFoundation\ApplicationFoundation\AxLabelFile\Mapper_en-US.xml" />
-    <Resource Include="Testmodels\ApplicationFoundation\ApplicationFoundation\AxLabelFile\NumberSequence_en-US.xml" />
-    <Resource Include="Testmodels\ApplicationFoundation\ApplicationFoundation\AxLabelFile\PerformanceCheck_en-US.xml" />
-    <Resource Include="Testmodels\ApplicationFoundation\ApplicationFoundation\AxLabelFile\PerformanceTimer_en-US.xml" />
-    <Resource Include="Testmodels\ApplicationFoundation\ApplicationFoundation\AxLabelFile\PowerBIClient_en-US.xml" />
-    <Resource Include="Testmodels\ApplicationFoundation\ApplicationFoundation\AxLabelFile\PowerBIIntegration_en-US.xml" />
-    <Resource Include="Testmodels\ApplicationFoundation\ApplicationFoundation\AxLabelFile\ProductFramework_KPI_en-US.xml" />
-    <Resource Include="Testmodels\ApplicationFoundation\ApplicationFoundation\AxLabelFile\Provisioning_en-US.xml" />
-    <Resource Include="Testmodels\ApplicationFoundation\ApplicationFoundation\AxLabelFile\ReqActionGraph_en-US.xml" />
-    <Resource Include="Testmodels\ApplicationFoundation\ApplicationFoundation\AxLabelFile\Security_en-US.xml" />
-    <Resource Include="Testmodels\ApplicationFoundation\ApplicationFoundation\AxLabelFile\SysAppDesigner_en-US.xml" />
-    <Resource Include="Testmodels\ApplicationFoundation\ApplicationFoundation\AxLabelFile\SysEmailReader_en-US.xml" />
-    <Resource Include="Testmodels\ApplicationFoundation\ApplicationFoundation\AxLabelFile\SysExpressionBuilderControl_en-US.xml" />
-    <Resource Include="Testmodels\ApplicationFoundation\ApplicationFoundation\AxLabelFile\SysHelp_en-US.xml" />
-    <Resource Include="Testmodels\ApplicationFoundation\ApplicationFoundation\AxLabelFile\SysLcsCps_en-US.xml" />
-    <Resource Include="Testmodels\ApplicationFoundation\ApplicationFoundation\AxLabelFile\SysQuery_en-US.xml" />
-    <Resource Include="Testmodels\ApplicationFoundation\ApplicationFoundation\AxLabelFile\SysSecLabels_en-US.xml" />
-    <Resource Include="Testmodels\ApplicationFoundation\ApplicationFoundation\AxLabelFile\SysTaskRecorder_en-US.xml" />
-    <Resource Include="Testmodels\ApplicationFoundation\ApplicationFoundation\AxLabelFile\SysTest_en-US.xml" />
-    <Resource Include="Testmodels\ApplicationFoundation\ApplicationFoundation\AxLabelFile\SysTraceCockpit_en-US.xml" />
-    <Resource Include="Testmodels\ApplicationFoundation\Descriptor\ApplicationFoundation.xml" />
-    <Resource Include="Testmodels\Currency\BPCheck.xml" />
-    <Resource Include="Testmodels\Currency\BuildModelResult.xml" />
-    <Resource Include="Testmodels\Currency\CompileLabels.xml" />
-    <Resource Include="Testmodels\Currency\Currency\AxLabelFile\CurrencyExchange_ar.xml" />
-    <Resource Include="Testmodels\Currency\Currency\AxLabelFile\CurrencyExchange_cs.xml" />
-    <Resource Include="Testmodels\Currency\Currency\AxLabelFile\CurrencyExchange_da.xml" />
-    <Resource Include="Testmodels\Currency\Currency\AxLabelFile\CurrencyExchange_de-AT.xml" />
-    <Resource Include="Testmodels\Currency\Currency\AxLabelFile\CurrencyExchange_de-CH.xml" />
-    <Resource Include="Testmodels\Currency\Currency\AxLabelFile\CurrencyExchange_de.xml" />
-    <Resource Include="Testmodels\Currency\Currency\AxLabelFile\CurrencyExchange_en-AU.xml" />
-    <Resource Include="Testmodels\Currency\Currency\AxLabelFile\CurrencyExchange_en-CA.xml" />
-    <Resource Include="Testmodels\Currency\Currency\AxLabelFile\CurrencyExchange_en-GB.xml" />
-    <Resource Include="Testmodels\Currency\Currency\AxLabelFile\CurrencyExchange_en-IE.xml" />
-    <Resource Include="Testmodels\Currency\Currency\AxLabelFile\CurrencyExchange_en-IN.xml" />
-    <Resource Include="Testmodels\Currency\Currency\AxLabelFile\CurrencyExchange_en-MY.xml" />
-    <Resource Include="Testmodels\Currency\Currency\AxLabelFile\CurrencyExchange_en-NZ.xml" />
-    <Resource Include="Testmodels\Currency\Currency\AxLabelFile\CurrencyExchange_en-SG.xml" />
-    <Resource Include="Testmodels\Currency\Currency\AxLabelFile\CurrencyExchange_en-US.xml" />
-    <Resource Include="Testmodels\Currency\Currency\AxLabelFile\CurrencyExchange_en-ZA.xml" />
-    <Resource Include="Testmodels\Currency\Currency\AxLabelFile\CurrencyExchange_es-MX.xml" />
-    <Resource Include="Testmodels\Currency\Currency\AxLabelFile\CurrencyExchange_es.xml" />
-    <Resource Include="Testmodels\Currency\Currency\AxLabelFile\CurrencyExchange_et.xml" />
-    <Resource Include="Testmodels\Currency\Currency\AxLabelFile\CurrencyExchange_fi.xml" />
-    <Resource Include="Testmodels\Currency\Currency\AxLabelFile\CurrencyExchange_fr-BE.xml" />
-    <Resource Include="Testmodels\Currency\Currency\AxLabelFile\CurrencyExchange_fr-CA.xml" />
-    <Resource Include="Testmodels\Currency\Currency\AxLabelFile\CurrencyExchange_fr-CH.xml" />
-    <Resource Include="Testmodels\Currency\Currency\AxLabelFile\CurrencyExchange_fr.xml" />
-    <Resource Include="Testmodels\Currency\Currency\AxLabelFile\CurrencyExchange_hu.xml" />
-    <Resource Include="Testmodels\Currency\Currency\AxLabelFile\CurrencyExchange_is.xml" />
-    <Resource Include="Testmodels\Currency\Currency\AxLabelFile\CurrencyExchange_it-CH.xml" />
-    <Resource Include="Testmodels\Currency\Currency\AxLabelFile\CurrencyExchange_it.xml" />
-    <Resource Include="Testmodels\Currency\Currency\AxLabelFile\CurrencyExchange_ja.xml" />
-    <Resource Include="Testmodels\Currency\Currency\AxLabelFile\CurrencyExchange_lt.xml" />
-    <Resource Include="Testmodels\Currency\Currency\AxLabelFile\CurrencyExchange_lv.xml" />
-    <Resource Include="Testmodels\Currency\Currency\AxLabelFile\CurrencyExchange_nb-NO.xml" />
-    <Resource Include="Testmodels\Currency\Currency\AxLabelFile\CurrencyExchange_nl-BE.xml" />
-    <Resource Include="Testmodels\Currency\Currency\AxLabelFile\CurrencyExchange_nl.xml" />
-    <Resource Include="Testmodels\Currency\Currency\AxLabelFile\CurrencyExchange_pl.xml" />
-    <Resource Include="Testmodels\Currency\Currency\AxLabelFile\CurrencyExchange_pt-BR.xml" />
-    <Resource Include="Testmodels\Currency\Currency\AxLabelFile\CurrencyExchange_ru.xml" />
-    <Resource Include="Testmodels\Currency\Currency\AxLabelFile\CurrencyExchange_sv.xml" />
-    <Resource Include="Testmodels\Currency\Currency\AxLabelFile\CurrencyExchange_th.xml" />
-    <Resource Include="Testmodels\Currency\Currency\AxLabelFile\CurrencyExchange_tr.xml" />
-    <Resource Include="Testmodels\Currency\Currency\AxLabelFile\CurrencyExchange_zh-Hans.xml" />
-    <Resource Include="Testmodels\Currency\Currency\AxLabelFile\FieldDescriptions_GeneralLedger_Currency_ar.xml" />
-    <Resource Include="Testmodels\Currency\Currency\AxLabelFile\FieldDescriptions_GeneralLedger_Currency_cs.xml" />
-    <Resource Include="Testmodels\Currency\Currency\AxLabelFile\FieldDescriptions_GeneralLedger_Currency_da.xml" />
-    <Resource Include="Testmodels\Currency\Currency\AxLabelFile\FieldDescriptions_GeneralLedger_Currency_de-AT.xml" />
-    <Resource Include="Testmodels\Currency\Currency\AxLabelFile\FieldDescriptions_GeneralLedger_Currency_de-CH.xml" />
-    <Resource Include="Testmodels\Currency\Currency\AxLabelFile\FieldDescriptions_GeneralLedger_Currency_de.xml" />
-    <Resource Include="Testmodels\Currency\Currency\AxLabelFile\FieldDescriptions_GeneralLedger_Currency_en-AU.xml" />
-    <Resource Include="Testmodels\Currency\Currency\AxLabelFile\FieldDescriptions_GeneralLedger_Currency_en-CA.xml" />
-    <Resource Include="Testmodels\Currency\Currency\AxLabelFile\FieldDescriptions_GeneralLedger_Currency_en-GB.xml" />
-    <Resource Include="Testmodels\Currency\Currency\AxLabelFile\FieldDescriptions_GeneralLedger_Currency_en-IE.xml" />
-    <Resource Include="Testmodels\Currency\Currency\AxLabelFile\FieldDescriptions_GeneralLedger_Currency_en-IN.xml" />
-    <Resource Include="Testmodels\Currency\Currency\AxLabelFile\FieldDescriptions_GeneralLedger_Currency_en-MY.xml" />
-    <Resource Include="Testmodels\Currency\Currency\AxLabelFile\FieldDescriptions_GeneralLedger_Currency_en-NZ.xml" />
-    <Resource Include="Testmodels\Currency\Currency\AxLabelFile\FieldDescriptions_GeneralLedger_Currency_en-SG.xml" />
-    <Resource Include="Testmodels\Currency\Currency\AxLabelFile\FieldDescriptions_GeneralLedger_Currency_en-US.xml" />
-    <Resource Include="Testmodels\Currency\Currency\AxLabelFile\FieldDescriptions_GeneralLedger_Currency_en-ZA.xml" />
-    <Resource Include="Testmodels\Currency\Currency\AxLabelFile\FieldDescriptions_GeneralLedger_Currency_es-MX.xml" />
-    <Resource Include="Testmodels\Currency\Currency\AxLabelFile\FieldDescriptions_GeneralLedger_Currency_es.xml" />
-    <Resource Include="Testmodels\Currency\Currency\AxLabelFile\FieldDescriptions_GeneralLedger_Currency_et.xml" />
-    <Resource Include="Testmodels\Currency\Currency\AxLabelFile\FieldDescriptions_GeneralLedger_Currency_fi.xml" />
-    <Resource Include="Testmodels\Currency\Currency\AxLabelFile\FieldDescriptions_GeneralLedger_Currency_fr-BE.xml" />
-    <Resource Include="Testmodels\Currency\Currency\AxLabelFile\FieldDescriptions_GeneralLedger_Currency_fr-CA.xml" />
-    <Resource Include="Testmodels\Currency\Currency\AxLabelFile\FieldDescriptions_GeneralLedger_Currency_fr-CH.xml" />
-    <Resource Include="Testmodels\Currency\Currency\AxLabelFile\FieldDescriptions_GeneralLedger_Currency_fr.xml" />
-    <Resource Include="Testmodels\Currency\Currency\AxLabelFile\FieldDescriptions_GeneralLedger_Currency_hu.xml" />
-    <Resource Include="Testmodels\Currency\Currency\AxLabelFile\FieldDescriptions_GeneralLedger_Currency_is.xml" />
-    <Resource Include="Testmodels\Currency\Currency\AxLabelFile\FieldDescriptions_GeneralLedger_Currency_it-CH.xml" />
-    <Resource Include="Testmodels\Currency\Currency\AxLabelFile\FieldDescriptions_GeneralLedger_Currency_it.xml" />
-    <Resource Include="Testmodels\Currency\Currency\AxLabelFile\FieldDescriptions_GeneralLedger_Currency_ja.xml" />
-    <Resource Include="Testmodels\Currency\Currency\AxLabelFile\FieldDescriptions_GeneralLedger_Currency_lt.xml" />
-    <Resource Include="Testmodels\Currency\Currency\AxLabelFile\FieldDescriptions_GeneralLedger_Currency_lv.xml" />
-    <Resource Include="Testmodels\Currency\Currency\AxLabelFile\FieldDescriptions_GeneralLedger_Currency_nb-NO.xml" />
-    <Resource Include="Testmodels\Currency\Currency\AxLabelFile\FieldDescriptions_GeneralLedger_Currency_nl-BE.xml" />
-    <Resource Include="Testmodels\Currency\Currency\AxLabelFile\FieldDescriptions_GeneralLedger_Currency_nl.xml" />
-    <Resource Include="Testmodels\Currency\Currency\AxLabelFile\FieldDescriptions_GeneralLedger_Currency_pl.xml" />
-    <Resource Include="Testmodels\Currency\Currency\AxLabelFile\FieldDescriptions_GeneralLedger_Currency_pt-BR.xml" />
-    <Resource Include="Testmodels\Currency\Currency\AxLabelFile\FieldDescriptions_GeneralLedger_Currency_ru.xml" />
-    <Resource Include="Testmodels\Currency\Currency\AxLabelFile\FieldDescriptions_GeneralLedger_Currency_sv.xml" />
-    <Resource Include="Testmodels\Currency\Currency\AxLabelFile\FieldDescriptions_GeneralLedger_Currency_th.xml" />
-    <Resource Include="Testmodels\Currency\Currency\AxLabelFile\FieldDescriptions_GeneralLedger_Currency_tr.xml" />
-    <Resource Include="Testmodels\Currency\Currency\AxLabelFile\FieldDescriptions_GeneralLedger_Currency_zh-Hans.xml" />
-    <Resource Include="Testmodels\Currency\Currency\AxLabelFile\LabelResources\ar\CurrencyExchange.ar.label.txt" />
-    <Resource Include="Testmodels\Currency\Currency\AxLabelFile\LabelResources\ar\FieldDescriptions_GeneralLedger_Currency.ar.label.txt" />
-    <Resource Include="Testmodels\Currency\Currency\AxLabelFile\LabelResources\cs\CurrencyExchange.cs.label.txt" />
-    <Resource Include="Testmodels\Currency\Currency\AxLabelFile\LabelResources\cs\FieldDescriptions_GeneralLedger_Currency.cs.label.txt" />
-    <Resource Include="Testmodels\Currency\Currency\AxLabelFile\LabelResources\da\CurrencyExchange.da.label.txt" />
-    <Resource Include="Testmodels\Currency\Currency\AxLabelFile\LabelResources\da\FieldDescriptions_GeneralLedger_Currency.da.label.txt" />
-    <Resource Include="Testmodels\Currency\Currency\AxLabelFile\LabelResources\de-AT\CurrencyExchange.de-AT.label.txt" />
-    <Resource Include="Testmodels\Currency\Currency\AxLabelFile\LabelResources\de-AT\FieldDescriptions_GeneralLedger_Currency.de-AT.label.txt" />
-    <Resource Include="Testmodels\Currency\Currency\AxLabelFile\LabelResources\de-CH\CurrencyExchange.de-CH.label.txt" />
-    <Resource Include="Testmodels\Currency\Currency\AxLabelFile\LabelResources\de-CH\FieldDescriptions_GeneralLedger_Currency.de-CH.label.txt" />
-    <Resource Include="Testmodels\Currency\Currency\AxLabelFile\LabelResources\de\CurrencyExchange.de.label.txt" />
-    <Resource Include="Testmodels\Currency\Currency\AxLabelFile\LabelResources\de\FieldDescriptions_GeneralLedger_Currency.de.label.txt" />
-    <Resource Include="Testmodels\Currency\Currency\AxLabelFile\LabelResources\en-AU\CurrencyExchange.en-AU.label.txt" />
-    <Resource Include="Testmodels\Currency\Currency\AxLabelFile\LabelResources\en-AU\FieldDescriptions_GeneralLedger_Currency.en-AU.label.txt" />
-    <Resource Include="Testmodels\Currency\Currency\AxLabelFile\LabelResources\en-CA\CurrencyExchange.en-CA.label.txt" />
-    <Resource Include="Testmodels\Currency\Currency\AxLabelFile\LabelResources\en-CA\FieldDescriptions_GeneralLedger_Currency.en-CA.label.txt" />
-    <Resource Include="Testmodels\Currency\Currency\AxLabelFile\LabelResources\en-GB\CurrencyExchange.en-GB.label.txt" />
-    <Resource Include="Testmodels\Currency\Currency\AxLabelFile\LabelResources\en-GB\FieldDescriptions_GeneralLedger_Currency.en-GB.label.txt" />
-    <Resource Include="Testmodels\Currency\Currency\AxLabelFile\LabelResources\en-IE\CurrencyExchange.en-IE.label.txt" />
-    <Resource Include="Testmodels\Currency\Currency\AxLabelFile\LabelResources\en-IE\FieldDescriptions_GeneralLedger_Currency.en-IE.label.txt" />
-    <Resource Include="Testmodels\Currency\Currency\AxLabelFile\LabelResources\en-IN\CurrencyExchange.en-IN.label.txt" />
-    <Resource Include="Testmodels\Currency\Currency\AxLabelFile\LabelResources\en-IN\FieldDescriptions_GeneralLedger_Currency.en-IN.label.txt" />
-    <Resource Include="Testmodels\Currency\Currency\AxLabelFile\LabelResources\en-MY\CurrencyExchange.en-MY.label.txt" />
-    <Resource Include="Testmodels\Currency\Currency\AxLabelFile\LabelResources\en-MY\FieldDescriptions_GeneralLedger_Currency.en-MY.label.txt" />
-    <Resource Include="Testmodels\Currency\Currency\AxLabelFile\LabelResources\en-NZ\CurrencyExchange.en-NZ.label.txt" />
-    <Resource Include="Testmodels\Currency\Currency\AxLabelFile\LabelResources\en-NZ\FieldDescriptions_GeneralLedger_Currency.en-NZ.label.txt" />
-    <Resource Include="Testmodels\Currency\Currency\AxLabelFile\LabelResources\en-SG\CurrencyExchange.en-SG.label.txt" />
-    <Resource Include="Testmodels\Currency\Currency\AxLabelFile\LabelResources\en-SG\FieldDescriptions_GeneralLedger_Currency.en-SG.label.txt" />
-    <Resource Include="Testmodels\Currency\Currency\AxLabelFile\LabelResources\en-US\CurrencyExchange.en-US.label.txt" />
-    <Resource Include="Testmodels\Currency\Currency\AxLabelFile\LabelResources\en-US\FieldDescriptions_GeneralLedger_Currency.en-US.label.txt" />
-    <Resource Include="Testmodels\Currency\Currency\AxLabelFile\LabelResources\en-ZA\CurrencyExchange.en-ZA.label.txt" />
-    <Resource Include="Testmodels\Currency\Currency\AxLabelFile\LabelResources\en-ZA\FieldDescriptions_GeneralLedger_Currency.en-ZA.label.txt" />
-    <Resource Include="Testmodels\Currency\Currency\AxLabelFile\LabelResources\es-MX\CurrencyExchange.es-MX.label.txt" />
-    <Resource Include="Testmodels\Currency\Currency\AxLabelFile\LabelResources\es-MX\FieldDescriptions_GeneralLedger_Currency.es-MX.label.txt" />
-    <Resource Include="Testmodels\Currency\Currency\AxLabelFile\LabelResources\es\CurrencyExchange.es.label.txt" />
-    <Resource Include="Testmodels\Currency\Currency\AxLabelFile\LabelResources\es\FieldDescriptions_GeneralLedger_Currency.es.label.txt" />
-    <Resource Include="Testmodels\Currency\Currency\AxLabelFile\LabelResources\et\CurrencyExchange.et.label.txt" />
-    <Resource Include="Testmodels\Currency\Currency\AxLabelFile\LabelResources\et\FieldDescriptions_GeneralLedger_Currency.et.label.txt" />
-    <Resource Include="Testmodels\Currency\Currency\AxLabelFile\LabelResources\fi\CurrencyExchange.fi.label.txt" />
-    <Resource Include="Testmodels\Currency\Currency\AxLabelFile\LabelResources\fi\FieldDescriptions_GeneralLedger_Currency.fi.label.txt" />
-    <Resource Include="Testmodels\Currency\Currency\AxLabelFile\LabelResources\fr-BE\CurrencyExchange.fr-BE.label.txt" />
-    <Resource Include="Testmodels\Currency\Currency\AxLabelFile\LabelResources\fr-BE\FieldDescriptions_GeneralLedger_Currency.fr-BE.label.txt" />
-    <Resource Include="Testmodels\Currency\Currency\AxLabelFile\LabelResources\fr-CA\CurrencyExchange.fr-CA.label.txt" />
-    <Resource Include="Testmodels\Currency\Currency\AxLabelFile\LabelResources\fr-CA\FieldDescriptions_GeneralLedger_Currency.fr-CA.label.txt" />
-    <Resource Include="Testmodels\Currency\Currency\AxLabelFile\LabelResources\fr-CH\CurrencyExchange.fr-CH.label.txt" />
-    <Resource Include="Testmodels\Currency\Currency\AxLabelFile\LabelResources\fr-CH\FieldDescriptions_GeneralLedger_Currency.fr-CH.label.txt" />
-    <Resource Include="Testmodels\Currency\Currency\AxLabelFile\LabelResources\fr\CurrencyExchange.fr.label.txt" />
-    <Resource Include="Testmodels\Currency\Currency\AxLabelFile\LabelResources\fr\FieldDescriptions_GeneralLedger_Currency.fr.label.txt" />
-    <Resource Include="Testmodels\Currency\Currency\AxLabelFile\LabelResources\hu\CurrencyExchange.hu.label.txt" />
-    <Resource Include="Testmodels\Currency\Currency\AxLabelFile\LabelResources\hu\FieldDescriptions_GeneralLedger_Currency.hu.label.txt" />
-    <Resource Include="Testmodels\Currency\Currency\AxLabelFile\LabelResources\is\CurrencyExchange.is.label.txt" />
-    <Resource Include="Testmodels\Currency\Currency\AxLabelFile\LabelResources\is\FieldDescriptions_GeneralLedger_Currency.is.label.txt" />
-    <Resource Include="Testmodels\Currency\Currency\AxLabelFile\LabelResources\it-CH\CurrencyExchange.it-CH.label.txt" />
-    <Resource Include="Testmodels\Currency\Currency\AxLabelFile\LabelResources\it-CH\FieldDescriptions_GeneralLedger_Currency.it-CH.label.txt" />
-    <Resource Include="Testmodels\Currency\Currency\AxLabelFile\LabelResources\it\CurrencyExchange.it.label.txt" />
-    <Resource Include="Testmodels\Currency\Currency\AxLabelFile\LabelResources\it\FieldDescriptions_GeneralLedger_Currency.it.label.txt" />
-    <Resource Include="Testmodels\Currency\Currency\AxLabelFile\LabelResources\ja\CurrencyExchange.ja.label.txt" />
-    <Resource Include="Testmodels\Currency\Currency\AxLabelFile\LabelResources\ja\FieldDescriptions_GeneralLedger_Currency.ja.label.txt" />
-    <Resource Include="Testmodels\Currency\Currency\AxLabelFile\LabelResources\lt\CurrencyExchange.lt.label.txt" />
-    <Resource Include="Testmodels\Currency\Currency\AxLabelFile\LabelResources\lt\FieldDescriptions_GeneralLedger_Currency.lt.label.txt" />
-    <Resource Include="Testmodels\Currency\Currency\AxLabelFile\LabelResources\lv\CurrencyExchange.lv.label.txt" />
-    <Resource Include="Testmodels\Currency\Currency\AxLabelFile\LabelResources\lv\FieldDescriptions_GeneralLedger_Currency.lv.label.txt" />
-    <Resource Include="Testmodels\Currency\Currency\AxLabelFile\LabelResources\nb-NO\CurrencyExchange.nb-NO.label.txt" />
-    <Resource Include="Testmodels\Currency\Currency\AxLabelFile\LabelResources\nb-NO\FieldDescriptions_GeneralLedger_Currency.nb-NO.label.txt" />
-    <Resource Include="Testmodels\Currency\Currency\AxLabelFile\LabelResources\nl-BE\CurrencyExchange.nl-BE.label.txt" />
-    <Resource Include="Testmodels\Currency\Currency\AxLabelFile\LabelResources\nl-BE\FieldDescriptions_GeneralLedger_Currency.nl-BE.label.txt" />
-    <Resource Include="Testmodels\Currency\Currency\AxLabelFile\LabelResources\nl\CurrencyExchange.nl.label.txt" />
-    <Resource Include="Testmodels\Currency\Currency\AxLabelFile\LabelResources\nl\FieldDescriptions_GeneralLedger_Currency.nl.label.txt" />
-    <Resource Include="Testmodels\Currency\Currency\AxLabelFile\LabelResources\pl\CurrencyExchange.pl.label.txt" />
-    <Resource Include="Testmodels\Currency\Currency\AxLabelFile\LabelResources\pl\FieldDescriptions_GeneralLedger_Currency.pl.label.txt" />
-    <Resource Include="Testmodels\Currency\Currency\AxLabelFile\LabelResources\pt-BR\CurrencyExchange.pt-BR.label.txt" />
-    <Resource Include="Testmodels\Currency\Currency\AxLabelFile\LabelResources\pt-BR\FieldDescriptions_GeneralLedger_Currency.pt-BR.label.txt" />
-    <Resource Include="Testmodels\Currency\Currency\AxLabelFile\LabelResources\ru\CurrencyExchange.ru.label.txt" />
-    <Resource Include="Testmodels\Currency\Currency\AxLabelFile\LabelResources\ru\FieldDescriptions_GeneralLedger_Currency.ru.label.txt" />
-    <Resource Include="Testmodels\Currency\Currency\AxLabelFile\LabelResources\sv\CurrencyExchange.sv.label.txt" />
-    <Resource Include="Testmodels\Currency\Currency\AxLabelFile\LabelResources\sv\FieldDescriptions_GeneralLedger_Currency.sv.label.txt" />
-    <Resource Include="Testmodels\Currency\Currency\AxLabelFile\LabelResources\th\CurrencyExchange.th.label.txt" />
-    <Resource Include="Testmodels\Currency\Currency\AxLabelFile\LabelResources\th\FieldDescriptions_GeneralLedger_Currency.th.label.txt" />
-    <Resource Include="Testmodels\Currency\Currency\AxLabelFile\LabelResources\tr\CurrencyExchange.tr.label.txt" />
-    <Resource Include="Testmodels\Currency\Currency\AxLabelFile\LabelResources\tr\FieldDescriptions_GeneralLedger_Currency.tr.label.txt" />
-    <Resource Include="Testmodels\Currency\Currency\AxLabelFile\LabelResources\zh-Hans\CurrencyExchange.zh-Hans.label.txt" />
-    <Resource Include="Testmodels\Currency\Currency\AxLabelFile\LabelResources\zh-Hans\FieldDescriptions_GeneralLedger_Currency.zh-Hans.label.txt" />
-    <Resource Include="Testmodels\Currency\Descriptor\Currency.xml" />
-    <Resource Include="Testmodels\Currency\FileLocations.xml" />
     <Content Include="UpdateFile.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <SubType>Designer</SubType>
     </Content>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Testmodels\ApplicationFoundation\ApplicationFoundation\AxLabelFile\Delta\" />
-    <Folder Include="Testmodels\Currency\Currency\AxLabelFile\Delta\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Web.WebView2.1.0.1722.45\build\Microsoft.Web.WebView2.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Web.WebView2.1.0.1722.45\build\Microsoft.Web.WebView2.targets'))" />
+  </Target>
+  <Import Project="..\packages\Microsoft.Web.WebView2.1.0.1722.45\build\Microsoft.Web.WebView2.targets" Condition="Exists('..\packages\Microsoft.Web.WebView2.1.0.1722.45\build\Microsoft.Web.WebView2.targets')" />
 </Project>
